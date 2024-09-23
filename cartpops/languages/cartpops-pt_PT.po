@@ -1,0 +1,2718 @@
+# Translation of CartPops in Portuguese (Portugal)
+# This file is distributed under the same license as the CartPops package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-07-13 09:46:41+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.3.1\n"
+"Language: pt\n"
+"Project-Id-Version: CartPops\n"
+
+#: admin/menu/views/add-new-rule.php:11
+msgid "New Upsell Rule"
+msgstr ""
+
+#: admin/menu/views/add-new-rule.php:16 admin/menu/views/edit-rule.php:17
+msgid "Upsell Status"
+msgstr ""
+
+#: admin/menu/views/add-new-rule.php:30
+msgid "Upsell Name"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-panel.php:13
+msgid "Upsell Type"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-panel.php:21
+#: includes/functions/cartpops-admin-functions.php:257
+msgid "Coupon based Upsell"
+msgstr ""
+
+#: includes/functions/cartpops-common-functions.php:803
+msgid "You save"
+msgstr ""
+
+#: includes/functions/cartpops-admin-functions.php:277
+msgid "Monday"
+msgstr ""
+
+#: includes/functions/cartpops-admin-functions.php:278
+msgid "Tuesday"
+msgstr ""
+
+#: includes/functions/cartpops-admin-functions.php:279
+msgid "Wednesday"
+msgstr ""
+
+#: includes/functions/cartpops-admin-functions.php:280
+msgid "Thursday"
+msgstr ""
+
+#: includes/functions/cartpops-admin-functions.php:281
+msgid "Friday"
+msgstr ""
+
+#: includes/functions/cartpops-admin-functions.php:282
+msgid "Saturday"
+msgstr ""
+
+#: includes/functions/cartpops-admin-functions.php:283
+msgid "Sunday"
+msgstr ""
+
+#: includes/functions/cartpops-admin-functions.php:308
+msgid "Delete Permanently"
+msgstr ""
+
+#: includes/class-cartpops-register-post-status.php:64
+msgctxt "Post status label"
+msgid "Active"
+msgstr ""
+
+#: includes/class-cartpops-register-post-status.php:84
+msgctxt "Post status label"
+msgid "Inactive"
+msgstr ""
+
+#: includes/class-cartpops-register-post-status.php:104
+msgctxt "Post status label"
+msgid "Manual"
+msgstr ""
+
+#: includes/class-cartpops-register-post-status.php:124
+msgctxt "Post status label"
+msgid "Automatic"
+msgstr ""
+
+#: admin/class-cartpops-admin-ajax.php:56
+msgid "No Products found"
+msgstr ""
+
+#: admin/class-cartpops-admin-ajax.php:99
+msgid "No pages found"
+msgstr ""
+
+#: admin/class-cartpops-admin-ajax.php:148
+msgid "No Customer found"
+msgstr ""
+
+#: admin/class-cartpops-admin-ajax.php:189
+msgid "No Coupon found"
+msgstr ""
+
+#: admin/class-cartpops-admin-ajax.php:229
+#: admin/class-cartpops-admin-ajax.php:263
+#: admin/class-cartpops-admin-ajax.php:301
+#: admin/class-cartpops-admin-ajax.php:336
+#: admin/class-cartpops-admin-ajax.php:360
+#: admin/class-cartpops-admin-ajax.php:385
+msgid "Invalid Request"
+msgstr ""
+
+#: admin/class-cartpops-admin-ajax.php:233
+msgid "Please select a User"
+msgstr ""
+
+#: admin/class-cartpops-admin-ajax.php:237 admin/menu/tabs/upsells.php:538
+msgid "Please select atleast one Product"
+msgstr ""
+
+#: admin/class-cartpops-admin-ajax.php:247
+msgid "Upsell has been sent successfully"
+msgstr ""
+
+#: admin/class-cartpops-admin-ajax.php:368
+msgid "Order usage count reset successfully"
+msgstr ""
+
+#: admin/class-cartpops-admin-ajax.php:393
+msgid "Transient deleted"
+msgstr ""
+
+#: admin/class-cartpops-admin-assets.php:74
+msgid "Are you sure you want to delete?"
+msgstr ""
+
+#: admin/class-cartpops-settings-deprecated.php:753
+#: admin/menu/tabs/color.php:294
+msgid "Drawer Recommendations border color"
+msgstr ""
+
+#: admin/menu/class-cartpops-settings.php:156
+msgid "Master logs"
+msgstr ""
+
+#: admin/menu/class-cartpops-settings.php:162 admin/menu/tabs/color.php:24
+msgid "Color schemes"
+msgstr ""
+
+#: admin/menu/tabs/color.php:35
+msgid "Primary"
+msgstr ""
+
+#: admin/menu/tabs/color.php:36
+msgid "Buttons"
+msgstr ""
+
+#: admin/menu/tabs/color.php:38
+msgid "Recommendations"
+msgstr ""
+
+#: admin/menu/tabs/color.php:39
+msgid "Cart launcher"
+msgstr ""
+
+#: admin/menu/tabs/color.php:162 admin/menu/tabs/color.php:170
+msgid "Primary button background color"
+msgstr ""
+
+#: admin/menu/tabs/color.php:178
+msgid "Secondary button background"
+msgstr ""
+
+#: admin/menu/tabs/color.php:186
+msgid "Secondary button text color"
+msgstr ""
+
+#: admin/menu/tabs/dashboard.php:70
+msgid "Delete plugin settings upon deactivation?"
+msgstr ""
+
+#: admin/menu/tabs/issues.php:54
+msgid "There are errors that prevent CartPops from working properly. %s."
+msgstr ""
+
+#: admin/menu/tabs/issues.php:54
+msgid "Review errors"
+msgstr ""
+
+#: admin/menu/tabs/issues.php:79
+msgid "An option in WooCommerce is turned OFF which will prevent CartPops from working properly."
+msgstr ""
+
+#. translators: 1. Link
+#: admin/menu/tabs/issues.php:81
+msgid "Turn ON \"Enable AJAX add to cart buttons on archives\" in the WooCommerce plugin settings. %s."
+msgstr ""
+
+#: admin/menu/tabs/settings.php:52
+msgid "General Settings"
+msgstr ""
+
+#: admin/menu/tabs/settings.php:86
+msgid "The core functionality of CartPops is free forever. You can support ongoing development and new updates by showing Powered by CartPops on your Add To Cart Triggers "
+msgstr ""
+
+#: admin/menu/tabs/settings.php:93
+msgid "Replace the default Powered by CartPops branding link with your referral link from Freemius."
+msgstr ""
+
+#: admin/menu/tabs/settings.php:113
+msgid "Drawer General Settings"
+msgstr ""
+
+#: admin/menu/tabs/settings.php:120
+msgid "Drawer width mobile (In percentage)"
+msgstr ""
+
+#: admin/menu/tabs/settings.php:131
+msgid "Drawer width desktop (In pixels)"
+msgstr ""
+
+#: admin/menu/tabs/settings.php:181
+msgid "Drawer Coupon Settings"
+msgstr ""
+
+#: admin/menu/tabs/settings.php:202
+msgid "Drawer Footer Settings"
+msgstr ""
+
+#: admin/menu/tabs/settings.php:209
+msgid "Show subtotal line item"
+msgstr ""
+
+#: admin/menu/tabs/settings.php:215
+msgid "Show total line item"
+msgstr ""
+
+#: admin/menu/tabs/settings.php:221
+msgid "Show discount line item"
+msgstr ""
+
+#: admin/menu/tabs/settings.php:227
+msgid "Show tax line item"
+msgstr ""
+
+#: admin/menu/tabs/settings.php:233
+msgid "Show shipping line item"
+msgstr ""
+
+#: admin/menu/tabs/settings.php:239
+msgid "Show shipping calculator"
+msgstr ""
+
+#: admin/menu/tabs/settings.php:311
+msgid "Hide on certain pages"
+msgstr ""
+
+#: admin/menu/tabs/settings.php:409
+msgid "Product Recommendation Engine Settings"
+msgstr ""
+
+#: admin/menu/tabs/settings.php:445
+msgid "Select up to 4 custom products to recommend your customers."
+msgstr ""
+
+#: admin/menu/tabs/settings.php:501
+msgid "Free Shipping Meter Settings"
+msgstr ""
+
+#: admin/menu/tabs/settings.php:521
+msgid "The text you want to display after the free shipping goal is achieved. The following smart syntax is available and will be automatically replaced: {{amount}}, {{country}}, {{flag}}. Keep in mind that country and flag will only work if you have enabled the MaxMind GEO API integration in your WooCommerce Settings."
+msgstr ""
+
+#: admin/menu/tabs/settings.php:529
+msgid "The text you want to display after the free shipping goal is achieved. The following smart syntax is available and will be automatically replaced: {{country}}, {{flag}}. Keep in mind that country and flag will only work if you have enabled the MaxMind GEO API integration in your WooCommerce Settings."
+msgstr ""
+
+#: admin/menu/tabs/settings.php:571
+msgid "Custom Code Settings"
+msgstr ""
+
+#: admin/menu/tabs/settings.php:588
+msgid "Custom JS"
+msgstr ""
+
+#: admin/menu/tabs/settings.php:617
+msgid "Force refresh on page load?"
+msgstr ""
+
+#: admin/menu/tabs/settings.php:619
+msgid "When enabled this will force refresh the cart on each page load. Only use if you're having troubles with how the cart loads."
+msgstr ""
+
+#: admin/menu/tabs/upsells.php:59
+msgid "Please make sure the products you select as upsells have been published and are currently In-stock."
+msgstr ""
+
+#: admin/menu/tabs/upsells.php:229
+msgid "Upsell Rules"
+msgstr ""
+
+#: admin/menu/tabs/upsells.php:230
+msgid "Add New Rule"
+msgstr ""
+
+#: admin/menu/tabs/upsells.php:286
+msgid "Restrictions"
+msgstr ""
+
+#: admin/menu/tabs/upsells.php:292
+msgid "Criteria"
+msgstr ""
+
+#: admin/menu/tabs/upsells.php:298
+msgid "Filters"
+msgstr ""
+
+#: admin/menu/tabs/upsells.php:304
+msgid "Notice"
+msgstr ""
+
+#: admin/menu/tabs/upsells.php:343
+msgid "New Rule has been created successfuly"
+msgstr ""
+
+#: admin/menu/tabs/upsells.php:424
+msgid "Rule has been updated successfully"
+msgstr ""
+
+#: admin/menu/tabs/upsells.php:440
+msgid "Rule Name is mandatory"
+msgstr ""
+
+#: admin/menu/tabs/upsells.php:458
+msgid "Please select a coupon"
+msgstr ""
+
+#: admin/menu/tabs/upsells.php:462 admin/menu/tabs/upsells.php:506
+#: admin/menu/tabs/upsells.php:520
+msgid "Please select atleast one product"
+msgstr ""
+
+#: admin/menu/tabs/upsells.php:468 admin/menu/tabs/upsells.php:512
+msgid "Quantity for Selected Upsell Product(s)cannot be empty"
+msgstr ""
+
+#: admin/menu/tabs/upsells.php:474
+msgid "Please select atleast one Product for buy product"
+msgstr ""
+
+#: admin/menu/tabs/upsells.php:476
+msgid "Please select atleast one Category for buy product"
+msgstr ""
+
+#: admin/menu/tabs/upsells.php:481
+msgid "Please select atleast one Product for get product"
+msgstr ""
+
+#: admin/menu/tabs/upsells.php:486
+msgid "Buy Product count cannot be empty."
+msgstr ""
+
+#: admin/menu/tabs/upsells.php:491
+msgid "Get Product count cannot be empty."
+msgstr ""
+
+#: admin/menu/tabs/upsells.php:496
+msgid "Repeat Limit field cannot be empty."
+msgstr ""
+
+#: admin/menu/tabs/upsells.php:518
+msgid "Please select atleast one category"
+msgstr ""
+
+#. translators: %s: products
+#: admin/menu/tabs/upsells.php:533
+msgid "The selected product(s) %s cannot be set as upsells. Please make sure the products you select as upsells have been published and are currently In-stock."
+msgstr ""
+
+#: admin/menu/tabs/upsells.php:540
+msgid "Please select atleast one Category"
+msgstr ""
+
+#: admin/menu/tabs/upsells.php:546
+msgid "Product Count cannot be more than the number of selected products."
+msgstr ""
+
+#: admin/menu/tabs/upsells.php:548
+msgid "Product Count cannot be empty."
+msgstr ""
+
+#: admin/menu/tabs/upsells.php:554
+msgid "Minimum Quantity field cannot be empty."
+msgstr ""
+
+#: admin/menu/views/add-new-rule.php:17 admin/menu/views/edit-rule.php:18
+msgid "When set to Active, the products from this rule will be listed to the user. The user can choose their Upsell from the available products."
+msgstr ""
+
+#: admin/menu/views/add-new-rule.php:22 admin/menu/views/edit-rule.php:23
+#: admin/menu/wp-list-table/class-cartpops-rules-list-table.php:251
+msgid "Active"
+msgstr ""
+
+#: admin/menu/views/add-new-rule.php:23 admin/menu/views/edit-rule.php:24
+msgid "In-active"
+msgstr ""
+
+#: admin/menu/views/edit-rule.php:31
+#: admin/menu/wp-list-table/class-cartpops-rules-list-table.php:170
+msgid "Rule Name"
+msgstr ""
+
+#: admin/menu/views/add-new-rule.php:39 admin/menu/views/edit-rule.php:40
+msgid "Description"
+msgstr ""
+
+#: admin/menu/views/add-new-rule.php:52
+msgid "Add Rule"
+msgstr ""
+
+#: admin/menu/views/edit-rule.php:11
+msgid "Edit Rule"
+msgstr ""
+
+#: admin/menu/views/edit-rule.php:54
+msgid "Update Rule"
+msgstr ""
+
+#: admin/menu/views/html-card-color-presets.php:14
+msgid "Default theme"
+msgstr ""
+
+#: admin/menu/views/html-card-color-presets.php:46
+msgid "Blue theme"
+msgstr ""
+
+#: admin/menu/views/html-card-color-presets.php:78
+msgid "Dark theme"
+msgstr ""
+
+#: admin/menu/views/html-card-color-presets.php:110
+msgid "Desert theme"
+msgstr ""
+
+#: admin/menu/views/html-card-color-presets.php:142
+msgid "Orange theme"
+msgstr ""
+
+#: admin/menu/views/html-settings-buttons.php:10
+msgid "Save changes"
+msgstr ""
+
+#: admin/menu/views/html-settings-buttons.php:20
+msgid "Reset these settings"
+msgstr ""
+
+#: admin/menu/views/html-shortcodes-info.php:17
+#: admin/menu/views/html-shortcodes-info.php:23
+msgid "Syntax"
+msgstr ""
+
+#: admin/menu/views/html-shortcodes-info.php:24
+msgid "[shortcode parameter1 = \"value\" parameter2 = \"value\" ]"
+msgstr ""
+
+#: admin/menu/views/html-shortcodes-info.php:29
+msgid "Example"
+msgstr ""
+
+#: admin/menu/views/html-shortcodes-info.php:36
+msgid "Parameters"
+msgstr ""
+
+#: admin/menu/views/html-shortcodes-info.php:37
+msgid "Value"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-criteria.php:17
+msgid "Criteria Type"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-criteria.php:18
+msgid "AND – The user will be eligible only when they satisfy both the criteria. OR – The user will be eligible if they satisfy any one of the criteria"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-criteria.php:23
+msgid "AND"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-criteria.php:24
+msgid "OR"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-criteria.php:31
+msgid "Criteria Calculated based on"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-criteria.php:32
+msgid "Cart Subtotal - Sum of all Product Prices and Taxes if applicable. Order Total - Sum of all Product Prices, Shipping and Taxes. Category Total - Sum of all Product Prices plus applicable Taxes that belong to a particular category."
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-criteria.php:37
+msgid "Cart Subtotal"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-criteria.php:38
+msgid "Order Total"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-criteria.php:39
+msgid "Category Total"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-criteria.php:46
+msgid "Select a Category"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-criteria.php:63
+#: admin/menu/views/rule-panel/html-rule-data-criteria.php:79
+#: admin/menu/views/rule-panel/html-rule-data-criteria.php:95
+msgid "Min"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-criteria.php:67
+#: admin/menu/views/rule-panel/html-rule-data-criteria.php:83
+#: admin/menu/views/rule-panel/html-rule-data-criteria.php:99
+msgid "Max"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-criteria.php:74
+msgid "Cart Quantity"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-criteria.php:75
+msgid "The user's cart quantity(sum of all product quantities) should be within the specified range"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-criteria.php:90
+msgid "Number of Products in the Cart"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-criteria.php:91
+msgid "Total number of products added in the user's cart should be within the specified range"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:19
+msgid "User Filter"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:20
+msgid "The selected users will be eligible for upsells"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:25
+msgid "All User(s)"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:26
+msgid "Include User(s)"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:27
+msgid "Exclude User(s)"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:28
+msgid "Include User Role(s)"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:29
+msgid "Exclude User Role(s)"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:36
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:55
+msgid "Select User(s)"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:45
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:64
+msgid "Search a User"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:74
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:90
+msgid "Select User Role(s)"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:106
+msgid "Product Filter"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:107
+msgid "The users will be eligible for free products when they purchase any of the products selected in this option."
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:112
+msgid "All Product(s)"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:113
+msgid "Include Product(s)"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:114
+msgid "Exclude Product(s)"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:115
+msgid "All Categories"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:116
+msgid "Include Categories"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:117
+msgid "Exclude Categories"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:124
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:189
+msgid "Applicable when"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:125
+msgid " This option provides additional control on when to award the CartPops."
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:130
+msgid "Any one of the selected Product(s) must be in cart"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:131
+msgid "All the selected Product(s) must be in cart"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:132
+msgid "Only the selected Product(s) must be in cart"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:133
+msgid "User purchases the Specified Number of Products"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:140
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:159
+#: admin/menu/views/rule-panel/html-rule-data-general.php:31
+#: admin/menu/views/rule-panel/html-rule-data-general.php:251
+msgid "Select Product(s)"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:149
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:168
+#: admin/menu/views/rule-panel/html-rule-data-general.php:43
+#: admin/menu/views/rule-panel/html-rule-data-general.php:119
+#: admin/menu/views/rule-panel/html-rule-data-general.php:169
+#: admin/menu/views/rule-panel/html-rule-data-general.php:263
+msgid "Search a Product"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:178
+msgid "Product Count"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:179
+msgid "The user must add the number of products mentioned in this option to their cart in order for them to be eligibile for a Upsell."
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:190
+msgid "This option provides additional control on when to award the CartPops."
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:195
+msgid "Any one of the product(s) should be from the selected category"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:196
+msgid "One product from each category must be in cart"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:197
+msgid "Only products from the selected category should be in cart"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:198
+msgid "Total Quantity of the Product(s) from the selected categories"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:205
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:232
+#: admin/menu/views/rule-panel/html-rule-data-general.php:53
+msgid "Select Categories"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:221
+msgid "Minimum Quantity"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-filters.php:222
+msgid "The user's cart must contain the minimum quantity mentioned in this option which is the sum of the product(s) quantity that belongs to the selected categories."
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-general.php:19
+msgid "Upsell Product Selection Type"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-general.php:23
+msgid "Selected Product(s)"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-general.php:24
+msgid "Products from Selected Categories"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-general.php:32
+msgid "The selected products will be displayed to the user"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-general.php:54
+msgid "The products from the selected categories will be displayed to the user"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-general.php:71
+#: admin/menu/views/rule-panel/html-rule-data-general.php:273
+msgid "Quantity for Selected Upsell Product(s)"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-general.php:80
+msgid "Upsell Product Type"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-general.php:81
+msgid "When set to Same Product, the user will receive the specified quantities of the same product for free. When set to Different products, the user will receive the specified quantities of another product  for free."
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-general.php:86
+msgid "Same Product"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-general.php:87
+msgid "Different Products"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-general.php:94
+msgid "Buy Product Type"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-general.php:95
+msgid "Products: The user will receive a Upsell if they purchase the selected product. Categories: The user will receive a Upsell if they purchase any one product from the selected category."
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-general.php:100
+msgid "Product"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-general.php:101
+msgid "Category"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-general.php:108
+msgid "Buy Product"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-general.php:129
+msgid "Buy Quantity Calculated Based on"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-general.php:130
+msgid "Same Product's Quantity: Quantity must match for each product to receive a free upsell. Total Quantity of the Selected Category's Products: Quantity must match either for each product or quantity of products which belong to the selected category should match to receive a free upsell."
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-general.php:135
+msgid "Same Product's Quantity"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-general.php:136
+msgid "Total Quantity of the Selected Category's Products"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-general.php:143
+msgid "Buy Category"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-general.php:159
+#: admin/menu/wp-list-table/class-cartpops-rules-list-table.php:499
+msgid "Get Product(s)"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-general.php:179
+msgid "Buy Quantity"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-general.php:188
+msgid "Get Quantity"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-general.php:197
+msgid "Repeat Upsell"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-general.php:198
+msgid "When enabled, the user will keep receiving upsells every time they add the multiples of the required quantity to the cart."
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-general.php:208
+msgid "Repeat Upsell Mode"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-general.php:209
+msgid "Unlimited: No restriction on receiving CartPops. Limited: Upsell can be received till the Repeat Limit is reached."
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-general.php:214
+#: admin/menu/wp-list-table/class-cartpops-rules-list-table.php:413
+#: admin/menu/wp-list-table/class-cartpops-rules-list-table.php:415
+msgid "Unlimited"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-general.php:215
+msgid "Limited"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-general.php:222
+msgid "Repeat Limit"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-general.php:231
+msgid "Select the Coupon"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-general.php:241
+msgid "Search a Coupon"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-general.php:252
+msgid "The selected Product(s) will be added to the user's cart once the coupon applied"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-notices.php:18
+msgid "Upsell Upselll Eligibility Notice in Cart for this Rule"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-notices.php:19
+msgid "When set to \"Show\", a notice will be displayed to user in cart and checkout if they are eligible for receiving upsells."
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-notices.php:32
+msgid "CartPops Eligibility Notice"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-notices.php:45
+msgid "Shortcodes"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-notices.php:49
+msgid "The minimum order total required to receive free upsell(s)"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-notices.php:53
+msgid "The minimum cart subtotal required to receive free upsell(s)"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-notices.php:57
+msgid "The minimum category subtotal required in the cart to receive free upsell(s)"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-notices.php:61
+msgid "The minimum cart quantity required to receive free upsell(s)"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-notices.php:65
+msgid "The minimum no.of products which has to be purchased to receive free upsell(s)"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-panel.php:14
+msgid "When set to Manual Upsells, the users can choose their upsell product(s). When set to Automatic Upsells, the upsell product(s) set in this rule will be automatically added to the user's cart. When set to Buy X Get Y,  the user will get the specified quantities of the product for free if they purchase the specified quantities of the product."
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-panel.php:18
+msgid "Manual Upsells"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-panel.php:19
+msgid "Automatic Upsells"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-panel.php:20
+msgid "Buy X Get Y(Buy One Get One)"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-restrictions.php:17
+msgid "Rule Validity"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-restrictions.php:18
+msgid "If left empty, the rule will be valid on all days."
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-restrictions.php:22
+#: admin/menu/wp-list-table/class-cartpops-rules-list-table.php:418
+msgid "From"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-restrictions.php:34
+#: admin/menu/wp-list-table/class-cartpops-rules-list-table.php:418
+msgid "To"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-restrictions.php:49
+msgid "Week Day(s) Restrictions"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-restrictions.php:50
+msgid "The rule will be valid for the selected Days. If left empty, the rule will be valid for all days of the week."
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-restrictions.php:66
+msgid "Maximum Upsells in an Order from this Rule"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-restrictions.php:67
+msgid "If left empty / when the rule value is more the Global Restriction, the Global Restriction will apply."
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-restrictions.php:78
+msgid "Order Restrictions"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-restrictions.php:79
+msgid "If left empty, the rule will be valid for unlimited orders"
+msgstr ""
+
+#. translators: %s: number of orders and rule usage count
+#: admin/menu/views/rule-panel/html-rule-data-restrictions.php:90
+msgid "Orders (%1$s used %2$d remaining)"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-restrictions.php:92
+msgid "Reset used count"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-restrictions.php:99
+msgid "Order Restriction per User"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-restrictions.php:100
+msgid "When set to Enable, registered users can be restricted to receive free upsell(s) from this rule for a fixed number of times."
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-restrictions.php:105
+msgid "Disable"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-restrictions.php:106
+msgid "Enable - For Registered Users Only"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-restrictions.php:113
+msgid "Number of Order(s) per User"
+msgstr ""
+
+#: admin/menu/views/rule-panel/html-rule-data-restrictions.php:114
+msgid "The number of order(s) for which each registered users can receive upsell product(s) from this rule."
+msgstr ""
+
+#. translators: %s: search keywords
+#: admin/menu/wp-list-table/class-cartpops-rules-list-table.php:151
+msgid "Search results for &#8220;%s&#8221;"
+msgstr ""
+
+#: admin/menu/wp-list-table/class-cartpops-rules-list-table.php:157
+msgid "Search Rule"
+msgstr ""
+
+#: admin/menu/wp-list-table/class-cartpops-rules-list-table.php:171
+msgid "Status"
+msgstr ""
+
+#: admin/menu/wp-list-table/class-cartpops-rules-list-table.php:172
+msgid "Validity"
+msgstr ""
+
+#: admin/menu/wp-list-table/class-cartpops-rules-list-table.php:173
+msgid "Type"
+msgstr ""
+
+#: admin/menu/wp-list-table/class-cartpops-rules-list-table.php:174
+msgid "Product(s) / Categories"
+msgstr ""
+
+#: admin/menu/wp-list-table/class-cartpops-rules-list-table.php:175
+msgid "Created Date"
+msgstr ""
+
+#: admin/menu/wp-list-table/class-cartpops-rules-list-table.php:176
+msgid "Last Modified Date"
+msgstr ""
+
+#: admin/menu/wp-list-table/class-cartpops-rules-list-table.php:177
+msgid "Actions"
+msgstr ""
+
+#: admin/menu/wp-list-table/class-cartpops-rules-list-table.php:181
+#: admin/menu/wp-list-table/class-cartpops-rules-list-table.php:461
+msgid "Sort"
+msgstr ""
+
+#: admin/menu/wp-list-table/class-cartpops-rules-list-table.php:219
+msgid "No rule to show."
+msgstr ""
+
+#: admin/menu/wp-list-table/class-cartpops-rules-list-table.php:231
+#: includes/functions/cartpops-admin-functions.php:302
+msgid "Activate"
+msgstr ""
+
+#: admin/menu/wp-list-table/class-cartpops-rules-list-table.php:232
+#: includes/functions/cartpops-admin-functions.php:305
+msgid "Deactivate"
+msgstr ""
+
+#: admin/menu/wp-list-table/class-cartpops-rules-list-table.php:233
+msgid "Delete"
+msgstr ""
+
+#: admin/menu/wp-list-table/class-cartpops-rules-list-table.php:250
+msgid "All"
+msgstr ""
+
+#: admin/menu/wp-list-table/class-cartpops-rules-list-table.php:252
+msgid "In-Active"
+msgstr ""
+
+#: admin/menu/wp-list-table/class-cartpops-rules-list-table.php:346
+msgid "Sorry, you are not allowed to edit this item."
+msgstr ""
+
+#: admin/menu/wp-list-table/class-cartpops-rules-list-table.php:479
+msgid "Coupon Code to Apply"
+msgstr ""
+
+#: admin/menu/wp-list-table/class-cartpops-rules-list-table.php:483
+msgid "Upsell Product(s)"
+msgstr ""
+
+#: admin/menu/wp-list-table/class-cartpops-rules-list-table.php:490
+msgid "Buy Product(s)"
+msgstr ""
+
+#: admin/menu/wp-list-table/class-cartpops-rules-list-table.php:493
+msgid "Product(s) of"
+msgstr ""
+
+#: admin/menu/wp-list-table/class-cartpops-rules-list-table.php:514
+msgid "Categories"
+msgstr ""
+
+#: admin/menu/wp-list-table/class-cartpops-rules-list-table.php:518
+msgid "Product(s)"
+msgstr ""
+
+#: includes/abstracts/class-cartpops-settings-page.php:237
+msgid "Your settings have been saved"
+msgstr ""
+
+#: includes/abstracts/class-cartpops-settings-page.php:258
+msgid "These settings have been reset"
+msgstr ""
+
+#. translators: %s: number of rules
+#: includes/class-cartpops-register-post-status.php:70
+msgid "Active <span class=\"count\">(%s)</span>"
+msgid_plural "Active <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of rules
+#: includes/class-cartpops-register-post-status.php:90
+msgid "Inactive <span class=\"count\">(%s)</span>"
+msgid_plural "Inactive <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of master logs
+#: includes/class-cartpops-register-post-status.php:110
+msgid "Manual <span class=\"count\">(%s)</span>"
+msgid_plural "Manual <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of master logs
+#: includes/class-cartpops-register-post-status.php:130
+msgid "Automatic <span class=\"count\">(%s)</span>"
+msgid_plural "Automatic <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-cartpops-register-post-types.php:76
+msgid "Rules"
+msgstr ""
+
+#: includes/class-cartpops-register-post-types.php:94
+msgid "Master Log"
+msgstr ""
+
+#: includes/functions/cartpops-admin-functions.php:19
+msgid "WooCommerce"
+msgstr ""
+
+#: includes/functions/cartpops-admin-functions.php:71
+msgid "Processing"
+msgstr ""
+
+#: includes/functions/cartpops-admin-functions.php:72
+msgid "Completed"
+msgstr ""
+
+#: includes/functions/cartpops-admin-functions.php:135
+msgid "Guest"
+msgstr ""
+
+#: includes/functions/cartpops-admin-functions.php:254
+msgid "Manual"
+msgstr ""
+
+#: includes/functions/cartpops-admin-functions.php:255
+msgid "Automatic"
+msgstr ""
+
+#: includes/functions/cartpops-admin-functions.php:256
+msgid "Buy X Get Y"
+msgstr ""
+
+#: templates/drawer/recommendations.php:79
+msgid "Select options"
+msgstr "Ver opções"
+
+#: admin/class-cartpops-settings-deprecated.php:455
+msgid "This will hide the floating cart indicator when the cart is empty"
+msgstr ""
+
+#: admin/class-cartpops-settings-deprecated.php:539
+msgid "Show shipping"
+msgstr ""
+
+#: admin/class-cartpops-settings-deprecated.php:545
+msgid "Shipping calculator"
+msgstr ""
+
+#: admin/class-cartpops-settings-deprecated.php:546
+#: admin/menu/tabs/settings.php:240
+msgid "This will show a button next to the shipping line item where the customer can calculate or change their shipping."
+msgstr ""
+
+#: admin/class-cartpops-settings-deprecated.php:557
+#: admin/menu/tabs/settings.php:252
+msgid "Continue shopping (Pro)"
+msgstr ""
+
+#: admin/class-cartpops-settings-deprecated.php:558
+#: admin/menu/tabs/settings.php:253
+msgid "View cart (Pro)"
+msgstr ""
+
+#: admin/class-cartpops-settings-deprecated.php:559
+#: admin/menu/tabs/settings.php:254
+msgid "Custom URL (Pro)"
+msgstr ""
+
+#: admin/class-cartpops-settings-deprecated.php:564
+#: admin/menu/tabs/settings.php:261
+msgid "Secondary button custom URL"
+msgstr ""
+
+#: admin/class-cartpops-settings-deprecated.php:576
+#: admin/menu/tabs/settings.php:268
+msgid "Secondary button custom text"
+msgstr ""
+
+#: admin/class-cartpops-settings-deprecated.php:953
+msgid "Continue shopping text (Popup)"
+msgstr ""
+
+#. translators: 1. Link
+#: admin/class-cartpops-settings-deprecated.php:1149
+#: admin/menu/tabs/issues.php:96
+msgid "The quick translation fields in the advanced plugin settings are deprecated and will be removed on July 11, 2021. %s."
+msgstr ""
+
+#: admin/class-cartpops-settings-deprecated.php:1149
+#: admin/class-cartpops-settings-deprecated.php:1782
+#: admin/menu/tabs/issues.php:96
+msgid "Learn more here"
+msgstr ""
+
+#: admin/class-cartpops-settings-deprecated.php:1150
+#: admin/menu/tabs/issues.php:97
+msgid "Please make sure to stop using these features before July 11, 2021."
+msgstr ""
+
+#: admin/class-cartpops-settings-deprecated.php:1690
+msgid "documentation"
+msgstr ""
+
+#: admin/class-cartpops-settings-deprecated.php:1726
+#: admin/menu/tabs/settings.php:345
+msgid "Menu Cart launcher settings (Experimental)"
+msgstr ""
+
+#: admin/class-cartpops-settings-deprecated.php:1727
+msgid "Head over to your WordPress menu to activate this feature in your menu"
+msgstr ""
+
+#: admin/class-cartpops-settings-deprecated.php:1781
+msgid "Translate (Deprecated)"
+msgstr ""
+
+#: admin/class-cartpops-settings-deprecated.php:1782
+msgid "These settings are deprecated and will be removed on July 11, 2021. %s."
+msgstr ""
+
+#: includes/lib/data/class-base-data-object.php:40
+msgid "Invalid properties passed to data object constructor. Class: \"%1$s\". Invalid properties (JSON): \"%2$s\"."
+msgstr ""
+
+#: includes/lib/data/class-base-data-object.php:60
+msgid "Invalid property accessed via __get(): \"%1$s::%2$s\"."
+msgstr ""
+
+#: includes/lib/data/class-base-data-object.php:79
+msgid "Invalid property accessed via __set(): \"%1$s::%2$s\"."
+msgstr ""
+
+#: includes/functions/cartpops-admin-functions.php:299
+#: public/class-cartpops-cart.php:1061
+msgid "Edit"
+msgstr ""
+
+#: admin/class-cartpops-settings-deprecated.php:728
+msgid "Secondary Button Secondary Text"
+msgstr "Texto Secundário de Botão Secundário"
+
+#: admin/class-cartpops-settings-deprecated.php:734
+#: admin/class-cartpops-settings-deprecated.php:1613
+#: admin/menu/tabs/color.php:264
+msgid "Recommendations color scheme"
+msgstr "Esquema de cor de Recomendações"
+
+#: admin/class-cartpops-settings-deprecated.php:738
+#: admin/menu/tabs/color.php:270
+msgid "Recommendations button background color"
+msgstr "Cor de fundo de botão Recommendations"
+
+#: admin/class-cartpops-settings-deprecated.php:743
+#: admin/menu/tabs/color.php:278
+msgid "Recommendations button text color"
+msgstr "Cor de texto de botão Recommendations"
+
+#: admin/class-cartpops-settings-deprecated.php:748
+#: admin/menu/tabs/color.php:286
+msgid "Drawer Recommendations background color"
+msgstr "Cor de fundo do módulo \"Drawer Recommendations\""
+
+#: admin/class-cartpops-settings-deprecated.php:758
+#: admin/menu/tabs/color.php:302
+msgid "Drawer Recommendations text color"
+msgstr "Cor do texto do módulo \"Drawer Recommendations\""
+
+#: admin/class-cartpops-settings-deprecated.php:763
+#: admin/menu/tabs/color.php:310
+msgid "Popup Recommendations background color"
+msgstr "Cor de fundo do módulo \"Popup Recommendations\""
+
+#: admin/class-cartpops-settings-deprecated.php:768
+#: admin/menu/tabs/color.php:318
+msgid "Popup Recommendations text color"
+msgstr "Cor do texto do módulo \"Popup Recommendations\""
+
+#: admin/class-cartpops-settings-deprecated.php:775
+#: admin/class-cartpops-settings-deprecated.php:1641
+#: admin/menu/tabs/color.php:396
+msgid "Free Shipping Meter color scheme"
+msgstr "Esquema de cor do módulo \"Popup Recommendations\""
+
+#: admin/class-cartpops-settings-deprecated.php:779
+#: admin/menu/tabs/color.php:402
+msgid "Free Shipping Meter background color"
+msgstr "Cor de fundo do Medidor de Entrega Grátis"
+
+#: admin/class-cartpops-settings-deprecated.php:784
+#: admin/menu/tabs/color.php:410
+msgid "Free Shipping Meter active background color"
+msgstr "Cor de fundo ativa do Medidor de Entrega Grátis"
+
+#: admin/class-cartpops-settings-deprecated.php:792
+msgid "Floating Cart Launcher Color Scheme"
+msgstr "Esquema de cores do Lançador de Carrinho Flutuante"
+
+#: admin/class-cartpops-settings-deprecated.php:796
+#: admin/menu/tabs/color.php:216
+msgid "Floating Cart Launcher background color"
+msgstr "Cor de fundo do Lançador de Carrinho Flutuante"
+
+#: admin/class-cartpops-settings-deprecated.php:801
+#: admin/menu/tabs/color.php:224
+msgid "Floating Cart Launcher icon color"
+msgstr "Cor do ícone do Lançador de Carrinho Flutuante"
+
+#: admin/class-cartpops-settings-deprecated.php:806
+#: admin/menu/tabs/color.php:232
+msgid "Floating Cart Launcher indicator background"
+msgstr "Fundo de indicator Floating Cart Launcher"
+
+#: admin/class-cartpops-settings-deprecated.php:811
+#: admin/menu/tabs/color.php:240
+msgid "Floating Cart Launcher indicator text"
+msgstr "Texto de indicador Floating Cart Launcher"
+
+#: admin/class-cartpops-settings-deprecated.php:817
+msgid "Cart Launcher Color Scheme"
+msgstr "Esquema de Cores de Lançador de Carrinho"
+
+#: admin/class-cartpops-settings-deprecated.php:821
+#: admin/menu/tabs/color.php:348
+msgid "Cart Launcher background color"
+msgstr "Cor de fundo do Lançador de Carrinho"
+
+#: admin/class-cartpops-settings-deprecated.php:826
+#: admin/menu/tabs/color.php:356
+msgid "Cart Launcher text color"
+msgstr "Cor de texto do Lançador de Carrinho"
+
+#: admin/class-cartpops-settings-deprecated.php:831
+#: admin/menu/tabs/color.php:364
+msgid "Cart Launcher bubble background"
+msgstr "Fundo de bolha do Lançador de Carrinho"
+
+#: admin/class-cartpops-settings-deprecated.php:836
+#: admin/menu/tabs/color.php:372
+msgid "Cart Launcher bubble text"
+msgstr "Texto da bolha do Lançador de Carrinho"
+
+#: admin/class-cartpops-settings-deprecated.php:842
+msgid "Support Us"
+msgstr "Apoie-nos"
+
+#: admin/class-cartpops-settings-deprecated.php:846
+#: admin/menu/tabs/settings.php:84
+msgid "Display Powered by CartPops"
+msgstr "Distribuído por CartPops"
+
+#: admin/class-cartpops-settings-deprecated.php:847
+msgid "The core functionality of CartPops is free forever. You can support ongoing development and new updates by showing Powered by CartPops on your Add To Cart Triggers"
+msgstr "A funcionalidade central do CartPops é grátis para sempre. Pode apoiar o desenvolvimento em curso e novas atualizações exibindo \"Distribuído por CartPops\" nas suas Ações de Adicionar ao Carrinho"
+
+#: admin/class-cartpops-settings-deprecated.php:852
+#: admin/menu/tabs/settings.php:92
+msgid "Partner code"
+msgstr "Código de parceiro"
+
+#: admin/class-cartpops-settings-deprecated.php:853
+msgid "Replace the default Powered by CartPops branding link with your referral link."
+msgstr "Substitua o link por defeito da marca \"Distribuído por CartPops\" pelo seu link de referência."
+
+#: admin/class-cartpops-settings-deprecated.php:860
+#: admin/menu/tabs/settings.php:95
+msgid "e.g. 93494"
+msgstr "Por exemplo 93494"
+
+#: admin/class-cartpops-settings-deprecated.php:865
+msgid "Translation"
+msgstr "Tradução"
+
+#: admin/class-cartpops-settings-deprecated.php:869
+msgid "Drawer cart title"
+msgstr "Título do carrinho de Gaveta"
+
+#: admin/class-cartpops-settings-deprecated.php:871
+#: public/class-cartpops-cart.php:257 public/class-cartpops-cart.php:282
+msgid "My cart"
+msgstr "O meu carrinho"
+
+#: admin/class-cartpops-settings-deprecated.php:876
+msgid "Generic added to cart message"
+msgstr "Mensagem adicionado ao carrinho genérica"
+
+#: admin/class-cartpops-settings-deprecated.php:879
+#: public/class-cartpops-assets.php:99
+msgid "Product successfully added to your cart."
+msgstr "Produto adicionado ao carrinho com sucesso."
+
+#: admin/class-cartpops-settings-deprecated.php:883
+msgid "Coupon title"
+msgstr "Título do cupão"
+
+#: admin/class-cartpops-settings-deprecated.php:886
+#: public/class-cartpops-cart.php:606
+msgid "Got a discount code?"
+msgstr "Tem um código de desconto?"
+
+#: admin/class-cartpops-settings-deprecated.php:890
+msgid "Coupon input field placeholder text"
+msgstr "Texto marcador de posição de campo de entrada de cupão"
+
+#: admin/class-cartpops-settings-deprecated.php:893
+#: public/class-cartpops-cart.php:607
+msgid "Enter discount code"
+msgstr "Inserir código de desconto"
+
+#: admin/class-cartpops-settings-deprecated.php:897
+msgid "Coupon button text"
+msgstr "Texto de botão de cupãp"
+
+#: admin/class-cartpops-settings-deprecated.php:900
+#: public/class-cartpops-cart.php:608
+msgid "Apply"
+msgstr "Aplicar"
+
+#: admin/class-cartpops-settings-deprecated.php:904
+msgid "Line item: Subtotal"
+msgstr "Item de linha: Subtotal"
+
+#: admin/class-cartpops-settings-deprecated.php:906
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:145
+#: public/class-cartpops-cart.php:864
+msgid "Subtotal"
+msgstr "Subtotal"
+
+#: admin/class-cartpops-settings-deprecated.php:911
+msgid "Line item: Discount"
+msgstr "Item de linha: Desconto"
+
+#: admin/class-cartpops-settings-deprecated.php:913
+#: public/class-cartpops-cart.php:997
+msgid "Discount"
+msgstr "Desconto"
+
+#: admin/class-cartpops-settings-deprecated.php:918
+msgid "Line item: Total"
+msgstr "Item de linha: Total"
+
+#: admin/class-cartpops-settings-deprecated.php:920
+#: public/class-cartpops-cart.php:896
+msgid "Total"
+msgstr "Total"
+
+#: admin/class-cartpops-settings-deprecated.php:925
+msgid "Checkout button"
+msgstr "Botão de Checkout"
+
+#: admin/class-cartpops-settings-deprecated.php:927
+#: public/class-cartpops-cart.php:90 public/class-cartpops-cart.php:817
+msgid "Checkout now"
+msgstr "Fazer Checkout agora"
+
+#: admin/class-cartpops-settings-deprecated.php:932
+msgid "Empty checkout button"
+msgstr "Botão de checkout vazio"
+
+#: admin/class-cartpops-settings-deprecated.php:934
+#: public/class-cartpops-cart.php:820
+msgid "Your cart is empty. Shop now"
+msgstr "O seu carrinho está vazio. Compre já"
+
+#: admin/class-cartpops-settings-deprecated.php:939
+msgid "Drawer empty state title"
+msgstr ""
+"Campo vazio\n"
+"Introduza título"
+
+#: admin/class-cartpops-settings-deprecated.php:941
+#: public/class-cartpops-cart.php:377
+msgid "Your cart is empty."
+msgstr "O seu carrinho está vazio."
+
+#: admin/class-cartpops-settings-deprecated.php:946
+msgid "Drawer empty state subtitle"
+msgstr ""
+"Campo vazio\n"
+"Introduza sub-título"
+
+#: admin/class-cartpops-settings-deprecated.php:948
+#: public/class-cartpops-cart.php:378
+msgid "Looks like you haven't made a choice yet."
+msgstr "Parece que ainda não tomou uma decisão."
+
+#: admin/class-cartpops-settings-deprecated.php:955
+#: public/class-cartpops-cart.php:795
+msgid "Or continue shopping"
+msgstr "Ou continue a comprar"
+
+#: admin/class-cartpops-settings-deprecated.php:960
+msgid "View details text"
+msgstr "Ver texto de detalhes"
+
+#: admin/class-cartpops-settings-deprecated.php:962
+#: includes/functions/cartpops-common-functions.php:935
+#: public/class-cartpops-cart.php:441 public/class-cartpops-cart.php:483
+msgid "View details"
+msgstr "Ver detalhes"
+
+#: admin/class-cartpops-settings-deprecated.php:968
+#: admin/menu/tabs/settings.php:40
+msgid "Custom code"
+msgstr "Código personalizado"
+
+#: admin/class-cartpops-settings-deprecated.php:972
+#: admin/menu/tabs/settings.php:578
+msgid "Custom CSS"
+msgstr "CSS personalizado."
+
+#. translators: %1$s is replaced with an icon
+#: admin/class-cartpops-settings-deprecated.php:974
+#: admin/menu/tabs/settings.php:581
+msgid "Add custom CSS, this will fire after any CartPops CSS. This is for more advanced users! You know what to do %1$s"
+msgstr ""
+
+#: admin/class-cartpops-settings-deprecated.php:980
+msgid "Custom Javascript"
+msgstr "Javascript personalizado"
+
+#. translators: %1$s is replaced with an icon
+#: admin/class-cartpops-settings-deprecated.php:982
+#: admin/menu/tabs/settings.php:591
+msgid "Add custom JS, this will fire after any CartPops JS. This is for more advanced users! You know what to do %1$s"
+msgstr ""
+
+#: admin/class-cartpops-settings-deprecated.php:989
+msgid "Miscellaneous"
+msgstr "Diversos"
+
+#: admin/class-cartpops-settings-deprecated.php:993
+msgid "Force refresh on page load"
+msgstr "Forçar atualização no carregamento da página"
+
+#: admin/class-cartpops-settings-deprecated.php:994
+msgid "This will force refresh the cart on each page load. Only use if you're having troubles with how the cart loads."
+msgstr "Isto irá forçar a atualização do carrinho em cada  carregamento de página. Use apenas quando tiver problemas com a forma como o carrinho carrega."
+
+#: admin/class-cartpops-settings-deprecated.php:1103
+#: admin/menu/class-cartpops-settings.php:1003
+msgid "View Documentation"
+msgstr "Ver Documentação"
+
+#: admin/class-cartpops-settings-deprecated.php:1132
+#: admin/menu/tabs/issues.php:72
+msgid "An option in WooCommerce is turned on which will immediately redirect customers to the /cart/ page preventing CartPops to open."
+msgstr "Uma opção de WooCommerce é ligada que irá redirecionar imediatamente os clientes para a página /carrinho/ prevenindo o CartPops de abrir."
+
+#. translators: 1. Link
+#: admin/class-cartpops-settings-deprecated.php:1134
+#: admin/menu/tabs/issues.php:74
+msgid "Turn off \"Redirect to the cart page after successful addition\" in the WooCommerce plugin settings. %s."
+msgstr "Desligue \"Redirecionar para a página de carrinho após uma adição bem sucedida\" na definições de extensão WooCommerce. %s."
+
+#: admin/class-cartpops-settings-deprecated.php:1134
+#: admin/menu/tabs/issues.php:74 admin/menu/tabs/issues.php:81
+msgid "Take me there"
+msgstr "Leve-me lá"
+
+#: admin/class-cartpops-settings-deprecated.php:1140
+#: admin/menu/tabs/issues.php:87
+msgid "The premium version of CartPops is activated without a valid license. Without a license, all Pro features are automatically disabled."
+msgstr "A versão premium do CartPops é ativada sem uma licença válida. Sem a licença, todas as características Pro serão automaticamente  desativadas."
+
+#. translators: 1. Link
+#: admin/class-cartpops-settings-deprecated.php:1142
+#: admin/menu/tabs/issues.php:89
+msgid "Activate your license, or purchase a new license. %s."
+msgstr "Ative a sua licença, ou compre uma licença nova. %s."
+
+#: admin/class-cartpops-settings-deprecated.php:1142
+#: admin/menu/tabs/issues.php:89
+msgid "Purchase a license"
+msgstr "Comprar uma licença"
+
+#: admin/class-cartpops-settings-deprecated.php:1182
+msgid "Refreshing issues"
+msgstr "Problemas de atualização"
+
+#: admin/class-cartpops-settings-deprecated.php:1184
+msgid "Something went wrong"
+msgstr "Algo correu mal"
+
+#. translators: %1$s  and %2$s are replaced with a plugin option name and %3$s
+#. with an emoji.
+#: admin/class-cartpops-settings-deprecated.php:1341
+#: admin/menu/class-cartpops-settings.php:448
+msgid "%1$s %2$s Requires upgrade %3$s"
+msgstr "%1$s %2$s Requer atualização %3$s"
+
+#: admin/class-cartpops-settings-deprecated.php:1414
+msgid "Upload an image"
+msgstr "Carregar uma imagem"
+
+#: admin/class-cartpops-settings-deprecated.php:1414
+msgid "Use image"
+msgstr "Usar imagem"
+
+#: admin/class-cartpops-settings-deprecated.php:1414
+msgid "Upload new image"
+msgstr "Carregar nova imagem"
+
+#: admin/class-cartpops-settings-deprecated.php:1415
+msgid "Remove image"
+msgstr "Remover imagem"
+
+#. translators: %1$s is replaced with an icon
+#: admin/class-cartpops-settings-deprecated.php:1445
+#: admin/menu/class-cartpops-settings.php:1006
+msgid "Click %1$s to go to the documentation"
+msgstr ""
+
+#: admin/class-cartpops-settings-deprecated.php:1491
+#: admin/menu/views/html-settings.php:21
+msgid "Version"
+msgstr "Versão"
+
+#: admin/class-cartpops-settings-deprecated.php:1552
+#: admin/menu/tabs/issues.php:27
+msgid "Issues"
+msgstr "Problemas"
+
+#: admin/class-cartpops-settings-deprecated.php:1595
+#: admin/menu/tabs/color.php:55
+msgid "Primary color scheme"
+msgstr "Esquema de cor primário"
+
+#: admin/class-cartpops-settings-deprecated.php:1604
+msgid "Buttons color scheme"
+msgstr "Esquema de cor de botões"
+
+#: admin/class-cartpops-settings-deprecated.php:1622
+#: admin/menu/tabs/color.php:210
+msgid "Floating Cart launcher color scheme"
+msgstr "Esquema de cores do Lançador de Carrinho Flutuante"
+
+#: admin/class-cartpops-settings-deprecated.php:1631
+#: admin/menu/tabs/color.php:342
+msgid "Cart launcher color scheme"
+msgstr "Esquema de cores do Lançador de Carrinho"
+
+#: admin/class-cartpops-settings-deprecated.php:1688
+msgid "Add To Cart Trigger settings"
+msgstr "Definições de Ação de Adicionar ao Carrinho"
+
+#: admin/class-cartpops-settings-deprecated.php:1708
+msgid "Coupon form settings"
+msgstr "Definições de formulário de cupão"
+
+#: admin/class-cartpops-settings-deprecated.php:1717
+#: admin/menu/tabs/settings.php:288
+msgid "Floating Cart Launcher settings"
+msgstr "Definições de Lançador de Carrinho Flutuante"
+
+#: admin/class-cartpops-settings-deprecated.php:1743
+msgid "Product Recommendation Engine settings"
+msgstr "Definições de Motor de Recomendação de Produtos"
+
+#: admin/class-cartpops-settings-deprecated.php:1752
+#: admin/menu/tabs/settings.php:39
+msgid "Free Shipping Meter settings"
+msgstr "Definições de Medidor de Entrega Grátis"
+
+#: admin/class-cartpops-settings-deprecated.php:1771
+msgid "Support on-going development"
+msgstr "Apoio o desenvolvimento em curso"
+
+#: admin/class-cartpops-settings-deprecated.php:1791
+msgid "Custom code settings"
+msgstr "Definições de código personalizado"
+
+#: admin/class-cartpops-settings-deprecated.php:1800
+#: admin/menu/tabs/settings.php:41 admin/menu/tabs/settings.php:610
+msgid "Miscellaneous & Experimental"
+msgstr "Diversos e Experimental"
+
+#: admin/menu/views/content-issues.php:48 admin/menu/views/html-issues.php:53
+msgid "No issues were found."
+msgstr "Não foram encontrados problemas."
+
+#: admin/menu/views/content-issues.php:51 admin/menu/views/html-issues.php:56
+msgid "No action needed."
+msgstr "Não são necessárias ações"
+
+#: admin/menu/views/html-card-upgrade.php:21
+msgid "Popup & Bar Add To Cart Triggers"
+msgstr "Ações de Pop-up e Barra Adicionar ao Carrinho"
+
+#: admin/menu/views/html-card-upgrade.php:22
+msgid "Recommend Custom Products"
+msgstr "Recomendar Produtos Personalizados"
+
+#: admin/menu/views/html-card-upgrade.php:23
+msgid "Add To Cart Triggers"
+msgstr "Ações de Adicionar ao Carrinho"
+
+#: cartpops.php:81
+msgid "Oh no! WooCommerce is required to use CartPops."
+msgstr "Oh não! É necessário o WooCommerce para utilizar o CartPops"
+
+#: cartpops.php:85
+msgid "To prevent fatal errors, we have loaded CartPops into safe mode."
+msgstr "Para prevenir erros fatais, carregamos o CartPops no modo seguro"
+
+#: cartpops.php:93
+msgid "View troubleshooting docs"
+msgstr "Ver documentos de resolução de problemas"
+
+#. translators: Accessibility text.
+#: cartpops.php:95 templates/components/powered-by.php:23
+msgid "(opens in a new tab)"
+msgstr "(abre um novo separador)"
+
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:40
+msgid "CartPops Cart"
+msgstr "Carrinho CartPops"
+
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:84
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:185
+msgid "Menu Icon"
+msgstr "Ícone de Menu"
+
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:115
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:405
+msgid "Items Indicator"
+msgstr "Indicador de Itens"
+
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:130
+msgid "Hide Empty"
+msgstr "Esconder Vazio"
+
+#: admin/menu/views/rule-panel/html-rule-data-notices.php:25
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:147
+msgid "Show"
+msgstr "Mostrar"
+
+#: admin/menu/views/rule-panel/html-rule-data-notices.php:24
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:148
+msgid "Hide"
+msgstr "Esconder"
+
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:158
+msgid "Alignment"
+msgstr "Alinhamento"
+
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:162
+msgid "Left"
+msgstr "Esquerda"
+
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:166
+msgid "Center"
+msgstr "Centro"
+
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:170
+msgid "Right"
+msgstr "Direita"
+
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:192
+msgid "Normal"
+msgstr "Normal"
+
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:197
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:249
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:415
+msgid "Text Color"
+msgstr "Cor do Texto"
+
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:209
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:260
+msgid "Icon Color"
+msgstr "Cor do Ícone"
+
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:221
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:271
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:429
+msgid "Background Color"
+msgstr "Cor de Fundo"
+
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:233
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:282
+msgid "Border Color"
+msgstr "Cor de Margem"
+
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:244
+msgid "Hover"
+msgstr "Pairar"
+
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:297
+msgid "Border Width"
+msgstr "Largura da Margem"
+
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:315
+msgid "Border Radius"
+msgstr "Raio da Margem"
+
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:355
+msgid "Size"
+msgstr "Dimensão"
+
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:373
+msgid "Spacing"
+msgstr "Espaçamento"
+
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:392
+msgid "Padding"
+msgstr "Preenchimento"
+
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:443
+msgid "Distance"
+msgstr "Distância"
+
+#. translators: 1: Plugin name 2: Elementor
+#: includes/integrations/elementor/class-cartpops-elementor-widgets.php:155
+msgid "\"%1$s\" requires \"%2$s\" to be installed and activated."
+msgstr "\"%1$s\" requer \"%2$s\" para ser instalado e ativado."
+
+#: includes/integrations/elementor/class-cartpops-elementor-widgets.php:156
+#: includes/integrations/elementor/class-cartpops-elementor-widgets.php:182
+#: includes/integrations/elementor/class-cartpops-elementor-widgets.php:209
+msgid "CartPops Elementor Widgets"
+msgstr "Ferramentas Elementor Cartpops"
+
+#: includes/integrations/elementor/class-cartpops-elementor-widgets.php:157
+#: includes/integrations/elementor/class-cartpops-elementor-widgets.php:183
+msgid "Elementor"
+msgstr "Elementor"
+
+#. translators: 1: Plugin name 2: Elementor 3: Required Elementor version
+#. translators: 1: Plugin name 2: PHP 3: Required PHP version
+#: includes/integrations/elementor/class-cartpops-elementor-widgets.php:181
+#: includes/integrations/elementor/class-cartpops-elementor-widgets.php:208
+msgid "\"%1$s\" requires \"%2$s\" version %3$s or greater."
+msgstr "\"%1$s\" requer \"%2$s\" versão %3$s ou superior."
+
+#: includes/integrations/elementor/class-cartpops-elementor-widgets.php:210
+msgid "PHP"
+msgstr "PHP"
+
+#: public/class-cartpops-ajax.php:204
+msgid "Something went wrong, please reload the page."
+msgstr "Algo correu mal, por favor volte a carregar a página."
+
+#. translators: %s: product name
+#: public/class-cartpops-ajax.php:215
+msgid "\"%s\" has been added to the cart."
+msgstr "\"%s\" foi adicionado ao carrinho."
+
+#: public/class-cartpops-ajax.php:217
+msgid "Added to the cart successfully."
+msgstr "Adicionado ao carrinho com sucesso."
+
+#: public/class-cartpops-ajax.php:247
+msgid "Item"
+msgstr "Item"
+
+#. Translators: %s Product title.
+#: public/class-cartpops-ajax.php:252 public/class-cartpops-ajax.php:256
+msgid "%s removed."
+msgstr "%s removido."
+
+#: public/class-cartpops-ajax.php:253
+msgid "Undo?"
+msgstr "Desfazer?"
+
+#. translators: %s: Item name.
+#: public/class-cartpops-ajax.php:284
+msgid "%s has been added back to your cart."
+msgstr "%s foi adicionado de volta ao seu carrinho."
+
+#: public/class-cartpops-ajax.php:310
+msgid "Did not pass security check"
+msgstr "Não passou a verificação de segurança"
+
+#. translators: %s: product name
+#: public/class-cartpops-ajax.php:332
+msgid "Sorry, \"%s\" is not in stock. Please edit your cart and try again. We apologize for any inconvenience caused."
+msgstr "Desculpe, \"%s\" não está em stock. Por favor edite o seu carrinho e tente novamente. Pedimos desculpa pela inconveniência causada."
+
+#. translators: %s: product name
+#: public/class-cartpops-ajax.php:340
+msgid "\"%s\" has been updated."
+msgstr "\"%s\" foi atualizado."
+
+#. translators: 1: product name 2: quantity in stock
+#: public/class-cartpops-ajax.php:359
+msgid "Sorry, we do not have enough \"%1$s\" in stock to fulfill your order (%2$s available). We apologize for any inconvenience caused."
+msgstr "Desculpe, não temos \"1%s\" suficiente em stock para cumprir o seu pedido. (\"2%s\" disponível). Pedimos desculpa pela inconveniência causada."
+
+#. translators: %s: product name
+#: public/class-cartpops-ajax.php:368
+msgid "\"%s\" was removed from your cart"
+msgstr "\"%s\" foi removido do seu carrinho"
+
+#: public/class-cartpops-ajax.php:408
+msgid "Your coupon code was applied successfully."
+msgstr "O seu código de cupão foi aplicado com sucesso."
+
+#: public/class-cartpops-ajax.php:421
+msgid "Sorry, this coupon code is not valid!"
+msgstr "Desculpe, este código de cupão não é válido."
+
+#: public/class-cartpops-ajax.php:425
+msgid "Sorry, this coupon code is already applied!"
+msgstr "Desculpe, este código de cupão já está aplicado!"
+
+#: public/class-cartpops-ajax.php:451
+msgid "Sorry there was a problem removing this coupon."
+msgstr "Desculpe, houve um problema ao remover um cupão."
+
+#: public/class-cartpops-ajax.php:454
+msgid "Coupon has been removed."
+msgstr "O cupão foi removido."
+
+#: public/class-cartpops-ajax.php:481
+msgid "You succesfully changed your shipping details."
+msgstr "Os seus detalhes de entrega foram alterados com sucesso."
+
+#: public/class-cartpops-ajax.php:507
+msgid "You succesfully changed your shipping method"
+msgstr "O seu método de entrega foi alterado com sucesso."
+
+#: public/class-cartpops-cart.php:158
+msgid "Select a shipping method"
+msgstr "Selecionar método de entrega"
+
+#. translators: %1$s is replaced with the coupon name and %2$s with the coupon
+#. amount
+#: public/class-cartpops-cart.php:654
+msgid "Coupon \"%1$s\" (%2$s)"
+msgstr "Cupão \"%1$s\" (%2$s)"
+
+#: public/class-cartpops-cart.php:656
+msgid "Removes coupon code"
+msgstr "Remove código de cupão"
+
+#: public/class-cartpops-cart.php:696 public/class-cartpops-cart.php:794
+msgid "You might also like these items!"
+msgstr "Também pode gostar destes itens!"
+
+#. translators: %s: address
+#: public/class-cartpops-cart.php:925
+msgid "estimated for %s"
+msgstr "estimado para %s."
+
+#. translators: %s: tax amount
+#: public/class-cartpops-cart.php:928
+msgid "(includes %s)"
+msgstr "(inclui %s)"
+
+#: public/class-cartpops-cart.php:933
+msgid "Shipping calculated at checkout"
+msgstr "Entrega calculada no checkout."
+
+#: public/class-cartpops-cart.php:1030
+msgid "Shipping"
+msgstr "Entrega"
+
+#: public/class-cartpops-cart.php:1048 templates/drawer/shipping.php:62
+msgid "Shipping costs are calculated during checkout."
+msgstr "Os custos de entrega são calculados durante o checkout."
+
+#. translators: %s is an address.
+#: public/class-cartpops-cart.php:1050 templates/drawer/shipping.php:68
+msgid "No shipping options were found for %s."
+msgstr "Não foram encontradas opções de entrega para %s."
+
+#: public/class-cartpops-cart.php:1062
+msgid "Calculate shipping"
+msgstr "Calcular entrega"
+
+#. translators: %1$s is an emoji %2$s is replaced with a price (e.g. $30.00)
+#: public/class-cartpops-cart.php:1350
+msgid "%1$s Only %2$s away from free shipping!"
+msgstr ""
+
+#: public/class-cartpops-cart.php:1352
+msgid "Congrats 🎉! You have earned free shipping!"
+msgstr "Parabéns 🎉! Ganhou entrega gratuita!"
+
+#: includes/functions/cartpops-common-functions.php:897
+#: public/class-cartpops-cart.php:450
+msgid "Available on backorder"
+msgstr "Disponível como pedido atrasado"
+
+#: includes/functions/cartpops-common-functions.php:932
+#: public/class-cartpops-cart.php:443 public/class-cartpops-cart.php:480
+msgid "Product details"
+msgstr "Detalhes de produto"
+
+#: public/class-cartpops-public.php:79
+msgid "%d"
+msgid_plural "%d"
+msgstr[0] "%d"
+msgstr[1] "%d"
+
+#: templates/components/powered-by.php:20
+msgid "Powered by"
+msgstr "Distribuído por"
+
+#: templates/drawer/header.php:25
+msgid "Close cart"
+msgstr "Fechar carrinho"
+
+#: templates/drawer/shipping.php:34
+msgid "Shipping to:"
+msgstr "A entregar em:"
+
+#: templates/drawer/shipping.php:35
+msgid "Change address"
+msgstr "Alterar morada"
+
+#: templates/drawer/shipping.php:37
+msgid "Shipping options will be updated during checkout."
+msgstr "As opções de entrega serão atualizadas durante o checkout."
+
+#: templates/drawer/shipping.php:60
+msgid "Enter your address to view shipping options."
+msgstr "Insira a sua morada para ver opções de entrega."
+
+#: templates/drawer/shipping.php:69
+msgid "Enter a different address"
+msgstr "Insira uma morada diferente"
+
+#: templates/premium/cartpops-popup-recommendations.php:35
+msgid "Read More"
+msgstr "Ler Mais"
+
+#: templates/premium/cartpops-popup-recommendations.php:40
+msgid "Add to cart"
+msgstr "Adicionar ao carrinho"
+
+#. Plugin URI of the plugin/theme
+msgid "https://cartpops.com"
+msgstr "https://cartpops.com"
+
+#. Description of the plugin/theme
+msgid "Beautiful, responsive, and conversion optimized add to cart popup for WooCommerce."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "CartPops.com"
+msgstr "CartPops.com"
+
+#. Author URI of the plugin/theme
+msgid "https://cartpops.com/?utm_source=wp-plugins&utm_campaign=author-uri&utm_medium=wp-dash"
+msgstr "https://cartpops.com/?utm_source=wp-plugins&utm_campaign=author-uri&utm_medium=wp-dash"
+
+#. translators: %s: Item name.
+#: public/class-cartpops-ajax.php:247
+msgctxt "Item name in quotes"
+msgid "&ldquo;%s&rdquo;"
+msgstr "&ldquo;%s&rdquo;"
+
+#: admin/class-cartpops-settings-deprecated.php:411
+#: admin/menu/tabs/settings.php:549
+msgid "50"
+msgstr "50"
+
+#: admin/class-cartpops-settings-deprecated.php:81
+#: admin/menu/class-cartpops-menu-management.php:52
+msgid "CartPops Options"
+msgstr "Opções CartPops"
+
+#. Plugin Name of the plugin/theme
+msgid "CartPops"
+msgstr "CartPops"
+
+#: admin/class-cartpops-settings-deprecated.php:159
+msgid "Configure"
+msgstr "Configurar"
+
+#: admin/class-cartpops-settings-deprecated.php:173
+#: admin/menu/class-cartpops-settings.php:153 admin/menu/tabs/dashboard.php:24
+#: admin/menu/tabs/dashboard.php:35
+msgid "Dashboard"
+msgstr "Painel de Controlo"
+
+#: admin/class-cartpops-settings-deprecated.php:178
+msgid "Appearance"
+msgstr "Aparência"
+
+#: admin/class-cartpops-settings-deprecated.php:183
+msgid "Customization"
+msgstr "Personalização"
+
+#: admin/class-cartpops-settings-deprecated.php:188
+#: admin/menu/class-cartpops-settings.php:159 admin/menu/tabs/settings.php:25
+msgid "Settings"
+msgstr "Definições"
+
+#: admin/class-cartpops-settings-deprecated.php:193
+msgid "Power-ups"
+msgstr "Power-ups"
+
+#: admin/class-cartpops-settings-deprecated.php:198
+msgid "Advanced"
+msgstr "Avançado"
+
+#: admin/class-cartpops-settings-deprecated.php:215
+#: admin/class-cartpops-settings-deprecated.php:1561
+#: admin/menu/tabs/dashboard.php:50
+msgid "Quick actions"
+msgstr "Ações rápidas"
+
+#: admin/class-cartpops-settings-deprecated.php:219
+#: admin/menu/tabs/dashboard.php:56
+msgid "Enable CartPops"
+msgstr "Ativar CartPops"
+
+#: admin/class-cartpops-settings-deprecated.php:220
+#: admin/menu/tabs/dashboard.php:58
+msgid "If you disable this, the plugin will stop working on the front-end of your website. This is useful if you temporarily want to disable CartPops without deactivating the entire plugin."
+msgstr "Se desativar isto, a extensão vai deixar de funcionar na frente do seu website. Isto é útil se quiser desativar CartPops temporariamente sem desativar a extensão inteira."
+
+#: admin/class-cartpops-settings-deprecated.php:225
+msgid "Delete plugin settings upon deactivation"
+msgstr "Apagar as definições de extensão após desativação"
+
+#: admin/class-cartpops-settings-deprecated.php:226
+#: admin/menu/tabs/dashboard.php:72
+msgid "This wlll delete all plugins settings upon deactivation. Use with caution!"
+msgstr "Isto vai apagar todos as definições de extensões após desativação. Usar com precaução!"
+
+#: admin/class-cartpops-settings-deprecated.php:235
+#: admin/class-cartpops-settings-deprecated.php:1571
+msgid "Pro benefits"
+msgstr "Benefícios Pro"
+
+#: admin/class-cartpops-settings-deprecated.php:239
+#: admin/menu/tabs/dashboard.php:64
+msgid "Enable chat support"
+msgstr "Ativar apoio por chat"
+
+#: admin/class-cartpops-settings-deprecated.php:245
+msgid "Add to cart trigger"
+msgstr "Ação Adicionar ao carrinho"
+
+#: admin/class-cartpops-settings-deprecated.php:249
+#: admin/menu/tabs/settings.php:59
+msgid "Select an add to cart trigger"
+msgstr "Escolher um módulo \"Add To Cart Trigger\""
+
+#. translators: %s will be replaced with a link to the plugin documentation
+#: admin/class-cartpops-settings-deprecated.php:1690
+msgid "The Add To Cart trigger option allows you to choose which Add To Cart Trigger shows up on your customer's screen after they add something to thei cart. By default, the Drawer will always be available for your customers, and this can be used a replacement for your default WooCommerce cart page. You can allow customers to access the Drawer by activating the Floating Cart Launcher icon or using the shortcode [cartpops_cart_launcher]. You can read more about Add To Cart Triggers in the  %s."
+msgstr "A opção Add To Cart trigger permiti-o escolher qual ação Add To Cart Trigger aparecerá no ecrã do cliente depois de este adicionar algo ao seu carrinho. Por defeito, a Drawer estará sempre disponível para os seus clientes, e isto pode ser usado como substituto para a sua página WooCommerce cart padrão. Pode permitir aos seus clientes aceder à Drawer ativando o ícone Floating Cart Launcher ou usando o shortcode [cartpops_cart_launcher]. Pode ler mais sobre as Add To Cart Triggers em %s."
+
+#: admin/class-cartpops-settings-deprecated.php:272
+msgid "Coupon form"
+msgstr "Formulário de cupão"
+
+#: admin/class-cartpops-settings-deprecated.php:276
+#: admin/menu/tabs/settings.php:188
+msgid "Enable coupon form"
+msgstr "Ativar formulário de cupão"
+
+#: admin/class-cartpops-settings-deprecated.php:277
+msgid "This will enable a coupon form on the CartPops Drawer that allows customers to claim discount codes."
+msgstr "Isto irá ativar um módulo de cupão no \"CartPops Drawer\" o qual permite aos clientes obter códigos de desconto."
+
+#: admin/class-cartpops-settings-deprecated.php:283
+#: admin/menu/tabs/settings.php:38
+msgid "Product Recommendation Engine"
+msgstr "\"Product Recommendation Engine\""
+
+#: admin/class-cartpops-settings-deprecated.php:287
+#: admin/menu/tabs/settings.php:416
+msgid "Enable Product Recommendation Engine"
+msgstr "Ativar o módulo \"Product Recommendation Engine\""
+
+#: admin/class-cartpops-settings-deprecated.php:288
+#: admin/menu/tabs/settings.php:417
+msgid "This will enable the Product Recommendation Engine."
+msgstr "Isto irá ativar o módulo \"Product Recommendation Engine\""
+
+#: admin/class-cartpops-settings-deprecated.php:293
+#: admin/menu/tabs/settings.php:423
+msgid "Recommendations title"
+msgstr "Título de Recomendações"
+
+#: admin/class-cartpops-settings-deprecated.php:295
+#: admin/menu/tabs/settings.php:425
+msgid "Enter call to action text"
+msgstr "Inserir texto de apelo à ação"
+
+#: admin/class-cartpops-settings-deprecated.php:300
+#: admin/menu/tabs/settings.php:431
+msgid "Select a Recommendation type"
+msgstr "Escolha um tipo de Recomendação"
+
+#: admin/class-cartpops-settings-deprecated.php:301
+#: admin/menu/tabs/settings.php:432
+msgid "Select a group of products that you want to recommend (only simple products are supported). If a product is already in the cart it will be excluded from the recommendations."
+msgstr "Escolha um grupo de produtos que queira recomendar (só são suportados produtos simples). Se um produto já está no carrinho então será excluído das recomendações."
+
+#: admin/class-cartpops-settings-deprecated.php:304
+#: admin/menu/class-cartpops-settings.php:166 admin/menu/tabs/settings.php:435
+#: admin/menu/tabs/upsells.php:26
+msgid "Upsells"
+msgstr "Upsells"
+
+#: admin/class-cartpops-settings-deprecated.php:305
+#: admin/menu/tabs/settings.php:436
+msgid "Cross-sells"
+msgstr "Cross-sells"
+
+#: admin/class-cartpops-settings-deprecated.php:306
+#: admin/menu/tabs/settings.php:437
+msgid "Custom products (Pro)"
+msgstr "Produtos personalizados (Pro)"
+
+#: admin/class-cartpops-settings-deprecated.php:311
+#: admin/menu/tabs/settings.php:459
+msgid "Select a fallback"
+msgstr "Escolher uma alternativa"
+
+#: admin/class-cartpops-settings-deprecated.php:312
+#: admin/menu/tabs/settings.php:460
+msgid "Select what you want to do in case there are no products to recommend."
+msgstr "Selecione o que quer fazer caso não existam produtos a recomendar."
+
+#: admin/class-cartpops-settings-deprecated.php:315
+#: admin/menu/tabs/settings.php:463
+msgid "Hide the Product Recommendation Engine"
+msgstr "Escolher o Recommendation Engine"
+
+#: admin/class-cartpops-settings-deprecated.php:316
+#: admin/menu/tabs/settings.php:464
+msgid "Show random products"
+msgstr "Mostrar produtos aleatórios"
+
+#: admin/class-cartpops-settings-deprecated.php:321
+#: admin/menu/tabs/settings.php:470
+msgid "Button type"
+msgstr "Tipo de botão"
+
+#: admin/class-cartpops-settings-deprecated.php:322
+#: admin/menu/tabs/settings.php:471
+msgid "Select what type of button you want to use."
+msgstr "Escolha que tipo de botão quer utilizar."
+
+#: admin/class-cartpops-settings-deprecated.php:325
+#: admin/menu/tabs/settings.php:474
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:91
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:347
+msgid "Icon"
+msgstr "Ícone"
+
+#: admin/class-cartpops-settings-deprecated.php:326
+#: admin/menu/tabs/settings.php:475
+msgid "Text (Pro)"
+msgstr "Texto (Pro)"
+
+#: admin/class-cartpops-settings-deprecated.php:327
+#: admin/menu/tabs/settings.php:476
+msgid "Text + Icon (Pro)"
+msgstr "Texto + Ícone (Pro)"
+
+#: admin/class-cartpops-settings-deprecated.php:332
+#: admin/menu/tabs/settings.php:482
+msgid "Button text"
+msgstr "Texto de botão"
+
+#: admin/class-cartpops-options.php:95
+#: admin/class-cartpops-settings-deprecated.php:334
+#: admin/menu/tabs/settings.php:484
+msgid "Add"
+msgstr "Adicionar"
+
+#: admin/class-cartpops-settings-deprecated.php:342
+#: admin/menu/tabs/settings.php:444
+msgid "Select custom products"
+msgstr "Escolher produtos personalizados"
+
+#: admin/class-cartpops-settings-deprecated.php:343
+msgid "Select up to 3 custom products to recommend your customers. Only simple products are supported."
+msgstr "Escolha até 3 produtos personalizados para recomendar aos seus clientes. Apenas são suportados produtos simples."
+
+#: admin/class-cartpops-settings-deprecated.php:357
+#: admin/menu/tabs/color.php:40
+msgid "Free Shipping Meter"
+msgstr "\"Free Shipping Meter\""
+
+#: admin/class-cartpops-settings-deprecated.php:361
+#: admin/menu/tabs/settings.php:508
+msgid "Enable Free Shipping Meter"
+msgstr "Ativar o módulo \"Free Shipping Meter\""
+
+#: admin/class-cartpops-settings-deprecated.php:362
+#: admin/menu/tabs/settings.php:511
+msgid "This will enable the Free Shipping Meter on the CartPops Drawer and selected Add To Cart Trigger."
+msgstr "Isto irá ativar o módulo \"Free Shipping Meter\" nos módulos \"CartPops Drawer\" e \"Free Shipping Meter\" selecionado."
+
+#: admin/class-cartpops-settings-deprecated.php:372
+#: admin/menu/tabs/settings.php:519
+msgid "Free Shipping Meter Text"
+msgstr "Texto do módulo \"Free Shipping Meter\""
+
+#: admin/class-cartpops-settings-deprecated.php:373
+#: admin/menu/tabs/settings.php:520
+msgid "The text you want to display before the free shipping goal is achieved."
+msgstr "O texto que quer mostrar antes do objetivo de entrega gratuita ser atingido."
+
+#: admin/class-cartpops-settings-deprecated.php:374
+msgid "The following smart syntax is available and will be automatically replaced: {{amount}}, {{country}}, {{flag}}. Keep in mind that country and flag will only work if you have enabled the MaxMind GEO API integration in your WooCommerce Settings."
+msgstr "A sintaxe inteligente seguinte está disponível e será automaticamente substituída: {{quantidade}}, {{país}}, {{bandeira}}. Tenha em consideração que o país e a bandeira só irão funcionar se tiver ativado a integração API MaxMind GEO nas suas Definições de WooCommerce."
+
+#. translators: %1$s and %2$s are replaced with specific placeholders that will
+#. be dynamically populated
+#: admin/class-cartpops-options.php:98
+#: admin/class-cartpops-settings-deprecated.php:377
+#: admin/menu/tabs/settings.php:524
+msgid "%1$s Only %2$s away from free shipping to %3$s %4$s"
+msgstr ""
+
+#: admin/class-cartpops-settings-deprecated.php:385
+#: admin/menu/tabs/settings.php:528
+msgid "Free Shipping Meter Achieved Text"
+msgstr "Texto do módulo \"Free Shipping Meter Achieved\""
+
+#: admin/class-cartpops-settings-deprecated.php:386
+msgid "The text you want to display after the free shipping goal is achieved."
+msgstr "O texto que quer exibir depois do objetivo de entrega grátis ser atingido."
+
+#: admin/class-cartpops-settings-deprecated.php:387
+msgid "The following smart syntax is available and will be automatically replaced: {{country}}, {{flag}}. Keep in mind that country and flag will only work if you have enabled the MaxMind GEO API integration in your WooCommerce Settings."
+msgstr "A sintaxe inteligente seguinte está disponível e será automaticamente substituída: {{quantidade}}, {{país}}, {{bandeira}}. Tenha em consideração que o país e a bandeira só irão funcionar se tiver ativado a integração API MaxMind GEO nas suas Definições de WooCommerce."
+
+#. translators: %1$s and %2$s are replaced with specific placeholders that will
+#. be dynamically populated
+#. translators: %1$s will be replaced with a specific placeholder that will be
+#. dynamically populated
+#. translators: %1$s will be replaced with a specific placeholder that will be
+#. dynamically populated
+#: admin/class-cartpops-options.php:100
+#: admin/class-cartpops-settings-deprecated.php:390
+#: admin/menu/tabs/settings.php:532
+msgid "Congrats %1$s! You have earned free shipping to %2$s %3$s"
+msgstr ""
+
+#: admin/class-cartpops-settings-deprecated.php:398
+#: admin/menu/tabs/settings.php:536
+msgid "Free Shipping Meter amount"
+msgstr "Quantidade do Free Shipping Meter"
+
+#: admin/class-cartpops-settings-deprecated.php:399
+#: admin/menu/tabs/settings.php:537
+msgid "Choose when the Free Shipping Meter should trigger. CartPops can automatically look up the free shipping amount from your WooCommerce Settings > Shipping > Edit Zone > Shipipng Method > Free Shipping."
+msgstr "Escolha quando o módulo \"Free Shipping Meter\" deve ser ativado. CartPops pode procurar de forma automática o custo da entrega gratuita a partir das Definições WooCommerce > Entrega > Editar Zona > Método de Entrega > Entrega Gratuita."
+
+#: admin/class-cartpops-settings-deprecated.php:402
+#: admin/menu/tabs/settings.php:540
+msgid "Get amount from WooCommerce shipping settings"
+msgstr "Obter quantidade a partir das definições de entrega de WooCommerce."
+
+#: admin/class-cartpops-settings-deprecated.php:403
+#: admin/menu/tabs/settings.php:541
+msgid "Set a custom amount"
+msgstr "Definir quantidade padrão"
+
+#: admin/class-cartpops-settings-deprecated.php:408
+#: admin/menu/tabs/settings.php:546
+msgid "Specify a free shipping amount"
+msgstr "Especifique o valor de entrega grátis"
+
+#: admin/class-cartpops-settings-deprecated.php:409
+#: admin/menu/tabs/settings.php:547
+msgid "Select a custom value for when the Free Shipping Meter should trigger."
+msgstr "Escolha um valor personalizado para quando o Medidor de Entrega Grátis deve ser ativado."
+
+#: admin/class-cartpops-settings-deprecated.php:427
+msgid "This will enable a floating icon on your website on which customers can quickly activate the CartPops Drawer and view their cart items."
+msgstr "Isto vai ativar um ícone flutuante no seu sítio através do qual os seus clientes podem ativar rapidamente o módulo \"CartPops Drawer\" de forma a visualizar os artigos no seu carrinho."
+
+#: admin/class-cartpops-settings-deprecated.php:422
+#: admin/menu/tabs/color.php:37
+msgid "Floating Cart Launcher"
+msgstr "\"Floating Cart Launcher\""
+
+#: admin/class-cartpops-settings-deprecated.php:426
+#: admin/menu/tabs/settings.php:295
+msgid "Enable Floating Cart Launcher"
+msgstr "Ativar o módulo \"Floating Cart Launcher\""
+
+#: admin/class-cartpops-settings-deprecated.php:432
+#: admin/menu/tabs/settings.php:301
+msgid "Select a position"
+msgstr "Escolher uma posição"
+
+#: admin/class-cartpops-settings-deprecated.php:433
+msgid "Change how the Floating Cart Launcher is positioned. Useful if you're using live chat on your store."
+msgstr "Altere a posição do módulo \"Floating Cart Launcher\". Útil se estiver a utilizar conversação em tempo real na sua loja."
+
+#: admin/class-cartpops-settings-deprecated.php:436
+#: admin/menu/tabs/settings.php:304 admin/menu/tabs/settings.php:317
+msgid "Bottom right"
+msgstr "Em baixo à direita"
+
+#: admin/class-cartpops-settings-deprecated.php:437
+#: admin/menu/tabs/settings.php:305 admin/menu/tabs/settings.php:318
+msgid "Bottom left"
+msgstr "Em baixo à esquerda"
+
+#: admin/class-cartpops-settings-deprecated.php:447
+#: admin/menu/tabs/settings.php:324
+msgid "Hide when cart is empty"
+msgstr "Esconder o carinho quando estiver vazio"
+
+#: admin/class-cartpops-settings-deprecated.php:448
+msgid "This will hide the floating cart launcher when the cart is empty"
+msgstr "Isto irá esconder o floating cart launcher quando o carrinho estiver vazio"
+
+#: admin/class-cartpops-settings-deprecated.php:462
+#: admin/menu/tabs/settings.php:37
+msgid "Cart Launcher"
+msgstr "Carrinho Flutuante"
+
+#: admin/class-cartpops-settings-deprecated.php:466
+#: admin/menu/tabs/settings.php:352
+msgid "Menu Cart Launcher icon"
+msgstr "Ícone do módulo \"Menu Cart Launcher\""
+
+#: admin/class-cartpops-settings-deprecated.php:467
+#: admin/menu/tabs/settings.php:353
+msgid "Choose an icon to display"
+msgstr "Escolher o ícone a exibir"
+
+#: admin/class-cartpops-settings-deprecated.php:470
+#: admin/class-cartpops-settings-deprecated.php:471
+#: admin/class-cartpops-settings-deprecated.php:472
+#: admin/class-cartpops-settings-deprecated.php:473
+#: admin/class-cartpops-settings-deprecated.php:474
+#: admin/class-cartpops-settings-deprecated.php:475
+#: admin/menu/tabs/settings.php:356 admin/menu/tabs/settings.php:357
+#: admin/menu/tabs/settings.php:358 admin/menu/tabs/settings.php:359
+#: admin/menu/tabs/settings.php:360 admin/menu/tabs/settings.php:361
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:94
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:95
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:96
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:97
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:98
+#: public/class-cartpops-cart.php:1545
+msgid "Cart"
+msgstr "Carrinho"
+
+#: admin/class-cartpops-settings-deprecated.php:476
+#: admin/class-cartpops-settings-deprecated.php:477
+#: admin/class-cartpops-settings-deprecated.php:478
+#: admin/class-cartpops-settings-deprecated.php:479
+#: admin/class-cartpops-settings-deprecated.php:480
+#: admin/class-cartpops-settings-deprecated.php:481
+#: admin/class-cartpops-settings-deprecated.php:482
+#: admin/menu/tabs/settings.php:362 admin/menu/tabs/settings.php:363
+#: admin/menu/tabs/settings.php:364 admin/menu/tabs/settings.php:365
+#: admin/menu/tabs/settings.php:366 admin/menu/tabs/settings.php:367
+#: admin/menu/tabs/settings.php:368
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:99
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:100
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:101
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:102
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:103
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:104
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:105
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:106
+msgid "Bag"
+msgstr "Saco"
+
+#: admin/class-cartpops-settings-deprecated.php:487
+#: admin/menu/tabs/settings.php:373
+msgid "Menu Cart Launcher Indicator"
+msgstr "Indicador do módulo \"Menu Cart Launcher\""
+
+#: admin/class-cartpops-settings-deprecated.php:488
+#: admin/menu/tabs/settings.php:374
+msgid "Choose if you wnat to show an indicator with the item total."
+msgstr "Escolha se quer mostrar um indicador com o total de itens."
+
+#: admin/class-cartpops-settings-deprecated.php:491
+#: admin/class-cartpops-settings-deprecated.php:556
+#: admin/class-cartpops-settings-deprecated.php:655
+#: admin/menu/tabs/settings.php:145 admin/menu/tabs/settings.php:251
+#: admin/menu/tabs/settings.php:377
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:118
+msgid "None"
+msgstr "Nenhum"
+
+#: admin/class-cartpops-settings-deprecated.php:492
+#: admin/menu/tabs/settings.php:378
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:119
+msgid "Bubble"
+msgstr "Bolha"
+
+#: admin/class-cartpops-settings-deprecated.php:493
+#: admin/menu/tabs/settings.php:379
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:120
+msgid "Plain"
+msgstr "Liso"
+
+#: admin/class-cartpops-settings-deprecated.php:454
+#: admin/class-cartpops-settings-deprecated.php:498
+#: admin/menu/tabs/settings.php:331 admin/menu/tabs/settings.php:384
+msgid "Hide indicator when cart is empty"
+msgstr "Esconder indicador quando o carrinho está vazio"
+
+#: admin/class-cartpops-settings-deprecated.php:499
+#: admin/menu/tabs/settings.php:385
+msgid "This will hide the indicator on the cart icon if the cart is empty."
+msgstr "Isto irá esconder o indicador no ícone de carrinho quando o carrinho está vazio"
+
+#: admin/class-cartpops-settings-deprecated.php:504
+#: admin/class-cartpops-settings-deprecated.php:515
+#: admin/menu/tabs/settings.php:390
+msgid "Show subtotal"
+msgstr "Mostrar subtotal"
+
+#: admin/class-cartpops-settings-deprecated.php:505
+#: admin/menu/tabs/settings.php:391
+msgid "This will show the subtotal next to the cart icon."
+msgstr "Isto irá mostrar o subtotal ao lado do ícone do carrinho."
+
+#: admin/class-cartpops-settings-deprecated.php:511
+#: admin/class-cartpops-settings-deprecated.php:1699
+msgid "Drawer footer settings"
+msgstr "Definições de rodapé da Drawer"
+
+#: admin/class-cartpops-settings-deprecated.php:516
+msgid "This will show the total line item."
+msgstr "Isto irá mostrar o item de linha total."
+
+#: admin/class-cartpops-settings-deprecated.php:521
+msgid "Show total"
+msgstr "Mostrar total"
+
+#: admin/class-cartpops-settings-deprecated.php:522
+#: admin/class-cartpops-settings-deprecated.php:528
+msgid "This will show the subtotal line item."
+msgstr "Isto irá mostrar o item de linha subtotal."
+
+#: admin/class-cartpops-settings-deprecated.php:527
+msgid "Show discount"
+msgstr "Mostrar desconto"
+
+#: admin/class-cartpops-settings-deprecated.php:533
+msgid "Show tax"
+msgstr "Mostrar imposto"
+
+#: admin/class-cartpops-settings-deprecated.php:534
+msgid "For this to work you need to have taxes enabled in WooCommerce settings"
+msgstr "Para este trabalho terá que ter os seus impostos ativos nas definições de WooCommerce"
+
+#: admin/class-cartpops-settings-deprecated.php:540
+msgid "This will show the shipping line item"
+msgstr "Isto irá mostar o item de linha de entrega"
+
+#: admin/class-cartpops-settings-deprecated.php:553
+msgid "This will show an icon next to the shipping line item where the customer can calculate their shipping."
+msgstr "Isto irá mostrar um ícone ao lado do item de linha de entrega onde o cliente pode calcular a sua entrega"
+
+#: admin/class-cartpops-settings-deprecated.php:552
+#: admin/menu/tabs/settings.php:248
+msgid "Secondary button"
+msgstr "Botão Secundário"
+
+#: public/class-cartpops-cart.php:1101
+msgid "Continue shopping"
+msgstr "Continuar a comprar"
+
+#: public/class-cartpops-cart.php:1096 public/class-cartpops-cart.php:1107
+msgid "View cart"
+msgstr "Ver carrinho"
+
+#: admin/class-cartpops-settings-deprecated.php:588
+msgid "Primary color schemes"
+msgstr "Esquemas de cor primários"
+
+#: admin/class-cartpops-settings-deprecated.php:592
+#: admin/menu/tabs/color.php:61
+msgid "Primary background color"
+msgstr "Cor de fundo primária"
+
+#: admin/class-cartpops-settings-deprecated.php:597
+#: admin/menu/tabs/color.php:69
+msgid "Secondary background color"
+msgstr "Cor de fundo secundária"
+
+#: admin/class-cartpops-settings-deprecated.php:602
+#: admin/menu/tabs/color.php:76
+msgid "Primary text color"
+msgstr "Cor de texto primária"
+
+#: admin/class-cartpops-settings-deprecated.php:607
+#: admin/menu/tabs/color.php:84
+msgid "Secondary text color"
+msgstr "Cor de texto secundária"
+
+#: admin/class-cartpops-settings-deprecated.php:612
+#: admin/menu/tabs/color.php:92
+msgid "Tertiary text color"
+msgstr "Cor de texto secundária"
+
+#: admin/class-cartpops-settings-deprecated.php:617
+#: admin/menu/tabs/color.php:100
+msgid "Border color"
+msgstr "Cor de margem"
+
+#: admin/class-cartpops-settings-deprecated.php:622
+#: admin/menu/tabs/color.php:108
+msgid "Accent color"
+msgstr "Cor de acento"
+
+#: admin/class-cartpops-settings-deprecated.php:627
+#: admin/menu/tabs/color.php:116
+msgid "Overlay color"
+msgstr "Cor de sobreposição"
+
+#: admin/class-cartpops-settings-deprecated.php:632
+#: admin/menu/tabs/color.php:124
+msgid "Input field background color"
+msgstr "Cor de fundo do campo de entrada"
+
+#: admin/class-cartpops-settings-deprecated.php:637
+#: admin/menu/tabs/color.php:132
+msgid "Input field text color"
+msgstr "Cor de texto do campo de entrada"
+
+#: admin/class-cartpops-settings-deprecated.php:642
+msgid "Enable rounded style"
+msgstr "Ativar estilo arredondado"
+
+#: admin/class-cartpops-settings-deprecated.php:648
+#: admin/class-cartpops-settings-deprecated.php:1662
+#: admin/menu/tabs/settings.php:35 admin/menu/tabs/upsells.php:280
+msgid "General"
+msgstr "Geral"
+
+#: admin/class-cartpops-settings-deprecated.php:652
+#: admin/menu/tabs/settings.php:142
+msgid "Animation type"
+msgstr "Tipo de animação"
+
+#: admin/class-cartpops-settings-deprecated.php:656
+#: admin/menu/tabs/settings.php:146
+msgid "Fade"
+msgstr "Desvanecer"
+
+#: admin/class-cartpops-settings-deprecated.php:657
+#: admin/menu/tabs/settings.php:147
+msgid "Slide in right"
+msgstr "Deslizar para a direita"
+
+#: admin/class-cartpops-settings-deprecated.php:658
+#: admin/menu/tabs/settings.php:148
+msgid "Slick"
+msgstr "Lustroso"
+
+#: admin/class-cartpops-settings-deprecated.php:663
+#: admin/menu/tabs/settings.php:154
+msgid "Animation speed"
+msgstr "Velocidade da animação"
+
+#: admin/class-cartpops-settings-deprecated.php:673
+#: admin/menu/tabs/settings.php:165
+msgid "Truncate long text"
+msgstr "Truncar texto longo"
+
+#: admin/class-cartpops-settings-deprecated.php:676
+#: admin/menu/tabs/settings.php:168
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:132
+msgid "Yes"
+msgstr "Sim"
+
+#: admin/class-cartpops-settings-deprecated.php:677
+#: admin/menu/tabs/settings.php:169
+#: includes/integrations/elementor/class-cartpops-cart-widget.php:133
+msgid "No"
+msgstr "Não"
+
+#: admin/class-cartpops-settings-deprecated.php:679
+msgid "Wrap text"
+msgstr "Envolver texto"
+
+#: admin/class-cartpops-settings-deprecated.php:684
+#: admin/class-cartpops-settings-deprecated.php:1671
+#: admin/menu/tabs/settings.php:36
+msgid "Drawer"
+msgstr "\"Drawer\""
+
+#: admin/class-cartpops-settings-deprecated.php:688
+msgid "Drawer width mobile (%)"
+msgstr "Largura da Drawer telemóvel (%)"
+
+#: admin/class-cartpops-settings-deprecated.php:698
+msgid "Drawer width desktop (px)"
+msgstr "Largura da Drawer desktop (px)"
+
+#: admin/class-cartpops-settings-deprecated.php:709
+#: admin/menu/tabs/color.php:156
+msgid "Button color scheme"
+msgstr "Esquema de cor de botão"
+
+#: admin/class-cartpops-settings-deprecated.php:713
+msgid "Primary Button Background Color"
+msgstr "Cor de Fundo de Botão Primária"
+
+#: admin/class-cartpops-settings-deprecated.php:718
+msgid "Primary Button Text Color"
+msgstr "Cor de Texto de Botão Primária"
+
+#: admin/class-cartpops-settings-deprecated.php:723
+msgid "Secondary Button Secondary Background"
+msgstr "Fundo Secundário de Botão Secundário"

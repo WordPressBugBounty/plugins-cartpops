@@ -262,16 +262,6 @@ class CartPops_Settings_Deprecated {
                         'image' => $this->get_admin_asset( 'mode-drawer-example.png' ),
                         'paid'  => 'false',
                     ),
-                    'popup'  => array(
-                        'title' => 'Popup (BETA)',
-                        'image' => $this->get_admin_asset( 'mode-popup-example.png' ),
-                        'paid'  => 'true',
-                    ),
-                    'bar'    => array(
-                        'title' => 'Bar (BETA)',
-                        'image' => $this->get_admin_asset( 'mode-bar-example.png' ),
-                        'paid'  => 'true',
-                    ),
                 ),
             )),
         );

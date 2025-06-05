@@ -59,14 +59,6 @@ class CartPops_Settings_Tab extends CartPops_Settings_Page {
                     'title' => 'Drawer',
                     'pro'   => false,
                 ),
-                'popup'  => array(
-                    'title' => 'Popup (BETA)',
-                    'pro'   => true,
-                ),
-                'bar'    => array(
-                    'title' => 'Bar (BETA)',
-                    'pro'   => true,
-                ),
             ),
         );
         $section_fields[] = array(

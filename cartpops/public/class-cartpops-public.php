@@ -2,7 +2,7 @@
 use CartPops\Admin\Options;
 
 class CartPops_Public {
-
+	private $templates;
 	private $plugin_name;
 	private $version;
 

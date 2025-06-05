@@ -6,5 +6,6 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    '8d50dc88e56bace65e1e72f6017983ed' => $vendorDir . '/freemius/wordpress-sdk/start.php',
     '839f1f8105ec3374e7919e0039d104c0' => $vendorDir . '/freemius/wordpress-sdk/start.php',
 );

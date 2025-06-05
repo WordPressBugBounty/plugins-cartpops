@@ -5,7 +5,7 @@
  * Description: Beautiful, responsive, and conversion optimized add to cart popup for WooCommerce.
  * Plugin URI: https://cartpops.com
  * Author: CartPops.com
- * Version: 1.5.33
+ * Version: 1.5.39
  * Author URI: https://cartpops.com/?utm_source=wp-plugins&utm_campaign=author-uri&utm_medium=wp-dash
  * Text Domain: cartpops
  * Domain Path: /languages
@@ -30,7 +30,7 @@ if ( !defined( 'WPINC' ) ) {
     die;
 }
 if ( !defined( 'CARTPOPS_VERSION' ) ) {
-    define( 'CARTPOPS_VERSION', '1.5.33' );
+    define( 'CARTPOPS_VERSION', '1.5.39' );
 }
 if ( !defined( 'CARTPOPS_PREFIX' ) ) {
     define( 'CARTPOPS_PREFIX', 'cartpops' );
@@ -74,11 +74,13 @@ if ( function_exists( 'fs_cartpops' ) ) {
         ?>
 		<div class="notice notice-error is-dismissible checkout-wc">
 			<?php 
-        echo esc_html__( 'Oh no! WooCommerce is required to use CartPops.', 'cartpops' );
+        // Use plain English text instead of translation functions to avoid early loading
+        echo 'Oh no! WooCommerce is required to use CartPops.';
         ?>
 			<p>
 			<?php 
-        echo esc_html__( 'To prevent fatal errors, we have loaded CartPops into safe mode.', 'cartpops' );
+        // Use plain English text instead of translation functions to avoid early loading
+        echo 'To prevent fatal errors, we have loaded CartPops into safe mode.';
         ?>
 				</p>
 				<p class="button-container">
@@ -86,9 +88,9 @@ if ( function_exists( 'fs_cartpops' ) ) {
         printf(
             '<a class="button button-primary" href="%1$s" target="_blank" rel="noopener noreferrer">%2$s <span class="screen-reader-text">%3$s</span><span aria-hidden="true" class="dashicons dashicons-external"></span></a>',
             esc_url( CARTPOPS_DOCS ),
-            esc_html__( 'View troubleshooting docs', 'cartpops' ),
+            'View troubleshooting docs',
             /* translators: Accessibility text. */
-            esc_html__( '(opens in a new tab)', 'cartpops' )
+            '(opens in a new tab)'
         );
         ?>
 			</p>
@@ -203,7 +205,7 @@ if ( function_exists( 'fs_cartpops' ) ) {
             $plugin->run();
         }
 
-        run_cartpops();
+        add_action( 'init', 'run_cartpops' );
     } else {
         add_action( 'admin_notices', 'cartpops_cant_activate_msg' );
     }

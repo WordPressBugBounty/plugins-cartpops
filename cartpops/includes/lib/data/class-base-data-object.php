@@ -37,7 +37,8 @@ abstract class Base_Data_Object implements \JsonSerializable {
 
 		// Throw an error if invalid properties were used to initialise the object
 		if(!empty($invalid_props) && !$ignore_extra_properties) {
-			throw new \InvalidArgumentException(sprintf(__('Invalid properties passed to data object constructor. Class: "%1$s". Invalid properties (JSON): "%2$s".', 'cartpops'), get_class($this), json_encode($invalid_props)));
+			// Use plain English text to avoid translation loading issues
+			throw new \InvalidArgumentException(sprintf('Invalid properties passed to data object constructor. Class: "%1$s". Invalid properties (JSON): "%2$s".', get_class($this), json_encode($invalid_props)));
 		}
 	}
 
@@ -57,7 +58,8 @@ abstract class Base_Data_Object implements \JsonSerializable {
 			return $this->$name;
 		}
 
-		throw new \InvalidArgumentException(sprintf(__('Invalid property accessed via __get(): "%1$s::%2$s".', 'cartpops'), get_class($this), $name));
+		// Use plain English text to avoid translation loading issues
+		throw new \InvalidArgumentException(sprintf('Invalid property accessed via __get(): "%1$s::%2$s".', get_class($this), $name));
 	}
 
 	/**
@@ -76,7 +78,8 @@ abstract class Base_Data_Object implements \JsonSerializable {
 			$this->$name = $value;
 		}
 		else {
-			throw new \InvalidArgumentException(sprintf(__('Invalid property accessed via __set(): "%1$s::%2$s".', 'cartpops'), get_class($this), $name));
+			// Use plain English text to avoid translation loading issues
+			throw new \InvalidArgumentException(sprintf('Invalid property accessed via __set(): "%1$s::%2$s".', get_class($this), $name));
 		}
 	}
 

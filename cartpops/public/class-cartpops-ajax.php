@@ -45,7 +45,7 @@ class CartPops_Frontend_Ajax {
     public function cart_fragments( $fragments ) {
         $add_to_cart = !empty( $_GET['wc-ajax'] ) && 'add_to_cart' === $_GET['wc-ajax'];
         // phpcs:ignore WordPress.Security.NonceVerification
-        $request_type = ( !empty( $_POST['request_type'] ) ? filter_var( wp_unslash( $_POST['request_type'] ), FILTER_SANITIZE_STRING ) : null );
+        $request_type = ( !empty( $_POST['request_type'] ) ? sanitize_text_field( wp_unslash( $_POST['request_type'] ) ) : null );
         // phpcs:ignore WordPress.Security.NonceVerification
         $product_id = ( !empty( $_POST['product_id'] ) ? intval( $_POST['product_id'] ) : null );
         // phpcs:ignore WordPress.Security.NonceVerification

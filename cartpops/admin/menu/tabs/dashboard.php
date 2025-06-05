@@ -86,8 +86,8 @@ class CartPops_Dashboard_Tab extends CartPops_Settings_Page {
 	 */
 	public function output_sidebar() {
 
-		$this->changelog();
 		CartPops_Settings::get_upgrade_card();
+		$this->changelog();
 	}
 
 	/**

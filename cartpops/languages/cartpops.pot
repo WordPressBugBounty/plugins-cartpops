@@ -1,14 +1,14 @@
-# Copyright (C) 2024 CartPops.com
+# Copyright (C) 2025 CartPops.com
 # This file is distributed under the same license as the CartPops package.
 msgid ""
 msgstr ""
-"Project-Id-Version: CartPops 1.5.33\n"
+"Project-Id-Version: CartPops 1.5.39\n"
 "Report-Msgid-Bugs-To: https://cartpops.com/contact/\n"
-"POT-Creation-Date: 2024-08-01 13:59:45+00:00\n"
+"POT-Creation-Date: 2025-06-05 12:23:54+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2024-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2025-MO-DA HO:MI+ZONE\n"
 "Last-Translator: CartPops Translate Team <help@cartpops.com>\n"
 "Language-Team: CartPops Translate <help@cartpops.com>\n"
 "Language: en\n"
@@ -24,8 +24,8 @@ msgstr ""
 "X-Textdomain-Support: yes\n"
 "X-Generator: grunt-wp-i18n 1.0.3\n"
 
-#: admin/class-cartpops-settings-deprecated.php:411
-#: admin/menu/tabs/settings.php:549
+#: admin/class-cartpops-settings-deprecated.php:401
+#: admin/menu/tabs/settings.php:539
 msgid "50"
 msgstr ""
 
@@ -79,22 +79,22 @@ msgid "Are you sure you want to delete?"
 msgstr ""
 
 #: admin/class-cartpops-options.php:95
-#: admin/class-cartpops-settings-deprecated.php:334
-#: admin/menu/tabs/settings.php:484
+#: admin/class-cartpops-settings-deprecated.php:324
+#: admin/menu/tabs/settings.php:474
 msgid "Add"
 msgstr ""
 
 #: admin/class-cartpops-options.php:98
-#: admin/class-cartpops-settings-deprecated.php:377
-#: admin/menu/tabs/settings.php:524
+#: admin/class-cartpops-settings-deprecated.php:367
+#: admin/menu/tabs/settings.php:514
 #. translators: %1$s and %2$s are replaced with specific placeholders that will
 #. be dynamically populated
 msgid "%1$s Only %2$s away from free shipping to %3$s %4$s"
 msgstr ""
 
 #: admin/class-cartpops-options.php:100
-#: admin/class-cartpops-settings-deprecated.php:390
-#: admin/menu/tabs/settings.php:532
+#: admin/class-cartpops-settings-deprecated.php:380
+#: admin/menu/tabs/settings.php:522
 #. translators: %1$s and %2$s are replaced with specific placeholders that will
 #. be dynamically populated
 #. translators: %1$s will be replaced with a specific placeholder that will be
@@ -145,7 +145,7 @@ msgid "Advanced"
 msgstr ""
 
 #: admin/class-cartpops-settings-deprecated.php:215
-#: admin/class-cartpops-settings-deprecated.php:1561
+#: admin/class-cartpops-settings-deprecated.php:1551
 #: admin/menu/tabs/dashboard.php:50
 msgid "Quick actions"
 msgstr ""
@@ -173,7 +173,7 @@ msgid "This wlll delete all plugins settings upon deactivation. Use with caution
 msgstr ""
 
 #: admin/class-cartpops-settings-deprecated.php:235
-#: admin/class-cartpops-settings-deprecated.php:1571
+#: admin/class-cartpops-settings-deprecated.php:1561
 msgid "Pro benefits"
 msgstr ""
 
@@ -190,166 +190,166 @@ msgstr ""
 msgid "Select an add to cart trigger"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:272
+#: admin/class-cartpops-settings-deprecated.php:262
 msgid "Coupon form"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:276
-#: admin/menu/tabs/settings.php:188
+#: admin/class-cartpops-settings-deprecated.php:266
+#: admin/menu/tabs/settings.php:178
 msgid "Enable coupon form"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:277
+#: admin/class-cartpops-settings-deprecated.php:267
 msgid ""
 "This will enable a coupon form on the CartPops Drawer that allows customers "
 "to claim discount codes."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:283
+#: admin/class-cartpops-settings-deprecated.php:273
 #: admin/menu/tabs/settings.php:38
 msgid "Product Recommendation Engine"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:287
-#: admin/menu/tabs/settings.php:416
+#: admin/class-cartpops-settings-deprecated.php:277
+#: admin/menu/tabs/settings.php:406
 msgid "Enable Product Recommendation Engine"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:288
-#: admin/menu/tabs/settings.php:417
+#: admin/class-cartpops-settings-deprecated.php:278
+#: admin/menu/tabs/settings.php:407
 msgid "This will enable the Product Recommendation Engine."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:293
-#: admin/menu/tabs/settings.php:423
+#: admin/class-cartpops-settings-deprecated.php:283
+#: admin/menu/tabs/settings.php:413
 msgid "Recommendations title"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:295
-#: admin/menu/tabs/settings.php:425
+#: admin/class-cartpops-settings-deprecated.php:285
+#: admin/menu/tabs/settings.php:415
 msgid "Enter call to action text"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:300
-#: admin/menu/tabs/settings.php:431
+#: admin/class-cartpops-settings-deprecated.php:290
+#: admin/menu/tabs/settings.php:421
 msgid "Select a Recommendation type"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:301
-#: admin/menu/tabs/settings.php:432
+#: admin/class-cartpops-settings-deprecated.php:291
+#: admin/menu/tabs/settings.php:422
 msgid ""
 "Select a group of products that you want to recommend (only simple products "
 "are supported). If a product is already in the cart it will be excluded "
 "from the recommendations."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:304
-#: admin/menu/class-cartpops-settings.php:166 admin/menu/tabs/settings.php:435
+#: admin/class-cartpops-settings-deprecated.php:294
+#: admin/menu/class-cartpops-settings.php:166 admin/menu/tabs/settings.php:425
 #: admin/menu/tabs/upsells.php:26
 msgid "Upsells"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:305
-#: admin/menu/tabs/settings.php:436
+#: admin/class-cartpops-settings-deprecated.php:295
+#: admin/menu/tabs/settings.php:426
 msgid "Cross-sells"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:306
-#: admin/menu/tabs/settings.php:437
+#: admin/class-cartpops-settings-deprecated.php:296
+#: admin/menu/tabs/settings.php:427
 msgid "Custom products (Pro)"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:311
-#: admin/menu/tabs/settings.php:459
+#: admin/class-cartpops-settings-deprecated.php:301
+#: admin/menu/tabs/settings.php:449
 msgid "Select a fallback"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:312
-#: admin/menu/tabs/settings.php:460
+#: admin/class-cartpops-settings-deprecated.php:302
+#: admin/menu/tabs/settings.php:450
 msgid "Select what you want to do in case there are no products to recommend."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:315
-#: admin/menu/tabs/settings.php:463
+#: admin/class-cartpops-settings-deprecated.php:305
+#: admin/menu/tabs/settings.php:453
 msgid "Hide the Product Recommendation Engine"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:316
-#: admin/menu/tabs/settings.php:464
+#: admin/class-cartpops-settings-deprecated.php:306
+#: admin/menu/tabs/settings.php:454
 msgid "Show random products"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:321
-#: admin/menu/tabs/settings.php:470
+#: admin/class-cartpops-settings-deprecated.php:311
+#: admin/menu/tabs/settings.php:460
 msgid "Button type"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:322
-#: admin/menu/tabs/settings.php:471
+#: admin/class-cartpops-settings-deprecated.php:312
+#: admin/menu/tabs/settings.php:461
 msgid "Select what type of button you want to use."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:325
-#: admin/menu/tabs/settings.php:474
+#: admin/class-cartpops-settings-deprecated.php:315
+#: admin/menu/tabs/settings.php:464
 #: includes/integrations/elementor/class-cartpops-cart-widget.php:91
 #: includes/integrations/elementor/class-cartpops-cart-widget.php:347
 msgid "Icon"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:326
-#: admin/menu/tabs/settings.php:475
+#: admin/class-cartpops-settings-deprecated.php:316
+#: admin/menu/tabs/settings.php:465
 msgid "Text (Pro)"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:327
-#: admin/menu/tabs/settings.php:476
+#: admin/class-cartpops-settings-deprecated.php:317
+#: admin/menu/tabs/settings.php:466
 msgid "Text + Icon (Pro)"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:332
-#: admin/menu/tabs/settings.php:482
+#: admin/class-cartpops-settings-deprecated.php:322
+#: admin/menu/tabs/settings.php:472
 msgid "Button text"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:342
-#: admin/menu/tabs/settings.php:444
+#: admin/class-cartpops-settings-deprecated.php:332
+#: admin/menu/tabs/settings.php:434
 msgid "Select custom products"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:343
+#: admin/class-cartpops-settings-deprecated.php:333
 msgid ""
 "Select up to 3 custom products to recommend your customers. Only simple "
 "products are supported."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:357
+#: admin/class-cartpops-settings-deprecated.php:347
 #: admin/menu/tabs/color.php:40
 msgid "Free Shipping Meter"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:361
-#: admin/menu/tabs/settings.php:508
+#: admin/class-cartpops-settings-deprecated.php:351
+#: admin/menu/tabs/settings.php:498
 msgid "Enable Free Shipping Meter"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:362
-#: admin/menu/tabs/settings.php:511
+#: admin/class-cartpops-settings-deprecated.php:352
+#: admin/menu/tabs/settings.php:501
 msgid ""
 "This will enable the Free Shipping Meter on the CartPops Drawer and "
 "selected Add To Cart Trigger."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:372
-#: admin/menu/tabs/settings.php:519
+#: admin/class-cartpops-settings-deprecated.php:362
+#: admin/menu/tabs/settings.php:509
 msgid "Free Shipping Meter Text"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:373
-#: admin/menu/tabs/settings.php:520
+#: admin/class-cartpops-settings-deprecated.php:363
+#: admin/menu/tabs/settings.php:510
 msgid "The text you want to display before the free shipping goal is achieved."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:374
+#: admin/class-cartpops-settings-deprecated.php:364
 msgid ""
 "The following smart syntax is available and will be automatically replaced: "
 "{{amount}}, {{country}}, {{flag}}. Keep in mind that country and flag will "
@@ -357,16 +357,16 @@ msgid ""
 "WooCommerce Settings."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:385
-#: admin/menu/tabs/settings.php:528
+#: admin/class-cartpops-settings-deprecated.php:375
+#: admin/menu/tabs/settings.php:518
 msgid "Free Shipping Meter Achieved Text"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:386
+#: admin/class-cartpops-settings-deprecated.php:376
 msgid "The text you want to display after the free shipping goal is achieved."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:387
+#: admin/class-cartpops-settings-deprecated.php:377
 msgid ""
 "The following smart syntax is available and will be automatically replaced: "
 "{{country}}, {{flag}}. Keep in mind that country and flag will only work if "
@@ -374,119 +374,119 @@ msgid ""
 "Settings."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:398
-#: admin/menu/tabs/settings.php:536
+#: admin/class-cartpops-settings-deprecated.php:388
+#: admin/menu/tabs/settings.php:526
 msgid "Free Shipping Meter amount"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:399
-#: admin/menu/tabs/settings.php:537
+#: admin/class-cartpops-settings-deprecated.php:389
+#: admin/menu/tabs/settings.php:527
 msgid ""
 "Choose when the Free Shipping Meter should trigger. CartPops can "
 "automatically look up the free shipping amount from your WooCommerce "
 "Settings > Shipping > Edit Zone > Shipipng Method > Free Shipping."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:402
-#: admin/menu/tabs/settings.php:540
+#: admin/class-cartpops-settings-deprecated.php:392
+#: admin/menu/tabs/settings.php:530
 msgid "Get amount from WooCommerce shipping settings"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:403
-#: admin/menu/tabs/settings.php:541
+#: admin/class-cartpops-settings-deprecated.php:393
+#: admin/menu/tabs/settings.php:531
 msgid "Set a custom amount"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:408
-#: admin/menu/tabs/settings.php:546
+#: admin/class-cartpops-settings-deprecated.php:398
+#: admin/menu/tabs/settings.php:536
 msgid "Specify a free shipping amount"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:409
-#: admin/menu/tabs/settings.php:547
+#: admin/class-cartpops-settings-deprecated.php:399
+#: admin/menu/tabs/settings.php:537
 msgid "Select a custom value for when the Free Shipping Meter should trigger."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:422
+#: admin/class-cartpops-settings-deprecated.php:412
 #: admin/menu/tabs/color.php:37
 msgid "Floating Cart Launcher"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:426
-#: admin/menu/tabs/settings.php:295
+#: admin/class-cartpops-settings-deprecated.php:416
+#: admin/menu/tabs/settings.php:285
 msgid "Enable Floating Cart Launcher"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:427
+#: admin/class-cartpops-settings-deprecated.php:417
 msgid ""
 "This will enable a floating icon on your website on which customers can "
 "quickly activate the CartPops Drawer and view their cart items."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:432
-#: admin/menu/tabs/settings.php:301
+#: admin/class-cartpops-settings-deprecated.php:422
+#: admin/menu/tabs/settings.php:291
 msgid "Select a position"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:433
+#: admin/class-cartpops-settings-deprecated.php:423
 msgid ""
 "Change how the Floating Cart Launcher is positioned. Useful if you're using "
 "live chat on your store."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:436
-#: admin/menu/tabs/settings.php:304 admin/menu/tabs/settings.php:317
+#: admin/class-cartpops-settings-deprecated.php:426
+#: admin/menu/tabs/settings.php:294 admin/menu/tabs/settings.php:307
 msgid "Bottom right"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:437
-#: admin/menu/tabs/settings.php:305 admin/menu/tabs/settings.php:318
+#: admin/class-cartpops-settings-deprecated.php:427
+#: admin/menu/tabs/settings.php:295 admin/menu/tabs/settings.php:308
 msgid "Bottom left"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:447
-#: admin/menu/tabs/settings.php:324
+#: admin/class-cartpops-settings-deprecated.php:437
+#: admin/menu/tabs/settings.php:314
 msgid "Hide when cart is empty"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:448
+#: admin/class-cartpops-settings-deprecated.php:438
 msgid "This will hide the floating cart launcher when the cart is empty"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:454
-#: admin/class-cartpops-settings-deprecated.php:498
-#: admin/menu/tabs/settings.php:331 admin/menu/tabs/settings.php:384
+#: admin/class-cartpops-settings-deprecated.php:444
+#: admin/class-cartpops-settings-deprecated.php:488
+#: admin/menu/tabs/settings.php:321 admin/menu/tabs/settings.php:374
 msgid "Hide indicator when cart is empty"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:455
+#: admin/class-cartpops-settings-deprecated.php:445
 msgid "This will hide the floating cart indicator when the cart is empty"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:462
+#: admin/class-cartpops-settings-deprecated.php:452
 #: admin/menu/tabs/settings.php:37
 msgid "Cart Launcher"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:466
-#: admin/menu/tabs/settings.php:352
+#: admin/class-cartpops-settings-deprecated.php:456
+#: admin/menu/tabs/settings.php:342
 msgid "Menu Cart Launcher icon"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:467
-#: admin/menu/tabs/settings.php:353
+#: admin/class-cartpops-settings-deprecated.php:457
+#: admin/menu/tabs/settings.php:343
 msgid "Choose an icon to display"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:470
-#: admin/class-cartpops-settings-deprecated.php:471
-#: admin/class-cartpops-settings-deprecated.php:472
-#: admin/class-cartpops-settings-deprecated.php:473
-#: admin/class-cartpops-settings-deprecated.php:474
-#: admin/class-cartpops-settings-deprecated.php:475
-#: admin/menu/tabs/settings.php:356 admin/menu/tabs/settings.php:357
-#: admin/menu/tabs/settings.php:358 admin/menu/tabs/settings.php:359
-#: admin/menu/tabs/settings.php:360 admin/menu/tabs/settings.php:361
+#: admin/class-cartpops-settings-deprecated.php:460
+#: admin/class-cartpops-settings-deprecated.php:461
+#: admin/class-cartpops-settings-deprecated.php:462
+#: admin/class-cartpops-settings-deprecated.php:463
+#: admin/class-cartpops-settings-deprecated.php:464
+#: admin/class-cartpops-settings-deprecated.php:465
+#: admin/menu/tabs/settings.php:346 admin/menu/tabs/settings.php:347
+#: admin/menu/tabs/settings.php:348 admin/menu/tabs/settings.php:349
+#: admin/menu/tabs/settings.php:350 admin/menu/tabs/settings.php:351
 #: includes/integrations/elementor/class-cartpops-cart-widget.php:94
 #: includes/integrations/elementor/class-cartpops-cart-widget.php:95
 #: includes/integrations/elementor/class-cartpops-cart-widget.php:96
@@ -496,17 +496,17 @@ msgstr ""
 msgid "Cart"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:476
-#: admin/class-cartpops-settings-deprecated.php:477
-#: admin/class-cartpops-settings-deprecated.php:478
-#: admin/class-cartpops-settings-deprecated.php:479
-#: admin/class-cartpops-settings-deprecated.php:480
-#: admin/class-cartpops-settings-deprecated.php:481
-#: admin/class-cartpops-settings-deprecated.php:482
-#: admin/menu/tabs/settings.php:362 admin/menu/tabs/settings.php:363
-#: admin/menu/tabs/settings.php:364 admin/menu/tabs/settings.php:365
-#: admin/menu/tabs/settings.php:366 admin/menu/tabs/settings.php:367
-#: admin/menu/tabs/settings.php:368
+#: admin/class-cartpops-settings-deprecated.php:466
+#: admin/class-cartpops-settings-deprecated.php:467
+#: admin/class-cartpops-settings-deprecated.php:468
+#: admin/class-cartpops-settings-deprecated.php:469
+#: admin/class-cartpops-settings-deprecated.php:470
+#: admin/class-cartpops-settings-deprecated.php:471
+#: admin/class-cartpops-settings-deprecated.php:472
+#: admin/menu/tabs/settings.php:352 admin/menu/tabs/settings.php:353
+#: admin/menu/tabs/settings.php:354 admin/menu/tabs/settings.php:355
+#: admin/menu/tabs/settings.php:356 admin/menu/tabs/settings.php:357
+#: admin/menu/tabs/settings.php:358
 #: includes/integrations/elementor/class-cartpops-cart-widget.php:99
 #: includes/integrations/elementor/class-cartpops-cart-widget.php:100
 #: includes/integrations/elementor/class-cartpops-cart-widget.php:101
@@ -518,609 +518,609 @@ msgstr ""
 msgid "Bag"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:487
-#: admin/menu/tabs/settings.php:373
+#: admin/class-cartpops-settings-deprecated.php:477
+#: admin/menu/tabs/settings.php:363
 msgid "Menu Cart Launcher Indicator"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:488
-#: admin/menu/tabs/settings.php:374
+#: admin/class-cartpops-settings-deprecated.php:478
+#: admin/menu/tabs/settings.php:364
 msgid "Choose if you wnat to show an indicator with the item total."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:491
-#: admin/class-cartpops-settings-deprecated.php:556
-#: admin/class-cartpops-settings-deprecated.php:655
-#: admin/menu/tabs/settings.php:145 admin/menu/tabs/settings.php:251
-#: admin/menu/tabs/settings.php:377
+#: admin/class-cartpops-settings-deprecated.php:481
+#: admin/class-cartpops-settings-deprecated.php:546
+#: admin/class-cartpops-settings-deprecated.php:645
+#: admin/menu/tabs/settings.php:135 admin/menu/tabs/settings.php:241
+#: admin/menu/tabs/settings.php:367
 #: includes/integrations/elementor/class-cartpops-cart-widget.php:118
 msgid "None"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:492
-#: admin/menu/tabs/settings.php:378
+#: admin/class-cartpops-settings-deprecated.php:482
+#: admin/menu/tabs/settings.php:368
 #: includes/integrations/elementor/class-cartpops-cart-widget.php:119
 msgid "Bubble"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:493
-#: admin/menu/tabs/settings.php:379
+#: admin/class-cartpops-settings-deprecated.php:483
+#: admin/menu/tabs/settings.php:369
 #: includes/integrations/elementor/class-cartpops-cart-widget.php:120
 msgid "Plain"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:499
-#: admin/menu/tabs/settings.php:385
+#: admin/class-cartpops-settings-deprecated.php:489
+#: admin/menu/tabs/settings.php:375
 msgid "This will hide the indicator on the cart icon if the cart is empty."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:504
-#: admin/class-cartpops-settings-deprecated.php:515
-#: admin/menu/tabs/settings.php:390
+#: admin/class-cartpops-settings-deprecated.php:494
+#: admin/class-cartpops-settings-deprecated.php:505
+#: admin/menu/tabs/settings.php:380
 msgid "Show subtotal"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:505
-#: admin/menu/tabs/settings.php:391
+#: admin/class-cartpops-settings-deprecated.php:495
+#: admin/menu/tabs/settings.php:381
 msgid "This will show the subtotal next to the cart icon."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:511
-#: admin/class-cartpops-settings-deprecated.php:1699
+#: admin/class-cartpops-settings-deprecated.php:501
+#: admin/class-cartpops-settings-deprecated.php:1689
 msgid "Drawer footer settings"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:516
+#: admin/class-cartpops-settings-deprecated.php:506
 msgid "This will show the total line item."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:521
+#: admin/class-cartpops-settings-deprecated.php:511
 msgid "Show total"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:522
-#: admin/class-cartpops-settings-deprecated.php:528
+#: admin/class-cartpops-settings-deprecated.php:512
+#: admin/class-cartpops-settings-deprecated.php:518
 msgid "This will show the subtotal line item."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:527
+#: admin/class-cartpops-settings-deprecated.php:517
 msgid "Show discount"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:533
+#: admin/class-cartpops-settings-deprecated.php:523
 msgid "Show tax"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:534
+#: admin/class-cartpops-settings-deprecated.php:524
 msgid "For this to work you need to have taxes enabled in WooCommerce settings"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:539
+#: admin/class-cartpops-settings-deprecated.php:529
 msgid "Show shipping"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:540
+#: admin/class-cartpops-settings-deprecated.php:530
 msgid "This will show the shipping line item"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:545
+#: admin/class-cartpops-settings-deprecated.php:535
 msgid "Shipping calculator"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:546
-#: admin/menu/tabs/settings.php:240
+#: admin/class-cartpops-settings-deprecated.php:536
+#: admin/menu/tabs/settings.php:230
 msgid ""
 "This will show a button next to the shipping line item where the customer "
 "can calculate or change their shipping."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:552
-#: admin/menu/tabs/settings.php:248
+#: admin/class-cartpops-settings-deprecated.php:542
+#: admin/menu/tabs/settings.php:238
 msgid "Secondary button"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:553
+#: admin/class-cartpops-settings-deprecated.php:543
 msgid ""
 "This will show an icon next to the shipping line item where the customer "
 "can calculate their shipping."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:557
-#: admin/menu/tabs/settings.php:252
+#: admin/class-cartpops-settings-deprecated.php:547
+#: admin/menu/tabs/settings.php:242
 msgid "Continue shopping (Pro)"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:558
-#: admin/menu/tabs/settings.php:253
+#: admin/class-cartpops-settings-deprecated.php:548
+#: admin/menu/tabs/settings.php:243
 msgid "View cart (Pro)"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:559
-#: admin/menu/tabs/settings.php:254
+#: admin/class-cartpops-settings-deprecated.php:549
+#: admin/menu/tabs/settings.php:244
 msgid "Custom URL (Pro)"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:564
-#: admin/menu/tabs/settings.php:261
+#: admin/class-cartpops-settings-deprecated.php:554
+#: admin/menu/tabs/settings.php:251
 msgid "Secondary button custom URL"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:576
-#: admin/menu/tabs/settings.php:268
+#: admin/class-cartpops-settings-deprecated.php:566
+#: admin/menu/tabs/settings.php:258
 msgid "Secondary button custom text"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:588
+#: admin/class-cartpops-settings-deprecated.php:578
 msgid "Primary color schemes"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:592
+#: admin/class-cartpops-settings-deprecated.php:582
 #: admin/menu/tabs/color.php:61
 msgid "Primary background color"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:597
+#: admin/class-cartpops-settings-deprecated.php:587
 #: admin/menu/tabs/color.php:69
 msgid "Secondary background color"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:602
+#: admin/class-cartpops-settings-deprecated.php:592
 #: admin/menu/tabs/color.php:76
 msgid "Primary text color"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:607
+#: admin/class-cartpops-settings-deprecated.php:597
 #: admin/menu/tabs/color.php:84
 msgid "Secondary text color"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:612
+#: admin/class-cartpops-settings-deprecated.php:602
 #: admin/menu/tabs/color.php:92
 msgid "Tertiary text color"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:617
+#: admin/class-cartpops-settings-deprecated.php:607
 #: admin/menu/tabs/color.php:100
 msgid "Border color"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:622
+#: admin/class-cartpops-settings-deprecated.php:612
 #: admin/menu/tabs/color.php:108
 msgid "Accent color"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:627
+#: admin/class-cartpops-settings-deprecated.php:617
 #: admin/menu/tabs/color.php:116
 msgid "Overlay color"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:632
+#: admin/class-cartpops-settings-deprecated.php:622
 #: admin/menu/tabs/color.php:124
 msgid "Input field background color"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:637
+#: admin/class-cartpops-settings-deprecated.php:627
 #: admin/menu/tabs/color.php:132
 msgid "Input field text color"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:642
+#: admin/class-cartpops-settings-deprecated.php:632
 msgid "Enable rounded style"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:648
-#: admin/class-cartpops-settings-deprecated.php:1662
+#: admin/class-cartpops-settings-deprecated.php:638
+#: admin/class-cartpops-settings-deprecated.php:1652
 #: admin/menu/tabs/settings.php:35 admin/menu/tabs/upsells.php:280
 msgid "General"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:652
-#: admin/menu/tabs/settings.php:142
+#: admin/class-cartpops-settings-deprecated.php:642
+#: admin/menu/tabs/settings.php:132
 msgid "Animation type"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:656
-#: admin/menu/tabs/settings.php:146
+#: admin/class-cartpops-settings-deprecated.php:646
+#: admin/menu/tabs/settings.php:136
 msgid "Fade"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:657
-#: admin/menu/tabs/settings.php:147
+#: admin/class-cartpops-settings-deprecated.php:647
+#: admin/menu/tabs/settings.php:137
 msgid "Slide in right"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:658
-#: admin/menu/tabs/settings.php:148
+#: admin/class-cartpops-settings-deprecated.php:648
+#: admin/menu/tabs/settings.php:138
 msgid "Slick"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:663
-#: admin/menu/tabs/settings.php:154
+#: admin/class-cartpops-settings-deprecated.php:653
+#: admin/menu/tabs/settings.php:144
 msgid "Animation speed"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:673
-#: admin/menu/tabs/settings.php:165
+#: admin/class-cartpops-settings-deprecated.php:663
+#: admin/menu/tabs/settings.php:155
 msgid "Truncate long text"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:676
-#: admin/menu/tabs/settings.php:168
+#: admin/class-cartpops-settings-deprecated.php:666
+#: admin/menu/tabs/settings.php:158
 #: includes/integrations/elementor/class-cartpops-cart-widget.php:132
 msgid "Yes"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:677
-#: admin/menu/tabs/settings.php:169
+#: admin/class-cartpops-settings-deprecated.php:667
+#: admin/menu/tabs/settings.php:159
 #: includes/integrations/elementor/class-cartpops-cart-widget.php:133
 msgid "No"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:679
+#: admin/class-cartpops-settings-deprecated.php:669
 msgid "Wrap text"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:684
-#: admin/class-cartpops-settings-deprecated.php:1671
+#: admin/class-cartpops-settings-deprecated.php:674
+#: admin/class-cartpops-settings-deprecated.php:1661
 #: admin/menu/tabs/settings.php:36
 msgid "Drawer"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:688
+#: admin/class-cartpops-settings-deprecated.php:678
 msgid "Drawer width mobile (%)"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:698
+#: admin/class-cartpops-settings-deprecated.php:688
 msgid "Drawer width desktop (px)"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:709
+#: admin/class-cartpops-settings-deprecated.php:699
 #: admin/menu/tabs/color.php:156
 msgid "Button color scheme"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:713
+#: admin/class-cartpops-settings-deprecated.php:703
 msgid "Primary Button Background Color"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:718
+#: admin/class-cartpops-settings-deprecated.php:708
 msgid "Primary Button Text Color"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:723
+#: admin/class-cartpops-settings-deprecated.php:713
 msgid "Secondary Button Secondary Background"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:728
+#: admin/class-cartpops-settings-deprecated.php:718
 msgid "Secondary Button Secondary Text"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:734
-#: admin/class-cartpops-settings-deprecated.php:1613
+#: admin/class-cartpops-settings-deprecated.php:724
+#: admin/class-cartpops-settings-deprecated.php:1603
 #: admin/menu/tabs/color.php:304
 msgid "Recommendations color scheme"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:738
+#: admin/class-cartpops-settings-deprecated.php:728
 #: admin/menu/tabs/color.php:310
 msgid "Recommendations button background color"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:743
+#: admin/class-cartpops-settings-deprecated.php:733
 #: admin/menu/tabs/color.php:318
 msgid "Recommendations button text color"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:748
+#: admin/class-cartpops-settings-deprecated.php:738
 #: admin/menu/tabs/color.php:326
 msgid "Drawer Recommendations background color"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:753
+#: admin/class-cartpops-settings-deprecated.php:743
 #: admin/menu/tabs/color.php:334
 msgid "Drawer Recommendations border color"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:758
+#: admin/class-cartpops-settings-deprecated.php:748
 #: admin/menu/tabs/color.php:342
 msgid "Drawer Recommendations text color"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:763
+#: admin/class-cartpops-settings-deprecated.php:753
 #: admin/menu/tabs/color.php:350
 msgid "Popup Recommendations background color"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:768
+#: admin/class-cartpops-settings-deprecated.php:758
 #: admin/menu/tabs/color.php:358
 msgid "Popup Recommendations text color"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:775
-#: admin/class-cartpops-settings-deprecated.php:1641
+#: admin/class-cartpops-settings-deprecated.php:765
+#: admin/class-cartpops-settings-deprecated.php:1631
 #: admin/menu/tabs/color.php:436
 msgid "Free Shipping Meter color scheme"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:779
+#: admin/class-cartpops-settings-deprecated.php:769
 #: admin/menu/tabs/color.php:442
 msgid "Free Shipping Meter background color"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:784
+#: admin/class-cartpops-settings-deprecated.php:774
 #: admin/menu/tabs/color.php:450
 msgid "Free Shipping Meter active background color"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:792
+#: admin/class-cartpops-settings-deprecated.php:782
 msgid "Floating Cart Launcher Color Scheme"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:796
+#: admin/class-cartpops-settings-deprecated.php:786
 #: admin/menu/tabs/color.php:256
 msgid "Floating Cart Launcher background color"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:801
+#: admin/class-cartpops-settings-deprecated.php:791
 #: admin/menu/tabs/color.php:264
 msgid "Floating Cart Launcher icon color"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:806
+#: admin/class-cartpops-settings-deprecated.php:796
 #: admin/menu/tabs/color.php:272
 msgid "Floating Cart Launcher indicator background"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:811
+#: admin/class-cartpops-settings-deprecated.php:801
 #: admin/menu/tabs/color.php:280
 msgid "Floating Cart Launcher indicator text"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:817
+#: admin/class-cartpops-settings-deprecated.php:807
 msgid "Cart Launcher Color Scheme"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:821
+#: admin/class-cartpops-settings-deprecated.php:811
 #: admin/menu/tabs/color.php:388
 msgid "Cart Launcher background color"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:826
+#: admin/class-cartpops-settings-deprecated.php:816
 #: admin/menu/tabs/color.php:396
 msgid "Cart Launcher text color"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:831
+#: admin/class-cartpops-settings-deprecated.php:821
 #: admin/menu/tabs/color.php:404
 msgid "Cart Launcher bubble background"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:836
+#: admin/class-cartpops-settings-deprecated.php:826
 #: admin/menu/tabs/color.php:412
 msgid "Cart Launcher bubble text"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:842
+#: admin/class-cartpops-settings-deprecated.php:832
 msgid "Support Us"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:846
-#: admin/menu/tabs/settings.php:84
+#: admin/class-cartpops-settings-deprecated.php:836
+#: admin/menu/tabs/settings.php:74
 msgid "Display Powered by CartPops"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:847
+#: admin/class-cartpops-settings-deprecated.php:837
 msgid ""
 "The core functionality of CartPops is free forever. You can support ongoing "
 "development and new updates by showing Powered by CartPops on your Add To "
 "Cart Triggers"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:852
-#: admin/menu/tabs/settings.php:92
+#: admin/class-cartpops-settings-deprecated.php:842
+#: admin/menu/tabs/settings.php:82
 msgid "Partner code"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:853
+#: admin/class-cartpops-settings-deprecated.php:843
 msgid ""
 "Replace the default Powered by CartPops branding link with your referral "
 "link."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:860
-#: admin/menu/tabs/settings.php:95
+#: admin/class-cartpops-settings-deprecated.php:850
+#: admin/menu/tabs/settings.php:85
 msgid "e.g. 93494"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:865
+#: admin/class-cartpops-settings-deprecated.php:855
 msgid "Translation"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:869
+#: admin/class-cartpops-settings-deprecated.php:859
 msgid "Drawer cart title"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:871
+#: admin/class-cartpops-settings-deprecated.php:861
 #: public/class-cartpops-cart.php:255 public/class-cartpops-cart.php:280
 msgid "My cart"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:876
+#: admin/class-cartpops-settings-deprecated.php:866
 msgid "Generic added to cart message"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:879
+#: admin/class-cartpops-settings-deprecated.php:869
 #: public/class-cartpops-assets.php:99
 msgid "Product successfully added to your cart."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:883
+#: admin/class-cartpops-settings-deprecated.php:873
 msgid "Coupon title"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:886
+#: admin/class-cartpops-settings-deprecated.php:876
 #: public/class-cartpops-cart.php:604
 msgid "Got a discount code?"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:890
+#: admin/class-cartpops-settings-deprecated.php:880
 msgid "Coupon input field placeholder text"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:893
+#: admin/class-cartpops-settings-deprecated.php:883
 #: public/class-cartpops-cart.php:605
 msgid "Enter discount code"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:897
+#: admin/class-cartpops-settings-deprecated.php:887
 msgid "Coupon button text"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:900
+#: admin/class-cartpops-settings-deprecated.php:890
 #: public/class-cartpops-cart.php:606
 msgid "Apply"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:904
+#: admin/class-cartpops-settings-deprecated.php:894
 msgid "Line item: Subtotal"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:906
+#: admin/class-cartpops-settings-deprecated.php:896
 #: includes/integrations/elementor/class-cartpops-cart-widget.php:145
 #: public/class-cartpops-cart.php:872
 msgid "Subtotal"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:911
+#: admin/class-cartpops-settings-deprecated.php:901
 msgid "Line item: Discount"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:913
+#: admin/class-cartpops-settings-deprecated.php:903
 #: public/class-cartpops-cart.php:1005
 msgid "Discount"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:918
+#: admin/class-cartpops-settings-deprecated.php:908
 msgid "Line item: Total"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:920
+#: admin/class-cartpops-settings-deprecated.php:910
 #: public/class-cartpops-cart.php:904
 msgid "Total"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:925
+#: admin/class-cartpops-settings-deprecated.php:915
 msgid "Checkout button"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:927
+#: admin/class-cartpops-settings-deprecated.php:917
 #: public/class-cartpops-cart.php:90 public/class-cartpops-cart.php:825
 msgid "Checkout now"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:932
+#: admin/class-cartpops-settings-deprecated.php:922
 msgid "Empty checkout button"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:934
+#: admin/class-cartpops-settings-deprecated.php:924
 #: public/class-cartpops-cart.php:828
 msgid "Your cart is empty. Shop now"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:939
+#: admin/class-cartpops-settings-deprecated.php:929
 msgid "Drawer empty state title"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:941
+#: admin/class-cartpops-settings-deprecated.php:931
 #: public/class-cartpops-cart.php:375
 msgid "Your cart is empty."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:946
+#: admin/class-cartpops-settings-deprecated.php:936
 msgid "Drawer empty state subtitle"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:948
+#: admin/class-cartpops-settings-deprecated.php:938
 #: public/class-cartpops-cart.php:376
 msgid "Looks like you haven't made a choice yet."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:953
+#: admin/class-cartpops-settings-deprecated.php:943
 msgid "Continue shopping text (Popup)"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:955
+#: admin/class-cartpops-settings-deprecated.php:945
 #: public/class-cartpops-cart.php:803
 msgid "Or continue shopping"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:960
+#: admin/class-cartpops-settings-deprecated.php:950
 msgid "View details text"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:962
+#: admin/class-cartpops-settings-deprecated.php:952
 #: includes/functions/cartpops-common-functions.php:935
 #: public/class-cartpops-cart.php:439 public/class-cartpops-cart.php:481
 msgid "View details"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:968
+#: admin/class-cartpops-settings-deprecated.php:958
 #: admin/menu/tabs/settings.php:40
 msgid "Custom code"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:972
-#: admin/menu/tabs/settings.php:578
+#: admin/class-cartpops-settings-deprecated.php:962
+#: admin/menu/tabs/settings.php:568
 msgid "Custom CSS"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:974
-#: admin/menu/tabs/settings.php:581
+#: admin/class-cartpops-settings-deprecated.php:964
+#: admin/menu/tabs/settings.php:571
 #. translators: %1$s is replaced with an icon
 msgid ""
 "Add custom CSS, this will fire after any CartPops CSS. This is for more "
 "advanced users! You know what to do %1$s"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:980
+#: admin/class-cartpops-settings-deprecated.php:970
 msgid "Custom Javascript"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:982
-#: admin/menu/tabs/settings.php:589
+#: admin/class-cartpops-settings-deprecated.php:972
+#: admin/menu/tabs/settings.php:579
 #. translators: %1$s is replaced with an icon
 msgid ""
 "Add custom JS, this will fire after any CartPops JS. This is for more "
 "advanced users! You know what to do %1$s"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:989
+#: admin/class-cartpops-settings-deprecated.php:979
 msgid "Miscellaneous"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:993
+#: admin/class-cartpops-settings-deprecated.php:983
 msgid "Force refresh on page load"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:994
+#: admin/class-cartpops-settings-deprecated.php:984
 msgid ""
 "This will force refresh the cart on each page load. Only use if you're "
 "having troubles with how the cart loads."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1103
+#: admin/class-cartpops-settings-deprecated.php:1093
 #: admin/menu/class-cartpops-settings.php:1022
 msgid "View Documentation"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1132
+#: admin/class-cartpops-settings-deprecated.php:1122
 #: admin/menu/tabs/issues.php:72
 msgid ""
 "An option in WooCommerce is turned on which will immediately redirect "
 "customers to the /cart/ page preventing CartPops to open."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1134
+#: admin/class-cartpops-settings-deprecated.php:1124
 #: admin/menu/tabs/issues.php:74
 #. translators: 1. Link
 msgid ""
@@ -1128,30 +1128,30 @@ msgid ""
 "WooCommerce plugin settings. %s."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1134
+#: admin/class-cartpops-settings-deprecated.php:1124
 #: admin/menu/tabs/issues.php:74 admin/menu/tabs/issues.php:81
 msgid "Take me there"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1140
+#: admin/class-cartpops-settings-deprecated.php:1130
 #: admin/menu/tabs/issues.php:87
 msgid ""
 "The premium version of CartPops is activated without a valid license. "
 "Without a license, all Pro features are automatically disabled."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1142
+#: admin/class-cartpops-settings-deprecated.php:1132
 #: admin/menu/tabs/issues.php:89
 #. translators: 1. Link
 msgid "Activate your license, or purchase a new license. %s."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1142
+#: admin/class-cartpops-settings-deprecated.php:1132
 #: admin/menu/tabs/issues.php:89
 msgid "Purchase a license"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1149
+#: admin/class-cartpops-settings-deprecated.php:1139
 #: admin/menu/tabs/issues.php:96
 #. translators: 1. Link
 msgid ""
@@ -1159,88 +1159,88 @@ msgid ""
 "and will be removed on July 11, 2021. %s."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1149
-#: admin/class-cartpops-settings-deprecated.php:1782
+#: admin/class-cartpops-settings-deprecated.php:1139
+#: admin/class-cartpops-settings-deprecated.php:1772
 #: admin/menu/tabs/issues.php:96
 msgid "Learn more here"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1150
+#: admin/class-cartpops-settings-deprecated.php:1140
 #: admin/menu/tabs/issues.php:97
 msgid "Please make sure to stop using these features before July 11, 2021."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1182
+#: admin/class-cartpops-settings-deprecated.php:1172
 msgid "Refreshing issues"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1184
+#: admin/class-cartpops-settings-deprecated.php:1174
 msgid "Something went wrong"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1341
+#: admin/class-cartpops-settings-deprecated.php:1331
 #: admin/menu/class-cartpops-settings.php:448
 #. translators: %1$s  and %2$s are replaced with a plugin option name and %3$s
 #. with an emoji.
 msgid "%1$s %2$s Requires upgrade %3$s"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1414
+#: admin/class-cartpops-settings-deprecated.php:1404
 msgid "Upload an image"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1414
+#: admin/class-cartpops-settings-deprecated.php:1404
 msgid "Use image"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1414
+#: admin/class-cartpops-settings-deprecated.php:1404
 msgid "Upload new image"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1415
+#: admin/class-cartpops-settings-deprecated.php:1405
 msgid "Remove image"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1445
+#: admin/class-cartpops-settings-deprecated.php:1435
 #: admin/menu/class-cartpops-settings.php:1025
 #. translators: %1$s is replaced with an icon
 msgid "Click %1$s to go to the documentation"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1491
+#: admin/class-cartpops-settings-deprecated.php:1481
 #: admin/menu/views/html-settings.php:21
 msgid "Version"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1552
+#: admin/class-cartpops-settings-deprecated.php:1542
 #: admin/menu/tabs/issues.php:27
 msgid "Issues"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1595
+#: admin/class-cartpops-settings-deprecated.php:1585
 #: admin/menu/tabs/color.php:55
 msgid "Primary color scheme"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1604
+#: admin/class-cartpops-settings-deprecated.php:1594
 msgid "Buttons color scheme"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1622
+#: admin/class-cartpops-settings-deprecated.php:1612
 #: admin/menu/tabs/color.php:250
 msgid "Floating Cart launcher color scheme"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1631
+#: admin/class-cartpops-settings-deprecated.php:1621
 #: admin/menu/tabs/color.php:382
 msgid "Cart launcher color scheme"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1688
+#: admin/class-cartpops-settings-deprecated.php:1678
 msgid "Add To Cart Trigger settings"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1690
+#: admin/class-cartpops-settings-deprecated.php:1680
 #. translators: %s will be replaced with a link to the plugin documentation
 msgid ""
 "The Add To Cart trigger option allows you to choose which Add To Cart "
@@ -1252,55 +1252,55 @@ msgid ""
 "read more about Add To Cart Triggers in the  %s."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1690
+#: admin/class-cartpops-settings-deprecated.php:1680
 msgid "documentation"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1708
+#: admin/class-cartpops-settings-deprecated.php:1698
 msgid "Coupon form settings"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1717
-#: admin/menu/tabs/settings.php:288
+#: admin/class-cartpops-settings-deprecated.php:1707
+#: admin/menu/tabs/settings.php:278
 msgid "Floating Cart Launcher settings"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1726
-#: admin/menu/tabs/settings.php:345
+#: admin/class-cartpops-settings-deprecated.php:1716
+#: admin/menu/tabs/settings.php:335
 msgid "Menu Cart launcher settings (Experimental)"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1727
+#: admin/class-cartpops-settings-deprecated.php:1717
 msgid "Head over to your WordPress menu to activate this feature in your menu"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1743
+#: admin/class-cartpops-settings-deprecated.php:1733
 msgid "Product Recommendation Engine settings"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1752
+#: admin/class-cartpops-settings-deprecated.php:1742
 #: admin/menu/tabs/settings.php:39
 msgid "Free Shipping Meter settings"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1771
+#: admin/class-cartpops-settings-deprecated.php:1761
 msgid "Support on-going development"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1781
+#: admin/class-cartpops-settings-deprecated.php:1771
 msgid "Translate (Deprecated)"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1782
+#: admin/class-cartpops-settings-deprecated.php:1772
 msgid "These settings are deprecated and will be removed on July 11, 2021. %s."
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1791
+#: admin/class-cartpops-settings-deprecated.php:1781
 msgid "Custom code settings"
 msgstr ""
 
-#: admin/class-cartpops-settings-deprecated.php:1800
-#: admin/menu/tabs/settings.php:41 admin/menu/tabs/settings.php:608
+#: admin/class-cartpops-settings-deprecated.php:1790
+#: admin/menu/tabs/settings.php:41 admin/menu/tabs/settings.php:598
 msgid "Miscellaneous & Experimental"
 msgstr ""
 
@@ -1393,80 +1393,80 @@ msgstr ""
 msgid "General Settings"
 msgstr ""
 
-#: admin/menu/tabs/settings.php:86
+#: admin/menu/tabs/settings.php:76
 msgid ""
 "The core functionality of CartPops is free forever. You can support ongoing "
 "development and new updates by showing Powered by CartPops on your Add To "
 "Cart Triggers "
 msgstr ""
 
-#: admin/menu/tabs/settings.php:93
+#: admin/menu/tabs/settings.php:83
 msgid ""
 "Replace the default Powered by CartPops branding link with your referral "
 "link from Freemius."
 msgstr ""
 
-#: admin/menu/tabs/settings.php:113
+#: admin/menu/tabs/settings.php:103
 msgid "Drawer General Settings"
 msgstr ""
 
-#: admin/menu/tabs/settings.php:120
+#: admin/menu/tabs/settings.php:110
 msgid "Drawer width mobile (In percentage)"
 msgstr ""
 
-#: admin/menu/tabs/settings.php:131
+#: admin/menu/tabs/settings.php:121
 msgid "Drawer width desktop (In pixels)"
 msgstr ""
 
-#: admin/menu/tabs/settings.php:181
+#: admin/menu/tabs/settings.php:171
 msgid "Drawer Coupon Settings"
 msgstr ""
 
-#: admin/menu/tabs/settings.php:202
+#: admin/menu/tabs/settings.php:192
 msgid "Drawer Footer Settings"
 msgstr ""
 
-#: admin/menu/tabs/settings.php:209
+#: admin/menu/tabs/settings.php:199
 msgid "Show subtotal line item"
 msgstr ""
 
-#: admin/menu/tabs/settings.php:215
+#: admin/menu/tabs/settings.php:205
 msgid "Show total line item"
 msgstr ""
 
-#: admin/menu/tabs/settings.php:221
+#: admin/menu/tabs/settings.php:211
 msgid "Show discount line item"
 msgstr ""
 
-#: admin/menu/tabs/settings.php:227
+#: admin/menu/tabs/settings.php:217
 msgid "Show tax line item"
 msgstr ""
 
-#: admin/menu/tabs/settings.php:233
+#: admin/menu/tabs/settings.php:223
 msgid "Show shipping line item"
 msgstr ""
 
-#: admin/menu/tabs/settings.php:239
+#: admin/menu/tabs/settings.php:229
 msgid "Show shipping calculator"
 msgstr ""
 
-#: admin/menu/tabs/settings.php:311
+#: admin/menu/tabs/settings.php:301
 msgid "Hide on certain pages"
 msgstr ""
 
-#: admin/menu/tabs/settings.php:409
+#: admin/menu/tabs/settings.php:399
 msgid "Product Recommendation Engine Settings"
 msgstr ""
 
-#: admin/menu/tabs/settings.php:445
+#: admin/menu/tabs/settings.php:435
 msgid "Select up to 4 custom products to recommend your customers."
 msgstr ""
 
-#: admin/menu/tabs/settings.php:501
+#: admin/menu/tabs/settings.php:491
 msgid "Free Shipping Meter Settings"
 msgstr ""
 
-#: admin/menu/tabs/settings.php:521
+#: admin/menu/tabs/settings.php:511
 msgid ""
 "The text you want to display after the free shipping goal is achieved. The "
 "following smart syntax is available and will be automatically replaced: "
@@ -1475,7 +1475,7 @@ msgid ""
 "WooCommerce Settings."
 msgstr ""
 
-#: admin/menu/tabs/settings.php:529
+#: admin/menu/tabs/settings.php:519
 msgid ""
 "The text you want to display after the free shipping goal is achieved. The "
 "following smart syntax is available and will be automatically replaced: "
@@ -1484,19 +1484,19 @@ msgid ""
 "Settings."
 msgstr ""
 
-#: admin/menu/tabs/settings.php:571
+#: admin/menu/tabs/settings.php:561
 msgid "Custom Code Settings"
 msgstr ""
 
-#: admin/menu/tabs/settings.php:587
+#: admin/menu/tabs/settings.php:577
 msgid "Custom JS"
 msgstr ""
 
-#: admin/menu/tabs/settings.php:615
+#: admin/menu/tabs/settings.php:605
 msgid "Force refresh on page load?"
 msgstr ""
 
-#: admin/menu/tabs/settings.php:617
+#: admin/menu/tabs/settings.php:607
 msgid ""
 "When enabled this will force refresh the cart on each page load. Only use "
 "if you're having troubles with how the cart loads."
@@ -1683,6 +1683,22 @@ msgstr ""
 
 #: admin/menu/views/html-card-color-presets.php:162
 msgid "Orange theme"
+msgstr ""
+
+#: admin/menu/views/html-card-productbird.php:21
+msgid "Image-based AI descriptions"
+msgstr ""
+
+#: admin/menu/views/html-card-productbird.php:22
+msgid "SEO-optimized content"
+msgstr ""
+
+#: admin/menu/views/html-card-productbird.php:23
+msgid "Get 100 free credits when you sign up"
+msgstr ""
+
+#: admin/menu/views/html-card-productbird.php:24
+msgid "No monthly fees - pay as you go"
 msgstr ""
 
 #: admin/menu/views/html-card-upgrade.php:21
@@ -2380,23 +2396,6 @@ msgstr ""
 msgid "Product(s)"
 msgstr ""
 
-#: cartpops.php:90
-msgid "Oh no! WooCommerce is required to use CartPops."
-msgstr ""
-
-#: cartpops.php:94
-msgid "To prevent fatal errors, we have loaded CartPops into safe mode."
-msgstr ""
-
-#: cartpops.php:102
-msgid "View troubleshooting docs"
-msgstr ""
-
-#: cartpops.php:104 templates/components/powered-by.php:23
-#. translators: Accessibility text.
-msgid "(opens in a new tab)"
-msgstr ""
-
 #: includes/abstracts/class-cartpops-settings-page.php:237
 msgid "Your settings have been saved"
 msgstr ""
@@ -2635,20 +2634,6 @@ msgstr ""
 msgid "PHP"
 msgstr ""
 
-#: includes/lib/data/class-base-data-object.php:40
-msgid ""
-"Invalid properties passed to data object constructor. Class: \"%1$s\". "
-"Invalid properties (JSON): \"%2$s\"."
-msgstr ""
-
-#: includes/lib/data/class-base-data-object.php:60
-msgid "Invalid property accessed via __get(): \"%1$s::%2$s\"."
-msgstr ""
-
-#: includes/lib/data/class-base-data-object.php:79
-msgid "Invalid property accessed via __set(): \"%1$s::%2$s\"."
-msgstr ""
-
 #: public/class-cartpops-ajax.php:205
 msgid "Something went wrong, please reload the page."
 msgstr ""
@@ -2810,6 +2795,11 @@ msgstr[1] ""
 
 #: templates/components/powered-by.php:20
 msgid "Powered by"
+msgstr ""
+
+#: templates/components/powered-by.php:23
+#. translators: Accessibility text.
+msgid "(opens in a new tab)"
 msgstr ""
 
 #: templates/drawer/header.php:25

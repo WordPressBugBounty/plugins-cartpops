@@ -1,0 +1,11 @@
+<wpml-config>
+    <admin-texts>
+        <!--
+            Free Shipping Meter Text Options
+            These settings allow users to customize the free shipping meter text
+            that appears in the CartPops drawer and popups.
+        -->
+        <key name="cartpops_free_shipping_meter_text_base"/>
+        <key name="cartpops_free_shipping_meter_text_achieved"/>
+    </admin-texts>
+</wpml-config>

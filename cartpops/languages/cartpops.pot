@@ -1,14 +1,14 @@
-# Copyright (C) 2025 CartPops.com
+# Copyright (C) 2026 CartPops.com
 # This file is distributed under the same license as the CartPops package.
 msgid ""
 msgstr ""
-"Project-Id-Version: CartPops 1.5.39\n"
+"Project-Id-Version: CartPops 1.5.43\n"
 "Report-Msgid-Bugs-To: https://cartpops.com/contact/\n"
-"POT-Creation-Date: 2025-06-05 12:23:54+00:00\n"
+"POT-Creation-Date: 2026-06-22 10:29:33+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2025-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2026-MO-DA HO:MI+ZONE\n"
 "Last-Translator: CartPops Translate Team <help@cartpops.com>\n"
 "Language-Team: CartPops Translate <help@cartpops.com>\n"
 "Language: en\n"
@@ -492,7 +492,7 @@ msgstr ""
 #: includes/integrations/elementor/class-cartpops-cart-widget.php:96
 #: includes/integrations/elementor/class-cartpops-cart-widget.php:97
 #: includes/integrations/elementor/class-cartpops-cart-widget.php:98
-#: public/class-cartpops-cart.php:1560
+#: public/class-cartpops-cart.php:1564
 msgid "Cart"
 msgstr ""
 
@@ -959,7 +959,7 @@ msgid "Coupon title"
 msgstr ""
 
 #: admin/class-cartpops-settings-deprecated.php:876
-#: public/class-cartpops-cart.php:604
+#: public/class-cartpops-cart.php:608
 msgid "Got a discount code?"
 msgstr ""
 
@@ -968,7 +968,7 @@ msgid "Coupon input field placeholder text"
 msgstr ""
 
 #: admin/class-cartpops-settings-deprecated.php:883
-#: public/class-cartpops-cart.php:605
+#: public/class-cartpops-cart.php:609
 msgid "Enter discount code"
 msgstr ""
 
@@ -977,7 +977,7 @@ msgid "Coupon button text"
 msgstr ""
 
 #: admin/class-cartpops-settings-deprecated.php:890
-#: public/class-cartpops-cart.php:606
+#: public/class-cartpops-cart.php:610
 msgid "Apply"
 msgstr ""
 
@@ -987,7 +987,7 @@ msgstr ""
 
 #: admin/class-cartpops-settings-deprecated.php:896
 #: includes/integrations/elementor/class-cartpops-cart-widget.php:145
-#: public/class-cartpops-cart.php:872
+#: public/class-cartpops-cart.php:876
 msgid "Subtotal"
 msgstr ""
 
@@ -996,7 +996,7 @@ msgid "Line item: Discount"
 msgstr ""
 
 #: admin/class-cartpops-settings-deprecated.php:903
-#: public/class-cartpops-cart.php:1005
+#: public/class-cartpops-cart.php:1009
 msgid "Discount"
 msgstr ""
 
@@ -1005,7 +1005,7 @@ msgid "Line item: Total"
 msgstr ""
 
 #: admin/class-cartpops-settings-deprecated.php:910
-#: public/class-cartpops-cart.php:904
+#: public/class-cartpops-cart.php:908
 msgid "Total"
 msgstr ""
 
@@ -1014,7 +1014,7 @@ msgid "Checkout button"
 msgstr ""
 
 #: admin/class-cartpops-settings-deprecated.php:917
-#: public/class-cartpops-cart.php:90 public/class-cartpops-cart.php:825
+#: public/class-cartpops-cart.php:90 public/class-cartpops-cart.php:829
 msgid "Checkout now"
 msgstr ""
 
@@ -1023,7 +1023,7 @@ msgid "Empty checkout button"
 msgstr ""
 
 #: admin/class-cartpops-settings-deprecated.php:924
-#: public/class-cartpops-cart.php:828
+#: public/class-cartpops-cart.php:832
 msgid "Your cart is empty. Shop now"
 msgstr ""
 
@@ -1032,7 +1032,7 @@ msgid "Drawer empty state title"
 msgstr ""
 
 #: admin/class-cartpops-settings-deprecated.php:931
-#: public/class-cartpops-cart.php:375
+#: public/class-cartpops-cart.php:379
 msgid "Your cart is empty."
 msgstr ""
 
@@ -1041,7 +1041,7 @@ msgid "Drawer empty state subtitle"
 msgstr ""
 
 #: admin/class-cartpops-settings-deprecated.php:938
-#: public/class-cartpops-cart.php:376
+#: public/class-cartpops-cart.php:380
 msgid "Looks like you haven't made a choice yet."
 msgstr ""
 
@@ -1050,7 +1050,7 @@ msgid "Continue shopping text (Popup)"
 msgstr ""
 
 #: admin/class-cartpops-settings-deprecated.php:945
-#: public/class-cartpops-cart.php:803
+#: public/class-cartpops-cart.php:807
 msgid "Or continue shopping"
 msgstr ""
 
@@ -1060,7 +1060,7 @@ msgstr ""
 
 #: admin/class-cartpops-settings-deprecated.php:952
 #: includes/functions/cartpops-common-functions.php:935
-#: public/class-cartpops-cart.php:439 public/class-cartpops-cart.php:481
+#: public/class-cartpops-cart.php:443 public/class-cartpops-cart.php:485
 msgid "View details"
 msgstr ""
 
@@ -1685,20 +1685,42 @@ msgstr ""
 msgid "Orange theme"
 msgstr ""
 
-#: admin/menu/views/html-card-productbird.php:21
-msgid "Image-based AI descriptions"
+#: admin/menu/views/html-card-textatlas.php:18
+msgid "Translate Your WooCommerce Store Without the Headache"
 msgstr ""
 
-#: admin/menu/views/html-card-productbird.php:22
-msgid "SEO-optimized content"
+#: admin/menu/views/html-card-textatlas.php:19
+msgid ""
+"LangRelay makes your store multilingual in minutes. Simpler and more "
+"affordable than Weglot, with everything you need and nothing you don't."
 msgstr ""
 
-#: admin/menu/views/html-card-productbird.php:23
-msgid "Get 100 free credits when you sign up"
+#: admin/menu/views/html-card-textatlas.php:21
+msgid "Translate your entire store in minutes, not hours"
 msgstr ""
 
-#: admin/menu/views/html-card-productbird.php:24
-msgid "No monthly fees - pay as you go"
+#: admin/menu/views/html-card-textatlas.php:22
+msgid "Automatic and manual translation options"
+msgstr ""
+
+#: admin/menu/views/html-card-textatlas.php:23
+msgid "SEO-friendly with hreflang and translated URLs"
+msgstr ""
+
+#: admin/menu/views/html-card-textatlas.php:24
+msgid "Works with any WooCommerce theme"
+msgstr ""
+
+#: admin/menu/views/html-card-textatlas.php:25
+msgid "A fraction of the cost of alternatives"
+msgstr ""
+
+#: admin/menu/views/html-card-textatlas.php:26
+msgid "Simple setup, no coding required"
+msgstr ""
+
+#: admin/menu/views/html-card-textatlas.php:28
+msgid "Try LangRelay"
 msgstr ""
 
 #: admin/menu/views/html-card-upgrade.php:21
@@ -2497,7 +2519,7 @@ msgid "Sunday"
 msgstr ""
 
 #: includes/functions/cartpops-admin-functions.php:299
-#: public/class-cartpops-cart.php:1069
+#: public/class-cartpops-cart.php:1073
 msgid "Edit"
 msgstr ""
 
@@ -2510,12 +2532,12 @@ msgid "You save"
 msgstr ""
 
 #: includes/functions/cartpops-common-functions.php:897
-#: public/class-cartpops-cart.php:448
+#: public/class-cartpops-cart.php:452
 msgid "Available on backorder"
 msgstr ""
 
 #: includes/functions/cartpops-common-functions.php:932
-#: public/class-cartpops-cart.php:441 public/class-cartpops-cart.php:478
+#: public/class-cartpops-cart.php:445 public/class-cartpops-cart.php:482
 msgid "Product details"
 msgstr ""
 
@@ -2725,65 +2747,65 @@ msgstr ""
 msgid "Select a shipping method"
 msgstr ""
 
-#: public/class-cartpops-cart.php:652
+#: public/class-cartpops-cart.php:656
 #. translators: %1$s is replaced with the coupon name and %2$s with the coupon
 #. amount
 msgid "Coupon \"%1$s\" (%2$s)"
 msgstr ""
 
-#: public/class-cartpops-cart.php:654
+#: public/class-cartpops-cart.php:658
 msgid "Removes coupon code"
 msgstr ""
 
-#: public/class-cartpops-cart.php:700 public/class-cartpops-cart.php:802
+#: public/class-cartpops-cart.php:704 public/class-cartpops-cart.php:806
 msgid "You might also like these items!"
 msgstr ""
 
-#: public/class-cartpops-cart.php:933
+#: public/class-cartpops-cart.php:937
 #. translators: %s: address
 msgid "estimated for %s"
 msgstr ""
 
-#: public/class-cartpops-cart.php:936
+#: public/class-cartpops-cart.php:940
 #. translators: %s: tax amount
 msgid "(includes %s)"
 msgstr ""
 
-#: public/class-cartpops-cart.php:941
+#: public/class-cartpops-cart.php:945
 msgid "Shipping calculated at checkout"
 msgstr ""
 
-#: public/class-cartpops-cart.php:1038
+#: public/class-cartpops-cart.php:1042
 msgid "Shipping"
 msgstr ""
 
-#: public/class-cartpops-cart.php:1056 templates/drawer/shipping.php:62
+#: public/class-cartpops-cart.php:1060 templates/drawer/shipping.php:62
 msgid "Shipping costs are calculated during checkout."
 msgstr ""
 
-#: public/class-cartpops-cart.php:1058 templates/drawer/shipping.php:68
+#: public/class-cartpops-cart.php:1062 templates/drawer/shipping.php:68
 #. translators: %s is an address.
 msgid "No shipping options were found for %s."
 msgstr ""
 
-#: public/class-cartpops-cart.php:1070
+#: public/class-cartpops-cart.php:1074
 msgid "Calculate shipping"
 msgstr ""
 
-#: public/class-cartpops-cart.php:1104 public/class-cartpops-cart.php:1114
+#: public/class-cartpops-cart.php:1108 public/class-cartpops-cart.php:1118
 msgid "View cart"
 msgstr ""
 
-#: public/class-cartpops-cart.php:1108
+#: public/class-cartpops-cart.php:1112
 msgid "Continue shopping"
 msgstr ""
 
-#: public/class-cartpops-cart.php:1367
+#: public/class-cartpops-cart.php:1371
 #. translators: %1$s is an emoji %2$s is replaced with a price (e.g. $30.00)
 msgid "%1$s Only %2$s away from free shipping!"
 msgstr ""
 
-#: public/class-cartpops-cart.php:1369
+#: public/class-cartpops-cart.php:1373
 msgid "Congrats 🎉! You have earned free shipping!"
 msgstr ""
 

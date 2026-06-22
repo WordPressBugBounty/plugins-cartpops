@@ -1155,7 +1155,7 @@ if ( !class_exists( 'CartPops_Settings' ) ) {
          * @author CartPops <help@cartpops.com>
          */
         public static function get_upgrade_card() {
-            include 'views/html-card-productbird.php';
+            include 'views/html-card-textatlas.php';
         }
 
     }

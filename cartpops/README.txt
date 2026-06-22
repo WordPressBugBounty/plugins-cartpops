@@ -1,11 +1,11 @@
 === CartPops - High Converting Add To Cart Popup For WooCommerce ===
-Contributors: cartpops
+Contributors: cartpops, freemius
 Donate link: https://cartpops.com
 Tags: add to cart popup, added to cart, sidecart, shop, shopping cart, cart drawer, floating cart, woo-commerce, woocommerce
 Requires at least: 5.1
-Tested up to: 6.6.1
+Tested up to: 6.9.4
 Requires PHP: 7.0
-Stable tag: 1.5.39
+Stable tag:  1.5.43
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -153,118 +153,4 @@ If you have a caching plugin installed, or use any sort of caching in your site 
 
 == Changelog ==
 
-= 1.5.33 =
-- chore: Added compatibility with the latest version of WooCommerce.
-- chore: Added WooCommerce as a requirement for the plugin.
-- fix: Fixed an issue with the quantity selector and some plugins who altered the quantity input on the cart page.
-
-= 1.4.30 =
-- chore: Added HPOS compatibility.
-
-= 1.4.29 =
-- fix: Fixed an issue where the cart counter in the `[cartpops_cart_launcher]` shortcode wasn't updating on page load.
-
-= 1.4.28 =
-- chore: Updates the Freemius SDK to the latest release to address a potential security issue.
-
-= 1.4.26 =
-- fix: Fixed an edge case with WooCommerce 7.8 where adding to cart resulted in an error.
-
-= 1.4.23 =
-- fix: Fixed edge cases where the Product Recommendations didn't show up (mostly during page loads and whenever something was added to the cart for the first time).
-- fix: Fixed an issue with the Floating Cart launcher settings:
-  - fix: "Hide when cart is empty" now correctly hides and shows again when enabled/disabled.
-  - fix: "Hide indicator when cart is empty" now correctly hides and shows again when enabled/disabled.
-
-= 1.4.21 =
-- fix: Fix issues with some options saving incorrectly.
-
-= 1.4.20 =
-- fix: Fix occasions where a fatal error would occur if a deleted product was added to the cart.
-- fix: Fix an issue with Select2 not properly initializing in the settings.
-- chore: Decrease the overall JS bundle size.
-
-= 1.4.19 =
-- fix: Fix occasions where styles were not loading properly.
-
-= 1.4.18 =
-- feat: Add the ability to use custom quantity selector colors.
-- fix: Fix Select2 field in some instances not loading properly.
-- fix: Fix compatibility issue with WooCommerce Pixel Manager.
-- chore: Enqueue scripts after "wc-cart-fragments" to improve compatibility with caching plugins.
-
-= 1.4.17 =
-- chore: Update Freemius dependency.
-
-= 1.4.16 =
-- chore: Test for WooCommerce ^6.0.0
-
-= 1.4.15 =
-- fix: Fix translation issue with a few strings.
-
-= 1.4.14 =
-- fix: Fix free shipping meter not showing up when country has a match.
-- fix: Fix hidden Floating Cart Launcher not showing when adding to cart.
-- fix: Fix recommendations border color not working.
-
-= 1.4.12 =
-- feat: Add the ability to hide the Floating Cart Launcher on certain pages.
-- fix: Fix shipping line item being Pro only whilst it should be free.
-- fix: Fix add sale price to price in Drawer.
-- fix: Fix the ability to not trigger the cart wasn't working.
-- chore: Automatically disable the free CartPops plugin if CartPops Pro gets installed.
-- fix: Ensure add to cart buttons are disabled when adding to cart is still in progress.
-- fix: Fix occasions where the shipping line item wasn't showing.
-- fix: Ensure overflow hidden is set to important. Some themes/plugins were overriding this style.
-- fix: Recommendations should be more consistent now.
-- fix: Cart events are more fluid and wait up on another.
-- feat: Allow non-simple products to be shown as random Recommendations.
-
-= 1.4.7 =
-- feat: Add sleek and simple Floating Cart Launcher animation.
-- feat: Product Recommendations Engine can now take other product types too.
-- fix: Hide Product Recommendation Engine pagination if there's only 1 item.
-- fix: Add a background color if there's no product image for UX consistency.
-- chore: Remove redundant Swiper.js element.
-- fix: Total line item was not being calculated correctly when shipping line item was activated.
-
-= 1.4.6 =
-- feat: Added option to hide the cart count indicator on the Floating Cart Launcher if the cart is empty.
-- feat: Integration with WooCommerce Extra Product Options.
-- chore: Reworked the add to cart handling to make it more compatible with plugins that add (hidden) fields.
-- chore: Increase z-index for the modals.
-- fix: Fix occasions where the modal animations are not working.
-
-= 1.4.5 =
-- docs: Added German, Spanish, French, Italian, Dutch and Portuguese translations.
-- feat: Add filter that allows you to change the time in which notifications are removed from the Drawer.
-- chore: Replaced all H2 and H3 headings for `<span>`.
-- chore: Reworked handling of ajax fragments for upcoming features and better compatibility.
-- chore: Removed Swiper.js that was used for the Product Recommendation Engine.
-- chore: Improved the total bundle size, specifically the main CSS file.
-- fix: Minor bug fixes and tweaks.
-
-= 1.4.2 =
-- feat: Integration with Extendons WooCommerce Product Bundles Plugin with Bulk Discounts.
-- feat: Integration with WooCommerce Chained Products.
-
-= 1.4.1 =
-- feat: Integration with WooCommerce Product Bundles.
-- feat: Integration with WooCommerce Composite Products.
-- feat: Integration with WooCommerce Mix & Match Products.
-- feat: Integration with WPC Product Bundles.
-- fix: CSS tweaks and small bug fixes.
-
-= 1.4.0 =
-- feat: PRO: Secondary checkout buttons! Choose from View cart, Continue Shopping or enter a custom URL.
-- feat: PRO: Allow customers to directly calculate and/or change their shipping directly in the cart.
-- feat: It's now possible to hide any cart line item.
-- feat: Product images are now clickable!
-- fix: Fixed an issue where if the quantity input field was set to zero it wouldn't remove the item from the cart.
-- chore: Add Oxygen compatibility. CartPops will shut off when the Oxygen builder is active.
-- fix: Fixed an issue where the Free Shipping Meter wasn't updating if the shipping rule was set to: "apply minimum order rule before coupon amount".
-
-= 1.5.34 =
-- chore: Compatability for PHP 8.2
-- chore: Removed the option to select Bar and Popup as they will get deprecated in future versions.
-- fix:  "Function _load_textdomain_just_in_time was called" PHP notice.
+View the changelog at https://docs.cartpops.com/changelog

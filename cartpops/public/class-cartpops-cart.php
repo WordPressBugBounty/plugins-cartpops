@@ -164,6 +164,14 @@ class CartPops_Cart {
 		<?php 
         if ( !empty( $cart ) ) {
             foreach ( $cart as $cart_item_key => $cart_item ) {
+                if ( !apply_filters(
+                    'woocommerce_widget_cart_item_visible',
+                    true,
+                    $cart_item,
+                    $cart_item_key
+                ) ) {
+                    continue;
+                }
                 $_product = apply_filters(
                     'woocommerce_cart_item_product',
                     $cart_item['data'],

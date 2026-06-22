@@ -5,14 +5,14 @@
  * Description: Beautiful, responsive, and conversion optimized add to cart popup for WooCommerce.
  * Plugin URI: https://cartpops.com
  * Author: CartPops.com
- * Version: 1.5.39
+ * Version: 1.5.43
  * Author URI: https://cartpops.com/?utm_source=wp-plugins&utm_campaign=author-uri&utm_medium=wp-dash
  * Text Domain: cartpops
  * Domain Path: /languages
  * Requires Plugins: woocommerce
  * Requires PHP: 7.4
  * WC requires at least: 6.0
- * WC tested up to: 6.7.0
+ * WC tested up to: 10.7.0
  *
  * CartPops is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -30,7 +30,7 @@ if ( !defined( 'WPINC' ) ) {
     die;
 }
 if ( !defined( 'CARTPOPS_VERSION' ) ) {
-    define( 'CARTPOPS_VERSION', '1.5.39' );
+    define( 'CARTPOPS_VERSION', '1.5.43' );
 }
 if ( !defined( 'CARTPOPS_PREFIX' ) ) {
     define( 'CARTPOPS_PREFIX', 'cartpops' );
@@ -136,26 +136,27 @@ if ( function_exists( 'fs_cartpops' ) ) {
                 if ( !isset( $fs_cartpops ) ) {
                     // Include Freemius SDK.
                     $fs_cartpops = fs_dynamic_init( array(
-                        'id'              => '7061',
-                        'slug'            => 'cartpops',
-                        'premium_slug'    => 'cartpops-pro',
-                        'type'            => 'plugin',
-                        'public_key'      => 'pk_f71eea687152e554f27b743874cd0',
-                        'is_premium'      => false,
-                        'premium_suffix'  => 'Pro',
-                        'has_addons'      => false,
-                        'has_paid_plans'  => true,
-                        'trial'           => array(
+                        'id'               => '7061',
+                        'slug'             => 'cartpops',
+                        'premium_slug'     => 'cartpops-pro',
+                        'type'             => 'plugin',
+                        'public_key'       => 'pk_f71eea687152e554f27b743874cd0',
+                        'is_premium'       => false,
+                        'premium_suffix'   => 'Pro',
+                        'has_addons'       => false,
+                        'has_paid_plans'   => true,
+                        'trial'            => array(
                             'days'               => 14,
                             'is_require_payment' => true,
                         ),
-                        'has_affiliation' => 'selected',
-                        'menu'            => array(
+                        'has_affiliation'  => 'selected',
+                        'menu'             => array(
                             'slug'    => 'cartpops_settings',
                             'contact' => false,
                             'support' => false,
                         ),
-                        'is_live'         => true,
+                        'is_live'          => true,
+                        'is_org_compliant' => true,
                     ) );
                 }
                 return $fs_cartpops;

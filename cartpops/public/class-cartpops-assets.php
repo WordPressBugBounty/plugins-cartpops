@@ -97,6 +97,7 @@ class CartPops_Assets {
 				'isCheckoutPage'          => wp_json_encode( is_checkout() ),
 				'isCartPage'              => wp_json_encode( is_cart() ),
 				'genericAddToCartMessage' => ( ! empty( Options::get( 'generic_add_to_cart_message_text', true ) ) ) ? Options::get( 'generic_add_to_cart_message_text', true ) : __( 'Product successfully added to your cart.', 'cartpops' ),
+				'genericErrorMessage'     => apply_filters( 'cartpops_generic_error_message', __( 'Something went wrong, please reload the page.', 'cartpops' ) ),
 				'notificationDelay'       => apply_filters( 'cartpops_notification_remove_delay', 4200 ),
 				'loadingStateDelay'       => apply_filters(
 					'cartpops_loading_state_delay',

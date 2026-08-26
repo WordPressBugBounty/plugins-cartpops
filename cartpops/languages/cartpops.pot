@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the CartPops package.
 msgid ""
 msgstr ""
-"Project-Id-Version: CartPops 1.5.43\n"
+"Project-Id-Version: CartPops 1.5.45\n"
 "Report-Msgid-Bugs-To: https://cartpops.com/contact/\n"
-"POT-Creation-Date: 2026-06-22 10:29:33+00:00\n"
+"POT-Creation-Date: 2026-08-26 11:15:14+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2656,7 +2656,7 @@ msgstr ""
 msgid "PHP"
 msgstr ""
 
-#: public/class-cartpops-ajax.php:205
+#: public/class-cartpops-ajax.php:205 public/class-cartpops-assets.php:100
 msgid "Something went wrong, please reload the page."
 msgstr ""
 

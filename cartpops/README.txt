@@ -1,11 +1,11 @@
 === CartPops - High Converting Add To Cart Popup For WooCommerce ===
-Contributors: cartpops, freemius
+Contributors: cartpops
 Donate link: https://cartpops.com
 Tags: add to cart popup, added to cart, sidecart, shop, shopping cart, cart drawer, floating cart, woo-commerce, woocommerce
 Requires at least: 5.1
 Tested up to: 6.9.4
-Requires PHP: 7.0
-Stable tag:  1.5.43
+Requires PHP: 7.4
+Stable tag:  1.5.45
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 

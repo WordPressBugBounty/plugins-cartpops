@@ -1,0 +1,3542 @@
+# Copyright (C) 2026 CartPops
+# This file is distributed under the GPL v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: CartPops 2.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/cartpops/\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-02T11:55:32+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: cartpops\n"
+"Language: ro_RO\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
+
+#: cartpops.php
+#: src/Admin/AdminPage.php:36
+#: src/Admin/AdminPage.php:37
+#: src/Blocks/CartDrawer/render.php:856
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:518
+#. Plugin Name of the plugin
+#. Author of the plugin
+msgid "CartPops"
+msgstr "CartPops"
+
+#: cartpops.php
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://cartpops.com"
+msgstr "https://cartpops.com"
+
+#: cartpops.php
+#. Description of the plugin
+msgid ""
+"The #1 WooCommerce cart drawer plugin. Boost conversions with a beautiful "
+"slide-out cart, product recommendations, and free shipping meter."
+msgstr ""
+"Modulul #1 de coș glisant pentru WooCommerce. Crește conversiile cu un coș "
+"glisant atractiv, recomandări de produse și un indicator pentru livrare "
+"gratuită."
+
+#: cartpops.php:56
+msgid ""
+"CartPops detected both the Free and Pro editions as active. CartPops was "
+"paused; deactivate one edition and reload this page."
+msgstr ""
+"CartPops a detectat că atât versiunea Free, cât și versiunea Pro sunt "
+"active. CartPops a fost oprit; dezactivează una dintre versiuni și "
+"reîncarcă această pagină."
+
+#: cartpops.php:148
+msgid ""
+"CartPops could not safely verify upgrade state. CartPops was paused before "
+"licensing initialization; reload this page or contact support."
+msgstr ""
+"CartPops nu a putut verifica în siguranță starea de actualizare. CartPops a "
+"fost oprit înainte de inițializarea licenței; reîncarcă această pagină sau "
+"contactează asistența."
+
+#: cartpops.php:406
+msgid ""
+"CartPops licensing could not initialize. Shared cart features remain "
+"available, but paid features are paused. Reinstall the complete CartPops "
+"package or contact support."
+msgstr ""
+"Licențierea CartPops nu a putut fi inițializată. Funcționalitățile standard "
+"ale coșului rămân disponibile, dar opțiunile plătite sunt dezactivate. "
+"Reinstalează pachetul complet CartPops sau contactează asistența."
+
+#: src/Admin/SettingsController.php:118
+msgid "No settings provided."
+msgstr "Nu au fost furnizate setări."
+
+#: src/Admin/SettingsController.php:129
+msgid "No valid settings provided."
+msgstr "Nu au fost furnizate setări valide."
+
+#: src/Admin/SettingsController.php:215
+msgid "Invalid import data. Expected \"settings\" key with object value."
+msgstr ""
+"Date de import nevalide. Se aștepta cheia „settings” cu o valoare de tip "
+"obiect."
+
+#: src/Admin/SettingsController.php:249
+msgid "Settings imported successfully."
+msgstr "Setările au fost importate cu succes."
+
+#: src/Admin/SettingsController.php:270
+msgid "Settings could not be saved. Please try again."
+msgstr "Setările nu au putut fi salvate. Te rugăm să încerci din nou."
+
+#: src/Admin/SettingsController.php:283
+msgid "Settings contain an invalid nested value."
+msgstr "Setările conțin o valoare imbricată nevalidă."
+
+#: src/Admin/SettingsController.php:473
+msgid ""
+"Custom product recommendations require an active CartPops Pro entitlement "
+"for this site."
+msgstr ""
+"Recomandările personalizate de produse necesită o licență CartPops Pro "
+"activă pentru acest site."
+
+#: src/Admin/SettingsController.php:484
+msgid ""
+"Recommendation button text and presentation require an active CartPops Pro "
+"entitlement for this site."
+msgstr ""
+"Textul și aspectul butonului de recomandare necesită o licență CartPops Pro "
+"activă pentru acest site."
+
+#: src/Admin/SettingsController.php:495
+msgid ""
+"Secondary drawer actions require an active CartPops Pro entitlement for "
+"this site."
+msgstr ""
+"Acțiunile secundare din sertarul de coș necesită o licență CartPops Pro "
+"activă pentru acest site."
+
+#: src/Admin/SettingsController.php:514
+msgid "You are not allowed to change custom CSS."
+msgstr "Nu ai permisiunea de a modifica codul CSS personalizat."
+
+#: src/Analytics/AnalyticsDashboard.php:23
+#: src/Analytics/AnalyticsDashboard.php:24
+msgid "CartPops Analytics"
+msgstr "CartPops Analytics"
+
+#: src/Analytics/ConversionTracker.php:544
+#: src/Analytics/ConversionTracker.php:562
+msgid "Event payload too large."
+msgstr "Sarcina utilă a evenimentului este prea mare."
+
+#: src/Analytics/ConversionTracker.php:1100
+msgid "You are not allowed to reset analytics data."
+msgstr "Nu ai permisiunea de a reseta datele de analiză."
+
+#: src/Blocks/CartDrawer/render.php:33
+#: src/Admin/assets/js/components/DrawerPreview.jsx:145
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:304
+msgid "Your Cart"
+msgstr "Coșul tău"
+
+#: src/Blocks/CartDrawer/render.php:36
+#: src/Blocks/CartDrawer/render.php:694
+#: src/Admin/assets/js/components/DrawerPreview.jsx:150
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:340
+msgid "Coupon code"
+msgstr "Cod cupon"
+
+#: src/Blocks/CartDrawer/render.php:37
+#: src/Admin/assets/js/components/DrawerPreview.jsx:154
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:353
+msgid "Apply"
+msgstr "Aplică"
+
+#: src/Blocks/CartDrawer/render.php:38
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:831
+#: src/Admin/assets/js/components/DrawerPreview.jsx:158
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:369
+msgid "Subtotal"
+msgstr "Subtotal"
+
+#: src/Blocks/CartDrawer/render.php:39
+#: src/Admin/assets/js/components/DrawerPreview.jsx:341
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:379
+msgid "Discount"
+msgstr "Reducere"
+
+#: src/Blocks/CartDrawer/render.php:40
+#: src/Admin/assets/js/components/DrawerPreview.jsx:160
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:389
+msgid "Total"
+msgstr "Total"
+
+#: src/Blocks/CartDrawer/render.php:41
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:304
+#: src/Admin/assets/js/components/DrawerPreview.jsx:168
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:419
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:106
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:151
+msgid "Continue shopping"
+msgstr "Continuă cumpărăturile"
+
+#: src/Blocks/CartDrawer/render.php:42
+#: src/Admin/assets/js/components/DrawerPreview.jsx:163
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:399
+msgid "Your cart is empty"
+msgstr "Coșul tău este gol"
+
+#: src/Blocks/CartDrawer/render.php:249
+#: src/Blocks/CartDrawer/render.php:277
+#: src/Blocks/CartLauncher/render.php:65
+#: src/Blocks/CartLauncher/render.php:190
+#: src/Admin/assets/js/components/LauncherPreview.jsx:357
+msgid "Open cart"
+msgstr "Deschide coșul"
+
+#: src/Blocks/CartDrawer/render.php:252
+#: src/Blocks/CartDrawer/render.php:562
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:160
+msgid "You may also like"
+msgstr "S-ar putea să-ți placă și"
+
+#: src/Blocks/CartDrawer/render.php:278
+#: src/Blocks/CartDrawer/render.php:403
+#: src/Blocks/CartLauncher/render.php:77
+msgid "Close cart"
+msgstr "Închide coșul"
+
+#: src/Blocks/CartDrawer/render.php:279
+#: src/Blocks/CartDrawer/render.php:587
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:611
+#: src/Recommendations/RecommendationEngine.php:240
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:230
+msgid "Add to cart"
+msgstr "Adaugă în coș"
+
+#: src/Blocks/CartDrawer/render.php:281
+#: src/Recommendations/RecommendationEngine.php:220
+#: src/Admin/assets/js/components/DrawerPreview.jsx:924
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:117
+#. translators: %s: product name.
+#, php-format,js-format
+msgid "Add %s to cart"
+msgstr "Adaugă %s în coș"
+
+#: src/Blocks/CartDrawer/render.php:282
+#: src/Blocks/CartDrawer/render.php:600
+#: src/Recommendations/RecommendationEngine.php:239
+msgid "Select options"
+msgstr "Selectează opțiunile"
+
+#: src/Blocks/CartDrawer/render.php:284
+#: src/Recommendations/RecommendationEngine.php:217
+#. translators: %s: product name.
+#, php-format
+msgid "Select options for %s"
+msgstr "Selectează opțiunile pentru %s"
+
+#: src/Blocks/CartDrawer/render.php:286
+#. translators: %s: cart item name.
+#, php-format
+msgid "\"%s\" removed."
+msgstr "„%s” a fost eliminat."
+
+#: src/Blocks/CartDrawer/render.php:288
+#. translators: %s: cart item name.
+#, php-format
+msgid "%s removed from cart."
+msgstr "%s a fost eliminat din coș."
+
+#: src/Blocks/CartDrawer/render.php:289
+msgid "Item"
+msgstr "Articol"
+
+#: src/Blocks/CartDrawer/render.php:291
+#. translators: %s: cart item name.
+#, php-format
+msgid "%s restored to cart."
+msgstr "%s a fost readăugat în coș."
+
+#: src/Blocks/CartDrawer/render.php:293
+#. translators: %s: coupon code.
+#, php-format
+msgid "Coupon \"%s\" applied."
+msgstr "Cuponul „%s” a fost aplicat."
+
+#: src/Blocks/CartDrawer/render.php:295
+#. translators: %s: coupon code.
+#, php-format
+msgid "Coupon \"%s\" removed."
+msgstr "Cuponul „%s” a fost eliminat."
+
+#: src/Blocks/CartDrawer/render.php:297
+#. translators: %s: product name.
+#, php-format
+msgid "%s added to cart."
+msgstr "%s a fost adăugat în coș."
+
+#: src/Blocks/CartDrawer/render.php:298
+msgid "Your cart has expired."
+msgstr "Coșul tău a expirat."
+
+#: src/Blocks/CartDrawer/render.php:299
+#: src/Pro/Blocks/ShippingMeter/ShippingMeterBlock.php:954
+msgid "Request failed"
+msgstr "Solicitarea a eșuat"
+
+#: src/Blocks/CartDrawer/render.php:300
+msgid "Your cart is refreshing. Please wait."
+msgstr "Coșul tău se actualizează. Te rugăm să aștepți."
+
+#: src/Blocks/CartDrawer/render.php:301
+msgid "Failed to fetch recommendations"
+msgstr "Nu s-au putut prelua recomandările"
+
+#: src/Blocks/CartDrawer/render.php:303
+#. translators: 1: tax amount, 2: tax label (e.g. VAT).
+#, php-format
+msgid "Incl. %1$s %2$s"
+msgstr "Incl. %1$s %2$s"
+
+#: src/Blocks/CartDrawer/render.php:333
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:73
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:17
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:24
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:32
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:72
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:457
+msgid "Add"
+msgstr "Adaugă"
+
+#: src/Blocks/CartDrawer/render.php:386
+msgid "Shopping cart"
+msgstr "Coș de cumpărături"
+
+#: src/Blocks/CartDrawer/render.php:472
+msgid "Decrease quantity:"
+msgstr "Scade cantitatea:"
+
+#: src/Blocks/CartDrawer/render.php:485
+msgid "Increase quantity:"
+msgstr "Crește cantitatea:"
+
+#: src/Blocks/CartDrawer/render.php:501
+msgid "Remove item:"
+msgstr "Elimină articolul:"
+
+#: src/Blocks/CartDrawer/render.php:550
+msgid "Undo"
+msgstr "Anulează"
+
+#: src/Blocks/CartDrawer/render.php:608
+msgid "Previous"
+msgstr "Anterior"
+
+#: src/Blocks/CartDrawer/render.php:615
+msgid "Next"
+msgstr "Următor"
+
+#: src/Blocks/CartDrawer/render.php:643
+#: src/Blocks/CartDrawer/render.php:770
+#: src/Admin/assets/js/components/DrawerPreview.jsx:356
+msgid "Shipping"
+msgstr "Livrare"
+
+#: src/Blocks/CartDrawer/render.php:731
+msgid "Remove coupon:"
+msgstr "Elimină cuponul:"
+
+#: src/Blocks/CartDrawer/render.php:811
+#: src/Admin/assets/js/components/DrawerPreview.jsx:1107
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:288
+msgid "Proceed to Checkout"
+msgstr "Finalizează comanda"
+
+#: src/Blocks/CartDrawer/render.php:848
+#: src/Admin/assets/js/components/DrawerPreview.jsx:1123
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:228
+msgid "View Cart"
+msgstr "Vezi coșul"
+
+#: src/Blocks/CartDrawer/render.php:854
+msgid "Powered by"
+msgstr "Oferit de"
+
+#: src/Blocks/CartDrawer/render.php:857
+msgid "(opens in a new tab)"
+msgstr "(se deschide într-o filă nouă)"
+
+#: src/Cart/CartLineAuthority.php:404
+msgid "Available on backorder"
+msgstr "Disponibil pentru precomandă"
+
+#: src/Cart/CouponSerializer.php:52
+#: src/Pro/ShippingMeter/RewardApplicator.php:262
+msgid "Cart Reward"
+msgstr "Recompensă coș"
+
+#: src/Licensing/GuardedDrawerDataProvider.php:192
+#: src/REST/DrawerDataController.php:149
+msgid "Drawer data is temporarily unavailable."
+msgstr "Datele sertarului sunt temporar indisponibile."
+
+#: src/Licensing/PaidRuntimeGuard.php:159
+msgid "This CartPops feature requires an active Pro entitlement for this site."
+msgstr ""
+"Această funcționalitate CartPops necesită o licență Pro activă pentru acest "
+"site."
+
+#: src/Licensing/PaidRuntimeGuard.php:166
+msgid "This CartPops feature is temporarily unavailable while its data is prepared."
+msgstr ""
+"Această funcționalitate CartPops este temporar indisponibilă în timp ce "
+"datele sale sunt pregătite."
+
+#: src/Plugin.php:849
+#. translators: %s: value-free CartPops diagnostic code.
+#, php-format
+msgid ""
+"CartPops is paused because its required upgrade or build validation did not "
+"complete. Original data was preserved. Diagnostic: %s."
+msgstr ""
+"CartPops este întrerupt deoarece actualizarea necesară sau validarea "
+"versiunii nu s-a finalizat. Datele inițiale au fost păstrate. Diagnostic: "
+"%s."
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:119
+#. translators: %s: add-on name.
+#, php-format
+msgid "%s added."
+msgstr "%s adăugat."
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:121
+#. translators: %s: add-on name.
+#, php-format
+msgid "%s removed."
+msgstr "%s eliminat."
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:122
+msgid "Toggle failed"
+msgstr "Comutarea a eșuat"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:123
+msgid "Failed to add spotlight product"
+msgstr "Nu s-a putut adăuga produsul evidențiat"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:124
+msgid "Adding…"
+msgstr "Se adaugă…"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:125
+msgid "Added ✓"
+msgstr "Adăugat ✓"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:127
+msgid "bundle discount"
+msgstr "reducere pentru pachet"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:128
+msgid "Failed to add bundle items"
+msgstr "Nu s-au putut adăuga articolele din pachet"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:129
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:668
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:756
+msgid "Calculate shipping"
+msgstr "Calculează livrarea"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:130
+msgid "Loading shipping options…"
+msgstr "Se încarcă opțiunile de livrare…"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:131
+msgid "Shipping options updated."
+msgstr "Opțiunile de livrare au fost actualizate."
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:132
+msgid "Shipping method updated."
+msgstr "Metoda de livrare a fost actualizată."
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:133
+msgid "Shipping options could not be updated. Please try again."
+msgstr ""
+"Opțiunile de livrare nu au putut fi actualizate. Te rugăm să încerci din "
+"nou."
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:134
+msgid "No shipping options are available for this address."
+msgstr "Nu există opțiuni de livrare disponibile pentru această adresă."
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:135
+msgid "Enter your destination to calculate shipping."
+msgstr "Introdu destinația pentru a calcula livrarea."
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:136
+msgid "Shipping options"
+msgstr "Opțiuni de livrare"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:315
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:122
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:155
+msgid "View cart"
+msgstr "Vezi coșul"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:493
+msgid "Dismiss"
+msgstr "Ignoră"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:516
+#: src/Pro/Blocks/ShippingMeter/ShippingMeterBlock.php:1090
+msgid "Shipping and rewards progress"
+msgstr "Progres livrare și recompense"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:523
+#: src/Pro/Blocks/ShippingMeter/ShippingMeterBlock.php:1099
+msgid "Reward tiers"
+msgstr "Niveluri de recompensă"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:584
+#: src/Pro/BundleBuilder/BundleBuilder.php:56
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:469
+msgid "Frequently bought together"
+msgstr "Cumpărate frecvent împreună"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:590
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:616
+msgid "Close"
+msgstr "Închide"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:601
+msgid "Product info"
+msgstr "Informații produs"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:605
+msgid "Choose…"
+msgstr "Alege…"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:615
+msgid "Product information"
+msgstr "Informații despre produs"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:619
+msgid "Got it"
+msgstr "Am înțeles"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:685
+msgid "Country / Region"
+msgstr "Țară / Regiune"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:695
+msgid "Select a country / region…"
+msgstr "Selectează o țară / regiune…"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:703
+msgid "State / County"
+msgstr "Stat / Județ"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:720
+msgid "Select a state / region…"
+msgstr "Selectează un stat / o regiune…"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:746
+msgid "City"
+msgstr "Oraș"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:751
+msgid "Postcode / ZIP"
+msgstr "Cod poștal"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:815
+msgid "Toggle add-on:"
+msgstr "Comută suplimentul:"
+
+#: src/Pro/BundleBuilder/BundleBuilderController.php:143
+#: src/Pro/Notifications/DrawerNotificationBarController.php:360
+#: src/Pro/SmartAddons/SmartAddonsController.php:96
+#: src/Recommendations/RecommendationsController.php:94
+#: src/REST/CartStateController.php:120
+#: src/REST/CartStateController.php:199
+#: src/REST/CouponController.php:104
+#: src/REST/CouponController.php:152
+msgid "Cart is unavailable. Please try again."
+msgstr "Coșul nu este disponibil. Te rugăm să încerci din nou."
+
+#: src/Pro/BundleBuilder/BundleBuilderController.php:314
+#: src/Pro/Notifications/DrawerNotificationBarController.php:442
+#: src/Pro/REST/ProDrawerDataSupplementProvider.php:80
+#: src/Pro/SmartAddons/SmartAddonsController.php:129
+#: src/Recommendations/RecommendationsController.php:148
+#: src/REST/CartStateController.php:330
+#: src/REST/CouponController.php:231
+msgid ""
+"The final cart state could not be confirmed. Refresh your cart before "
+"making another change."
+msgstr ""
+"Starea finală a coșului nu a putut fi confirmată. Reîmprospătează coșul "
+"înainte de a face o altă modificare."
+
+#: src/Pro/BundleBuilder/BundleBuilderController.php:322
+#: src/Pro/Notifications/DrawerNotificationBarController.php:450
+#: src/Pro/REST/ProDrawerDataSupplementProvider.php:86
+#: src/Pro/SmartAddons/SmartAddonsController.php:137
+#: src/Recommendations/RecommendationsController.php:156
+#: src/REST/CartStateController.php:319
+#: src/REST/CouponController.php:220
+msgid "Your cart is being updated. Please try again."
+msgstr "Coșul tău se actualizează. Te rugăm să încerci din nou."
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:573
+msgid "CartPops Cart"
+msgstr "Coș CartPops"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:775
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:888
+msgid "Menu Icon"
+msgstr "Pictogramă meniu"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:781
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1063
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:56
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:328
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:369
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:514
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:752
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:223
+msgid "Icon"
+msgstr "Pictogramă"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:784
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:785
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:786
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:787
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:788
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:15
+msgid "Cart"
+msgstr "Coș"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:789
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:790
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:791
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:792
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:793
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:794
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:795
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:796
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:35
+msgid "Bag"
+msgstr "Sacoșă"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:805
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1121
+msgid "Items Indicator"
+msgstr "Indicator articole"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:808
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:120
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:435
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:295
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:117
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:149
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:33
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:38
+msgid "None"
+msgstr "Niciunul"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:809
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:299
+msgid "Bubble"
+msgstr "Bulă"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:810
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:303
+msgid "Plain"
+msgstr "Simplu"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:819
+msgid "Hide Empty"
+msgstr "Ascunde dacă este gol"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:821
+msgid "Yes"
+msgstr "Da"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:822
+msgid "No"
+msgstr "Nu"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:833
+msgid "Show"
+msgstr "Afișează"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:834
+msgid "Hide"
+msgstr "Ascunde"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:843
+msgid "Alignment"
+msgstr "Aliniere"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:847
+#: src/Admin/assets/js/pages/Dashboard.jsx:159
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:44
+msgid "Left"
+msgstr "Stânga"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:851
+msgid "Center"
+msgstr "Centru"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:855
+#: src/Admin/assets/js/pages/Dashboard.jsx:160
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:43
+msgid "Right"
+msgstr "Dreapta"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:896
+msgid "Normal"
+msgstr "Normal"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:902
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:956
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1130
+msgid "Text Color"
+msgstr "Culoare text"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:914
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:967
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:338
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:17
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:547
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:691
+msgid "Icon Color"
+msgstr "Culoare pictogramă"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:926
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:978
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1142
+msgid "Background Color"
+msgstr "Culoare fundal"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:938
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:989
+msgid "Border Color"
+msgstr "Culoare chenar"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:950
+msgid "Hover"
+msgstr "La trecerea cu mouse-ul"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1002
+msgid "Border Width"
+msgstr "Lățime chenar"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1020
+#: src/Admin/assets/js/pages/DesignSettings.jsx:316
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:519
+msgid "Border Radius"
+msgstr "Rază chenar"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1071
+msgid "Size"
+msgstr "Dimensiune"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1089
+msgid "Spacing"
+msgstr "Spațiere"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1108
+msgid "Padding"
+msgstr "Spațiere interioară"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1154
+msgid "Distance"
+msgstr "Distanță"
+
+#: src/Pro/Notifications/DrawerNotificationBar.php:368
+msgid "Offer quantity: 1"
+msgstr "Cantitate ofertă: 1"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:275
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:27
+msgid "≥ is at least"
+msgstr "≥ este cel puțin"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:279
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:28
+msgid "≤ is at most"
+msgstr "≤ este cel mult"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:283
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:29
+msgid "> is more than"
+msgstr "> este mai mare decât"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:287
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:30
+msgid "< is less than"
+msgstr "< este mai mic decât"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:291
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:31
+msgid "= equals"
+msgstr "= este egal cu"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:298
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:35
+msgid "Contains any of"
+msgstr "Conține oricare dintre"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:302
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:36
+msgid "Contains all of"
+msgstr "Conține toate dintre"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:306
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:37
+msgid "Contains none of"
+msgstr "Nu conține niciunul dintre"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:313
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:41
+msgid "Is any of"
+msgstr "Este oricare dintre"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:317
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:42
+msgid "Is none of"
+msgstr "Nu este niciunul dintre"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:382
+msgid "Invalid spotlight configuration."
+msgstr "Configurație spotlight nevalidă."
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:393
+msgid "Spotlight product already in cart."
+msgstr "Produsul spotlight este deja în coș."
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:458
+#: src/Pro/Notifications/DrawerNotificationBarController.php:466
+#: src/Recommendations/RecommendationsController.php:164
+msgid "Could not add product to cart."
+msgstr "Produsul nu a putut fi adăugat în coș."
+
+#: src/Pro/REST/ProDrawerDataSupplementProvider.php:92
+#: src/REST/CartStateController.php:217
+msgid "The cart could not be refreshed. Please try again."
+msgstr "Coșul nu a putut fi reîmprospătat. Te rugăm să încerci din nou."
+
+#: src/Pro/Rules/Conditions/CartContainsCategoryCondition.php:66
+msgid "Cart Contains Category"
+msgstr "Coșul conține categoria"
+
+#: src/Pro/Rules/Conditions/CartContainsProductCondition.php:62
+msgid "Cart Contains Product"
+msgstr "Coșul conține produsul"
+
+#: src/Pro/Rules/Conditions/CartItemCountCondition.php:56
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:55
+msgid "Cart Item Count"
+msgstr "Număr articole din coș"
+
+#: src/Pro/Rules/Conditions/CartTotalCondition.php:56
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:49
+msgid "Cart Total"
+msgstr "Total coș"
+
+#: src/Pro/Rules/Conditions/UserRoleCondition.php:63
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:73
+msgid "User Role"
+msgstr "Rol utilizator"
+
+#: src/Pro/Rules/RuleEngine.php:59
+msgid "CartPops Rules"
+msgstr "Reguli CartPops"
+
+#: src/Pro/Rules/RuleEngine.php:60
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:274
+msgid "Rule"
+msgstr "Regulă"
+
+#: src/Pro/ShippingMeter/RewardApplicator.php:401
+msgid "Gift quantity: 1"
+msgstr "Cantitate cadou: 1"
+
+#: src/Pro/ShippingMeter/ShippingMeter.php:408
+msgid "reached"
+msgstr "atins"
+
+#: src/Pro/ShippingMeter/ShippingMeter.php:408
+msgid "not reached"
+msgstr "neatins"
+
+#: src/Pro/ShippingMeter/ShippingMeter.php:555
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:544
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:318
+msgid "Free Shipping"
+msgstr "Livrare gratuită"
+
+#: src/Pro/ShippingMeter/ShippingMeter.php:556
+#: src/Pro/ShippingMeter/ShippingMeter.php:557
+#: src/Admin/assets/js/pages/Dashboard.jsx:213
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:549
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:556
+msgid "Off"
+msgstr "Reducere"
+
+#: src/Pro/ShippingMeter/ShippingMeter.php:749
+#: src/Pro/ShippingMeter/ShippingMeter.php:753
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:558
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:47
+msgid "Free Gift"
+msgstr "Cadou gratuit"
+
+#: src/Pro/SmartAddons/SmartAddonFeeBatchException.php:20
+msgid "CartPops could not restore cart fees safely."
+msgstr "CartPops nu a putut restabili în siguranță taxele din coș."
+
+#: src/Pro/SmartAddons/SmartAddons.php:883
+msgid "CartPops add-on"
+msgstr "Extensie CartPops"
+
+#: src/Pro/SmartAddons/SmartAddonsController.php:145
+msgid "This cart add-on is unavailable."
+msgstr "Acest add-on pentru coș nu este disponibil."
+
+#: src/Pro/SmartAddons/SmartAddonsController.php:153
+#: src/Recommendations/RecommendationsController.php:180
+#: src/REST/CartStateController.php:178
+#: src/REST/CouponController.php:242
+msgid "The cart could not be updated. Please try again."
+msgstr "Coșul nu a putut fi actualizat. Te rugăm să încerci din nou."
+
+#: src/Recommendations/RecommendationsController.php:114
+msgid "This product is not available."
+msgstr "Acest produs nu este disponibil."
+
+#: src/REST/CartStateController.php:131
+msgid "Select one or more valid cart items."
+msgstr "Selectează unul sau mai multe articole valide din coș."
+
+#: src/REST/CartStateController.php:170
+msgid "One or more cart items could not be removed."
+msgstr "Unul sau mai multe articole din coș nu au putut fi eliminate."
+
+#: src/REST/CouponController.php:95
+#: src/REST/CouponController.php:160
+msgid "Cart rewards are managed automatically."
+msgstr "Recompensele din coș sunt gestionate automat."
+
+#: src/REST/CouponController.php:129
+msgid "Invalid coupon."
+msgstr "Cupon nevalid."
+
+#: src/REST/CouponController.php:196
+msgid "This coupon is managed automatically and could not be removed."
+msgstr "Acest cupon este gestionat automat și nu a putut fi eliminat."
+
+#: src/REST/CouponController.php:202
+msgid "The coupon could not be removed."
+msgstr "Cuponul nu a putut fi eliminat."
+
+#: src/REST/NamespaceRateLimitMiddleware.php:92
+msgid "Too many requests. Please wait and try again."
+msgstr "Prea multe cereri. Te rugăm să aștepți și să încerci din nou."
+
+#: src/REST/NamespaceRateLimitMiddleware.php:93
+msgid "Request limiting is temporarily unavailable. Please try again."
+msgstr ""
+"Limitarea cererilor este temporar indisponibilă. Te rugăm să încerci din "
+"nou."
+
+#: src/REST/PublicEndpointGuard.php:45
+#: src/REST/PublicEndpointGuard.php:63
+msgid "Your cart session could not be verified. Please refresh and try again."
+msgstr ""
+"Sesiunea coșului tău nu a putut fi verificată. Te rugăm să reîmprospătezi "
+"pagina și să încerci din nou."
+
+#: src/REST/PublicEndpointGuard.php:52
+#: src/REST/WooSessionBootstrap.php:534
+msgid "Your cart session is unavailable. Please refresh and try again."
+msgstr ""
+"Sesiunea coșului tău nu este disponibilă. Te rugăm să reîmprospătezi pagina "
+"și să încerci din nou."
+
+#: src/REST/PublicEndpointGuard.php:78
+#: src/REST/PublicEndpointGuard.php:88
+msgid "Cookie check failed. Please refresh and try again."
+msgstr ""
+"Verificarea cookie-urilor a eșuat. Te rugăm să reîmprospătezi pagina și să "
+"încerci din nou."
+
+#: src/REST/RestCors.php:141
+msgid "REST method overrides are not supported."
+msgstr "Suprascrierea metodelor REST nu este acceptată."
+
+#: src/REST/RestCors.php:144
+msgid "JSONP is not supported for the CartPops API."
+msgstr "JSONP nu este acceptat pentru CartPops API."
+
+#: src/REST/RestCors.php:151
+#: src/REST/RestCors.php:163
+msgid "The request body is too large."
+msgstr "Corpul cererii este prea mare."
+
+#: src/REST/RestCors.php:159
+#: src/REST/RestCors.php:801
+msgid "No CartPops REST policy permits this request."
+msgstr "Nicio politică REST CartPops nu permite această cerere."
+
+#: src/REST/RestCors.php:337
+#: src/REST/RestPreDispatchFinalizer.php:102
+msgid "The REST request was rejected."
+msgstr "Cererea REST a fost respinsă."
+
+#: src/REST/RestCors.php:667
+#: src/REST/RestCors.php:674
+msgid "This origin is not allowed to access the CartPops API."
+msgstr "Această origine nu are permisiunea de a accesa CartPops API."
+
+#: src/REST/RestCors.php:677
+msgid "The request origin does not match its referrer."
+msgstr "Originea cererii nu corespunde cu sursa de referință (referrer)."
+
+#: src/Setup/Upgrader.php:1717
+#. translators: %1$d: WordPress multisite blog ID.
+#, php-format
+msgid ""
+"CartPops network migration paused at site %1$d and will retry it without "
+"skipping later sites. Original settings were preserved."
+msgstr ""
+"Migrarea în rețea CartPops a fost întreruptă la site-ul %1$d și va fi "
+"reîncercată fără a sări peste site-urile următoare. Setările inițiale au "
+"fost păstrate."
+
+#: src/Setup/Upgrader.php:1728
+msgid ""
+"CartPops could not complete its legacy settings migration. The original "
+"settings were preserved; review the migration status before retrying."
+msgstr ""
+"CartPops nu a putut finaliza migrarea setărilor vechi. Setările inițiale au "
+"fost păstrate; verifică starea migrării înainte de a reîncerca."
+
+#: src/Setup/Upgrader.php:1736
+msgid ""
+"CartPops preserved legacy automation rule data for recovery, but those "
+"rules are retired and do not run in V2."
+msgstr ""
+"CartPops a păstrat datele regulilor vechi de automatizare pentru "
+"recuperare, dar aceste reguli sunt retrase și nu rulează în V2."
+
+#: src/Setup/Upgrader.php:1742
+msgid ""
+"CartPops migration requires compatibility review before it can finish. "
+"Original settings remain available for recovery; resolve the reported "
+"migration warnings, then retry the migration."
+msgstr ""
+"Migrarea CartPops necesită o verificare a compatibilității înainte de a "
+"putea fi finalizată. Setările inițiale rămân disponibile pentru recuperare; "
+"rezolvă avertismentele de migrare raportate, apoi reîncearcă migrarea."
+
+#: src/Setup/Upgrader.php:1752
+msgid ""
+"CartPops migrated legacy settings with compatibility warnings. Original "
+"settings remain available for recovery."
+msgstr ""
+"CartPops a migrat setările vechi cu avertismente de compatibilitate. "
+"Setările inițiale rămân disponibile pentru recuperare."
+
+#: src/StoreAPI/CartExtension.php:178
+msgid "Exact WooCommerce cart item key."
+msgstr "Cheia exactă a articolului din coșul WooCommerce."
+
+#: src/StoreAPI/CartExtension.php:186
+msgid "Parent product ID (same as id for simple products)."
+msgstr "ID-ul produsului părinte (același cu ID-ul pentru produsele simple)."
+
+#: src/StoreAPI/CartExtension.php:203
+msgid "CartPops drawer configuration."
+msgstr "Configurația sertarului CartPops."
+
+#: src/StoreAPI/CartExtension.php:208
+msgid "Cart launcher configuration."
+msgstr "Configurația butonului de lansare a coșului."
+
+#: src/StoreAPI/CartExtension.php:221
+msgid "Safe CartPops coupon presentation and removal authority."
+msgstr "Prezentare sigură a cupoanelor CartPops și autoritate de eliminare."
+
+#: src/StoreAPI/CartExtension.php:279
+msgid "Bounded PHP-filtered cart item presentation."
+msgstr "Prezentare delimitată și filtrată prin PHP a articolului din coș."
+
+#: src/StoreAPI/CartExtension.php:289
+msgid "Exact cart item keys with an edition-owned locked presentation."
+msgstr ""
+"Cheile exacte ale articolelor din coș cu o prezentare blocată specifică "
+"ediției."
+
+#: src/StoreAPI/CartExtension.php:313
+msgid "Whether WooCommerce permits this line to be shown in a mini-cart."
+msgstr "Indică dacă WooCommerce permite afișarea acestei linii într-un mini-coș."
+
+#: src/StoreAPI/CartExtension.php:318
+msgid "Whether CartPops may offer quantity mutation for this line."
+msgstr ""
+"Indică dacă CartPops poate oferi modificarea cantității pentru această "
+"linie."
+
+#: src/StoreAPI/CartExtension.php:323
+msgid "Whether CartPops may offer removal for this line."
+msgstr "Indică dacă CartPops poate oferi eliminarea pentru această linie."
+
+#: src/StoreAPI/CartExtension.php:328
+msgid ""
+"WooCommerce quantity minimum, transport maximum, step, and "
+"unlimited-product state."
+msgstr ""
+"Cantitatea minimă, maximul de transport, pasul și starea de produs "
+"nelimitat în WooCommerce."
+
+#: src/StoreAPI/CartExtension.php:339
+msgid "Bounded plain-text WooCommerce backorder notice."
+msgstr ""
+"Notificare WooCommerce delimitată, în text simplu, privind comenzile în "
+"așteptare."
+
+#: src/Admin/assets/js/App.jsx:169
+msgid "Setup"
+msgstr "Configurare"
+
+#: src/Admin/assets/js/App.jsx:171
+#: src/Admin/assets/js/pages/Dashboard.jsx:119
+msgid "Dashboard"
+msgstr "Panou de control"
+
+#: src/Admin/assets/js/App.jsx:172
+msgid "Drawer"
+msgstr "Sertar"
+
+#: src/Admin/assets/js/App.jsx:173
+msgid "Launcher"
+msgstr "Lansator"
+
+#: src/Admin/assets/js/App.jsx:177
+#: src/Admin/assets/js/pages/Dashboard.jsx:185
+msgid "Features"
+msgstr "Funcționalități"
+
+#: src/Admin/assets/js/App.jsx:181
+#: src/Admin/assets/js/pages/Dashboard.jsx:88
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:352
+msgid "Recommendations"
+msgstr "Recomandări"
+
+#: src/Admin/assets/js/App.jsx:186
+msgid "Smart add-ons"
+msgstr "Suplimente inteligente"
+
+#: src/Admin/assets/js/App.jsx:191
+#: src/Admin/assets/js/pages/Dashboard.jsx:104
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:657
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:669
+msgid "Smart Bar"
+msgstr "Bară inteligentă"
+
+#: src/Admin/assets/js/App.jsx:196
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:419
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:444
+msgid "Bundle Builder"
+msgstr "Constructor de pachete"
+
+#: src/Admin/assets/js/App.jsx:202
+msgid "Insights"
+msgstr "Perspective"
+
+#: src/Admin/assets/js/App.jsx:206
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:202
+msgid "Analytics"
+msgstr "Analitice"
+
+#: src/Admin/assets/js/App.jsx:212
+msgid "System"
+msgstr "Sistem"
+
+#: src/Admin/assets/js/App.jsx:213
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:429
+msgid "Advanced"
+msgstr "Avansat"
+
+#: src/Admin/assets/js/App.jsx:520
+msgid "Settings saved!"
+msgstr "Setări salvate!"
+
+#: src/Admin/assets/js/App.jsx:526
+msgid "Failed to save."
+msgstr "Salvarea a eșuat."
+
+#: src/Admin/assets/js/App.jsx:560
+msgid "Settings reset to defaults."
+msgstr "Setările au fost resetate la valorile implicite."
+
+#: src/Admin/assets/js/App.jsx:571
+msgid "Settings could not be reset. Please try again."
+msgstr "Setările nu au putut fi resetate. Te rugăm să încerci din nou."
+
+#: src/Admin/assets/js/App.jsx:732
+msgid "Unsaved changes"
+msgstr "Modificări nesalvate"
+
+#: src/Admin/assets/js/App.jsx:741
+msgid "Saving…"
+msgstr "Se salvează…"
+
+#: src/Admin/assets/js/App.jsx:742
+msgid "Save Changes"
+msgstr "Salvează modificările"
+
+#: src/Admin/assets/js/components/ColorPicker.jsx:111
+msgid "CSS color value"
+msgstr "Valoare culoare CSS"
+
+#: src/Admin/assets/js/components/ColorPicker.jsx:112
+msgid "Hex color value"
+msgstr "Valoare culoare Hex"
+
+#: src/Admin/assets/js/components/DrawerPreview.jsx:359
+msgid "Free"
+msgstr "Gratuit"
+
+#: src/Admin/assets/js/components/DrawerPreview.jsx:377
+msgid "Tax"
+msgstr "Taxă"
+
+#: src/Admin/assets/js/components/DrawerPreview.jsx:399
+#: src/Admin/assets/js/components/LauncherPreview.jsx:136
+msgid "Desktop"
+msgstr "Desktop"
+
+#: src/Admin/assets/js/components/DrawerPreview.jsx:421
+#: src/Admin/assets/js/components/LauncherPreview.jsx:158
+msgid "Mobile"
+msgstr "Mobil"
+
+#: src/Admin/assets/js/components/DrawerPreview.jsx:448
+#: src/Admin/assets/js/components/LauncherPreview.jsx:185
+msgid "Items"
+msgstr "Articole"
+
+#: src/Admin/assets/js/components/DrawerPreview.jsx:459
+#: src/Admin/assets/js/components/LauncherPreview.jsx:194
+msgid "Empty"
+msgstr "Gol"
+
+#: src/Admin/assets/js/components/DrawerPreview.jsx:469
+#: src/Admin/assets/js/components/LauncherPreview.jsx:204
+msgid "Toggle dark mode preview"
+msgstr "Comută previzualizarea în modul întunecat"
+
+#: src/Admin/assets/js/components/DrawerPreview.jsx:828
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:453
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:720
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:748
+msgid "Remove"
+msgstr "Elimină"
+
+#: src/Admin/assets/js/components/LauncherPreview.jsx:262
+msgid "Store menu"
+msgstr "Meniu magazin"
+
+#: src/Admin/assets/js/components/LauncherPreview.jsx:267
+msgid "Inline navigation cart launcher preview"
+msgstr "Previzualizare lansator coș integrat în navigare"
+
+#: src/Admin/assets/js/components/LauncherPreview.jsx:448
+msgid "Launcher hidden by current settings"
+msgstr "Lansatorul este ascuns de setările curente"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:365
+msgid "Hide launcher on pages"
+msgstr "Ascunde lansatorul pe pagini"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:368
+msgid ""
+"Select pages where the floating cart launcher should not appear. Existing "
+"exclusions stay selected until you remove them."
+msgstr ""
+"Selectează paginile în care lansatorul plutitor de coș nu ar trebui să "
+"apară. Excluderile existente rămân selectate până când le elimini."
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:377
+msgid "Pages with the launcher hidden"
+msgstr "Pagini cu lansatorul ascuns"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:388
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:491
+#. translators: %d: WordPress page ID.
+#, js-format
+msgid "Page #%d (untitled)"
+msgstr "Pagina #%d (fără titlu)"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:393
+#. translators: %d: WordPress page ID.
+#, js-format
+msgid "Page #%d (unavailable)"
+msgstr "Pagina #%d (indisponibilă)"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:406
+#. translators: %s: Page title.
+#, js-format
+msgid "Remove %s from hidden pages"
+msgstr "Elimină %s din paginile ascunse"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:424
+msgid ""
+"Some selected page names could not be loaded. Their exclusions are still "
+"preserved."
+msgstr ""
+"Unele nume de pagini selectate nu au putut fi încărcate. Excluderile "
+"acestora sunt încă păstrate."
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:436
+msgid "Retry page names"
+msgstr "Reîncearcă numele paginilor"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:442
+msgid "Search pages"
+msgstr "Caută pagini"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:443
+msgid "Type at least two characters, then choose a page below."
+msgstr "Tastează cel puțin două caractere, apoi alege o pagină de mai jos."
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:456
+msgid "The maximum number of page exclusions has been selected."
+msgstr "A fost selectat numărul maxim de excluderi de pagini."
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:463
+msgid "Searching pages…"
+msgstr "Se caută pagini…"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:467
+msgid "Pages could not be loaded. Try searching again."
+msgstr "Paginile nu au putut fi încărcate. Încearcă să cauți din nou."
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:477
+msgid "No matching pages found."
+msgstr "Nu s-au găsit pagini potrivite."
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:484
+msgid "Matching pages"
+msgstr "Pagini potrivite"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:504
+#. translators: %d: WordPress page ID.
+#, js-format
+msgid "Page ID: %d"
+msgstr "ID pagină: %d"
+
+#: src/Admin/assets/js/components/UpgradePage.jsx:25
+#. translators: %s: paid feature name.
+#, js-format
+msgid "%s is available in CartPops Pro"
+msgstr "%s este disponibil în CartPops Pro"
+
+#: src/Admin/assets/js/components/UpgradePage.jsx:30
+msgid ""
+"Upgrade to configure this feature. Your existing CartPops settings remain "
+"unchanged."
+msgstr ""
+"Fă upgrade pentru a configura această funcționalitate. Setările tale "
+"CartPops existente rămân neschimbate."
+
+#: src/Admin/assets/js/components/UpgradePage.jsx:40
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:88
+msgid "Upgrade to CartPops Pro"
+msgstr "Fă upgrade la CartPops Pro"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:18
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:210
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:44
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:281
+msgid "General"
+msgstr "General"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:19
+msgid "Integrations"
+msgstr "Integrări"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:28
+msgid "Powered by CartPops"
+msgstr "Propulsat de CartPops"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:32
+msgid "Show the CartPops partner link"
+msgstr "Afișează linkul de partener CartPops"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:33
+msgid ""
+"Opt in to show a CartPops referral link in the drawer footer. The link "
+"remains hidden until a valid partner code is saved."
+msgstr ""
+"Optează pentru afișarea unui link de recomandare CartPops în subsolul "
+"sertarului. Linkul rămâne ascuns până când este salvat un cod de partener "
+"valid."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:45
+msgid "Partner code"
+msgstr "Cod partener"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:46
+msgid ""
+"Enter a positive base-10 integer of up to 20 digits. A valid code is "
+"required for the link to display."
+msgstr ""
+"Introdu un număr întreg pozitiv în baza 10 de până la 20 de cifre. Este "
+"necesar un cod valid pentru afișarea linkului."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:71
+msgid "Refresh cart data on page load"
+msgstr "Reîmprospătează datele coșului la încărcarea paginii"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:72
+msgid ""
+"Requests fresh cart data on every page load. Use only when cached pages "
+"show stale cart contents."
+msgstr ""
+"Solicită date actualizate ale coșului la fiecare încărcare de pagină. "
+"Folosește doar când paginile din cache afișează un conținut învechit al "
+"coșului."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:139
+msgid "Export failed."
+msgstr "Exportul a eșuat."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:166
+msgid "Settings imported! Reload to see changes."
+msgstr "Setări importate! Reîncarcă pentru a vedea modificările."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:191
+msgid "Import failed."
+msgstr "Importul a eșuat."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:197
+msgid "Invalid JSON file."
+msgstr "Fișier JSON nevalid."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:214
+msgid "Enable CartPops"
+msgstr "Activează CartPops"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:215
+msgid "Disable to turn off all CartPops frontend functionality."
+msgstr "Dezactivează pentru a opri toate funcționalitățile CartPops din frontend."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:226
+msgid "Open drawer on"
+msgstr "Deschide sertarul la"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:234
+msgid "Launcher click only"
+msgstr "Doar la clic pe lansator"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:251
+msgid "WooCommerce Mini Cart"
+msgstr "Mini-coș WooCommerce"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:255
+msgid "Integration mode"
+msgstr "Mod de integrare"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:256
+msgid "Controls how CartPops interacts with the WooCommerce Mini Cart block."
+msgstr ""
+"Controlează modul în care CartPops interacționează cu blocul Mini-coș "
+"WooCommerce."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:267
+msgid "Replace — CartPops drawer replaces WC Mini Cart"
+msgstr "Înlocuire — Sertarul CartPops înlocuiește mini-coșul WC"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:274
+msgid "Standalone — Both operate independently"
+msgstr "De sine stătător — Ambele funcționează independent"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:289
+msgid "Custom CSS"
+msgstr "CSS personalizat"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:293
+msgid "Additional CSS"
+msgstr "CSS suplimentar"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:294
+msgid ""
+"Add custom CSS to style the cart drawer. Uses the .cpops- prefix for all "
+"CartPops elements."
+msgstr ""
+"Adaugă CSS personalizat pentru a stiliza sertarul coșului. Folosește "
+"prefixul .cpops- pentru toate elementele CartPops."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:309
+msgid "Performance"
+msgstr "Performanță"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:320
+msgid "Import / Export"
+msgstr "Import / Export"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:324
+msgid ""
+"Export your CartPops settings to a JSON file for backup, or import settings "
+"from another site."
+msgstr ""
+"Exportă setările CartPops într-un fișier JSON pentru copie de siguranță sau "
+"importă setări de pe un alt site."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:336
+msgid "Export Settings"
+msgstr "Exportare setări"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:343
+msgid "Import Settings"
+msgstr "Importare setări"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:359
+msgid "Reset"
+msgstr "Resetează"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:371
+msgid "Reset all settings to defaults"
+msgstr "Resetează toate setările la valorile implicite"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:376
+msgid "Are you sure? This will reset all CartPops settings to their default values."
+msgstr "Ești sigur? Aceasta va reseta toate setările CartPops la valorile implicite."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:396
+msgid "Yes, reset everything"
+msgstr "Da, resetează tot"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:404
+#: src/Pro/Admin/assets/js/components/AnalyticsResetActions.jsx:68
+msgid "Cancel"
+msgstr "Anulează"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:414
+msgid "Settings update in progress…"
+msgstr "Actualizare setări în curs…"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:431
+msgid "Fine-tune CartPops behavior, styling, and integrations."
+msgstr "Ajustează comportamentul, stilul și integrările CartPops."
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:71
+msgid "Cart Drawer"
+msgstr "Sertar coș"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:76
+#: src/Admin/assets/js/pages/Dashboard.jsx:170
+msgid "Cart Launcher"
+msgstr "Lansator coș"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:81
+msgid "Shipping Meter"
+msgstr "Indicator livrare"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:94
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:402
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:139
+msgid "Smart Add-ons"
+msgstr "Add-on-uri inteligente"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:121
+msgid "Welcome to CartPops. Manage your cart drawer and boost conversions."
+msgstr "Bun venit la CartPops. Gestionează sertarul coșului și crește conversiile."
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:142
+msgid "Plugin Status"
+msgstr "Stare modul"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:145
+msgid "Active"
+msgstr "Activ"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:146
+msgid "Inactive"
+msgstr "Inactiv"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:156
+msgid "Drawer Position"
+msgstr "Poziție sertar"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:173
+msgid "Visible"
+msgstr "Vizibil"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:174
+msgid "Hidden"
+msgstr "Ascuns"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:212
+msgid "On"
+msgstr "Activat"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:231
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:198
+msgid "Unknown Theme"
+msgstr "Temă necunoscută"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:245
+msgid "Resources"
+msgstr "Resurse"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:260
+msgid "Documentation"
+msgstr "Documentație"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:263
+msgid "Guides and setup instructions"
+msgstr "Ghiduri și instrucțiuni de configurare"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:282
+msgid "Changelog"
+msgstr "Jurnal de modificări"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:285
+msgid "Latest updates and releases"
+msgstr "Ultimele actualizări și versiuni"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:304
+msgid "Support"
+msgstr "Asistență"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:307
+msgid "Get help from our team"
+msgstr "Obține ajutor de la echipa noastră"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:11
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:437
+msgid "Default"
+msgstr "Implicit"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:23
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:445
+msgid "Minimal"
+msgstr "Minimal"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:35
+msgid "Bold"
+msgstr "Bold"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:47
+msgid "Ocean"
+msgstr "Ocean"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:61
+msgid "Primary"
+msgstr "Principal"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:62
+msgid "Primary Text"
+msgstr "Text principal"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:63
+#: src/Admin/assets/js/pages/DesignSettings.jsx:127
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:491
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:489
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:730
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:514
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:652
+msgid "Background"
+msgstr "Fundal"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:64
+#: src/Admin/assets/js/pages/DesignSettings.jsx:132
+msgid "Surface"
+msgstr "Suprafață"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:65
+#: src/Admin/assets/js/pages/DesignSettings.jsx:137
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:57
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:498
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:502
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:742
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:524
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:665
+msgid "Text"
+msgstr "Text"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:66
+#: src/Admin/assets/js/pages/DesignSettings.jsx:142
+msgid "Text Secondary"
+msgstr "Text secundar"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:67
+msgid "Text Tertiary"
+msgstr "Text terțiar"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:68
+#: src/Admin/assets/js/pages/DesignSettings.jsx:147
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:508
+msgid "Border"
+msgstr "Bordură"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:69
+#: src/Admin/assets/js/pages/DesignSettings.jsx:152
+msgid "Input Background"
+msgstr "Fundal câmp"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:70
+#: src/Admin/assets/js/pages/DesignSettings.jsx:157
+msgid "Input Border"
+msgstr "Bordură câmp"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:71
+msgid "Input Text"
+msgstr "Text câmp"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:72
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:16
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:542
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:772
+msgid "Button Background"
+msgstr "Fundal buton"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:73
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:558
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:784
+msgid "Button Text"
+msgstr "Text buton"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:76
+msgid "Secondary Button Background"
+msgstr "Fundal buton secundar"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:80
+msgid "Secondary Button Text"
+msgstr "Text buton secundar"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:84
+msgid "Quantity Button Background"
+msgstr "Fundal buton cantitate"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:88
+msgid "Quantity Button Text"
+msgstr "Text buton cantitate"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:92
+msgid "Quantity Value Background"
+msgstr "Fundal valoare cantitate"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:96
+msgid "Quantity Border"
+msgstr "Bordură cantitate"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:100
+msgid "Quantity Value Text"
+msgstr "Text valoare cantitate"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:104
+msgid "Recommendations Button"
+msgstr "Buton recomandări"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:108
+msgid "Recommendations Button Icon"
+msgstr "Pictogramă buton recomandări"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:112
+msgid "Recommendations Background"
+msgstr "Fundal recomandări"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:116
+msgid "Recommendations Border"
+msgstr "Bordură recomandări"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:118
+msgid "Recommendations Text"
+msgstr "Text recomandări"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:119
+msgid "Sale Price"
+msgstr "Preț redus"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:120
+msgid "Success"
+msgstr "Succes"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:121
+msgid "Danger"
+msgstr "Pericol"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:201
+msgid "Presets"
+msgstr "Presetări"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:235
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:328
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:470
+msgid "Colors"
+msgstr "Culori"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:257
+msgid "Dark mode palette"
+msgstr "Paletă mod întunecat"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:260
+msgid ""
+"Used for forced dark mode and when system dark mode is active. Primary "
+"branding remains shared with the light palette."
+msgstr ""
+"Se folosește pentru modul întunecat forțat și când modul întunecat al "
+"sistemului este activ. Elementele principale de brand rămân comune cu "
+"paleta luminoasă."
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:289
+msgid "Background Overlay"
+msgstr "Suprapunere fundal"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:292
+msgid "Color"
+msgstr "Culoare"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:299
+msgid "Opacity"
+msgstr "Opacitate"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:313
+msgid "Shape"
+msgstr "Formă"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:327
+msgid "Button Border Radius"
+msgstr "Rază bordură buton"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:338
+msgid "Dark Mode"
+msgstr "Mod întunecat"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:342
+msgid "Auto (follow system)"
+msgstr "Automat (conform sistemului)"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:346
+msgid "Always light"
+msgstr "Mereu luminos"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:350
+msgid "Always dark"
+msgstr "Mereu întunecat"
+
+#: src/Admin/assets/js/pages/DrawerEditor.jsx:17
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:142
+msgid "Layout"
+msgstr "Aspect"
+
+#: src/Admin/assets/js/pages/DrawerEditor.jsx:18
+msgid "Design"
+msgstr "Design"
+
+#: src/Admin/assets/js/pages/DrawerEditor.jsx:21
+#: src/Admin/assets/js/pages/DrawerEditor.jsx:55
+msgid "Shipping meter"
+msgstr "Indicator livrare"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:23
+msgid "Optional. Leave blank to use the translated CartPops default."
+msgstr ""
+"Opțional. Lasă necompletat pentru a folosi valoarea implicită tradusă din "
+"CartPops."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:27
+msgid "Optional. Leave blank to hide this text."
+msgstr "Opțional. Lasă necompletat pentru a ascunde acest text."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:36
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:141
+msgid "Position & Size"
+msgstr "Poziție și dimensiune"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:40
+#: src/Blocks/CartLauncher/index.js:23
+msgid "Position"
+msgstr "Poziție"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:52
+msgid "Width (Desktop)"
+msgstr "Lățime (Desktop)"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:63
+msgid "Width (Mobile %)"
+msgstr "Lățime (Mobil %)"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:76
+msgid "Secondary action"
+msgstr "Acțiune secundară"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:95
+msgid ""
+"Add a Continue shopping, View cart, or custom customer action below "
+"checkout with CartPops Pro."
+msgstr ""
+"Adaugă o acțiune „Continuă cumpărăturile”, „Vezi coșul” sau o acțiune "
+"personalizată sub finalizare cu CartPops Pro."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:102
+msgid "Explore Pro actions"
+msgstr "Explorează acțiunile Pro"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:111
+msgid "Animation"
+msgstr "Animație"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:115
+msgid "Animation Type"
+msgstr "Tip animație"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:118
+msgid "Slide"
+msgstr "Glisare"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:119
+msgid "Fade"
+msgstr "Estompare"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:128
+msgid "Duration (ms)"
+msgstr "Durată (ms)"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:141
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:284
+msgid "Behavior"
+msgstr "Comportament"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:145
+msgid "Show undo after item removal"
+msgstr "Afișează anularea după eliminarea articolului"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:153
+msgid "Show coupon code field"
+msgstr "Afișează câmpul pentru codul de cupon"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:154
+msgid "Allow customers to apply coupon codes from the cart drawer."
+msgstr "Permite clienților să aplice coduri de cupon direct din sertarul coșului."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:165
+msgid "Product name display"
+msgstr "Afișare nume produs"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:166
+msgid "Choose how product names wrap inside drawer cart items."
+msgstr "Alege cum se încadrează numele produselor în articolele din coș."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:175
+msgid "Two lines"
+msgstr "Două rânduri"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:179
+msgid "Single line"
+msgstr "Un singur rând"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:183
+msgid "Full name"
+msgstr "Nume complet"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:193
+msgid "Totals breakdown"
+msgstr "Detaliere totaluri"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:194
+msgid "Where to show subtotal, discounts, shipping, fees, and tax lines."
+msgstr ""
+"Unde se afișează rândurile pentru subtotal, reduceri, livrare, comisioane "
+"și taxe."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:201
+msgid "In footer (sticky)"
+msgstr "În subsol (fixat)"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:205
+msgid "Above checkout (scrollable)"
+msgstr "Deasupra finalizării (derulabil)"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:212
+msgid "Hidden (total only)"
+msgstr "Ascuns (doar totalul)"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:222
+msgid "Show subtotal"
+msgstr "Afișează subtotalul"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:223
+msgid "Display the subtotal in the selected totals area."
+msgstr "Afișează subtotalul în zona selectată a totalurilor."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:234
+msgid "Show discounts"
+msgstr "Afișează reducerile"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:235
+msgid "Display the discount line when a coupon is applied."
+msgstr "Afișează rândul de reducere când este aplicat un cupon."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:246
+msgid "Show shipping"
+msgstr "Afișează livrarea"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:247
+msgid "Display the shipping line when shipping is calculated."
+msgstr "Afișează rândul de livrare când livrarea este calculată."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:258
+msgid "Show taxes"
+msgstr "Afișează taxele"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:259
+msgid "Display the applicable tax line or included-tax note."
+msgstr "Afișează rândul de taxe aplicabile sau nota privind taxele incluse."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:270
+msgid "Show total"
+msgstr "Afișează totalul"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:271
+msgid "Display the grand total above the checkout button."
+msgstr "Afișează totalul general deasupra butonului de finalizare."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:282
+msgid "Checkout Button Text"
+msgstr "Text buton de finalizare"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:283
+msgid "Leave empty to use the default \"Proceed to Checkout\"."
+msgstr "Lasă necompletat pentru a folosi valoarea implicită „Mergi la finalizare”."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:297
+msgid "Customer messages"
+msgstr "Mesaje pentru clienți"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:301
+msgid "Cart title"
+msgstr "Titlu coș"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:311
+msgid "Added-to-cart announcement"
+msgstr "Anunț de adăugare în coș"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:312
+msgid ""
+"Optional generic announcement. Enter complete plain text without a product "
+"placeholder, or leave blank to disable it."
+msgstr ""
+"Anunț generic opțional. Introdu text simplu complet, fără un substituent de "
+"produs, sau lasă necompletat pentru a-l dezactiva."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:317
+msgid "Product successfully added to your cart."
+msgstr "Produsul a fost adăugat cu succes în coș."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:327
+msgid "Coupon heading"
+msgstr "Titlu cupon"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:330
+msgid "No heading by default"
+msgstr "Fără titlu în mod implicit"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:337
+msgid "Coupon input placeholder"
+msgstr "Text substituent cupon"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:350
+msgid "Coupon button text"
+msgstr "Text buton cupon"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:362
+msgid "Totals and empty-cart text"
+msgstr "Totaluri și text pentru coș gol"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:366
+msgid "Subtotal label"
+msgstr "Etichetă subtotal"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:376
+msgid "Discount label"
+msgstr "Etichetă reducere"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:386
+msgid "Total label"
+msgstr "Etichetă total"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:396
+msgid "Empty-cart title"
+msgstr "Titlu coș gol"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:406
+msgid "Empty-cart subtitle"
+msgstr "Subtitlu coș gol"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:409
+msgid "No subtitle by default"
+msgstr "Fără subtitlu în mod implicit"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:416
+msgid "Empty-cart button text"
+msgstr "Text buton coș gol"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:428
+msgid "Quantity Selector"
+msgstr "Selector de cantitate"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:432
+msgid "Style"
+msgstr "Stil"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:441
+msgid "Rounded"
+msgstr "Rotunjit"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:55
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:215
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:278
+msgid "Basket"
+msgstr "Coș"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:77
+msgid "Cart 2"
+msgstr "Cărucior 2"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:98
+msgid "Bag 2"
+msgstr "Sacoșă 2"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:117
+msgid "Basket 2"
+msgstr "Coș 2"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:156
+msgid "Theme"
+msgstr "Temă"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:213
+msgid "Integration available"
+msgstr "Integrare disponibilă"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:214
+msgid "No integration available"
+msgstr "Nicio integrare disponibilă"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:225
+msgid "Cart Icon"
+msgstr "Pictogramă coș"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:229
+msgid "Replace header cart icon"
+msgstr "Înlocuiește pictograma coșului din antet"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:233
+msgid "Replace the Blocksy header cart icon with a CartPops icon."
+msgstr "Înlocuiește pictograma coșului din antetul Blocksy cu o pictogramă CartPops."
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:249
+msgid "Icon style"
+msgstr "Stil pictogramă"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:288
+msgid "Show item count badge"
+msgstr "Afișează insigna cu numărul de articole"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:292
+msgid "Display the number of items in the cart on the icon."
+msgstr "Afișează pe pictogramă numărul de articole din coș."
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:306
+msgid "Open CartPops drawer on click"
+msgstr "Deschide sertarul CartPops la clic"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:310
+msgid ""
+"Click the header cart icon to open the CartPops drawer instead of the "
+"Blocksy cart panel."
+msgstr ""
+"Fă clic pe pictograma coșului din antet pentru a deschide sertarul CartPops "
+"în locul panoului de coș Blocksy."
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:331
+msgid "Leave empty to inherit colors from the theme."
+msgstr "Lasă necompletat pentru a moșteni culorile din temă."
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:348
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:18
+msgid "Badge Background"
+msgstr "Fundal insignă"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:361
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:19
+msgid "Badge Text"
+msgstr "Text insignă"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:378
+msgid "Preview"
+msgstr "Previzualizare"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:438
+msgid "Supported Themes"
+msgstr "Teme acceptate"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:441
+msgid "CartPops can integrate with these themes to replace the header cart icon:"
+msgstr ""
+"CartPops se poate integra cu aceste teme pentru a înlocui pictograma "
+"coșului din antet:"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:462
+msgid "More themes coming soon"
+msgstr "Mai multe teme în curând"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:32
+msgid "Inline Background"
+msgstr "Fundal inline"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:35
+msgid "Inline Text"
+msgstr "Text inline"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:38
+msgid "Inline Badge Background"
+msgstr "Fundal insignă inline"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:40
+msgid "Inline Badge Text"
+msgstr "Text insignă inline"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:60
+msgid "Floating Cart Launcher"
+msgstr "Lansator plutitor pentru coș"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:62
+msgid "Configure the floating cart button that opens the drawer."
+msgstr "Configurează butonul plutitor de coș care deschide panoul glisant."
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:72
+msgid "Visibility"
+msgstr "Vizibilitate"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:76
+msgid "Show floating cart launcher"
+msgstr "Afișează lansatorul plutitor de coș"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:80
+msgid "Display the floating cart button on the frontend."
+msgstr "Afișează butonul plutitor de coș pe site."
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:91
+#: src/Blocks/CartLauncher/index.js:40
+msgid "Show item count"
+msgstr "Afișează numărul de articole"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:99
+msgid "Show cart total"
+msgstr "Afișează totalul coșului"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:108
+msgid "Hide zero item count"
+msgstr "Ascunde numărul de articole când este zero"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:120
+msgid "Hide when cart is empty"
+msgstr "Ascunde când coșul este gol"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:145
+msgid "Screen Position"
+msgstr "Poziție pe ecran"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:149
+#: src/Blocks/CartLauncher/index.js:27
+msgid "Bottom Right"
+msgstr "Dreapta jos"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:153
+#: src/Blocks/CartLauncher/index.js:31
+msgid "Bottom Left"
+msgstr "Stânga jos"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:163
+msgid "Offset X (px)"
+msgstr "Decalaj X (px)"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:174
+msgid "Offset Y (px)"
+msgstr "Decalaj Y (px)"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:185
+msgid "Size (px)"
+msgstr "Dimensiune (px)"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:199
+msgid "Appearance"
+msgstr "Aspect"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:203
+msgid "Icon Style"
+msgstr "Stil pictogramă"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:207
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:270
+msgid "Shopping Cart"
+msgstr "Coș de cumpărături"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:211
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:274
+msgid "Shopping Bag"
+msgstr "Pungă de cumpărături"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:253
+msgid "Navigation menu launcher (legacy)"
+msgstr "Lansator meniu de navigare (vechi)"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:259
+msgid ""
+"These settings affect existing navigation menu items with the "
+"cpops-cart-menu-item CSS class. They do not add a menu item."
+msgstr ""
+"Aceste setări afectează elementele existente din meniul de navigare care au "
+"clasa CSS cpops-cart-menu-item. Nu adaugă un element nou de meniu."
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:266
+msgid "Navigation menu icon"
+msgstr "Pictogramă meniu de navigare"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:288
+msgid "Navigation menu item count style"
+msgstr "Stil contor articole meniu de navigare"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:314
+msgid "Hide zero item count in navigation menu"
+msgstr "Ascunde numărul de articole când este zero în meniul de navigare"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:331
+msgid "Show cart total in navigation menu"
+msgstr "Afișează totalul coșului în meniul de navigare"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:341
+msgid "Inline launcher appearance"
+msgstr "Aspect lansator inline"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:343
+msgid ""
+"These colors apply to navigation menu, shortcode, and inline block "
+"launchers. Floating launcher colors remain separate."
+msgstr ""
+"Aceste culori se aplică lansatoarelor din meniul de navigare, shortcode și "
+"blocuri inline. Culorile lansatorului plutitor rămân separate."
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:374
+msgid "Launcher previews"
+msgstr "Previzualizări lansator"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:33
+msgid "Product Recommendations"
+msgstr "Recomandări de produse"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:35
+msgid ""
+"Show relevant product suggestions in the cart drawer to boost average order "
+"value."
+msgstr ""
+"Afișează sugestii relevante de produse în coșul glisant pentru a crește "
+"valoarea medie a comenzii."
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:48
+msgid "Enable Recommendations"
+msgstr "Activează recomandările"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:56
+msgid "Strategy"
+msgstr "Strategie"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:57
+msgid "How to select which products to recommend."
+msgstr "Cum se selectează produsele de recomandat."
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:64
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:116
+msgid "Cross-sells"
+msgstr "Vânzări încrucișate"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:65
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:115
+msgid "Upsells"
+msgstr "Vânzări suplimentare"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:66
+msgid "Custom products (Pro)"
+msgstr "Produse personalizate (Pro)"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:81
+msgid ""
+"Choose specific recommendation products with CartPops Pro. Cross-sells and "
+"upsells remain available in the Free edition."
+msgstr ""
+"Alege produse specifice pentru recomandare cu CartPops Pro. Vânzările "
+"încrucișate și cele suplimentare rămân disponibile în versiunea gratuită."
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:107
+msgid "Fallback Strategy"
+msgstr "Strategie de rezervă"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:108
+msgid "Used when the primary strategy returns no results."
+msgstr "Utilizată când strategia principală nu returnează rezultate."
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:114
+msgid "Random products"
+msgstr "Produse aleatorii"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:125
+msgid "Number of products"
+msgstr "Număr de produse"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:138
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:436
+msgid "Display"
+msgstr "Afișare"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:146
+msgid "Horizontal Scroll"
+msgstr "Derulare orizontală"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:149
+msgid "Grid"
+msgstr "Grilă"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:150
+msgid "List"
+msgstr "Listă"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:158
+msgid "Heading"
+msgstr "Titlu"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:174
+msgid ""
+"Recommendation add buttons use the accessible icon presentation. Text and "
+"text-with-icon buttons are available with CartPops Pro."
+msgstr ""
+"Butoanele de adăugare a recomandărilor folosesc prezentarea accesibilă cu "
+"pictogramă. Butoanele cu text și text cu pictogramă sunt disponibile în "
+"CartPops Pro."
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:181
+msgid "Explore Pro button styles"
+msgstr "Explorează stilurile de butoane Pro"
+
+#: src/Blocks/CartDrawer/index.js:35
+msgid "CartPops Cart Drawer"
+msgstr "Sertar coș CartPops"
+
+#: src/Blocks/CartDrawer/index.js:44
+msgid "The cart drawer will appear on the frontend when triggered."
+msgstr "Sertarul coșului va apărea în interfață când este declanșat."
+
+#: src/Blocks/CartLauncher/index.js:21
+msgid "Launcher Settings"
+msgstr "Setări lansator"
+
+#: src/Pro/Admin/assets/js/components/AnalyticsChart.jsx:21
+#: src/Pro/Admin/assets/js/components/DashboardInsights.jsx:76
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:122
+msgid "Drawer Opens"
+msgstr "Deschideri sertar"
+
+#: src/Pro/Admin/assets/js/components/AnalyticsChart.jsx:26
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:128
+msgid "Add to Carts"
+msgstr "Adăugări în coș"
+
+#: src/Pro/Admin/assets/js/components/AnalyticsChart.jsx:31
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:500
+msgid "Checkouts"
+msgstr "Finalizări de comandă"
+
+#: src/Pro/Admin/assets/js/components/AnalyticsChart.jsx:36
+#: src/Pro/Admin/assets/js/components/DashboardInsights.jsx:81
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:140
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:506
+msgid "Conversions"
+msgstr "Conversii"
+
+#: src/Pro/Admin/assets/js/components/AnalyticsChart.jsx:41
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:283
+msgid "CartPops Revenue"
+msgstr "Venituri CartPops"
+
+#: src/Pro/Admin/assets/js/components/AnalyticsChart.jsx:114
+msgid "No data available for this period."
+msgstr "Nu există date disponibile pentru această perioadă."
+
+#: src/Pro/Admin/assets/js/components/AnalyticsResetActions.jsx:22
+msgid "Analytics data has been reset. New data will be collected from now on."
+msgstr ""
+"Datele de analiză au fost resetate. De acum înainte vor fi colectate date "
+"noi."
+
+#: src/Pro/Admin/assets/js/components/AnalyticsResetActions.jsx:30
+msgid "Failed to reset analytics data."
+msgstr "Nu s-au putut reseta datele de analiză."
+
+#: src/Pro/Admin/assets/js/components/AnalyticsResetActions.jsx:45
+msgid "Reset analytics data"
+msgstr "Resetează datele de analiză"
+
+#: src/Pro/Admin/assets/js/components/AnalyticsResetActions.jsx:50
+msgid ""
+"Are you sure? This will permanently delete all analytics events, "
+"conversions, and revenue tracking."
+msgstr ""
+"Sigur vrei să continui? Aceasta va șterge definitiv toate evenimentele de "
+"analiză, conversiile și urmărirea veniturilor."
+
+#: src/Pro/Admin/assets/js/components/AnalyticsResetActions.jsx:61
+msgid "Yes, reset analytics"
+msgstr "Da, resetează datele de analiză"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:61
+msgid "Contains Product"
+msgstr "Conține produsul"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:67
+msgid "Contains Category"
+msgstr "Conține categoria"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:81
+msgid "Customer"
+msgstr "Client"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:82
+msgid "Subscriber"
+msgstr "Abonat"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:83
+msgid "Shop Manager"
+msgstr "Manager magazin"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:84
+msgid "Administrator"
+msgstr "Administrator"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:85
+msgid "Guest"
+msgstr "Oaspete"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:135
+#. translators: %d is a product category ID.
+#, js-format
+msgid "Category #%d"
+msgstr "Categoria #%d"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:465
+msgid "Search categories"
+msgstr "Caută categorii"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:467
+msgid "Search for a category…"
+msgstr "Caută o categorie…"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:476
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:783
+msgid "Searching…"
+msgstr "Se caută…"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:493
+#. translators: %d is the number of products in a category.
+#, js-format
+msgid "%d product"
+msgid_plural "%d products"
+msgstr[0] "%d produs"
+msgstr[1] "%d produse"
+msgstr[2] "%d de produse"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:512
+msgid "No categories found"
+msgstr "Nicio categorie găsită"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:618
+msgid "Remove condition"
+msgstr "Elimină condiția"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:694
+msgid "Show conditionally"
+msgstr "Afișează condiționat"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:695
+msgid "Only show when specific conditions are met."
+msgstr "Afișează doar când sunt îndeplinite condiții specifice."
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:709
+msgid "Match:"
+msgstr "Potrivire:"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:719
+msgid "All (AND)"
+msgstr "Toate (ȘI)"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:728
+msgid "Any (OR)"
+msgstr "Oricare (SAU)"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:753
+msgid "+ Add Condition"
+msgstr "+ Adaugă condiție"
+
+#: src/Pro/Admin/assets/js/components/ConversionFunnel.jsx:19
+msgid "Conversion Funnel"
+msgstr "Pâlnie de conversie"
+
+#: src/Pro/Admin/assets/js/components/ConversionFunnel.jsx:59
+#. translators: %s is a percentage relative to the previous funnel step.
+#, js-format
+msgid "%s%% from previous"
+msgstr "%s%% față de anterior"
+
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:49
+msgid "Add button presentation"
+msgstr "Afișare buton de adăugare"
+
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:50
+msgid ""
+"Choose whether directly purchasable recommendations use an icon, text, or "
+"both."
+msgstr ""
+"Alege dacă recomandările care pot fi achiziționate direct folosesc o "
+"pictogramă, text sau ambele."
+
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:59
+msgid "Text and icon"
+msgstr "Text și pictogramă"
+
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:70
+msgid "Add button text"
+msgstr "Text buton de adăugare"
+
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:80
+msgid ""
+"Shown on simple products that can be added directly. Products with options "
+"keep their Select options link."
+msgstr ""
+"Afișat la produsele simple care pot fi adăugate direct. Produsele cu "
+"opțiuni își păstrează linkul „Selectează opțiunile”."
+
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:111
+#. translators: 1: recommendation button text, 2: product name.
+#, js-format
+msgid "%1$s: %2$s"
+msgstr "%1$s: %2$s"
+
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:167
+msgid "Custom products"
+msgstr "Produse personalizate"
+
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:171
+msgid ""
+"Select up to four products. Their selection order is used in the cart "
+"drawer."
+msgstr ""
+"Selectează până la patru produse. Ordinea selecției este utilizată în "
+"sertarul coșului."
+
+#: src/Pro/Admin/assets/js/components/DashboardInsights.jsx:54
+msgid "Could not load analytics data."
+msgstr "Nu s-au putut încărca datele analitice."
+
+#: src/Pro/Admin/assets/js/components/DashboardInsights.jsx:61
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:825
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:251
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:224
+msgid "Retry"
+msgstr "Reîncearcă"
+
+#: src/Pro/Admin/assets/js/components/DashboardInsights.jsx:69
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:232
+msgid "Loading analytics…"
+msgstr "Se încarcă datele analitice…"
+
+#: src/Pro/Admin/assets/js/components/DashboardInsights.jsx:86
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:146
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:335
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:382
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:411
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:441
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:512
+msgid "Revenue"
+msgstr "Venituri"
+
+#: src/Pro/Admin/assets/js/components/DashboardInsights.jsx:97
+msgid "Last 7 days"
+msgstr "Ultimele 7 zile"
+
+#: src/Pro/Admin/assets/js/components/DashboardInsights.jsx:100
+msgid "View analytics"
+msgstr "Vezi datele analitice"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:142
+msgid "Action"
+msgstr "Acțiune"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:143
+msgid "Choose an optional customer action below the checkout button."
+msgstr "Alege o acțiune opțională pentru client sub butonul de finalizare."
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:159
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:171
+msgid "Custom URL"
+msgstr "URL personalizat"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:172
+msgid ""
+"Use a root-relative path or a complete HTTP(S) URL. Invalid URL and text "
+"pairs fall back to View cart."
+msgstr ""
+"Folosește o cale relativă la rădăcină sau un URL complet HTTP(S). Perechile "
+"nevalide de URL și text revin la „Vezi coșul”."
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:191
+msgid "Custom text"
+msgstr "Text personalizat"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:192
+msgid "Plain text only, up to 80 characters."
+msgstr "Doar text simplu, până la 80 de caractere."
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:405
+msgid "Your message here"
+msgstr "Mesajul tău aici"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:491
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:205
+msgid "Conditional"
+msgstr "Condiționat"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:598
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:388
+msgid "You have qualified for free shipping!"
+msgstr "Ai obținut livrare gratuită!"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:601
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:373
+msgid "Add {{amount}} more for free shipping"
+msgstr "Mai adaugă {{amount}} pentru livrare gratuită"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:911
+msgid "In Progress"
+msgstr "În desfășurare"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:922
+msgid "Qualified"
+msgstr "Calificat"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:936
+msgid "Shipping meter preview progress"
+msgstr "Previzualizare progres indicator livrare"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:1051
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:172
+msgid "Shipping protection"
+msgstr "Protecție livrare"
+
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:118
+#. translators: %d: Product ID.
+#, js-format
+msgid "Product #%d"
+msgstr "Produs #%d"
+
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:764
+msgid "Products"
+msgstr "Produse"
+
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:765
+msgid "Product"
+msgstr "Produs"
+
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:773
+msgid "Search for a product…"
+msgstr "Caută un produs…"
+
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:818
+msgid "Product search failed."
+msgstr "Căutarea produsului a eșuat."
+
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:836
+msgid "No products found"
+msgstr "Nu s-au găsit produse"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:13
+msgid "Today"
+msgstr "Astăzi"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:14
+msgid "7 days"
+msgstr "7 zile"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:15
+msgid "30 days"
+msgstr "30 de zile"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:16
+msgid "90 days"
+msgstr "90 de zile"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:134
+msgid "Checkout Starts"
+msgstr "Inițieri finalizare"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:204
+msgid "Track drawer engagement, conversions, and revenue."
+msgstr "Urmărește interacțiunea cu sertarul, conversiile și veniturile."
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:241
+msgid "Could not load analytics data. Please try again."
+msgstr "Nu s-au putut încărca datele analitice. Te rugăm să încerci din nou."
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:292
+#. translators: %s is a percentage of total revenue.
+#, js-format
+msgid "%s%% of total revenue via CartPops features"
+msgstr "%s%% din venitul total prin funcționalitățile CartPops"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:298
+msgid "Revenue generated by CartPops features"
+msgstr "Venit generat de funcționalitățile CartPops"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:312
+msgid "SmartBar"
+msgstr "SmartBar"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:315
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:358
+msgid "Impressions"
+msgstr "Afișări"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:326
+msgid "Spotlight Adds"
+msgstr "Adăugări din Spotlight"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:342
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:392
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:451
+msgid "Order Rate"
+msgstr "Rată comenzi"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:371
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:430
+msgid "Products Added"
+msgstr "Produse adăugate"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:405
+msgid "Toggles"
+msgstr "Comutări"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:422
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:488
+msgid "Opens"
+msgstr "Deschideri"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:477
+msgid "Daily Breakdown"
+msgstr "Defalcare zilnică"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:485
+msgid "Date"
+msgstr "Dată"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:494
+msgid "Cart+"
+msgstr "Cart+"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:569
+msgid "No daily data available."
+msgstr "Nu există date zilnice disponibile."
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:585
+msgid "Conversion Rate"
+msgstr "Rată de conversie"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:593
+msgid "Recommendation Clicks"
+msgstr "Clicuri pe recomandări"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:604
+msgid "Coupons Applied"
+msgstr "Cupoane aplicate"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:101
+msgid "The trigger product cannot also be a companion."
+msgstr "Produsul declanșator nu poate fi și produs asociat."
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:128
+msgid "The selected trigger was removed from the companion products."
+msgstr "Produsul declanșator selectat a fost eliminat din produsele asociate."
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:174
+msgid "New Bundle"
+msgstr "Pachet nou"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:181
+#. translators: %d is the number of companion products in a bundle.
+#, js-format
+msgid "%d companion"
+msgid_plural "%d companions"
+msgstr[0] "%d produs asociat"
+msgstr[1] "%d produse asociate"
+msgstr[2] "%d de produse asociate"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:214
+msgid "Could not load product details."
+msgstr "Nu s-au putut încărca detaliile produsului."
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:231
+msgid "Trigger Product"
+msgstr "Produs declanșator"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:237
+msgid "When this product is in the cart, the upsell flyout becomes available."
+msgstr "Când acest produs este în coș, panoul flotant de upsell devine disponibil."
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:260
+msgid "Companion Products"
+msgstr "Produse asociate"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:266
+msgid "Products shown in the flyout when the trigger product is in the cart."
+msgstr "Produse afișate în panoul flotant când produsul declanșator este în coș."
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:320
+msgid "Remove companion"
+msgstr "Elimină produsul asociat"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:346
+msgid "Add a companion product"
+msgstr "Adaugă un produs asociat"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:356
+msgid "Bundle Discount"
+msgstr "Reducere pachet"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:362
+msgid "Optional discount applied to all companion products when added as a bundle."
+msgstr ""
+"Reducere opțională aplicată tuturor produselor asociate când sunt adăugate "
+"la pachet."
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:403
+msgid "Remove Bundle"
+msgstr "Elimină pachetul"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:446
+msgid ""
+"Configure \"frequently bought together\" bundles with optional discounts. "
+"When a trigger product is in the cart, customers can add companion products "
+"with a single tap."
+msgstr ""
+"Configurează pachete „cumpărate frecvent împreună” cu reduceri opționale. "
+"Când un produs declanșator este în coș, clienții pot adăuga produsele "
+"asociate cu o singură atingere."
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:455
+msgid "Enable Bundle Builder"
+msgstr "Activează creatorul de pachete"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:456
+msgid "Show upsell triggers on product cards in the cart drawer."
+msgstr ""
+"Afișează declanșatorii de upsell pe cardurile de produse din sertarul "
+"coșului."
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:467
+msgid "Flyout Heading"
+msgstr "Titlu panou glisant"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:481
+msgid "Trigger Banner Colors"
+msgstr "Culori banner declanșator"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:484
+msgid "Customize the appearance of the upsell trigger banner on cart items."
+msgstr ""
+"Personalizează aspectul bannerului declanșator de upsell pentru articolele "
+"din coș."
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:534
+msgid "Upsell Bundles"
+msgstr "Pachete upsell"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:542
+msgid "No bundles configured yet. Add your first bundle below."
+msgstr "Nu este configurat încă niciun pachet. Adaugă primul tău pachet mai jos."
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:566
+msgid "+ Add Upsell Bundle"
+msgstr "+ Adaugă pachet upsell"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:22
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:302
+msgid "Cart Expiry Timer"
+msgstr "Cronometru expirare coș"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:23
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:354
+msgid "Custom Message"
+msgstr "Mesaj personalizat"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:24
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:416
+msgid "Product Spotlight"
+msgstr "Evidențiere produs"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:28
+msgid "Info"
+msgstr "Informații"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:29
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:20
+msgid "Gift"
+msgstr "Cadou"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:30
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:23
+msgid "Truck"
+msgstr "Camion"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:31
+msgid "Tag"
+msgstr "Etichetă"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:32
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:21
+msgid "Star"
+msgstr "Stea"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:37
+msgid "Clock"
+msgstr "Ceas"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:42
+msgid "Clear Cart"
+msgstr "Golește coșul"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:43
+msgid "Redirect to Shop"
+msgstr "Redirecționează către magazin"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:108
+#. translators: %d is a Smart Bar rule's one-based position.
+#, js-format
+msgid "Rule %d"
+msgstr "Regula %d"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:114
+#. translators: 1: merchant-entered rule label, 2: one-based rule position.
+#, js-format
+msgid "%1$s, rule %2$d"
+msgstr "%1$s, regula %2$d"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:122
+#. translators: %s is the accessible Smart Bar rule name.
+#, js-format
+msgid "Collapse %s"
+msgstr "Restrânge %s"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:127
+#. translators: %s is the accessible Smart Bar rule name.
+#, js-format
+msgid "Expand %s"
+msgstr "Extinde %s"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:132
+#. translators: %s is the accessible Smart Bar rule name.
+#, js-format
+msgid "Move %s up"
+msgstr "Mută %s mai sus"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:137
+#. translators: %s is the accessible Smart Bar rule name.
+#, js-format
+msgid "Move %s down"
+msgstr "Mută %s mai jos"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:206
+msgid "Always"
+msgstr "Întotdeauna"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:210
+msgid "Blocks rules below"
+msgstr "Blochează regulile de mai jos"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:262
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:672
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:130
+msgid "Enable"
+msgstr "Activează"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:268
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:170
+msgid "Label"
+msgstr "Etichetă"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:269
+msgid "Admin label to identify this rule."
+msgstr "Etichetă de administrare pentru identificarea acestei reguli."
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:282
+msgid "Mode"
+msgstr "Mod"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:289
+msgid "Dismissible"
+msgstr "Se poate închide"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:290
+msgid "Allow customers to close this bar."
+msgstr "Permite clienților să închidă această bară."
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:305
+msgid "Duration (minutes)"
+msgstr "Durată (minute)"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:315
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:357
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:439
+msgid "Message"
+msgstr "Mesaj"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:316
+msgid "Use {{timer}} as a placeholder for the countdown."
+msgstr "Folosește {{timer}} ca substituent pentru numărătoarea inversă."
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:336
+msgid "Action on Expiry"
+msgstr "Acțiune la expirare"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:337
+msgid "What happens when the timer reaches zero."
+msgstr "Ce se întâmplă când cronometrul ajunge la zero."
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:359
+msgid "Free shipping this weekend!"
+msgstr "Livrare gratuită în acest weekend!"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:377
+msgid "Link Text"
+msgstr "Text link"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:379
+msgid "Shop now"
+msgstr "Cumpără acum"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:386
+msgid "Link URL"
+msgstr "URL link"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:396
+msgid "Show when cart is empty"
+msgstr "Afișează când coșul este gol"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:400
+msgid "Also display this message when the cart has no items."
+msgstr "Afișează acest mesaj și atunci când coșul nu conține produse."
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:425
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:63
+msgid "Discount %"
+msgstr "% reducere"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:426
+msgid "Percentage discount applied when the customer adds this product."
+msgstr "Reducere procentuală aplicată când clientul adaugă acest produs."
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:440
+msgid "Use {{product}} and {{discount}} as placeholders."
+msgstr "Folosește {{product}} și {{discount}} ca substituenți."
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:457
+msgid "Display Conditions"
+msgstr "Condiții de afișare"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:473
+msgid "Use custom colors"
+msgstr "Folosește culori personalizate"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:474
+msgid "Override the shared smart bar colors for this rule."
+msgstr "Suprascrie culorile partajate ale barei inteligente pentru această regulă."
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:526
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:762
+msgid "Accent"
+msgstr "Accent"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:586
+msgid "Remove Rule"
+msgstr "Elimină regula"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:659
+msgid ""
+"Create smart bar rules for your cart drawer. Rules are evaluated "
+"top-to-bottom — the first enabled match is shown."
+msgstr ""
+"Creează reguli pentru bara inteligentă a sertarului de coș. Regulile sunt "
+"evaluate de sus în jos — prima potrivire activată este afișată."
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:673
+msgid "Show a smart bar at the top of the cart drawer."
+msgstr "Afișează o bară inteligentă în partea de sus a sertarului de coș."
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:712
+msgid "+ Add Smart Bar Rule"
+msgstr "+ Adaugă regulă pentru bara inteligentă"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:719
+msgid "Default Colors"
+msgstr "Culori implicite"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:722
+msgid "Shared colors used by all smart bar rules unless overridden per-rule."
+msgstr ""
+"Culori partajate utilizate de toate regulile barei inteligente, cu excepția "
+"cazului în care sunt suprascrise per regulă."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:43
+msgid "Percentage Discount"
+msgstr "Reducere procentuală"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:46
+msgid "Fixed Discount"
+msgstr "Reducere fixă"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:65
+msgid "Discount Amount"
+msgstr "Valoare reducere"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:67
+msgid "Value"
+msgstr "Valoare"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:114
+msgid "Tier"
+msgstr "Nivel"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:136
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:336
+msgid "Threshold"
+msgstr "Prag"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:137
+msgid "Cart subtotal required to unlock this reward."
+msgstr "Subtotalul coșului necesar pentru a debloca această recompensă."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:149
+msgid "Reward Type"
+msgstr "Tip de recompensă"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:162
+msgid "Free Gift Product"
+msgstr "Produs cadou gratuit"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:163
+msgid ""
+"Search simple products by name. To select a specific variation, enter its "
+"exact variation ID."
+msgstr ""
+"Caută produse simple după nume. Pentru a selecta o variație specifică, "
+"introdu ID-ul exact al variației."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:200
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:352
+msgid "Show Celebration"
+msgstr "Afișează celebrare"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:201
+msgid "Display confetti animation when this tier is reached."
+msgstr "Afișează o animație cu confetti când este atins acest nivel."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:212
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:367
+msgid "Progress Message"
+msgstr "Mesaj de progres"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:213
+msgid "Use {{amount}} and {{reward}} as placeholders."
+msgstr "Folosește {{amount}} și {{reward}} ca substituenți."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:224
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:386
+msgid "Qualified Message"
+msgstr "Mesaj de calificare"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:225
+msgid "Use {{reward}} as a placeholder."
+msgstr "Folosește {{reward}} ca substituent."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:241
+msgid "Remove Tier"
+msgstr "Elimină nivelul"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:285
+msgid "Enable Shipping Meter"
+msgstr "Activează indicatorul de livrare"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:286
+msgid "Display a progress bar toward reward thresholds."
+msgstr "Afișează o bară de progres către pragurile de recompensă."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:300
+msgid "Reward Tiers"
+msgstr "Niveluri de recompensă"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:316
+msgid "Tier 1"
+msgstr "Nivel 1"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:325
+msgid "auto"
+msgstr "automat"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:337
+msgid ""
+"Free shipping threshold. Set to 0 to auto-detect from WooCommerce shipping "
+"zones."
+msgstr ""
+"Prag pentru livrare gratuită. Setează la 0 pentru detectare automată din "
+"zonele de livrare WooCommerce."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:353
+msgid "Display confetti animation when free shipping is reached."
+msgstr "Afișează animație cu confetti când este atinsă livrarea gratuită."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:368
+msgid "Use {{amount}} as a placeholder for the remaining amount."
+msgstr "Folosește {{amount}} ca substituent pentru suma rămasă."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:428
+msgid "+ Add Tier"
+msgstr "+ Adaugă nivel"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:440
+msgid "Show in drawer"
+msgstr "Afișează în sertar"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:448
+msgid "Enable shipping calculator"
+msgstr "Activează calculatorul de livrare"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:449
+msgid ""
+"Let customers calculate shipping and choose an available rate from the cart "
+"drawer."
+msgstr ""
+"Permite clienților să calculeze livrarea și să aleagă un tarif disponibil "
+"din sertarul coșului."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:460
+msgid "Show icon"
+msgstr "Afișează pictograma"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:461
+msgid "Display truck/checkmark icon before the message."
+msgstr "Afișează pictograma camion/bifă înainte de mesaj."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:473
+msgid "Show truck indicator"
+msgstr "Afișează indicatorul camion"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:474
+msgid ""
+"Display the moving truck on the progress bar. Hidden when reward tiers are "
+"active."
+msgstr ""
+"Afișează camionul în mișcare pe bara de progres. Ascuns când nivelurile de "
+"recompensă sunt active."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:489
+msgid "Progress Colors"
+msgstr "Culori progres"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:494
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:626
+msgid "Bar Start"
+msgstr "Început bară"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:504
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:639
+msgid "Bar End"
+msgstr "Sfârșit bară"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:534
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:678
+msgid "Icon Background"
+msgstr "Fundal pictogramă"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:559
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:706
+msgid "Truck Background"
+msgstr "Fundal camion"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:572
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:719
+msgid "Truck Icon"
+msgstr "Pictogramă camion"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:589
+msgid "Tier Reached"
+msgstr "Nivel atins"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:602
+msgid "Tier Icon"
+msgstr "Pictogramă nivel"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:621
+msgid "Qualified Colors"
+msgstr "Culori calificare"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:19
+msgid "Shield (Protection)"
+msgstr "Scut (Protecție)"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:22
+msgid "Heart"
+msgstr "Inimă"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:24
+msgid "Sparkles"
+msgstr "Sclipiri"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:77
+msgid "Use whole currency units."
+msgstr "Folosește unități monetare întregi."
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:80
+#. translators: %d: store currency decimal places.
+#, js-format
+msgid "Use no more than %d decimal place."
+msgid_plural "Use no more than %d decimal places."
+msgstr[0] "Folosește cel mult %d zecimală."
+msgstr[1] "Folosește cel mult %d zecimale."
+msgstr[2] "Folosește cel mult %d de zecimale."
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:90
+#. translators: %s: smallest charge in the store currency.
+#, js-format
+msgid "Enter a positive charge of at least %s."
+msgstr "Introdu o taxă pozitivă de cel puțin %s."
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:95
+msgid "This draft will not be saved until corrected."
+msgstr "Această ciornă nu va fi salvată până când nu este corectată."
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:141
+msgid "Configure add-on options that customers can toggle in the cart drawer."
+msgstr ""
+"Configurează opțiuni suplimentare pe care clienții le pot comuta în "
+"sertarul coșului."
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:151
+msgid "Shipping Protection"
+msgstr "Protecție livrare"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:155
+msgid "Enable Shipping Protection"
+msgstr "Activează protecția livrării"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:156
+msgid "Allow customers to add shipping protection to their order."
+msgstr "Permite clienților să adauge protecție de livrare la comanda lor."
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:182
+msgid "Description"
+msgstr "Descriere"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:184
+msgid "Protect your order from damage or loss"
+msgstr "Protejează-ți comanda împotriva deteriorării sau pierderii"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:197
+msgid "Price"
+msgstr "Preț"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:208
+msgid "Show Icon"
+msgstr "Afișează pictograma"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:209
+msgid "Display an icon next to the add-on in the cart drawer."
+msgstr "Afișează o pictogramă lângă opțiunea suplimentară în sertarul coșului."
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:235
+msgid "Default State"
+msgstr "Stare implicită"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:236
+msgid "Whether the add-on is toggled on or off by default for new visitors."
+msgstr ""
+"Dacă opțiunea este activată sau dezactivată în mod implicit pentru "
+"vizitatorii noi."
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:243
+msgid "Off (customer opts in)"
+msgstr "Dezactivat (clientul alege activarea)"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:247
+msgid "On (customer opts out)"
+msgstr "Activat (clientul alege dezactivarea)"
+
+#: src/Pro/Blocks/ShippingMeter/index.js:19
+msgid "CartPops Shipping & Rewards Meter"
+msgstr "Indicator de livrare și recompense CartPops"
+
+#: src/Pro/Blocks/ShippingMeter/index.js:22
+msgid ""
+"Frontend appearance, icons, truck, tiers, and celebration use your CartPops "
+"Pro Shipping Meter settings."
+msgstr ""
+"Aspectul în interfață, pictogramele, camionul, pragurile și animația de "
+"sărbătorire folosesc setările Indicatorului de livrare din CartPops Pro."
+
+#: src/Blocks/CartDrawer/block.json
+msgctxt "block title"
+msgid "CartPops Cart Drawer"
+msgstr "Sertar de coș CartPops"
+
+#: src/Blocks/CartLauncher/block.json
+msgctxt "block title"
+msgid "CartPops Cart Launcher"
+msgstr "Lansator coș CartPops"
+
+#: src/Pro/Blocks/ShippingMeter/block.json
+msgctxt "block title"
+msgid "CartPops Shipping & Rewards Meter"
+msgstr "Indicator de livrare și recompense CartPops"
+
+#: src/Blocks/CartDrawer/block.json
+msgctxt "block description"
+msgid "A beautiful slide-out cart drawer for WooCommerce."
+msgstr "Un sertar de coș glisant elegant pentru WooCommerce."
+
+#: src/Blocks/CartLauncher/block.json
+msgctxt "block description"
+msgid "A floating cart button that opens the CartPops drawer."
+msgstr "Un buton flotant de coș care deschide sertarul CartPops."
+
+#: src/Pro/Blocks/ShippingMeter/block.json
+msgctxt "block description"
+msgid "Visual progress bar showing how close the customer is to free shipping."
+msgstr ""
+"Bară vizuală de progres care arată cât mai are clientul până la livrarea "
+"gratuită."

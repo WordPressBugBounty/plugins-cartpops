@@ -1,0 +1,3389 @@
+# Copyright (C) 2026 CartPops
+# This file is distributed under the GPL v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: CartPops 2.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/cartpops/\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-02T11:55:32+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: cartpops\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: cartpops.php
+#: src/Admin/AdminPage.php:36
+#: src/Admin/AdminPage.php:37
+#: src/Blocks/CartDrawer/render.php:856
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:518
+#. Plugin Name of the plugin
+#. Author of the plugin
+msgid "CartPops"
+msgstr "CartPops"
+
+#: cartpops.php
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://cartpops.com"
+msgstr "https://cartpops.com"
+
+#: cartpops.php
+#. Description of the plugin
+msgid ""
+"The #1 WooCommerce cart drawer plugin. Boost conversions with a beautiful "
+"slide-out cart, product recommendations, and free shipping meter."
+msgstr "第一名的 WooCommerce 側邊購物車外掛。透過精緻的滑出式購物車、商品推薦和免運門檻進度條，全面提升轉換率。"
+
+#: cartpops.php:56
+msgid ""
+"CartPops detected both the Free and Pro editions as active. CartPops was "
+"paused; deactivate one edition and reload this page."
+msgstr "CartPops 偵測到 Free 和 Pro 版本同時處於啟用狀態。CartPops 已暫停運作；請停用其中一個版本並重新載入此頁面。"
+
+#: cartpops.php:148
+msgid ""
+"CartPops could not safely verify upgrade state. CartPops was paused before "
+"licensing initialization; reload this page or contact support."
+msgstr "CartPops 無法安全驗證升級狀態。CartPops 已在授權初始化前暫停；請重新載入此頁面或聯絡支援團隊。"
+
+#: cartpops.php:406
+msgid ""
+"CartPops licensing could not initialize. Shared cart features remain "
+"available, but paid features are paused. Reinstall the complete CartPops "
+"package or contact support."
+msgstr "CartPops 授權無法初始化。共用購物車功能仍可使用，但付費功能已暫停。請重新安裝完整的 CartPops 套件或聯絡支援團隊。"
+
+#: src/Admin/SettingsController.php:118
+msgid "No settings provided."
+msgstr "未提供設定。"
+
+#: src/Admin/SettingsController.php:129
+msgid "No valid settings provided."
+msgstr "未提供有效的設定。"
+
+#: src/Admin/SettingsController.php:215
+msgid "Invalid import data. Expected \"settings\" key with object value."
+msgstr "匯入資料無效。預期「settings」鍵值應為物件 (object)。"
+
+#: src/Admin/SettingsController.php:249
+msgid "Settings imported successfully."
+msgstr "設定已成功匯入。"
+
+#: src/Admin/SettingsController.php:270
+msgid "Settings could not be saved. Please try again."
+msgstr "無法儲存設定。請再試一次。"
+
+#: src/Admin/SettingsController.php:283
+msgid "Settings contain an invalid nested value."
+msgstr "設定包含無效的巢狀值。"
+
+#: src/Admin/SettingsController.php:473
+msgid ""
+"Custom product recommendations require an active CartPops Pro entitlement "
+"for this site."
+msgstr "自訂商品推薦需要此網站具備有效的 CartPops Pro 授權。"
+
+#: src/Admin/SettingsController.php:484
+msgid ""
+"Recommendation button text and presentation require an active CartPops Pro "
+"entitlement for this site."
+msgstr "推薦按鈕文字與外觀樣式需要此網站具備有效的 CartPops Pro 授權。"
+
+#: src/Admin/SettingsController.php:495
+msgid ""
+"Secondary drawer actions require an active CartPops Pro entitlement for "
+"this site."
+msgstr "抽屜次要操作需要此網站具備有效的 CartPops Pro 授權。"
+
+#: src/Admin/SettingsController.php:514
+msgid "You are not allowed to change custom CSS."
+msgstr "您沒有權限變更自訂 CSS。"
+
+#: src/Analytics/AnalyticsDashboard.php:23
+#: src/Analytics/AnalyticsDashboard.php:24
+msgid "CartPops Analytics"
+msgstr "CartPops 分析"
+
+#: src/Analytics/ConversionTracker.php:544
+#: src/Analytics/ConversionTracker.php:562
+msgid "Event payload too large."
+msgstr "事件酬載過大。"
+
+#: src/Analytics/ConversionTracker.php:1100
+msgid "You are not allowed to reset analytics data."
+msgstr "您沒有權限重設分析資料。"
+
+#: src/Blocks/CartDrawer/render.php:33
+#: src/Admin/assets/js/components/DrawerPreview.jsx:145
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:304
+msgid "Your Cart"
+msgstr "您的購物車"
+
+#: src/Blocks/CartDrawer/render.php:36
+#: src/Blocks/CartDrawer/render.php:694
+#: src/Admin/assets/js/components/DrawerPreview.jsx:150
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:340
+msgid "Coupon code"
+msgstr "優惠券代碼"
+
+#: src/Blocks/CartDrawer/render.php:37
+#: src/Admin/assets/js/components/DrawerPreview.jsx:154
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:353
+msgid "Apply"
+msgstr "套用"
+
+#: src/Blocks/CartDrawer/render.php:38
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:831
+#: src/Admin/assets/js/components/DrawerPreview.jsx:158
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:369
+msgid "Subtotal"
+msgstr "小計"
+
+#: src/Blocks/CartDrawer/render.php:39
+#: src/Admin/assets/js/components/DrawerPreview.jsx:341
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:379
+msgid "Discount"
+msgstr "折扣"
+
+#: src/Blocks/CartDrawer/render.php:40
+#: src/Admin/assets/js/components/DrawerPreview.jsx:160
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:389
+msgid "Total"
+msgstr "總計"
+
+#: src/Blocks/CartDrawer/render.php:41
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:304
+#: src/Admin/assets/js/components/DrawerPreview.jsx:168
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:419
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:106
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:151
+msgid "Continue shopping"
+msgstr "繼續購物"
+
+#: src/Blocks/CartDrawer/render.php:42
+#: src/Admin/assets/js/components/DrawerPreview.jsx:163
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:399
+msgid "Your cart is empty"
+msgstr "您的購物車是空的"
+
+#: src/Blocks/CartDrawer/render.php:249
+#: src/Blocks/CartDrawer/render.php:277
+#: src/Blocks/CartLauncher/render.php:65
+#: src/Blocks/CartLauncher/render.php:190
+#: src/Admin/assets/js/components/LauncherPreview.jsx:357
+msgid "Open cart"
+msgstr "開啟購物車"
+
+#: src/Blocks/CartDrawer/render.php:252
+#: src/Blocks/CartDrawer/render.php:562
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:160
+msgid "You may also like"
+msgstr "您可能也會喜歡"
+
+#: src/Blocks/CartDrawer/render.php:278
+#: src/Blocks/CartDrawer/render.php:403
+#: src/Blocks/CartLauncher/render.php:77
+msgid "Close cart"
+msgstr "關閉購物車"
+
+#: src/Blocks/CartDrawer/render.php:279
+#: src/Blocks/CartDrawer/render.php:587
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:611
+#: src/Recommendations/RecommendationEngine.php:240
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:230
+msgid "Add to cart"
+msgstr "加入購物車"
+
+#: src/Blocks/CartDrawer/render.php:281
+#: src/Recommendations/RecommendationEngine.php:220
+#: src/Admin/assets/js/components/DrawerPreview.jsx:924
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:117
+#. translators: %s: product name.
+#, php-format,js-format
+msgid "Add %s to cart"
+msgstr "將 %s 加入購物車"
+
+#: src/Blocks/CartDrawer/render.php:282
+#: src/Blocks/CartDrawer/render.php:600
+#: src/Recommendations/RecommendationEngine.php:239
+msgid "Select options"
+msgstr "選擇規格"
+
+#: src/Blocks/CartDrawer/render.php:284
+#: src/Recommendations/RecommendationEngine.php:217
+#. translators: %s: product name.
+#, php-format
+msgid "Select options for %s"
+msgstr "選擇 %s 的規格"
+
+#: src/Blocks/CartDrawer/render.php:286
+#. translators: %s: cart item name.
+#, php-format
+msgid "\"%s\" removed."
+msgstr "已移除「%s」。"
+
+#: src/Blocks/CartDrawer/render.php:288
+#. translators: %s: cart item name.
+#, php-format
+msgid "%s removed from cart."
+msgstr "已從購物車移除 %s。"
+
+#: src/Blocks/CartDrawer/render.php:289
+msgid "Item"
+msgstr "商品"
+
+#: src/Blocks/CartDrawer/render.php:291
+#. translators: %s: cart item name.
+#, php-format
+msgid "%s restored to cart."
+msgstr "已將 %s 放回購物車。"
+
+#: src/Blocks/CartDrawer/render.php:293
+#. translators: %s: coupon code.
+#, php-format
+msgid "Coupon \"%s\" applied."
+msgstr "已套用優惠券「%s」。"
+
+#: src/Blocks/CartDrawer/render.php:295
+#. translators: %s: coupon code.
+#, php-format
+msgid "Coupon \"%s\" removed."
+msgstr "已移除優惠券「%s」。"
+
+#: src/Blocks/CartDrawer/render.php:297
+#. translators: %s: product name.
+#, php-format
+msgid "%s added to cart."
+msgstr "已將 %s 加入購物車。"
+
+#: src/Blocks/CartDrawer/render.php:298
+msgid "Your cart has expired."
+msgstr "您的購物車已過期。"
+
+#: src/Blocks/CartDrawer/render.php:299
+#: src/Pro/Blocks/ShippingMeter/ShippingMeterBlock.php:954
+msgid "Request failed"
+msgstr "請求失敗"
+
+#: src/Blocks/CartDrawer/render.php:300
+msgid "Your cart is refreshing. Please wait."
+msgstr "正在重新整理您的購物車，請稍候。"
+
+#: src/Blocks/CartDrawer/render.php:301
+msgid "Failed to fetch recommendations"
+msgstr "無法取得推薦商品"
+
+#: src/Blocks/CartDrawer/render.php:303
+#. translators: 1: tax amount, 2: tax label (e.g. VAT).
+#, php-format
+msgid "Incl. %1$s %2$s"
+msgstr "含 %1$s %2$s"
+
+#: src/Blocks/CartDrawer/render.php:333
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:73
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:17
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:24
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:32
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:72
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:457
+msgid "Add"
+msgstr "加入"
+
+#: src/Blocks/CartDrawer/render.php:386
+msgid "Shopping cart"
+msgstr "購物車"
+
+#: src/Blocks/CartDrawer/render.php:472
+msgid "Decrease quantity:"
+msgstr "減少數量："
+
+#: src/Blocks/CartDrawer/render.php:485
+msgid "Increase quantity:"
+msgstr "增加數量："
+
+#: src/Blocks/CartDrawer/render.php:501
+msgid "Remove item:"
+msgstr "移除商品："
+
+#: src/Blocks/CartDrawer/render.php:550
+msgid "Undo"
+msgstr "復原"
+
+#: src/Blocks/CartDrawer/render.php:608
+msgid "Previous"
+msgstr "上一個"
+
+#: src/Blocks/CartDrawer/render.php:615
+msgid "Next"
+msgstr "下一個"
+
+#: src/Blocks/CartDrawer/render.php:643
+#: src/Blocks/CartDrawer/render.php:770
+#: src/Admin/assets/js/components/DrawerPreview.jsx:356
+msgid "Shipping"
+msgstr "運費"
+
+#: src/Blocks/CartDrawer/render.php:731
+msgid "Remove coupon:"
+msgstr "移除優惠券："
+
+#: src/Blocks/CartDrawer/render.php:811
+#: src/Admin/assets/js/components/DrawerPreview.jsx:1107
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:288
+msgid "Proceed to Checkout"
+msgstr "前往結帳"
+
+#: src/Blocks/CartDrawer/render.php:848
+#: src/Admin/assets/js/components/DrawerPreview.jsx:1123
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:228
+msgid "View Cart"
+msgstr "查看購物車"
+
+#: src/Blocks/CartDrawer/render.php:854
+msgid "Powered by"
+msgstr "技術支援"
+
+#: src/Blocks/CartDrawer/render.php:857
+msgid "(opens in a new tab)"
+msgstr "(在新分頁中開啟)"
+
+#: src/Cart/CartLineAuthority.php:404
+msgid "Available on backorder"
+msgstr "可缺貨預購"
+
+#: src/Cart/CouponSerializer.php:52
+#: src/Pro/ShippingMeter/RewardApplicator.php:262
+msgid "Cart Reward"
+msgstr "購物車獎勵"
+
+#: src/Licensing/GuardedDrawerDataProvider.php:192
+#: src/REST/DrawerDataController.php:149
+msgid "Drawer data is temporarily unavailable."
+msgstr "側邊抽屜資料暫時無法使用。"
+
+#: src/Licensing/PaidRuntimeGuard.php:159
+msgid "This CartPops feature requires an active Pro entitlement for this site."
+msgstr "此 CartPops 功能需要此網站具備有效的 Pro 授權。"
+
+#: src/Licensing/PaidRuntimeGuard.php:166
+msgid "This CartPops feature is temporarily unavailable while its data is prepared."
+msgstr "此 CartPops 功能正在準備資料，暫時無法使用。"
+
+#: src/Plugin.php:849
+#. translators: %s: value-free CartPops diagnostic code.
+#, php-format
+msgid ""
+"CartPops is paused because its required upgrade or build validation did not "
+"complete. Original data was preserved. Diagnostic: %s."
+msgstr "CartPops 已暫停，因為未完成必要的升級或建置驗證。原始資料已保留。診斷資訊：%s。"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:119
+#. translators: %s: add-on name.
+#, php-format
+msgid "%s added."
+msgstr "已加入 %s。"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:121
+#. translators: %s: add-on name.
+#, php-format
+msgid "%s removed."
+msgstr "已移除 %s。"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:122
+msgid "Toggle failed"
+msgstr "切換失敗"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:123
+msgid "Failed to add spotlight product"
+msgstr "無法加入焦點商品"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:124
+msgid "Adding…"
+msgstr "加入中…"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:125
+msgid "Added ✓"
+msgstr "已加入 ✓"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:127
+msgid "bundle discount"
+msgstr "組合折扣"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:128
+msgid "Failed to add bundle items"
+msgstr "無法加入組合商品"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:129
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:668
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:756
+msgid "Calculate shipping"
+msgstr "計算運費"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:130
+msgid "Loading shipping options…"
+msgstr "正在載入運送方式…"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:131
+msgid "Shipping options updated."
+msgstr "已更新運送方式。"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:132
+msgid "Shipping method updated."
+msgstr "已更新運送方式。"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:133
+msgid "Shipping options could not be updated. Please try again."
+msgstr "無法更新運送方式。請再試一次。"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:134
+msgid "No shipping options are available for this address."
+msgstr "此地址沒有可用的運送方式。"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:135
+msgid "Enter your destination to calculate shipping."
+msgstr "輸入目的地以計算運費。"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:136
+msgid "Shipping options"
+msgstr "運送選項"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:315
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:122
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:155
+msgid "View cart"
+msgstr "查看購物車"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:493
+msgid "Dismiss"
+msgstr "關閉"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:516
+#: src/Pro/Blocks/ShippingMeter/ShippingMeterBlock.php:1090
+msgid "Shipping and rewards progress"
+msgstr "運送與獎勵進度"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:523
+#: src/Pro/Blocks/ShippingMeter/ShippingMeterBlock.php:1099
+msgid "Reward tiers"
+msgstr "獎勵門檻"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:584
+#: src/Pro/BundleBuilder/BundleBuilder.php:56
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:469
+msgid "Frequently bought together"
+msgstr "經常一起購買"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:590
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:616
+msgid "Close"
+msgstr "關閉"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:601
+msgid "Product info"
+msgstr "商品資訊"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:605
+msgid "Choose…"
+msgstr "選擇…"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:615
+msgid "Product information"
+msgstr "商品資訊"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:619
+msgid "Got it"
+msgstr "知道了"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:685
+msgid "Country / Region"
+msgstr "國家 / 地區"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:695
+msgid "Select a country / region…"
+msgstr "選擇國家 / 地區…"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:703
+msgid "State / County"
+msgstr "縣 / 市"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:720
+msgid "Select a state / region…"
+msgstr "選擇縣 / 市…"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:746
+msgid "City"
+msgstr "城市"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:751
+msgid "Postcode / ZIP"
+msgstr "郵遞區號"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:815
+msgid "Toggle add-on:"
+msgstr "切換加購項目："
+
+#: src/Pro/BundleBuilder/BundleBuilderController.php:143
+#: src/Pro/Notifications/DrawerNotificationBarController.php:360
+#: src/Pro/SmartAddons/SmartAddonsController.php:96
+#: src/Recommendations/RecommendationsController.php:94
+#: src/REST/CartStateController.php:120
+#: src/REST/CartStateController.php:199
+#: src/REST/CouponController.php:104
+#: src/REST/CouponController.php:152
+msgid "Cart is unavailable. Please try again."
+msgstr "購物車目前無法使用，請稍後再試。"
+
+#: src/Pro/BundleBuilder/BundleBuilderController.php:314
+#: src/Pro/Notifications/DrawerNotificationBarController.php:442
+#: src/Pro/REST/ProDrawerDataSupplementProvider.php:80
+#: src/Pro/SmartAddons/SmartAddonsController.php:129
+#: src/Recommendations/RecommendationsController.php:148
+#: src/REST/CartStateController.php:330
+#: src/REST/CouponController.php:231
+msgid ""
+"The final cart state could not be confirmed. Refresh your cart before "
+"making another change."
+msgstr "無法確認最終購物車狀態。請在進行其他變更前重新整理購物車。"
+
+#: src/Pro/BundleBuilder/BundleBuilderController.php:322
+#: src/Pro/Notifications/DrawerNotificationBarController.php:450
+#: src/Pro/REST/ProDrawerDataSupplementProvider.php:86
+#: src/Pro/SmartAddons/SmartAddonsController.php:137
+#: src/Recommendations/RecommendationsController.php:156
+#: src/REST/CartStateController.php:319
+#: src/REST/CouponController.php:220
+msgid "Your cart is being updated. Please try again."
+msgstr "購物車正在更新中，請稍後再試。"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:573
+msgid "CartPops Cart"
+msgstr "CartPops 購物車"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:775
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:888
+msgid "Menu Icon"
+msgstr "選單圖示"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:781
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1063
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:56
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:328
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:369
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:514
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:752
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:223
+msgid "Icon"
+msgstr "圖示"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:784
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:785
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:786
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:787
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:788
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:15
+msgid "Cart"
+msgstr "購物車"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:789
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:790
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:791
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:792
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:793
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:794
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:795
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:796
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:35
+msgid "Bag"
+msgstr "購物袋"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:805
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1121
+msgid "Items Indicator"
+msgstr "商品數量指示器"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:808
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:120
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:435
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:295
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:117
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:149
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:33
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:38
+msgid "None"
+msgstr "無"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:809
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:299
+msgid "Bubble"
+msgstr "氣泡"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:810
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:303
+msgid "Plain"
+msgstr "純文字"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:819
+msgid "Hide Empty"
+msgstr "為空時隱藏"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:821
+msgid "Yes"
+msgstr "是"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:822
+msgid "No"
+msgstr "否"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:833
+msgid "Show"
+msgstr "顯示"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:834
+msgid "Hide"
+msgstr "隱藏"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:843
+msgid "Alignment"
+msgstr "對齊方式"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:847
+#: src/Admin/assets/js/pages/Dashboard.jsx:159
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:44
+msgid "Left"
+msgstr "靠左"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:851
+msgid "Center"
+msgstr "置中"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:855
+#: src/Admin/assets/js/pages/Dashboard.jsx:160
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:43
+msgid "Right"
+msgstr "靠右"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:896
+msgid "Normal"
+msgstr "一般"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:902
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:956
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1130
+msgid "Text Color"
+msgstr "文字顏色"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:914
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:967
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:338
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:17
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:547
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:691
+msgid "Icon Color"
+msgstr "圖示顏色"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:926
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:978
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1142
+msgid "Background Color"
+msgstr "背景顏色"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:938
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:989
+msgid "Border Color"
+msgstr "邊框顏色"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:950
+msgid "Hover"
+msgstr "懸停"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1002
+msgid "Border Width"
+msgstr "邊框寬度"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1020
+#: src/Admin/assets/js/pages/DesignSettings.jsx:316
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:519
+msgid "Border Radius"
+msgstr "邊框圓角"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1071
+msgid "Size"
+msgstr "大小"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1089
+msgid "Spacing"
+msgstr "間距"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1108
+msgid "Padding"
+msgstr "內距"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1154
+msgid "Distance"
+msgstr "距離"
+
+#: src/Pro/Notifications/DrawerNotificationBar.php:368
+msgid "Offer quantity: 1"
+msgstr "優惠數量：1"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:275
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:27
+msgid "≥ is at least"
+msgstr "≥ 代表至少"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:279
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:28
+msgid "≤ is at most"
+msgstr "≤ 代表至多"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:283
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:29
+msgid "> is more than"
+msgstr "> 代表大於"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:287
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:30
+msgid "< is less than"
+msgstr "< 代表小於"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:291
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:31
+msgid "= equals"
+msgstr "= 代表等於"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:298
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:35
+msgid "Contains any of"
+msgstr "包含以下任一"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:302
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:36
+msgid "Contains all of"
+msgstr "包含以下全部"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:306
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:37
+msgid "Contains none of"
+msgstr "不包含以下任一"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:313
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:41
+msgid "Is any of"
+msgstr "是以下任一"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:317
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:42
+msgid "Is none of"
+msgstr "非以下任一"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:382
+msgid "Invalid spotlight configuration."
+msgstr "焦點商品設定無效。"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:393
+msgid "Spotlight product already in cart."
+msgstr "焦點商品已在購物車中。"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:458
+#: src/Pro/Notifications/DrawerNotificationBarController.php:466
+#: src/Recommendations/RecommendationsController.php:164
+msgid "Could not add product to cart."
+msgstr "無法將商品加入購物車。"
+
+#: src/Pro/REST/ProDrawerDataSupplementProvider.php:92
+#: src/REST/CartStateController.php:217
+msgid "The cart could not be refreshed. Please try again."
+msgstr "無法重新整理購物車。請再試一次。"
+
+#: src/Pro/Rules/Conditions/CartContainsCategoryCondition.php:66
+msgid "Cart Contains Category"
+msgstr "購物車包含分類"
+
+#: src/Pro/Rules/Conditions/CartContainsProductCondition.php:62
+msgid "Cart Contains Product"
+msgstr "購物車包含商品"
+
+#: src/Pro/Rules/Conditions/CartItemCountCondition.php:56
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:55
+msgid "Cart Item Count"
+msgstr "購物車商品數量"
+
+#: src/Pro/Rules/Conditions/CartTotalCondition.php:56
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:49
+msgid "Cart Total"
+msgstr "購物車總計"
+
+#: src/Pro/Rules/Conditions/UserRoleCondition.php:63
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:73
+msgid "User Role"
+msgstr "使用者角色"
+
+#: src/Pro/Rules/RuleEngine.php:59
+msgid "CartPops Rules"
+msgstr "CartPops 規則"
+
+#: src/Pro/Rules/RuleEngine.php:60
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:274
+msgid "Rule"
+msgstr "規則"
+
+#: src/Pro/ShippingMeter/RewardApplicator.php:401
+msgid "Gift quantity: 1"
+msgstr "贈品數量：1"
+
+#: src/Pro/ShippingMeter/ShippingMeter.php:408
+msgid "reached"
+msgstr "已達成"
+
+#: src/Pro/ShippingMeter/ShippingMeter.php:408
+msgid "not reached"
+msgstr "未達成"
+
+#: src/Pro/ShippingMeter/ShippingMeter.php:555
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:544
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:318
+msgid "Free Shipping"
+msgstr "免運費"
+
+#: src/Pro/ShippingMeter/ShippingMeter.php:556
+#: src/Pro/ShippingMeter/ShippingMeter.php:557
+#: src/Admin/assets/js/pages/Dashboard.jsx:213
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:549
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:556
+msgid "Off"
+msgstr "折扣"
+
+#: src/Pro/ShippingMeter/ShippingMeter.php:749
+#: src/Pro/ShippingMeter/ShippingMeter.php:753
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:558
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:47
+msgid "Free Gift"
+msgstr "免費贈品"
+
+#: src/Pro/SmartAddons/SmartAddonFeeBatchException.php:20
+msgid "CartPops could not restore cart fees safely."
+msgstr "CartPops 無法安全還原購物車費用。"
+
+#: src/Pro/SmartAddons/SmartAddons.php:883
+msgid "CartPops add-on"
+msgstr "CartPops 附加元件"
+
+#: src/Pro/SmartAddons/SmartAddonsController.php:145
+msgid "This cart add-on is unavailable."
+msgstr "此購物車附加項目無法使用。"
+
+#: src/Pro/SmartAddons/SmartAddonsController.php:153
+#: src/Recommendations/RecommendationsController.php:180
+#: src/REST/CartStateController.php:178
+#: src/REST/CouponController.php:242
+msgid "The cart could not be updated. Please try again."
+msgstr "無法更新購物車。請再試一次。"
+
+#: src/Recommendations/RecommendationsController.php:114
+msgid "This product is not available."
+msgstr "此商品目前無法購買。"
+
+#: src/REST/CartStateController.php:131
+msgid "Select one or more valid cart items."
+msgstr "請選取一或多個有效的購物車項目。"
+
+#: src/REST/CartStateController.php:170
+msgid "One or more cart items could not be removed."
+msgstr "一或多個購物車項目無法移除。"
+
+#: src/REST/CouponController.php:95
+#: src/REST/CouponController.php:160
+msgid "Cart rewards are managed automatically."
+msgstr "購物車獎勵會自動管理。"
+
+#: src/REST/CouponController.php:129
+msgid "Invalid coupon."
+msgstr "無效的優惠券。"
+
+#: src/REST/CouponController.php:196
+msgid "This coupon is managed automatically and could not be removed."
+msgstr "此優惠券為自動管理，無法移除。"
+
+#: src/REST/CouponController.php:202
+msgid "The coupon could not be removed."
+msgstr "無法移除該優惠券。"
+
+#: src/REST/NamespaceRateLimitMiddleware.php:92
+msgid "Too many requests. Please wait and try again."
+msgstr "請求過多。請稍候再試。"
+
+#: src/REST/NamespaceRateLimitMiddleware.php:93
+msgid "Request limiting is temporarily unavailable. Please try again."
+msgstr "請求限制暫時無法使用。請再試一次。"
+
+#: src/REST/PublicEndpointGuard.php:45
+#: src/REST/PublicEndpointGuard.php:63
+msgid "Your cart session could not be verified. Please refresh and try again."
+msgstr "無法驗證您的購物車工作階段。請重新整理後再試一次。"
+
+#: src/REST/PublicEndpointGuard.php:52
+#: src/REST/WooSessionBootstrap.php:534
+msgid "Your cart session is unavailable. Please refresh and try again."
+msgstr "您的購物車工作階段無法使用。請重新整理後再試一次。"
+
+#: src/REST/PublicEndpointGuard.php:78
+#: src/REST/PublicEndpointGuard.php:88
+msgid "Cookie check failed. Please refresh and try again."
+msgstr "Cookie 檢查失敗。請重新整理後再試一次。"
+
+#: src/REST/RestCors.php:141
+msgid "REST method overrides are not supported."
+msgstr "不支援 REST 方法覆寫。"
+
+#: src/REST/RestCors.php:144
+msgid "JSONP is not supported for the CartPops API."
+msgstr "CartPops API 不支援 JSONP。"
+
+#: src/REST/RestCors.php:151
+#: src/REST/RestCors.php:163
+msgid "The request body is too large."
+msgstr "請求本文過大。"
+
+#: src/REST/RestCors.php:159
+#: src/REST/RestCors.php:801
+msgid "No CartPops REST policy permits this request."
+msgstr "沒有任何 CartPops REST 政策允許此請求。"
+
+#: src/REST/RestCors.php:337
+#: src/REST/RestPreDispatchFinalizer.php:102
+msgid "The REST request was rejected."
+msgstr "REST 請求已遭拒絕。"
+
+#: src/REST/RestCors.php:667
+#: src/REST/RestCors.php:674
+msgid "This origin is not allowed to access the CartPops API."
+msgstr "不允許此來源存取 CartPops API。"
+
+#: src/REST/RestCors.php:677
+msgid "The request origin does not match its referrer."
+msgstr "請求來源與其參照位址不相符。"
+
+#: src/Setup/Upgrader.php:1717
+#. translators: %1$d: WordPress multisite blog ID.
+#, php-format
+msgid ""
+"CartPops network migration paused at site %1$d and will retry it without "
+"skipping later sites. Original settings were preserved."
+msgstr "CartPops 網路移轉已在網站 %1$d 暫停，並將重試該網站而不略過後續網站。原始設定已保留。"
+
+#: src/Setup/Upgrader.php:1728
+msgid ""
+"CartPops could not complete its legacy settings migration. The original "
+"settings were preserved; review the migration status before retrying."
+msgstr "CartPops 無法完成舊版設定移轉。原始設定已保留；重試前請先檢查移轉狀態。"
+
+#: src/Setup/Upgrader.php:1736
+msgid ""
+"CartPops preserved legacy automation rule data for recovery, but those "
+"rules are retired and do not run in V2."
+msgstr "CartPops 保留了舊版自動化規則資料以供復原，但這些規則已停用且不會在 V2 中執行。"
+
+#: src/Setup/Upgrader.php:1742
+msgid ""
+"CartPops migration requires compatibility review before it can finish. "
+"Original settings remain available for recovery; resolve the reported "
+"migration warnings, then retry the migration."
+msgstr "CartPops 移轉需要進行相容性審查才能完成。原始設定仍可用於復原；請解決回報的移轉警告，然後再重試移轉。"
+
+#: src/Setup/Upgrader.php:1752
+msgid ""
+"CartPops migrated legacy settings with compatibility warnings. Original "
+"settings remain available for recovery."
+msgstr "CartPops 已移轉舊版設定，但出現相容性警告。原始設定仍可用於復原。"
+
+#: src/StoreAPI/CartExtension.php:178
+msgid "Exact WooCommerce cart item key."
+msgstr "確切的 WooCommerce 購物車項目索引鍵。"
+
+#: src/StoreAPI/CartExtension.php:186
+msgid "Parent product ID (same as id for simple products)."
+msgstr "父商品 ID（簡易商品與 id 相同）。"
+
+#: src/StoreAPI/CartExtension.php:203
+msgid "CartPops drawer configuration."
+msgstr "CartPops 抽屜設定。"
+
+#: src/StoreAPI/CartExtension.php:208
+msgid "Cart launcher configuration."
+msgstr "購物車啟動器設定。"
+
+#: src/StoreAPI/CartExtension.php:221
+msgid "Safe CartPops coupon presentation and removal authority."
+msgstr "安全的 CartPops 優惠券呈現與移除權限。"
+
+#: src/StoreAPI/CartExtension.php:279
+msgid "Bounded PHP-filtered cart item presentation."
+msgstr "受限的 PHP 篩選購物車項目呈現。"
+
+#: src/StoreAPI/CartExtension.php:289
+msgid "Exact cart item keys with an edition-owned locked presentation."
+msgstr "具有版本專屬鎖定呈現的確切購物車項目索引鍵。"
+
+#: src/StoreAPI/CartExtension.php:313
+msgid "Whether WooCommerce permits this line to be shown in a mini-cart."
+msgstr "WooCommerce 是否允許在迷你購物車中顯示此項目。"
+
+#: src/StoreAPI/CartExtension.php:318
+msgid "Whether CartPops may offer quantity mutation for this line."
+msgstr "CartPops 是否可變更此項目的數量。"
+
+#: src/StoreAPI/CartExtension.php:323
+msgid "Whether CartPops may offer removal for this line."
+msgstr "CartPops 是否可提供此項目的移除功能。"
+
+#: src/StoreAPI/CartExtension.php:328
+msgid ""
+"WooCommerce quantity minimum, transport maximum, step, and "
+"unlimited-product state."
+msgstr "WooCommerce 數量最小值、傳輸最大值、間距與不限商品狀態。"
+
+#: src/StoreAPI/CartExtension.php:339
+msgid "Bounded plain-text WooCommerce backorder notice."
+msgstr "受限的純文字 WooCommerce 缺貨預購通知。"
+
+#: src/Admin/assets/js/App.jsx:169
+msgid "Setup"
+msgstr "設定"
+
+#: src/Admin/assets/js/App.jsx:171
+#: src/Admin/assets/js/pages/Dashboard.jsx:119
+msgid "Dashboard"
+msgstr "控制台"
+
+#: src/Admin/assets/js/App.jsx:172
+msgid "Drawer"
+msgstr "側邊購物車"
+
+#: src/Admin/assets/js/App.jsx:173
+msgid "Launcher"
+msgstr "啟動按鈕"
+
+#: src/Admin/assets/js/App.jsx:177
+#: src/Admin/assets/js/pages/Dashboard.jsx:185
+msgid "Features"
+msgstr "功能"
+
+#: src/Admin/assets/js/App.jsx:181
+#: src/Admin/assets/js/pages/Dashboard.jsx:88
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:352
+msgid "Recommendations"
+msgstr "推薦商品"
+
+#: src/Admin/assets/js/App.jsx:186
+msgid "Smart add-ons"
+msgstr "智慧加購"
+
+#: src/Admin/assets/js/App.jsx:191
+#: src/Admin/assets/js/pages/Dashboard.jsx:104
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:657
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:669
+msgid "Smart Bar"
+msgstr "智慧列"
+
+#: src/Admin/assets/js/App.jsx:196
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:419
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:444
+msgid "Bundle Builder"
+msgstr "組合包建構器"
+
+#: src/Admin/assets/js/App.jsx:202
+msgid "Insights"
+msgstr "深入分析"
+
+#: src/Admin/assets/js/App.jsx:206
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:202
+msgid "Analytics"
+msgstr "數據分析"
+
+#: src/Admin/assets/js/App.jsx:212
+msgid "System"
+msgstr "系統"
+
+#: src/Admin/assets/js/App.jsx:213
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:429
+msgid "Advanced"
+msgstr "進階"
+
+#: src/Admin/assets/js/App.jsx:520
+msgid "Settings saved!"
+msgstr "設定已儲存！"
+
+#: src/Admin/assets/js/App.jsx:526
+msgid "Failed to save."
+msgstr "儲存失敗。"
+
+#: src/Admin/assets/js/App.jsx:560
+msgid "Settings reset to defaults."
+msgstr "設定已重設為預設值。"
+
+#: src/Admin/assets/js/App.jsx:571
+msgid "Settings could not be reset. Please try again."
+msgstr "無法重設設定。請再試一次。"
+
+#: src/Admin/assets/js/App.jsx:732
+msgid "Unsaved changes"
+msgstr "未儲存的變更"
+
+#: src/Admin/assets/js/App.jsx:741
+msgid "Saving…"
+msgstr "儲存中…"
+
+#: src/Admin/assets/js/App.jsx:742
+msgid "Save Changes"
+msgstr "儲存變更"
+
+#: src/Admin/assets/js/components/ColorPicker.jsx:111
+msgid "CSS color value"
+msgstr "CSS 顏色值"
+
+#: src/Admin/assets/js/components/ColorPicker.jsx:112
+msgid "Hex color value"
+msgstr "Hex 顏色代碼"
+
+#: src/Admin/assets/js/components/DrawerPreview.jsx:359
+msgid "Free"
+msgstr "免費"
+
+#: src/Admin/assets/js/components/DrawerPreview.jsx:377
+msgid "Tax"
+msgstr "稅金"
+
+#: src/Admin/assets/js/components/DrawerPreview.jsx:399
+#: src/Admin/assets/js/components/LauncherPreview.jsx:136
+msgid "Desktop"
+msgstr "電腦版"
+
+#: src/Admin/assets/js/components/DrawerPreview.jsx:421
+#: src/Admin/assets/js/components/LauncherPreview.jsx:158
+msgid "Mobile"
+msgstr "行動版"
+
+#: src/Admin/assets/js/components/DrawerPreview.jsx:448
+#: src/Admin/assets/js/components/LauncherPreview.jsx:185
+msgid "Items"
+msgstr "商品項目"
+
+#: src/Admin/assets/js/components/DrawerPreview.jsx:459
+#: src/Admin/assets/js/components/LauncherPreview.jsx:194
+msgid "Empty"
+msgstr "清空"
+
+#: src/Admin/assets/js/components/DrawerPreview.jsx:469
+#: src/Admin/assets/js/components/LauncherPreview.jsx:204
+msgid "Toggle dark mode preview"
+msgstr "切換深色模式預覽"
+
+#: src/Admin/assets/js/components/DrawerPreview.jsx:828
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:453
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:720
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:748
+msgid "Remove"
+msgstr "移除"
+
+#: src/Admin/assets/js/components/LauncherPreview.jsx:262
+msgid "Store menu"
+msgstr "商店選單"
+
+#: src/Admin/assets/js/components/LauncherPreview.jsx:267
+msgid "Inline navigation cart launcher preview"
+msgstr "行內導覽購物車按鈕預覽"
+
+#: src/Admin/assets/js/components/LauncherPreview.jsx:448
+msgid "Launcher hidden by current settings"
+msgstr "啟動按鈕已依目前設定隱藏"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:365
+msgid "Hide launcher on pages"
+msgstr "在指定頁面隱藏啟動按鈕"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:368
+msgid ""
+"Select pages where the floating cart launcher should not appear. Existing "
+"exclusions stay selected until you remove them."
+msgstr "選取不顯示浮動購物車按鈕的頁面。已排除的頁面會保持選取狀態，直到您將其移除。"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:377
+msgid "Pages with the launcher hidden"
+msgstr "已隱藏啟動按鈕的頁面"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:388
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:491
+#. translators: %d: WordPress page ID.
+#, js-format
+msgid "Page #%d (untitled)"
+msgstr "頁面 #%d (無標題)"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:393
+#. translators: %d: WordPress page ID.
+#, js-format
+msgid "Page #%d (unavailable)"
+msgstr "頁面 #%d (無法使用)"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:406
+#. translators: %s: Page title.
+#, js-format
+msgid "Remove %s from hidden pages"
+msgstr "從隱藏頁面中移除 %s"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:424
+msgid ""
+"Some selected page names could not be loaded. Their exclusions are still "
+"preserved."
+msgstr "無法載入部分所選頁面的名稱，但仍會保留其排除設定。"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:436
+msgid "Retry page names"
+msgstr "重試頁面名稱"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:442
+msgid "Search pages"
+msgstr "搜尋頁面"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:443
+msgid "Type at least two characters, then choose a page below."
+msgstr "請輸入至少兩個字元，然後從下方選擇頁面。"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:456
+msgid "The maximum number of page exclusions has been selected."
+msgstr "已選取排除頁面的數量上限。"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:463
+msgid "Searching pages…"
+msgstr "正在搜尋頁面…"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:467
+msgid "Pages could not be loaded. Try searching again."
+msgstr "無法載入頁面。請再試一次搜尋。"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:477
+msgid "No matching pages found."
+msgstr "找不到相符的頁面。"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:484
+msgid "Matching pages"
+msgstr "相符的頁面"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:504
+#. translators: %d: WordPress page ID.
+#, js-format
+msgid "Page ID: %d"
+msgstr "頁面 ID：%d"
+
+#: src/Admin/assets/js/components/UpgradePage.jsx:25
+#. translators: %s: paid feature name.
+#, js-format
+msgid "%s is available in CartPops Pro"
+msgstr "%s 於 CartPops Pro 提供"
+
+#: src/Admin/assets/js/components/UpgradePage.jsx:30
+msgid ""
+"Upgrade to configure this feature. Your existing CartPops settings remain "
+"unchanged."
+msgstr "升級即可設定此功能。你現有的 CartPops 設定將會保留。"
+
+#: src/Admin/assets/js/components/UpgradePage.jsx:40
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:88
+msgid "Upgrade to CartPops Pro"
+msgstr "升級至 CartPops Pro"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:18
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:210
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:44
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:281
+msgid "General"
+msgstr "一般"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:19
+msgid "Integrations"
+msgstr "整合"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:28
+msgid "Powered by CartPops"
+msgstr "由 CartPops 技術支援"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:32
+msgid "Show the CartPops partner link"
+msgstr "顯示 CartPops 合作夥伴連結"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:33
+msgid ""
+"Opt in to show a CartPops referral link in the drawer footer. The link "
+"remains hidden until a valid partner code is saved."
+msgstr "選擇在抽屜頁尾顯示 CartPops 推薦連結。在儲存有效的合作夥伴代碼之前，此連結將保持隱藏。"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:45
+msgid "Partner code"
+msgstr "合作夥伴代碼"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:46
+msgid ""
+"Enter a positive base-10 integer of up to 20 digits. A valid code is "
+"required for the link to display."
+msgstr "請輸入最多 20 位數的十進位正整數。必須輸入有效代碼才能顯示連結。"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:71
+msgid "Refresh cart data on page load"
+msgstr "在頁面載入時重新整理購物車資料"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:72
+msgid ""
+"Requests fresh cart data on every page load. Use only when cached pages "
+"show stale cart contents."
+msgstr "每次載入頁面時都請求最新的購物車資料。僅在快取頁面顯示過時的購物車內容時使用。"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:139
+msgid "Export failed."
+msgstr "匯出失敗。"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:166
+msgid "Settings imported! Reload to see changes."
+msgstr "設定已匯入！請重新載入以查看變更。"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:191
+msgid "Import failed."
+msgstr "匯入失敗。"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:197
+msgid "Invalid JSON file."
+msgstr "無效的 JSON 檔案。"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:214
+msgid "Enable CartPops"
+msgstr "啟用 CartPops"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:215
+msgid "Disable to turn off all CartPops frontend functionality."
+msgstr "停用以關閉所有 CartPops 前台功能。"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:226
+msgid "Open drawer on"
+msgstr "開啟抽屜時機"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:234
+msgid "Launcher click only"
+msgstr "僅限點擊啟動按鈕"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:251
+msgid "WooCommerce Mini Cart"
+msgstr "WooCommerce 迷你購物車"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:255
+msgid "Integration mode"
+msgstr "整合模式"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:256
+msgid "Controls how CartPops interacts with the WooCommerce Mini Cart block."
+msgstr "控制 CartPops 與 WooCommerce 迷你購物車區塊的互動方式。"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:267
+msgid "Replace — CartPops drawer replaces WC Mini Cart"
+msgstr "取代 — CartPops 抽屜取代 WC 迷你購物車"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:274
+msgid "Standalone — Both operate independently"
+msgstr "獨立 — 兩者各自獨立運作"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:289
+msgid "Custom CSS"
+msgstr "自訂 CSS"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:293
+msgid "Additional CSS"
+msgstr "額外 CSS"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:294
+msgid ""
+"Add custom CSS to style the cart drawer. Uses the .cpops- prefix for all "
+"CartPops elements."
+msgstr "新增自訂 CSS 來設定購物車抽屜的樣式。所有 CartPops 元素均使用 .cpops- 前置詞。"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:309
+msgid "Performance"
+msgstr "效能"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:320
+msgid "Import / Export"
+msgstr "匯入 / 匯出"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:324
+msgid ""
+"Export your CartPops settings to a JSON file for backup, or import settings "
+"from another site."
+msgstr "將你的 CartPops 設定匯出為 JSON 檔案以供備份，或從另一個網站匯入設定。"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:336
+msgid "Export Settings"
+msgstr "匯出設定"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:343
+msgid "Import Settings"
+msgstr "匯入設定"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:359
+msgid "Reset"
+msgstr "重設"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:371
+msgid "Reset all settings to defaults"
+msgstr "將所有設定重設為預設值"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:376
+msgid "Are you sure? This will reset all CartPops settings to their default values."
+msgstr "您確定嗎？這會將所有 CartPops 設定重設為預設值。"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:396
+msgid "Yes, reset everything"
+msgstr "是，重設所有內容"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:404
+#: src/Pro/Admin/assets/js/components/AnalyticsResetActions.jsx:68
+msgid "Cancel"
+msgstr "取消"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:414
+msgid "Settings update in progress…"
+msgstr "正在更新設定…"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:431
+msgid "Fine-tune CartPops behavior, styling, and integrations."
+msgstr "微調 CartPops 的行為、樣式與整合功能。"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:71
+msgid "Cart Drawer"
+msgstr "購物車抽屜"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:76
+#: src/Admin/assets/js/pages/Dashboard.jsx:170
+msgid "Cart Launcher"
+msgstr "購物車啟動器"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:81
+msgid "Shipping Meter"
+msgstr "免運進度條"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:94
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:402
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:139
+msgid "Smart Add-ons"
+msgstr "智慧加購"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:121
+msgid "Welcome to CartPops. Manage your cart drawer and boost conversions."
+msgstr "歡迎使用 CartPops。管理您的購物車抽屜並提升轉換率。"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:142
+msgid "Plugin Status"
+msgstr "外掛狀態"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:145
+msgid "Active"
+msgstr "已啟用"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:146
+msgid "Inactive"
+msgstr "已停用"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:156
+msgid "Drawer Position"
+msgstr "抽屜位置"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:173
+msgid "Visible"
+msgstr "顯示"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:174
+msgid "Hidden"
+msgstr "隱藏"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:212
+msgid "On"
+msgstr "開啟"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:231
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:198
+msgid "Unknown Theme"
+msgstr "未知佈景主題"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:245
+msgid "Resources"
+msgstr "資源"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:260
+msgid "Documentation"
+msgstr "說明文件"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:263
+msgid "Guides and setup instructions"
+msgstr "指南與設定說明"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:282
+msgid "Changelog"
+msgstr "變更記錄"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:285
+msgid "Latest updates and releases"
+msgstr "最新更新與發行版本"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:304
+msgid "Support"
+msgstr "支援"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:307
+msgid "Get help from our team"
+msgstr "取得我們團隊的協助"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:11
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:437
+msgid "Default"
+msgstr "預設"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:23
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:445
+msgid "Minimal"
+msgstr "極簡"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:35
+msgid "Bold"
+msgstr "鮮明"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:47
+msgid "Ocean"
+msgstr "海洋"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:61
+msgid "Primary"
+msgstr "主要"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:62
+msgid "Primary Text"
+msgstr "主要文字"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:63
+#: src/Admin/assets/js/pages/DesignSettings.jsx:127
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:491
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:489
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:730
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:514
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:652
+msgid "Background"
+msgstr "背景"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:64
+#: src/Admin/assets/js/pages/DesignSettings.jsx:132
+msgid "Surface"
+msgstr "表面"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:65
+#: src/Admin/assets/js/pages/DesignSettings.jsx:137
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:57
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:498
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:502
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:742
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:524
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:665
+msgid "Text"
+msgstr "文字"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:66
+#: src/Admin/assets/js/pages/DesignSettings.jsx:142
+msgid "Text Secondary"
+msgstr "次要文字"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:67
+msgid "Text Tertiary"
+msgstr "第三級文字"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:68
+#: src/Admin/assets/js/pages/DesignSettings.jsx:147
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:508
+msgid "Border"
+msgstr "邊框"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:69
+#: src/Admin/assets/js/pages/DesignSettings.jsx:152
+msgid "Input Background"
+msgstr "輸入框背景"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:70
+#: src/Admin/assets/js/pages/DesignSettings.jsx:157
+msgid "Input Border"
+msgstr "輸入框邊框"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:71
+msgid "Input Text"
+msgstr "輸入框文字"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:72
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:16
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:542
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:772
+msgid "Button Background"
+msgstr "按鈕背景"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:73
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:558
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:784
+msgid "Button Text"
+msgstr "按鈕文字"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:76
+msgid "Secondary Button Background"
+msgstr "次要按鈕背景"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:80
+msgid "Secondary Button Text"
+msgstr "次要按鈕文字"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:84
+msgid "Quantity Button Background"
+msgstr "數量按鈕背景"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:88
+msgid "Quantity Button Text"
+msgstr "數量按鈕文字"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:92
+msgid "Quantity Value Background"
+msgstr "數量數值背景"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:96
+msgid "Quantity Border"
+msgstr "數量邊框"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:100
+msgid "Quantity Value Text"
+msgstr "數量數值文字"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:104
+msgid "Recommendations Button"
+msgstr "推薦商品按鈕"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:108
+msgid "Recommendations Button Icon"
+msgstr "推薦商品按鈕圖示"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:112
+msgid "Recommendations Background"
+msgstr "推薦商品背景"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:116
+msgid "Recommendations Border"
+msgstr "推薦商品邊框"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:118
+msgid "Recommendations Text"
+msgstr "推薦商品文字"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:119
+msgid "Sale Price"
+msgstr "特價"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:120
+msgid "Success"
+msgstr "成功"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:121
+msgid "Danger"
+msgstr "危險"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:201
+msgid "Presets"
+msgstr "預設集"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:235
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:328
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:470
+msgid "Colors"
+msgstr "顏色"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:257
+msgid "Dark mode palette"
+msgstr "深色模式調色盤"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:260
+msgid ""
+"Used for forced dark mode and when system dark mode is active. Primary "
+"branding remains shared with the light palette."
+msgstr "用於強制深色模式以及系統深色模式啟用時。主要品牌色彩仍與淺色調色盤共用。"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:289
+msgid "Background Overlay"
+msgstr "背景覆蓋"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:292
+msgid "Color"
+msgstr "顏色"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:299
+msgid "Opacity"
+msgstr "不透明度"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:313
+msgid "Shape"
+msgstr "形狀"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:327
+msgid "Button Border Radius"
+msgstr "按鈕邊框圓角"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:338
+msgid "Dark Mode"
+msgstr "深色模式"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:342
+msgid "Auto (follow system)"
+msgstr "自動 (跟隨系統)"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:346
+msgid "Always light"
+msgstr "一律淺色"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:350
+msgid "Always dark"
+msgstr "一律深色"
+
+#: src/Admin/assets/js/pages/DrawerEditor.jsx:17
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:142
+msgid "Layout"
+msgstr "版面配置"
+
+#: src/Admin/assets/js/pages/DrawerEditor.jsx:18
+msgid "Design"
+msgstr "設計"
+
+#: src/Admin/assets/js/pages/DrawerEditor.jsx:21
+#: src/Admin/assets/js/pages/DrawerEditor.jsx:55
+msgid "Shipping meter"
+msgstr "運費進度條"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:23
+msgid "Optional. Leave blank to use the translated CartPops default."
+msgstr "選填。保留空白即可使用已翻譯的 CartPops 預設值。"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:27
+msgid "Optional. Leave blank to hide this text."
+msgstr "選填。保留空白即可隱藏此文字。"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:36
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:141
+msgid "Position & Size"
+msgstr "位置與大小"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:40
+#: src/Blocks/CartLauncher/index.js:23
+msgid "Position"
+msgstr "位置"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:52
+msgid "Width (Desktop)"
+msgstr "寬度 (電腦版)"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:63
+msgid "Width (Mobile %)"
+msgstr "寬度 (行動裝置 %)"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:76
+msgid "Secondary action"
+msgstr "次要操作"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:95
+msgid ""
+"Add a Continue shopping, View cart, or custom customer action below "
+"checkout with CartPops Pro."
+msgstr "升級至 CartPops Pro，即可在結帳按鈕下方新增「繼續購物」、「查看購物車」或自訂顧客操作。"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:102
+msgid "Explore Pro actions"
+msgstr "探索 Pro 功能"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:111
+msgid "Animation"
+msgstr "動畫"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:115
+msgid "Animation Type"
+msgstr "動畫類型"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:118
+msgid "Slide"
+msgstr "滑動"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:119
+msgid "Fade"
+msgstr "淡入淡出"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:128
+msgid "Duration (ms)"
+msgstr "持續時間 (毫秒)"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:141
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:284
+msgid "Behavior"
+msgstr "行為"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:145
+msgid "Show undo after item removal"
+msgstr "移除商品後顯示復原按鈕"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:153
+msgid "Show coupon code field"
+msgstr "顯示優惠券代碼欄位"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:154
+msgid "Allow customers to apply coupon codes from the cart drawer."
+msgstr "允許顧客直接在側欄購物車套用優惠券代碼。"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:165
+msgid "Product name display"
+msgstr "商品名稱顯示"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:166
+msgid "Choose how product names wrap inside drawer cart items."
+msgstr "選擇側欄購物車項目中商品名稱的換行方式。"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:175
+msgid "Two lines"
+msgstr "兩行"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:179
+msgid "Single line"
+msgstr "單行"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:183
+msgid "Full name"
+msgstr "完整名稱"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:193
+msgid "Totals breakdown"
+msgstr "金額明細"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:194
+msgid "Where to show subtotal, discounts, shipping, fees, and tax lines."
+msgstr "選擇顯示小計、折扣、運費、費用與稅金明細的位置。"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:201
+msgid "In footer (sticky)"
+msgstr "位於頁尾 (置底固定)"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:205
+msgid "Above checkout (scrollable)"
+msgstr "位於結帳按鈕上方 (可捲動)"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:212
+msgid "Hidden (total only)"
+msgstr "隱藏 (僅顯示總計)"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:222
+msgid "Show subtotal"
+msgstr "顯示小計"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:223
+msgid "Display the subtotal in the selected totals area."
+msgstr "在選定的金額區域中顯示小計。"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:234
+msgid "Show discounts"
+msgstr "顯示折扣"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:235
+msgid "Display the discount line when a coupon is applied."
+msgstr "套用優惠券時顯示折扣明細。"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:246
+msgid "Show shipping"
+msgstr "顯示運費"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:247
+msgid "Display the shipping line when shipping is calculated."
+msgstr "計算運費後顯示運費明細。"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:258
+msgid "Show taxes"
+msgstr "顯示稅金"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:259
+msgid "Display the applicable tax line or included-tax note."
+msgstr "顯示適用的稅金明細或含稅說明。"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:270
+msgid "Show total"
+msgstr "顯示總計"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:271
+msgid "Display the grand total above the checkout button."
+msgstr "在結帳按鈕上方顯示總計金額。"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:282
+msgid "Checkout Button Text"
+msgstr "結帳按鈕文字"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:283
+msgid "Leave empty to use the default \"Proceed to Checkout\"."
+msgstr "留空以使用預設的「前往結帳」。"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:297
+msgid "Customer messages"
+msgstr "顧客訊息"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:301
+msgid "Cart title"
+msgstr "購物車標題"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:311
+msgid "Added-to-cart announcement"
+msgstr "已加入購物車通知"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:312
+msgid ""
+"Optional generic announcement. Enter complete plain text without a product "
+"placeholder, or leave blank to disable it."
+msgstr "選填的一般公告。請輸入完整的純文字（不含商品預留位置符號），或保留空白以停用。"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:317
+msgid "Product successfully added to your cart."
+msgstr "已成功將商品加入購物車。"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:327
+msgid "Coupon heading"
+msgstr "優惠券標題"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:330
+msgid "No heading by default"
+msgstr "預設無標題"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:337
+msgid "Coupon input placeholder"
+msgstr "優惠券輸入欄預留位置文字"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:350
+msgid "Coupon button text"
+msgstr "優惠券按鈕文字"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:362
+msgid "Totals and empty-cart text"
+msgstr "總計與購物車為空文字"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:366
+msgid "Subtotal label"
+msgstr "小計標籤"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:376
+msgid "Discount label"
+msgstr "折扣標籤"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:386
+msgid "Total label"
+msgstr "總計標籤"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:396
+msgid "Empty-cart title"
+msgstr "購物車為空標題"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:406
+msgid "Empty-cart subtitle"
+msgstr "購物車為空副標題"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:409
+msgid "No subtitle by default"
+msgstr "預設無副標題"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:416
+msgid "Empty-cart button text"
+msgstr "購物車為空按鈕文字"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:428
+msgid "Quantity Selector"
+msgstr "數量選擇器"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:432
+msgid "Style"
+msgstr "樣式"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:441
+msgid "Rounded"
+msgstr "圓角"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:55
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:215
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:278
+msgid "Basket"
+msgstr "購物籃"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:77
+msgid "Cart 2"
+msgstr "購物車 2"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:98
+msgid "Bag 2"
+msgstr "購物袋 2"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:117
+msgid "Basket 2"
+msgstr "購物籃 2"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:156
+msgid "Theme"
+msgstr "佈景主題"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:213
+msgid "Integration available"
+msgstr "可整合"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:214
+msgid "No integration available"
+msgstr "無法整合"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:225
+msgid "Cart Icon"
+msgstr "購物車圖示"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:229
+msgid "Replace header cart icon"
+msgstr "替換頁首購物車圖示"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:233
+msgid "Replace the Blocksy header cart icon with a CartPops icon."
+msgstr "將 Blocksy 頁首購物車圖示替換為 CartPops 圖示。"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:249
+msgid "Icon style"
+msgstr "圖示樣式"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:288
+msgid "Show item count badge"
+msgstr "顯示商品數量徽章"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:292
+msgid "Display the number of items in the cart on the icon."
+msgstr "在圖示上顯示購物車內的商品件數。"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:306
+msgid "Open CartPops drawer on click"
+msgstr "點擊時開啟 CartPops 側邊抽屜"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:310
+msgid ""
+"Click the header cart icon to open the CartPops drawer instead of the "
+"Blocksy cart panel."
+msgstr "點擊頁首購物車圖示以開啟 CartPops 側邊抽屜，而非 Blocksy 購物車面板。"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:331
+msgid "Leave empty to inherit colors from the theme."
+msgstr "保留空白以沿用佈景主題顏色。"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:348
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:18
+msgid "Badge Background"
+msgstr "徽章背景"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:361
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:19
+msgid "Badge Text"
+msgstr "徽章文字"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:378
+msgid "Preview"
+msgstr "預覽"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:438
+msgid "Supported Themes"
+msgstr "支援的佈景主題"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:441
+msgid "CartPops can integrate with these themes to replace the header cart icon:"
+msgstr "CartPops 可與下列佈景主題整合，以替換頁首購物車圖示："
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:462
+msgid "More themes coming soon"
+msgstr "即將支援更多佈景主題"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:32
+msgid "Inline Background"
+msgstr "行內背景"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:35
+msgid "Inline Text"
+msgstr "行內文字"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:38
+msgid "Inline Badge Background"
+msgstr "行內徽章背景"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:40
+msgid "Inline Badge Text"
+msgstr "行內徽章文字"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:60
+msgid "Floating Cart Launcher"
+msgstr "懸浮購物車按鈕"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:62
+msgid "Configure the floating cart button that opens the drawer."
+msgstr "設定可開啟購物車抽屜的懸浮購物車按鈕。"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:72
+msgid "Visibility"
+msgstr "顯示設定"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:76
+msgid "Show floating cart launcher"
+msgstr "顯示懸浮購物車按鈕"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:80
+msgid "Display the floating cart button on the frontend."
+msgstr "在前台顯示懸浮購物車按鈕。"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:91
+#: src/Blocks/CartLauncher/index.js:40
+msgid "Show item count"
+msgstr "顯示商品數量"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:99
+msgid "Show cart total"
+msgstr "顯示購物車總額"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:108
+msgid "Hide zero item count"
+msgstr "商品數量為零時隱藏"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:120
+msgid "Hide when cart is empty"
+msgstr "購物車為空時隱藏"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:145
+msgid "Screen Position"
+msgstr "螢幕位置"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:149
+#: src/Blocks/CartLauncher/index.js:27
+msgid "Bottom Right"
+msgstr "右下角"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:153
+#: src/Blocks/CartLauncher/index.js:31
+msgid "Bottom Left"
+msgstr "左下角"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:163
+msgid "Offset X (px)"
+msgstr "X 軸位移 (px)"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:174
+msgid "Offset Y (px)"
+msgstr "Y 軸位移 (px)"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:185
+msgid "Size (px)"
+msgstr "大小 (px)"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:199
+msgid "Appearance"
+msgstr "外觀"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:203
+msgid "Icon Style"
+msgstr "圖示樣式"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:207
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:270
+msgid "Shopping Cart"
+msgstr "購物車"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:211
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:274
+msgid "Shopping Bag"
+msgstr "購物袋"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:253
+msgid "Navigation menu launcher (legacy)"
+msgstr "導覽選單按鈕 (舊版)"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:259
+msgid ""
+"These settings affect existing navigation menu items with the "
+"cpops-cart-menu-item CSS class. They do not add a menu item."
+msgstr "這些設定只會影響帶有 cpops-cart-menu-item CSS 類別的現有導覽選單項目，不會新增選單項目。"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:266
+msgid "Navigation menu icon"
+msgstr "導覽選單圖示"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:288
+msgid "Navigation menu item count style"
+msgstr "導覽選單商品數量樣式"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:314
+msgid "Hide zero item count in navigation menu"
+msgstr "在導覽選單中隱藏為零的商品數量"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:331
+msgid "Show cart total in navigation menu"
+msgstr "在導覽選單中顯示購物車總額"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:341
+msgid "Inline launcher appearance"
+msgstr "行內按鈕外觀"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:343
+msgid ""
+"These colors apply to navigation menu, shortcode, and inline block "
+"launchers. Floating launcher colors remain separate."
+msgstr "這些顏色適用於導覽選單、簡碼及行內區塊按鈕。懸浮按鈕的顏色設定仍保持獨立。"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:374
+msgid "Launcher previews"
+msgstr "按鈕預覽"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:33
+msgid "Product Recommendations"
+msgstr "商品推薦"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:35
+msgid ""
+"Show relevant product suggestions in the cart drawer to boost average order "
+"value."
+msgstr "在購物車抽屜中顯示相關商品建議，以提高平均客單價。"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:48
+msgid "Enable Recommendations"
+msgstr "啟用推薦"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:56
+msgid "Strategy"
+msgstr "策略"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:57
+msgid "How to select which products to recommend."
+msgstr "如何選擇要推薦的商品。"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:64
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:116
+msgid "Cross-sells"
+msgstr "交叉銷售"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:65
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:115
+msgid "Upsells"
+msgstr "追加銷售"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:66
+msgid "Custom products (Pro)"
+msgstr "自訂商品 (Pro)"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:81
+msgid ""
+"Choose specific recommendation products with CartPops Pro. Cross-sells and "
+"upsells remain available in the Free edition."
+msgstr "使用 CartPops Pro 選擇特定的推薦商品。交叉銷售與追加銷售在免費版本中仍可使用。"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:107
+msgid "Fallback Strategy"
+msgstr "備用策略"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:108
+msgid "Used when the primary strategy returns no results."
+msgstr "當主要策略沒有傳回任何結果時使用。"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:114
+msgid "Random products"
+msgstr "隨機商品"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:125
+msgid "Number of products"
+msgstr "商品數量"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:138
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:436
+msgid "Display"
+msgstr "顯示"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:146
+msgid "Horizontal Scroll"
+msgstr "水平捲動"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:149
+msgid "Grid"
+msgstr "網格"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:150
+msgid "List"
+msgstr "列表"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:158
+msgid "Heading"
+msgstr "標題"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:174
+msgid ""
+"Recommendation add buttons use the accessible icon presentation. Text and "
+"text-with-icon buttons are available with CartPops Pro."
+msgstr "推薦加入按鈕採用無障礙圖示呈現方式。文字以及文字搭配圖示的按鈕可在 CartPops Pro 中使用。"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:181
+msgid "Explore Pro button styles"
+msgstr "探索 Pro 按鈕樣式"
+
+#: src/Blocks/CartDrawer/index.js:35
+msgid "CartPops Cart Drawer"
+msgstr "CartPops 購物車側邊抽屜"
+
+#: src/Blocks/CartDrawer/index.js:44
+msgid "The cart drawer will appear on the frontend when triggered."
+msgstr "觸發時，購物車側邊抽屜將會顯示於前台。"
+
+#: src/Blocks/CartLauncher/index.js:21
+msgid "Launcher Settings"
+msgstr "啟動按鈕設定"
+
+#: src/Pro/Admin/assets/js/components/AnalyticsChart.jsx:21
+#: src/Pro/Admin/assets/js/components/DashboardInsights.jsx:76
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:122
+msgid "Drawer Opens"
+msgstr "抽屜開啟次數"
+
+#: src/Pro/Admin/assets/js/components/AnalyticsChart.jsx:26
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:128
+msgid "Add to Carts"
+msgstr "加入購物車次數"
+
+#: src/Pro/Admin/assets/js/components/AnalyticsChart.jsx:31
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:500
+msgid "Checkouts"
+msgstr "結帳次數"
+
+#: src/Pro/Admin/assets/js/components/AnalyticsChart.jsx:36
+#: src/Pro/Admin/assets/js/components/DashboardInsights.jsx:81
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:140
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:506
+msgid "Conversions"
+msgstr "轉換次數"
+
+#: src/Pro/Admin/assets/js/components/AnalyticsChart.jsx:41
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:283
+msgid "CartPops Revenue"
+msgstr "CartPops 營收"
+
+#: src/Pro/Admin/assets/js/components/AnalyticsChart.jsx:114
+msgid "No data available for this period."
+msgstr "此期間無可用資料。"
+
+#: src/Pro/Admin/assets/js/components/AnalyticsResetActions.jsx:22
+msgid "Analytics data has been reset. New data will be collected from now on."
+msgstr "分析資料已重設。即日起將開始收集新資料。"
+
+#: src/Pro/Admin/assets/js/components/AnalyticsResetActions.jsx:30
+msgid "Failed to reset analytics data."
+msgstr "無法重設分析資料。"
+
+#: src/Pro/Admin/assets/js/components/AnalyticsResetActions.jsx:45
+msgid "Reset analytics data"
+msgstr "重設分析資料"
+
+#: src/Pro/Admin/assets/js/components/AnalyticsResetActions.jsx:50
+msgid ""
+"Are you sure? This will permanently delete all analytics events, "
+"conversions, and revenue tracking."
+msgstr "確定要執行此操作？這將會永久刪除所有分析事件、轉換以及營收追蹤資料。"
+
+#: src/Pro/Admin/assets/js/components/AnalyticsResetActions.jsx:61
+msgid "Yes, reset analytics"
+msgstr "是，重設分析"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:61
+msgid "Contains Product"
+msgstr "包含商品"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:67
+msgid "Contains Category"
+msgstr "包含分類"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:81
+msgid "Customer"
+msgstr "顧客"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:82
+msgid "Subscriber"
+msgstr "訂閱者"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:83
+msgid "Shop Manager"
+msgstr "商店管理員"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:84
+msgid "Administrator"
+msgstr "網站管理員"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:85
+msgid "Guest"
+msgstr "訪客"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:135
+#. translators: %d is a product category ID.
+#, js-format
+msgid "Category #%d"
+msgstr "分類 #%d"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:465
+msgid "Search categories"
+msgstr "搜尋分類"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:467
+msgid "Search for a category…"
+msgstr "搜尋分類…"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:476
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:783
+msgid "Searching…"
+msgstr "正在搜尋…"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:493
+#. translators: %d is the number of products in a category.
+#, js-format
+msgid "%d product"
+msgid_plural "%d products"
+msgstr[0] "%d 個商品"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:512
+msgid "No categories found"
+msgstr "找不到任何分類"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:618
+msgid "Remove condition"
+msgstr "移除條件"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:694
+msgid "Show conditionally"
+msgstr "依條件顯示"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:695
+msgid "Only show when specific conditions are met."
+msgstr "僅在符合特定條件時顯示。"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:709
+msgid "Match:"
+msgstr "符合："
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:719
+msgid "All (AND)"
+msgstr "全部 (AND)"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:728
+msgid "Any (OR)"
+msgstr "任一 (OR)"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:753
+msgid "+ Add Condition"
+msgstr "+ 新增條件"
+
+#: src/Pro/Admin/assets/js/components/ConversionFunnel.jsx:19
+msgid "Conversion Funnel"
+msgstr "轉換漏斗"
+
+#: src/Pro/Admin/assets/js/components/ConversionFunnel.jsx:59
+#. translators: %s is a percentage relative to the previous funnel step.
+#, js-format
+msgid "%s%% from previous"
+msgstr "較上一階段 %s%%"
+
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:49
+msgid "Add button presentation"
+msgstr "「加入」按鈕呈現方式"
+
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:50
+msgid ""
+"Choose whether directly purchasable recommendations use an icon, text, or "
+"both."
+msgstr "選擇可直接購買的推薦商品要使用圖示、文字還是兩者皆顯示。"
+
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:59
+msgid "Text and icon"
+msgstr "文字與圖示"
+
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:70
+msgid "Add button text"
+msgstr "「加入」按鈕文字"
+
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:80
+msgid ""
+"Shown on simple products that can be added directly. Products with options "
+"keep their Select options link."
+msgstr "顯示於可直接加入購物車的簡易商品。含有選項的商品將保留其「選擇選項」連結。"
+
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:111
+#. translators: 1: recommendation button text, 2: product name.
+#, js-format
+msgid "%1$s: %2$s"
+msgstr "%1$s：%2$s"
+
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:167
+msgid "Custom products"
+msgstr "自訂商品"
+
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:171
+msgid ""
+"Select up to four products. Their selection order is used in the cart "
+"drawer."
+msgstr "最多選取 4 項商品。選取的順序將套用於滑出式購物車中。"
+
+#: src/Pro/Admin/assets/js/components/DashboardInsights.jsx:54
+msgid "Could not load analytics data."
+msgstr "無法載入分析資料。"
+
+#: src/Pro/Admin/assets/js/components/DashboardInsights.jsx:61
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:825
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:251
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:224
+msgid "Retry"
+msgstr "重試"
+
+#: src/Pro/Admin/assets/js/components/DashboardInsights.jsx:69
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:232
+msgid "Loading analytics…"
+msgstr "正在載入分析…"
+
+#: src/Pro/Admin/assets/js/components/DashboardInsights.jsx:86
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:146
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:335
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:382
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:411
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:441
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:512
+msgid "Revenue"
+msgstr "營收"
+
+#: src/Pro/Admin/assets/js/components/DashboardInsights.jsx:97
+msgid "Last 7 days"
+msgstr "過去 7 天"
+
+#: src/Pro/Admin/assets/js/components/DashboardInsights.jsx:100
+msgid "View analytics"
+msgstr "查看分析"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:142
+msgid "Action"
+msgstr "動作"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:143
+msgid "Choose an optional customer action below the checkout button."
+msgstr "選擇在結帳按鈕下方的顧客選用動作。"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:159
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:171
+msgid "Custom URL"
+msgstr "自訂網址"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:172
+msgid ""
+"Use a root-relative path or a complete HTTP(S) URL. Invalid URL and text "
+"pairs fall back to View cart."
+msgstr "請使用根相對路徑或完整的 HTTP(S) 網址。無效的網址與文字組合將退回使用「查看購物車」。"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:191
+msgid "Custom text"
+msgstr "自訂文字"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:192
+msgid "Plain text only, up to 80 characters."
+msgstr "僅限純文字，最多 80 個字元。"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:405
+msgid "Your message here"
+msgstr "在此輸入您的訊息"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:491
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:205
+msgid "Conditional"
+msgstr "條件式"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:598
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:388
+msgid "You have qualified for free shipping!"
+msgstr "您已符合免運資格！"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:601
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:373
+msgid "Add {{amount}} more for free shipping"
+msgstr "再加購 {{amount}} 即可享免運"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:911
+msgid "In Progress"
+msgstr "進行中"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:922
+msgid "Qualified"
+msgstr "符合資格"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:936
+msgid "Shipping meter preview progress"
+msgstr "免運進度條預覽進度"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:1051
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:172
+msgid "Shipping protection"
+msgstr "運送防護"
+
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:118
+#. translators: %d: Product ID.
+#, js-format
+msgid "Product #%d"
+msgstr "商品 #%d"
+
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:764
+msgid "Products"
+msgstr "商品"
+
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:765
+msgid "Product"
+msgstr "商品"
+
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:773
+msgid "Search for a product…"
+msgstr "搜尋商品…"
+
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:818
+msgid "Product search failed."
+msgstr "商品搜尋失敗。"
+
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:836
+msgid "No products found"
+msgstr "找不到商品"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:13
+msgid "Today"
+msgstr "今天"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:14
+msgid "7 days"
+msgstr "7 天"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:15
+msgid "30 days"
+msgstr "30 天"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:16
+msgid "90 days"
+msgstr "90 天"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:134
+msgid "Checkout Starts"
+msgstr "開始結帳"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:204
+msgid "Track drawer engagement, conversions, and revenue."
+msgstr "追蹤側邊購物車互動、轉換率與收益。"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:241
+msgid "Could not load analytics data. Please try again."
+msgstr "無法載入分析資料，請再試一次。"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:292
+#. translators: %s is a percentage of total revenue.
+#, js-format
+msgid "%s%% of total revenue via CartPops features"
+msgstr "總收益的 %s%% 來自 CartPops 功能"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:298
+msgid "Revenue generated by CartPops features"
+msgstr "CartPops 功能產生的收益"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:312
+msgid "SmartBar"
+msgstr "SmartBar"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:315
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:358
+msgid "Impressions"
+msgstr "曝光次數"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:326
+msgid "Spotlight Adds"
+msgstr "Spotlight 加入次數"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:342
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:392
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:451
+msgid "Order Rate"
+msgstr "下單率"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:371
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:430
+msgid "Products Added"
+msgstr "加入商品數"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:405
+msgid "Toggles"
+msgstr "切換次數"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:422
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:488
+msgid "Opens"
+msgstr "開啟次數"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:477
+msgid "Daily Breakdown"
+msgstr "每日明細"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:485
+msgid "Date"
+msgstr "日期"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:494
+msgid "Cart+"
+msgstr "Cart+"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:569
+msgid "No daily data available."
+msgstr "沒有每日資料。"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:585
+msgid "Conversion Rate"
+msgstr "轉換率"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:593
+msgid "Recommendation Clicks"
+msgstr "推薦點擊次數"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:604
+msgid "Coupons Applied"
+msgstr "已套用優惠券"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:101
+msgid "The trigger product cannot also be a companion."
+msgstr "觸發商品不可同時做為搭配商品。"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:128
+msgid "The selected trigger was removed from the companion products."
+msgstr "已從搭配商品中移除所選的觸發商品。"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:174
+msgid "New Bundle"
+msgstr "新增組合"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:181
+#. translators: %d is the number of companion products in a bundle.
+#, js-format
+msgid "%d companion"
+msgid_plural "%d companions"
+msgstr[0] "%d 個搭配商品"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:214
+msgid "Could not load product details."
+msgstr "無法載入商品詳細資訊。"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:231
+msgid "Trigger Product"
+msgstr "觸發商品"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:237
+msgid "When this product is in the cart, the upsell flyout becomes available."
+msgstr "當此商品在購物車中時，即可顯示追加銷售面板。"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:260
+msgid "Companion Products"
+msgstr "搭配商品"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:266
+msgid "Products shown in the flyout when the trigger product is in the cart."
+msgstr "當觸發商品在購物車中時，於面板內顯示的商品。"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:320
+msgid "Remove companion"
+msgstr "移除搭配商品"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:346
+msgid "Add a companion product"
+msgstr "新增搭配商品"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:356
+msgid "Bundle Discount"
+msgstr "組合折扣"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:362
+msgid "Optional discount applied to all companion products when added as a bundle."
+msgstr "以組合形式加入時套用於所有搭配商品的選用折扣。"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:403
+msgid "Remove Bundle"
+msgstr "移除組合"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:446
+msgid ""
+"Configure \"frequently bought together\" bundles with optional discounts. "
+"When a trigger product is in the cart, customers can add companion products "
+"with a single tap."
+msgstr "設定「經常一起購買」組合與選用折扣。當觸發商品在購物車中時，顧客只要輕按一下即可加入搭配商品。"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:455
+msgid "Enable Bundle Builder"
+msgstr "啟用組合建立器"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:456
+msgid "Show upsell triggers on product cards in the cart drawer."
+msgstr "在側滑購物車的商品卡片上顯示加購提示。"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:467
+msgid "Flyout Heading"
+msgstr "彈出式標題"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:481
+msgid "Trigger Banner Colors"
+msgstr "觸發橫幅顏色"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:484
+msgid "Customize the appearance of the upsell trigger banner on cart items."
+msgstr "自訂購物車項目上加購觸發橫幅的外觀。"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:534
+msgid "Upsell Bundles"
+msgstr "加購組合包"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:542
+msgid "No bundles configured yet. Add your first bundle below."
+msgstr "尚未設定任何組合包。請在下方新增第一個組合包。"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:566
+msgid "+ Add Upsell Bundle"
+msgstr "+ 新增加購組合包"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:22
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:302
+msgid "Cart Expiry Timer"
+msgstr "購物車倒數計時器"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:23
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:354
+msgid "Custom Message"
+msgstr "自訂訊息"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:24
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:416
+msgid "Product Spotlight"
+msgstr "精選商品"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:28
+msgid "Info"
+msgstr "資訊"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:29
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:20
+msgid "Gift"
+msgstr "禮物"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:30
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:23
+msgid "Truck"
+msgstr "貨車"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:31
+msgid "Tag"
+msgstr "標籤"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:32
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:21
+msgid "Star"
+msgstr "星星"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:37
+msgid "Clock"
+msgstr "時鐘"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:42
+msgid "Clear Cart"
+msgstr "清空購物車"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:43
+msgid "Redirect to Shop"
+msgstr "重新導向至商店"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:108
+#. translators: %d is a Smart Bar rule's one-based position.
+#, js-format
+msgid "Rule %d"
+msgstr "規則 %d"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:114
+#. translators: 1: merchant-entered rule label, 2: one-based rule position.
+#, js-format
+msgid "%1$s, rule %2$d"
+msgstr "%1$s，規則 %2$d"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:122
+#. translators: %s is the accessible Smart Bar rule name.
+#, js-format
+msgid "Collapse %s"
+msgstr "收合 %s"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:127
+#. translators: %s is the accessible Smart Bar rule name.
+#, js-format
+msgid "Expand %s"
+msgstr "展開 %s"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:132
+#. translators: %s is the accessible Smart Bar rule name.
+#, js-format
+msgid "Move %s up"
+msgstr "將 %s 上移"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:137
+#. translators: %s is the accessible Smart Bar rule name.
+#, js-format
+msgid "Move %s down"
+msgstr "將 %s 下移"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:206
+msgid "Always"
+msgstr "永遠"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:210
+msgid "Blocks rules below"
+msgstr "阻擋下方的規則"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:262
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:672
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:130
+msgid "Enable"
+msgstr "啟用"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:268
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:170
+msgid "Label"
+msgstr "標籤"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:269
+msgid "Admin label to identify this rule."
+msgstr "用於識別此規則的管理員標籤。"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:282
+msgid "Mode"
+msgstr "模式"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:289
+msgid "Dismissible"
+msgstr "可關閉"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:290
+msgid "Allow customers to close this bar."
+msgstr "允許顧客關閉此橫條。"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:305
+msgid "Duration (minutes)"
+msgstr "持續時間 (分鐘)"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:315
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:357
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:439
+msgid "Message"
+msgstr "訊息"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:316
+msgid "Use {{timer}} as a placeholder for the countdown."
+msgstr "使用 {{timer}} 作為倒數計時的預留位置。"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:336
+msgid "Action on Expiry"
+msgstr "到期動作"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:337
+msgid "What happens when the timer reaches zero."
+msgstr "計時器歸零時執行的動作。"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:359
+msgid "Free shipping this weekend!"
+msgstr "本週末免運費！"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:377
+msgid "Link Text"
+msgstr "連結文字"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:379
+msgid "Shop now"
+msgstr "立即選購"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:386
+msgid "Link URL"
+msgstr "連結網址"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:396
+msgid "Show when cart is empty"
+msgstr "購物車為空時顯示"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:400
+msgid "Also display this message when the cart has no items."
+msgstr "購物車內沒有商品時也顯示此訊息。"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:425
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:63
+msgid "Discount %"
+msgstr "折扣 %"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:426
+msgid "Percentage discount applied when the customer adds this product."
+msgstr "顧客加入此商品時套用的百分比折扣。"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:440
+msgid "Use {{product}} and {{discount}} as placeholders."
+msgstr "使用 {{product}} 與 {{discount}} 作為預留位置。"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:457
+msgid "Display Conditions"
+msgstr "顯示條件"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:473
+msgid "Use custom colors"
+msgstr "使用自訂色彩"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:474
+msgid "Override the shared smart bar colors for this rule."
+msgstr "覆寫此規則的共用智慧列色彩。"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:526
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:762
+msgid "Accent"
+msgstr "強調色"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:586
+msgid "Remove Rule"
+msgstr "移除規則"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:659
+msgid ""
+"Create smart bar rules for your cart drawer. Rules are evaluated "
+"top-to-bottom — the first enabled match is shown."
+msgstr "為側欄購物車建立智慧列規則。規則會由上至下評估 — 將顯示第一個符合且啟用的規則。"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:673
+msgid "Show a smart bar at the top of the cart drawer."
+msgstr "在側欄購物車頂端顯示智慧列。"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:712
+msgid "+ Add Smart Bar Rule"
+msgstr "+ 新增智慧列規則"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:719
+msgid "Default Colors"
+msgstr "預設色彩"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:722
+msgid "Shared colors used by all smart bar rules unless overridden per-rule."
+msgstr "所有智慧列規則使用的共用色彩，除非個別規則另行覆寫。"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:43
+msgid "Percentage Discount"
+msgstr "百分比折扣"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:46
+msgid "Fixed Discount"
+msgstr "固定折扣"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:65
+msgid "Discount Amount"
+msgstr "折扣金額"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:67
+msgid "Value"
+msgstr "數值"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:114
+msgid "Tier"
+msgstr "層級"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:136
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:336
+msgid "Threshold"
+msgstr "門檻"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:137
+msgid "Cart subtotal required to unlock this reward."
+msgstr "解鎖此獎勵所需的購物車小計。"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:149
+msgid "Reward Type"
+msgstr "獎勵類型"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:162
+msgid "Free Gift Product"
+msgstr "免費贈品"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:163
+msgid ""
+"Search simple products by name. To select a specific variation, enter its "
+"exact variation ID."
+msgstr "依名稱搜尋簡易商品。若要選取特定規格，請輸入確切的規格 ID。"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:200
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:352
+msgid "Show Celebration"
+msgstr "顯示慶祝效果"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:201
+msgid "Display confetti animation when this tier is reached."
+msgstr "達到此層級時顯示紙花彩帶動畫。"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:212
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:367
+msgid "Progress Message"
+msgstr "進度訊息"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:213
+msgid "Use {{amount}} and {{reward}} as placeholders."
+msgstr "使用 {{amount}} 與 {{reward}} 作為預留位置。"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:224
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:386
+msgid "Qualified Message"
+msgstr "達標訊息"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:225
+msgid "Use {{reward}} as a placeholder."
+msgstr "使用 {{reward}} 作為預留位置。"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:241
+msgid "Remove Tier"
+msgstr "移除層級"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:285
+msgid "Enable Shipping Meter"
+msgstr "啟用運費進度條"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:286
+msgid "Display a progress bar toward reward thresholds."
+msgstr "顯示獎勵門檻的進度條。"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:300
+msgid "Reward Tiers"
+msgstr "獎勵層級"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:316
+msgid "Tier 1"
+msgstr "層級 1"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:325
+msgid "auto"
+msgstr "自動"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:337
+msgid ""
+"Free shipping threshold. Set to 0 to auto-detect from WooCommerce shipping "
+"zones."
+msgstr "免運門檻。設為 0 可從 WooCommerce 運送區域自動偵測。"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:353
+msgid "Display confetti animation when free shipping is reached."
+msgstr "達到免運門檻時顯示紙花彩帶動畫。"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:368
+msgid "Use {{amount}} as a placeholder for the remaining amount."
+msgstr "使用 {{amount}} 作為剩餘金額的預留位置。"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:428
+msgid "+ Add Tier"
+msgstr "+ 新增門檻"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:440
+msgid "Show in drawer"
+msgstr "在側邊購物車中顯示"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:448
+msgid "Enable shipping calculator"
+msgstr "啟用運費計算機"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:449
+msgid ""
+"Let customers calculate shipping and choose an available rate from the cart "
+"drawer."
+msgstr "允許顧客直接在側邊購物車中計算運費並選擇可用費率。"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:460
+msgid "Show icon"
+msgstr "顯示圖示"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:461
+msgid "Display truck/checkmark icon before the message."
+msgstr "在訊息前顯示貨車/勾選圖示。"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:473
+msgid "Show truck indicator"
+msgstr "顯示貨車指示器"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:474
+msgid ""
+"Display the moving truck on the progress bar. Hidden when reward tiers are "
+"active."
+msgstr "在進度條上顯示移動的貨車圖示。啟用獎勵門檻時會隱藏。"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:489
+msgid "Progress Colors"
+msgstr "進度顏色"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:494
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:626
+msgid "Bar Start"
+msgstr "進度條起點"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:504
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:639
+msgid "Bar End"
+msgstr "進度條終點"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:534
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:678
+msgid "Icon Background"
+msgstr "圖示背景"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:559
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:706
+msgid "Truck Background"
+msgstr "貨車背景"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:572
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:719
+msgid "Truck Icon"
+msgstr "貨車圖示"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:589
+msgid "Tier Reached"
+msgstr "達成門檻"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:602
+msgid "Tier Icon"
+msgstr "門檻圖示"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:621
+msgid "Qualified Colors"
+msgstr "達標顏色"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:19
+msgid "Shield (Protection)"
+msgstr "盾牌 (防護)"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:22
+msgid "Heart"
+msgstr "愛心"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:24
+msgid "Sparkles"
+msgstr "閃爍"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:77
+msgid "Use whole currency units."
+msgstr "請使用整數貨幣單位。"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:80
+#. translators: %d: store currency decimal places.
+#, js-format
+msgid "Use no more than %d decimal place."
+msgid_plural "Use no more than %d decimal places."
+msgstr[0] "小數位數請勿超過 %d 位。"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:90
+#. translators: %s: smallest charge in the store currency.
+#, js-format
+msgid "Enter a positive charge of at least %s."
+msgstr "請輸入至少為 %s 的正數金額。"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:95
+msgid "This draft will not be saved until corrected."
+msgstr "修正完成前將不會儲存此草稿。"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:141
+msgid "Configure add-on options that customers can toggle in the cart drawer."
+msgstr "設定顧客可在側邊購物車中切換選購的加購選項。"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:151
+msgid "Shipping Protection"
+msgstr "運送防護"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:155
+msgid "Enable Shipping Protection"
+msgstr "啟用運送防護"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:156
+msgid "Allow customers to add shipping protection to their order."
+msgstr "允許顧客在訂單中加入運送防護。"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:182
+msgid "Description"
+msgstr "說明"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:184
+msgid "Protect your order from damage or loss"
+msgstr "保護您的訂單免於損壞或遺失"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:197
+msgid "Price"
+msgstr "價格"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:208
+msgid "Show Icon"
+msgstr "顯示圖示"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:209
+msgid "Display an icon next to the add-on in the cart drawer."
+msgstr "在側邊購物車的加購項目旁顯示圖示。"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:235
+msgid "Default State"
+msgstr "預設狀態"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:236
+msgid "Whether the add-on is toggled on or off by default for new visitors."
+msgstr "新訪客預設開啟或關閉此加購項目。"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:243
+msgid "Off (customer opts in)"
+msgstr "關閉 (由顧客主動加入)"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:247
+msgid "On (customer opts out)"
+msgstr "開啟 (顧客可取消選擇)"
+
+#: src/Pro/Blocks/ShippingMeter/index.js:19
+msgid "CartPops Shipping & Rewards Meter"
+msgstr "CartPops 運費與獎勵進度條"
+
+#: src/Pro/Blocks/ShippingMeter/index.js:22
+msgid ""
+"Frontend appearance, icons, truck, tiers, and celebration use your CartPops "
+"Pro Shipping Meter settings."
+msgstr "前端外觀、圖示、貨車、門檻與慶祝動畫會採用您的 CartPops Pro 運費進度條設定。"
+
+#: src/Blocks/CartDrawer/block.json
+msgctxt "block title"
+msgid "CartPops Cart Drawer"
+msgstr "CartPops 側滑購物車"
+
+#: src/Blocks/CartLauncher/block.json
+msgctxt "block title"
+msgid "CartPops Cart Launcher"
+msgstr "CartPops 購物車啟動器"
+
+#: src/Pro/Blocks/ShippingMeter/block.json
+msgctxt "block title"
+msgid "CartPops Shipping & Rewards Meter"
+msgstr "CartPops 運費與獎勵進度列"
+
+#: src/Blocks/CartDrawer/block.json
+msgctxt "block description"
+msgid "A beautiful slide-out cart drawer for WooCommerce."
+msgstr "適用於 WooCommerce 的精美側滑購物車。"
+
+#: src/Blocks/CartLauncher/block.json
+msgctxt "block description"
+msgid "A floating cart button that opens the CartPops drawer."
+msgstr "可開啟 CartPops 抽屜的浮動購物車按鈕。"
+
+#: src/Pro/Blocks/ShippingMeter/block.json
+msgctxt "block description"
+msgid "Visual progress bar showing how close the customer is to free shipping."
+msgstr "顯示顧客距離免運費門檻差距的視覺化進度條。"

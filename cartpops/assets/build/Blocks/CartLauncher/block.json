@@ -1,0 +1,52 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "cartpops/cart-launcher",
+  "version": "2.0.0",
+  "title": "CartPops Cart Launcher",
+  "category": "woocommerce",
+  "description": "A floating cart button that opens the CartPops drawer.",
+  "textdomain": "cartpops",
+  "supports": {
+    "html": false,
+    "interactivity": true
+  },
+  "attributes": {
+    "presentation": {
+      "type": "string",
+      "default": "floating"
+    },
+    "position": {
+      "type": "string",
+      "default": "bottom_right"
+    },
+    "icon": {
+      "type": "string",
+      "default": "cart"
+    },
+    "indicator": {
+      "type": "string",
+      "default": "bubble"
+    },
+    "showCount": {
+      "type": "boolean",
+      "default": true
+    },
+    "showTotal": {
+      "type": "boolean",
+      "default": false
+    },
+    "hideEmpty": {
+      "type": "boolean",
+      "default": false
+    },
+    "hideIndicatorEmpty": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "render": "file:./render.php",
+  "editorScript": "cartpops-cart-launcher-editor",
+  "viewScriptModule": "file:./view.js",
+  "style": "cartpops-cart-launcher-style"
+}

@@ -1,0 +1,217 @@
+/**
+ * CartPops Launcher Styles.
+ */
+
+:root {
+	--cpops-v1-floating-launcher-background: var(--color-cpops-floating-cart-launcher-background);
+	--cpops-v1-floating-launcher-color: var(--color-cpops-floating-cart-launcher-color);
+	--cpops-v1-floating-launcher-indicator-background: var(--color-cpops-floating-cart-launcher-indicator-background);
+	--cpops-v1-floating-launcher-indicator-text: var(--color-cpops-floating-cart-launcher-indicator-text);
+	--cpops-v1-inline-launcher-background: var(--color-cpops-cart-launcher-background);
+	--cpops-v1-inline-launcher-text: var(--color-cpops-cart-launcher-text);
+	--cpops-v1-inline-launcher-bubble-background: var(--color-cpops-cart-launcher-bubble-background);
+	--cpops-v1-inline-launcher-bubble-text: var(--color-cpops-cart-launcher-bubble-text);
+}
+
+.cpops-launcher {
+	position: fixed;
+	z-index: calc(var(--cpops-z-index, 999999) - 1);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: var(--cpops-launcher-size, 56px);
+	height: var(--cpops-launcher-size, 56px);
+	padding: 0;
+	border: none;
+	border-radius: 50%;
+	background: var(--cpops-launcher-bg, var(--cpops-button-primary-bg, #6f23e1));
+	color: var(--cpops-launcher-icon, var(--cpops-button-primary-text, #fff));
+	cursor: pointer;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.1);
+	transition: transform 150ms ease-out, box-shadow 150ms ease-out;
+
+	&:hover {
+		transform: scale(1.05);
+		box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.1);
+	}
+
+	&:active {
+		transform: scale(0.96);
+	}
+
+	&:focus-visible {
+		outline: 2px solid var(--cpops-launcher-bg, var(--cpops-primary, #6f23e1));
+		outline-offset: 4px;
+	}
+
+	// Positions.
+	&--bottom_right {
+		bottom: var(--cpops-launcher-offset-y, 24px);
+		right: var(--cpops-launcher-offset-x, 24px);
+	}
+
+	&--bottom_left {
+		bottom: var(--cpops-launcher-offset-y, 24px);
+		left: var(--cpops-launcher-offset-x, 24px);
+	}
+
+	&--hidden {
+		display: none;
+	}
+
+	// Shortcodes and legacy menu placeholders participate in document flow.
+	&--inline {
+		--color-cpops-cart-launcher-background: var(--cpops-launcher-bg, var(--cpops-v1-inline-launcher-background, rgba(255, 255, 255, 0)));
+		--color-cpops-cart-launcher-text: var(--cpops-launcher-icon, var(--cpops-v1-inline-launcher-text, #000));
+		--color-cpops-cart-launcher-bubble-background: var(--cpops-launcher-badge-bg, var(--cpops-v1-inline-launcher-bubble-background, #705aef));
+		--color-cpops-cart-launcher-bubble-text: var(--cpops-launcher-badge-text, var(--cpops-v1-inline-launcher-bubble-text, #fff));
+
+		position: relative;
+		z-index: auto;
+		width: auto;
+		height: auto;
+		min-height: 40px;
+		padding: 8px 12px;
+		border-radius: var(--cpops-button-border-radius, 8px);
+		box-shadow: none;
+		gap: 8px;
+		background: var(--cpops-launcher-bg, var(--cpops-v1-inline-launcher-background, rgba(255, 255, 255, 0)));
+		color: var(--cpops-launcher-icon, var(--cpops-v1-inline-launcher-text, #000));
+
+		&:hover {
+			transform: none;
+			box-shadow: none;
+		}
+
+		&:active {
+			transform: none;
+		}
+
+		&:focus-visible {
+			outline: 2px solid currentcolor;
+			outline-offset: 4px;
+		}
+	}
+
+	&--floating {
+		--color-cpops-floating-cart-launcher-background: var(--cpops-launcher-bg, var(--cpops-v1-floating-launcher-background, var(--cpops-button-primary-bg, #6f23e1)));
+		--color-cpops-floating-cart-launcher-color: var(--cpops-launcher-icon, var(--cpops-v1-floating-launcher-color, var(--cpops-button-primary-text, #fff)));
+		--color-cpops-floating-cart-launcher-indicator-background: var(--cpops-launcher-badge-bg, var(--cpops-v1-floating-launcher-indicator-background, var(--cpops-danger, #ef4444)));
+		--color-cpops-floating-cart-launcher-indicator-text: var(--cpops-launcher-badge-text, var(--cpops-v1-floating-launcher-indicator-text, var(--cpops-button-primary-text, #fff)));
+
+		background: var(--cpops-launcher-bg, var(--cpops-v1-floating-launcher-background, var(--cpops-button-primary-bg, #6f23e1)));
+		color: var(--cpops-launcher-icon, var(--cpops-v1-floating-launcher-color, var(--cpops-button-primary-text, #fff)));
+	}
+
+}
+
+.cpops-launcher__icon {
+	width: 24px;
+	height: 24px;
+	flex-shrink: 0;
+}
+
+.cpops-launcher__badge {
+	position: absolute;
+	top: -4px;
+	right: -4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 22px;
+	height: 22px;
+	padding: 0 5px;
+	font-size: 11px;
+	font-weight: 700;
+	font-family: var(--cpops-font-family, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
+	color: var(--cpops-launcher-badge-text, var(--cpops-button-primary-text, #fff));
+	background: var(--cpops-launcher-badge-bg, var(--cpops-danger, #ef4444));
+	border-radius: 100px;
+	line-height: 1;
+
+	&--hidden {
+		display: none;
+	}
+
+	// Added by view.js only when the count changes, so page loads stay still.
+	&--pop {
+		animation: cpops-badge-pop 300ms cubic-bezier(0.2, 0, 0, 1);
+	}
+}
+
+.cpops-launcher--floating .cpops-launcher__badge {
+	color: var(--cpops-launcher-badge-text, var(--cpops-v1-floating-launcher-indicator-text, var(--cpops-button-primary-text, #fff)));
+	background: var(--cpops-launcher-badge-bg, var(--cpops-v1-floating-launcher-indicator-background, var(--cpops-danger, #ef4444)));
+}
+
+.cpops-launcher--inline .cpops-launcher__badge {
+	color: var(--cpops-launcher-badge-text, var(--cpops-v1-inline-launcher-bubble-text, #fff));
+	background: var(--cpops-launcher-badge-bg, var(--cpops-v1-inline-launcher-bubble-background, #705aef));
+}
+
+.cpops-launcher--count-plain .cpops-launcher__badge {
+	position: static;
+	min-width: 0;
+	height: auto;
+	padding: 0;
+	color: inherit;
+	background: transparent;
+	border-radius: 0;
+	font-size: inherit;
+	font-weight: inherit;
+	animation: none;
+}
+
+.cpops-launcher__total {
+	font: inherit;
+	line-height: 1;
+	white-space: nowrap;
+}
+
+// Contextual entrance: scale, opacity and blur, without overshoot.
+@keyframes cpops-badge-pop {
+
+	from {
+		opacity: 0;
+		transform: scale(0.25);
+		filter: blur(4px);
+	}
+
+	to {
+		opacity: 1;
+		transform: scale(1);
+		filter: blur(0);
+	}
+}
+
+// Responsive.
+@media (max-width: 768px) {
+
+	.cpops-launcher--floating {
+		width: min(var(--cpops-launcher-size, 56px), 48px);
+		height: min(var(--cpops-launcher-size, 56px), 48px);
+	}
+
+	.cpops-launcher--floating.cpops-launcher--bottom_right {
+		right: min(var(--cpops-launcher-offset-x, 24px), 16px);
+	}
+
+	.cpops-launcher--floating.cpops-launcher--bottom_left {
+		left: min(var(--cpops-launcher-offset-x, 24px), 16px);
+	}
+
+	.cpops-launcher--floating .cpops-launcher__icon {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+// Reduced motion.
+@media (prefers-reduced-motion: reduce) {
+
+	.cpops-launcher,
+	.cpops-launcher__badge {
+		transition: none !important;
+		animation: none !important;
+	}
+}

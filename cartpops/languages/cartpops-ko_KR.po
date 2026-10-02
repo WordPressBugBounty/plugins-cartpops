@@ -1,0 +1,3407 @@
+# Copyright (C) 2026 CartPops
+# This file is distributed under the GPL v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: CartPops 2.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/cartpops/\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-02T11:55:32+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: cartpops\n"
+"Language: ko_KR\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: cartpops.php
+#: src/Admin/AdminPage.php:36
+#: src/Admin/AdminPage.php:37
+#: src/Blocks/CartDrawer/render.php:856
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:518
+#. Plugin Name of the plugin
+#. Author of the plugin
+msgid "CartPops"
+msgstr "CartPops"
+
+#: cartpops.php
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://cartpops.com"
+msgstr "https://cartpops.com"
+
+#: cartpops.php
+#. Description of the plugin
+msgid ""
+"The #1 WooCommerce cart drawer plugin. Boost conversions with a beautiful "
+"slide-out cart, product recommendations, and free shipping meter."
+msgstr "1위 WooCommerce 카트 드로어 플러그인. 세련된 슬라이드 아웃 장바구니, 상품 추천, 무료 배송 게이지로 전환율을 높여보세요."
+
+#: cartpops.php:56
+msgid ""
+"CartPops detected both the Free and Pro editions as active. CartPops was "
+"paused; deactivate one edition and reload this page."
+msgstr ""
+"CartPops의 Free 및 Pro 에디션이 모두 활성화되어 있는 것을 감지했습니다. CartPops 작동이 일시 중지되었습니다. 한 "
+"에디션을 비활성화한 후 이 페이지를 새로고침하세요."
+
+#: cartpops.php:148
+msgid ""
+"CartPops could not safely verify upgrade state. CartPops was paused before "
+"licensing initialization; reload this page or contact support."
+msgstr ""
+"CartPops가 업그레이드 상태를 안전하게 확인할 수 없습니다. 라이선스 초기화 전에 CartPops 작동이 일시 중지되었습니다. 이 "
+"페이지를 새로고침하거나 지원팀에 문의하세요."
+
+#: cartpops.php:406
+msgid ""
+"CartPops licensing could not initialize. Shared cart features remain "
+"available, but paid features are paused. Reinstall the complete CartPops "
+"package or contact support."
+msgstr ""
+"CartPops 라이선스를 초기화할 수 없습니다. 공통 장바구니 기능은 계속 사용할 수 있지만 유료 기능은 일시 중지됩니다. "
+"CartPops 전체 패키지를 다시 설치하거나 지원팀에 문의하세요."
+
+#: src/Admin/SettingsController.php:118
+msgid "No settings provided."
+msgstr "제공된 설정이 없습니다."
+
+#: src/Admin/SettingsController.php:129
+msgid "No valid settings provided."
+msgstr "유효한 설정이 제공되지 않았습니다."
+
+#: src/Admin/SettingsController.php:215
+msgid "Invalid import data. Expected \"settings\" key with object value."
+msgstr "잘못된 가져오기 데이터입니다. 객체 값을 가진 \\\"settings\\\" 키가 필요합니다."
+
+#: src/Admin/SettingsController.php:249
+msgid "Settings imported successfully."
+msgstr "설정을 성공적으로 가져왔습니다."
+
+#: src/Admin/SettingsController.php:270
+msgid "Settings could not be saved. Please try again."
+msgstr "설정을 저장할 수 없습니다. 다시 시도해 주세요."
+
+#: src/Admin/SettingsController.php:283
+msgid "Settings contain an invalid nested value."
+msgstr "설정에 잘못된 중첩 값이 포함되어 있습니다."
+
+#: src/Admin/SettingsController.php:473
+msgid ""
+"Custom product recommendations require an active CartPops Pro entitlement "
+"for this site."
+msgstr "맞춤 상품 추천을 사용하려면 이 사이트에 활성화된 CartPops Pro 권한이 필요합니다."
+
+#: src/Admin/SettingsController.php:484
+msgid ""
+"Recommendation button text and presentation require an active CartPops Pro "
+"entitlement for this site."
+msgstr "추천 버튼 텍스트 및 표시 방식을 변경하려면 이 사이트에 활성화된 CartPops Pro 권한이 필요합니다."
+
+#: src/Admin/SettingsController.php:495
+msgid ""
+"Secondary drawer actions require an active CartPops Pro entitlement for "
+"this site."
+msgstr "보조 드로어 동작을 사용하려면 이 사이트에 활성화된 CartPops Pro 권한이 필요합니다."
+
+#: src/Admin/SettingsController.php:514
+msgid "You are not allowed to change custom CSS."
+msgstr "커스텀 CSS를 변경할 수 있는 권한이 없습니다."
+
+#: src/Analytics/AnalyticsDashboard.php:23
+#: src/Analytics/AnalyticsDashboard.php:24
+msgid "CartPops Analytics"
+msgstr "CartPops 분석"
+
+#: src/Analytics/ConversionTracker.php:544
+#: src/Analytics/ConversionTracker.php:562
+msgid "Event payload too large."
+msgstr "이벤트 페이로드가 너무 큽니다."
+
+#: src/Analytics/ConversionTracker.php:1100
+msgid "You are not allowed to reset analytics data."
+msgstr "분석 데이터를 초기화할 수 있는 권한이 없습니다."
+
+#: src/Blocks/CartDrawer/render.php:33
+#: src/Admin/assets/js/components/DrawerPreview.jsx:145
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:304
+msgid "Your Cart"
+msgstr "장바구니"
+
+#: src/Blocks/CartDrawer/render.php:36
+#: src/Blocks/CartDrawer/render.php:694
+#: src/Admin/assets/js/components/DrawerPreview.jsx:150
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:340
+msgid "Coupon code"
+msgstr "쿠폰 코드"
+
+#: src/Blocks/CartDrawer/render.php:37
+#: src/Admin/assets/js/components/DrawerPreview.jsx:154
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:353
+msgid "Apply"
+msgstr "적용"
+
+#: src/Blocks/CartDrawer/render.php:38
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:831
+#: src/Admin/assets/js/components/DrawerPreview.jsx:158
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:369
+msgid "Subtotal"
+msgstr "소계"
+
+#: src/Blocks/CartDrawer/render.php:39
+#: src/Admin/assets/js/components/DrawerPreview.jsx:341
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:379
+msgid "Discount"
+msgstr "할인"
+
+#: src/Blocks/CartDrawer/render.php:40
+#: src/Admin/assets/js/components/DrawerPreview.jsx:160
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:389
+msgid "Total"
+msgstr "총계"
+
+#: src/Blocks/CartDrawer/render.php:41
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:304
+#: src/Admin/assets/js/components/DrawerPreview.jsx:168
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:419
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:106
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:151
+msgid "Continue shopping"
+msgstr "쇼핑 계속하기"
+
+#: src/Blocks/CartDrawer/render.php:42
+#: src/Admin/assets/js/components/DrawerPreview.jsx:163
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:399
+msgid "Your cart is empty"
+msgstr "장바구니가 비어 있습니다"
+
+#: src/Blocks/CartDrawer/render.php:249
+#: src/Blocks/CartDrawer/render.php:277
+#: src/Blocks/CartLauncher/render.php:65
+#: src/Blocks/CartLauncher/render.php:190
+#: src/Admin/assets/js/components/LauncherPreview.jsx:357
+msgid "Open cart"
+msgstr "장바구니 열기"
+
+#: src/Blocks/CartDrawer/render.php:252
+#: src/Blocks/CartDrawer/render.php:562
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:160
+msgid "You may also like"
+msgstr "추천 상품"
+
+#: src/Blocks/CartDrawer/render.php:278
+#: src/Blocks/CartDrawer/render.php:403
+#: src/Blocks/CartLauncher/render.php:77
+msgid "Close cart"
+msgstr "장바구니 닫기"
+
+#: src/Blocks/CartDrawer/render.php:279
+#: src/Blocks/CartDrawer/render.php:587
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:611
+#: src/Recommendations/RecommendationEngine.php:240
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:230
+msgid "Add to cart"
+msgstr "장바구니에 담기"
+
+#: src/Blocks/CartDrawer/render.php:281
+#: src/Recommendations/RecommendationEngine.php:220
+#: src/Admin/assets/js/components/DrawerPreview.jsx:924
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:117
+#. translators: %s: product name.
+#, php-format,js-format
+msgid "Add %s to cart"
+msgstr "%s 장바구니에 담기"
+
+#: src/Blocks/CartDrawer/render.php:282
+#: src/Blocks/CartDrawer/render.php:600
+#: src/Recommendations/RecommendationEngine.php:239
+msgid "Select options"
+msgstr "옵션 선택"
+
+#: src/Blocks/CartDrawer/render.php:284
+#: src/Recommendations/RecommendationEngine.php:217
+#. translators: %s: product name.
+#, php-format
+msgid "Select options for %s"
+msgstr "%s 옵션 선택"
+
+#: src/Blocks/CartDrawer/render.php:286
+#. translators: %s: cart item name.
+#, php-format
+msgid "\"%s\" removed."
+msgstr "\\\"%s\\\" 삭제되었습니다."
+
+#: src/Blocks/CartDrawer/render.php:288
+#. translators: %s: cart item name.
+#, php-format
+msgid "%s removed from cart."
+msgstr "%s 장바구니에서 삭제되었습니다."
+
+#: src/Blocks/CartDrawer/render.php:289
+msgid "Item"
+msgstr "항목"
+
+#: src/Blocks/CartDrawer/render.php:291
+#. translators: %s: cart item name.
+#, php-format
+msgid "%s restored to cart."
+msgstr "%s 장바구니에 복원되었습니다."
+
+#: src/Blocks/CartDrawer/render.php:293
+#. translators: %s: coupon code.
+#, php-format
+msgid "Coupon \"%s\" applied."
+msgstr "쿠폰 \\\"%s\\\" 적용되었습니다."
+
+#: src/Blocks/CartDrawer/render.php:295
+#. translators: %s: coupon code.
+#, php-format
+msgid "Coupon \"%s\" removed."
+msgstr "쿠폰 \\\"%s\\\" 삭제되었습니다."
+
+#: src/Blocks/CartDrawer/render.php:297
+#. translators: %s: product name.
+#, php-format
+msgid "%s added to cart."
+msgstr "%s이(가) 장바구니에 추가되었습니다."
+
+#: src/Blocks/CartDrawer/render.php:298
+msgid "Your cart has expired."
+msgstr "장바구니 세션이 만료되었습니다."
+
+#: src/Blocks/CartDrawer/render.php:299
+#: src/Pro/Blocks/ShippingMeter/ShippingMeterBlock.php:954
+msgid "Request failed"
+msgstr "요청에 실패했습니다"
+
+#: src/Blocks/CartDrawer/render.php:300
+msgid "Your cart is refreshing. Please wait."
+msgstr "장바구니를 새로고침하는 중입니다. 잠시만 기다려 주세요."
+
+#: src/Blocks/CartDrawer/render.php:301
+msgid "Failed to fetch recommendations"
+msgstr "추천 상품을 불러오지 못했습니다"
+
+#: src/Blocks/CartDrawer/render.php:303
+#. translators: 1: tax amount, 2: tax label (e.g. VAT).
+#, php-format
+msgid "Incl. %1$s %2$s"
+msgstr "%1$s %2$s 포함"
+
+#: src/Blocks/CartDrawer/render.php:333
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:73
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:17
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:24
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:32
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:72
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:457
+msgid "Add"
+msgstr "추가"
+
+#: src/Blocks/CartDrawer/render.php:386
+msgid "Shopping cart"
+msgstr "장바구니"
+
+#: src/Blocks/CartDrawer/render.php:472
+msgid "Decrease quantity:"
+msgstr "수량 감소:"
+
+#: src/Blocks/CartDrawer/render.php:485
+msgid "Increase quantity:"
+msgstr "수량 증가:"
+
+#: src/Blocks/CartDrawer/render.php:501
+msgid "Remove item:"
+msgstr "항목 삭제:"
+
+#: src/Blocks/CartDrawer/render.php:550
+msgid "Undo"
+msgstr "실행 취소"
+
+#: src/Blocks/CartDrawer/render.php:608
+msgid "Previous"
+msgstr "이전"
+
+#: src/Blocks/CartDrawer/render.php:615
+msgid "Next"
+msgstr "다음"
+
+#: src/Blocks/CartDrawer/render.php:643
+#: src/Blocks/CartDrawer/render.php:770
+#: src/Admin/assets/js/components/DrawerPreview.jsx:356
+msgid "Shipping"
+msgstr "배송"
+
+#: src/Blocks/CartDrawer/render.php:731
+msgid "Remove coupon:"
+msgstr "쿠폰 삭제:"
+
+#: src/Blocks/CartDrawer/render.php:811
+#: src/Admin/assets/js/components/DrawerPreview.jsx:1107
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:288
+msgid "Proceed to Checkout"
+msgstr "결제 진행하기"
+
+#: src/Blocks/CartDrawer/render.php:848
+#: src/Admin/assets/js/components/DrawerPreview.jsx:1123
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:228
+msgid "View Cart"
+msgstr "장바구니 보기"
+
+#: src/Blocks/CartDrawer/render.php:854
+msgid "Powered by"
+msgstr "Powered by"
+
+#: src/Blocks/CartDrawer/render.php:857
+msgid "(opens in a new tab)"
+msgstr "(새 탭에서 열림)"
+
+#: src/Cart/CartLineAuthority.php:404
+msgid "Available on backorder"
+msgstr "예약 주문 가능"
+
+#: src/Cart/CouponSerializer.php:52
+#: src/Pro/ShippingMeter/RewardApplicator.php:262
+msgid "Cart Reward"
+msgstr "장바구니 리워드"
+
+#: src/Licensing/GuardedDrawerDataProvider.php:192
+#: src/REST/DrawerDataController.php:149
+msgid "Drawer data is temporarily unavailable."
+msgstr "드로어 데이터를 일시적으로 사용할 수 없습니다."
+
+#: src/Licensing/PaidRuntimeGuard.php:159
+msgid "This CartPops feature requires an active Pro entitlement for this site."
+msgstr "이 CartPops 기능을 사용하려면 이 사이트에 유효한 Pro 권한이 필요합니다."
+
+#: src/Licensing/PaidRuntimeGuard.php:166
+msgid "This CartPops feature is temporarily unavailable while its data is prepared."
+msgstr "데이터가 준비되는 동안 이 CartPops 기능을 일시적으로 사용할 수 없습니다."
+
+#: src/Plugin.php:849
+#. translators: %s: value-free CartPops diagnostic code.
+#, php-format
+msgid ""
+"CartPops is paused because its required upgrade or build validation did not "
+"complete. Original data was preserved. Diagnostic: %s."
+msgstr "필수 업그레이드 또는 빌드 검증이 완료되지 않아 CartPops가 일시 중지되었습니다. 원본 데이터는 보존되었습니다. 진단 정보: %s."
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:119
+#. translators: %s: add-on name.
+#, php-format
+msgid "%s added."
+msgstr "%s 추가됨."
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:121
+#. translators: %s: add-on name.
+#, php-format
+msgid "%s removed."
+msgstr "%s 삭제됨."
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:122
+msgid "Toggle failed"
+msgstr "전환 실패"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:123
+msgid "Failed to add spotlight product"
+msgstr "추천 상품 추가에 실패했습니다"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:124
+msgid "Adding…"
+msgstr "추가하는 중…"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:125
+msgid "Added ✓"
+msgstr "추가됨 ✓"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:127
+msgid "bundle discount"
+msgstr "번들 할인"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:128
+msgid "Failed to add bundle items"
+msgstr "번들 상품 추가에 실패했습니다"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:129
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:668
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:756
+msgid "Calculate shipping"
+msgstr "배송비 계산"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:130
+msgid "Loading shipping options…"
+msgstr "배송 옵션 불러오는 중…"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:131
+msgid "Shipping options updated."
+msgstr "배송 옵션이 업데이트되었습니다."
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:132
+msgid "Shipping method updated."
+msgstr "배송 방법이 업데이트되었습니다."
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:133
+msgid "Shipping options could not be updated. Please try again."
+msgstr "배송 옵션을 업데이트할 수 없습니다. 다시 시도해 주세요."
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:134
+msgid "No shipping options are available for this address."
+msgstr "이 주소로 이용 가능한 배송 옵션이 없습니다."
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:135
+msgid "Enter your destination to calculate shipping."
+msgstr "배송비를 계산하려면 배송지를 입력하세요."
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:136
+msgid "Shipping options"
+msgstr "배송 옵션"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:315
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:122
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:155
+msgid "View cart"
+msgstr "장바구니 보기"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:493
+msgid "Dismiss"
+msgstr "닫기"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:516
+#: src/Pro/Blocks/ShippingMeter/ShippingMeterBlock.php:1090
+msgid "Shipping and rewards progress"
+msgstr "배송 및 리워드 진행률"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:523
+#: src/Pro/Blocks/ShippingMeter/ShippingMeterBlock.php:1099
+msgid "Reward tiers"
+msgstr "리워드 등급"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:584
+#: src/Pro/BundleBuilder/BundleBuilder.php:56
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:469
+msgid "Frequently bought together"
+msgstr "함께 자주 구매하는 상품"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:590
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:616
+msgid "Close"
+msgstr "닫기"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:601
+msgid "Product info"
+msgstr "상품 정보"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:605
+msgid "Choose…"
+msgstr "선택…"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:615
+msgid "Product information"
+msgstr "상품 정보"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:619
+msgid "Got it"
+msgstr "확인"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:685
+msgid "Country / Region"
+msgstr "국가 / 지역"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:695
+msgid "Select a country / region…"
+msgstr "국가 / 지역 선택…"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:703
+msgid "State / County"
+msgstr "시 / 도"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:720
+msgid "Select a state / region…"
+msgstr "시 / 도 선택…"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:746
+msgid "City"
+msgstr "도시"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:751
+msgid "Postcode / ZIP"
+msgstr "우편번호"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:815
+msgid "Toggle add-on:"
+msgstr "추가 옵션 전환:"
+
+#: src/Pro/BundleBuilder/BundleBuilderController.php:143
+#: src/Pro/Notifications/DrawerNotificationBarController.php:360
+#: src/Pro/SmartAddons/SmartAddonsController.php:96
+#: src/Recommendations/RecommendationsController.php:94
+#: src/REST/CartStateController.php:120
+#: src/REST/CartStateController.php:199
+#: src/REST/CouponController.php:104
+#: src/REST/CouponController.php:152
+msgid "Cart is unavailable. Please try again."
+msgstr "장바구니를 사용할 수 없습니다. 다시 시도해 주세요."
+
+#: src/Pro/BundleBuilder/BundleBuilderController.php:314
+#: src/Pro/Notifications/DrawerNotificationBarController.php:442
+#: src/Pro/REST/ProDrawerDataSupplementProvider.php:80
+#: src/Pro/SmartAddons/SmartAddonsController.php:129
+#: src/Recommendations/RecommendationsController.php:148
+#: src/REST/CartStateController.php:330
+#: src/REST/CouponController.php:231
+msgid ""
+"The final cart state could not be confirmed. Refresh your cart before "
+"making another change."
+msgstr "최종 장바구니 상태를 확인할 수 없습니다. 다시 변경하기 전에 장바구니를 새로고침하세요."
+
+#: src/Pro/BundleBuilder/BundleBuilderController.php:322
+#: src/Pro/Notifications/DrawerNotificationBarController.php:450
+#: src/Pro/REST/ProDrawerDataSupplementProvider.php:86
+#: src/Pro/SmartAddons/SmartAddonsController.php:137
+#: src/Recommendations/RecommendationsController.php:156
+#: src/REST/CartStateController.php:319
+#: src/REST/CouponController.php:220
+msgid "Your cart is being updated. Please try again."
+msgstr "장바구니를 업데이트하는 중입니다. 다시 시도해 주세요."
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:573
+msgid "CartPops Cart"
+msgstr "CartPops 장바구니"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:775
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:888
+msgid "Menu Icon"
+msgstr "메뉴 아이콘"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:781
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1063
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:56
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:328
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:369
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:514
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:752
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:223
+msgid "Icon"
+msgstr "아이콘"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:784
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:785
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:786
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:787
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:788
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:15
+msgid "Cart"
+msgstr "장바구니"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:789
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:790
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:791
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:792
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:793
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:794
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:795
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:796
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:35
+msgid "Bag"
+msgstr "쇼핑백"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:805
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1121
+msgid "Items Indicator"
+msgstr "상품 수 표시기"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:808
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:120
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:435
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:295
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:117
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:149
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:33
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:38
+msgid "None"
+msgstr "없음"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:809
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:299
+msgid "Bubble"
+msgstr "버블"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:810
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:303
+msgid "Plain"
+msgstr "일반"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:819
+msgid "Hide Empty"
+msgstr "비어 있을 때 숨기기"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:821
+msgid "Yes"
+msgstr "예"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:822
+msgid "No"
+msgstr "아니요"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:833
+msgid "Show"
+msgstr "표시"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:834
+msgid "Hide"
+msgstr "숨기기"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:843
+msgid "Alignment"
+msgstr "정렬"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:847
+#: src/Admin/assets/js/pages/Dashboard.jsx:159
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:44
+msgid "Left"
+msgstr "왼쪽"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:851
+msgid "Center"
+msgstr "가운데"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:855
+#: src/Admin/assets/js/pages/Dashboard.jsx:160
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:43
+msgid "Right"
+msgstr "오른쪽"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:896
+msgid "Normal"
+msgstr "일반"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:902
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:956
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1130
+msgid "Text Color"
+msgstr "텍스트 색상"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:914
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:967
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:338
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:17
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:547
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:691
+msgid "Icon Color"
+msgstr "아이콘 색상"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:926
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:978
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1142
+msgid "Background Color"
+msgstr "배경 색상"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:938
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:989
+msgid "Border Color"
+msgstr "테두리 색상"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:950
+msgid "Hover"
+msgstr "호버"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1002
+msgid "Border Width"
+msgstr "테두리 두께"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1020
+#: src/Admin/assets/js/pages/DesignSettings.jsx:316
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:519
+msgid "Border Radius"
+msgstr "테두리 반경"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1071
+msgid "Size"
+msgstr "크기"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1089
+msgid "Spacing"
+msgstr "간격"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1108
+msgid "Padding"
+msgstr "패딩"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1154
+msgid "Distance"
+msgstr "거리"
+
+#: src/Pro/Notifications/DrawerNotificationBar.php:368
+msgid "Offer quantity: 1"
+msgstr "제공 수량: 1"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:275
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:27
+msgid "≥ is at least"
+msgstr "≥: 최소"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:279
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:28
+msgid "≤ is at most"
+msgstr "≤: 최대"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:283
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:29
+msgid "> is more than"
+msgstr ">: 초과"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:287
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:30
+msgid "< is less than"
+msgstr "<: 미만"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:291
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:31
+msgid "= equals"
+msgstr "=: 같음"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:298
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:35
+msgid "Contains any of"
+msgstr "다음 중 하나라도 포함"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:302
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:36
+msgid "Contains all of"
+msgstr "다음을 모두 포함"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:306
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:37
+msgid "Contains none of"
+msgstr "다음을 전혀 포함하지 않음"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:313
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:41
+msgid "Is any of"
+msgstr "다음 중 하나임"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:317
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:42
+msgid "Is none of"
+msgstr "다음 중 아무것도 아님"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:382
+msgid "Invalid spotlight configuration."
+msgstr "스포트라이트 설정이 잘못되었습니다."
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:393
+msgid "Spotlight product already in cart."
+msgstr "스포트라이트 상품이 이미 장바구니에 있습니다."
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:458
+#: src/Pro/Notifications/DrawerNotificationBarController.php:466
+#: src/Recommendations/RecommendationsController.php:164
+msgid "Could not add product to cart."
+msgstr "장바구니에 상품을 추가할 수 없습니다."
+
+#: src/Pro/REST/ProDrawerDataSupplementProvider.php:92
+#: src/REST/CartStateController.php:217
+msgid "The cart could not be refreshed. Please try again."
+msgstr "장바구니를 새로고침할 수 없습니다. 다시 시도해 주세요."
+
+#: src/Pro/Rules/Conditions/CartContainsCategoryCondition.php:66
+msgid "Cart Contains Category"
+msgstr "장바구니에 카테고리 포함"
+
+#: src/Pro/Rules/Conditions/CartContainsProductCondition.php:62
+msgid "Cart Contains Product"
+msgstr "장바구니에 상품 포함"
+
+#: src/Pro/Rules/Conditions/CartItemCountCondition.php:56
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:55
+msgid "Cart Item Count"
+msgstr "장바구니 품목 수"
+
+#: src/Pro/Rules/Conditions/CartTotalCondition.php:56
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:49
+msgid "Cart Total"
+msgstr "장바구니 총액"
+
+#: src/Pro/Rules/Conditions/UserRoleCondition.php:63
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:73
+msgid "User Role"
+msgstr "사용자 역할"
+
+#: src/Pro/Rules/RuleEngine.php:59
+msgid "CartPops Rules"
+msgstr "CartPops 규칙"
+
+#: src/Pro/Rules/RuleEngine.php:60
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:274
+msgid "Rule"
+msgstr "규칙"
+
+#: src/Pro/ShippingMeter/RewardApplicator.php:401
+msgid "Gift quantity: 1"
+msgstr "사은품 수량: 1"
+
+#: src/Pro/ShippingMeter/ShippingMeter.php:408
+msgid "reached"
+msgstr "달성됨"
+
+#: src/Pro/ShippingMeter/ShippingMeter.php:408
+msgid "not reached"
+msgstr "달성되지 않음"
+
+#: src/Pro/ShippingMeter/ShippingMeter.php:555
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:544
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:318
+msgid "Free Shipping"
+msgstr "무료 배송"
+
+#: src/Pro/ShippingMeter/ShippingMeter.php:556
+#: src/Pro/ShippingMeter/ShippingMeter.php:557
+#: src/Admin/assets/js/pages/Dashboard.jsx:213
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:549
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:556
+msgid "Off"
+msgstr "꺼짐"
+
+#: src/Pro/ShippingMeter/ShippingMeter.php:749
+#: src/Pro/ShippingMeter/ShippingMeter.php:753
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:558
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:47
+msgid "Free Gift"
+msgstr "무료 사은품"
+
+#: src/Pro/SmartAddons/SmartAddonFeeBatchException.php:20
+msgid "CartPops could not restore cart fees safely."
+msgstr "CartPops에서 장바구니 수수료를 안전하게 복원할 수 없습니다."
+
+#: src/Pro/SmartAddons/SmartAddons.php:883
+msgid "CartPops add-on"
+msgstr "CartPops 애드온"
+
+#: src/Pro/SmartAddons/SmartAddonsController.php:145
+msgid "This cart add-on is unavailable."
+msgstr "이 장바구니 애드온을 사용할 수 없습니다."
+
+#: src/Pro/SmartAddons/SmartAddonsController.php:153
+#: src/Recommendations/RecommendationsController.php:180
+#: src/REST/CartStateController.php:178
+#: src/REST/CouponController.php:242
+msgid "The cart could not be updated. Please try again."
+msgstr "장바구니를 업데이트할 수 없습니다. 다시 시도해 주세요."
+
+#: src/Recommendations/RecommendationsController.php:114
+msgid "This product is not available."
+msgstr "이 상품은 구매할 수 없습니다."
+
+#: src/REST/CartStateController.php:131
+msgid "Select one or more valid cart items."
+msgstr "하나 이상의 유효한 장바구니 품목을 선택하세요."
+
+#: src/REST/CartStateController.php:170
+msgid "One or more cart items could not be removed."
+msgstr "하나 이상의 장바구니 품목을 삭제할 수 없습니다."
+
+#: src/REST/CouponController.php:95
+#: src/REST/CouponController.php:160
+msgid "Cart rewards are managed automatically."
+msgstr "장바구니 리워드는 자동으로 관리됩니다."
+
+#: src/REST/CouponController.php:129
+msgid "Invalid coupon."
+msgstr "유효하지 않은 쿠폰입니다."
+
+#: src/REST/CouponController.php:196
+msgid "This coupon is managed automatically and could not be removed."
+msgstr "이 쿠폰은 자동으로 관리되며 삭제할 수 없습니다."
+
+#: src/REST/CouponController.php:202
+msgid "The coupon could not be removed."
+msgstr "쿠폰을 삭제할 수 없습니다."
+
+#: src/REST/NamespaceRateLimitMiddleware.php:92
+msgid "Too many requests. Please wait and try again."
+msgstr "요청이 너무 많습니다. 잠시 후 다시 시도해 주세요."
+
+#: src/REST/NamespaceRateLimitMiddleware.php:93
+msgid "Request limiting is temporarily unavailable. Please try again."
+msgstr "요청 제한 기능을 일시적으로 사용할 수 없습니다. 다시 시도해 주세요."
+
+#: src/REST/PublicEndpointGuard.php:45
+#: src/REST/PublicEndpointGuard.php:63
+msgid "Your cart session could not be verified. Please refresh and try again."
+msgstr "장바구니 세션을 확인할 수 없습니다. 새로고침 후 다시 시도해 주세요."
+
+#: src/REST/PublicEndpointGuard.php:52
+#: src/REST/WooSessionBootstrap.php:534
+msgid "Your cart session is unavailable. Please refresh and try again."
+msgstr "장바구니 세션을 사용할 수 없습니다. 새로고침 후 다시 시도해 주세요."
+
+#: src/REST/PublicEndpointGuard.php:78
+#: src/REST/PublicEndpointGuard.php:88
+msgid "Cookie check failed. Please refresh and try again."
+msgstr "쿠키 확인에 실패했습니다. 새로고침 후 다시 시도해 주세요."
+
+#: src/REST/RestCors.php:141
+msgid "REST method overrides are not supported."
+msgstr "REST 메서드 재정의는 지원되지 않습니다."
+
+#: src/REST/RestCors.php:144
+msgid "JSONP is not supported for the CartPops API."
+msgstr "CartPops API에서는 JSONP가 지원되지 않습니다."
+
+#: src/REST/RestCors.php:151
+#: src/REST/RestCors.php:163
+msgid "The request body is too large."
+msgstr "요청 본문 크기가 너무 큽니다."
+
+#: src/REST/RestCors.php:159
+#: src/REST/RestCors.php:801
+msgid "No CartPops REST policy permits this request."
+msgstr "이 요청을 허용하는 CartPops REST 정책이 없습니다."
+
+#: src/REST/RestCors.php:337
+#: src/REST/RestPreDispatchFinalizer.php:102
+msgid "The REST request was rejected."
+msgstr "REST 요청이 거부되었습니다."
+
+#: src/REST/RestCors.php:667
+#: src/REST/RestCors.php:674
+msgid "This origin is not allowed to access the CartPops API."
+msgstr "이 오리진은 CartPops API에 액세스할 수 없습니다."
+
+#: src/REST/RestCors.php:677
+msgid "The request origin does not match its referrer."
+msgstr "요청 오리진이 리퍼러와 일치하지 않습니다."
+
+#: src/Setup/Upgrader.php:1717
+#. translators: %1$d: WordPress multisite blog ID.
+#, php-format
+msgid ""
+"CartPops network migration paused at site %1$d and will retry it without "
+"skipping later sites. Original settings were preserved."
+msgstr ""
+"CartPops 네트워크 마이그레이션이 %1$d 사이트에서 일시 중지되었으며, 후속 사이트를 건너뛰지 않고 다시 시도합니다. 원본 "
+"설정은 보존되었습니다."
+
+#: src/Setup/Upgrader.php:1728
+msgid ""
+"CartPops could not complete its legacy settings migration. The original "
+"settings were preserved; review the migration status before retrying."
+msgstr ""
+"CartPops에서 기존 설정 마이그레이션을 완료하지 못했습니다. 원본 설정은 보존되었으며, 다시 시도하기 전에 마이그레이션 상태를 "
+"검토하세요."
+
+#: src/Setup/Upgrader.php:1736
+msgid ""
+"CartPops preserved legacy automation rule data for recovery, but those "
+"rules are retired and do not run in V2."
+msgstr "CartPops가 복구를 위해 기존 자동화 규칙 데이터를 보존했지만, 해당 규칙은 중단되어 V2에서는 실행되지 않습니다."
+
+#: src/Setup/Upgrader.php:1742
+msgid ""
+"CartPops migration requires compatibility review before it can finish. "
+"Original settings remain available for recovery; resolve the reported "
+"migration warnings, then retry the migration."
+msgstr ""
+"CartPops 마이그레이션을 완료하려면 호환성 검토가 필요합니다. 복구를 위해 원본 설정이 유지되므로, 보고된 마이그레이션 경고를 "
+"해결한 후 마이그레이션을 다시 시도하세요."
+
+#: src/Setup/Upgrader.php:1752
+msgid ""
+"CartPops migrated legacy settings with compatibility warnings. Original "
+"settings remain available for recovery."
+msgstr "CartPops가 호환성 경고와 함께 기존 설정을 마이그레이션했습니다. 복구를 위해 원본 설정이 계속 유지됩니다."
+
+#: src/StoreAPI/CartExtension.php:178
+msgid "Exact WooCommerce cart item key."
+msgstr "정확한 WooCommerce 장바구니 품목 키입니다."
+
+#: src/StoreAPI/CartExtension.php:186
+msgid "Parent product ID (same as id for simple products)."
+msgstr "상위 상품 ID(단순 상품의 경우 id와 동일)."
+
+#: src/StoreAPI/CartExtension.php:203
+msgid "CartPops drawer configuration."
+msgstr "CartPops 드로어 구성입니다."
+
+#: src/StoreAPI/CartExtension.php:208
+msgid "Cart launcher configuration."
+msgstr "장바구니 런처 구성입니다."
+
+#: src/StoreAPI/CartExtension.php:221
+msgid "Safe CartPops coupon presentation and removal authority."
+msgstr "안전한 CartPops 쿠폰 표시 및 삭제 권한입니다."
+
+#: src/StoreAPI/CartExtension.php:279
+msgid "Bounded PHP-filtered cart item presentation."
+msgstr "PHP로 필터링되어 바인딩된 장바구니 품목 표시입니다."
+
+#: src/StoreAPI/CartExtension.php:289
+msgid "Exact cart item keys with an edition-owned locked presentation."
+msgstr "에디션 소유의 잠긴 프레젠테이션이 적용된 정확한 장바구니 품목 키입니다."
+
+#: src/StoreAPI/CartExtension.php:313
+msgid "Whether WooCommerce permits this line to be shown in a mini-cart."
+msgstr "WooCommerce가 이 항목을 미니 장바구니에 표시하도록 허용하는지 여부입니다."
+
+#: src/StoreAPI/CartExtension.php:318
+msgid "Whether CartPops may offer quantity mutation for this line."
+msgstr "CartPops가 이 항목의 수량 변경 기능을 제공할 수 있는지 여부입니다."
+
+#: src/StoreAPI/CartExtension.php:323
+msgid "Whether CartPops may offer removal for this line."
+msgstr "CartPops가 이 항목의 삭제 기능을 제공할 수 있는지 여부입니다."
+
+#: src/StoreAPI/CartExtension.php:328
+msgid ""
+"WooCommerce quantity minimum, transport maximum, step, and "
+"unlimited-product state."
+msgstr "WooCommerce 수량 최소값, 전송 최대값, 단계 및 무제한 상품 상태입니다."
+
+#: src/StoreAPI/CartExtension.php:339
+msgid "Bounded plain-text WooCommerce backorder notice."
+msgstr "바인딩된 일반 텍스트 WooCommerce 백오더 알림입니다."
+
+#: src/Admin/assets/js/App.jsx:169
+msgid "Setup"
+msgstr "설정"
+
+#: src/Admin/assets/js/App.jsx:171
+#: src/Admin/assets/js/pages/Dashboard.jsx:119
+msgid "Dashboard"
+msgstr "대시보드"
+
+#: src/Admin/assets/js/App.jsx:172
+msgid "Drawer"
+msgstr "드로어"
+
+#: src/Admin/assets/js/App.jsx:173
+msgid "Launcher"
+msgstr "런처"
+
+#: src/Admin/assets/js/App.jsx:177
+#: src/Admin/assets/js/pages/Dashboard.jsx:185
+msgid "Features"
+msgstr "기능"
+
+#: src/Admin/assets/js/App.jsx:181
+#: src/Admin/assets/js/pages/Dashboard.jsx:88
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:352
+msgid "Recommendations"
+msgstr "추천 상품"
+
+#: src/Admin/assets/js/App.jsx:186
+msgid "Smart add-ons"
+msgstr "스마트 추가 상품"
+
+#: src/Admin/assets/js/App.jsx:191
+#: src/Admin/assets/js/pages/Dashboard.jsx:104
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:657
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:669
+msgid "Smart Bar"
+msgstr "스마트 바"
+
+#: src/Admin/assets/js/App.jsx:196
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:419
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:444
+msgid "Bundle Builder"
+msgstr "번들 빌더"
+
+#: src/Admin/assets/js/App.jsx:202
+msgid "Insights"
+msgstr "인사이트"
+
+#: src/Admin/assets/js/App.jsx:206
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:202
+msgid "Analytics"
+msgstr "분석"
+
+#: src/Admin/assets/js/App.jsx:212
+msgid "System"
+msgstr "시스템"
+
+#: src/Admin/assets/js/App.jsx:213
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:429
+msgid "Advanced"
+msgstr "고급"
+
+#: src/Admin/assets/js/App.jsx:520
+msgid "Settings saved!"
+msgstr "설정이 저장되었습니다!"
+
+#: src/Admin/assets/js/App.jsx:526
+msgid "Failed to save."
+msgstr "저장하지 못했습니다."
+
+#: src/Admin/assets/js/App.jsx:560
+msgid "Settings reset to defaults."
+msgstr "설정이 기본값으로 초기화되었습니다."
+
+#: src/Admin/assets/js/App.jsx:571
+msgid "Settings could not be reset. Please try again."
+msgstr "설정을 초기화할 수 없습니다. 다시 시도해 주세요."
+
+#: src/Admin/assets/js/App.jsx:732
+msgid "Unsaved changes"
+msgstr "저장되지 않은 변경 사항"
+
+#: src/Admin/assets/js/App.jsx:741
+msgid "Saving…"
+msgstr "저장 중…"
+
+#: src/Admin/assets/js/App.jsx:742
+msgid "Save Changes"
+msgstr "변경 사항 저장"
+
+#: src/Admin/assets/js/components/ColorPicker.jsx:111
+msgid "CSS color value"
+msgstr "CSS 색상 값"
+
+#: src/Admin/assets/js/components/ColorPicker.jsx:112
+msgid "Hex color value"
+msgstr "Hex 색상 값"
+
+#: src/Admin/assets/js/components/DrawerPreview.jsx:359
+msgid "Free"
+msgstr "무료"
+
+#: src/Admin/assets/js/components/DrawerPreview.jsx:377
+msgid "Tax"
+msgstr "세금"
+
+#: src/Admin/assets/js/components/DrawerPreview.jsx:399
+#: src/Admin/assets/js/components/LauncherPreview.jsx:136
+msgid "Desktop"
+msgstr "데스크톱"
+
+#: src/Admin/assets/js/components/DrawerPreview.jsx:421
+#: src/Admin/assets/js/components/LauncherPreview.jsx:158
+msgid "Mobile"
+msgstr "모바일"
+
+#: src/Admin/assets/js/components/DrawerPreview.jsx:448
+#: src/Admin/assets/js/components/LauncherPreview.jsx:185
+msgid "Items"
+msgstr "품목"
+
+#: src/Admin/assets/js/components/DrawerPreview.jsx:459
+#: src/Admin/assets/js/components/LauncherPreview.jsx:194
+msgid "Empty"
+msgstr "비어 있음"
+
+#: src/Admin/assets/js/components/DrawerPreview.jsx:469
+#: src/Admin/assets/js/components/LauncherPreview.jsx:204
+msgid "Toggle dark mode preview"
+msgstr "다크 모드 미리보기 전환"
+
+#: src/Admin/assets/js/components/DrawerPreview.jsx:828
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:453
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:720
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:748
+msgid "Remove"
+msgstr "제거"
+
+#: src/Admin/assets/js/components/LauncherPreview.jsx:262
+msgid "Store menu"
+msgstr "스토어 메뉴"
+
+#: src/Admin/assets/js/components/LauncherPreview.jsx:267
+msgid "Inline navigation cart launcher preview"
+msgstr "인라인 내비게이션 장바구니 런처 미리보기"
+
+#: src/Admin/assets/js/components/LauncherPreview.jsx:448
+msgid "Launcher hidden by current settings"
+msgstr "현재 설정으로 인해 런처가 숨겨짐"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:365
+msgid "Hide launcher on pages"
+msgstr "페이지에서 런처 숨기기"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:368
+msgid ""
+"Select pages where the floating cart launcher should not appear. Existing "
+"exclusions stay selected until you remove them."
+msgstr "플로팅 장바구니 런처를 표시하지 않을 페이지를 선택하세요. 기존 제외 항목은 직접 제거할 때까지 선택된 상태로 유지됩니다."
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:377
+msgid "Pages with the launcher hidden"
+msgstr "런처가 숨겨진 페이지"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:388
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:491
+#. translators: %d: WordPress page ID.
+#, js-format
+msgid "Page #%d (untitled)"
+msgstr "페이지 #%d (제목 없음)"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:393
+#. translators: %d: WordPress page ID.
+#, js-format
+msgid "Page #%d (unavailable)"
+msgstr "페이지 #%d (사용할 수 없음)"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:406
+#. translators: %s: Page title.
+#, js-format
+msgid "Remove %s from hidden pages"
+msgstr "숨겨진 페이지에서 %s 제거"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:424
+msgid ""
+"Some selected page names could not be loaded. Their exclusions are still "
+"preserved."
+msgstr "선택한 일부 페이지 이름을 불러올 수 없습니다. 제외 설정은 그대로 유지됩니다."
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:436
+msgid "Retry page names"
+msgstr "페이지 이름 다시 시도"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:442
+msgid "Search pages"
+msgstr "페이지 검색"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:443
+msgid "Type at least two characters, then choose a page below."
+msgstr "두 글자 이상 입력한 후 아래에서 페이지를 선택하세요."
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:456
+msgid "The maximum number of page exclusions has been selected."
+msgstr "제외할 수 있는 최대 페이지 수에 도달했습니다."
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:463
+msgid "Searching pages…"
+msgstr "페이지 검색 중…"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:467
+msgid "Pages could not be loaded. Try searching again."
+msgstr "페이지를 불러올 수 없습니다. 다시 검색해 보세요."
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:477
+msgid "No matching pages found."
+msgstr "일치하는 페이지가 없습니다."
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:484
+msgid "Matching pages"
+msgstr "일치하는 페이지"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:504
+#. translators: %d: WordPress page ID.
+#, js-format
+msgid "Page ID: %d"
+msgstr "페이지 ID: %d"
+
+#: src/Admin/assets/js/components/UpgradePage.jsx:25
+#. translators: %s: paid feature name.
+#, js-format
+msgid "%s is available in CartPops Pro"
+msgstr "%s 기능은 CartPops Pro에서 사용할 수 있습니다"
+
+#: src/Admin/assets/js/components/UpgradePage.jsx:30
+msgid ""
+"Upgrade to configure this feature. Your existing CartPops settings remain "
+"unchanged."
+msgstr "이 기능을 설정하려면 업그레이드하세요. 기존 CartPops 설정은 그대로 유지됩니다."
+
+#: src/Admin/assets/js/components/UpgradePage.jsx:40
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:88
+msgid "Upgrade to CartPops Pro"
+msgstr "CartPops Pro로 업그레이드"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:18
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:210
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:44
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:281
+msgid "General"
+msgstr "일반"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:19
+msgid "Integrations"
+msgstr "연동"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:28
+msgid "Powered by CartPops"
+msgstr "Powered by CartPops"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:32
+msgid "Show the CartPops partner link"
+msgstr "CartPops 파트너 링크 표시"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:33
+msgid ""
+"Opt in to show a CartPops referral link in the drawer footer. The link "
+"remains hidden until a valid partner code is saved."
+msgstr "드로어 하단에 CartPops 추천 링크를 표시하도록 설정합니다. 유효한 파트너 코드가 저장될 때까지 링크는 숨겨집니다."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:45
+msgid "Partner code"
+msgstr "파트너 코드"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:46
+msgid ""
+"Enter a positive base-10 integer of up to 20 digits. A valid code is "
+"required for the link to display."
+msgstr "최대 20자리의 양의 정수를 입력하세요. 링크를 표시하려면 유효한 코드가 필요합니다."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:71
+msgid "Refresh cart data on page load"
+msgstr "페이지 로드 시 장바구니 데이터 새로고침"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:72
+msgid ""
+"Requests fresh cart data on every page load. Use only when cached pages "
+"show stale cart contents."
+msgstr "페이지가 로드될 때마다 최신 장바구니 데이터를 요청합니다. 캐시된 페이지에 이전 장바구니 내용이 표시될 때만 사용하세요."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:139
+msgid "Export failed."
+msgstr "내보내기에 실패했습니다."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:166
+msgid "Settings imported! Reload to see changes."
+msgstr "설정을 가져왔습니다! 변경 사항을 확인하려면 새로고침하세요."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:191
+msgid "Import failed."
+msgstr "가져오기에 실패했습니다."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:197
+msgid "Invalid JSON file."
+msgstr "유효하지 않은 JSON 파일입니다."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:214
+msgid "Enable CartPops"
+msgstr "CartPops 활성화"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:215
+msgid "Disable to turn off all CartPops frontend functionality."
+msgstr "CartPops의 모든 프런트엔드 기능을 끄려면 비활성화하세요."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:226
+msgid "Open drawer on"
+msgstr "드로어 열기 조건"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:234
+msgid "Launcher click only"
+msgstr "런처 클릭 시에만"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:251
+msgid "WooCommerce Mini Cart"
+msgstr "WooCommerce 미니 장바구니"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:255
+msgid "Integration mode"
+msgstr "연동 모드"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:256
+msgid "Controls how CartPops interacts with the WooCommerce Mini Cart block."
+msgstr "CartPops가 WooCommerce 미니 장바구니 블록과 상호작용하는 방식을 제어합니다."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:267
+msgid "Replace — CartPops drawer replaces WC Mini Cart"
+msgstr "대체 — CartPops 드로어가 WC 미니 장바구니를 대체합니다"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:274
+msgid "Standalone — Both operate independently"
+msgstr "독립 실행 — 둘 다 독립적으로 작동합니다"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:289
+msgid "Custom CSS"
+msgstr "사용자 정의 CSS"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:293
+msgid "Additional CSS"
+msgstr "추가 CSS"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:294
+msgid ""
+"Add custom CSS to style the cart drawer. Uses the .cpops- prefix for all "
+"CartPops elements."
+msgstr "장바구니 드로어의 스타일을 지정하는 사용자 정의 CSS를 추가합니다. 모든 CartPops 요소에는 .cpops- 접두사가 사용됩니다."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:309
+msgid "Performance"
+msgstr "성능"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:320
+msgid "Import / Export"
+msgstr "가져오기 / 내보내기"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:324
+msgid ""
+"Export your CartPops settings to a JSON file for backup, or import settings "
+"from another site."
+msgstr "백업을 위해 CartPops 설정을 JSON 파일로 내보내거나, 다른 사이트에서 설정을 가져옵니다."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:336
+msgid "Export Settings"
+msgstr "설정 내보내기"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:343
+msgid "Import Settings"
+msgstr "설정 가져오기"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:359
+msgid "Reset"
+msgstr "초기화"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:371
+msgid "Reset all settings to defaults"
+msgstr "모든 설정을 기본값으로 초기화"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:376
+msgid "Are you sure? This will reset all CartPops settings to their default values."
+msgstr "정말 진행하시겠습니까? 모든 CartPops 설정이 기본값으로 초기화됩니다."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:396
+msgid "Yes, reset everything"
+msgstr "예, 모두 초기화합니다"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:404
+#: src/Pro/Admin/assets/js/components/AnalyticsResetActions.jsx:68
+msgid "Cancel"
+msgstr "취소"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:414
+msgid "Settings update in progress…"
+msgstr "설정 업데이트 진행 중…"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:431
+msgid "Fine-tune CartPops behavior, styling, and integrations."
+msgstr "CartPops 동작, 스타일 및 연동을 세부적으로 설정하세요."
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:71
+msgid "Cart Drawer"
+msgstr "장바구니 드로어"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:76
+#: src/Admin/assets/js/pages/Dashboard.jsx:170
+msgid "Cart Launcher"
+msgstr "장바구니 론처"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:81
+msgid "Shipping Meter"
+msgstr "배송비 미터"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:94
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:402
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:139
+msgid "Smart Add-ons"
+msgstr "스마트 애드온"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:121
+msgid "Welcome to CartPops. Manage your cart drawer and boost conversions."
+msgstr "CartPops에 오신 것을 환영합니다. 장바구니 드로어를 관리하고 전환율을 높여보세요."
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:142
+msgid "Plugin Status"
+msgstr "플러그인 상태"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:145
+msgid "Active"
+msgstr "활성"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:146
+msgid "Inactive"
+msgstr "비활성"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:156
+msgid "Drawer Position"
+msgstr "드로어 위치"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:173
+msgid "Visible"
+msgstr "표시"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:174
+msgid "Hidden"
+msgstr "숨김"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:212
+msgid "On"
+msgstr "켜짐"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:231
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:198
+msgid "Unknown Theme"
+msgstr "알 수 없는 테마"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:245
+msgid "Resources"
+msgstr "리소스"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:260
+msgid "Documentation"
+msgstr "문서"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:263
+msgid "Guides and setup instructions"
+msgstr "가이드 및 설정 방법"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:282
+msgid "Changelog"
+msgstr "변경 기록"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:285
+msgid "Latest updates and releases"
+msgstr "최신 업데이트 및 릴리스"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:304
+msgid "Support"
+msgstr "지원"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:307
+msgid "Get help from our team"
+msgstr "지원팀에 문의하기"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:11
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:437
+msgid "Default"
+msgstr "기본"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:23
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:445
+msgid "Minimal"
+msgstr "미니멀"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:35
+msgid "Bold"
+msgstr "볼드"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:47
+msgid "Ocean"
+msgstr "오션"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:61
+msgid "Primary"
+msgstr "기본"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:62
+msgid "Primary Text"
+msgstr "기본 텍스트"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:63
+#: src/Admin/assets/js/pages/DesignSettings.jsx:127
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:491
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:489
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:730
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:514
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:652
+msgid "Background"
+msgstr "배경"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:64
+#: src/Admin/assets/js/pages/DesignSettings.jsx:132
+msgid "Surface"
+msgstr "표면"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:65
+#: src/Admin/assets/js/pages/DesignSettings.jsx:137
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:57
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:498
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:502
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:742
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:524
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:665
+msgid "Text"
+msgstr "텍스트"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:66
+#: src/Admin/assets/js/pages/DesignSettings.jsx:142
+msgid "Text Secondary"
+msgstr "보조 텍스트"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:67
+msgid "Text Tertiary"
+msgstr "3차 텍스트"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:68
+#: src/Admin/assets/js/pages/DesignSettings.jsx:147
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:508
+msgid "Border"
+msgstr "테두리"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:69
+#: src/Admin/assets/js/pages/DesignSettings.jsx:152
+msgid "Input Background"
+msgstr "입력 필드 배경"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:70
+#: src/Admin/assets/js/pages/DesignSettings.jsx:157
+msgid "Input Border"
+msgstr "입력 필드 테두리"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:71
+msgid "Input Text"
+msgstr "입력 필드 텍스트"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:72
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:16
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:542
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:772
+msgid "Button Background"
+msgstr "버튼 배경"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:73
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:558
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:784
+msgid "Button Text"
+msgstr "버튼 텍스트"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:76
+msgid "Secondary Button Background"
+msgstr "보조 버튼 배경"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:80
+msgid "Secondary Button Text"
+msgstr "보조 버튼 텍스트"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:84
+msgid "Quantity Button Background"
+msgstr "수량 버튼 배경"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:88
+msgid "Quantity Button Text"
+msgstr "수량 버튼 텍스트"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:92
+msgid "Quantity Value Background"
+msgstr "수량 값 배경"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:96
+msgid "Quantity Border"
+msgstr "수량 테두리"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:100
+msgid "Quantity Value Text"
+msgstr "수량 값 텍스트"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:104
+msgid "Recommendations Button"
+msgstr "추천 버튼"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:108
+msgid "Recommendations Button Icon"
+msgstr "추천 버튼 아이콘"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:112
+msgid "Recommendations Background"
+msgstr "추천 배경"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:116
+msgid "Recommendations Border"
+msgstr "추천 테두리"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:118
+msgid "Recommendations Text"
+msgstr "추천 텍스트"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:119
+msgid "Sale Price"
+msgstr "할인가"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:120
+msgid "Success"
+msgstr "성공"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:121
+msgid "Danger"
+msgstr "위험"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:201
+msgid "Presets"
+msgstr "사전 설정"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:235
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:328
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:470
+msgid "Colors"
+msgstr "색상"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:257
+msgid "Dark mode palette"
+msgstr "다크 모드 팔레트"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:260
+msgid ""
+"Used for forced dark mode and when system dark mode is active. Primary "
+"branding remains shared with the light palette."
+msgstr "강제 다크 모드 및 시스템 다크 모드가 활성화되었을 때 사용됩니다. 기본 브랜딩은 라이트 팔레트와 계속 공유됩니다."
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:289
+msgid "Background Overlay"
+msgstr "배경 오버레이"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:292
+msgid "Color"
+msgstr "색상"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:299
+msgid "Opacity"
+msgstr "불투명도"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:313
+msgid "Shape"
+msgstr "모양"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:327
+msgid "Button Border Radius"
+msgstr "버튼 모서리 반경"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:338
+msgid "Dark Mode"
+msgstr "다크 모드"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:342
+msgid "Auto (follow system)"
+msgstr "자동 (시스템 설정 따름)"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:346
+msgid "Always light"
+msgstr "항상 라이트 모드"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:350
+msgid "Always dark"
+msgstr "항상 다크 모드"
+
+#: src/Admin/assets/js/pages/DrawerEditor.jsx:17
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:142
+msgid "Layout"
+msgstr "레이아웃"
+
+#: src/Admin/assets/js/pages/DrawerEditor.jsx:18
+msgid "Design"
+msgstr "디자인"
+
+#: src/Admin/assets/js/pages/DrawerEditor.jsx:21
+#: src/Admin/assets/js/pages/DrawerEditor.jsx:55
+msgid "Shipping meter"
+msgstr "배송 미터"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:23
+msgid "Optional. Leave blank to use the translated CartPops default."
+msgstr "선택 사항입니다. 번역된 CartPops 기본값을 사용하려면 비워 두세요."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:27
+msgid "Optional. Leave blank to hide this text."
+msgstr "선택 사항입니다. 이 텍스트를 숨기려면 비워 두세요."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:36
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:141
+msgid "Position & Size"
+msgstr "위치 및 크기"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:40
+#: src/Blocks/CartLauncher/index.js:23
+msgid "Position"
+msgstr "위치"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:52
+msgid "Width (Desktop)"
+msgstr "너비(데스크톱)"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:63
+msgid "Width (Mobile %)"
+msgstr "너비(모바일 %)"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:76
+msgid "Secondary action"
+msgstr "보조 작업"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:95
+msgid ""
+"Add a Continue shopping, View cart, or custom customer action below "
+"checkout with CartPops Pro."
+msgstr "CartPops Pro를 사용하여 결제 아래에 쇼핑 계속하기, 장바구니 보기 또는 맞춤 고객 작업을 추가하세요."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:102
+msgid "Explore Pro actions"
+msgstr "Pro 작업 살펴보기"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:111
+msgid "Animation"
+msgstr "애니메이션"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:115
+msgid "Animation Type"
+msgstr "애니메이션 유형"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:118
+msgid "Slide"
+msgstr "슬라이드"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:119
+msgid "Fade"
+msgstr "페이드"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:128
+msgid "Duration (ms)"
+msgstr "지속 시간(ms)"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:141
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:284
+msgid "Behavior"
+msgstr "동작"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:145
+msgid "Show undo after item removal"
+msgstr "항목 삭제 후 실행 취소 표시"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:153
+msgid "Show coupon code field"
+msgstr "쿠폰 코드 필드 표시"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:154
+msgid "Allow customers to apply coupon codes from the cart drawer."
+msgstr "고객이 장바구니 서랍에서 쿠폰 코드를 적용할 수 있도록 허용합니다."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:165
+msgid "Product name display"
+msgstr "상품명 표시"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:166
+msgid "Choose how product names wrap inside drawer cart items."
+msgstr "서랍 장바구니 항목 내에서 상품명이 줄바꿈되는 방식을 선택하세요."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:175
+msgid "Two lines"
+msgstr "두 줄"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:179
+msgid "Single line"
+msgstr "한 줄"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:183
+msgid "Full name"
+msgstr "전체 이름"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:193
+msgid "Totals breakdown"
+msgstr "총액 세부 내역"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:194
+msgid "Where to show subtotal, discounts, shipping, fees, and tax lines."
+msgstr "소계, 할인, 배송비, 수수료 및 세금 내역을 표시할 위치입니다."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:201
+msgid "In footer (sticky)"
+msgstr "바닥글(고정)"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:205
+msgid "Above checkout (scrollable)"
+msgstr "결제 위(스크롤 가능)"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:212
+msgid "Hidden (total only)"
+msgstr "숨김(총액만 표시)"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:222
+msgid "Show subtotal"
+msgstr "소계 표시"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:223
+msgid "Display the subtotal in the selected totals area."
+msgstr "선택한 총액 영역에 소계를 표시합니다."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:234
+msgid "Show discounts"
+msgstr "할인 표시"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:235
+msgid "Display the discount line when a coupon is applied."
+msgstr "쿠폰이 적용되었을 때 할인 내역을 표시합니다."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:246
+msgid "Show shipping"
+msgstr "배송비 표시"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:247
+msgid "Display the shipping line when shipping is calculated."
+msgstr "배송비가 계산되었을 때 배송비 내역을 표시합니다."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:258
+msgid "Show taxes"
+msgstr "세금 표시"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:259
+msgid "Display the applicable tax line or included-tax note."
+msgstr "해당 세금 내역 또는 세금 포함 문구를 표시합니다."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:270
+msgid "Show total"
+msgstr "총액 표시"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:271
+msgid "Display the grand total above the checkout button."
+msgstr "결제 버튼 위에 총합계를 표시합니다."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:282
+msgid "Checkout Button Text"
+msgstr "결제 버튼 문구"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:283
+msgid "Leave empty to use the default \"Proceed to Checkout\"."
+msgstr "기본값인 \\\"Proceed to Checkout\\\"(결제 진행하기)을 사용하려면 비워 두세요."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:297
+msgid "Customer messages"
+msgstr "고객 메시지"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:301
+msgid "Cart title"
+msgstr "장바구니 제목"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:311
+msgid "Added-to-cart announcement"
+msgstr "장바구니 담기 안내"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:312
+msgid ""
+"Optional generic announcement. Enter complete plain text without a product "
+"placeholder, or leave blank to disable it."
+msgstr "선택적 일반 공지입니다. 상품 플레이스홀더 없이 일반 텍스트를 입력하거나, 비활성화하려면 비워 두세요."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:317
+msgid "Product successfully added to your cart."
+msgstr "상품이 장바구니에 추가되었습니다."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:327
+msgid "Coupon heading"
+msgstr "쿠폰 제목"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:330
+msgid "No heading by default"
+msgstr "기본적으로 제목 없음"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:337
+msgid "Coupon input placeholder"
+msgstr "쿠폰 입력란 플레이스홀더"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:350
+msgid "Coupon button text"
+msgstr "쿠폰 버튼 텍스트"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:362
+msgid "Totals and empty-cart text"
+msgstr "합계 및 빈 장바구니 텍스트"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:366
+msgid "Subtotal label"
+msgstr "소계 라벨"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:376
+msgid "Discount label"
+msgstr "할인 라벨"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:386
+msgid "Total label"
+msgstr "총계 라벨"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:396
+msgid "Empty-cart title"
+msgstr "빈 장바구니 제목"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:406
+msgid "Empty-cart subtitle"
+msgstr "빈 장바구니 소제목"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:409
+msgid "No subtitle by default"
+msgstr "기본적으로 소제목 없음"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:416
+msgid "Empty-cart button text"
+msgstr "빈 장바구니 버튼 텍스트"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:428
+msgid "Quantity Selector"
+msgstr "수량 선택기"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:432
+msgid "Style"
+msgstr "스타일"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:441
+msgid "Rounded"
+msgstr "라운드"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:55
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:215
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:278
+msgid "Basket"
+msgstr "바스켓"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:77
+msgid "Cart 2"
+msgstr "카트 2"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:98
+msgid "Bag 2"
+msgstr "백 2"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:117
+msgid "Basket 2"
+msgstr "바스켓 2"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:156
+msgid "Theme"
+msgstr "테마"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:213
+msgid "Integration available"
+msgstr "연동 가능"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:214
+msgid "No integration available"
+msgstr "사용 가능한 연동 없음"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:225
+msgid "Cart Icon"
+msgstr "장바구니 아이콘"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:229
+msgid "Replace header cart icon"
+msgstr "헤더 장바구니 아이콘 교체"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:233
+msgid "Replace the Blocksy header cart icon with a CartPops icon."
+msgstr "Blocksy 헤더 장바구니 아이콘을 CartPops 아이콘으로 교체합니다."
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:249
+msgid "Icon style"
+msgstr "아이콘 스타일"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:288
+msgid "Show item count badge"
+msgstr "품목 수 배지 표시"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:292
+msgid "Display the number of items in the cart on the icon."
+msgstr "장바구니의 상품 수를 아이콘에 표시합니다."
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:306
+msgid "Open CartPops drawer on click"
+msgstr "클릭 시 CartPops 드로어 열기"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:310
+msgid ""
+"Click the header cart icon to open the CartPops drawer instead of the "
+"Blocksy cart panel."
+msgstr "헤더 장바구니 아이콘을 클릭하면 Blocksy 장바구니 패널 대신 CartPops 드로어가 열립니다."
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:331
+msgid "Leave empty to inherit colors from the theme."
+msgstr "테마 색상을 상속받으려면 비워 두세요."
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:348
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:18
+msgid "Badge Background"
+msgstr "배지 배경"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:361
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:19
+msgid "Badge Text"
+msgstr "배지 텍스트"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:378
+msgid "Preview"
+msgstr "미리보기"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:438
+msgid "Supported Themes"
+msgstr "지원되는 테마"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:441
+msgid "CartPops can integrate with these themes to replace the header cart icon:"
+msgstr "CartPops는 다음 테마와 연동하여 헤더 장바구니 아이콘을 교체할 수 있습니다:"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:462
+msgid "More themes coming soon"
+msgstr "더 많은 테마가 곧 추가될 예정입니다"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:32
+msgid "Inline Background"
+msgstr "인라인 배경"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:35
+msgid "Inline Text"
+msgstr "인라인 텍스트"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:38
+msgid "Inline Badge Background"
+msgstr "인라인 배지 배경"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:40
+msgid "Inline Badge Text"
+msgstr "인라인 배지 텍스트"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:60
+msgid "Floating Cart Launcher"
+msgstr "플로팅 장바구니 런처"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:62
+msgid "Configure the floating cart button that opens the drawer."
+msgstr "드로어를 여는 플로팅 장바구니 버튼을 설정합니다."
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:72
+msgid "Visibility"
+msgstr "표시 여부"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:76
+msgid "Show floating cart launcher"
+msgstr "플로팅 장바구니 런처 표시"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:80
+msgid "Display the floating cart button on the frontend."
+msgstr "프런트엔드에 플로팅 장바구니 버튼을 표시합니다."
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:91
+#: src/Blocks/CartLauncher/index.js:40
+msgid "Show item count"
+msgstr "품목 수 표시"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:99
+msgid "Show cart total"
+msgstr "장바구니 합계 표시"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:108
+msgid "Hide zero item count"
+msgstr "품목 수가 0일 때 숨기기"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:120
+msgid "Hide when cart is empty"
+msgstr "장바구니가 비어 있을 때 숨기기"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:145
+msgid "Screen Position"
+msgstr "화면 위치"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:149
+#: src/Blocks/CartLauncher/index.js:27
+msgid "Bottom Right"
+msgstr "오른쪽 하단"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:153
+#: src/Blocks/CartLauncher/index.js:31
+msgid "Bottom Left"
+msgstr "왼쪽 하단"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:163
+msgid "Offset X (px)"
+msgstr "오프셋 X (px)"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:174
+msgid "Offset Y (px)"
+msgstr "오프셋 Y (px)"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:185
+msgid "Size (px)"
+msgstr "크기 (px)"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:199
+msgid "Appearance"
+msgstr "모양"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:203
+msgid "Icon Style"
+msgstr "아이콘 스타일"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:207
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:270
+msgid "Shopping Cart"
+msgstr "장바구니"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:211
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:274
+msgid "Shopping Bag"
+msgstr "쇼핑백"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:253
+msgid "Navigation menu launcher (legacy)"
+msgstr "내비게이션 메뉴 런처(레거시)"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:259
+msgid ""
+"These settings affect existing navigation menu items with the "
+"cpops-cart-menu-item CSS class. They do not add a menu item."
+msgstr ""
+"이 설정은 cpops-cart-menu-item CSS 클래스가 있는 기존 내비게이션 메뉴 항목에 적용됩니다. 메뉴 항목을 새로 "
+"추가하지는 않습니다."
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:266
+msgid "Navigation menu icon"
+msgstr "내비게이션 메뉴 아이콘"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:288
+msgid "Navigation menu item count style"
+msgstr "내비게이션 메뉴 품목 수 스타일"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:314
+msgid "Hide zero item count in navigation menu"
+msgstr "내비게이션 메뉴에서 품목 수가 0일 때 숨기기"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:331
+msgid "Show cart total in navigation menu"
+msgstr "내비게이션 메뉴에 장바구니 합계 표시"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:341
+msgid "Inline launcher appearance"
+msgstr "인라인 런처 모양"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:343
+msgid ""
+"These colors apply to navigation menu, shortcode, and inline block "
+"launchers. Floating launcher colors remain separate."
+msgstr "이 색상은 내비게이션 메뉴, 쇼트코드 및 인라인 블록 런처에 적용됩니다. 플로팅 런처 색상은 별도로 유지됩니다."
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:374
+msgid "Launcher previews"
+msgstr "런처 미리보기"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:33
+msgid "Product Recommendations"
+msgstr "추천 상품"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:35
+msgid ""
+"Show relevant product suggestions in the cart drawer to boost average order "
+"value."
+msgstr "장바구니 드로어에 관련 추천 상품을 표시하여 평균 주문 금액을 높입니다."
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:48
+msgid "Enable Recommendations"
+msgstr "추천 활성화"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:56
+msgid "Strategy"
+msgstr "전략"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:57
+msgid "How to select which products to recommend."
+msgstr "추천할 상품을 선택하는 방식입니다."
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:64
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:116
+msgid "Cross-sells"
+msgstr "교차 판매"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:65
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:115
+msgid "Upsells"
+msgstr "상향 판매"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:66
+msgid "Custom products (Pro)"
+msgstr "사용자 지정 상품(Pro)"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:81
+msgid ""
+"Choose specific recommendation products with CartPops Pro. Cross-sells and "
+"upsells remain available in the Free edition."
+msgstr "CartPops Pro를 사용하여 특정 추천 상품을 선택하세요. 무료 버전에서도 교차 판매 및 상향 판매를 계속 사용할 수 있습니다."
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:107
+msgid "Fallback Strategy"
+msgstr "대체 전략"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:108
+msgid "Used when the primary strategy returns no results."
+msgstr "기본 전략에서 결과가 없을 때 사용됩니다."
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:114
+msgid "Random products"
+msgstr "무작위 상품"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:125
+msgid "Number of products"
+msgstr "상품 수"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:138
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:436
+msgid "Display"
+msgstr "표시"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:146
+msgid "Horizontal Scroll"
+msgstr "가로 스크롤"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:149
+msgid "Grid"
+msgstr "그리드"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:150
+msgid "List"
+msgstr "목록"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:158
+msgid "Heading"
+msgstr "제목"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:174
+msgid ""
+"Recommendation add buttons use the accessible icon presentation. Text and "
+"text-with-icon buttons are available with CartPops Pro."
+msgstr ""
+"추천 추가 버튼은 접근성 높은 아이콘 방식으로 표시됩니다. 텍스트 및 텍스트와 아이콘이 결합된 버튼은 CartPops Pro에서 사용할 "
+"수 있습니다."
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:181
+msgid "Explore Pro button styles"
+msgstr "Pro 버튼 스타일 알아보기"
+
+#: src/Blocks/CartDrawer/index.js:35
+msgid "CartPops Cart Drawer"
+msgstr "CartPops 장바구니 드로어"
+
+#: src/Blocks/CartDrawer/index.js:44
+msgid "The cart drawer will appear on the frontend when triggered."
+msgstr "동작이 실행되면 프론트엔드에 장바구니 드로어가 표시됩니다."
+
+#: src/Blocks/CartLauncher/index.js:21
+msgid "Launcher Settings"
+msgstr "런처 설정"
+
+#: src/Pro/Admin/assets/js/components/AnalyticsChart.jsx:21
+#: src/Pro/Admin/assets/js/components/DashboardInsights.jsx:76
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:122
+msgid "Drawer Opens"
+msgstr "드로어 열림"
+
+#: src/Pro/Admin/assets/js/components/AnalyticsChart.jsx:26
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:128
+msgid "Add to Carts"
+msgstr "장바구니 담기"
+
+#: src/Pro/Admin/assets/js/components/AnalyticsChart.jsx:31
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:500
+msgid "Checkouts"
+msgstr "결제 진행"
+
+#: src/Pro/Admin/assets/js/components/AnalyticsChart.jsx:36
+#: src/Pro/Admin/assets/js/components/DashboardInsights.jsx:81
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:140
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:506
+msgid "Conversions"
+msgstr "전환"
+
+#: src/Pro/Admin/assets/js/components/AnalyticsChart.jsx:41
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:283
+msgid "CartPops Revenue"
+msgstr "CartPops 수익"
+
+#: src/Pro/Admin/assets/js/components/AnalyticsChart.jsx:114
+msgid "No data available for this period."
+msgstr "이 기간 동안의 데이터가 없습니다."
+
+#: src/Pro/Admin/assets/js/components/AnalyticsResetActions.jsx:22
+msgid "Analytics data has been reset. New data will be collected from now on."
+msgstr "분석 데이터가 초기화되었습니다. 지금부터 새로운 데이터가 수집됩니다."
+
+#: src/Pro/Admin/assets/js/components/AnalyticsResetActions.jsx:30
+msgid "Failed to reset analytics data."
+msgstr "분석 데이터를 초기화하지 못했습니다."
+
+#: src/Pro/Admin/assets/js/components/AnalyticsResetActions.jsx:45
+msgid "Reset analytics data"
+msgstr "분석 데이터 초기화"
+
+#: src/Pro/Admin/assets/js/components/AnalyticsResetActions.jsx:50
+msgid ""
+"Are you sure? This will permanently delete all analytics events, "
+"conversions, and revenue tracking."
+msgstr "정말 진행하시겠습니까? 모든 분석 이벤트, 전환 및 수익 추적 데이터가 영구적으로 삭제됩니다."
+
+#: src/Pro/Admin/assets/js/components/AnalyticsResetActions.jsx:61
+msgid "Yes, reset analytics"
+msgstr "예, 분석 데이터 초기화"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:61
+msgid "Contains Product"
+msgstr "상품 포함"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:67
+msgid "Contains Category"
+msgstr "카테고리 포함"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:81
+msgid "Customer"
+msgstr "고객"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:82
+msgid "Subscriber"
+msgstr "구독자"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:83
+msgid "Shop Manager"
+msgstr "쇼핑몰 관리자"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:84
+msgid "Administrator"
+msgstr "관리자"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:85
+msgid "Guest"
+msgstr "비회원"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:135
+#. translators: %d is a product category ID.
+#, js-format
+msgid "Category #%d"
+msgstr "카테고리 #%d"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:465
+msgid "Search categories"
+msgstr "카테고리 검색"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:467
+msgid "Search for a category…"
+msgstr "카테고리 검색…"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:476
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:783
+msgid "Searching…"
+msgstr "검색 중…"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:493
+#. translators: %d is the number of products in a category.
+#, js-format
+msgid "%d product"
+msgid_plural "%d products"
+msgstr[0] "상품 %d개"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:512
+msgid "No categories found"
+msgstr "카테고리를 찾을 수 없습니다"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:618
+msgid "Remove condition"
+msgstr "조건 제거"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:694
+msgid "Show conditionally"
+msgstr "조건부 표시"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:695
+msgid "Only show when specific conditions are met."
+msgstr "특정 조건이 충족될 때만 표시합니다."
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:709
+msgid "Match:"
+msgstr "일치 조건:"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:719
+msgid "All (AND)"
+msgstr "모두 일치 (AND)"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:728
+msgid "Any (OR)"
+msgstr "하나라도 일치 (OR)"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:753
+msgid "+ Add Condition"
+msgstr "+ 조건 추가"
+
+#: src/Pro/Admin/assets/js/components/ConversionFunnel.jsx:19
+msgid "Conversion Funnel"
+msgstr "전환 퍼널"
+
+#: src/Pro/Admin/assets/js/components/ConversionFunnel.jsx:59
+#. translators: %s is a percentage relative to the previous funnel step.
+#, js-format
+msgid "%s%% from previous"
+msgstr "이전 대비 %s%%"
+
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:49
+msgid "Add button presentation"
+msgstr "추가 버튼 표시 방식"
+
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:50
+msgid ""
+"Choose whether directly purchasable recommendations use an icon, text, or "
+"both."
+msgstr "바로 구매 가능한 추천 상품에 아이콘, 텍스트 또는 둘 다 사용할지 선택하세요."
+
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:59
+msgid "Text and icon"
+msgstr "텍스트 및 아이콘"
+
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:70
+msgid "Add button text"
+msgstr "추가 버튼 텍스트"
+
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:80
+msgid ""
+"Shown on simple products that can be added directly. Products with options "
+"keep their Select options link."
+msgstr "바로 추가할 수 있는 단순 상품에 표시됩니다. 옵션 상품은 '옵션 선택' 링크가 유지됩니다."
+
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:111
+#. translators: 1: recommendation button text, 2: product name.
+#, js-format
+msgid "%1$s: %2$s"
+msgstr "%1$s: %2$s"
+
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:167
+msgid "Custom products"
+msgstr "사용자 지정 상품"
+
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:171
+msgid ""
+"Select up to four products. Their selection order is used in the cart "
+"drawer."
+msgstr "최대 4개의 상품을 선택하세요. 선택한 순서대로 장바구니 서랍에 표시됩니다."
+
+#: src/Pro/Admin/assets/js/components/DashboardInsights.jsx:54
+msgid "Could not load analytics data."
+msgstr "분석 데이터를 불러올 수 없습니다."
+
+#: src/Pro/Admin/assets/js/components/DashboardInsights.jsx:61
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:825
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:251
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:224
+msgid "Retry"
+msgstr "재시도"
+
+#: src/Pro/Admin/assets/js/components/DashboardInsights.jsx:69
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:232
+msgid "Loading analytics…"
+msgstr "분석 데이터 불러오는 중…"
+
+#: src/Pro/Admin/assets/js/components/DashboardInsights.jsx:86
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:146
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:335
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:382
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:411
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:441
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:512
+msgid "Revenue"
+msgstr "매출"
+
+#: src/Pro/Admin/assets/js/components/DashboardInsights.jsx:97
+msgid "Last 7 days"
+msgstr "최근 7일"
+
+#: src/Pro/Admin/assets/js/components/DashboardInsights.jsx:100
+msgid "View analytics"
+msgstr "분석 보기"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:142
+msgid "Action"
+msgstr "액션"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:143
+msgid "Choose an optional customer action below the checkout button."
+msgstr "결제 버튼 아래에 표시할 고객 액션(선택 사항)을 선택하세요."
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:159
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:171
+msgid "Custom URL"
+msgstr "사용자 정의 URL"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:172
+msgid ""
+"Use a root-relative path or a complete HTTP(S) URL. Invalid URL and text "
+"pairs fall back to View cart."
+msgstr "루트 상대 경로 또는 완전한 HTTP(S) URL을 사용하세요. 유효하지 않은 URL 및 텍스트 쌍은 '장바구니 보기'로 대체됩니다."
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:191
+msgid "Custom text"
+msgstr "사용자 정의 텍스트"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:192
+msgid "Plain text only, up to 80 characters."
+msgstr "일반 텍스트만 입력 가능하며 최대 80자까지 지원됩니다."
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:405
+msgid "Your message here"
+msgstr "여기에 메시지 입력"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:491
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:205
+msgid "Conditional"
+msgstr "조건부"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:598
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:388
+msgid "You have qualified for free shipping!"
+msgstr "무료 배송 혜택을 받으실 수 있습니다!"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:601
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:373
+msgid "Add {{amount}} more for free shipping"
+msgstr "{{amount}} 더 추가하면 무료 배송!"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:911
+msgid "In Progress"
+msgstr "진행 중"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:922
+msgid "Qualified"
+msgstr "달성 완료"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:936
+msgid "Shipping meter preview progress"
+msgstr "배송 게이지 미리보기 진행 상태"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:1051
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:172
+msgid "Shipping protection"
+msgstr "배송 안심 서비스"
+
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:118
+#. translators: %d: Product ID.
+#, js-format
+msgid "Product #%d"
+msgstr "상품 #%d"
+
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:764
+msgid "Products"
+msgstr "상품 목록"
+
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:765
+msgid "Product"
+msgstr "상품"
+
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:773
+msgid "Search for a product…"
+msgstr "상품 검색…"
+
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:818
+msgid "Product search failed."
+msgstr "상품 검색에 실패했습니다."
+
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:836
+msgid "No products found"
+msgstr "상품을 찾을 수 없습니다"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:13
+msgid "Today"
+msgstr "오늘"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:14
+msgid "7 days"
+msgstr "7일"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:15
+msgid "30 days"
+msgstr "30일"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:16
+msgid "90 days"
+msgstr "90일"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:134
+msgid "Checkout Starts"
+msgstr "결제 시작"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:204
+msgid "Track drawer engagement, conversions, and revenue."
+msgstr "드로어 참여도, 전환 및 매출을 추적합니다."
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:241
+msgid "Could not load analytics data. Please try again."
+msgstr "분석 데이터를 불러올 수 없습니다. 다시 시도해 주세요."
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:292
+#. translators: %s is a percentage of total revenue.
+#, js-format
+msgid "%s%% of total revenue via CartPops features"
+msgstr "CartPops 기능을 통한 총매출의 %s%%"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:298
+msgid "Revenue generated by CartPops features"
+msgstr "CartPops 기능으로 발생한 매출"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:312
+msgid "SmartBar"
+msgstr "SmartBar"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:315
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:358
+msgid "Impressions"
+msgstr "노출수"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:326
+msgid "Spotlight Adds"
+msgstr "스포트라이트 추가"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:342
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:392
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:451
+msgid "Order Rate"
+msgstr "주문율"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:371
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:430
+msgid "Products Added"
+msgstr "추가된 상품수"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:405
+msgid "Toggles"
+msgstr "토글수"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:422
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:488
+msgid "Opens"
+msgstr "열기수"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:477
+msgid "Daily Breakdown"
+msgstr "일별 내역"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:485
+msgid "Date"
+msgstr "날짜"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:494
+msgid "Cart+"
+msgstr "Cart+"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:569
+msgid "No daily data available."
+msgstr "이용 가능한 일별 데이터가 없습니다."
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:585
+msgid "Conversion Rate"
+msgstr "전환율"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:593
+msgid "Recommendation Clicks"
+msgstr "추천 클릭수"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:604
+msgid "Coupons Applied"
+msgstr "적용된 쿠폰수"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:101
+msgid "The trigger product cannot also be a companion."
+msgstr "트리거 상품은 함께 구매하는 상품으로 지정할 수 없습니다."
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:128
+msgid "The selected trigger was removed from the companion products."
+msgstr "선택한 트리거 상품이 함께 구매하는 상품에서 제거되었습니다."
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:174
+msgid "New Bundle"
+msgstr "새 번들"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:181
+#. translators: %d is the number of companion products in a bundle.
+#, js-format
+msgid "%d companion"
+msgid_plural "%d companions"
+msgstr[0] "함께 구매하는 상품 %d개"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:214
+msgid "Could not load product details."
+msgstr "상품 상세 정보를 불러올 수 없습니다."
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:231
+msgid "Trigger Product"
+msgstr "트리거 상품"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:237
+msgid "When this product is in the cart, the upsell flyout becomes available."
+msgstr "이 상품이 장바구니에 담기면 업셀 플라이아웃이 표시됩니다."
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:260
+msgid "Companion Products"
+msgstr "함께 구매하는 상품"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:266
+msgid "Products shown in the flyout when the trigger product is in the cart."
+msgstr "트리거 상품이 장바구니에 담겼을 때 플라이아웃에 표시되는 상품입니다."
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:320
+msgid "Remove companion"
+msgstr "함께 구매하는 상품 제거"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:346
+msgid "Add a companion product"
+msgstr "함께 구매하는 상품 추가"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:356
+msgid "Bundle Discount"
+msgstr "번들 할인"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:362
+msgid "Optional discount applied to all companion products when added as a bundle."
+msgstr "번들로 추가할 때 모든 함께 구매하는 상품에 적용되는 선택 사항 할인입니다."
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:403
+msgid "Remove Bundle"
+msgstr "번들 제거"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:446
+msgid ""
+"Configure \"frequently bought together\" bundles with optional discounts. "
+"When a trigger product is in the cart, customers can add companion products "
+"with a single tap."
+msgstr ""
+"할인 혜택을 제공할 수 있는 \\\"자주 함께 구매하는 상품\\\" 번들을 구성하세요. 트리거 상품이 장바구니에 담기면 고객이 한 번의 "
+"탭으로 함께 구매하는 상품을 추가할 수 있습니다."
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:455
+msgid "Enable Bundle Builder"
+msgstr "번들 빌더 활성화"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:456
+msgid "Show upsell triggers on product cards in the cart drawer."
+msgstr "장바구니 서랍의 상품 카드에 업셀 트리거를 표시합니다."
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:467
+msgid "Flyout Heading"
+msgstr "플라이아웃 제목"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:481
+msgid "Trigger Banner Colors"
+msgstr "트리거 배너 색상"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:484
+msgid "Customize the appearance of the upsell trigger banner on cart items."
+msgstr "장바구니 항목의 업셀 트리거 배너 모양을 맞춤설정합니다."
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:534
+msgid "Upsell Bundles"
+msgstr "업셀 번들"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:542
+msgid "No bundles configured yet. Add your first bundle below."
+msgstr "아직 구성된 번들이 없습니다. 아래에서 첫 번째 번들을 추가하세요."
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:566
+msgid "+ Add Upsell Bundle"
+msgstr "+ 업셀 번들 추가"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:22
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:302
+msgid "Cart Expiry Timer"
+msgstr "장바구니 만료 타이머"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:23
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:354
+msgid "Custom Message"
+msgstr "사용자 정의 메시지"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:24
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:416
+msgid "Product Spotlight"
+msgstr "상품 스포트라이트"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:28
+msgid "Info"
+msgstr "정보"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:29
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:20
+msgid "Gift"
+msgstr "선물"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:30
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:23
+msgid "Truck"
+msgstr "트럭"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:31
+msgid "Tag"
+msgstr "태그"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:32
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:21
+msgid "Star"
+msgstr "별"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:37
+msgid "Clock"
+msgstr "시계"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:42
+msgid "Clear Cart"
+msgstr "장바구니 비우기"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:43
+msgid "Redirect to Shop"
+msgstr "상점으로 리디렉션"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:108
+#. translators: %d is a Smart Bar rule's one-based position.
+#, js-format
+msgid "Rule %d"
+msgstr "규칙 %d"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:114
+#. translators: 1: merchant-entered rule label, 2: one-based rule position.
+#, js-format
+msgid "%1$s, rule %2$d"
+msgstr "%1$s, 규칙 %2$d"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:122
+#. translators: %s is the accessible Smart Bar rule name.
+#, js-format
+msgid "Collapse %s"
+msgstr "%s 접기"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:127
+#. translators: %s is the accessible Smart Bar rule name.
+#, js-format
+msgid "Expand %s"
+msgstr "%s 펼치기"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:132
+#. translators: %s is the accessible Smart Bar rule name.
+#, js-format
+msgid "Move %s up"
+msgstr "%s 위로 이동"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:137
+#. translators: %s is the accessible Smart Bar rule name.
+#, js-format
+msgid "Move %s down"
+msgstr "%s 아래로 이동"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:206
+msgid "Always"
+msgstr "항상"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:210
+msgid "Blocks rules below"
+msgstr "아래 규칙 차단"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:262
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:672
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:130
+msgid "Enable"
+msgstr "활성화"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:268
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:170
+msgid "Label"
+msgstr "레이블"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:269
+msgid "Admin label to identify this rule."
+msgstr "이 규칙을 식별하기 위한 관리자 레이블입니다."
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:282
+msgid "Mode"
+msgstr "모드"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:289
+msgid "Dismissible"
+msgstr "닫기 가능"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:290
+msgid "Allow customers to close this bar."
+msgstr "고객이 이 바를 닫을 수 있도록 허용합니다."
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:305
+msgid "Duration (minutes)"
+msgstr "지속 시간(분)"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:315
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:357
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:439
+msgid "Message"
+msgstr "메시지"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:316
+msgid "Use {{timer}} as a placeholder for the countdown."
+msgstr "카운트다운 플레이스홀더로 {{timer}}을(를) 사용하세요."
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:336
+msgid "Action on Expiry"
+msgstr "만료 시 동작"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:337
+msgid "What happens when the timer reaches zero."
+msgstr "타이머가 0이 되었을 때 수행할 동작입니다."
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:359
+msgid "Free shipping this weekend!"
+msgstr "이번 주말 무료 배송!"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:377
+msgid "Link Text"
+msgstr "링크 텍스트"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:379
+msgid "Shop now"
+msgstr "지금 쇼핑하기"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:386
+msgid "Link URL"
+msgstr "링크 URL"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:396
+msgid "Show when cart is empty"
+msgstr "장바구니가 비어 있을 때 표시"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:400
+msgid "Also display this message when the cart has no items."
+msgstr "장바구니에 상품이 없을 때도 이 메시지를 표시합니다."
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:425
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:63
+msgid "Discount %"
+msgstr "할인율(%)"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:426
+msgid "Percentage discount applied when the customer adds this product."
+msgstr "고객이 이 상품을 추가할 때 적용되는 할인율입니다."
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:440
+msgid "Use {{product}} and {{discount}} as placeholders."
+msgstr "플레이스홀더로 {{product}} 및 {{discount}}을(를) 사용하세요."
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:457
+msgid "Display Conditions"
+msgstr "표시 조건"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:473
+msgid "Use custom colors"
+msgstr "사용자 정의 색상 사용"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:474
+msgid "Override the shared smart bar colors for this rule."
+msgstr "이 규칙에 공유 스마트 바 색상을 재정의합니다."
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:526
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:762
+msgid "Accent"
+msgstr "강조 색상"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:586
+msgid "Remove Rule"
+msgstr "규칙 제거"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:659
+msgid ""
+"Create smart bar rules for your cart drawer. Rules are evaluated "
+"top-to-bottom — the first enabled match is shown."
+msgstr "장바구니 드로어의 스마트 바 규칙을 만듭니다. 규칙은 위에서 아래로 평가되며 활성화된 첫 번째 일치 항목이 표시됩니다."
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:673
+msgid "Show a smart bar at the top of the cart drawer."
+msgstr "장바구니 드로어 상단에 스마트 바를 표시합니다."
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:712
+msgid "+ Add Smart Bar Rule"
+msgstr "+ 스마트 바 규칙 추가"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:719
+msgid "Default Colors"
+msgstr "기본 색상"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:722
+msgid "Shared colors used by all smart bar rules unless overridden per-rule."
+msgstr "규칙별로 재정의하지 않는 한 모든 스마트 바 규칙에 적용되는 공통 색상입니다."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:43
+msgid "Percentage Discount"
+msgstr "정률 할인"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:46
+msgid "Fixed Discount"
+msgstr "정액 할인"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:65
+msgid "Discount Amount"
+msgstr "할인 금액"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:67
+msgid "Value"
+msgstr "값"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:114
+msgid "Tier"
+msgstr "단계"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:136
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:336
+msgid "Threshold"
+msgstr "기준 금액"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:137
+msgid "Cart subtotal required to unlock this reward."
+msgstr "이 혜택을 잠금 해제하는 데 필요한 장바구니 소계입니다."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:149
+msgid "Reward Type"
+msgstr "혜택 유형"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:162
+msgid "Free Gift Product"
+msgstr "사은품 상품"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:163
+msgid ""
+"Search simple products by name. To select a specific variation, enter its "
+"exact variation ID."
+msgstr "이름으로 단순 상품을 검색하세요. 특정 옵션을 선택하려면 정확한 옵션 ID를 입력하세요."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:200
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:352
+msgid "Show Celebration"
+msgstr "축하 효과 표시"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:201
+msgid "Display confetti animation when this tier is reached."
+msgstr "이 단계에 도달하면 컨페티 애니메이션을 표시합니다."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:212
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:367
+msgid "Progress Message"
+msgstr "진행 메시지"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:213
+msgid "Use {{amount}} and {{reward}} as placeholders."
+msgstr "플레이스홀더로 {{amount}} 및 {{reward}}을(를) 사용하세요."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:224
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:386
+msgid "Qualified Message"
+msgstr "조건 달성 메시지"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:225
+msgid "Use {{reward}} as a placeholder."
+msgstr "플레이스홀더로 {{reward}}을(를) 사용하세요."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:241
+msgid "Remove Tier"
+msgstr "단계 제거"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:285
+msgid "Enable Shipping Meter"
+msgstr "배송 게이지 활성화"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:286
+msgid "Display a progress bar toward reward thresholds."
+msgstr "달성 기준까지의 진행률 표시줄을 표시합니다."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:300
+msgid "Reward Tiers"
+msgstr "보상 단계"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:316
+msgid "Tier 1"
+msgstr "1단계"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:325
+msgid "auto"
+msgstr "자동"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:337
+msgid ""
+"Free shipping threshold. Set to 0 to auto-detect from WooCommerce shipping "
+"zones."
+msgstr "무료 배송 기준 금액입니다. WooCommerce 배송 지역에서 자동으로 감지하려면 0으로 설정하세요."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:353
+msgid "Display confetti animation when free shipping is reached."
+msgstr "무료 배송 조건에 도달하면 컨페티 애니메이션을 표시합니다."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:368
+msgid "Use {{amount}} as a placeholder for the remaining amount."
+msgstr "남은 금액의 자리표시자로 {{amount}}을(를) 사용하세요."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:428
+msgid "+ Add Tier"
+msgstr "+ 티어 추가"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:440
+msgid "Show in drawer"
+msgstr "드로어에 표시"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:448
+msgid "Enable shipping calculator"
+msgstr "배송비 계산기 활성화"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:449
+msgid ""
+"Let customers calculate shipping and choose an available rate from the cart "
+"drawer."
+msgstr "고객이 카트 드로어에서 배송비를 계산하고 이용 가능한 배송 요금을 선택할 수 있도록 허용합니다."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:460
+msgid "Show icon"
+msgstr "아이콘 표시"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:461
+msgid "Display truck/checkmark icon before the message."
+msgstr "메시지 앞에 트럭/체크 표시 아이콘을 표시합니다."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:473
+msgid "Show truck indicator"
+msgstr "트럭 표시기 표시"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:474
+msgid ""
+"Display the moving truck on the progress bar. Hidden when reward tiers are "
+"active."
+msgstr "진행 표시줄에 움직이는 트럭을 표시합니다. 리워드 티어가 활성화된 경우 숨겨집니다."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:489
+msgid "Progress Colors"
+msgstr "진행률 색상"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:494
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:626
+msgid "Bar Start"
+msgstr "바 시작"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:504
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:639
+msgid "Bar End"
+msgstr "바 끝"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:534
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:678
+msgid "Icon Background"
+msgstr "아이콘 배경"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:559
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:706
+msgid "Truck Background"
+msgstr "트럭 배경"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:572
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:719
+msgid "Truck Icon"
+msgstr "트럭 아이콘"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:589
+msgid "Tier Reached"
+msgstr "티어 달성"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:602
+msgid "Tier Icon"
+msgstr "티어 아이콘"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:621
+msgid "Qualified Colors"
+msgstr "달성 시 색상"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:19
+msgid "Shield (Protection)"
+msgstr "방패 (보호)"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:22
+msgid "Heart"
+msgstr "하트"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:24
+msgid "Sparkles"
+msgstr "반짝임"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:77
+msgid "Use whole currency units."
+msgstr "정수 단위의 통화를 사용하세요."
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:80
+#. translators: %d: store currency decimal places.
+#, js-format
+msgid "Use no more than %d decimal place."
+msgid_plural "Use no more than %d decimal places."
+msgstr[0] "소수점 이하 %d자리 이하로 입력하세요."
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:90
+#. translators: %s: smallest charge in the store currency.
+#, js-format
+msgid "Enter a positive charge of at least %s."
+msgstr "최소 %s 이상의 양수 금액을 입력하세요."
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:95
+msgid "This draft will not be saved until corrected."
+msgstr "수정될 때까지 이 임시저장본은 저장되지 않습니다."
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:141
+msgid "Configure add-on options that customers can toggle in the cart drawer."
+msgstr "고객이 카트 드로어에서 켜고 끌 수 있는 추가 옵션을 설정합니다."
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:151
+msgid "Shipping Protection"
+msgstr "배송 보호"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:155
+msgid "Enable Shipping Protection"
+msgstr "배송 보호 활성화"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:156
+msgid "Allow customers to add shipping protection to their order."
+msgstr "고객이 주문에 배송 보호를 추가할 수 있도록 허용합니다."
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:182
+msgid "Description"
+msgstr "설명"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:184
+msgid "Protect your order from damage or loss"
+msgstr "파손이나 분실로부터 주문을 보호하세요"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:197
+msgid "Price"
+msgstr "가격"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:208
+msgid "Show Icon"
+msgstr "아이콘 표시"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:209
+msgid "Display an icon next to the add-on in the cart drawer."
+msgstr "카트 드로어의 추가 옵션 옆에 아이콘을 표시합니다."
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:235
+msgid "Default State"
+msgstr "기본 상태"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:236
+msgid "Whether the add-on is toggled on or off by default for new visitors."
+msgstr "신규 방문자에게 추가 옵션이 기본적으로 켜져 있는지 또는 꺼져 있는지 여부입니다."
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:243
+msgid "Off (customer opts in)"
+msgstr "꺼짐 (고객이 직접 선택)"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:247
+msgid "On (customer opts out)"
+msgstr "켜짐 (고객이 직접 해제)"
+
+#: src/Pro/Blocks/ShippingMeter/index.js:19
+msgid "CartPops Shipping & Rewards Meter"
+msgstr "CartPops 배송 및 리워드 미터"
+
+#: src/Pro/Blocks/ShippingMeter/index.js:22
+msgid ""
+"Frontend appearance, icons, truck, tiers, and celebration use your CartPops "
+"Pro Shipping Meter settings."
+msgstr "프런트엔드 모양, 아이콘, 트럭, 티어 및 축하 효과에는 CartPops Pro Shipping Meter 설정이 사용됩니다."
+
+#: src/Blocks/CartDrawer/block.json
+msgctxt "block title"
+msgid "CartPops Cart Drawer"
+msgstr "CartPops 장바구니 드로어"
+
+#: src/Blocks/CartLauncher/block.json
+msgctxt "block title"
+msgid "CartPops Cart Launcher"
+msgstr "CartPops 장바구니 런처"
+
+#: src/Pro/Blocks/ShippingMeter/block.json
+msgctxt "block title"
+msgid "CartPops Shipping & Rewards Meter"
+msgstr "CartPops 배송 및 리워드 미터"
+
+#: src/Blocks/CartDrawer/block.json
+msgctxt "block description"
+msgid "A beautiful slide-out cart drawer for WooCommerce."
+msgstr "WooCommerce용 아름다운 슬라이드 아웃 장바구니 드로어입니다."
+
+#: src/Blocks/CartLauncher/block.json
+msgctxt "block description"
+msgid "A floating cart button that opens the CartPops drawer."
+msgstr "CartPops 드로어를 여는 플로팅 장바구니 버튼입니다."
+
+#: src/Pro/Blocks/ShippingMeter/block.json
+msgctxt "block description"
+msgid "Visual progress bar showing how close the customer is to free shipping."
+msgstr "고객이 무료 배송까지 얼마나 남았는지 보여주는 시각적 진행 표시줄입니다."

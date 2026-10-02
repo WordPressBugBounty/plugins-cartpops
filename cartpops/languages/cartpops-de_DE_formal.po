@@ -1,0 +1,3573 @@
+# Copyright (C) 2026 CartPops
+# This file is distributed under the GPL v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: CartPops 2.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/cartpops/\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-02T11:55:32+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: cartpops\n"
+"Language: de_DE_formal\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: cartpops.php
+#: src/Admin/AdminPage.php:36
+#: src/Admin/AdminPage.php:37
+#: src/Blocks/CartDrawer/render.php:856
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:518
+#. Plugin Name of the plugin
+#. Author of the plugin
+msgid "CartPops"
+msgstr "CartPops"
+
+#: cartpops.php
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://cartpops.com"
+msgstr "https://cartpops.com"
+
+#: cartpops.php
+#. Description of the plugin
+msgid ""
+"The #1 WooCommerce cart drawer plugin. Boost conversions with a beautiful "
+"slide-out cart, product recommendations, and free shipping meter."
+msgstr ""
+"Das führende WooCommerce-Warenkorb-Drawer-Plugin. Steigern Sie Conversions "
+"mit einem ansprechenden Slide-out-Warenkorb, Produktempfehlungen und einer "
+"Fortschrittsanzeige für kostenlosen Versand."
+
+#: cartpops.php:56
+msgid ""
+"CartPops detected both the Free and Pro editions as active. CartPops was "
+"paused; deactivate one edition and reload this page."
+msgstr ""
+"CartPops hat festgestellt, dass sowohl die Free- als auch die Pro-Edition "
+"aktiv sind. CartPops wurde pausiert; deaktivieren Sie eine der Editionen "
+"und laden Sie diese Seite neu."
+
+#: cartpops.php:148
+msgid ""
+"CartPops could not safely verify upgrade state. CartPops was paused before "
+"licensing initialization; reload this page or contact support."
+msgstr ""
+"CartPops konnte den Upgrade-Status nicht sicher überprüfen. CartPops wurde "
+"vor der Lizenzierungsinitialisierung pausiert; laden Sie diese Seite neu "
+"oder kontaktieren Sie den Support."
+
+#: cartpops.php:406
+msgid ""
+"CartPops licensing could not initialize. Shared cart features remain "
+"available, but paid features are paused. Reinstall the complete CartPops "
+"package or contact support."
+msgstr ""
+"Die CartPops-Lizenzierung konnte nicht initialisiert werden. Gemeinsame "
+"Warenkorbfunktionen bleiben verfügbar, aber kostenpflichtige Funktionen "
+"wurden pausiert. Installieren Sie das vollständige CartPops-Paket neu oder "
+"kontaktieren Sie den Support."
+
+#: src/Admin/SettingsController.php:118
+msgid "No settings provided."
+msgstr "Keine Einstellungen angegeben."
+
+#: src/Admin/SettingsController.php:129
+msgid "No valid settings provided."
+msgstr "Keine gültigen Einstellungen angegeben."
+
+#: src/Admin/SettingsController.php:215
+msgid "Invalid import data. Expected \"settings\" key with object value."
+msgstr ""
+"Ungültige Importdaten. Der Schlüssel „settings“ mit einem Objektwert wurde "
+"erwartet."
+
+#: src/Admin/SettingsController.php:249
+msgid "Settings imported successfully."
+msgstr "Einstellungen erfolgreich importiert."
+
+#: src/Admin/SettingsController.php:270
+msgid "Settings could not be saved. Please try again."
+msgstr ""
+"Einstellungen konnten nicht gespeichert werden. Bitte versuchen Sie es "
+"erneut."
+
+#: src/Admin/SettingsController.php:283
+msgid "Settings contain an invalid nested value."
+msgstr "Die Einstellungen enthalten einen ungültigen verschachtelten Wert."
+
+#: src/Admin/SettingsController.php:473
+msgid ""
+"Custom product recommendations require an active CartPops Pro entitlement "
+"for this site."
+msgstr ""
+"Benutzerdefinierte Produktempfehlungen erfordern eine aktive CartPops "
+"Pro-Berechtigung für diese Website."
+
+#: src/Admin/SettingsController.php:484
+msgid ""
+"Recommendation button text and presentation require an active CartPops Pro "
+"entitlement for this site."
+msgstr ""
+"Text und Darstellung der Empfehlungs-Schaltfläche erfordern eine aktive "
+"CartPops Pro-Berechtigung für diese Website."
+
+#: src/Admin/SettingsController.php:495
+msgid ""
+"Secondary drawer actions require an active CartPops Pro entitlement for "
+"this site."
+msgstr ""
+"Sekundäre Drawer-Aktionen erfordern eine aktive CartPops Pro-Berechtigung "
+"für diese Website."
+
+#: src/Admin/SettingsController.php:514
+msgid "You are not allowed to change custom CSS."
+msgstr "Sie sind nicht berechtigt, individuelles CSS zu ändern."
+
+#: src/Analytics/AnalyticsDashboard.php:23
+#: src/Analytics/AnalyticsDashboard.php:24
+msgid "CartPops Analytics"
+msgstr "CartPops Analytics"
+
+#: src/Analytics/ConversionTracker.php:544
+#: src/Analytics/ConversionTracker.php:562
+msgid "Event payload too large."
+msgstr "Event-Nutzdaten sind zu groß."
+
+#: src/Analytics/ConversionTracker.php:1100
+msgid "You are not allowed to reset analytics data."
+msgstr "Sie sind nicht berechtigt, Analytics-Daten zurückzusetzen."
+
+#: src/Blocks/CartDrawer/render.php:33
+#: src/Admin/assets/js/components/DrawerPreview.jsx:145
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:304
+msgid "Your Cart"
+msgstr "Ihr Warenkorb"
+
+#: src/Blocks/CartDrawer/render.php:36
+#: src/Blocks/CartDrawer/render.php:694
+#: src/Admin/assets/js/components/DrawerPreview.jsx:150
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:340
+msgid "Coupon code"
+msgstr "Gutscheincode"
+
+#: src/Blocks/CartDrawer/render.php:37
+#: src/Admin/assets/js/components/DrawerPreview.jsx:154
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:353
+msgid "Apply"
+msgstr "Anwenden"
+
+#: src/Blocks/CartDrawer/render.php:38
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:831
+#: src/Admin/assets/js/components/DrawerPreview.jsx:158
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:369
+msgid "Subtotal"
+msgstr "Zwischensumme"
+
+#: src/Blocks/CartDrawer/render.php:39
+#: src/Admin/assets/js/components/DrawerPreview.jsx:341
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:379
+msgid "Discount"
+msgstr "Rabatt"
+
+#: src/Blocks/CartDrawer/render.php:40
+#: src/Admin/assets/js/components/DrawerPreview.jsx:160
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:389
+msgid "Total"
+msgstr "Gesamtsumme"
+
+#: src/Blocks/CartDrawer/render.php:41
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:304
+#: src/Admin/assets/js/components/DrawerPreview.jsx:168
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:419
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:106
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:151
+msgid "Continue shopping"
+msgstr "Weiter einkaufen"
+
+#: src/Blocks/CartDrawer/render.php:42
+#: src/Admin/assets/js/components/DrawerPreview.jsx:163
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:399
+msgid "Your cart is empty"
+msgstr "Ihr Warenkorb ist leer"
+
+#: src/Blocks/CartDrawer/render.php:249
+#: src/Blocks/CartDrawer/render.php:277
+#: src/Blocks/CartLauncher/render.php:65
+#: src/Blocks/CartLauncher/render.php:190
+#: src/Admin/assets/js/components/LauncherPreview.jsx:357
+msgid "Open cart"
+msgstr "Warenkorb öffnen"
+
+#: src/Blocks/CartDrawer/render.php:252
+#: src/Blocks/CartDrawer/render.php:562
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:160
+msgid "You may also like"
+msgstr "Das könnte Ihnen auch gefallen"
+
+#: src/Blocks/CartDrawer/render.php:278
+#: src/Blocks/CartDrawer/render.php:403
+#: src/Blocks/CartLauncher/render.php:77
+msgid "Close cart"
+msgstr "Warenkorb schließen"
+
+#: src/Blocks/CartDrawer/render.php:279
+#: src/Blocks/CartDrawer/render.php:587
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:611
+#: src/Recommendations/RecommendationEngine.php:240
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:230
+msgid "Add to cart"
+msgstr "In den Warenkorb"
+
+#: src/Blocks/CartDrawer/render.php:281
+#: src/Recommendations/RecommendationEngine.php:220
+#: src/Admin/assets/js/components/DrawerPreview.jsx:924
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:117
+#. translators: %s: product name.
+#, php-format,js-format
+msgid "Add %s to cart"
+msgstr "%s in den Warenkorb legen"
+
+#: src/Blocks/CartDrawer/render.php:282
+#: src/Blocks/CartDrawer/render.php:600
+#: src/Recommendations/RecommendationEngine.php:239
+msgid "Select options"
+msgstr "Ausführung wählen"
+
+#: src/Blocks/CartDrawer/render.php:284
+#: src/Recommendations/RecommendationEngine.php:217
+#. translators: %s: product name.
+#, php-format
+msgid "Select options for %s"
+msgstr "Ausführung für %s wählen"
+
+#: src/Blocks/CartDrawer/render.php:286
+#. translators: %s: cart item name.
+#, php-format
+msgid "\"%s\" removed."
+msgstr "„%s“ entfernt."
+
+#: src/Blocks/CartDrawer/render.php:288
+#. translators: %s: cart item name.
+#, php-format
+msgid "%s removed from cart."
+msgstr "%s aus dem Warenkorb entfernt."
+
+#: src/Blocks/CartDrawer/render.php:289
+msgid "Item"
+msgstr "Artikel"
+
+#: src/Blocks/CartDrawer/render.php:291
+#. translators: %s: cart item name.
+#, php-format
+msgid "%s restored to cart."
+msgstr "%s wieder in den Warenkorb gelegt."
+
+#: src/Blocks/CartDrawer/render.php:293
+#. translators: %s: coupon code.
+#, php-format
+msgid "Coupon \"%s\" applied."
+msgstr "Gutschein „%s“ angewendet."
+
+#: src/Blocks/CartDrawer/render.php:295
+#. translators: %s: coupon code.
+#, php-format
+msgid "Coupon \"%s\" removed."
+msgstr "Gutschein „%s“ entfernt."
+
+#: src/Blocks/CartDrawer/render.php:297
+#. translators: %s: product name.
+#, php-format
+msgid "%s added to cart."
+msgstr "%s wurde dem Warenkorb hinzugefügt."
+
+#: src/Blocks/CartDrawer/render.php:298
+msgid "Your cart has expired."
+msgstr "Ihr Warenkorb ist abgelaufen."
+
+#: src/Blocks/CartDrawer/render.php:299
+#: src/Pro/Blocks/ShippingMeter/ShippingMeterBlock.php:954
+msgid "Request failed"
+msgstr "Anfrage fehlgeschlagen"
+
+#: src/Blocks/CartDrawer/render.php:300
+msgid "Your cart is refreshing. Please wait."
+msgstr "Ihr Warenkorb wird aktualisiert. Bitte warten Sie."
+
+#: src/Blocks/CartDrawer/render.php:301
+msgid "Failed to fetch recommendations"
+msgstr "Empfehlungen konnten nicht abgerufen werden"
+
+#: src/Blocks/CartDrawer/render.php:303
+#. translators: 1: tax amount, 2: tax label (e.g. VAT).
+#, php-format
+msgid "Incl. %1$s %2$s"
+msgstr "Inkl. %1$s %2$s"
+
+#: src/Blocks/CartDrawer/render.php:333
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:73
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:17
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:24
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:32
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:72
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:457
+msgid "Add"
+msgstr "Hinzufügen"
+
+#: src/Blocks/CartDrawer/render.php:386
+msgid "Shopping cart"
+msgstr "Warenkorb"
+
+#: src/Blocks/CartDrawer/render.php:472
+msgid "Decrease quantity:"
+msgstr "Menge verringern:"
+
+#: src/Blocks/CartDrawer/render.php:485
+msgid "Increase quantity:"
+msgstr "Menge erhöhen:"
+
+#: src/Blocks/CartDrawer/render.php:501
+msgid "Remove item:"
+msgstr "Artikel entfernen:"
+
+#: src/Blocks/CartDrawer/render.php:550
+msgid "Undo"
+msgstr "Rückgängig machen"
+
+#: src/Blocks/CartDrawer/render.php:608
+msgid "Previous"
+msgstr "Zurück"
+
+#: src/Blocks/CartDrawer/render.php:615
+msgid "Next"
+msgstr "Weiter"
+
+#: src/Blocks/CartDrawer/render.php:643
+#: src/Blocks/CartDrawer/render.php:770
+#: src/Admin/assets/js/components/DrawerPreview.jsx:356
+msgid "Shipping"
+msgstr "Versand"
+
+#: src/Blocks/CartDrawer/render.php:731
+msgid "Remove coupon:"
+msgstr "Gutschein entfernen:"
+
+#: src/Blocks/CartDrawer/render.php:811
+#: src/Admin/assets/js/components/DrawerPreview.jsx:1107
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:288
+msgid "Proceed to Checkout"
+msgstr "Weiter zur Kasse"
+
+#: src/Blocks/CartDrawer/render.php:848
+#: src/Admin/assets/js/components/DrawerPreview.jsx:1123
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:228
+msgid "View Cart"
+msgstr "Warenkorb anzeigen"
+
+#: src/Blocks/CartDrawer/render.php:854
+msgid "Powered by"
+msgstr "Bereitgestellt von"
+
+#: src/Blocks/CartDrawer/render.php:857
+msgid "(opens in a new tab)"
+msgstr "(öffnet in neuem Tab)"
+
+#: src/Cart/CartLineAuthority.php:404
+msgid "Available on backorder"
+msgstr "Auf Nachbestellung verfügbar"
+
+#: src/Cart/CouponSerializer.php:52
+#: src/Pro/ShippingMeter/RewardApplicator.php:262
+msgid "Cart Reward"
+msgstr "Warenkorb-Belohnung"
+
+#: src/Licensing/GuardedDrawerDataProvider.php:192
+#: src/REST/DrawerDataController.php:149
+msgid "Drawer data is temporarily unavailable."
+msgstr "Drawer-Daten sind vorübergehend nicht verfügbar."
+
+#: src/Licensing/PaidRuntimeGuard.php:159
+msgid "This CartPops feature requires an active Pro entitlement for this site."
+msgstr ""
+"Diese CartPops-Funktion erfordert eine aktive Pro-Berechtigung für diese "
+"Website."
+
+#: src/Licensing/PaidRuntimeGuard.php:166
+msgid "This CartPops feature is temporarily unavailable while its data is prepared."
+msgstr ""
+"Diese CartPops-Funktion ist vorübergehend nicht verfügbar, während ihre "
+"Daten vorbereitet werden."
+
+#: src/Plugin.php:849
+#. translators: %s: value-free CartPops diagnostic code.
+#, php-format
+msgid ""
+"CartPops is paused because its required upgrade or build validation did not "
+"complete. Original data was preserved. Diagnostic: %s."
+msgstr ""
+"CartPops wurde angehalten, da das erforderliche Upgrade oder die "
+"Build-Validierung nicht abgeschlossen werden konnte. Die ursprünglichen "
+"Daten wurden beibehalten. Diagnose: %s."
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:119
+#. translators: %s: add-on name.
+#, php-format
+msgid "%s added."
+msgstr "%s hinzugefügt."
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:121
+#. translators: %s: add-on name.
+#, php-format
+msgid "%s removed."
+msgstr "%s entfernt."
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:122
+msgid "Toggle failed"
+msgstr "Umschalten fehlgeschlagen"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:123
+msgid "Failed to add spotlight product"
+msgstr "Spotlight-Produkt konnte nicht hinzugefügt werden"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:124
+msgid "Adding…"
+msgstr "Wird hinzugefügt…"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:125
+msgid "Added ✓"
+msgstr "Hinzugefügt ✓"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:127
+msgid "bundle discount"
+msgstr "Bundle-Rabatt"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:128
+msgid "Failed to add bundle items"
+msgstr "Bundle-Artikel konnten nicht hinzugefügt werden"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:129
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:668
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:756
+msgid "Calculate shipping"
+msgstr "Versandkosten berechnen"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:130
+msgid "Loading shipping options…"
+msgstr "Versandoptionen werden geladen…"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:131
+msgid "Shipping options updated."
+msgstr "Versandoptionen aktualisiert."
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:132
+msgid "Shipping method updated."
+msgstr "Versandart aktualisiert."
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:133
+msgid "Shipping options could not be updated. Please try again."
+msgstr ""
+"Versandoptionen konnten nicht aktualisiert werden. Bitte versuchen Sie es "
+"erneut."
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:134
+msgid "No shipping options are available for this address."
+msgstr "Für diese Adresse sind keine Versandoptionen verfügbar."
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:135
+msgid "Enter your destination to calculate shipping."
+msgstr "Geben Sie Ihren Zielort ein, um die Versandkosten zu berechnen."
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:136
+msgid "Shipping options"
+msgstr "Versandoptionen"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:315
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:122
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:155
+msgid "View cart"
+msgstr "Warenkorb anzeigen"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:493
+msgid "Dismiss"
+msgstr "Verwerfen"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:516
+#: src/Pro/Blocks/ShippingMeter/ShippingMeterBlock.php:1090
+msgid "Shipping and rewards progress"
+msgstr "Versand- und Prämienfortschritt"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:523
+#: src/Pro/Blocks/ShippingMeter/ShippingMeterBlock.php:1099
+msgid "Reward tiers"
+msgstr "Prämienstufen"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:584
+#: src/Pro/BundleBuilder/BundleBuilder.php:56
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:469
+msgid "Frequently bought together"
+msgstr "Wird oft zusammen gekauft"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:590
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:616
+msgid "Close"
+msgstr "Schließen"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:601
+msgid "Product info"
+msgstr "Produktinfo"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:605
+msgid "Choose…"
+msgstr "Auswählen …"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:615
+msgid "Product information"
+msgstr "Produktinformationen"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:619
+msgid "Got it"
+msgstr "Verstanden"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:685
+msgid "Country / Region"
+msgstr "Land / Region"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:695
+msgid "Select a country / region…"
+msgstr "Land / Region auswählen …"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:703
+msgid "State / County"
+msgstr "Bundesland / Landkreis"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:720
+msgid "Select a state / region…"
+msgstr "Bundesland / Region auswählen …"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:746
+msgid "City"
+msgstr "Stadt"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:751
+msgid "Postcode / ZIP"
+msgstr "Postleitzahl"
+
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:815
+msgid "Toggle add-on:"
+msgstr "Zusatzoption umschalten:"
+
+#: src/Pro/BundleBuilder/BundleBuilderController.php:143
+#: src/Pro/Notifications/DrawerNotificationBarController.php:360
+#: src/Pro/SmartAddons/SmartAddonsController.php:96
+#: src/Recommendations/RecommendationsController.php:94
+#: src/REST/CartStateController.php:120
+#: src/REST/CartStateController.php:199
+#: src/REST/CouponController.php:104
+#: src/REST/CouponController.php:152
+msgid "Cart is unavailable. Please try again."
+msgstr "Der Warenkorb ist nicht verfügbar. Bitte versuchen Sie es erneut."
+
+#: src/Pro/BundleBuilder/BundleBuilderController.php:314
+#: src/Pro/Notifications/DrawerNotificationBarController.php:442
+#: src/Pro/REST/ProDrawerDataSupplementProvider.php:80
+#: src/Pro/SmartAddons/SmartAddonsController.php:129
+#: src/Recommendations/RecommendationsController.php:148
+#: src/REST/CartStateController.php:330
+#: src/REST/CouponController.php:231
+msgid ""
+"The final cart state could not be confirmed. Refresh your cart before "
+"making another change."
+msgstr ""
+"Der endgültige Status des Warenkorbs konnte nicht bestätigt werden. "
+"Aktualisieren Sie Ihren Warenkorb, bevor Sie weitere Änderungen vornehmen."
+
+#: src/Pro/BundleBuilder/BundleBuilderController.php:322
+#: src/Pro/Notifications/DrawerNotificationBarController.php:450
+#: src/Pro/REST/ProDrawerDataSupplementProvider.php:86
+#: src/Pro/SmartAddons/SmartAddonsController.php:137
+#: src/Recommendations/RecommendationsController.php:156
+#: src/REST/CartStateController.php:319
+#: src/REST/CouponController.php:220
+msgid "Your cart is being updated. Please try again."
+msgstr "Ihr Warenkorb wird aktualisiert. Bitte versuchen Sie es erneut."
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:573
+msgid "CartPops Cart"
+msgstr "CartPops-Warenkorb"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:775
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:888
+msgid "Menu Icon"
+msgstr "Menü-Icon"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:781
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1063
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:56
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:328
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:369
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:514
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:752
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:223
+msgid "Icon"
+msgstr "Icon"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:784
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:785
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:786
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:787
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:788
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:15
+msgid "Cart"
+msgstr "Warenkorb"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:789
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:790
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:791
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:792
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:793
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:794
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:795
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:796
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:35
+msgid "Bag"
+msgstr "Tasche"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:805
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1121
+msgid "Items Indicator"
+msgstr "Artikel-Indikator"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:808
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:120
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:435
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:295
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:117
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:149
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:33
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:38
+msgid "None"
+msgstr "Keine"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:809
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:299
+msgid "Bubble"
+msgstr "Blase"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:810
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:303
+msgid "Plain"
+msgstr "Schlicht"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:819
+msgid "Hide Empty"
+msgstr "Wenn leer ausblenden"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:821
+msgid "Yes"
+msgstr "Ja"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:822
+msgid "No"
+msgstr "Nein"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:833
+msgid "Show"
+msgstr "Anzeigen"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:834
+msgid "Hide"
+msgstr "Ausblenden"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:843
+msgid "Alignment"
+msgstr "Ausrichtung"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:847
+#: src/Admin/assets/js/pages/Dashboard.jsx:159
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:44
+msgid "Left"
+msgstr "Links"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:851
+msgid "Center"
+msgstr "Zentriert"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:855
+#: src/Admin/assets/js/pages/Dashboard.jsx:160
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:43
+msgid "Right"
+msgstr "Rechts"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:896
+msgid "Normal"
+msgstr "Normal"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:902
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:956
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1130
+msgid "Text Color"
+msgstr "Textfarbe"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:914
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:967
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:338
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:17
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:547
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:691
+msgid "Icon Color"
+msgstr "Icon-Farbe"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:926
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:978
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1142
+msgid "Background Color"
+msgstr "Hintergrundfarbe"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:938
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:989
+msgid "Border Color"
+msgstr "Rahmenfarbe"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:950
+msgid "Hover"
+msgstr "Hover"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1002
+msgid "Border Width"
+msgstr "Rahmenbreite"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1020
+#: src/Admin/assets/js/pages/DesignSettings.jsx:316
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:519
+msgid "Border Radius"
+msgstr "Eckenradius"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1071
+msgid "Size"
+msgstr "Größe"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1089
+msgid "Spacing"
+msgstr "Abstand"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1108
+msgid "Padding"
+msgstr "Innenabstand"
+
+#: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:1154
+msgid "Distance"
+msgstr "Distanz"
+
+#: src/Pro/Notifications/DrawerNotificationBar.php:368
+msgid "Offer quantity: 1"
+msgstr "Angebotsmenge: 1"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:275
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:27
+msgid "≥ is at least"
+msgstr "≥ ist mindestens"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:279
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:28
+msgid "≤ is at most"
+msgstr "≤ ist höchstens"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:283
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:29
+msgid "> is more than"
+msgstr "> ist mehr als"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:287
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:30
+msgid "< is less than"
+msgstr "< ist weniger als"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:291
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:31
+msgid "= equals"
+msgstr "= ist gleich"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:298
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:35
+msgid "Contains any of"
+msgstr "Enthält mindestens eines von"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:302
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:36
+msgid "Contains all of"
+msgstr "Enthält alle von"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:306
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:37
+msgid "Contains none of"
+msgstr "Enthält keines von"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:313
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:41
+msgid "Is any of"
+msgstr "Ist eines von"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:317
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:42
+msgid "Is none of"
+msgstr "Ist keines von"
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:382
+msgid "Invalid spotlight configuration."
+msgstr "Ungültige Spotlight-Konfiguration."
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:393
+msgid "Spotlight product already in cart."
+msgstr "Spotlight-Produkt befindet sich bereits im Warenkorb."
+
+#: src/Pro/Notifications/DrawerNotificationBarController.php:458
+#: src/Pro/Notifications/DrawerNotificationBarController.php:466
+#: src/Recommendations/RecommendationsController.php:164
+msgid "Could not add product to cart."
+msgstr "Produkt konnte nicht zum Warenkorb hinzugefügt werden."
+
+#: src/Pro/REST/ProDrawerDataSupplementProvider.php:92
+#: src/REST/CartStateController.php:217
+msgid "The cart could not be refreshed. Please try again."
+msgstr ""
+"Der Warenkorb konnte nicht aktualisiert werden. Bitte versuchen Sie es "
+"erneut."
+
+#: src/Pro/Rules/Conditions/CartContainsCategoryCondition.php:66
+msgid "Cart Contains Category"
+msgstr "Warenkorb enthält Kategorie"
+
+#: src/Pro/Rules/Conditions/CartContainsProductCondition.php:62
+msgid "Cart Contains Product"
+msgstr "Warenkorb enthält Produkt"
+
+#: src/Pro/Rules/Conditions/CartItemCountCondition.php:56
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:55
+msgid "Cart Item Count"
+msgstr "Warenkorb-Artikelanzahl"
+
+#: src/Pro/Rules/Conditions/CartTotalCondition.php:56
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:49
+msgid "Cart Total"
+msgstr "Warenkorbsumme"
+
+#: src/Pro/Rules/Conditions/UserRoleCondition.php:63
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:73
+msgid "User Role"
+msgstr "Benutzerrolle"
+
+#: src/Pro/Rules/RuleEngine.php:59
+msgid "CartPops Rules"
+msgstr "CartPops-Regeln"
+
+#: src/Pro/Rules/RuleEngine.php:60
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:274
+msgid "Rule"
+msgstr "Regel"
+
+#: src/Pro/ShippingMeter/RewardApplicator.php:401
+msgid "Gift quantity: 1"
+msgstr "Geschenkmenge: 1"
+
+#: src/Pro/ShippingMeter/ShippingMeter.php:408
+msgid "reached"
+msgstr "erreicht"
+
+#: src/Pro/ShippingMeter/ShippingMeter.php:408
+msgid "not reached"
+msgstr "nicht erreicht"
+
+#: src/Pro/ShippingMeter/ShippingMeter.php:555
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:544
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:318
+msgid "Free Shipping"
+msgstr "Kostenloser Versand"
+
+#: src/Pro/ShippingMeter/ShippingMeter.php:556
+#: src/Pro/ShippingMeter/ShippingMeter.php:557
+#: src/Admin/assets/js/pages/Dashboard.jsx:213
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:549
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:556
+msgid "Off"
+msgstr "Aus"
+
+#: src/Pro/ShippingMeter/ShippingMeter.php:749
+#: src/Pro/ShippingMeter/ShippingMeter.php:753
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:558
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:47
+msgid "Free Gift"
+msgstr "Gratisgeschenk"
+
+#: src/Pro/SmartAddons/SmartAddonFeeBatchException.php:20
+msgid "CartPops could not restore cart fees safely."
+msgstr "CartPops konnte die Warenkorb-Gebühren nicht sicher wiederherstellen."
+
+#: src/Pro/SmartAddons/SmartAddons.php:883
+msgid "CartPops add-on"
+msgstr "CartPops-Add-on"
+
+#: src/Pro/SmartAddons/SmartAddonsController.php:145
+msgid "This cart add-on is unavailable."
+msgstr "Dieses Warenkorb-Add-on ist nicht verfügbar."
+
+#: src/Pro/SmartAddons/SmartAddonsController.php:153
+#: src/Recommendations/RecommendationsController.php:180
+#: src/REST/CartStateController.php:178
+#: src/REST/CouponController.php:242
+msgid "The cart could not be updated. Please try again."
+msgstr ""
+"Der Warenkorb konnte nicht aktualisiert werden. Bitte versuchen Sie es "
+"erneut."
+
+#: src/Recommendations/RecommendationsController.php:114
+msgid "This product is not available."
+msgstr "Dieses Produkt ist nicht verfügbar."
+
+#: src/REST/CartStateController.php:131
+msgid "Select one or more valid cart items."
+msgstr "Wählen Sie einen oder mehrere gültige Warenkorbartikel aus."
+
+#: src/REST/CartStateController.php:170
+msgid "One or more cart items could not be removed."
+msgstr "Ein oder mehrere Warenkorbartikel konnten nicht entfernt werden."
+
+#: src/REST/CouponController.php:95
+#: src/REST/CouponController.php:160
+msgid "Cart rewards are managed automatically."
+msgstr "Warenkorb-Belohnungen werden automatisch verwaltet."
+
+#: src/REST/CouponController.php:129
+msgid "Invalid coupon."
+msgstr "Ungültiger Gutschein."
+
+#: src/REST/CouponController.php:196
+msgid "This coupon is managed automatically and could not be removed."
+msgstr ""
+"Dieser Gutschein wird automatisch verwaltet und konnte nicht entfernt "
+"werden."
+
+#: src/REST/CouponController.php:202
+msgid "The coupon could not be removed."
+msgstr "Der Gutschein konnte nicht entfernt werden."
+
+#: src/REST/NamespaceRateLimitMiddleware.php:92
+msgid "Too many requests. Please wait and try again."
+msgstr "Zu viele Anfragen. Bitte warten Sie und versuchen Sie es erneut."
+
+#: src/REST/NamespaceRateLimitMiddleware.php:93
+msgid "Request limiting is temporarily unavailable. Please try again."
+msgstr ""
+"Die Anfragebegrenzung ist vorübergehend nicht verfügbar. Bitte versuchen "
+"Sie es erneut."
+
+#: src/REST/PublicEndpointGuard.php:45
+#: src/REST/PublicEndpointGuard.php:63
+msgid "Your cart session could not be verified. Please refresh and try again."
+msgstr ""
+"Ihre Warenkorb-Sitzung konnte nicht überprüft werden. Bitte laden Sie die "
+"Seite neu und versuchen Sie es erneut."
+
+#: src/REST/PublicEndpointGuard.php:52
+#: src/REST/WooSessionBootstrap.php:534
+msgid "Your cart session is unavailable. Please refresh and try again."
+msgstr ""
+"Ihre Warenkorb-Sitzung ist nicht verfügbar. Bitte laden Sie die Seite neu "
+"und versuchen Sie es erneut."
+
+#: src/REST/PublicEndpointGuard.php:78
+#: src/REST/PublicEndpointGuard.php:88
+msgid "Cookie check failed. Please refresh and try again."
+msgstr ""
+"Cookie-Überprüfung fehlgeschlagen. Bitte laden Sie die Seite neu und "
+"versuchen Sie es erneut."
+
+#: src/REST/RestCors.php:141
+msgid "REST method overrides are not supported."
+msgstr "REST-Methodenüberschreibungen werden nicht unterstützt."
+
+#: src/REST/RestCors.php:144
+msgid "JSONP is not supported for the CartPops API."
+msgstr "JSONP wird für die CartPops-API nicht unterstützt."
+
+#: src/REST/RestCors.php:151
+#: src/REST/RestCors.php:163
+msgid "The request body is too large."
+msgstr "Der Anfrage-Body ist zu groß."
+
+#: src/REST/RestCors.php:159
+#: src/REST/RestCors.php:801
+msgid "No CartPops REST policy permits this request."
+msgstr "Keine CartPops-REST-Richtlinie erlaubt diese Anfrage."
+
+#: src/REST/RestCors.php:337
+#: src/REST/RestPreDispatchFinalizer.php:102
+msgid "The REST request was rejected."
+msgstr "Die REST-Anfrage wurde abgelehnt."
+
+#: src/REST/RestCors.php:667
+#: src/REST/RestCors.php:674
+msgid "This origin is not allowed to access the CartPops API."
+msgstr "Dieser Ursprung darf nicht auf die CartPops-API zugreifen."
+
+#: src/REST/RestCors.php:677
+msgid "The request origin does not match its referrer."
+msgstr "Der Ursprung der Anfrage stimmt nicht mit dem Referrer überein."
+
+#: src/Setup/Upgrader.php:1717
+#. translators: %1$d: WordPress multisite blog ID.
+#, php-format
+msgid ""
+"CartPops network migration paused at site %1$d and will retry it without "
+"skipping later sites. Original settings were preserved."
+msgstr ""
+"Die CartPops-Netzwerkmigration wurde bei Website %1$d angehalten und wird "
+"wiederholt, ohne spätere Websites zu überspringen. Die ursprünglichen "
+"Einstellungen wurden beibehalten."
+
+#: src/Setup/Upgrader.php:1728
+msgid ""
+"CartPops could not complete its legacy settings migration. The original "
+"settings were preserved; review the migration status before retrying."
+msgstr ""
+"CartPops konnte die Migration der alten Einstellungen nicht abschließen. "
+"Die ursprünglichen Einstellungen wurden beibehalten; überprüfen Sie den "
+"Migrationsstatus, bevor Sie es erneut versuchen."
+
+#: src/Setup/Upgrader.php:1736
+msgid ""
+"CartPops preserved legacy automation rule data for recovery, but those "
+"rules are retired and do not run in V2."
+msgstr ""
+"CartPops hat alte Automatisierungsregeldaten für die Wiederherstellung "
+"beibehalten, aber diese Regeln wurden eingestellt und werden in V2 nicht "
+"ausgeführt."
+
+#: src/Setup/Upgrader.php:1742
+msgid ""
+"CartPops migration requires compatibility review before it can finish. "
+"Original settings remain available for recovery; resolve the reported "
+"migration warnings, then retry the migration."
+msgstr ""
+"Die CartPops-Migration erfordert eine Kompatibilitätsprüfung, bevor sie "
+"abgeschlossen werden kann. Die ursprünglichen Einstellungen bleiben für "
+"eine Wiederherstellung verfügbar; beheben Sie die gemeldeten "
+"Migrationswarnungen und wiederholen Sie die Migration anschließend."
+
+#: src/Setup/Upgrader.php:1752
+msgid ""
+"CartPops migrated legacy settings with compatibility warnings. Original "
+"settings remain available for recovery."
+msgstr ""
+"CartPops hat alte Einstellungen mit Kompatibilitätswarnungen migriert. Die "
+"ursprünglichen Einstellungen bleiben für eine Wiederherstellung verfügbar."
+
+#: src/StoreAPI/CartExtension.php:178
+msgid "Exact WooCommerce cart item key."
+msgstr "Exakter WooCommerce-Warenkorbartikel-Schlüssel."
+
+#: src/StoreAPI/CartExtension.php:186
+msgid "Parent product ID (same as id for simple products)."
+msgstr "Übergeordnete Produkt-ID (identisch mit der ID bei einfachen Produkten)."
+
+#: src/StoreAPI/CartExtension.php:203
+msgid "CartPops drawer configuration."
+msgstr "CartPops-Drawer-Konfiguration."
+
+#: src/StoreAPI/CartExtension.php:208
+msgid "Cart launcher configuration."
+msgstr "Warenkorb-Launcher-Konfiguration."
+
+#: src/StoreAPI/CartExtension.php:221
+msgid "Safe CartPops coupon presentation and removal authority."
+msgstr "Sichere CartPops-Gutscheindarstellung und Entfernungsberechtigung."
+
+#: src/StoreAPI/CartExtension.php:279
+msgid "Bounded PHP-filtered cart item presentation."
+msgstr "Begrenzte, PHP-gefilterte Darstellung von Warenkorbartikeln."
+
+#: src/StoreAPI/CartExtension.php:289
+msgid "Exact cart item keys with an edition-owned locked presentation."
+msgstr ""
+"Exakte Warenkorbartikel-Schlüssel mit einer editionsgebunden gesperrten "
+"Darstellung."
+
+#: src/StoreAPI/CartExtension.php:313
+msgid "Whether WooCommerce permits this line to be shown in a mini-cart."
+msgstr ""
+"Gibt an, ob WooCommerce die Anzeige dieser Position im Mini-Warenkorb "
+"erlaubt."
+
+#: src/StoreAPI/CartExtension.php:318
+msgid "Whether CartPops may offer quantity mutation for this line."
+msgstr "Gibt an, ob CartPops eine Mengenänderung für diese Position anbieten darf."
+
+#: src/StoreAPI/CartExtension.php:323
+msgid "Whether CartPops may offer removal for this line."
+msgstr "Gibt an, ob CartPops das Entfernen für diese Position anbieten darf."
+
+#: src/StoreAPI/CartExtension.php:328
+msgid ""
+"WooCommerce quantity minimum, transport maximum, step, and "
+"unlimited-product state."
+msgstr ""
+"WooCommerce-Mindestmenge, Transportmaximum, Schrittweite und Status für "
+"unbegrenzte Produkte."
+
+#: src/StoreAPI/CartExtension.php:339
+msgid "Bounded plain-text WooCommerce backorder notice."
+msgstr "Begrenzter Nur-Text-Hinweis für WooCommerce-Lieferrückstände."
+
+#: src/Admin/assets/js/App.jsx:169
+msgid "Setup"
+msgstr "Einrichtung"
+
+#: src/Admin/assets/js/App.jsx:171
+#: src/Admin/assets/js/pages/Dashboard.jsx:119
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: src/Admin/assets/js/App.jsx:172
+msgid "Drawer"
+msgstr "Drawer"
+
+#: src/Admin/assets/js/App.jsx:173
+msgid "Launcher"
+msgstr "Launcher"
+
+#: src/Admin/assets/js/App.jsx:177
+#: src/Admin/assets/js/pages/Dashboard.jsx:185
+msgid "Features"
+msgstr "Funktionen"
+
+#: src/Admin/assets/js/App.jsx:181
+#: src/Admin/assets/js/pages/Dashboard.jsx:88
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:352
+msgid "Recommendations"
+msgstr "Empfehlungen"
+
+#: src/Admin/assets/js/App.jsx:186
+msgid "Smart add-ons"
+msgstr "Smarte Add-ons"
+
+#: src/Admin/assets/js/App.jsx:191
+#: src/Admin/assets/js/pages/Dashboard.jsx:104
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:657
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:669
+msgid "Smart Bar"
+msgstr "Smart Bar"
+
+#: src/Admin/assets/js/App.jsx:196
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:419
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:444
+msgid "Bundle Builder"
+msgstr "Bundle Builder"
+
+#: src/Admin/assets/js/App.jsx:202
+msgid "Insights"
+msgstr "Einblicke"
+
+#: src/Admin/assets/js/App.jsx:206
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:202
+msgid "Analytics"
+msgstr "Analysen"
+
+#: src/Admin/assets/js/App.jsx:212
+msgid "System"
+msgstr "System"
+
+#: src/Admin/assets/js/App.jsx:213
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:429
+msgid "Advanced"
+msgstr "Erweitert"
+
+#: src/Admin/assets/js/App.jsx:520
+msgid "Settings saved!"
+msgstr "Einstellungen gespeichert!"
+
+#: src/Admin/assets/js/App.jsx:526
+msgid "Failed to save."
+msgstr "Speichern fehlgeschlagen."
+
+#: src/Admin/assets/js/App.jsx:560
+msgid "Settings reset to defaults."
+msgstr "Einstellungen auf Standardwerte zurückgesetzt."
+
+#: src/Admin/assets/js/App.jsx:571
+msgid "Settings could not be reset. Please try again."
+msgstr ""
+"Einstellungen konnten nicht zurückgesetzt werden. Bitte versuchen Sie es "
+"erneut."
+
+#: src/Admin/assets/js/App.jsx:732
+msgid "Unsaved changes"
+msgstr "Ungespeicherte Änderungen"
+
+#: src/Admin/assets/js/App.jsx:741
+msgid "Saving…"
+msgstr "Wird gespeichert …"
+
+#: src/Admin/assets/js/App.jsx:742
+msgid "Save Changes"
+msgstr "Änderungen speichern"
+
+#: src/Admin/assets/js/components/ColorPicker.jsx:111
+msgid "CSS color value"
+msgstr "CSS-Farbwert"
+
+#: src/Admin/assets/js/components/ColorPicker.jsx:112
+msgid "Hex color value"
+msgstr "Hex-Farbwert"
+
+#: src/Admin/assets/js/components/DrawerPreview.jsx:359
+msgid "Free"
+msgstr "Kostenlos"
+
+#: src/Admin/assets/js/components/DrawerPreview.jsx:377
+msgid "Tax"
+msgstr "Steuer"
+
+#: src/Admin/assets/js/components/DrawerPreview.jsx:399
+#: src/Admin/assets/js/components/LauncherPreview.jsx:136
+msgid "Desktop"
+msgstr "Desktop"
+
+#: src/Admin/assets/js/components/DrawerPreview.jsx:421
+#: src/Admin/assets/js/components/LauncherPreview.jsx:158
+msgid "Mobile"
+msgstr "Mobil"
+
+#: src/Admin/assets/js/components/DrawerPreview.jsx:448
+#: src/Admin/assets/js/components/LauncherPreview.jsx:185
+msgid "Items"
+msgstr "Artikel"
+
+#: src/Admin/assets/js/components/DrawerPreview.jsx:459
+#: src/Admin/assets/js/components/LauncherPreview.jsx:194
+msgid "Empty"
+msgstr "Leer"
+
+#: src/Admin/assets/js/components/DrawerPreview.jsx:469
+#: src/Admin/assets/js/components/LauncherPreview.jsx:204
+msgid "Toggle dark mode preview"
+msgstr "Dunkelmodus-Vorschau umschalten"
+
+#: src/Admin/assets/js/components/DrawerPreview.jsx:828
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:453
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:720
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:748
+msgid "Remove"
+msgstr "Entfernen"
+
+#: src/Admin/assets/js/components/LauncherPreview.jsx:262
+msgid "Store menu"
+msgstr "Shop-Menü"
+
+#: src/Admin/assets/js/components/LauncherPreview.jsx:267
+msgid "Inline navigation cart launcher preview"
+msgstr "Vorschau des Inline-Navigations-Warenkorb-Launchers"
+
+#: src/Admin/assets/js/components/LauncherPreview.jsx:448
+msgid "Launcher hidden by current settings"
+msgstr "Launcher durch aktuelle Einstellungen ausgeblendet"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:365
+msgid "Hide launcher on pages"
+msgstr "Launcher auf Seiten ausblenden"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:368
+msgid ""
+"Select pages where the floating cart launcher should not appear. Existing "
+"exclusions stay selected until you remove them."
+msgstr ""
+"Wählen Sie Seiten aus, auf denen der schwebende Warenkorb-Launcher nicht "
+"angezeigt werden soll. Bestehende Ausschlüsse bleiben ausgewählt, bis Sie "
+"sie entfernen."
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:377
+msgid "Pages with the launcher hidden"
+msgstr "Seiten mit ausgeblendetem Launcher"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:388
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:491
+#. translators: %d: WordPress page ID.
+#, js-format
+msgid "Page #%d (untitled)"
+msgstr "Seite #%d (ohne Titel)"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:393
+#. translators: %d: WordPress page ID.
+#, js-format
+msgid "Page #%d (unavailable)"
+msgstr "Seite #%d (nicht verfügbar)"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:406
+#. translators: %s: Page title.
+#, js-format
+msgid "Remove %s from hidden pages"
+msgstr "%s aus ausgeblendeten Seiten entfernen"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:424
+msgid ""
+"Some selected page names could not be loaded. Their exclusions are still "
+"preserved."
+msgstr ""
+"Einige ausgewählte Seitennamen konnten nicht geladen werden. Ihre "
+"Ausschlüsse bleiben weiterhin erhalten."
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:436
+msgid "Retry page names"
+msgstr "Seitennamen erneut abrufen"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:442
+msgid "Search pages"
+msgstr "Seiten durchsuchen"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:443
+msgid "Type at least two characters, then choose a page below."
+msgstr ""
+"Geben Sie mindestens zwei Zeichen ein und wählen Sie dann unten eine Seite "
+"aus."
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:456
+msgid "The maximum number of page exclusions has been selected."
+msgstr "Die maximale Anzahl an Seitenausschlüssen wurde ausgewählt."
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:463
+msgid "Searching pages…"
+msgstr "Seiten werden gesucht …"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:467
+msgid "Pages could not be loaded. Try searching again."
+msgstr "Seiten konnten nicht geladen werden. Versuchen Sie die Suche erneut."
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:477
+msgid "No matching pages found."
+msgstr "Keine passenden Seiten gefunden."
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:484
+msgid "Matching pages"
+msgstr "Passende Seiten"
+
+#: src/Admin/assets/js/components/PageExclusionsControl.jsx:504
+#. translators: %d: WordPress page ID.
+#, js-format
+msgid "Page ID: %d"
+msgstr "Seiten-ID: %d"
+
+#: src/Admin/assets/js/components/UpgradePage.jsx:25
+#. translators: %s: paid feature name.
+#, js-format
+msgid "%s is available in CartPops Pro"
+msgstr "%s ist in CartPops Pro verfügbar"
+
+#: src/Admin/assets/js/components/UpgradePage.jsx:30
+msgid ""
+"Upgrade to configure this feature. Your existing CartPops settings remain "
+"unchanged."
+msgstr ""
+"Führen Sie ein Upgrade durch, um diese Funktion zu konfigurieren. Ihre "
+"bestehenden CartPops-Einstellungen bleiben unverändert."
+
+#: src/Admin/assets/js/components/UpgradePage.jsx:40
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:88
+msgid "Upgrade to CartPops Pro"
+msgstr "Upgrade auf CartPops Pro"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:18
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:210
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:44
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:281
+msgid "General"
+msgstr "Allgemein"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:19
+msgid "Integrations"
+msgstr "Integrationen"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:28
+msgid "Powered by CartPops"
+msgstr "Powered by CartPops"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:32
+msgid "Show the CartPops partner link"
+msgstr "CartPops-Partnerlink anzeigen"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:33
+msgid ""
+"Opt in to show a CartPops referral link in the drawer footer. The link "
+"remains hidden until a valid partner code is saved."
+msgstr ""
+"Aktivieren Sie diese Option, um einen CartPops-Empfehlungslink in der "
+"Fußzeile des Drawers anzuzeigen. Der Link bleibt ausgeblendet, bis ein "
+"gültiger Partnercode gespeichert wird."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:45
+msgid "Partner code"
+msgstr "Partnercode"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:46
+msgid ""
+"Enter a positive base-10 integer of up to 20 digits. A valid code is "
+"required for the link to display."
+msgstr ""
+"Geben Sie eine positive Ganzzahl mit bis zu 20 Ziffern ein. Ein gültiger "
+"Code ist erforderlich, damit der Link angezeigt wird."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:71
+msgid "Refresh cart data on page load"
+msgstr "Warenkorbdaten beim Laden der Seite aktualisieren"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:72
+msgid ""
+"Requests fresh cart data on every page load. Use only when cached pages "
+"show stale cart contents."
+msgstr ""
+"Fragt bei jedem Seitenaufruf aktuelle Warenkorbdaten ab. Nur verwenden, "
+"wenn gecachte Seiten veraltete Warenkorbinhalte anzeigen."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:139
+msgid "Export failed."
+msgstr "Export fehlgeschlagen."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:166
+msgid "Settings imported! Reload to see changes."
+msgstr ""
+"Einstellungen importiert! Laden Sie die Seite neu, um die Änderungen zu "
+"sehen."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:191
+msgid "Import failed."
+msgstr "Import fehlgeschlagen."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:197
+msgid "Invalid JSON file."
+msgstr "Ungültige JSON-Datei."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:214
+msgid "Enable CartPops"
+msgstr "CartPops aktivieren"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:215
+msgid "Disable to turn off all CartPops frontend functionality."
+msgstr ""
+"Deaktivieren Sie diese Option, um alle CartPops-Frontend-Funktionen "
+"auszuschalten."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:226
+msgid "Open drawer on"
+msgstr "Drawer öffnen bei"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:234
+msgid "Launcher click only"
+msgstr "Nur bei Klick auf den Launcher"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:251
+msgid "WooCommerce Mini Cart"
+msgstr "WooCommerce-Mini-Warenkorb"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:255
+msgid "Integration mode"
+msgstr "Integrationsmodus"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:256
+msgid "Controls how CartPops interacts with the WooCommerce Mini Cart block."
+msgstr "Steuert, wie CartPops mit dem WooCommerce-Mini-Warenkorb-Block interagiert."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:267
+msgid "Replace — CartPops drawer replaces WC Mini Cart"
+msgstr "Ersetzen – CartPops-Drawer ersetzt den WC-Mini-Warenkorb"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:274
+msgid "Standalone — Both operate independently"
+msgstr "Eigenständig – Beide arbeiten unabhängig voneinander"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:289
+msgid "Custom CSS"
+msgstr "Individuelles CSS"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:293
+msgid "Additional CSS"
+msgstr "Zusätzliches CSS"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:294
+msgid ""
+"Add custom CSS to style the cart drawer. Uses the .cpops- prefix for all "
+"CartPops elements."
+msgstr ""
+"Fügen Sie individuelles CSS hinzu, um den Warenkorb-Drawer anzupassen. "
+"Verwendet das Präfix .cpops- für alle CartPops-Elemente."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:309
+msgid "Performance"
+msgstr "Leistung"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:320
+msgid "Import / Export"
+msgstr "Import / Export"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:324
+msgid ""
+"Export your CartPops settings to a JSON file for backup, or import settings "
+"from another site."
+msgstr ""
+"Exportieren Sie Ihre CartPops-Einstellungen in eine JSON-Datei zur "
+"Sicherung oder importieren Sie Einstellungen von einer anderen Website."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:336
+msgid "Export Settings"
+msgstr "Einstellungen exportieren"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:343
+msgid "Import Settings"
+msgstr "Einstellungen importieren"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:359
+msgid "Reset"
+msgstr "Zurücksetzen"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:371
+msgid "Reset all settings to defaults"
+msgstr "Alle Einstellungen auf Standardwerte zurücksetzen"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:376
+msgid "Are you sure? This will reset all CartPops settings to their default values."
+msgstr ""
+"Sind Sie sicher? Dadurch werden alle CartPops-Einstellungen auf die "
+"Standardwerte zurückgesetzt."
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:396
+msgid "Yes, reset everything"
+msgstr "Ja, alles zurücksetzen"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:404
+#: src/Pro/Admin/assets/js/components/AnalyticsResetActions.jsx:68
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:414
+msgid "Settings update in progress…"
+msgstr "Einstellungen werden aktualisiert …"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:431
+msgid "Fine-tune CartPops behavior, styling, and integrations."
+msgstr ""
+"Passen Sie das Verhalten, das Styling und die Integrationen von CartPops "
+"präzise an."
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:71
+msgid "Cart Drawer"
+msgstr "Warenkorb-Drawer"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:76
+#: src/Admin/assets/js/pages/Dashboard.jsx:170
+msgid "Cart Launcher"
+msgstr "Warenkorb-Launcher"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:81
+msgid "Shipping Meter"
+msgstr "Versandbalken"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:94
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:402
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:139
+msgid "Smart Add-ons"
+msgstr "Smart-Add-ons"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:121
+msgid "Welcome to CartPops. Manage your cart drawer and boost conversions."
+msgstr ""
+"Willkommen bei CartPops. Verwalten Sie Ihren Warenkorb-Drawer und steigern "
+"Sie Ihre Conversions."
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:142
+msgid "Plugin Status"
+msgstr "Plugin-Status"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:145
+msgid "Active"
+msgstr "Aktiv"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:146
+msgid "Inactive"
+msgstr "Inaktiv"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:156
+msgid "Drawer Position"
+msgstr "Drawer-Position"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:173
+msgid "Visible"
+msgstr "Sichtbar"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:174
+msgid "Hidden"
+msgstr "Ausgeblendet"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:212
+msgid "On"
+msgstr "Ein"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:231
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:198
+msgid "Unknown Theme"
+msgstr "Unbekanntes Theme"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:245
+msgid "Resources"
+msgstr "Ressourcen"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:260
+msgid "Documentation"
+msgstr "Dokumentation"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:263
+msgid "Guides and setup instructions"
+msgstr "Anleitungen und Einrichtungsanweisungen"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:282
+msgid "Changelog"
+msgstr "Änderungsprotokoll"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:285
+msgid "Latest updates and releases"
+msgstr "Neueste Updates und Versionen"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:304
+msgid "Support"
+msgstr "Support"
+
+#: src/Admin/assets/js/pages/Dashboard.jsx:307
+msgid "Get help from our team"
+msgstr "Holen Sie sich Hilfe von unserem Team"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:11
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:437
+msgid "Default"
+msgstr "Standard"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:23
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:445
+msgid "Minimal"
+msgstr "Minimal"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:35
+msgid "Bold"
+msgstr "Bold"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:47
+msgid "Ocean"
+msgstr "Ocean"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:61
+msgid "Primary"
+msgstr "Primär"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:62
+msgid "Primary Text"
+msgstr "Primärer Text"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:63
+#: src/Admin/assets/js/pages/DesignSettings.jsx:127
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:491
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:489
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:730
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:514
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:652
+msgid "Background"
+msgstr "Hintergrund"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:64
+#: src/Admin/assets/js/pages/DesignSettings.jsx:132
+msgid "Surface"
+msgstr "Oberfläche"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:65
+#: src/Admin/assets/js/pages/DesignSettings.jsx:137
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:57
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:498
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:502
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:742
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:524
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:665
+msgid "Text"
+msgstr "Text"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:66
+#: src/Admin/assets/js/pages/DesignSettings.jsx:142
+msgid "Text Secondary"
+msgstr "Sekundärer Text"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:67
+msgid "Text Tertiary"
+msgstr "Tertiärer Text"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:68
+#: src/Admin/assets/js/pages/DesignSettings.jsx:147
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:508
+msgid "Border"
+msgstr "Rahmen"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:69
+#: src/Admin/assets/js/pages/DesignSettings.jsx:152
+msgid "Input Background"
+msgstr "Eingabefeld-Hintergrund"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:70
+#: src/Admin/assets/js/pages/DesignSettings.jsx:157
+msgid "Input Border"
+msgstr "Eingabefeld-Rahmen"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:71
+msgid "Input Text"
+msgstr "Eingabefeld-Text"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:72
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:16
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:542
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:772
+msgid "Button Background"
+msgstr "Button-Hintergrund"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:73
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:558
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:784
+msgid "Button Text"
+msgstr "Button-Text"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:76
+msgid "Secondary Button Background"
+msgstr "Sekundärer Button-Hintergrund"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:80
+msgid "Secondary Button Text"
+msgstr "Sekundärer Button-Text"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:84
+msgid "Quantity Button Background"
+msgstr "Mengen-Button-Hintergrund"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:88
+msgid "Quantity Button Text"
+msgstr "Mengen-Button-Text"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:92
+msgid "Quantity Value Background"
+msgstr "Mengenwert-Hintergrund"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:96
+msgid "Quantity Border"
+msgstr "Mengen-Rahmen"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:100
+msgid "Quantity Value Text"
+msgstr "Mengenwert-Text"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:104
+msgid "Recommendations Button"
+msgstr "Empfehlungen-Button"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:108
+msgid "Recommendations Button Icon"
+msgstr "Empfehlungen-Button-Icon"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:112
+msgid "Recommendations Background"
+msgstr "Empfehlungen-Hintergrund"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:116
+msgid "Recommendations Border"
+msgstr "Empfehlungen-Rahmen"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:118
+msgid "Recommendations Text"
+msgstr "Empfehlungen-Text"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:119
+msgid "Sale Price"
+msgstr "Angebotspreis"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:120
+msgid "Success"
+msgstr "Erfolg"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:121
+msgid "Danger"
+msgstr "Gefahr"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:201
+msgid "Presets"
+msgstr "Voreinstellungen"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:235
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:328
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:470
+msgid "Colors"
+msgstr "Farben"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:257
+msgid "Dark mode palette"
+msgstr "Dark-Mode-Palette"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:260
+msgid ""
+"Used for forced dark mode and when system dark mode is active. Primary "
+"branding remains shared with the light palette."
+msgstr ""
+"Wird für den erzwungenen Dark Mode verwendet sowie wenn der "
+"System-Dark-Mode aktiv ist. Primäre Branding-Farben werden mit der hellen "
+"Palette geteilt."
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:289
+msgid "Background Overlay"
+msgstr "Hintergrund-Overlay"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:292
+msgid "Color"
+msgstr "Farbe"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:299
+msgid "Opacity"
+msgstr "Deckkraft"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:313
+msgid "Shape"
+msgstr "Form"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:327
+msgid "Button Border Radius"
+msgstr "Button-Eckenradius"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:338
+msgid "Dark Mode"
+msgstr "Dark Mode"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:342
+msgid "Auto (follow system)"
+msgstr "Automatisch (Systemeinstellung)"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:346
+msgid "Always light"
+msgstr "Immer hell"
+
+#: src/Admin/assets/js/pages/DesignSettings.jsx:350
+msgid "Always dark"
+msgstr "Immer dunkel"
+
+#: src/Admin/assets/js/pages/DrawerEditor.jsx:17
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:142
+msgid "Layout"
+msgstr "Layout"
+
+#: src/Admin/assets/js/pages/DrawerEditor.jsx:18
+msgid "Design"
+msgstr "Design"
+
+#: src/Admin/assets/js/pages/DrawerEditor.jsx:21
+#: src/Admin/assets/js/pages/DrawerEditor.jsx:55
+msgid "Shipping meter"
+msgstr "Versandkosten-Fortschrittsanzeige"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:23
+msgid "Optional. Leave blank to use the translated CartPops default."
+msgstr "Optional. Leer lassen, um den übersetzten CartPops-Standard zu verwenden."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:27
+msgid "Optional. Leave blank to hide this text."
+msgstr "Optional. Leer lassen, um diesen Text auszublenden."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:36
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:141
+msgid "Position & Size"
+msgstr "Position & Größe"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:40
+#: src/Blocks/CartLauncher/index.js:23
+msgid "Position"
+msgstr "Position"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:52
+msgid "Width (Desktop)"
+msgstr "Breite (Desktop)"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:63
+msgid "Width (Mobile %)"
+msgstr "Breite (Mobil %)"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:76
+msgid "Secondary action"
+msgstr "Sekundäre Aktion"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:95
+msgid ""
+"Add a Continue shopping, View cart, or custom customer action below "
+"checkout with CartPops Pro."
+msgstr ""
+"Fügen Sie mit CartPops Pro unter dem Kassenbereich eine Aktion wie „Einkauf "
+"fortsetzen“, „Warenkorb anzeigen“ oder eine individuelle Kundenaktion hinzu."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:102
+msgid "Explore Pro actions"
+msgstr "Pro-Aktionen entdecken"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:111
+msgid "Animation"
+msgstr "Animation"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:115
+msgid "Animation Type"
+msgstr "Animationstyp"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:118
+msgid "Slide"
+msgstr "Einschieben"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:119
+msgid "Fade"
+msgstr "Einblenden"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:128
+msgid "Duration (ms)"
+msgstr "Dauer (ms)"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:141
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:284
+msgid "Behavior"
+msgstr "Verhalten"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:145
+msgid "Show undo after item removal"
+msgstr "„Rückgängig“ nach Entfernen eines Artikels anzeigen"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:153
+msgid "Show coupon code field"
+msgstr "Gutscheincode-Feld anzeigen"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:154
+msgid "Allow customers to apply coupon codes from the cart drawer."
+msgstr ""
+"Kunden das Einlösen von Gutscheincodes direkt im Warenkorb-Drawer "
+"ermöglichen."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:165
+msgid "Product name display"
+msgstr "Anzeige des Produktnamens"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:166
+msgid "Choose how product names wrap inside drawer cart items."
+msgstr ""
+"Wählen Sie, wie Produktnamen bei Artikeln im Warenkorb-Drawer umbrochen "
+"werden."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:175
+msgid "Two lines"
+msgstr "Zwei Zeilen"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:179
+msgid "Single line"
+msgstr "Eine Zeile"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:183
+msgid "Full name"
+msgstr "Vollständiger Name"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:193
+msgid "Totals breakdown"
+msgstr "Aufschlüsselung der Gesamtsumme"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:194
+msgid "Where to show subtotal, discounts, shipping, fees, and tax lines."
+msgstr ""
+"Wo Zwischensumme, Rabatte, Versand, Gebühren und Steuerzeilen angezeigt "
+"werden sollen."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:201
+msgid "In footer (sticky)"
+msgstr "In der Fußzeile (fixiert)"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:205
+msgid "Above checkout (scrollable)"
+msgstr "Über dem Kassenbereich (scrollbar)"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:212
+msgid "Hidden (total only)"
+msgstr "Ausgeblendet (nur Gesamtsumme)"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:222
+msgid "Show subtotal"
+msgstr "Zwischensumme anzeigen"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:223
+msgid "Display the subtotal in the selected totals area."
+msgstr "Die Zwischensumme im ausgewählten Summenbereich anzeigen."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:234
+msgid "Show discounts"
+msgstr "Rabatte anzeigen"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:235
+msgid "Display the discount line when a coupon is applied."
+msgstr "Die Rabattzeile anzeigen, wenn ein Gutschein angewendet wird."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:246
+msgid "Show shipping"
+msgstr "Versand anzeigen"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:247
+msgid "Display the shipping line when shipping is calculated."
+msgstr "Die Versandzeile anzeigen, wenn der Versand berechnet wurde."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:258
+msgid "Show taxes"
+msgstr "Steuern anzeigen"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:259
+msgid "Display the applicable tax line or included-tax note."
+msgstr ""
+"Die entsprechende Steuerzeile oder den Hinweis auf enthaltene Steuern "
+"anzeigen."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:270
+msgid "Show total"
+msgstr "Gesamtsumme anzeigen"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:271
+msgid "Display the grand total above the checkout button."
+msgstr "Die Gesamtsumme über der Kasse-Schaltfläche anzeigen."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:282
+msgid "Checkout Button Text"
+msgstr "Text der Kasse-Schaltfläche"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:283
+msgid "Leave empty to use the default \"Proceed to Checkout\"."
+msgstr "Leer lassen, um die Standardbeschriftung „Weiter zur Kasse“ zu verwenden."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:297
+msgid "Customer messages"
+msgstr "Kundennachrichten"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:301
+msgid "Cart title"
+msgstr "Warenkorb-Titel"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:311
+msgid "Added-to-cart announcement"
+msgstr "Hinweis „Zum Warenkorb hinzugefügt“"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:312
+msgid ""
+"Optional generic announcement. Enter complete plain text without a product "
+"placeholder, or leave blank to disable it."
+msgstr ""
+"Optionale allgemeine Ankündigung. Geben Sie vollständigen reinen Text ohne "
+"Produkt-Platzhalter ein oder lassen Sie das Feld leer, um sie zu "
+"deaktivieren."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:317
+msgid "Product successfully added to your cart."
+msgstr "Produkt wurde erfolgreich zu Ihrem Warenkorb hinzugefügt."
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:327
+msgid "Coupon heading"
+msgstr "Gutschein-Überschrift"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:330
+msgid "No heading by default"
+msgstr "Standardmäßig keine Überschrift"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:337
+msgid "Coupon input placeholder"
+msgstr "Gutschein-Eingabe-Platzhalter"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:350
+msgid "Coupon button text"
+msgstr "Gutschein-Button-Text"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:362
+msgid "Totals and empty-cart text"
+msgstr "Gesamtsummen und Text für leeren Warenkorb"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:366
+msgid "Subtotal label"
+msgstr "Zwischensummen-Beschriftung"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:376
+msgid "Discount label"
+msgstr "Rabatt-Beschriftung"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:386
+msgid "Total label"
+msgstr "Gesamtsummen-Beschriftung"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:396
+msgid "Empty-cart title"
+msgstr "Titel für leeren Warenkorb"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:406
+msgid "Empty-cart subtitle"
+msgstr "Untertitel für leeren Warenkorb"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:409
+msgid "No subtitle by default"
+msgstr "Standardmäßig kein Untertitel"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:416
+msgid "Empty-cart button text"
+msgstr "Button-Text für leeren Warenkorb"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:428
+msgid "Quantity Selector"
+msgstr "Mengenauswahl"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:432
+msgid "Style"
+msgstr "Stil"
+
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:441
+msgid "Rounded"
+msgstr "Abgerundet"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:55
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:215
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:278
+msgid "Basket"
+msgstr "Korb"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:77
+msgid "Cart 2"
+msgstr "Warenkorb 2"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:98
+msgid "Bag 2"
+msgstr "Tasche 2"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:117
+msgid "Basket 2"
+msgstr "Korb 2"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:156
+msgid "Theme"
+msgstr "Theme"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:213
+msgid "Integration available"
+msgstr "Integration verfügbar"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:214
+msgid "No integration available"
+msgstr "Keine Integration verfügbar"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:225
+msgid "Cart Icon"
+msgstr "Warenkorb-Icon"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:229
+msgid "Replace header cart icon"
+msgstr "Header-Warenkorb-Icon ersetzen"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:233
+msgid "Replace the Blocksy header cart icon with a CartPops icon."
+msgstr "Ersetzen Sie das Blocksy-Header-Warenkorb-Icon durch ein CartPops-Icon."
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:249
+msgid "Icon style"
+msgstr "Icon-Stil"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:288
+msgid "Show item count badge"
+msgstr "Artikelanzahl-Badge anzeigen"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:292
+msgid "Display the number of items in the cart on the icon."
+msgstr "Die Anzahl der Artikel im Warenkorb auf dem Icon anzeigen."
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:306
+msgid "Open CartPops drawer on click"
+msgstr "CartPops-Drawer beim Klicken öffnen"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:310
+msgid ""
+"Click the header cart icon to open the CartPops drawer instead of the "
+"Blocksy cart panel."
+msgstr ""
+"Klicken Sie auf das Header-Warenkorb-Icon, um anstelle des "
+"Blocksy-Warenkorb-Panels den CartPops-Drawer zu öffnen."
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:331
+msgid "Leave empty to inherit colors from the theme."
+msgstr "Leer lassen, um Farben vom Theme zu erben."
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:348
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:18
+msgid "Badge Background"
+msgstr "Badge-Hintergrund"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:361
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:19
+msgid "Badge Text"
+msgstr "Badge-Text"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:378
+msgid "Preview"
+msgstr "Vorschau"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:438
+msgid "Supported Themes"
+msgstr "Unterstützte Themes"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:441
+msgid "CartPops can integrate with these themes to replace the header cart icon:"
+msgstr ""
+"CartPops kann sich in diese Themes integrieren, um das "
+"Header-Warenkorb-Icon zu ersetzen:"
+
+#: src/Admin/assets/js/pages/IntegrationsSettings.jsx:462
+msgid "More themes coming soon"
+msgstr "Weitere Themes folgen bald"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:32
+msgid "Inline Background"
+msgstr "Inline-Hintergrund"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:35
+msgid "Inline Text"
+msgstr "Inline-Text"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:38
+msgid "Inline Badge Background"
+msgstr "Inline-Badge-Hintergrund"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:40
+msgid "Inline Badge Text"
+msgstr "Inline-Badge-Text"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:60
+msgid "Floating Cart Launcher"
+msgstr "Schwebender Warenkorb-Launcher"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:62
+msgid "Configure the floating cart button that opens the drawer."
+msgstr "Konfigurieren Sie den schwebenden Warenkorb-Button, der den Drawer öffnet."
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:72
+msgid "Visibility"
+msgstr "Sichtbarkeit"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:76
+msgid "Show floating cart launcher"
+msgstr "Schwebenden Warenkorb-Launcher anzeigen"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:80
+msgid "Display the floating cart button on the frontend."
+msgstr "Den schwebenden Warenkorb-Button im Frontend anzeigen."
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:91
+#: src/Blocks/CartLauncher/index.js:40
+msgid "Show item count"
+msgstr "Artikelanzahl anzeigen"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:99
+msgid "Show cart total"
+msgstr "Warenkorbsumme anzeigen"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:108
+msgid "Hide zero item count"
+msgstr "Artikelanzahl bei null ausblenden"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:120
+msgid "Hide when cart is empty"
+msgstr "Ausblenden, wenn der Warenkorb leer ist"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:145
+msgid "Screen Position"
+msgstr "Bildschirmposition"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:149
+#: src/Blocks/CartLauncher/index.js:27
+msgid "Bottom Right"
+msgstr "Unten rechts"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:153
+#: src/Blocks/CartLauncher/index.js:31
+msgid "Bottom Left"
+msgstr "Unten links"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:163
+msgid "Offset X (px)"
+msgstr "Versatz X (px)"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:174
+msgid "Offset Y (px)"
+msgstr "Versatz Y (px)"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:185
+msgid "Size (px)"
+msgstr "Größe (px)"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:199
+msgid "Appearance"
+msgstr "Erscheinungsbild"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:203
+msgid "Icon Style"
+msgstr "Icon-Stil"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:207
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:270
+msgid "Shopping Cart"
+msgstr "Warenkorb"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:211
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:274
+msgid "Shopping Bag"
+msgstr "Einkaufstasche"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:253
+msgid "Navigation menu launcher (legacy)"
+msgstr "Navigationsmenü-Launcher (veraltet)"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:259
+msgid ""
+"These settings affect existing navigation menu items with the "
+"cpops-cart-menu-item CSS class. They do not add a menu item."
+msgstr ""
+"Diese Einstellungen wirken sich auf bestehende Navigationsmenüeinträge mit "
+"der CSS-Klasse cpops-cart-menu-item aus. Sie fügen keinen Menüeintrag hinzu."
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:266
+msgid "Navigation menu icon"
+msgstr "Navigationsmenü-Icon"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:288
+msgid "Navigation menu item count style"
+msgstr "Stil der Artikelanzahl im Navigationsmenü"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:314
+msgid "Hide zero item count in navigation menu"
+msgstr "Artikelanzahl bei null im Navigationsmenü ausblenden"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:331
+msgid "Show cart total in navigation menu"
+msgstr "Warenkorbsumme im Navigationsmenü anzeigen"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:341
+msgid "Inline launcher appearance"
+msgstr "Erscheinungsbild des Inline-Launchers"
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:343
+msgid ""
+"These colors apply to navigation menu, shortcode, and inline block "
+"launchers. Floating launcher colors remain separate."
+msgstr ""
+"Diese Farben gelten für Navigationsmenü-, Shortcode- und "
+"Inline-Block-Launcher. Die Farben für den schwebenden Launcher bleiben "
+"separat."
+
+#: src/Admin/assets/js/pages/LauncherSettings.jsx:374
+msgid "Launcher previews"
+msgstr "Launcher-Vorschau"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:33
+msgid "Product Recommendations"
+msgstr "Produktempfehlungen"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:35
+msgid ""
+"Show relevant product suggestions in the cart drawer to boost average order "
+"value."
+msgstr ""
+"Relevante Produktvorschläge im Warenkorb-Drawer anzeigen, um den "
+"durchschnittlichen Bestellwert zu steigern."
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:48
+msgid "Enable Recommendations"
+msgstr "Empfehlungen aktivieren"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:56
+msgid "Strategy"
+msgstr "Strategie"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:57
+msgid "How to select which products to recommend."
+msgstr "Festlegen, wie die zu empfehlenden Produkte ausgewählt werden."
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:64
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:116
+msgid "Cross-sells"
+msgstr "Cross-Sells"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:65
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:115
+msgid "Upsells"
+msgstr "Upsells"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:66
+msgid "Custom products (Pro)"
+msgstr "Benutzerdefinierte Produkte (Pro)"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:81
+msgid ""
+"Choose specific recommendation products with CartPops Pro. Cross-sells and "
+"upsells remain available in the Free edition."
+msgstr ""
+"Wählen Sie mit CartPops Pro bestimmte empfohlene Produkte aus. Cross-Sells "
+"und Upsells bleiben in der kostenlosen Version verfügbar."
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:107
+msgid "Fallback Strategy"
+msgstr "Fallback-Strategie"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:108
+msgid "Used when the primary strategy returns no results."
+msgstr "Wird verwendet, wenn die primäre Strategie keine Ergebnisse liefert."
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:114
+msgid "Random products"
+msgstr "Zufällige Produkte"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:125
+msgid "Number of products"
+msgstr "Anzahl der Produkte"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:138
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:436
+msgid "Display"
+msgstr "Darstellung"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:146
+msgid "Horizontal Scroll"
+msgstr "Horizontales Scrollen"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:149
+msgid "Grid"
+msgstr "Raster"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:150
+msgid "List"
+msgstr "Liste"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:158
+msgid "Heading"
+msgstr "Überschrift"
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:174
+msgid ""
+"Recommendation add buttons use the accessible icon presentation. Text and "
+"text-with-icon buttons are available with CartPops Pro."
+msgstr ""
+"Buttons zum Hinzufügen von Empfehlungen verwenden die barrierefreie "
+"Symboldarstellung. Text- und Text-mit-Symbol-Buttons sind mit CartPops Pro "
+"verfügbar."
+
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:181
+msgid "Explore Pro button styles"
+msgstr "Pro-Button-Stile entdecken"
+
+#: src/Blocks/CartDrawer/index.js:35
+msgid "CartPops Cart Drawer"
+msgstr "CartPops-Warenkorb-Drawer"
+
+#: src/Blocks/CartDrawer/index.js:44
+msgid "The cart drawer will appear on the frontend when triggered."
+msgstr "Der Warenkorb-Drawer wird im Frontend angezeigt, sobald er ausgelöst wird."
+
+#: src/Blocks/CartLauncher/index.js:21
+msgid "Launcher Settings"
+msgstr "Launcher-Einstellungen"
+
+#: src/Pro/Admin/assets/js/components/AnalyticsChart.jsx:21
+#: src/Pro/Admin/assets/js/components/DashboardInsights.jsx:76
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:122
+msgid "Drawer Opens"
+msgstr "Drawer-Öffnungen"
+
+#: src/Pro/Admin/assets/js/components/AnalyticsChart.jsx:26
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:128
+msgid "Add to Carts"
+msgstr "In den Warenkorb gelegt"
+
+#: src/Pro/Admin/assets/js/components/AnalyticsChart.jsx:31
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:500
+msgid "Checkouts"
+msgstr "Checkouts"
+
+#: src/Pro/Admin/assets/js/components/AnalyticsChart.jsx:36
+#: src/Pro/Admin/assets/js/components/DashboardInsights.jsx:81
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:140
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:506
+msgid "Conversions"
+msgstr "Conversions"
+
+#: src/Pro/Admin/assets/js/components/AnalyticsChart.jsx:41
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:283
+msgid "CartPops Revenue"
+msgstr "CartPops-Umsatz"
+
+#: src/Pro/Admin/assets/js/components/AnalyticsChart.jsx:114
+msgid "No data available for this period."
+msgstr "Für diesen Zeitraum sind keine Daten verfügbar."
+
+#: src/Pro/Admin/assets/js/components/AnalyticsResetActions.jsx:22
+msgid "Analytics data has been reset. New data will be collected from now on."
+msgstr "Analysedaten wurden zurückgesetzt. Ab jetzt werden neue Daten erfasst."
+
+#: src/Pro/Admin/assets/js/components/AnalyticsResetActions.jsx:30
+msgid "Failed to reset analytics data."
+msgstr "Analysedaten konnten nicht zurückgesetzt werden."
+
+#: src/Pro/Admin/assets/js/components/AnalyticsResetActions.jsx:45
+msgid "Reset analytics data"
+msgstr "Analysedaten zurücksetzen"
+
+#: src/Pro/Admin/assets/js/components/AnalyticsResetActions.jsx:50
+msgid ""
+"Are you sure? This will permanently delete all analytics events, "
+"conversions, and revenue tracking."
+msgstr ""
+"Sind Sie sicher? Dadurch werden alle Analyseereignisse, Conversions und das "
+"Umsatz-Tracking dauerhaft gelöscht."
+
+#: src/Pro/Admin/assets/js/components/AnalyticsResetActions.jsx:61
+msgid "Yes, reset analytics"
+msgstr "Ja, Analysedaten zurücksetzen"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:61
+msgid "Contains Product"
+msgstr "Enthält Produkt"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:67
+msgid "Contains Category"
+msgstr "Enthält Kategorie"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:81
+msgid "Customer"
+msgstr "Kunde"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:82
+msgid "Subscriber"
+msgstr "Abonnent"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:83
+msgid "Shop Manager"
+msgstr "Shop-Manager"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:84
+msgid "Administrator"
+msgstr "Administrator"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:85
+msgid "Guest"
+msgstr "Gast"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:135
+#. translators: %d is a product category ID.
+#, js-format
+msgid "Category #%d"
+msgstr "Kategorie #%d"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:465
+msgid "Search categories"
+msgstr "Kategorien durchsuchen"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:467
+msgid "Search for a category…"
+msgstr "Nach einer Kategorie suchen…"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:476
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:783
+msgid "Searching…"
+msgstr "Suche…"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:493
+#. translators: %d is the number of products in a category.
+#, js-format
+msgid "%d product"
+msgid_plural "%d products"
+msgstr[0] "%d Produkt"
+msgstr[1] "%d Produkte"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:512
+msgid "No categories found"
+msgstr "Keine Kategorien gefunden"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:618
+msgid "Remove condition"
+msgstr "Bedingung entfernen"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:694
+msgid "Show conditionally"
+msgstr "Bedingt anzeigen"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:695
+msgid "Only show when specific conditions are met."
+msgstr "Nur anzeigen, wenn bestimmte Bedingungen erfüllt sind."
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:709
+msgid "Match:"
+msgstr "Übereinstimmung:"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:719
+msgid "All (AND)"
+msgstr "Alle (UND)"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:728
+msgid "Any (OR)"
+msgstr "Beliebige (ODER)"
+
+#: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:753
+msgid "+ Add Condition"
+msgstr "+ Bedingung hinzufügen"
+
+#: src/Pro/Admin/assets/js/components/ConversionFunnel.jsx:19
+msgid "Conversion Funnel"
+msgstr "Conversion-Funnel"
+
+#: src/Pro/Admin/assets/js/components/ConversionFunnel.jsx:59
+#. translators: %s is a percentage relative to the previous funnel step.
+#, js-format
+msgid "%s%% from previous"
+msgstr "%s%% gegenüber vorherigem"
+
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:49
+msgid "Add button presentation"
+msgstr "Darstellung des Hinzufügen-Buttons"
+
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:50
+msgid ""
+"Choose whether directly purchasable recommendations use an icon, text, or "
+"both."
+msgstr ""
+"Wählen Sie, ob direkt kaufbare Empfehlungen ein Symbol, Text oder beides "
+"verwenden."
+
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:59
+msgid "Text and icon"
+msgstr "Text und Symbol"
+
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:70
+msgid "Add button text"
+msgstr "Text des Hinzufügen-Buttons"
+
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:80
+msgid ""
+"Shown on simple products that can be added directly. Products with options "
+"keep their Select options link."
+msgstr ""
+"Wird bei einfachen Produkten angezeigt, die direkt hinzugefügt werden "
+"können. Produkte mit Optionen behalten ihren Link „Optionen auswählen“."
+
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:111
+#. translators: 1: recommendation button text, 2: product name.
+#, js-format
+msgid "%1$s: %2$s"
+msgstr "%1$s: %2$s"
+
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:167
+msgid "Custom products"
+msgstr "Benutzerdefinierte Produkte"
+
+#: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:171
+msgid ""
+"Select up to four products. Their selection order is used in the cart "
+"drawer."
+msgstr ""
+"Wählen Sie bis zu vier Produkte aus. Deren Auswahlreihenfolge wird im "
+"Warenkorb-Drawer verwendet."
+
+#: src/Pro/Admin/assets/js/components/DashboardInsights.jsx:54
+msgid "Could not load analytics data."
+msgstr "Analysedaten konnten nicht geladen werden."
+
+#: src/Pro/Admin/assets/js/components/DashboardInsights.jsx:61
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:825
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:251
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:224
+msgid "Retry"
+msgstr "Erneut versuchen"
+
+#: src/Pro/Admin/assets/js/components/DashboardInsights.jsx:69
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:232
+msgid "Loading analytics…"
+msgstr "Analysen werden geladen…"
+
+#: src/Pro/Admin/assets/js/components/DashboardInsights.jsx:86
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:146
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:335
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:382
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:411
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:441
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:512
+msgid "Revenue"
+msgstr "Umsatz"
+
+#: src/Pro/Admin/assets/js/components/DashboardInsights.jsx:97
+msgid "Last 7 days"
+msgstr "Letzte 7 Tage"
+
+#: src/Pro/Admin/assets/js/components/DashboardInsights.jsx:100
+msgid "View analytics"
+msgstr "Analysen anzeigen"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:142
+msgid "Action"
+msgstr "Aktion"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:143
+msgid "Choose an optional customer action below the checkout button."
+msgstr "Wählen Sie eine optionale Kundenaktion unterhalb des Kasse-Buttons."
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:159
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:171
+msgid "Custom URL"
+msgstr "Benutzerdefinierte URL"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:172
+msgid ""
+"Use a root-relative path or a complete HTTP(S) URL. Invalid URL and text "
+"pairs fall back to View cart."
+msgstr ""
+"Verwenden Sie einen relativen Pfad oder eine vollständige HTTP(S)-URL. Bei "
+"ungültigen URL- und Textpaaren wird auf „Warenkorb anzeigen“ "
+"zurückgegriffen."
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:191
+msgid "Custom text"
+msgstr "Benutzerdefinierter Text"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:192
+msgid "Plain text only, up to 80 characters."
+msgstr "Nur reiner Text, bis zu 80 Zeichen."
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:405
+msgid "Your message here"
+msgstr "Ihre Nachricht hier"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:491
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:205
+msgid "Conditional"
+msgstr "Bedingt"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:598
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:388
+msgid "You have qualified for free shipping!"
+msgstr "Sie haben sich für kostenlosen Versand qualifiziert!"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:601
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:373
+msgid "Add {{amount}} more for free shipping"
+msgstr "Fügen Sie noch {{amount}} für kostenlosen Versand hinzu"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:911
+msgid "In Progress"
+msgstr "In Bearbeitung"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:922
+msgid "Qualified"
+msgstr "Qualifiziert"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:936
+msgid "Shipping meter preview progress"
+msgstr "Vorschau des Fortschritts der Versandanzeige"
+
+#: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:1051
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:172
+msgid "Shipping protection"
+msgstr "Versandschutz"
+
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:118
+#. translators: %d: Product ID.
+#, js-format
+msgid "Product #%d"
+msgstr "Produkt #%d"
+
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:764
+msgid "Products"
+msgstr "Produkte"
+
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:765
+msgid "Product"
+msgstr "Produkt"
+
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:773
+msgid "Search for a product…"
+msgstr "Nach einem Produkt suchen…"
+
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:818
+msgid "Product search failed."
+msgstr "Produktsuche fehlgeschlagen."
+
+#: src/Pro/Admin/assets/js/components/ProductSearch.jsx:836
+msgid "No products found"
+msgstr "Keine Produkte gefunden"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:13
+msgid "Today"
+msgstr "Heute"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:14
+msgid "7 days"
+msgstr "7 Tage"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:15
+msgid "30 days"
+msgstr "30 Tage"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:16
+msgid "90 days"
+msgstr "90 Tage"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:134
+msgid "Checkout Starts"
+msgstr "Kassiervorgänge gestartet"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:204
+msgid "Track drawer engagement, conversions, and revenue."
+msgstr "Verfolgen Sie Drawer-Interaktionen, Conversions und Umsatz."
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:241
+msgid "Could not load analytics data. Please try again."
+msgstr "Analysedaten konnten nicht geladen werden. Bitte versuchen Sie es erneut."
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:292
+#. translators: %s is a percentage of total revenue.
+#, js-format
+msgid "%s%% of total revenue via CartPops features"
+msgstr "%s%% des Gesamtumsatzes über CartPops-Funktionen"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:298
+msgid "Revenue generated by CartPops features"
+msgstr "Durch CartPops-Funktionen generierter Umsatz"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:312
+msgid "SmartBar"
+msgstr "SmartBar"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:315
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:358
+msgid "Impressions"
+msgstr "Impressionen"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:326
+msgid "Spotlight Adds"
+msgstr "Spotlight-Hinzufügungen"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:342
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:392
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:451
+msgid "Order Rate"
+msgstr "Bestellrate"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:371
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:430
+msgid "Products Added"
+msgstr "Hinzugefügte Produkte"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:405
+msgid "Toggles"
+msgstr "Toggles"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:422
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:488
+msgid "Opens"
+msgstr "Öffnungen"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:477
+msgid "Daily Breakdown"
+msgstr "Tägliche Aufschlüsselung"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:485
+msgid "Date"
+msgstr "Datum"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:494
+msgid "Cart+"
+msgstr "Cart+"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:569
+msgid "No daily data available."
+msgstr "Keine täglichen Daten verfügbar."
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:585
+msgid "Conversion Rate"
+msgstr "Conversion-Rate"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:593
+msgid "Recommendation Clicks"
+msgstr "Empfehlungsklicks"
+
+#: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:604
+msgid "Coupons Applied"
+msgstr "Angewendete Gutscheine"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:101
+msgid "The trigger product cannot also be a companion."
+msgstr "Das Trigger-Produkt kann nicht gleichzeitig ein Begleitprodukt sein."
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:128
+msgid "The selected trigger was removed from the companion products."
+msgstr "Der ausgewählte Trigger wurde aus den Begleitprodukten entfernt."
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:174
+msgid "New Bundle"
+msgstr "Neues Bundle"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:181
+#. translators: %d is the number of companion products in a bundle.
+#, js-format
+msgid "%d companion"
+msgid_plural "%d companions"
+msgstr[0] "%d Begleitprodukt"
+msgstr[1] "%d Begleitprodukte"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:214
+msgid "Could not load product details."
+msgstr "Produktdetails konnten nicht geladen werden."
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:231
+msgid "Trigger Product"
+msgstr "Trigger-Produkt"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:237
+msgid "When this product is in the cart, the upsell flyout becomes available."
+msgstr ""
+"Wenn sich dieses Produkt im Warenkorb befindet, wird das Upsell-Flyout "
+"verfügbar."
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:260
+msgid "Companion Products"
+msgstr "Begleitprodukte"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:266
+msgid "Products shown in the flyout when the trigger product is in the cart."
+msgstr ""
+"Produkte, die im Flyout angezeigt werden, wenn sich das Trigger-Produkt im "
+"Warenkorb befindet."
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:320
+msgid "Remove companion"
+msgstr "Begleitprodukt entfernen"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:346
+msgid "Add a companion product"
+msgstr "Begleitprodukt hinzufügen"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:356
+msgid "Bundle Discount"
+msgstr "Bundle-Rabatt"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:362
+msgid "Optional discount applied to all companion products when added as a bundle."
+msgstr ""
+"Optionaler Rabatt, der auf alle Begleitprodukte angewendet wird, wenn sie "
+"als Bundle hinzugefügt werden."
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:403
+msgid "Remove Bundle"
+msgstr "Bundle entfernen"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:446
+msgid ""
+"Configure \"frequently bought together\" bundles with optional discounts. "
+"When a trigger product is in the cart, customers can add companion products "
+"with a single tap."
+msgstr ""
+"Konfigurieren Sie „Wird oft zusammen gekauft“-Bundles mit optionalen "
+"Rabatten. Wenn sich ein Auslöser-Produkt im Warenkorb befindet, können "
+"Kunden passende Produkte mit einem Klick hinzufügen."
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:455
+msgid "Enable Bundle Builder"
+msgstr "Bundle-Builder aktivieren"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:456
+msgid "Show upsell triggers on product cards in the cart drawer."
+msgstr "Upsell-Auslöser auf Produktkarten im Warenkorb-Drawer anzeigen."
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:467
+msgid "Flyout Heading"
+msgstr "Flyout-Überschrift"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:481
+msgid "Trigger Banner Colors"
+msgstr "Farben des Auslöser-Banners"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:484
+msgid "Customize the appearance of the upsell trigger banner on cart items."
+msgstr ""
+"Passen Sie das Erscheinungsbild des Upsell-Auslöser-Banners bei "
+"Warenkorbartikeln an."
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:534
+msgid "Upsell Bundles"
+msgstr "Upsell-Bundles"
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:542
+msgid "No bundles configured yet. Add your first bundle below."
+msgstr "Noch keine Bundles konfiguriert. Fügen Sie unten Ihr erstes Bundle hinzu."
+
+#: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:566
+msgid "+ Add Upsell Bundle"
+msgstr "+ Upsell-Bundle hinzufügen"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:22
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:302
+msgid "Cart Expiry Timer"
+msgstr "Warenkorb-Ablauftimer"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:23
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:354
+msgid "Custom Message"
+msgstr "Benutzerdefinierte Nachricht"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:24
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:416
+msgid "Product Spotlight"
+msgstr "Produkt-Spotlight"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:28
+msgid "Info"
+msgstr "Info"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:29
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:20
+msgid "Gift"
+msgstr "Geschenk"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:30
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:23
+msgid "Truck"
+msgstr "LKW"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:31
+msgid "Tag"
+msgstr "Etikett"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:32
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:21
+msgid "Star"
+msgstr "Stern"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:37
+msgid "Clock"
+msgstr "Uhr"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:42
+msgid "Clear Cart"
+msgstr "Warenkorb leeren"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:43
+msgid "Redirect to Shop"
+msgstr "Zum Shop weiterleiten"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:108
+#. translators: %d is a Smart Bar rule's one-based position.
+#, js-format
+msgid "Rule %d"
+msgstr "Regel %d"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:114
+#. translators: 1: merchant-entered rule label, 2: one-based rule position.
+#, js-format
+msgid "%1$s, rule %2$d"
+msgstr "%1$s, Regel %2$d"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:122
+#. translators: %s is the accessible Smart Bar rule name.
+#, js-format
+msgid "Collapse %s"
+msgstr "%s einklappen"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:127
+#. translators: %s is the accessible Smart Bar rule name.
+#, js-format
+msgid "Expand %s"
+msgstr "%s ausklappen"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:132
+#. translators: %s is the accessible Smart Bar rule name.
+#, js-format
+msgid "Move %s up"
+msgstr "%s nach oben verschieben"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:137
+#. translators: %s is the accessible Smart Bar rule name.
+#, js-format
+msgid "Move %s down"
+msgstr "%s nach unten verschieben"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:206
+msgid "Always"
+msgstr "Immer"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:210
+msgid "Blocks rules below"
+msgstr "Blockiert nachfolgende Regeln"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:262
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:672
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:130
+msgid "Enable"
+msgstr "Aktivieren"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:268
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:170
+msgid "Label"
+msgstr "Bezeichnung"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:269
+msgid "Admin label to identify this rule."
+msgstr "Admin-Bezeichnung zur Identifizierung dieser Regel."
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:282
+msgid "Mode"
+msgstr "Modus"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:289
+msgid "Dismissible"
+msgstr "Schließbar"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:290
+msgid "Allow customers to close this bar."
+msgstr "Erlauben Sie Kunden, diese Leiste zu schließen."
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:305
+msgid "Duration (minutes)"
+msgstr "Dauer (Minuten)"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:315
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:357
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:439
+msgid "Message"
+msgstr "Nachricht"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:316
+msgid "Use {{timer}} as a placeholder for the countdown."
+msgstr "Verwenden Sie {{timer}} als Platzhalter für den Countdown."
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:336
+msgid "Action on Expiry"
+msgstr "Aktion bei Ablauf"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:337
+msgid "What happens when the timer reaches zero."
+msgstr "Was geschieht, wenn der Timer null erreicht."
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:359
+msgid "Free shipping this weekend!"
+msgstr "Kostenloser Versand an diesem Wochenende!"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:377
+msgid "Link Text"
+msgstr "Link-Text"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:379
+msgid "Shop now"
+msgstr "Jetzt einkaufen"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:386
+msgid "Link URL"
+msgstr "Link-URL"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:396
+msgid "Show when cart is empty"
+msgstr "Anzeigen, wenn der Warenkorb leer ist"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:400
+msgid "Also display this message when the cart has no items."
+msgstr "Diese Nachricht auch anzeigen, wenn der Warenkorb keine Artikel enthält."
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:425
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:63
+msgid "Discount %"
+msgstr "Rabatt %"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:426
+msgid "Percentage discount applied when the customer adds this product."
+msgstr ""
+"Prozentualer Rabatt, der angewendet wird, wenn der Kunde dieses Produkt "
+"hinzufügt."
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:440
+msgid "Use {{product}} and {{discount}} as placeholders."
+msgstr "Verwenden Sie {{product}} und {{discount}} als Platzhalter."
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:457
+msgid "Display Conditions"
+msgstr "Anzeigebedingungen"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:473
+msgid "Use custom colors"
+msgstr "Benutzerdefinierte Farben verwenden"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:474
+msgid "Override the shared smart bar colors for this rule."
+msgstr "Die gemeinsamen Smart-Bar-Farben für diese Regel überschreiben."
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:526
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:762
+msgid "Accent"
+msgstr "Akzent"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:586
+msgid "Remove Rule"
+msgstr "Regel entfernen"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:659
+msgid ""
+"Create smart bar rules for your cart drawer. Rules are evaluated "
+"top-to-bottom — the first enabled match is shown."
+msgstr ""
+"Erstellen Sie Smart-Bar-Regeln für Ihre Warenkorb-Seitenleiste. Die Regeln "
+"werden von oben nach unten ausgewertet – die erste aktivierte "
+"Übereinstimmung wird angezeigt."
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:673
+msgid "Show a smart bar at the top of the cart drawer."
+msgstr "Eine Smart Bar oben in der Warenkorb-Seitenleiste anzeigen."
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:712
+msgid "+ Add Smart Bar Rule"
+msgstr "+ Smart-Bar-Regel hinzufügen"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:719
+msgid "Default Colors"
+msgstr "Standardfarben"
+
+#: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:722
+msgid "Shared colors used by all smart bar rules unless overridden per-rule."
+msgstr ""
+"Gemeinsame Farben, die von allen Smart-Bar-Regeln verwendet werden, sofern "
+"sie nicht pro Regel überschrieben werden."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:43
+msgid "Percentage Discount"
+msgstr "Prozentualer Rabatt"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:46
+msgid "Fixed Discount"
+msgstr "Fester Rabatt"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:65
+msgid "Discount Amount"
+msgstr "Rabattbetrag"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:67
+msgid "Value"
+msgstr "Wert"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:114
+msgid "Tier"
+msgstr "Stufe"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:136
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:336
+msgid "Threshold"
+msgstr "Schwellenwert"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:137
+msgid "Cart subtotal required to unlock this reward."
+msgstr ""
+"Warenkorb-Zwischensumme, die erforderlich ist, um diese Belohnung "
+"freizuschalten."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:149
+msgid "Reward Type"
+msgstr "Belohnungsart"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:162
+msgid "Free Gift Product"
+msgstr "Gratisgeschenk-Produkt"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:163
+msgid ""
+"Search simple products by name. To select a specific variation, enter its "
+"exact variation ID."
+msgstr ""
+"Suchen Sie einfache Produkte nach Namen. Um eine bestimmte Variante "
+"auszuwählen, geben Sie deren genaue Varianten-ID ein."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:200
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:352
+msgid "Show Celebration"
+msgstr "Glückwunsch-Animation anzeigen"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:201
+msgid "Display confetti animation when this tier is reached."
+msgstr "Konfetti-Animation anzeigen, wenn diese Stufe erreicht wird."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:212
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:367
+msgid "Progress Message"
+msgstr "Fortschrittsnachricht"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:213
+msgid "Use {{amount}} and {{reward}} as placeholders."
+msgstr "Verwenden Sie {{amount}} und {{reward}} als Platzhalter."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:224
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:386
+msgid "Qualified Message"
+msgstr "Erfolgsnachricht"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:225
+msgid "Use {{reward}} as a placeholder."
+msgstr "Verwenden Sie {{reward}} als Platzhalter."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:241
+msgid "Remove Tier"
+msgstr "Stufe entfernen"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:285
+msgid "Enable Shipping Meter"
+msgstr "Versandkostenanzeige aktivieren"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:286
+msgid "Display a progress bar toward reward thresholds."
+msgstr "Einen Fortschrittsbalken für Belohnungsschwellenwerte anzeigen."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:300
+msgid "Reward Tiers"
+msgstr "Belohnungsstufen"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:316
+msgid "Tier 1"
+msgstr "Stufe 1"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:325
+msgid "auto"
+msgstr "automatisch"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:337
+msgid ""
+"Free shipping threshold. Set to 0 to auto-detect from WooCommerce shipping "
+"zones."
+msgstr ""
+"Schwellenwert für kostenlosen Versand. Auf 0 setzen, um ihn automatisch "
+"anhand der WooCommerce-Versandzonen zu ermitteln."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:353
+msgid "Display confetti animation when free shipping is reached."
+msgstr "Konfetti-Animation anzeigen, wenn der kostenlose Versand erreicht wird."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:368
+msgid "Use {{amount}} as a placeholder for the remaining amount."
+msgstr "Verwenden Sie {{amount}} als Platzhalter für den verbleibenden Betrag."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:428
+msgid "+ Add Tier"
+msgstr "+ Stufe hinzufügen"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:440
+msgid "Show in drawer"
+msgstr "Im Drawer anzeigen"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:448
+msgid "Enable shipping calculator"
+msgstr "Versandrechner aktivieren"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:449
+msgid ""
+"Let customers calculate shipping and choose an available rate from the cart "
+"drawer."
+msgstr ""
+"Kunden die Berechnung der Versandkosten und die Auswahl einer verfügbaren "
+"Versandart im Warenkorb-Drawer ermöglichen."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:460
+msgid "Show icon"
+msgstr "Icon anzeigen"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:461
+msgid "Display truck/checkmark icon before the message."
+msgstr "LKW-/Häkchen-Icon vor der Nachricht anzeigen."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:473
+msgid "Show truck indicator"
+msgstr "LKW-Indikator anzeigen"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:474
+msgid ""
+"Display the moving truck on the progress bar. Hidden when reward tiers are "
+"active."
+msgstr ""
+"Den fahrenden LKW auf dem Fortschrittsbalken anzeigen. Ausgeblendet, wenn "
+"Belohnungsstufen aktiv sind."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:489
+msgid "Progress Colors"
+msgstr "Fortschrittsfarben"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:494
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:626
+msgid "Bar Start"
+msgstr "Balkenanfang"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:504
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:639
+msgid "Bar End"
+msgstr "Balkenende"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:534
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:678
+msgid "Icon Background"
+msgstr "Icon-Hintergrund"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:559
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:706
+msgid "Truck Background"
+msgstr "LKW-Hintergrund"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:572
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:719
+msgid "Truck Icon"
+msgstr "LKW-Icon"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:589
+msgid "Tier Reached"
+msgstr "Stufe erreicht"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:602
+msgid "Tier Icon"
+msgstr "Stufen-Icon"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:621
+msgid "Qualified Colors"
+msgstr "Farben bei Erreichen"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:19
+msgid "Shield (Protection)"
+msgstr "Schild (Schutz)"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:22
+msgid "Heart"
+msgstr "Herz"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:24
+msgid "Sparkles"
+msgstr "Funkeln"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:77
+msgid "Use whole currency units."
+msgstr "Ganze Währungseinheiten verwenden."
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:80
+#. translators: %d: store currency decimal places.
+#, js-format
+msgid "Use no more than %d decimal place."
+msgid_plural "Use no more than %d decimal places."
+msgstr[0] "Verwenden Sie nicht mehr als %d Dezimalstelle."
+msgstr[1] "Verwenden Sie nicht mehr als %d Dezimalstellen."
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:90
+#. translators: %s: smallest charge in the store currency.
+#, js-format
+msgid "Enter a positive charge of at least %s."
+msgstr "Geben Sie einen positiven Betrag von mindestens %s ein."
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:95
+msgid "This draft will not be saved until corrected."
+msgstr "Dieser Entwurf wird erst gespeichert, wenn die Fehler behoben wurden."
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:141
+msgid "Configure add-on options that customers can toggle in the cart drawer."
+msgstr ""
+"Konfigurieren Sie Zusatzoptionen, die Kunden im Warenkorb-Drawer aktivieren "
+"können."
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:151
+msgid "Shipping Protection"
+msgstr "Versandschutz"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:155
+msgid "Enable Shipping Protection"
+msgstr "Versandschutz aktivieren"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:156
+msgid "Allow customers to add shipping protection to their order."
+msgstr "Kunden erlauben, ihrer Bestellung einen Versandschutz hinzuzufügen."
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:182
+msgid "Description"
+msgstr "Beschreibung"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:184
+msgid "Protect your order from damage or loss"
+msgstr "Schützen Sie Ihre Bestellung vor Beschädigung oder Verlust"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:197
+msgid "Price"
+msgstr "Preis"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:208
+msgid "Show Icon"
+msgstr "Icon anzeigen"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:209
+msgid "Display an icon next to the add-on in the cart drawer."
+msgstr "Ein Icon neben dem Add-on im Warenkorb-Drawer anzeigen."
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:235
+msgid "Default State"
+msgstr "Standardstatus"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:236
+msgid "Whether the add-on is toggled on or off by default for new visitors."
+msgstr ""
+"Legt fest, ob das Add-on für neue Besucher standardmäßig aktiviert oder "
+"deaktiviert ist."
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:243
+msgid "Off (customer opts in)"
+msgstr "Aus (Opt-in durch Kunden)"
+
+#: src/Pro/Admin/assets/js/pages/SmartAddonsSettings.jsx:247
+msgid "On (customer opts out)"
+msgstr "Aktiviert (Kunde lehnt ab)"
+
+#: src/Pro/Blocks/ShippingMeter/index.js:19
+msgid "CartPops Shipping & Rewards Meter"
+msgstr "CartPops Versand- & Prämienleiste"
+
+#: src/Pro/Blocks/ShippingMeter/index.js:22
+msgid ""
+"Frontend appearance, icons, truck, tiers, and celebration use your CartPops "
+"Pro Shipping Meter settings."
+msgstr ""
+"Frontend-Erscheinungsbild, Icons, Lieferwagen, Stufen und "
+"Erfolgsanimationen verwenden Ihre Einstellungen für die CartPops "
+"Pro-Versandleiste."
+
+#: src/Blocks/CartDrawer/block.json
+msgctxt "block title"
+msgid "CartPops Cart Drawer"
+msgstr "CartPops Warenkorb-Drawer"
+
+#: src/Blocks/CartLauncher/block.json
+msgctxt "block title"
+msgid "CartPops Cart Launcher"
+msgstr "CartPops Warenkorb-Launcher"
+
+#: src/Pro/Blocks/ShippingMeter/block.json
+msgctxt "block title"
+msgid "CartPops Shipping & Rewards Meter"
+msgstr "CartPops Versand- & Prämienleiste"
+
+#: src/Blocks/CartDrawer/block.json
+msgctxt "block description"
+msgid "A beautiful slide-out cart drawer for WooCommerce."
+msgstr "Ein eleganter Slide-out-Warenkorb für WooCommerce."
+
+#: src/Blocks/CartLauncher/block.json
+msgctxt "block description"
+msgid "A floating cart button that opens the CartPops drawer."
+msgstr "Ein schwebender Warenkorb-Button, der den CartPops-Drawer öffnet."
+
+#: src/Pro/Blocks/ShippingMeter/block.json
+msgctxt "block description"
+msgid "Visual progress bar showing how close the customer is to free shipping."
+msgstr ""
+"Visueller Fortschrittsbalken, der anzeigt, wie nah der Kunde am kostenlosen "
+"Versand ist."

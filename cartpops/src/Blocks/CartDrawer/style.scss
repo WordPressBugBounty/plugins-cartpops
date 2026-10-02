@@ -1,0 +1,1812 @@
+/**
+ * CartPops Drawer Styles.
+ *
+ * All classes prefixed with cpops- to prevent conflicts.
+ * Theming via CSS custom properties for runtime customization.
+ */
+
+// ─── Variables (fallback defaults) ─────────────────────────
+:root {
+	// V1 defined these customer-facing variables on :root. These private inputs
+	// compute there before inheritance, so later migrated custom CSS can override
+	// them while the live descendant aliases below cannot feed back into a cycle.
+	--cpops-v1-accent-color: var(--color-cpops-accent-color);
+	--cpops-v1-background-primary: var(--color-cpops-background-primary);
+	--cpops-v1-background-secondary: var(--color-cpops-background-secondary);
+	--cpops-v1-text-primary: var(--color-cpops-text-primary);
+	--cpops-v1-text-secondary: var(--color-cpops-text-secondary);
+	--cpops-v1-text-tertiary: var(--color-cpops-text-tertiary);
+	--cpops-v1-close-color: var(--color-cpops-close-color);
+	--cpops-v1-remove-color: var(--color-cpops-remove-color);
+	--cpops-v1-border-color: var(--color-cpops-border-color);
+	--cpops-v1-input-field-background: var(--color-cpops-input-field-background);
+	--cpops-v1-input-field-text: var(--color-cpops-input-field-text);
+	--cpops-v1-button-primary-background: var(--color-cpops-button-primary-background);
+	--cpops-v1-button-primary-text: var(--color-cpops-button-primary-text);
+	--cpops-v1-button-secondary-background: var(--color-cpops-button-secondary-background);
+	--cpops-v1-button-secondary-text: var(--color-cpops-button-secondary-text);
+	--cpops-v1-button-quantity-background: var(--color-cpops-button-quantity-background);
+	--cpops-v1-button-quantity-text: var(--color-cpops-button-quantity-text);
+	--cpops-v1-input-quantity-background: var(--color-cpops-input-quantity-background);
+	--cpops-v1-input-quantity-border: var(--color-cpops-input-quantity-border);
+	--cpops-v1-input-quantity-text: var(--color-cpops-input-quantity-text);
+	--cpops-v1-recommendations-button-background: var(--color-cpops-recommendations-plus-btn-background);
+	--cpops-v1-recommendations-button-text: var(--color-cpops-recommendations-plus-btn-text);
+	--cpops-v1-recommendations-background: var(--color-cpops-drawer-recommendations-background);
+	--cpops-v1-recommendations-border: var(--color-cpops-drawer-recommendations-border);
+	--cpops-v1-recommendations-text: var(--color-cpops-drawer-recommendations-text);
+	--cpops-v1-state-success: var(--color-cpops-state-success);
+	--cpops-v1-state-danger: var(--color-cpops-state-danger);
+	--cpops-v1-overlay-background: var(--color-cpops-overlay-background);
+	--cpops-v1-drawer-width-desktop: var(--cpops-width-drawer-desktop);
+	--cpops-v1-drawer-width-mobile: var(--cpops-width-drawer-mobile);
+
+	--cpops-primary: #6f23e1;
+	--cpops-primary-text: #fff;
+	--cpops-secondary: #f5f5f7;
+	--cpops-secondary-text: #1a1a2e;
+	--cpops-background: #fff;
+	--cpops-surface: #f9fafb;
+	--cpops-text-primary: #1a1a2e;
+	--cpops-text-secondary: #6b7280;
+	--cpops-text-tertiary: #9ca3af;
+	--cpops-border: #e5e7eb;
+	--cpops-input-bg: #f9fafb;
+	--cpops-input-border: #d1d5db;
+	--cpops-input-text: #1a1a2e;
+	--cpops-button-primary-bg: #6f23e1;
+	--cpops-button-primary-text: #fff;
+	--cpops-button-secondary-bg: #f5f5f7;
+	--cpops-button-secondary-text: #1a1a2e;
+	--cpops-quantity-button-bg: #f9fafb;
+	--cpops-quantity-button-text: #6b7280;
+	--cpops-quantity-input-bg: #fff;
+	--cpops-quantity-input-border: #e5e7eb;
+	--cpops-quantity-input-text: #1a1a2e;
+	--cpops-recs-background: #fff;
+	--cpops-recs-border: #e5e7eb;
+	--cpops-recs-text: #1a1a2e;
+	--cpops-sale: #dc2626;
+	--cpops-success: #22c55e;
+	--cpops-danger: #ef4444;
+	--cpops-overlay: rgba(0, 0, 0, 0.5);
+	--cpops-image-outline: rgba(0, 0, 0, 0.1);
+	--cpops-shadow-border:
+		0 0 0 1px rgba(0, 0, 0, 0.06),
+		0 1px 2px -1px rgba(0, 0, 0, 0.06),
+		0 2px 4px 0 rgba(0, 0, 0, 0.04);
+	--cpops-border-radius: 8px;
+	--cpops-button-border-radius: 8px;
+	--cpops-drawer-width: 480px;
+	--cpops-drawer-width-mobile: 100%;
+	--cpops-animation-duration: 300ms;
+	--cpops-font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, sans-serif;
+	--cpops-z-index: 999999;
+}
+
+// Re-expose each effective V2 value under its V1 name for customer CSS that
+// consumes (rather than overrides) the old variables. The current values are
+// resolved on the wrapper before these aliases, so there is no variable cycle.
+.cpops-modal,
+.cpops-drawer {
+	--cpops-close-color: var(--cpops-v1-close-color, var(--cpops-text-secondary));
+	--cpops-remove-color: var(--cpops-v1-remove-color, var(--cpops-text-tertiary));
+	--color-cpops-accent-color: var(--cpops-primary);
+	--color-cpops-background-primary: var(--cpops-background);
+	--color-cpops-background-secondary: var(--cpops-surface);
+	--color-cpops-text-primary: var(--cpops-text-primary);
+	--color-cpops-text-secondary: var(--cpops-text-secondary);
+	--color-cpops-text-tertiary: var(--cpops-text-tertiary);
+	--color-cpops-close-color: var(--cpops-close-color);
+	--color-cpops-remove-color: var(--cpops-remove-color);
+	--color-cpops-border-color: var(--cpops-border);
+	--color-cpops-input-field-background: var(--cpops-input-bg);
+	--color-cpops-input-field-text: var(--cpops-input-text);
+	--color-cpops-button-primary-background: var(--cpops-button-primary-bg);
+	--color-cpops-button-primary-text: var(--cpops-button-primary-text);
+	--color-cpops-button-secondary-background: var(--cpops-button-secondary-bg);
+	--color-cpops-button-secondary-text: var(--cpops-button-secondary-text);
+	--color-cpops-button-quantity-background: var(--cpops-quantity-button-bg);
+	--color-cpops-button-quantity-text: var(--cpops-quantity-button-text);
+	--color-cpops-input-quantity-background: var(--cpops-quantity-input-bg);
+	--color-cpops-input-quantity-border: var(--cpops-quantity-input-border);
+	--color-cpops-input-quantity-text: var(--cpops-quantity-input-text);
+	--color-cpops-recommendations-plus-btn-background: var(--cpops-recs-button-bg);
+	--color-cpops-recommendations-plus-btn-text: var(--cpops-recs-button-text);
+	--color-cpops-drawer-recommendations-background: var(--cpops-recs-background);
+	--color-cpops-drawer-recommendations-border: var(--cpops-recs-border);
+	--color-cpops-drawer-recommendations-text: var(--cpops-recs-text);
+	--color-cpops-state-success: var(--cpops-success);
+	--color-cpops-state-danger: var(--cpops-danger);
+	--color-cpops-overlay-background: var(--cpops-overlay);
+	--cpops-width-drawer-desktop: var(--cpops-drawer-width);
+	--cpops-width-drawer-mobile: var(--cpops-drawer-width-mobile);
+}
+
+// ─── Utility ───────────────────────────────────────────────
+.cpops-hidden {
+	display: none !important;
+}
+
+// ─── Page-builder isolation ───────────────────────────────
+// Break ALL inherited styles from Elementor, Divi, Beaver, etc.
+// CSS custom properties (--cpops-*) are NOT affected by all:revert.
+.cpops-drawer,
+.cpops-overlay {
+	all: revert;
+}
+
+// Reset all children to browser defaults via :where() (zero specificity).
+// This ensures all cpops-* component styles win regardless of source order.
+// Exclude SVGs as all:revert breaks their rendering.
+// Theme element overrides (body button, .elementor button, etc.) are handled
+// by the ID-level element resets below (.cpops-drawer:not(#_) button).
+.cpops-drawer :where(*:not(svg, svg *)) {
+	all: revert;
+}
+
+// Retain the global utility while giving drawer instances enough cascade
+// authority to survive the child reset above without using !important.
+.cpops-sr-only,
+.cpops-drawer .cpops-sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+// ─── Overlay ───────────────────────────────────────────────
+.cpops-overlay {
+	position: fixed !important;
+	inset: 0 !important;
+	z-index: var(--cpops-z-index) !important;
+	background: var(--cpops-overlay);
+	opacity: 0;
+	visibility: hidden;
+	transition:
+		opacity var(--cpops-animation-duration) ease,
+		visibility var(--cpops-animation-duration) ease;
+	cursor: pointer;
+
+	&[data-animation="none"] {
+		transition: none;
+	}
+
+	&.cpops-overlay-visible {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+// ─── Drawer Panel ──────────────────────────────────────────
+.cpops-drawer {
+	position: fixed !important;
+	top: 0 !important;
+	bottom: 0 !important;
+	z-index: calc(var(--cpops-z-index) + 1) !important;
+	display: flex;
+	flex-direction: column;
+	width: var(--cpops-drawer-width);
+	max-width: 100vw;
+	background: var(--cpops-background);
+	box-shadow: -4px 0 24px rgba(0, 0, 0, 0.12);
+	font-family: var(--cpops-font-family);
+	font-size: var(--cpops-font-size, 16px);
+	line-height: 1.5;
+	color: var(--cpops-text-primary);
+	overflow: hidden;
+
+	// Slide animation (default).
+	&[data-animation="slide"] {
+		transition:
+			transform var(--cpops-animation-duration) cubic-bezier(0.4, 0, 0.2, 1),
+			box-shadow var(--cpops-animation-duration) ease;
+	}
+
+	// A slid-out panel's shadow would otherwise bleed into the viewport edge.
+	&[data-animation="slide"]:not(.cpops-drawer-open) {
+		box-shadow: none;
+	}
+
+	// Fade animation.
+	&[data-animation="fade"] {
+		opacity: 0;
+		visibility: hidden;
+		transition:
+			opacity var(--cpops-animation-duration) ease,
+			visibility var(--cpops-animation-duration) ease;
+	}
+
+	// No motion still needs a real visual closed state.
+	&[data-animation="none"] {
+		visibility: hidden;
+		transition: none;
+	}
+
+	// Position: right (default). The panel spans the full viewport height,
+	// so its corners stay square.
+	&--right {
+		right: 0;
+	}
+
+	&--right[data-animation="slide"] {
+		transform: translateX(100%);
+	}
+
+	// Position: left.
+	&--left {
+		left: 0;
+		box-shadow: 4px 0 24px rgba(0, 0, 0, 0.12);
+	}
+
+	&--left[data-animation="slide"] {
+		transform: translateX(-100%);
+	}
+
+	// Open state – slide.
+	&.cpops-drawer-open[data-animation="slide"] {
+		transform: translateX(0);
+	}
+
+	// Open state – fade.
+	&.cpops-drawer-open[data-animation="fade"] {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	&.cpops-drawer-open[data-animation="none"] {
+		visibility: visible;
+	}
+
+	// Loading state – only disable interaction, no opacity flash.
+	&.cpops-drawer-loading {
+		pointer-events: none;
+	}
+
+}
+
+// ─── Element resets — ID-level specificity to beat ALL themes ─
+// :not(#_) adds 1-0-0 without matching any real element.
+// Result: .cpops-drawer:not(#_) button = 1-1-1 specificity.
+// No theme or page-builder uses ID-selectors in their generic rules,
+// so this beats Blocksy, Elementor, Divi, Beaver Builder, etc.
+.cpops-drawer:not(#_) {
+
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin: 0;
+		font-family: inherit;
+		font-weight: 600;
+		line-height: 1.3;
+		color: inherit;
+	}
+
+	a:not(.cpops-btn):not(.cpops-drawer__view-cart):not(.cpops-secondary-action):not(.cpops-anchor-reset-opt-out) {
+		color: inherit;
+		text-decoration: none;
+		background: none;
+		border: none;
+		padding: 0;
+		margin: 0;
+		box-shadow: none;
+		text-shadow: none;
+		outline: none;
+	}
+
+	button {
+		font-family: inherit;
+		font-size: inherit;
+		color: inherit;
+		background: none;
+		border: none;
+		padding: 0;
+		margin: 0;
+		cursor: pointer;
+		line-height: inherit;
+		border-radius: 0;
+		min-height: 0;
+		min-width: 0;
+		appearance: none;
+		-webkit-appearance: none;
+		text-transform: none;
+		letter-spacing: normal;
+		box-shadow: none;
+		text-shadow: none;
+		text-align: inherit;
+		vertical-align: baseline;
+		outline: none;
+		text-indent: 0;
+		width: auto;
+		height: auto;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+		display: block;
+		border: none;
+		border-radius: 0;
+	}
+
+	input,
+	select,
+	textarea {
+		font-family: inherit;
+		font-size: inherit;
+		color: inherit;
+		line-height: normal;
+		box-sizing: border-box;
+		border-radius: 0;
+		min-height: 0;
+		min-width: 0;
+		appearance: none;
+		-webkit-appearance: none;
+		text-transform: none;
+		letter-spacing: normal;
+		box-shadow: none;
+		text-shadow: none;
+		background: none;
+		border: none;
+		padding: 0;
+		margin: 0;
+		outline: none;
+		width: auto;
+		height: auto;
+	}
+
+	p {
+		margin: 0;
+		line-height: inherit;
+	}
+
+	// ─── Buttons (ID-level specificity) ─────────────────────
+	.cpops-btn {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 12px 24px;
+		border: none;
+		border-radius: var(--cpops-button-border-radius, var(--cpops-border-radius));
+		font-size: 14px;
+		font-weight: 600;
+		font-family: var(--cpops-font-family);
+		cursor: pointer;
+		text-decoration: none;
+		transition: opacity 150ms ease-out, transform 150ms ease-out;
+
+		&:hover {
+			opacity: 0.92;
+		}
+
+		&:active {
+			transform: scale(0.96);
+		}
+
+		&:focus-visible {
+			outline: 2px solid var(--cpops-primary);
+			outline-offset: 2px;
+		}
+
+		&--primary {
+			background: var(--cpops-button-primary-bg);
+			color: var(--cpops-button-primary-text);
+		}
+
+		&--secondary {
+			background: var(--cpops-button-secondary-bg);
+			color: var(--cpops-button-secondary-text);
+		}
+
+		&--checkout {
+			width: 100%;
+			padding: 14px 24px;
+			font-size: 15px;
+		}
+	}
+
+	// ─── View Cart Link ─────────────────────────────────────
+	.cpops-secondary-action {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		min-height: 44px;
+		margin-top: 8px;
+		padding: 12px 24px;
+		border: 0;
+		border-radius: var(--cpops-button-border-radius, var(--cpops-border-radius));
+		background: var(--cpops-button-secondary-bg);
+		color: var(--cpops-button-secondary-text);
+		font-family: var(--cpops-font-family);
+		font-size: 15px;
+		font-weight: 600;
+		line-height: 1.35;
+		text-align: center;
+		text-decoration: none;
+		overflow-wrap: anywhere;
+		cursor: pointer;
+		transition: opacity 150ms ease-out, transform 150ms ease-out;
+
+		&:hover {
+			opacity: 0.92;
+		}
+
+		&:active {
+			transform: scale(0.96);
+		}
+
+		&:focus-visible {
+			outline: 2px solid var(--cpops-primary);
+			outline-offset: 2px;
+		}
+	}
+
+	.cpops-drawer__view-cart {
+		display: block;
+		text-align: center;
+		margin-top: 12px;
+		font-size: 13px;
+		color: var(--cpops-text-secondary);
+		text-decoration: underline;
+		text-underline-offset: 2px;
+
+		&:hover {
+			color: var(--cpops-text-primary);
+		}
+	}
+}
+
+// ─── Drawer Header ─────────────────────────────────────────
+.cpops-drawer__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 14px 24px;
+	border-bottom: 1px solid var(--cpops-border);
+	flex-shrink: 0;
+}
+
+.cpops-drawer:not(#_) .cpops-drawer__title {
+	margin: 0;
+	font-size: 18px;
+	font-weight: 600;
+	color: var(--cpops-text-primary);
+	line-height: 1.3;
+}
+
+.cpops-drawer__count {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 24px;
+	height: 24px;
+	padding: 0 6px;
+	margin-left: 8px;
+	position: relative;
+	top: -1px;
+	font-size: 12px;
+	font-weight: 600;
+	color: var(--cpops-button-primary-text);
+	background: var(--cpops-button-primary-bg);
+	border-radius: 100px;
+}
+
+.cpops-drawer:not(#_) .cpops-drawer__close {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	padding: 0;
+	margin: 0;
+	border: none;
+	border-radius: var(--cpops-border-radius);
+	background: transparent;
+	color: var(--cpops-close-color, var(--cpops-text-secondary));
+	cursor: pointer;
+	transition: background 150ms ease, color 150ms ease;
+
+	&:hover {
+		background: var(--cpops-surface);
+		color: var(--cpops-text-primary);
+	}
+
+	&:focus-visible {
+		outline: 2px solid var(--cpops-primary);
+		outline-offset: 2px;
+	}
+}
+
+// ─── Drawer Content ────────────────────────────────────────
+.cpops-drawer__content {
+	flex: 1;
+	overflow-y: auto;
+	overscroll-behavior: contain;
+	-webkit-overflow-scrolling: touch;
+}
+
+.cpops-drawer__items {
+	padding: 16px 24px;
+}
+
+// ─── Cart Item ─────────────────────────────────────────────
+.cpops-cart-item {
+	display: grid;
+	grid-template-columns: 72px 1fr auto;
+	gap: 16px;
+	padding: 16px 0;
+	border-bottom: 1px solid var(--cpops-border);
+	align-items: start;
+
+	&:last-child {
+		border-bottom: none;
+	}
+}
+
+.cpops-cart-item__image {
+	display: block;
+	width: 72px;
+	height: 72px;
+	border-radius: var(--cpops-border-radius);
+	overflow: hidden;
+	background: var(--cpops-surface);
+	outline: 1px solid var(--cpops-image-outline);
+	outline-offset: -1px;
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.cpops-cart-item__details {
+	min-width: 0;
+}
+
+.cpops-cart-item__link {
+	color: inherit;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.cpops-drawer:not(#_) .cpops-cart-item__name {
+	margin: 0 0 4px;
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--cpops-text-primary);
+	line-height: 1.4;
+	max-width: 100%;
+}
+
+.cpops-drawer:not(#_)[data-product-name-display="single_line"]
+.cpops-cart-item__name {
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.cpops-drawer:not(#_)[data-product-name-display="two_lines"]
+.cpops-cart-item__name {
+	display: -webkit-box;
+	overflow: hidden;
+	white-space: normal;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.cpops-drawer:not(#_)[data-product-name-display="full"]
+.cpops-cart-item__name {
+	display: block;
+	overflow: visible;
+	overflow-wrap: anywhere;
+	white-space: normal;
+	text-overflow: clip;
+}
+
+.cpops-cart-item__meta {
+	font-size: 12px;
+	color: var(--cpops-text-tertiary);
+	margin-bottom: 4px;
+}
+
+.cpops-cart-item__price {
+	font-size: 14px;
+	color: var(--cpops-text-primary);
+	display: flex;
+	align-items: baseline;
+	gap: 2px 6px;
+	flex-wrap: wrap;
+}
+
+.cpops-cart-item__price-regular {
+	text-decoration: line-through;
+	color: var(--cpops-text-tertiary);
+}
+
+.cpops-cart-item__price--sale .cpops-cart-item__price-current {
+	color: var(--cpops-sale, #dc2626);
+}
+
+// Unit price under a multi-quantity line total, e.g. "€60.00 each".
+.cpops-cart-item__price-each {
+	flex-basis: 100%;
+	font-size: 12px;
+	color: var(--cpops-text-tertiary);
+}
+
+.cpops-cart-item__extra-line {
+	display: flex;
+	justify-content: space-between;
+	font-size: 12px;
+	color: var(--cpops-text-tertiary);
+	margin-top: 2px;
+}
+
+.cpops-drawer:not(#_) .cpops-cart-item__backorder {
+	margin: 6px 0 0;
+	font-size: 12px;
+	line-height: 1.4;
+	color: var(--cpops-warning, #b45309);
+}
+
+.cpops-cart-item__actions {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 8px;
+}
+
+.cpops-drawer:not(#_) .cpops-cart-item__remove {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 28px;
+	height: 28px;
+	padding: 0;
+	border: none;
+	border-radius: var(--cpops-border-radius);
+	background: transparent;
+	color: var(--cpops-remove-color, var(--cpops-text-tertiary));
+	cursor: pointer;
+	transition: background 150ms ease, color 150ms ease;
+
+	&:hover {
+		background: rgba(239, 68, 68, 0.1);
+		color: var(--cpops-danger);
+	}
+
+	&:focus-visible {
+		outline: 2px solid var(--cpops-primary);
+		outline-offset: 2px;
+	}
+
+	&:disabled {
+		cursor: not-allowed;
+		opacity: 0.45;
+	}
+}
+
+// ─── Quantity Controls ─────────────────────────────────────
+.cpops-drawer:not(#_) .cpops-quantity {
+	display: inline-flex;
+	align-items: center;
+	border: 1px solid var(--cpops-quantity-input-border, var(--cpops-input-border));
+	border-radius: var(--cpops-border-radius);
+	overflow: hidden;
+}
+
+.cpops-drawer:not(#_) .cpops-quantity__btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 32px;
+	height: 32px;
+	padding: 0;
+	border: none;
+	background: var(--cpops-quantity-button-bg, var(--cpops-input-bg));
+	color: var(--cpops-quantity-button-text, var(--cpops-text-secondary));
+	cursor: pointer;
+	transition: background 150ms ease;
+
+	&:hover {
+		background: var(--cpops-quantity-button-bg, var(--cpops-input-bg));
+		opacity: 0.8;
+	}
+
+	&:focus-visible {
+		outline: 2px solid var(--cpops-primary);
+		outline-offset: -2px;
+	}
+
+	&:disabled {
+		cursor: not-allowed;
+		opacity: 0.45;
+	}
+}
+
+.cpops-drawer:not(#_) .cpops-quantity__value {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 36px;
+	height: 32px;
+	font-size: 13px;
+	font-weight: 500;
+	color: var(--cpops-quantity-input-text, var(--cpops-text-primary));
+	background: var(--cpops-quantity-input-bg, var(--cpops-background));
+}
+
+// ─── Quantity Variants ──────────────────────────────────────
+.cpops-drawer:not(#_) .cpops-quantity--default {
+	border-color: var(--cpops-quantity-input-border, var(--cpops-border));
+
+	.cpops-quantity__btn {
+		width: 28px;
+		height: 28px;
+	}
+
+	.cpops-quantity__value {
+		min-width: 32px;
+		height: 28px;
+		font-size: 12px;
+	}
+}
+
+.cpops-drawer:not(#_) .cpops-quantity--rounded {
+	border-radius: 100px;
+	border-color: var(--cpops-quantity-input-border, var(--cpops-border));
+
+	.cpops-quantity__btn {
+		width: 28px;
+		height: 28px;
+	}
+
+	.cpops-quantity__value {
+		min-width: 28px;
+		height: 28px;
+		font-size: 12px;
+	}
+}
+
+.cpops-drawer:not(#_) .cpops-quantity--minimal {
+	border: none;
+	gap: 2px;
+
+	.cpops-quantity__btn {
+		width: 26px;
+		height: 26px;
+		border-radius: var(--cpops-border-radius);
+		background: var(--cpops-quantity-button-bg, var(--cpops-surface));
+
+		&:hover {
+			background: var(--cpops-quantity-button-bg, var(--cpops-surface));
+		}
+	}
+
+	.cpops-quantity__value {
+		min-width: 24px;
+		height: 26px;
+		font-size: 12px;
+		background: var(--cpops-quantity-input-bg, transparent);
+	}
+}
+
+// ─── Empty State ───────────────────────────────────────────
+.cpops-drawer__empty {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 64px 24px;
+	text-align: center;
+}
+
+.cpops-drawer__empty-icon {
+	color: var(--cpops-text-tertiary);
+	margin-bottom: 16px;
+	opacity: 0.5;
+}
+
+// Scoped like the element resets so the reset `p { margin: 0 }` cannot win.
+.cpops-drawer:not(#_) .cpops-drawer__empty-text {
+	font-size: 16px;
+	color: var(--cpops-text-secondary);
+	margin: 0 0 8px;
+}
+
+.cpops-drawer:not(#_) .cpops-drawer__empty-subtitle {
+	font-size: 14px;
+	color: var(--cpops-text-tertiary);
+	margin: 0 0 24px;
+}
+
+.cpops-drawer:not(#_) .cpops-drawer__empty-text:last-of-type {
+	margin-bottom: 24px;
+}
+
+// ─── Undo Bar ──────────────────────────────────────────────
+.cpops-drawer__undo {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	padding: 8px 8px 8px 16px;
+	margin: 0 24px 16px;
+	background: var(--cpops-surface);
+	// Concentric with the undo button on its even 8px inset.
+	border-radius: min(calc(var(--cpops-border-radius) * 2), calc(var(--cpops-border-radius) + 8px));
+	font-size: 13px;
+	color: var(--cpops-text-secondary);
+}
+
+.cpops-drawer:not(#_) .cpops-drawer__undo-btn {
+	padding: 4px 12px;
+	border: none;
+	border-radius: var(--cpops-border-radius);
+	background: var(--cpops-primary);
+	color: var(--cpops-primary-text);
+	font-size: 12px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: opacity 150ms ease;
+
+	&:hover {
+		opacity: 0.9;
+	}
+}
+
+// ─── Recommendations ──────────────────────────────────────
+.cpops-recs {
+	// Padded cards wrap their image concentrically: image radius + 8px inset.
+	// min() keeps a square design square when the merchant radius is 0.
+	--cpops-inset-card-radius: min(calc(var(--cpops-border-radius) * 2), calc(var(--cpops-border-radius) + 8px));
+
+	padding: 16px 24px 26px;
+	border-top: 1px solid var(--cpops-recs-border, var(--cpops-border));
+	background: var(--cpops-recs-background, var(--cpops-background));
+}
+
+.cpops-drawer:not(#_) .cpops-recs__heading {
+	margin: 0 0 20px;
+	font-size: 15px;
+	font-weight: 600;
+	color: var(--cpops-recs-text, var(--cpops-text-primary));
+}
+
+// Slider wrapper (relative positioning for nav arrows).
+.cpops-recs__slider {
+	position: relative;
+}
+
+.cpops-drawer:not(#_) .cpops-recs__nav {
+	display: none;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 28px;
+	height: 28px;
+	padding: 0;
+	border: none;
+	border-radius: 50%;
+	background: var(--cpops-background);
+	color: var(--cpops-text-secondary);
+	cursor: pointer;
+	transition: background 150ms ease, color 150ms ease;
+	z-index: 2;
+	box-shadow: var(--cpops-shadow-border);
+
+	svg {
+		display: block;
+		margin: auto;
+	}
+
+	&:hover {
+		background: var(--cpops-surface);
+		color: var(--cpops-text-primary);
+	}
+
+	// Sit in the section gutter so arrows never cover a card's add button.
+	&--prev {
+		left: -20px;
+	}
+
+	&--next {
+		right: -20px;
+	}
+
+}
+
+// Only show nav arrows for horizontal layout on desktop.
+.cpops-drawer:not(#_) .cpops-recs__list--horizontal ~ .cpops-recs__nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media (max-width: 768px) {
+
+	.cpops-recs__nav {
+		display: none !important;
+	}
+}
+
+// Layout: Horizontal Scroll (compact landscape cards).
+.cpops-recs__list--horizontal {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	overflow-x: auto;
+	overflow-y: hidden;
+	scroll-snap-type: x mandatory;
+	-webkit-overflow-scrolling: touch;
+	scrollbar-width: none;
+	padding-bottom: 4px;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+
+	.cpops-recs__card {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 10px;
+		padding: 8px;
+		flex: 0 0 200px;
+		min-width: 200px;
+		scroll-snap-align: start;
+		border-radius: var(--cpops-inset-card-radius);
+	}
+
+	.cpops-recs__card-image {
+		flex: 0 0 48px;
+		width: 48px;
+		height: 48px;
+		aspect-ratio: auto;
+		border-radius: var(--cpops-border-radius);
+	}
+
+	.cpops-recs__card-info {
+		flex: 1;
+		min-width: 0;
+		padding: 0;
+	}
+
+	.cpops-recs__card-name {
+		font-size: 12px;
+		margin: 0 0 2px;
+		-webkit-line-clamp: 1;
+	}
+
+	.cpops-recs__card-price {
+		font-size: 11px;
+	}
+
+}
+
+// Horizontal cards are compact — shrink the button slightly. Scoped like the
+// base button rule so its 36px size cannot win and squash the circle.
+.cpops-drawer:not(#_) .cpops-recs__list--horizontal .cpops-recs__add-btn:not(.cpops-recs__add-btn--text) {
+	flex: 0 0 28px;
+	width: 28px;
+	height: 28px;
+
+	svg {
+		width: 13px;
+		height: 13px;
+	}
+}
+
+// Layout: Grid (2 columns).
+.cpops-recs__list--grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 12px;
+}
+
+// Layout: List (vertical stack).
+.cpops-recs__list--list {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+
+	.cpops-recs__card {
+		display: grid;
+		grid-template-columns: 56px 1fr auto;
+		gap: 12px;
+		align-items: center;
+		padding: 8px;
+		border-radius: var(--cpops-inset-card-radius);
+	}
+
+	.cpops-recs__card-image {
+		width: 56px;
+		height: 56px;
+		border-radius: var(--cpops-border-radius);
+	}
+
+	.cpops-recs__card-name {
+		-webkit-line-clamp: 1;
+	}
+
+	// Button inherits the round icon style from the base
+	// .cpops-recs__add-btn rule.
+}
+
+// Card base.
+.cpops-recs__card {
+	background: var(--cpops-surface);
+	border-radius: var(--cpops-border-radius);
+	overflow: hidden;
+	transition: box-shadow 150ms ease;
+
+	&:hover {
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+	}
+}
+
+.cpops-recs__card-image {
+	width: 100%;
+	aspect-ratio: 1;
+	overflow: hidden;
+	background: var(--cpops-surface);
+	outline: 1px solid var(--cpops-image-outline);
+	outline-offset: -1px;
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.cpops-recs__card-info {
+	padding: 8px;
+}
+
+.cpops-drawer:not(#_) .cpops-recs__card-name {
+	margin: 0 0 4px;
+	font-size: 13px;
+	font-weight: 500;
+	color: var(--cpops-text-primary);
+	line-height: 1.3;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.cpops-recs__card-price {
+	font-size: 13px;
+	font-weight: 600;
+	color: var(--cpops-text-primary);
+}
+
+// Round icon-only add button — background/icon color from Design tab settings.
+// :not(#_) gives ID-level specificity (1,1,1) to beat the global
+// .cpops-drawer:not(#_) button { background: none } reset.
+.cpops-drawer:not(#_) .cpops-recs__add-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	width: 36px;
+	height: 36px;
+	padding: 0;
+	margin: 0;
+	border: none;
+	border-radius: 50%;
+	background: var(--cpops-recs-button-bg, var(--cpops-primary));
+	color: var(--cpops-recs-button-text, var(--cpops-primary-text));
+	cursor: pointer;
+	transition: opacity 150ms ease-out, transform 150ms ease-out;
+
+	&:hover {
+		opacity: 0.85;
+	}
+
+	&:active {
+		transform: scale(0.96);
+	}
+
+	svg {
+		display: block;
+		pointer-events: none;
+	}
+}
+
+.cpops-recs__add-btn-icon {
+	display: inline-flex;
+	flex: 0 0 auto;
+}
+
+.cpops-drawer:not(#_) .cpops-recs__add-btn--text {
+	width: auto;
+	height: auto;
+	min-height: 36px;
+	max-width: calc(100% - 16px);
+	padding: 7px 12px;
+	border-radius: 999px;
+	gap: 6px;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1.25;
+	text-align: center;
+	white-space: normal;
+	overflow-wrap: anywhere;
+}
+
+.cpops-drawer:not(#_) .cpops-recs__add-btn:focus-visible,
+.cpops-drawer:not(#_) .cpops-recs__select-options:focus-visible:not(#_) {
+	outline: 2px solid var(--cpops-primary);
+	outline-offset: 2px;
+}
+
+.cpops-recs--button-text {
+
+	.cpops-recs__list--horizontal .cpops-recs__card {
+		flex: 0 0 min(260px, calc(100vw - 72px));
+		min-width: min(260px, calc(100vw - 72px));
+		flex-wrap: wrap;
+	}
+
+	.cpops-recs__list--grid .cpops-recs__add-btn--text {
+		margin: 0 8px 8px;
+	}
+
+	.cpops-recs__list--list .cpops-recs__card {
+		grid-template-columns: 56px minmax(0, 1fr);
+	}
+
+	.cpops-recs__list--list .cpops-recs__add-btn--text {
+		grid-column: 2;
+		justify-self: start;
+		max-width: 100%;
+	}
+}
+
+.cpops-drawer:not(#_) .cpops-recs--button-text .cpops-recs__list--horizontal .cpops-recs__add-btn--text {
+	flex: 0 1 auto;
+	margin-left: 58px;
+	max-width: calc(100% - 58px);
+}
+
+.cpops-drawer:not(#_) .cpops-recs__select-options {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	max-width: 88px;
+	color: var(--cpops-primary);
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 1.2;
+	text-align: center;
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+
+	.cpops-recs {
+		padding: 12px 20px;
+	}
+
+	.cpops-recs__list--horizontal .cpops-recs__card {
+		flex: 0 0 180px;
+		min-width: 180px;
+	}
+
+	.cpops-recs--button-text .cpops-recs__list--horizontal .cpops-recs__card {
+		flex-basis: min(240px, calc(100vw - 56px));
+		min-width: min(240px, calc(100vw - 56px));
+	}
+
+	.cpops-recs__list--horizontal .cpops-recs__card-image {
+		flex: 0 0 40px;
+		width: 40px;
+		height: 40px;
+	}
+}
+
+// ─── Drawer Footer ─────────────────────────────────────────
+.cpops-drawer__footer {
+	padding: 20px 24px;
+	border-top: 1px solid var(--cpops-border);
+	flex: 0 1 auto;
+	min-height: 0;
+	max-height: min(70vh, 48rem);
+	max-height: min(70dvh, 48rem);
+	overflow-x: hidden;
+	overflow-y: auto;
+	overscroll-behavior: contain;
+	scroll-padding-block: 16px;
+	scrollbar-gutter: stable;
+	-webkit-overflow-scrolling: touch;
+	background: var(--cpops-background);
+}
+
+// ─── Coupon ────────────────────────────────────────────────
+.cpops-coupon {
+	margin-bottom: 16px;
+}
+
+.cpops-coupon__title {
+	margin: 0 0 8px;
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--cpops-text-primary);
+}
+
+.cpops-coupon__form {
+	display: flex;
+	gap: 8px;
+}
+
+.cpops-drawer:not(#_) .cpops-coupon__input {
+	flex: 1;
+	padding: 8px 12px;
+	border: 1px solid var(--cpops-input-border);
+	border-radius: var(--cpops-border-radius);
+	background: var(--cpops-input-bg);
+	font-size: 13px;
+	color: var(--cpops-input-text, var(--cpops-text-primary));
+	transition: border-color 150ms ease;
+
+	&::placeholder {
+		color: var(--cpops-input-text, var(--cpops-text-tertiary));
+	}
+
+	&:focus {
+		outline: none;
+		border-color: var(--cpops-primary);
+		box-shadow: 0 0 0 3px rgba(111, 35, 225, 0.1);
+	}
+}
+
+.cpops-coupon__btn.cpops-btn {
+	flex-shrink: 0;
+	padding: 8px 16px;
+}
+
+// Only short phone screens show this toggle; elsewhere the form stays open.
+.cpops-drawer:not(#_) .cpops-coupon__toggle {
+	display: none;
+	align-items: center;
+	min-height: 24px;
+	padding: 0;
+	border: 0;
+	background: none;
+	font-family: inherit;
+	font-size: 13px;
+	font-weight: 500;
+	color: var(--cpops-text-secondary);
+	text-decoration: underline;
+	text-underline-offset: 2px;
+	cursor: pointer;
+
+	&:hover {
+		color: var(--cpops-text-primary);
+	}
+
+	&:focus-visible {
+		outline: 2px solid var(--cpops-primary);
+		outline-offset: 2px;
+	}
+}
+
+.cpops-coupon__error {
+	margin: 6px 0 0;
+	font-size: 13px;
+	color: var(--cpops-error, #d63638);
+}
+
+.cpops-coupon__tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	margin-top: 8px;
+}
+
+.cpops-coupon__tag {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	padding: 3px 8px;
+	background: var(--cpops-surface, #f5f5f5);
+	border: 1px solid var(--cpops-input-border);
+	border-radius: var(--cpops-border-radius);
+	font-size: 12px;
+	color: var(--cpops-text-secondary);
+}
+
+.cpops-coupon__code {
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 0.02em;
+}
+
+.cpops-coupon__remove {
+	cursor: pointer;
+	color: var(--cpops-remove-color, var(--cpops-text-tertiary));
+	font-size: 14px;
+	line-height: 1;
+	padding: 0 2px;
+
+	&:hover {
+		color: var(--cpops-error, #d63638);
+	}
+}
+
+.cpops-powered-by {
+	margin-top: 10px;
+	text-align: center;
+	font-size: 12px;
+	color: var(--cpops-text-secondary);
+
+	a {
+		color: var(--cpops-primary);
+		font-weight: 600;
+	}
+}
+
+.cpops-totals__row--discount .cpops-totals__value {
+	color: var(--cpops-success, #00a32a);
+}
+
+.cpops-btn--loading {
+	pointer-events: none;
+	color: transparent !important;
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		margin: auto;
+		width: 16px;
+		height: 16px;
+		border: 2px solid var(--cpops-text-secondary);
+		border-right-color: transparent;
+		border-radius: 50%;
+		animation: cpops-spin 0.6s linear infinite;
+	}
+}
+
+@keyframes cpops-spin {
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+// ─── Totals ────────────────────────────────────────────────
+.cpops-totals {
+	margin-bottom: 16px;
+
+	&--body {
+		padding: 16px 24px;
+		border-top: 1px solid var(--cpops-border);
+		margin-bottom: 0;
+	}
+}
+
+.cpops-totals__row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 4px 0;
+	font-size: 14px;
+
+	&--fee {
+		font-size: 14px;
+	}
+
+	&--total {
+		padding-top: 12px;
+		margin-top: 4px;
+		border-top: 1px solid var(--cpops-border);
+		font-weight: 600;
+		font-size: 14px;
+
+		&:first-child {
+			padding-top: 0;
+			margin-top: 0;
+			border-top: none;
+		}
+	}
+}
+
+.cpops-totals__label {
+	color: var(--cpops-text-secondary);
+}
+
+.cpops-totals__row--total .cpops-totals__label {
+	color: var(--cpops-text-primary);
+}
+
+.cpops-totals__value {
+	color: var(--cpops-text-primary);
+	font-weight: 600;
+}
+
+.cpops-totals__row--tax-note {
+	padding: 0;
+	justify-content: flex-start;
+}
+
+.cpops-totals__tax-note {
+	font-size: 12px;
+	font-weight: 400;
+	color: var(--cpops-text-secondary);
+}
+
+// ─── Buttons ───────────────────────────────────────────────
+// .cpops-btn and .cpops-drawer__view-cart are scoped inside .cpops-drawer
+// for specificity (0,3,0) to beat page-builder selectors like
+// body.elementor-kit-N a (0,2,1).
+
+// ─── Theme Override Layer ──────────────────────────────────
+// Double class = 0-2-0 specificity. Beats any single-class theme rule
+// (Blocksy .ct-*, Divi .et_*, Elementor .elementor-*, etc.) without
+// resorting to !important. Only layout-critical properties are listed.
+.cpops-drawer.cpops-drawer {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	font-family: var(--cpops-font-family);
+	font-size: var(--cpops-font-size, 16px);
+	line-height: 1.5;
+	color: var(--cpops-text-primary);
+	box-sizing: border-box;
+
+	.cpops-drawer__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-shrink: 0;
+		box-sizing: border-box;
+	}
+
+	.cpops-drawer__content {
+		flex: 1;
+		overflow-y: auto;
+		overscroll-behavior: contain;
+		min-height: 0;
+	}
+
+	.cpops-cart-item {
+		display: grid;
+		grid-template-columns: 72px 1fr auto;
+		gap: 16px;
+		align-items: start;
+		box-sizing: border-box;
+	}
+
+	.cpops-cart-item__image {
+		width: 72px;
+		height: 72px;
+		overflow: hidden;
+		box-sizing: border-box;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			display: block;
+		}
+	}
+
+	.cpops-cart-item__details {
+		min-width: 0;
+	}
+
+	.cpops-cart-item__name {
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 1.4;
+		margin: 0 0 4px;
+		max-width: 100%;
+	}
+
+	.cpops-cart-item__price {
+		font-size: 14px;
+		display: flex;
+		align-items: baseline;
+		gap: 2px 6px;
+	}
+
+	.cpops-cart-item__actions {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		gap: 8px;
+	}
+
+	.cpops-drawer__empty {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.cpops-drawer__footer {
+		flex: 0 1 auto;
+		min-height: 0;
+		overflow-x: hidden;
+		overflow-y: auto;
+		box-sizing: border-box;
+	}
+
+	.cpops-totals__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 14px;
+	}
+
+	.cpops-coupon__form {
+		display: flex;
+		gap: 8px;
+	}
+
+	.cpops-quantity {
+		display: inline-flex;
+		align-items: center;
+	}
+
+	.cpops-quantity__btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.cpops-quantity__value {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.cpops-drawer__undo {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.cpops-drawer__close {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 36px;
+		height: 36px;
+	}
+}
+
+// ─── Responsive ────────────────────────────────────────────
+@media (max-width: 768px) {
+
+	.cpops-drawer.cpops-drawer {
+		width: var(--cpops-drawer-width-mobile);
+		top: 0;
+		bottom: 0;
+		height: 100vh;
+		height: 100dvh;
+		border-radius: 0;
+
+		.cpops-drawer__header {
+			padding: 16px 20px;
+			padding-top: calc(16px + env(safe-area-inset-top, 0px));
+		}
+
+		.cpops-drawer__items {
+			padding: 12px 20px;
+		}
+
+		.cpops-drawer__footer {
+			padding: 16px 20px;
+			padding-bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+		}
+
+		.cpops-cart-item {
+			grid-template-columns: 60px 1fr auto;
+			gap: 12px;
+		}
+
+		.cpops-cart-item__image {
+			width: 60px;
+			height: 60px;
+		}
+	}
+}
+
+// ─── Short phone screens ───────────────────────────────────
+// On a short viewport the footer (coupon, totals, buttons) would otherwise
+// leave room for about one cart line. Tighten spacing, collapse the coupon
+// form behind its toggle and keep at least two lines of the list visible;
+// the footer scrolls on its own if it still does not fit.
+@media (max-width: 768px) and (max-height: 700px) {
+
+	.cpops-drawer:not(#_) {
+
+		.cpops-drawer__header {
+			padding-top: calc(8px + env(safe-area-inset-top, 0px));
+			padding-bottom: 8px;
+		}
+
+		.cpops-drawer__content {
+			min-height: min(264px, 50vh);
+			min-height: min(264px, 50dvh);
+		}
+
+		.cpops-drawer__items {
+			padding-top: 4px;
+			padding-bottom: 4px;
+		}
+
+		.cpops-cart-item {
+			padding: 12px 0;
+		}
+
+		.cpops-drawer__footer {
+			padding-top: 10px;
+			padding-bottom: calc(10px + env(safe-area-inset-bottom, 0px));
+		}
+
+		.cpops-coupon {
+			margin-bottom: 6px;
+		}
+
+		.cpops-coupon__title {
+			display: none;
+		}
+
+		.cpops-coupon__toggle {
+			display: inline-flex;
+		}
+
+		.cpops-coupon:not(.cpops-coupon--open) .cpops-coupon__form {
+			display: none;
+		}
+
+		.cpops-coupon--open .cpops-coupon__form {
+			margin-top: 6px;
+		}
+
+		.cpops-totals {
+			margin-bottom: 8px;
+		}
+
+		.cpops-totals__row {
+			padding: 2px 0;
+		}
+
+		.cpops-totals__row--total {
+			padding-top: 6px;
+			margin-top: 2px;
+
+			&:first-child {
+				padding-top: 0;
+				margin-top: 0;
+			}
+		}
+
+		.cpops-btn--checkout {
+			padding-top: 11px;
+			padding-bottom: 11px;
+		}
+
+		.cpops-secondary-action {
+			min-height: 40px;
+			margin-top: 6px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+
+		.cpops-drawer__view-cart {
+			margin-top: 4px;
+		}
+	}
+}
+
+// ─── Dark Mode ─────────────────────────────────────────────
+@mixin cpops-drawer-dark-palette {
+	// Server-rendered design colors are inline. Dark semantics therefore need
+	// priority, while merchant primary and primary-button branding stay inherited.
+	--cpops-secondary: #374151 !important;
+	--cpops-secondary-text: #f9fafb !important;
+	--cpops-background: var(--cpops-dark-background, #1a1a2e) !important;
+	--cpops-surface: var(--cpops-dark-surface, #252542) !important;
+	--cpops-text-primary: var(--cpops-dark-text-primary, #f9fafb) !important;
+	--cpops-text-secondary: var(--cpops-dark-text-secondary, #d1d5db) !important;
+	--cpops-text-tertiary: #9ca3af !important;
+	--cpops-border: var(--cpops-dark-border, #6b7280) !important;
+	--cpops-input-bg: var(--cpops-dark-input-bg, #252542) !important;
+	--cpops-input-border: var(--cpops-dark-input-border, #6b7280) !important;
+	--cpops-input-text: #f9fafb !important;
+	--cpops-button-secondary-bg: #374151 !important;
+	--cpops-button-secondary-text: #f9fafb !important;
+	--cpops-quantity-button-bg: #374151 !important;
+	--cpops-quantity-button-text: #f9fafb !important;
+	--cpops-quantity-input-bg: #1a1a2e !important;
+	--cpops-quantity-input-border: #6b7280 !important;
+	--cpops-quantity-input-text: #f9fafb !important;
+	--cpops-recs-background: #1f1f36 !important;
+	--cpops-recs-border: #6b7280 !important;
+	--cpops-recs-text: #f9fafb !important;
+	--cpops-recs-button-bg: var(--cpops-button-primary-bg, var(--cpops-primary)) !important;
+	--cpops-recs-button-text: var(--cpops-button-primary-text, var(--cpops-primary-text)) !important;
+	--cpops-close-color: #d1d5db !important;
+	--cpops-remove-color: #9ca3af !important;
+	--cpops-sale: #f87171 !important;
+	--cpops-success: #4ade80 !important;
+	--cpops-danger: #f87171 !important;
+	--cpops-error: #f87171 !important;
+	--cpops-image-outline: rgba(255, 255, 255, 0.1) !important;
+	--cpops-shadow-border: 0 0 0 1px rgba(255, 255, 255, 0.08) !important;
+
+	box-shadow: -4px 0 24px rgba(0, 0, 0, 0.3);
+}
+
+@mixin cpops-overlay-dark-palette {
+	--cpops-overlay: var(--cpops-dark-overlay, rgba(0, 0, 0, 0.7));
+}
+
+.cpops-drawer[data-dark-mode="dark"] {
+
+	@include cpops-drawer-dark-palette;
+}
+
+.cpops-overlay[data-dark-mode="dark"] {
+
+	@include cpops-overlay-dark-palette;
+}
+
+@media (prefers-color-scheme: dark) {
+
+	.cpops-drawer[data-dark-mode="auto"] {
+
+		@include cpops-drawer-dark-palette;
+	}
+
+	.cpops-overlay[data-dark-mode="auto"] {
+
+		@include cpops-overlay-dark-palette;
+	}
+}
+
+// ─── Reduced Motion ────────────────────────────────────────
+@media (prefers-reduced-motion: reduce) {
+
+	.cpops-overlay,
+	.cpops-drawer,
+	.cpops-btn,
+	.cpops-drawer__close,
+	.cpops-cart-item__remove,
+	.cpops-quantity__btn,
+	.cpops-coupon__input {
+		transition: none !important;
+	}
+}

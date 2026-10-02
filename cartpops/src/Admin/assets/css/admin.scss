@@ -1,0 +1,2049 @@
+/**
+ * CartPops Admin Dashboard Styles.
+ *
+ * Premium-quality admin UI for 5000+ webshops.
+ */
+
+@use "sass:color";
+
+// ─── Variables ──────────────────────────────────────────
+// Brand palette: Pop is the only accent (buttons, links, focus, selection);
+// Ink, Graphite and Mist carry everything else.
+$cpops-primary: #7022df; // Pop
+$cpops-primary-hover: #5c17bf;
+$cpops-primary-darker: #4a1299;
+$cpops-primary-light: #eee6fd; // Pop Soft
+$cpops-text: #1c1a1f; // Ink
+$cpops-text-secondary: #5e5c66; // Graphite
+$cpops-bg: #f5f4f6; // Mist
+$cpops-white: #fff;
+$cpops-border: #e6e4e9;
+$cpops-border-light: #f0eef2;
+$cpops-font: "Figtree", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", sans-serif;
+$cpops-font-mono: "Geist Mono", ui-monospace, "SF Mono", "Menlo", "Consolas", monospace;
+$cpops-success: #10b981;
+$cpops-success-bg: #ecfdf5;
+$cpops-danger: #ef4444;
+$cpops-danger-bg: #fef2f2;
+$cpops-radius: 8px;
+$cpops-radius-lg: 12px;
+$cpops-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+$cpops-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+$cpops-shadow-lg: 0 4px 6px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.06);
+$cpops-transition: 150ms ease;
+$cpops-nav-width: 220px;
+
+// WordPress components read these for toggles, checkboxes, focus rings and
+// primary buttons. Popovers and modals render outside .cpops-admin, so the
+// body selector below repeats them.
+@mixin cpops-accent-vars {
+	--wp-components-color-accent: #{$cpops-primary};
+	--wp-components-color-accent-darker-10: #{$cpops-primary-hover};
+	--wp-components-color-accent-darker-20: #{$cpops-primary-darker};
+	--wp-components-color-accent-inverted: #fff;
+	--wp-admin-theme-color: #{$cpops-primary};
+	--wp-admin-theme-color--rgb: 112, 34, 223;
+	--wp-admin-theme-color-darker-10: #{$cpops-primary-hover};
+	--wp-admin-theme-color-darker-10--rgb: 92, 23, 191;
+	--wp-admin-theme-color-darker-20: #{$cpops-primary-darker};
+	--wp-admin-theme-color-darker-20--rgb: 74, 18, 153;
+}
+
+// ─── Brand fonts (bundled; OFL licences sit next to the files) ───
+@font-face {
+	font-family: Figtree;
+	font-weight: 300 900;
+	font-display: swap;
+	src: url(../fonts/Figtree.woff2) format("woff2");
+}
+
+@font-face {
+	font-family: "Geist Mono";
+	font-weight: 100 900;
+	font-display: swap;
+	src: url(../fonts/GeistMono.woff2) format("woff2");
+}
+
+// ─── Reset WP Admin ─────────────────────────────────────
+.cpops-admin {
+
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box;
+	}
+
+	font-family: $cpops-font;
+	font-size: 14px;
+	line-height: 1.5;
+	color: $cpops-text;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	// Override WP component uppercase labels.
+	.components-base-control__label {
+		text-transform: none;
+	}
+
+	// Override WP component accent colors to the brand Pop.
+	@include cpops-accent-vars;
+
+	margin-left: -20px;
+	margin-top: -10px;
+	min-height: 100vh;
+	background: $cpops-bg;
+}
+
+// Select/input labels match the other field labels. Emotion repeats its class
+// selector (0-3-0); :not(#_) adds 1-0-0 without matching any real element.
+.cpops-admin:not(#_) .components-input-control__label {
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 1.4;
+	text-transform: none;
+	color: $cpops-text;
+}
+
+// WP components set their own system font stack; use the brand face instead.
+.cpops-admin:not(#_) [class*="components-"] {
+	font-family: inherit;
+}
+
+// Extend the app canvas under the WP footer so no grey band shows below it.
+body:has(.cpops-admin),
+#wpwrap:has(.cpops-admin) {
+	background: $cpops-bg;
+}
+
+// Popovers, dropdowns and modals portal to <body>, outside .cpops-admin.
+body:has(.cpops-admin) {
+
+	@include cpops-accent-vars;
+
+	.components-popover,
+	.components-modal__frame {
+		font-family: $cpops-font;
+
+		[class*="components-"] {
+			font-family: inherit;
+		}
+	}
+}
+
+// ─── Header ─────────────────────────────────────────────
+.cpops-admin__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 12px 24px;
+	background: $cpops-white;
+	border-bottom: 1px solid $cpops-border;
+	position: sticky;
+	top: 32px; // WP admin bar
+	z-index: 100;
+
+	@media (max-width: 782px) {
+		top: 46px;
+	}
+}
+
+.cpops-admin__brand {
+	display: flex;
+	align-items: center;
+	gap: 14px; // One x-height of clear space around the wordmark.
+}
+
+.cpops-admin__logo {
+	display: block;
+	height: 24px;
+	width: auto;
+}
+
+.cpops-admin__version {
+	font-family: $cpops-font-mono;
+	font-size: 11px;
+	color: $cpops-text-secondary;
+	background: $cpops-bg;
+	border: 1px solid $cpops-border;
+	padding: 1px 7px;
+	border-radius: 10px;
+	font-weight: 500;
+}
+
+.cpops-admin__actions {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.cpops-admin__unsaved {
+	font-size: 13px;
+	color: $cpops-primary;
+	font-weight: 500;
+
+	&::before {
+		content: "";
+		display: inline-block;
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+		background: $cpops-primary;
+		margin-right: 6px;
+		vertical-align: middle;
+	}
+}
+
+.cpops-admin__save-btn {
+	padding: 7px 18px;
+	background: $cpops-primary;
+	color: $cpops-white;
+	border: none;
+	border-radius: $cpops-radius;
+	font-size: 13px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background $cpops-transition, opacity $cpops-transition;
+
+	&:hover {
+		background: $cpops-primary-hover;
+	}
+
+	&:disabled {
+		opacity: 0.5;
+		cursor: not-allowed;
+	}
+
+	&:focus-visible {
+		outline: 2px solid $cpops-primary;
+		outline-offset: 2px;
+	}
+}
+
+// ─── Layout ─────────────────────────────────────────────
+.cpops-admin__body {
+	display: flex;
+	min-height: calc(100vh - 65px);
+}
+
+// ─── Sidebar Nav ────────────────────────────────────────
+.cpops-admin__nav {
+	width: $cpops-nav-width;
+	background: $cpops-white;
+	border: 1px solid $cpops-border;
+	border-radius: $cpops-radius-lg;
+	margin: 16px 0 16px 16px;
+	padding: 8px 0;
+	flex-shrink: 0;
+	align-self: flex-start;
+	position: sticky;
+	top: 97px;
+	max-height: calc(100vh - 113px);
+	overflow-y: auto;
+
+	@media (max-width: 782px) {
+		top: 111px;
+		max-height: calc(100vh - 127px);
+	}
+}
+
+.cpops-admin__nav-section {
+	padding: 0;
+}
+
+.cpops-admin__nav-divider {
+	height: 1px;
+	background: $cpops-border-light;
+	margin: 6px 12px;
+}
+
+.cpops-admin__nav-label {
+	display: block;
+	padding: 6px 16px 4px;
+	font-size: 11px;
+	font-weight: 600;
+	color: $cpops-text-secondary;
+}
+
+.cpops-admin__nav-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 16px;
+	height: 16px;
+	flex-shrink: 0;
+	color: inherit;
+
+	svg {
+		display: block;
+	}
+}
+
+.cpops-admin__nav-item {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	width: calc(100% - 12px);
+	margin: 1px 6px;
+	padding: 7px 10px;
+	border: none;
+	background: none;
+	color: $cpops-text-secondary;
+	font-size: 13px;
+	font-weight: 400;
+	cursor: pointer;
+	transition: color $cpops-transition, background $cpops-transition;
+	text-align: left;
+	border-radius: 6px;
+
+	&:hover {
+		color: $cpops-text;
+		background: $cpops-bg;
+	}
+
+	&--active {
+		color: $cpops-text;
+		background: $cpops-primary-light;
+		font-weight: 600;
+
+		.cpops-admin__nav-icon {
+			color: $cpops-primary;
+		}
+
+		&:hover {
+			color: $cpops-text;
+			background: $cpops-primary-light;
+		}
+	}
+
+	&--pro {
+		opacity: 0.75;
+	}
+
+	&:focus-visible {
+		outline: 2px solid $cpops-primary;
+		outline-offset: -2px;
+	}
+}
+
+.cpops-admin__pro-badge {
+	font-size: 10px;
+	font-weight: 600;
+	color: $cpops-primary;
+	background: $cpops-primary-light;
+	padding: 1px 5px;
+	border-radius: 3px;
+	letter-spacing: 0.03em;
+	margin-left: auto;
+	text-transform: uppercase;
+}
+
+// ─── Content Area ───────────────────────────────────────
+.cpops-admin__content {
+	flex: 1;
+	min-width: 0;
+	padding: 24px;
+}
+
+// ─── Page Layout ────────────────────────────────────────
+.cpops-page {
+	max-width: 720px;
+}
+
+.cpops-page--dashboard {
+	max-width: none;
+}
+
+.cpops-page--wide {
+	max-width: none;
+}
+
+.cpops-page--split {
+	max-width: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 24px;
+	align-items: start;
+
+	@media (max-width: 1200px) {
+		grid-template-columns: 1fr;
+	}
+}
+
+.cpops-page__settings {
+	max-width: 480px;
+}
+
+.cpops-page__preview {
+	position: sticky;
+	top: 80px;
+
+	@media (max-width: 1200px) {
+		position: static;
+	}
+}
+
+.cpops-page__header {
+	margin-bottom: 20px;
+
+	h2 {
+		font-size: 18px;
+		font-weight: 600;
+		color: $cpops-text;
+		margin: 0 0 4px;
+		letter-spacing: -0.02em;
+	}
+}
+
+.cpops-page__description {
+	color: $cpops-text-secondary;
+	font-size: 13px;
+	margin: 0;
+}
+
+// ─── Editor Tabs (sub-tabs inside DrawerEditor) ────────
+.cpops-editor-tabs {
+	display: flex;
+	gap: 4px;
+	margin-bottom: 20px;
+	padding: 3px;
+	background: $cpops-bg;
+	border-radius: $cpops-radius;
+}
+
+.cpops-editor-tab {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	padding: 6px 14px;
+	border: none;
+	background: none;
+	color: $cpops-text-secondary;
+	font-size: 13px;
+	font-weight: 400;
+	cursor: pointer;
+	border-radius: 6px;
+	transition: all $cpops-transition;
+	white-space: nowrap;
+
+	&:hover {
+		color: $cpops-text;
+	}
+
+	&--active {
+		background: $cpops-white;
+		color: $cpops-text;
+		font-weight: 500;
+		box-shadow: $cpops-shadow-sm;
+	}
+
+	.cpops-admin__pro-badge {
+		font-size: 9px;
+		padding: 0 4px;
+	}
+}
+
+// ─── Settings Groups ────────────────────────────────────
+.cpops-settings-group {
+	background: $cpops-white;
+	border: 1px solid $cpops-border;
+	border-radius: $cpops-radius-lg;
+	padding: 18px;
+	margin-bottom: 12px;
+
+	// WP Components overrides inside settings groups.
+	.components-base-control {
+		margin-bottom: 16px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.components-base-control__label {
+		font-size: 13px;
+		font-weight: 500;
+		color: $cpops-text;
+		margin-bottom: 4px;
+	}
+
+	> .cpops-page__description {
+		margin-bottom: 16px;
+	}
+
+	> h4:not([class]) {
+		margin: 20px 0 4px;
+		padding-top: 16px;
+		border-top: 1px solid $cpops-border-light;
+		font-size: 13px;
+		font-weight: 600;
+		color: $cpops-text;
+	}
+
+	.components-base-control__help {
+		font-size: 12px;
+		color: $cpops-text-secondary;
+	}
+
+	.components-toggle-control {
+
+		.components-base-control__field {
+			margin-bottom: 0;
+		}
+	}
+
+	&--danger {
+		border-color: #fca5a5;
+	}
+}
+
+.cpops-settings-group__title {
+	font-size: 13px;
+	font-weight: 600;
+	color: $cpops-text;
+	margin: 0 0 12px;
+}
+
+// Inline Pro upsell callout inside a settings group.
+.cpops-settings-help {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 10px;
+	margin: 0 0 16px;
+	padding: 12px 14px;
+	background: $cpops-bg;
+	border: 1px solid $cpops-border-light;
+	border-radius: $cpops-radius;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	p {
+		margin: 0;
+		font-size: 13px;
+		color: $cpops-text-secondary;
+	}
+}
+
+// ─── Upgrade Page ───────────────────────────────────────
+.cpops-upgrade {
+
+	.cpops-admin__pro-badge {
+		display: inline-block;
+		margin-bottom: 12px;
+	}
+
+	h2 {
+		margin: 0 0 6px;
+		font-size: 18px;
+		font-weight: 600;
+		letter-spacing: -0.02em;
+		color: $cpops-text;
+	}
+
+	.cpops-page__description {
+		margin-bottom: 20px;
+	}
+}
+
+.cpops-import-export {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+// ─── Launcher Page Exclusions ─────────────────────────
+.cpops-page-exclusions {
+	border-top: 1px solid $cpops-border-light;
+	margin-top: 18px;
+	padding-top: 18px;
+}
+
+.cpops-page-exclusions__heading {
+	font-size: 13px;
+	font-weight: 500;
+	color: $cpops-text;
+	margin: 0 0 4px;
+}
+
+.cpops-page-exclusions__help,
+.cpops-page-exclusions__notice p,
+.cpops-page-exclusions__status p {
+	font-size: 12px;
+	color: $cpops-text-secondary;
+	margin: 0 0 12px;
+}
+
+.cpops-page-exclusions__notice p,
+.cpops-page-exclusions__status p[role="alert"] {
+	color: #b45309;
+}
+
+.cpops-page-exclusions__notice {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	margin-bottom: 12px;
+
+	p {
+		margin: 0;
+	}
+
+	button {
+		padding: 3px 7px;
+		border: 1px solid $cpops-border;
+		border-radius: 4px;
+		background: $cpops-white;
+		color: $cpops-text;
+		cursor: pointer;
+		font-size: 12px;
+		white-space: nowrap;
+
+		&:hover {
+			border-color: $cpops-text-secondary;
+		}
+
+		&:focus-visible {
+			outline: 2px solid $cpops-primary;
+			outline-offset: 1px;
+		}
+	}
+}
+
+.cpops-page-exclusions__selected,
+.cpops-page-exclusions__results {
+	list-style: none;
+	margin: 0 0 12px;
+	padding: 0;
+}
+
+.cpops-page-exclusions__selected {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+
+	li {
+		display: inline-flex;
+		align-items: center;
+		gap: 5px;
+		max-width: 100%;
+		padding: 4px 5px 4px 9px;
+		background: $cpops-bg;
+		border: 1px solid $cpops-border;
+		border-radius: 999px;
+		font-size: 12px;
+		font-weight: 500;
+		color: $cpops-text;
+
+		> span {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+	}
+}
+
+.cpops-page-exclusions__remove {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 24px;
+	height: 24px;
+	padding: 0;
+	border: none;
+	border-radius: 50%;
+	background: transparent;
+	color: $cpops-text-secondary;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 1;
+
+	&:hover {
+		background: $cpops-danger-bg;
+		color: $cpops-danger;
+	}
+
+	&:focus-visible {
+		outline: 2px solid $cpops-primary;
+		outline-offset: 1px;
+	}
+}
+
+.cpops-page-exclusions__status:empty {
+	display: none;
+}
+
+.cpops-page-exclusions__results {
+	border: 1px solid $cpops-border;
+	border-radius: $cpops-radius;
+	max-height: 220px;
+	overflow-y: auto;
+
+	li + li {
+		border-top: 1px solid $cpops-border-light;
+	}
+
+	button {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 12px;
+		width: 100%;
+		padding: 9px 10px;
+		border: none;
+		background: $cpops-white;
+		color: $cpops-text;
+		cursor: pointer;
+		font-size: 13px;
+		text-align: left;
+
+		&:hover {
+			background: $cpops-bg;
+		}
+
+		&:focus-visible {
+			position: relative;
+			outline: 2px solid $cpops-primary;
+			outline-offset: -2px;
+		}
+
+		span {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+
+		small {
+			color: $cpops-text-secondary;
+			flex-shrink: 0;
+		}
+	}
+}
+
+// ─── Cards (Dashboard) ─────────────────────────────────
+.cpops-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 12px;
+	margin-bottom: 20px;
+}
+
+.cpops-card {
+	background: $cpops-white;
+	border: 1px solid $cpops-border;
+	border-radius: $cpops-radius-lg;
+	padding: 16px;
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+
+	&--link {
+		text-decoration: none;
+		transition: border-color $cpops-transition, box-shadow $cpops-transition;
+		cursor: pointer;
+
+		&:hover {
+			border-color: #ccd0d5;
+			box-shadow: $cpops-shadow-sm;
+		}
+	}
+
+	&--status.cpops-card--muted {
+		border-left: 3px solid $cpops-border;
+	}
+}
+
+.cpops-card__icon {
+	font-size: 20px;
+	line-height: 1;
+}
+
+.cpops-card--success .cpops-card__icon {
+	color: $cpops-success;
+}
+
+.cpops-card__content {
+
+	h3 {
+		font-size: 12px;
+		font-weight: 500;
+		color: $cpops-text-secondary;
+		margin: 0 0 4px;
+	}
+
+	p {
+		font-size: 16px;
+		font-weight: 600;
+		color: $cpops-text;
+		margin: 0;
+	}
+}
+
+// ─── Dashboard Sections ─────────────────────────────────
+.cpops-dash-section {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 12px;
+	margin-top: 24px;
+}
+
+.cpops-dash-section__title {
+	font-size: 13px;
+	font-weight: 600;
+	color: $cpops-text;
+	margin: 0;
+}
+
+.cpops-dash-section__link {
+	font-size: 12px;
+	color: $cpops-text-secondary;
+	text-decoration: none;
+
+	&:hover {
+		color: $cpops-text;
+	}
+}
+
+.cpops-dash-features {
+	display: flex;
+	flex-direction: column;
+	gap: 1px;
+	background: $cpops-border;
+	border: 1px solid $cpops-border;
+	border-radius: $cpops-radius-lg;
+	overflow: hidden;
+	margin-bottom: 24px;
+}
+
+.cpops-dash-feature {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 11px 16px;
+	background: $cpops-white;
+	text-decoration: none;
+	transition: background $cpops-transition;
+
+	&:hover {
+		background: $cpops-bg;
+	}
+}
+
+.cpops-dash-feature__dot {
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	flex-shrink: 0;
+
+	&--on {
+		background: $cpops-success;
+	}
+
+	&--off {
+		background: $cpops-border;
+	}
+}
+
+.cpops-dash-feature__label {
+	flex: 1;
+	font-size: 13px;
+	font-weight: 500;
+	color: $cpops-text;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.cpops-dash-feature__status {
+	font-size: 12px;
+	color: $cpops-text-secondary;
+}
+
+.cpops-dash-feature__arrow {
+	color: $cpops-border;
+	font-size: 14px;
+	transition: color $cpops-transition;
+
+	.cpops-dash-feature:hover & {
+		color: $cpops-text-secondary;
+	}
+}
+
+.cpops-dash-footer {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding-top: 20px;
+	border-top: 1px solid $cpops-border;
+	font-size: 12px;
+	color: $cpops-text-secondary;
+}
+
+.cpops-dash-footer__sep {
+	width: 1px;
+	height: 12px;
+	background: $cpops-border;
+}
+
+// ─── Dashboard Layout ──────────────────────────────────
+.cpops-dash-layout {
+	display: grid;
+	grid-template-columns: 1fr 260px;
+	gap: 32px;
+	align-items: start;
+
+	@media (max-width: 1024px) {
+		grid-template-columns: 1fr;
+	}
+}
+
+.cpops-dash-main {
+	min-width: 0;
+}
+
+// ─── Dashboard Sidebar ─────────────────────────────────
+.cpops-dash-sidebar {
+	position: sticky;
+	top: 80px;
+
+	@media (max-width: 1024px) {
+		position: static;
+	}
+}
+
+.cpops-dash-sidebar__title {
+	font-size: 13px;
+	font-weight: 600;
+	color: $cpops-text;
+	margin: 0 0 12px;
+}
+
+.cpops-dash-resources {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.cpops-dash-resource {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 14px 16px;
+	background: $cpops-white;
+	border: 1px solid $cpops-border;
+	border-radius: $cpops-radius-lg;
+	text-decoration: none;
+	transition: border-color $cpops-transition, box-shadow $cpops-transition;
+
+	&:hover {
+		border-color: #ccd0d5;
+		box-shadow: $cpops-shadow-sm;
+	}
+}
+
+.cpops-dash-resource__icon {
+	flex-shrink: 0;
+	color: $cpops-text-secondary;
+}
+
+.cpops-dash-resource__text {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.cpops-dash-resource__label {
+	font-size: 13px;
+	font-weight: 600;
+	color: $cpops-text;
+}
+
+.cpops-dash-resource__desc {
+	font-size: 12px;
+	color: $cpops-text-secondary;
+}
+
+// ─── Presets (Design) ───────────────────────────────────
+.cpops-presets {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+.cpops-preset {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 8px 14px;
+	background: $cpops-white;
+	border: 2px solid $cpops-border;
+	border-radius: $cpops-radius;
+	cursor: pointer;
+	transition: border-color $cpops-transition, box-shadow $cpops-transition;
+
+	&:hover {
+		border-color: $cpops-text-secondary;
+	}
+
+	&--active {
+		border-color: $cpops-primary;
+		box-shadow: 0 0 0 1px $cpops-primary;
+	}
+}
+
+.cpops-preset__swatch {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 2px solid rgba(0, 0, 0, 0.1);
+	flex-shrink: 0;
+}
+
+.cpops-preset__label {
+	font-size: 13px;
+	font-weight: 500;
+	color: $cpops-text;
+}
+
+// ─── Color Grid (Design) ───────────────────────────────
+.cpops-color-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+	gap: 8px;
+}
+
+// ─── Color Picker Component ────────────────────────────
+.cpops-color-field {
+	position: relative;
+}
+
+.cpops-color-field__trigger {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	width: 100%;
+	padding: 8px 10px;
+	background: $cpops-white;
+	border: 1px solid $cpops-border;
+	border-radius: $cpops-radius;
+	cursor: pointer;
+	transition: border-color $cpops-transition;
+
+	&:hover {
+		border-color: $cpops-text-secondary;
+	}
+
+	&[aria-expanded="true"] {
+		border-color: $cpops-primary;
+		box-shadow: 0 0 0 1px $cpops-primary;
+	}
+}
+
+.cpops-color-field__swatch {
+	width: 28px;
+	height: 28px;
+	border-radius: 6px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	flex-shrink: 0;
+}
+
+.cpops-color-field__info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	min-width: 0;
+}
+
+.cpops-color-field__label {
+	font-size: 12px;
+	font-weight: 500;
+	color: $cpops-text;
+}
+
+.cpops-color-field__value {
+	font-size: 11px;
+	color: $cpops-text-secondary;
+	font-family: $cpops-font-mono;
+}
+
+.cpops-color-field__popover {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 50;
+	margin-top: 4px;
+	background: $cpops-white;
+	border: 1px solid $cpops-border;
+	border-radius: $cpops-radius-lg;
+	box-shadow: $cpops-shadow-lg;
+	padding: 12px;
+	min-width: 260px;
+
+	.components-color-picker {
+		width: 100% !important;
+	}
+}
+
+.cpops-color-field__input-row {
+	margin-top: 8px;
+	padding-top: 8px;
+	border-top: 1px solid $cpops-border-light;
+}
+
+.cpops-color-field__hex-input {
+	width: 100%;
+	padding: 6px 8px;
+	border: 1px solid $cpops-border;
+	border-radius: 6px;
+	font-size: 13px;
+	font-family: $cpops-font-mono;
+	color: $cpops-text;
+
+	&:focus {
+		outline: none;
+		border-color: $cpops-primary;
+		box-shadow: 0 0 0 1px $cpops-primary;
+	}
+}
+
+// ─── Preview Toolbar ────────────────────────────────────
+.cpops-preview-toolbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 8px;
+}
+
+.cpops-preview-toolbar__label {
+	font-size: 12px;
+	font-weight: 500;
+	color: $cpops-text-secondary;
+}
+
+// ─── Drawer Preview Component ───────────────────────────
+.cpops-dp {
+	background: $cpops-white;
+	border: 1px solid $cpops-border;
+	border-radius: $cpops-radius-lg;
+	overflow: hidden;
+}
+
+.cpops-dp__toolbar {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 8px 12px;
+	background: $cpops-bg;
+	border-bottom: 1px solid $cpops-border;
+}
+
+.cpops-dp__toolbar-group {
+	display: flex;
+	align-items: center;
+	gap: 2px;
+	background: $cpops-white;
+	border: 1px solid $cpops-border;
+	border-radius: 6px;
+	padding: 2px;
+}
+
+.cpops-dp__toolbar-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 4px;
+	padding: 4px 10px;
+	border: none;
+	background: none;
+	color: $cpops-text-secondary;
+	font-size: 12px;
+	font-weight: 500;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background $cpops-transition, color $cpops-transition;
+
+	&:hover {
+		color: $cpops-text;
+	}
+
+	&--active {
+		background: $cpops-primary;
+		color: $cpops-white;
+
+		&:hover {
+			color: $cpops-white;
+		}
+	}
+
+	svg {
+		flex-shrink: 0;
+	}
+}
+
+.cpops-dp__frame {
+	position: relative;
+	overflow: hidden;
+	background: #e5e7eb;
+	height: calc(100vh - 180px);
+
+	&--mobile {
+		max-width: 390px;
+		margin: 0 auto;
+		border-radius: $cpops-radius;
+	}
+}
+
+.cpops-dp__overlay {
+	position: absolute;
+	inset: 0;
+}
+
+.cpops-dp__drawer {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	box-shadow: -4px 0 24px rgba(0, 0, 0, 0.15);
+	overflow: hidden;
+
+	&--right {
+		right: 0;
+	}
+
+	&--left {
+		left: 0;
+	}
+}
+
+.cpops-dp__clickable {
+	cursor: pointer;
+	transition: outline-color 150ms ease;
+	outline: 2px solid transparent;
+	outline-offset: -2px;
+
+	&:hover {
+		outline-color: rgba($cpops-primary, 0.4);
+	}
+}
+
+.cpops-dp__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 14px 24px;
+	flex-shrink: 0;
+	border-bottom: 1px solid;
+}
+
+.cpops-dp__header-title {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1.3;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.cpops-dp__header-count {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 24px;
+	height: 24px;
+	padding: 0 6px;
+	font-size: 12px;
+	font-weight: 600;
+	border-radius: 100px;
+	line-height: 1;
+}
+
+.cpops-dp__close-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+.cpops-dp__body {
+	flex: 1;
+	overflow-y: auto;
+	padding: 0;
+}
+
+.cpops-dp__empty {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 48px 24px;
+	gap: 12px;
+	height: 100%;
+
+	p {
+		font-size: 14px;
+		margin: 0;
+	}
+}
+
+.cpops-dp__continue-btn {
+	padding: 8px 20px;
+	background: transparent;
+	border: 1px solid;
+	font-size: 13px;
+	font-weight: 500;
+	cursor: pointer;
+	margin-top: 8px;
+}
+
+.cpops-dp__items {
+	padding: 16px 24px;
+}
+
+.cpops-dp__item {
+	display: grid;
+	grid-template-columns: 72px 1fr auto;
+	gap: 16px;
+	align-items: start;
+	padding: 16px 0;
+	border-bottom: 1px solid;
+}
+
+.cpops-dp__item-image {
+	width: 72px;
+	height: 72px;
+	border-radius: var(--cpops-radius, 8px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	font-weight: 600;
+	flex-shrink: 0;
+}
+
+.cpops-dp__item-details {
+	min-width: 0;
+}
+
+.cpops-dp__item-name {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.4;
+	margin-bottom: 4px;
+	max-width: 100%;
+}
+
+.cpops-dp__drawer[data-product-name-display="single_line"]
+.cpops-dp__item-name {
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.cpops-dp__drawer[data-product-name-display="two_lines"]
+.cpops-dp__item-name {
+	display: -webkit-box;
+	overflow: hidden;
+	white-space: normal;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.cpops-dp__drawer[data-product-name-display="full"] .cpops-dp__item-name {
+	display: block;
+	overflow: visible;
+	overflow-wrap: anywhere;
+	white-space: normal;
+	text-overflow: clip;
+}
+
+.cpops-dp__item-variation {
+	font-size: 12px;
+	margin-bottom: 4px;
+}
+
+.cpops-dp__item-price {
+	font-size: 14px;
+}
+
+.cpops-dp__item-actions {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 8px;
+}
+
+.cpops-dp__qty {
+	display: inline-flex;
+	align-items: center;
+	border: 1px solid;
+	overflow: hidden;
+}
+
+.cpops-dp__qty-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 28px;
+	height: 28px;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+.cpops-dp__qty-value {
+	font-size: 13px;
+	font-weight: 500;
+	min-width: 32px;
+	height: 28px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.cpops-dp__remove-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 28px;
+	height: 28px;
+	border: none;
+	background: none;
+	cursor: pointer;
+	border-radius: 8px;
+}
+
+.cpops-dp__coupon {
+	display: flex;
+	gap: 8px;
+	margin-bottom: 16px;
+}
+
+.cpops-dp__coupon-input {
+	flex: 1;
+	padding: 8px 12px;
+	border: 1px solid;
+	font-size: 13px;
+
+	&::placeholder {
+		opacity: 0.5;
+	}
+}
+
+.cpops-dp__coupon-btn {
+	padding: 8px 16px;
+	background: transparent;
+	border: 1px solid;
+	font-size: 13px;
+	font-weight: 600;
+	cursor: pointer;
+	white-space: nowrap;
+	flex-shrink: 0;
+}
+
+// ─── Drawer Preview Recommendations ───────────────────
+.cpops-dp__recs {
+	padding: 16px 24px;
+	border-top: 1px solid;
+}
+
+.cpops-dp__recs-heading {
+	margin: 0 0 12px;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.cpops-dp__recs-list {
+	display: flex;
+	gap: 10px;
+
+	&--horizontal {
+		flex-direction: row;
+		overflow-x: auto;
+		scrollbar-width: none;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+
+	&--grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 12px;
+	}
+
+	&--list {
+		flex-direction: column;
+		gap: 8px;
+	}
+}
+
+.cpops-dp__rec-card {
+	flex: 0 0 80px;
+	overflow: hidden;
+
+	// List: compact row layout (full width).
+	.cpops-dp__recs-list--list & {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		flex: none;
+		padding: 6px;
+	}
+
+	// Horizontal: compact row layout (fixed width, scrollable).
+	.cpops-dp__recs-list--horizontal & {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		flex: 0 0 200px;
+		min-width: 200px;
+		padding: 6px;
+	}
+}
+
+.cpops-dp__rec-image {
+
+	.cpops-dp__recs-list--horizontal &,
+	.cpops-dp__recs-list--list & {
+		width: 48px !important;
+		height: 48px !important;
+		border-radius: 6px;
+	}
+}
+
+.cpops-dp__rec-info {
+	flex: 1;
+	min-width: 0;
+	padding: 4px 6px;
+}
+
+.cpops-dp__rec-name {
+	display: block;
+	font-size: 12px;
+	font-weight: 500;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.cpops-dp__rec-price {
+	display: block;
+	font-size: 11px;
+	font-weight: 600;
+}
+
+.cpops-dp__rec-add {
+	display: block;
+	width: calc(100% - 16px);
+	margin: 0 8px 8px;
+	padding: 8px;
+	border: none;
+	font-size: 12px;
+	font-weight: 600;
+	cursor: pointer;
+
+	.cpops-dp__recs-list--list &,
+	.cpops-dp__recs-list--horizontal & {
+		width: 28px;
+		height: 28px;
+		margin: 0;
+		padding: 0;
+		border-radius: 50%;
+		flex-shrink: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 14px;
+	}
+}
+
+.cpops-dp__footer {
+	border-top: 1px solid;
+	padding: 20px 24px;
+	flex-shrink: 0;
+}
+
+// ─── Drawer Preview Totals ───────────────────────────
+.cpops-dp__totals {
+	margin-bottom: 16px;
+
+	&--body {
+		padding: 16px 24px;
+		border-top: 1px solid;
+		margin-bottom: 0;
+	}
+}
+
+.cpops-dp__total-row {
+	display: flex;
+	justify-content: space-between;
+	padding: 4px 0;
+	font-size: 14px;
+
+	&--grand {
+		padding-top: 12px;
+		margin-top: 4px;
+		border-top: 1px solid;
+		font-size: 14px;
+		font-weight: 600;
+	}
+}
+
+.cpops-dp__checkout-btn {
+	display: block;
+	width: 100%;
+	padding: 14px 24px;
+	border: none;
+	font-size: 15px;
+	font-weight: 600;
+	cursor: pointer;
+	text-align: center;
+	transition: opacity $cpops-transition;
+
+	&:hover {
+		opacity: 0.92;
+	}
+}
+
+.cpops-dp__view-cart {
+	display: block;
+	text-align: center;
+	margin-top: 12px;
+	font-size: 13px;
+	text-decoration: underline;
+	text-underline-offset: 2px;
+	cursor: pointer;
+}
+
+// ─── Launcher Preview Component ─────────────────────────
+.cpops-lp {
+	background: $cpops-white;
+	border: 1px solid $cpops-border;
+	border-radius: $cpops-radius-lg;
+	overflow: hidden;
+}
+
+.cpops-lp__toolbar {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 8px 12px;
+	background: $cpops-bg;
+	border-bottom: 1px solid $cpops-border;
+}
+
+.cpops-lp__frame {
+	position: relative;
+	height: 400px;
+	overflow: hidden;
+	background: #e5e7eb;
+	transition: background-color 200ms ease;
+
+	&--mobile {
+		max-width: 375px;
+		margin: 16px auto;
+		border-radius: $cpops-radius;
+		height: 360px;
+	}
+}
+
+.cpops-lp__page-mockup {
+	padding: 32px 24px;
+	opacity: 0.15;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.cpops-lp__wireframe-bar {
+	height: 10px;
+	border-radius: 5px;
+	background: #9ca3af;
+
+	&--wide {
+		width: 80%;
+	}
+
+	&--medium {
+		width: 55%;
+	}
+
+	&--narrow {
+		width: 35%;
+	}
+}
+
+.cpops-lp__button {
+	transition: transform 200ms ease;
+
+	&:hover {
+		transform: scale(1.05);
+	}
+
+	svg {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.cpops-lp__clickable {
+	cursor: pointer;
+	transition: outline-color 150ms ease;
+	outline: 2px solid transparent;
+	outline-offset: 2px;
+
+	&:hover {
+		outline-color: rgba($cpops-primary, 0.5);
+	}
+}
+
+// ─── Toast Notification ─────────────────────────────────
+.cpops-toast {
+	position: fixed;
+	bottom: 24px;
+	right: 24px;
+	padding: 12px 20px;
+	border-radius: $cpops-radius;
+	font-size: 13px;
+	font-weight: 500;
+	box-shadow: $cpops-shadow-lg;
+	z-index: 9999;
+	animation: cpops-toast-in 200ms ease;
+
+	&--success {
+		background: $cpops-success;
+		color: $cpops-white;
+	}
+
+	&--error {
+		background: $cpops-danger;
+		color: $cpops-white;
+	}
+}
+
+@keyframes cpops-toast-in {
+
+	from {
+		opacity: 0;
+		transform: translateY(8px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+// ─── Buttons ────────────────────────────────────────────
+.cpops-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+	padding: 8px 16px;
+	border: none;
+	border-radius: $cpops-radius;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 1.4;
+	text-decoration: none;
+	cursor: pointer;
+	transition: background $cpops-transition, border-color $cpops-transition;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+
+	&--outline {
+		background: transparent;
+		border: 1px solid $cpops-border;
+		color: $cpops-text;
+
+		&:hover {
+			border-color: $cpops-text-secondary;
+		}
+	}
+
+	&--danger {
+		background: $cpops-danger;
+		color: $cpops-white;
+		border: none;
+
+		&:hover {
+			background: #dc2626;
+		}
+	}
+
+	&--outline.cpops-btn--danger {
+		background: transparent;
+		border: 1px solid $cpops-danger;
+		color: $cpops-danger;
+
+		&:hover {
+			background: $cpops-danger-bg;
+		}
+	}
+
+	&--primary {
+		background: $cpops-primary;
+		color: $cpops-white;
+		border: none;
+
+		&:hover,
+		&:focus {
+			background: $cpops-primary-hover;
+			color: $cpops-white;
+		}
+	}
+
+	&--small {
+		padding: 4px 12px;
+		font-size: 12px;
+	}
+}
+
+// ─── Reset Confirm ──────────────────────────────────────
+.cpops-reset-confirm {
+
+	p {
+		font-size: 13px;
+		color: $cpops-text-secondary;
+		margin: 0 0 12px;
+	}
+}
+
+.cpops-reset-confirm__actions {
+	display: flex;
+	gap: 8px;
+}
+
+// ─── Code Editor ────────────────────────────────────────
+.cpops-code-editor {
+
+	textarea {
+		font-family: $cpops-font-mono !important;
+		font-size: 12px !important;
+		line-height: 1.6 !important;
+		tab-size: 2;
+		resize: vertical;
+		background: #fafafa;
+		border-color: $cpops-border;
+		border-radius: $cpops-radius;
+	}
+}
+
+// ─── Integrations ───────────────────────────────────────
+.cpops-integration-banner {
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+	padding: 14px 16px;
+	border-radius: $cpops-radius;
+	background: $cpops-bg;
+	border: 1px solid $cpops-border;
+
+	&--supported {
+		border-color: #22c55e;
+		background: #f0fdf4;
+	}
+}
+
+.cpops-integration-banner__icon {
+	flex-shrink: 0;
+	width: 36px;
+	height: 36px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background: $cpops-white;
+	color: $cpops-text-secondary;
+
+	.cpops-integration-banner--supported & {
+		background: #dcfce7;
+		color: #16a34a;
+	}
+}
+
+.cpops-integration-banner__content {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+
+	strong {
+		font-size: 13px;
+		font-weight: 600;
+		color: $cpops-text;
+	}
+}
+
+.cpops-integration-banner__version {
+	font-size: 12px;
+	color: $cpops-text-secondary;
+}
+
+.cpops-integration-banner__status {
+	font-size: 12px;
+	color: $cpops-text-secondary;
+
+	&--supported {
+		color: #16a34a;
+		font-weight: 500;
+	}
+}
+
+// Icon grid selector.
+.cpops-icon-grid-label {
+	display: block;
+	font-size: 11px;
+	font-weight: 500;
+	letter-spacing: 0.05em;
+	color: $cpops-text-secondary;
+	margin-bottom: 8px;
+}
+
+.cpops-icon-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 8px;
+	margin-bottom: 16px;
+}
+
+.cpops-icon-option {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 6px;
+	padding: 14px 8px;
+	border: 2px solid $cpops-border;
+	border-radius: $cpops-radius;
+	background: $cpops-white;
+	cursor: pointer;
+	transition: all 150ms ease;
+	color: $cpops-text;
+
+	&:hover {
+		border-color: $cpops-text-secondary;
+	}
+
+	&--active {
+		border-color: $cpops-primary;
+		background: $cpops-bg;
+	}
+
+	svg {
+		width: 24px;
+		height: 24px;
+	}
+}
+
+.cpops-icon-option__label {
+	font-size: 11px;
+	font-weight: 500;
+	color: $cpops-text-secondary;
+}
+
+// Icon preview mock header.
+.cpops-icon-preview__mock-header {
+	display: flex;
+	align-items: center;
+	padding: 12px 16px;
+	background: $cpops-white;
+	border: 1px solid $cpops-border;
+	border-radius: $cpops-radius;
+	gap: 24px;
+}
+
+.cpops-icon-preview__site-name {
+	font-size: 14px;
+	font-weight: 700;
+	color: $cpops-text;
+}
+
+.cpops-icon-preview__nav {
+	display: flex;
+	gap: 16px;
+	flex: 1;
+
+	span {
+		font-size: 13px;
+		color: $cpops-text-secondary;
+	}
+}
+
+.cpops-icon-preview__cart-icon {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	color: $cpops-text;
+
+	svg {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+.cpops-icon-preview__badge {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 16px;
+	height: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 10px;
+	font-weight: 700;
+	color: $cpops-white;
+	background: $cpops-primary;
+	border-radius: 50%;
+	line-height: 1;
+}
+
+// Supported themes list.
+.cpops-supported-themes {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.cpops-supported-theme {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 14px;
+	border-radius: $cpops-radius;
+	background: $cpops-bg;
+	border: 1px solid $cpops-border;
+
+	&--coming {
+		opacity: 0.5;
+		border-style: dashed;
+	}
+}
+
+.cpops-supported-theme__name {
+	font-size: 13px;
+	font-weight: 500;
+	color: $cpops-text;
+}
+
+.cpops-supported-theme__method {
+	font-size: 12px;
+	color: $cpops-text-secondary;
+}

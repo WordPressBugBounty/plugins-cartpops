@@ -1,0 +1,80 @@
+{
+	"name": "@cartpops/plugin",
+	"version": "2.0.0",
+	"private": true,
+	"description": "The #1 WooCommerce cart drawer plugin.",
+	"packageManager": "npm@11.19.0",
+	"engines": {
+		"node": "24.20.0"
+	},
+	"scripts": {
+		"build": "rm -rf assets/build && wp-scripts build --experimental-modules",
+		"start": "wp-scripts start --experimental-modules",
+		"lint:js": "wp-scripts lint-js",
+		"lint:css": "wp-scripts lint-style",
+		"test:unit:js": "wp-scripts test-unit-js",
+		"test:compatibility": "node bin/test-environment/compatibility.mjs",
+		"test:compatibility:minimum-mysql": "npm run test:compatibility -- --lane=minimum-mysql",
+		"test:compatibility:minimum-mariadb": "npm run test:compatibility -- --lane=minimum-mariadb",
+		"test:compatibility:current-mysql": "npm run test:compatibility -- --lane=current-mysql",
+		"test:freemius-sdk:single": "npm run test:compatibility:current-mysql",
+		"test:freemius-sdk:multisite": "npm run test:compatibility -- --lane=current-mysql --topology=freemius-sdk-multisite",
+		"test:e2e": "playwright test --config=playwright.config.js",
+		"env:start": "node bin/test-environment/env.js current start",
+		"env:status": "node bin/test-environment/env.js current status",
+		"env:logs": "node bin/test-environment/env.js current logs",
+		"env:stop": "node bin/test-environment/env.js current stop",
+		"env:reset": "node bin/test-environment/env.js current reset",
+		"env:seed": "node bin/test-environment/seed.js current",
+		"env:min:start": "node bin/test-environment/env.js min start",
+		"env:min:status": "node bin/test-environment/env.js min status",
+		"env:min:logs": "node bin/test-environment/env.js min logs",
+		"env:min:stop": "node bin/test-environment/env.js min stop",
+		"env:min:reset": "node bin/test-environment/env.js min reset",
+		"env:min:seed": "node bin/test-environment/seed.js min",
+		"format": "wp-scripts format",
+		"plugin-zip": "bin/build.sh",
+		"dist": "bin/build.sh",
+		"i18n:pot": "wp i18n make-pot . languages/cartpops.pot --exclude=node_modules,assets/build,vendor,.context,tests --domain=cartpops",
+		"i18n:json": "wp i18n make-json languages --no-purge --pretty-print",
+		"i18n:mo": "wp i18n make-mo languages",
+		"changeset": "changeset",
+		"release:version": "changeset version && node bin/release-metadata.mjs sync",
+		"release:check": "node bin/release-metadata.mjs check",
+		"release:build": "bin/build.sh",
+		"release:test": "node --test bin/tests/*.test.mjs",
+		"test:tooling": "node --test bin/test-environment/tests/*.test.mjs"
+	},
+	"dependencies": {
+		"@wordpress/api-fetch": "^7.0.0",
+		"@wordpress/components": "^28.0.0",
+		"@wordpress/data": "^10.0.0",
+		"@wordpress/element": "^6.0.0",
+		"@wordpress/i18n": "^5.0.0",
+		"@wordpress/icons": "^10.0.0",
+		"@wordpress/interactivity": "^6.0.0",
+		"recharts": "^3.7.0"
+	},
+	"devDependencies": {
+		"@changesets/changelog-github": "^0.7.0",
+		"@changesets/cli": "^2.31.1",
+		"@playwright/test": "1.62.1",
+		"@wordpress/env": "11.14.0",
+		"@wordpress/eslint-plugin": "^25.10.0",
+		"@wordpress/scripts": "34.2.0",
+		"acorn": "8.18.0",
+		"globals": "^16.5.0",
+		"ignore": "7.0.6",
+		"jest": "30.4.2",
+		"yaml": "2.9.0",
+		"yauzl": "3.4.0",
+		"yazl": "3.3.1"
+	},
+	"overrides": {
+		"adm-zip": "0.6.1",
+		"colord": "2.9.4",
+		"@wp-playground/cli": {
+			"qs": "6.16.0"
+		}
+	}
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "cartpops/cart-drawer",
+  "version": "2.0.0",
+  "title": "CartPops Cart Drawer",
+  "category": "woocommerce",
+  "description": "A beautiful slide-out cart drawer for WooCommerce.",
+  "textdomain": "cartpops",
+  "supports": {
+    "html": false,
+    "multiple": false,
+    "interactivity": true
+  },
+  "attributes": {},
+  "render": "file:./render.php",
+  "editorScript": "cartpops-cart-drawer-editor",
+  "viewScriptModule": "file:./view.js",
+  "style": "cartpops-cart-drawer-style"
+}

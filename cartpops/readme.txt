@@ -4,7 +4,7 @@ Tags: side cart, cart drawer, floating cart, woocommerce side cart, add to cart 
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 2.0.1
+Stable tag: 2.0.2
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -108,6 +108,9 @@ Your settings, styling and license carry over. Version 2 is built around the car
 4. Pro Smart Bar rules and Smart Add-ons such as shipping protection and gift wrapping.
 
 == Changelog ==
+
+= 2.0.2 =
+* Improved: Changing the cart in the drawer makes fewer background requests.
 
 = 2.0.1 =
 * Fix: Cart buttons and theme code built for CartPops 1.x open the cart drawer again, including links with the `cpops-toggle-drawer` class. This older method still works but is deprecated; your browser console shows a notice with the replacement.

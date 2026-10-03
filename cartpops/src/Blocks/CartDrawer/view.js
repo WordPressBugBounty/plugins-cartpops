@@ -2143,15 +2143,20 @@ function processLightCartResponse(
  * Publish one coalesced WooCommerce surface refresh only after the current
  * CartPops-owned mutation response has been validated and applied.
  *
- * @param {boolean} accepted Whether authoritative cart state was applied.
+ * @param {boolean} accepted                     Whether authoritative cart state was applied.
+ * @param {Object}  [options]
+ * @param {boolean} [options.completeState=true] Whether that state is the complete
+ *                                               resulting cart. Removals keep
+ *                                               client lines and need the
+ *                                               follow-up read.
  * @return {boolean} The accepted marker for caller control flow.
  */
-function completeOwnedCartMutation( accepted ) {
+function completeOwnedCartMutation( accepted, { completeState = true } = {} ) {
 	if ( accepted !== true ) {
 		return false;
 	}
 
-	scheduleWooCartSurfaceSync();
+	scheduleWooCartSurfaceSync( { completeState } );
 	return true;
 }
 
@@ -2826,7 +2831,11 @@ function flushRemovalBatch() {
 			if ( ambiguous.length > 0 ) {
 				await reconcileAmbiguousRemovalIntents( ambiguous );
 			}
-			completeOwnedCartMutation( confirmedRemovalNeedsSync );
+			// Only totals came from the server, so the read that follows the
+			// fragment refresh still reconciles lines and supplementary data.
+			completeOwnedCartMutation( confirmedRemovalNeedsSync, {
+				completeState: false,
+			} );
 		} )
 		.catch( async () => {
 			const unresolved = activeIntents
@@ -3662,8 +3671,28 @@ const { state } = store( 'cartpops', {
 			);
 		},
 
+		/**
+		 * Accept the Store cart an optional module's own write returned. Its
+		 * supplementary data (meter, notifications, add-ons) is refreshed by
+		 * the read that follows the published fragment refresh.
+		 *
+		 * @param {*} data Store API cart response.
+		 * @return {boolean} Whether the cart was accepted.
+		 */
 		acceptStoreCartResponse( data ) {
-			return completeOwnedCartMutation( processCartResponse( data ) );
+			return completeOwnedCartMutation( processCartResponse( data ), {
+				completeState: false,
+			} );
+		},
+
+		/**
+		 * Apply a Store cart read; a read changes nothing to publish.
+		 *
+		 * @param {*} data Store API cart response.
+		 * @return {boolean} Whether the cart was accepted.
+		 */
+		acceptStoreCartRead( data ) {
+			return processCartResponse( data ) === true;
 		},
 
 		synchronizeConfirmedCartMutation() {

@@ -483,15 +483,73 @@ export function subscribeToResolvedWooCartChanges( {
 
 const WOO_CART_SURFACE_SYNC_KEY = Symbol.for( 'cartpops.wooCartSurfaceSync' );
 const WOO_CART_SURFACE_SYNC_DELAY_MS = 50;
+const OWN_FRAGMENT_REFRESH_KEY = Symbol.for( 'cartpops.ownFragmentRefresh' );
+// Long enough for a slow wc-ajax round trip; short enough that a refresh Woo
+// never answered cannot hide a later external change for long.
+const OWN_FRAGMENT_REFRESH_TTL_MS = 15000;
+
+/**
+ * Read the unexpired CartPops-requested fragment refreshes, oldest first.
+ *
+ * @param {Object} globalScope Browser global scope.
+ * @return {number[]} Expiry timestamps of outstanding refreshes.
+ */
+function liveOwnFragmentRefreshes( globalScope ) {
+	const marks = globalScope[ OWN_FRAGMENT_REFRESH_KEY ];
+	const now = Date.now();
+	return Array.isArray( marks )
+		? marks.filter( ( expiresAt ) => expiresAt > now )
+		: [];
+}
+
+/**
+ * Record one CartPops-requested fragment refresh with its own expiry.
+ *
+ * @param {Object} globalScope Browser global scope.
+ */
+function markOwnFragmentRefresh( globalScope ) {
+	try {
+		globalScope[ OWN_FRAGMENT_REFRESH_KEY ] = [
+			...liveOwnFragmentRefreshes( globalScope ),
+			Date.now() + OWN_FRAGMENT_REFRESH_TTL_MS,
+		];
+	} catch ( error ) {
+		// A locked global only costs the duplicate read this marker avoids.
+	}
+}
+
+/**
+ * Consume the oldest outstanding CartPops-requested fragment refresh.
+ *
+ * @param {Object} globalScope Browser global scope.
+ * @return {boolean} Whether the refresh answered a CartPops request.
+ */
+function consumeOwnFragmentRefresh( globalScope ) {
+	try {
+		const marks = liveOwnFragmentRefreshes( globalScope );
+		const consumed = marks.length > 0;
+		if ( marks.length > 1 ) {
+			globalScope[ OWN_FRAGMENT_REFRESH_KEY ] = marks.slice( 1 );
+		} else {
+			delete globalScope[ OWN_FRAGMENT_REFRESH_KEY ];
+		}
+		return consumed;
+	} catch ( error ) {
+		return false;
+	}
+}
 
 /**
  * Ask classic WooCommerce to refresh its fragments without manufacturing an
  * add/remove event that could open a third-party mini-cart or skew analytics.
+ * When CartPops already holds the complete resulting cart, the refresh is
+ * marked as its own so the bridge skips the redundant read it would cause.
  *
  * @param {Object}   globalScope   Browser global scope.
  * @param {Document} documentScope Browser document.
+ * @param {boolean}  markOwn       Whether CartPops' state is already complete.
  */
-function refreshClassicCartFragments( globalScope, documentScope ) {
+function refreshClassicCartFragments( globalScope, documentScope, markOwn ) {
 	const jQueryFactory = globalScope?.jQuery;
 	if ( typeof jQueryFactory !== 'function' ) {
 		return;
@@ -499,7 +557,15 @@ function refreshClassicCartFragments( globalScope, documentScope ) {
 
 	try {
 		const jqueryBody = jQueryFactory( documentScope?.body );
-		jqueryBody?.trigger?.( 'wc_fragment_refresh' );
+		if ( typeof jqueryBody?.trigger !== 'function' ) {
+			return;
+		}
+		// Only Woo's cart-fragments script answers the trigger; without it a
+		// mark would wait for a refresh that never comes.
+		if ( markOwn && globalScope.wc_cart_fragments_params ) {
+			markOwnFragmentRefresh( globalScope );
+		}
+		jqueryBody.trigger( 'wc_fragment_refresh' );
 	} catch ( error ) {
 		// Classic fragments are optional and must not block Blocks invalidation.
 	}
@@ -550,11 +616,15 @@ function invalidateBlocksCartStore( globalScope ) {
  * @param {Object}   [options]
  * @param {Object}   [options.globalScope]
  * @param {Document} [options.documentScope]
+ * @param {boolean}  [options.completeState=true] Whether CartPops already
+ *                                                applied the complete cart
+ *                                                this mutation produced.
  * @return {boolean} Whether the refresh is scheduled or already pending.
  */
 export function scheduleWooCartSurfaceSync( {
 	globalScope = globalThis,
 	documentScope = globalScope?.document,
+	completeState = true,
 } = {} ) {
 	if (
 		! globalScope ||
@@ -564,7 +634,12 @@ export function scheduleWooCartSurfaceSync( {
 	}
 
 	try {
-		if ( globalScope[ WOO_CART_SURFACE_SYNC_KEY ] ) {
+		const pending = globalScope[ WOO_CART_SURFACE_SYNC_KEY ];
+		if ( pending ) {
+			// One partial mutation in the burst keeps the follow-up read.
+			if ( completeState !== true ) {
+				pending.completeState = false;
+			}
 			return true;
 		}
 	} catch ( error ) {
@@ -579,7 +654,7 @@ export function scheduleWooCartSurfaceSync( {
 		return false;
 	}
 
-	const owner = {};
+	const owner = { completeState: completeState === true };
 	const flush = () => {
 		try {
 			if ( globalScope[ WOO_CART_SURFACE_SYNC_KEY ] !== owner ) {
@@ -590,7 +665,11 @@ export function scheduleWooCartSurfaceSync( {
 			return;
 		}
 
-		refreshClassicCartFragments( globalScope, documentScope );
+		refreshClassicCartFragments(
+			globalScope,
+			documentScope,
+			owner.completeState
+		);
 		if ( ! invalidateBlocksCartStore( globalScope ) ) {
 			try {
 				// Woo's exposed DOM compatibility signal refreshes IAPI-only carts.
@@ -812,6 +891,28 @@ export function installCartDrawerEventBridge( {
 	addDomListener( documentScope, 'cartpops:close', onClose );
 	addDomListener( documentScope, 'cartpops:toggle', onToggle );
 
+	// CartPops already holds the cart its own complete mutation produced, so
+	// the fragment refresh it requested needs no second read.
+	const onClassicRefreshedUnlessOwn =
+		typeof onClassicRefreshed === 'function'
+			? ( event, ...args ) => {
+					if (
+						event?.type === 'wc_fragments_refreshed' &&
+						consumeOwnFragmentRefresh( globalScope )
+					) {
+						return false;
+					}
+					return onClassicRefreshed( event, ...args );
+			  }
+			: undefined;
+	const onClassicRefreshFailed =
+		typeof onClassicRefreshed === 'function'
+			? ( event, ...args ) => {
+					consumeOwnFragmentRefresh( globalScope );
+					return onClassicRefreshed( event, ...args );
+			  }
+			: undefined;
+
 	const jQueryFactory = globalScope?.jQuery;
 	if ( typeof jQueryFactory === 'function' ) {
 		try {
@@ -840,7 +941,14 @@ export function installCartDrawerEventBridge( {
 				);
 				addJqueryListener(
 					'updated_wc_div wc_fragments_refreshed',
-					onClassicRefreshed
+					onClassicRefreshedUnlessOwn
+				);
+				// A failed refresh never fires wc_fragments_refreshed, and the
+				// mark it consumes may belong to a refresh that already landed.
+				// Re-read rather than guess which change went unobserved.
+				addJqueryListener(
+					'wc_fragments_ajax_error',
+					onClassicRefreshFailed
 				);
 			}
 		} catch ( error ) {

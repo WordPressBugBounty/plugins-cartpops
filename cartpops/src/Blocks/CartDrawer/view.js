@@ -45,6 +45,7 @@ import { materializeCartItemImage } from './image-url';
 import { invokeOptionalCartDrawerExtension } from './optional-extension';
 import { resolveCartAddPolicy } from './cart-add-trigger-policy';
 import { installProductFormAddInterceptor } from './product-form-add';
+import { installLegacyCartPopsGlobal } from './legacy-api';
 import { projectLinePrice, storeLineSubtotalMinor } from './line-price';
 import { projectSecondaryAction } from './secondary-action';
 
@@ -4129,6 +4130,9 @@ installCartDrawerEventBridge( {
 	onClose: () => store( 'cartpops' ).actions.closeDrawer(),
 	onToggle: () => store( 'cartpops' ).actions.toggleDrawer(),
 } );
+
+// V1 themes and snippets call window.CartPops.drawer.show(); keep them working.
+installLegacyCartPopsGlobal();
 
 // Classic single-product forms add in the background when the store enables
 // it. A confirmed add re-enters the classic path above through Woo's jQuery

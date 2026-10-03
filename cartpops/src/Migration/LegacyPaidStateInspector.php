@@ -447,12 +447,27 @@ final class LegacyPaidStateInspector {
 	}
 
 	/**
+	 * Whether V1 stored its own settings-field definition as the page selector.
+	 *
+	 * Some V1 installs saved `{id, type, label, ...}` here instead of page IDs.
+	 * V1 passed it to is_page(), which matched no page, so it hid nothing.
+	 *
+	 * @param mixed $value Decoded legacy option value.
+	 */
+	public static function is_hidden_pages_field_definition( mixed $value ): bool {
+		return is_array( $value )
+			&& ! array_is_list( $value )
+			&& 'floating_cart_launcher_hide_pages' === ( $value['id'] ?? null )
+			&& is_string( $value['type'] ?? null );
+	}
+
+	/**
 	 * Whether the V1 page selector can be represented by V2 without loss.
 	 *
 	 * @param mixed $value Legacy option value.
 	 */
 	private function launcher_hidden_pages_are_runnable( mixed $value ): bool {
-		if ( $this->legacy_empty( $value ) ) {
+		if ( $this->legacy_empty( $value ) || self::is_hidden_pages_field_definition( $value ) ) {
 			return true;
 		}
 

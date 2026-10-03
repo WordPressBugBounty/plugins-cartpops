@@ -865,8 +865,11 @@ final class LegacySettingsMigrator {
 	private function prepare_paid_entitlement_plan( array $paid_state ): ?LegacyPaidEntitlementPlan {
 		if (
 			null === $this->paid_entitlement_bridge
-			|| ! in_array( 'legacy_paid_entitlement_requires_adapter', $paid_state['diagnostics'], true )
 			|| ! isset( $paid_state['raw_rows']['fs_accounts'] )
+			|| (
+				! in_array( 'legacy_paid_entitlement_requires_adapter', $paid_state['diagnostics'], true )
+				&& ! $this->stored_disposition_awaits_paid_entitlement()
+			)
 		) {
 			return null;
 		}
@@ -880,6 +883,25 @@ final class LegacySettingsMigrator {
 		} catch ( \Throwable ) {
 			return null;
 		}
+	}
+
+	/**
+	 * Whether a retained decision still waits for the V1 paid license to carry over.
+	 *
+	 * Freemius rewrites its account row for V2 on first load, after which that row
+	 * no longer looks like V1. A store paused on the license must still be able to
+	 * finish once the live current-blog authority confirms paid access.
+	 */
+	private function stored_disposition_awaits_paid_entitlement(): bool {
+		$row = $this->read_internal_option( self::COMPATIBILITY_OPTION );
+		if ( ! $row['exists'] || ! $this->compatibility_disposition_is_valid( $row['value'] ) ) {
+			return false;
+		}
+
+		return array() !== array_intersect(
+			array( 'legacy_paid_entitlement_requires_adapter', self::ENTITLEMENT_DRIFT_DIAGNOSTIC ),
+			$row['value']['diagnostics']
+		);
 	}
 
 	/**
@@ -4630,7 +4652,7 @@ final class LegacySettingsMigrator {
 		}
 
 		$value = $this->source_values[ $source ];
-		if ( empty( $value ) ) {
+		if ( empty( $value ) || LegacyPaidStateInspector::is_hidden_pages_field_definition( $value ) ) {
 			$this->set_path( $mapped, 'launcher.hidden_page_ids', array() );
 			$this->mark_mapped( $source, 'launcher.hidden_page_ids' );
 			return;

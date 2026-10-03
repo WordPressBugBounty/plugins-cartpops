@@ -4,7 +4,7 @@
  * Plugin Name: CartPops
  * Plugin URI:  https://cartpops.com
  * Description: The #1 WooCommerce cart drawer plugin. Boost conversions with a beautiful slide-out cart, product recommendations, and free shipping meter.
- * Version:     2.0.0
+ * Version:     2.0.1
  * Requires at least: 6.5
  * Requires PHP: 8.1
  * Requires Plugins: woocommerce
@@ -67,7 +67,7 @@ if ( defined( 'CARTPOPS_VERSION' ) || defined( 'CARTPOPS_FILE' ) || defined( 'CA
     cartpops_register_edition_collision_notice();
     return;
 }
-define( 'CARTPOPS_VERSION', '2.0.0' );
+define( 'CARTPOPS_VERSION', '2.0.1' );
 define( 'CARTPOPS_FILE', __FILE__ );
 define( 'CARTPOPS_PATH', plugin_dir_path( __FILE__ ) );
 define( 'CARTPOPS_URL', plugin_dir_url( __FILE__ ) );

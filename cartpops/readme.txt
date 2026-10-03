@@ -4,7 +4,7 @@ Tags: side cart, cart drawer, floating cart, woocommerce side cart, add to cart 
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -108,6 +108,11 @@ Your settings, styling and license carry over. Version 2 is built around the car
 4. Pro Smart Bar rules and Smart Add-ons such as shipping protection and gift wrapping.
 
 == Changelog ==
+
+= 2.0.1 =
+* Fix: Cart buttons and theme code built for CartPops 1.x open the cart drawer again, including links with the `cpops-toggle-drawer` class. This older method still works but is deprecated; your browser console shows a notice with the replacement.
+* Fix: Some stores updating from CartPops 1.x stayed paused after the update, with no CartPops menu. CartPops now finishes the update by itself and keeps your original settings; Pro stores need an active license.
+* Improved: the WordPress.org plugin page now describes everything CartPops 2.0 does, and the settings location is corrected to WooCommerce → CartPops.
 
 = 2.0.0 =
 * Important: CartPops 2.0 needs PHP 8.1 or newer, WordPress 6.5 or newer and WooCommerce 9.0 or newer. Back up your site before updating from version 1.

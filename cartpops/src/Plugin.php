@@ -84,6 +84,13 @@ final class Plugin {
 	private string $boot_diagnostic = '';
 
 	/**
+	 * Code-defined name of the upgrade step that failed, shown with the pause code.
+	 *
+	 * @var string
+	 */
+	private string $boot_failure_step = '';
+
+	/**
 	 * Avoid duplicate admin notice hooks across a retry.
 	 *
 	 * @var bool
@@ -574,6 +581,9 @@ final class Plugin {
 	 * Hook into WordPress and WooCommerce.
 	 */
 	private function boot(): void {
+		// Registered first so Site Health shows CartPops details even while it is paused.
+		add_filter( 'debug_information', array( $this, 'add_site_health_section' ) );
+
 		// Migrate the current site's V1 settings before any frontend or admin
 		// service can resolve SettingsRepository and observe V2 defaults.
 		$this->upgrader = $this->container->get( Upgrader::class );
@@ -608,7 +618,8 @@ final class Plugin {
 			$this->boot_diagnostic         = 'upgrade_busy';
 			add_action( 'init', array( $this, 'retry_upgrade_and_boot' ), 20 );
 		} else {
-			$this->boot_diagnostic = 'upgrade_' . $outcome->value;
+			$this->boot_diagnostic   = 'upgrade_' . $outcome->value;
+			$this->boot_failure_step = UpgradeOutcome::FAILED === $outcome ? $this->upgrader->failure_step() : '';
 		}
 		$this->register_boot_notice();
 	}
@@ -844,12 +855,60 @@ final class Plugin {
 		) {
 			return;
 		}
+		if ( 'upgrade_busy' === $this->boot_diagnostic ) {
+			echo '<div class="notice notice-error"><p>' . esc_html__( 'CartPops is finishing its update. Reload this page in a moment.', 'cartpops' ) . '</p></div>';
+			return;
+		}
+		$step    = $this->current_failure_step();
+		$code    = '' === $step ? $this->boot_diagnostic : $this->boot_diagnostic . ' (' . $step . ')';
 		$message = sprintf(
 			/* translators: %s: value-free CartPops diagnostic code. */
-			__( 'CartPops is paused because its required upgrade or build validation did not complete. Original data was preserved. Diagnostic: %s.', 'cartpops' ),
-			$this->boot_diagnostic
+			__( 'CartPops is paused, so the cart drawer is not showing on your store. Your settings are safe. Code: %s.', 'cartpops' ),
+			$code
 		);
-		echo '<div class="notice notice-error"><p>' . esc_html( $message ) . '</p></div>';
+		echo '<div class="notice notice-error"><p>' . esc_html( $message )
+			. Upgrader::docs_link_html( Upgrader::DOCS_STOPPED_AFTER_UPGRADING ) // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- The helper escapes every part.
+			. '</p>';
+		// Site Health is only open to users who may install plugins.
+		if ( current_user_can( 'view_site_health_checks' ) ) {
+			echo '<p>' . esc_html__( 'Troubleshooting details are under', 'cartpops' )
+				. ' <a href="' . esc_url( admin_url( 'site-health.php?tab=debug' ) ) . '">' . esc_html__( 'Tools → Site Health → Info → CartPops', 'cartpops' ) . '</a>.</p>';
+		}
+		echo '</div>';
+	}
+
+	/** The failed upgrade step, only while the current code is an upgrade failure. */
+	private function current_failure_step(): string {
+		return 'upgrade_failed' === $this->boot_diagnostic ? $this->boot_failure_step : '';
+	}
+
+	/**
+	 * Add the CartPops section to Tools → Site Health → Info.
+	 *
+	 * @param mixed $info Site Health sections.
+	 * @return mixed
+	 */
+	public function add_site_health_section( mixed $info ): mixed {
+		if ( ! is_array( $info ) ) {
+			return $info;
+		}
+		try {
+			$info['cartpops'] = Setup\SiteHealthSection::build(
+				array(
+					'version'      => CARTPOPS_VERSION,
+					'edition'      => $this->physical_edition_authority->edition(),
+					'running'      => $this->services_booted,
+					'pause_code'   => $this->boot_diagnostic,
+					'failure_step' => $this->current_failure_step(),
+					'migration'    => $this->upgrader->get_migration_status(),
+					'network'      => is_multisite() ? $this->upgrader->get_network_migration_status() : null,
+				)
+			);
+		} catch ( \Throwable ) {
+			// Site Health must keep working even if CartPops cannot describe itself.
+			return $info;
+		}
+		return $info;
 	}
 
 	/**

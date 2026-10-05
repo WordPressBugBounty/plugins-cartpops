@@ -1,5 +1,3 @@
-# Copyright (C) 2026 CartPops
-# This file is distributed under the GPL v3 or later.
 msgid ""
 msgstr ""
 "Project-Id-Version: CartPops 2.0.0\n"
@@ -11,16 +9,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2026-10-02T11:55:32+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language: uk\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: cartpops\n"
-"Language: uk\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: cartpops.php
-#: src/Admin/AdminPage.php:36
-#: src/Admin/AdminPage.php:37
-#: src/Blocks/CartDrawer/render.php:856
+#: src/Admin/AdminPage.php:45
+#: src/Admin/AdminPage.php:46
+#: src/Blocks/CartDrawer/render.php:881
+#: src/Setup/Upgrader.php:1871
 #: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:518
 #. Plugin Name of the plugin
 #. Author of the plugin
@@ -138,46 +137,46 @@ msgstr "Вам не дозволено скидати дані аналітик�
 
 #: src/Blocks/CartDrawer/render.php:33
 #: src/Admin/assets/js/components/DrawerPreview.jsx:145
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:304
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:309
 msgid "Your Cart"
 msgstr "Ваш кошик"
 
 #: src/Blocks/CartDrawer/render.php:36
-#: src/Blocks/CartDrawer/render.php:694
+#: src/Blocks/CartDrawer/render.php:719
 #: src/Admin/assets/js/components/DrawerPreview.jsx:150
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:340
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:345
 msgid "Coupon code"
 msgstr "Код купона"
 
 #: src/Blocks/CartDrawer/render.php:37
 #: src/Admin/assets/js/components/DrawerPreview.jsx:154
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:353
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:358
 msgid "Apply"
 msgstr "Застосувати"
 
 #: src/Blocks/CartDrawer/render.php:38
 #: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:831
 #: src/Admin/assets/js/components/DrawerPreview.jsx:158
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:369
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:374
 msgid "Subtotal"
 msgstr "Підсумок"
 
 #: src/Blocks/CartDrawer/render.php:39
 #: src/Admin/assets/js/components/DrawerPreview.jsx:341
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:379
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:384
 msgid "Discount"
 msgstr "Знижка"
 
 #: src/Blocks/CartDrawer/render.php:40
 #: src/Admin/assets/js/components/DrawerPreview.jsx:160
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:389
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:394
 msgid "Total"
 msgstr "Разом"
 
 #: src/Blocks/CartDrawer/render.php:41
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:304
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:317
 #: src/Admin/assets/js/components/DrawerPreview.jsx:168
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:419
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:424
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:106
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:151
 msgid "Continue shopping"
@@ -185,125 +184,125 @@ msgstr "Продовжити покупки"
 
 #: src/Blocks/CartDrawer/render.php:42
 #: src/Admin/assets/js/components/DrawerPreview.jsx:163
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:399
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:404
 msgid "Your cart is empty"
 msgstr "Ваш кошик порожній"
 
-#: src/Blocks/CartDrawer/render.php:249
-#: src/Blocks/CartDrawer/render.php:277
+#: src/Blocks/CartDrawer/render.php:251
+#: src/Blocks/CartDrawer/render.php:288
 #: src/Blocks/CartLauncher/render.php:65
 #: src/Blocks/CartLauncher/render.php:190
 #: src/Admin/assets/js/components/LauncherPreview.jsx:357
 msgid "Open cart"
 msgstr "Відкрити кошик"
 
-#: src/Blocks/CartDrawer/render.php:252
-#: src/Blocks/CartDrawer/render.php:562
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:160
+#: src/Blocks/CartDrawer/render.php:254
+#: src/Blocks/CartDrawer/render.php:576
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:165
 msgid "You may also like"
 msgstr "Вам також може сподобатися"
 
-#: src/Blocks/CartDrawer/render.php:278
-#: src/Blocks/CartDrawer/render.php:403
+#: src/Blocks/CartDrawer/render.php:289
+#: src/Blocks/CartDrawer/render.php:416
 #: src/Blocks/CartLauncher/render.php:77
 msgid "Close cart"
 msgstr "Закрити кошик"
 
-#: src/Blocks/CartDrawer/render.php:279
-#: src/Blocks/CartDrawer/render.php:587
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:611
+#: src/Blocks/CartDrawer/render.php:290
+#: src/Blocks/CartDrawer/render.php:601
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:626
 #: src/Recommendations/RecommendationEngine.php:240
 #: src/Admin/assets/js/pages/AdvancedSettings.jsx:230
 msgid "Add to cart"
 msgstr "Додати в кошик"
 
-#: src/Blocks/CartDrawer/render.php:281
+#: src/Blocks/CartDrawer/render.php:292
 #: src/Recommendations/RecommendationEngine.php:220
-#: src/Admin/assets/js/components/DrawerPreview.jsx:924
+#: src/Admin/assets/js/components/DrawerPreview.jsx:950
 #: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:117
 #. translators: %s: product name.
 #, php-format,js-format
 msgid "Add %s to cart"
 msgstr "Додати %s в кошик"
 
-#: src/Blocks/CartDrawer/render.php:282
-#: src/Blocks/CartDrawer/render.php:600
+#: src/Blocks/CartDrawer/render.php:293
+#: src/Blocks/CartDrawer/render.php:614
 #: src/Recommendations/RecommendationEngine.php:239
 msgid "Select options"
 msgstr "Вибрати опції"
 
-#: src/Blocks/CartDrawer/render.php:284
+#: src/Blocks/CartDrawer/render.php:295
 #: src/Recommendations/RecommendationEngine.php:217
 #. translators: %s: product name.
 #, php-format
 msgid "Select options for %s"
 msgstr "Вибрати опції для %s"
 
-#: src/Blocks/CartDrawer/render.php:286
+#: src/Blocks/CartDrawer/render.php:297
 #. translators: %s: cart item name.
 #, php-format
 msgid "\"%s\" removed."
 msgstr "«%s» вилучено."
 
-#: src/Blocks/CartDrawer/render.php:288
+#: src/Blocks/CartDrawer/render.php:299
 #. translators: %s: cart item name.
 #, php-format
 msgid "%s removed from cart."
 msgstr "%s вилучено з кошика."
 
-#: src/Blocks/CartDrawer/render.php:289
+#: src/Blocks/CartDrawer/render.php:300
 msgid "Item"
 msgstr "Товар"
 
-#: src/Blocks/CartDrawer/render.php:291
+#: src/Blocks/CartDrawer/render.php:302
 #. translators: %s: cart item name.
 #, php-format
 msgid "%s restored to cart."
 msgstr "%s відновлено в кошику."
 
-#: src/Blocks/CartDrawer/render.php:293
+#: src/Blocks/CartDrawer/render.php:304
 #. translators: %s: coupon code.
 #, php-format
 msgid "Coupon \"%s\" applied."
 msgstr "Купон «%s» застосовано."
 
-#: src/Blocks/CartDrawer/render.php:295
+#: src/Blocks/CartDrawer/render.php:306
 #. translators: %s: coupon code.
 #, php-format
 msgid "Coupon \"%s\" removed."
 msgstr "Купон «%s» вилучено."
 
-#: src/Blocks/CartDrawer/render.php:297
+#: src/Blocks/CartDrawer/render.php:308
 #. translators: %s: product name.
 #, php-format
 msgid "%s added to cart."
 msgstr "%s додано до кошика."
 
-#: src/Blocks/CartDrawer/render.php:298
+#: src/Blocks/CartDrawer/render.php:309
 msgid "Your cart has expired."
 msgstr "Термін дії вашого кошика минув."
 
-#: src/Blocks/CartDrawer/render.php:299
+#: src/Blocks/CartDrawer/render.php:310
 #: src/Pro/Blocks/ShippingMeter/ShippingMeterBlock.php:954
 msgid "Request failed"
 msgstr "Помилка запиту"
 
-#: src/Blocks/CartDrawer/render.php:300
+#: src/Blocks/CartDrawer/render.php:311
 msgid "Your cart is refreshing. Please wait."
 msgstr "Кошик оновлюється. Зачекайте, будь ласка."
 
-#: src/Blocks/CartDrawer/render.php:301
+#: src/Blocks/CartDrawer/render.php:312
 msgid "Failed to fetch recommendations"
 msgstr "Не вдалося отримати рекомендації"
 
-#: src/Blocks/CartDrawer/render.php:303
+#: src/Blocks/CartDrawer/render.php:314
 #. translators: 1: tax amount, 2: tax label (e.g. VAT).
 #, php-format
 msgid "Incl. %1$s %2$s"
 msgstr "Вкл. %1$s %2$s"
 
-#: src/Blocks/CartDrawer/render.php:333
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:73
+#: src/Blocks/CartDrawer/render.php:346
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:74
 #: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:17
 #: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:24
 #: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:32
@@ -312,61 +311,61 @@ msgstr "Вкл. %1$s %2$s"
 msgid "Add"
 msgstr "Додати"
 
-#: src/Blocks/CartDrawer/render.php:386
+#: src/Blocks/CartDrawer/render.php:399
 msgid "Shopping cart"
 msgstr "Кошик"
 
-#: src/Blocks/CartDrawer/render.php:472
+#: src/Blocks/CartDrawer/render.php:486
 msgid "Decrease quantity:"
 msgstr "Зменшити кількість:"
 
-#: src/Blocks/CartDrawer/render.php:485
+#: src/Blocks/CartDrawer/render.php:499
 msgid "Increase quantity:"
 msgstr "Збільшити кількість:"
 
-#: src/Blocks/CartDrawer/render.php:501
+#: src/Blocks/CartDrawer/render.php:515
 msgid "Remove item:"
 msgstr "Видалити товар:"
 
-#: src/Blocks/CartDrawer/render.php:550
+#: src/Blocks/CartDrawer/render.php:564
 msgid "Undo"
 msgstr "Скасувати"
 
-#: src/Blocks/CartDrawer/render.php:608
+#: src/Blocks/CartDrawer/render.php:622
 msgid "Previous"
 msgstr "Попередній"
 
-#: src/Blocks/CartDrawer/render.php:615
+#: src/Blocks/CartDrawer/render.php:629
 msgid "Next"
 msgstr "Наступний"
 
-#: src/Blocks/CartDrawer/render.php:643
-#: src/Blocks/CartDrawer/render.php:770
+#: src/Blocks/CartDrawer/render.php:657
+#: src/Blocks/CartDrawer/render.php:795
 #: src/Admin/assets/js/components/DrawerPreview.jsx:356
 msgid "Shipping"
 msgstr "Доставка"
 
-#: src/Blocks/CartDrawer/render.php:731
+#: src/Blocks/CartDrawer/render.php:756
 msgid "Remove coupon:"
 msgstr "Видалити купон:"
 
-#: src/Blocks/CartDrawer/render.php:811
-#: src/Admin/assets/js/components/DrawerPreview.jsx:1107
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:288
+#: src/Blocks/CartDrawer/render.php:836
+#: src/Admin/assets/js/components/DrawerPreview.jsx:1133
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:293
 msgid "Proceed to Checkout"
 msgstr "Перейти до оформлення"
 
-#: src/Blocks/CartDrawer/render.php:848
-#: src/Admin/assets/js/components/DrawerPreview.jsx:1123
+#: src/Blocks/CartDrawer/render.php:873
+#: src/Admin/assets/js/components/DrawerPreview.jsx:1149
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:228
 msgid "View Cart"
 msgstr "Переглянути кошик"
 
-#: src/Blocks/CartDrawer/render.php:854
+#: src/Blocks/CartDrawer/render.php:879
 msgid "Powered by"
 msgstr "Працює на"
 
-#: src/Blocks/CartDrawer/render.php:857
+#: src/Blocks/CartDrawer/render.php:882
 msgid "(opens in a new tab)"
 msgstr "(відкривається в новій вкладці)"
 
@@ -392,158 +391,148 @@ msgstr "Для цієї функції CartPops потрібна активна 
 msgid "This CartPops feature is temporarily unavailable while its data is prepared."
 msgstr "Ця функція CartPops тимчасово недоступна, поки готуються дані."
 
-#: src/Plugin.php:849
-#. translators: %s: value-free CartPops diagnostic code.
-#, php-format
-msgid ""
-"CartPops is paused because its required upgrade or build validation did not "
-"complete. Original data was preserved. Diagnostic: %s."
-msgstr ""
-"Роботу CartPops призупинено, оскільки обов'язкове оновлення або перевірку "
-"збірки не було завершено. Початкові дані збережено. Діагностика: %s."
-
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:119
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:117
 #. translators: %s: add-on name.
 #, php-format
 msgid "%s added."
 msgstr "%s додано."
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:121
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:119
 #. translators: %s: add-on name.
 #, php-format
 msgid "%s removed."
 msgstr "%s видалено."
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:122
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:120
 msgid "Toggle failed"
 msgstr "Не вдалося перемкнути"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:123
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:121
 msgid "Failed to add spotlight product"
 msgstr "Не вдалося додати рекомендований товар"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:124
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:122
 msgid "Adding…"
 msgstr "Додавання…"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:125
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:123
 msgid "Added ✓"
 msgstr "Додано ✓"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:127
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:125
 msgid "bundle discount"
 msgstr "знижка на набір"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:128
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:126
 msgid "Failed to add bundle items"
 msgstr "Не вдалося додати товари з набору"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:129
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:668
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:756
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:127
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:683
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:771
 msgid "Calculate shipping"
 msgstr "Розрахувати доставку"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:130
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:128
 msgid "Loading shipping options…"
 msgstr "Завантаження варіантів доставки…"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:131
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:129
 msgid "Shipping options updated."
 msgstr "Варіанти доставки оновлено."
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:132
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:130
 msgid "Shipping method updated."
 msgstr "Спосіб доставки оновлено."
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:133
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:131
 msgid "Shipping options could not be updated. Please try again."
 msgstr "Не вдалося оновити варіанти доставки. Спробуйте ще раз."
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:134
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:132
 msgid "No shipping options are available for this address."
 msgstr "Для цієї адреси немає доступних варіантів доставки."
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:135
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:133
 msgid "Enter your destination to calculate shipping."
 msgstr "Введіть адресу для розрахунку вартості доставки."
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:136
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:134
 msgid "Shipping options"
 msgstr "Варіанти доставки"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:315
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:328
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:122
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:155
 msgid "View cart"
 msgstr "Переглянути кошик"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:493
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:508
 msgid "Dismiss"
 msgstr "Відхилити"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:516
-#: src/Pro/Blocks/ShippingMeter/ShippingMeterBlock.php:1090
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:531
+#: src/Pro/Blocks/ShippingMeter/ShippingMeterBlock.php:1116
 msgid "Shipping and rewards progress"
 msgstr "Прогрес доставки та винагород"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:523
-#: src/Pro/Blocks/ShippingMeter/ShippingMeterBlock.php:1099
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:538
+#: src/Pro/Blocks/ShippingMeter/ShippingMeterBlock.php:1125
 msgid "Reward tiers"
 msgstr "Рівні винагород"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:584
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:599
 #: src/Pro/BundleBuilder/BundleBuilder.php:56
 #: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:469
 msgid "Frequently bought together"
 msgstr "Часто купують разом"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:590
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:616
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:605
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:631
 msgid "Close"
 msgstr "Закрити"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:601
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:616
 msgid "Product info"
 msgstr "Інформація про товар"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:605
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:620
 msgid "Choose…"
 msgstr "Виберіть…"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:615
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:630
 msgid "Product information"
 msgstr "Інформація про товар"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:619
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:634
 msgid "Got it"
 msgstr "Зрозуміло"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:685
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:700
 msgid "Country / Region"
 msgstr "Країна / Регіон"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:695
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:710
 msgid "Select a country / region…"
 msgstr "Виберіть країну / регіон…"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:703
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:718
 msgid "State / County"
 msgstr "Область / район"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:720
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:735
 msgid "Select a state / region…"
 msgstr "Виберіть область / регіон…"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:746
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:761
 msgid "City"
 msgstr "Місто"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:751
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:766
 msgid "Postcode / ZIP"
 msgstr "Поштовий індекс"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:815
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:830
 msgid "Toggle add-on:"
 msgstr "Перемкнути додаток:"
 
@@ -564,7 +553,7 @@ msgstr "Кошик недоступний. Будь ласка, спробуйт
 #: src/Pro/SmartAddons/SmartAddonsController.php:129
 #: src/Recommendations/RecommendationsController.php:148
 #: src/REST/CartStateController.php:330
-#: src/REST/CouponController.php:231
+#: src/REST/CouponController.php:244
 msgid ""
 "The final cart state could not be confirmed. Refresh your cart before "
 "making another change."
@@ -578,7 +567,7 @@ msgstr ""
 #: src/Pro/SmartAddons/SmartAddonsController.php:137
 #: src/Recommendations/RecommendationsController.php:156
 #: src/REST/CartStateController.php:319
-#: src/REST/CouponController.php:220
+#: src/REST/CouponController.php:233
 msgid "Your cart is being updated. Please try again."
 msgstr "Ваш кошик оновлюється. Будь ласка, спробуйте ще раз."
 
@@ -629,10 +618,10 @@ msgid "Items Indicator"
 msgstr "Індикатор товарів"
 
 #: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:808
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:120
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:435
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:125
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:440
 #: src/Admin/assets/js/pages/LauncherSettings.jsx:295
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:117
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:122
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:149
 #: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:33
 #: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:38
@@ -703,8 +692,8 @@ msgstr "Колір тексту"
 #: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:967
 #: src/Admin/assets/js/pages/IntegrationsSettings.jsx:338
 #: src/Admin/assets/js/pages/LauncherSettings.jsx:17
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:547
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:691
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:559
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:703
 msgid "Icon Color"
 msgstr "Колір іконки"
 
@@ -858,30 +847,30 @@ msgstr "Правило"
 msgid "Gift quantity: 1"
 msgstr "Кількість подарунків: 1"
 
-#: src/Pro/ShippingMeter/ShippingMeter.php:408
+#: src/Pro/ShippingMeter/ShippingMeter.php:417
 msgid "reached"
 msgstr "досягнуто"
 
-#: src/Pro/ShippingMeter/ShippingMeter.php:408
+#: src/Pro/ShippingMeter/ShippingMeter.php:417
 msgid "not reached"
 msgstr "не досягнуто"
 
-#: src/Pro/ShippingMeter/ShippingMeter.php:555
+#: src/Pro/ShippingMeter/ShippingMeter.php:564
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:544
 #: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:318
 msgid "Free Shipping"
 msgstr "Безкоштовна доставка"
 
-#: src/Pro/ShippingMeter/ShippingMeter.php:556
-#: src/Pro/ShippingMeter/ShippingMeter.php:557
+#: src/Pro/ShippingMeter/ShippingMeter.php:565
+#: src/Pro/ShippingMeter/ShippingMeter.php:566
 #: src/Admin/assets/js/pages/Dashboard.jsx:213
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:549
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:556
 msgid "Off"
 msgstr "Вимк."
 
-#: src/Pro/ShippingMeter/ShippingMeter.php:749
-#: src/Pro/ShippingMeter/ShippingMeter.php:753
+#: src/Pro/ShippingMeter/ShippingMeter.php:758
+#: src/Pro/ShippingMeter/ShippingMeter.php:762
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:558
 #: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:47
 msgid "Free Gift"
@@ -902,7 +891,7 @@ msgstr "Цей додаток кошика недоступний."
 #: src/Pro/SmartAddons/SmartAddonsController.php:153
 #: src/Recommendations/RecommendationsController.php:180
 #: src/REST/CartStateController.php:178
-#: src/REST/CouponController.php:242
+#: src/REST/CouponController.php:255
 msgid "The cart could not be updated. Please try again."
 msgstr "Не вдалося оновити кошик. Будь ласка, спробуйте ще раз."
 
@@ -919,7 +908,8 @@ msgid "One or more cart items could not be removed."
 msgstr "Не вдалося вилучити один або кілька товарів із кошика."
 
 #: src/REST/CouponController.php:95
-#: src/REST/CouponController.php:160
+#: src/REST/CouponController.php:162
+#: src/REST/CouponController.php:201
 msgid "Cart rewards are managed automatically."
 msgstr "Винагороди в кошику керуються автоматично."
 
@@ -927,11 +917,11 @@ msgstr "Винагороди в кошику керуються автомати
 msgid "Invalid coupon."
 msgstr "Недійсний купон."
 
-#: src/REST/CouponController.php:196
+#: src/REST/CouponController.php:209
 msgid "This coupon is managed automatically and could not be removed."
 msgstr "Цей купон керується автоматично і його не вдалося вилучити."
 
-#: src/REST/CouponController.php:202
+#: src/REST/CouponController.php:215
 msgid "The coupon could not be removed."
 msgstr "Не вдалося вилучити купон."
 
@@ -996,7 +986,7 @@ msgstr "Цьому джерелу заборонено доступ до CartPop
 msgid "The request origin does not match its referrer."
 msgstr "Джерело запиту не збігається з його referrer."
 
-#: src/Setup/Upgrader.php:1717
+#: src/Setup/Upgrader.php:1738
 #. translators: %1$d: WordPress multisite blog ID.
 #, php-format
 msgid ""
@@ -1005,40 +995,6 @@ msgid ""
 msgstr ""
 "Мережеву міграцію CartPops призупинено на сайті %1$d, її буде повторено без "
 "пропуску наступних сайтів. Початкові налаштування збережено."
-
-#: src/Setup/Upgrader.php:1728
-msgid ""
-"CartPops could not complete its legacy settings migration. The original "
-"settings were preserved; review the migration status before retrying."
-msgstr ""
-"CartPops не вдалося завершити міграцію застарілих налаштувань. Початкові "
-"налаштування збережено; перегляньте стан міграції перед повторною спробою."
-
-#: src/Setup/Upgrader.php:1736
-msgid ""
-"CartPops preserved legacy automation rule data for recovery, but those "
-"rules are retired and do not run in V2."
-msgstr ""
-"CartPops зберіг дані застарілих правил автоматизації для відновлення, але "
-"ці правила застаріли й не працюють у V2."
-
-#: src/Setup/Upgrader.php:1742
-msgid ""
-"CartPops migration requires compatibility review before it can finish. "
-"Original settings remain available for recovery; resolve the reported "
-"migration warnings, then retry the migration."
-msgstr ""
-"Перед завершенням міграції CartPops потрібна перевірка на сумісність. "
-"Початкові налаштування залишаються доступними для відновлення; усуньте "
-"зафіксовані попередження міграції, а потім повторіть спробу."
-
-#: src/Setup/Upgrader.php:1752
-msgid ""
-"CartPops migrated legacy settings with compatibility warnings. Original "
-"settings remain available for recovery."
-msgstr ""
-"CartPops переніс застарілі налаштування з попередженнями щодо сумісності. "
-"Початкові налаштування залишаються доступними для відновлення."
 
 #: src/StoreAPI/CartExtension.php:178
 msgid "Exact WooCommerce cart item key."
@@ -1092,94 +1048,96 @@ msgstr ""
 msgid "Bounded plain-text WooCommerce backorder notice."
 msgstr "Обмежене текстове сповіщення WooCommerce про попереднє замовлення."
 
-#: src/Admin/assets/js/App.jsx:169
+#: src/Admin/assets/js/App.jsx:170
 msgid "Setup"
 msgstr "Налаштування"
 
-#: src/Admin/assets/js/App.jsx:171
+#: src/Admin/assets/js/App.jsx:172
 #: src/Admin/assets/js/pages/Dashboard.jsx:119
 msgid "Dashboard"
 msgstr "Консоль"
 
-#: src/Admin/assets/js/App.jsx:172
+#: src/Setup/MigrationWarningSummary.php:155
+#: src/Admin/assets/js/App.jsx:173
 msgid "Drawer"
 msgstr "Висувна панель"
 
-#: src/Admin/assets/js/App.jsx:173
+#: src/Admin/assets/js/App.jsx:174
 msgid "Launcher"
 msgstr "Кнопка відкриття"
 
-#: src/Admin/assets/js/App.jsx:177
+#: src/Admin/assets/js/App.jsx:178
 #: src/Admin/assets/js/pages/Dashboard.jsx:185
 msgid "Features"
 msgstr "Можливості"
 
-#: src/Admin/assets/js/App.jsx:181
+#: src/Setup/MigrationWarningSummary.php:163
+#: src/Admin/assets/js/App.jsx:182
 #: src/Admin/assets/js/pages/Dashboard.jsx:88
 #: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:352
 msgid "Recommendations"
 msgstr "Рекомендації"
 
-#: src/Admin/assets/js/App.jsx:186
+#: src/Admin/assets/js/App.jsx:187
 msgid "Smart add-ons"
 msgstr "Розумні додатки"
 
-#: src/Admin/assets/js/App.jsx:191
+#: src/Admin/assets/js/App.jsx:192
 #: src/Admin/assets/js/pages/Dashboard.jsx:104
 #: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:657
 #: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:669
 msgid "Smart Bar"
 msgstr "Smart Bar"
 
-#: src/Admin/assets/js/App.jsx:196
+#: src/Admin/assets/js/App.jsx:197
 #: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:419
 #: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:444
 msgid "Bundle Builder"
 msgstr "Конструктор наборів"
 
-#: src/Admin/assets/js/App.jsx:202
+#: src/Admin/assets/js/App.jsx:203
 msgid "Insights"
 msgstr "Інсайти"
 
-#: src/Admin/assets/js/App.jsx:206
+#: src/Admin/assets/js/App.jsx:207
 #: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:202
 msgid "Analytics"
 msgstr "Аналітика"
 
-#: src/Admin/assets/js/App.jsx:212
+#: src/Admin/assets/js/App.jsx:213
 msgid "System"
 msgstr "Система"
 
-#: src/Admin/assets/js/App.jsx:213
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:429
+#: src/Admin/assets/js/App.jsx:214
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:444
 msgid "Advanced"
 msgstr "Розширені"
 
-#: src/Admin/assets/js/App.jsx:520
+#: src/Admin/assets/js/App.jsx:539
 msgid "Settings saved!"
 msgstr "Налаштування збережено!"
 
-#: src/Admin/assets/js/App.jsx:526
+#: src/Admin/assets/js/App.jsx:545
 msgid "Failed to save."
 msgstr "Не вдалося зберегти."
 
-#: src/Admin/assets/js/App.jsx:560
+#: src/Admin/assets/js/App.jsx:579
 msgid "Settings reset to defaults."
 msgstr "Налаштування скинуто до початкових."
 
-#: src/Admin/assets/js/App.jsx:571
+#: src/Admin/assets/js/App.jsx:590
 msgid "Settings could not be reset. Please try again."
 msgstr "Не вдалося скинути налаштування. Будь ласка, спробуйте ще раз."
 
-#: src/Admin/assets/js/App.jsx:732
+#: src/Admin/assets/js/App.jsx:730
 msgid "Unsaved changes"
 msgstr "Незбережені зміни"
 
-#: src/Admin/assets/js/App.jsx:741
+#: src/Admin/assets/js/App.jsx:739
 msgid "Saving…"
 msgstr "Збереження…"
 
-#: src/Admin/assets/js/App.jsx:742
+#: src/Admin/assets/js/App.jsx:740
 msgid "Save Changes"
 msgstr "Зберегти зміни"
 
@@ -1224,7 +1182,7 @@ msgstr "Порожньо"
 msgid "Toggle dark mode preview"
 msgstr "Перемкнути попередній перегляд темного режиму"
 
-#: src/Admin/assets/js/components/DrawerPreview.jsx:828
+#: src/Admin/assets/js/components/DrawerPreview.jsx:854
 #: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:453
 #: src/Pro/Admin/assets/js/components/ProductSearch.jsx:720
 #: src/Pro/Admin/assets/js/components/ProductSearch.jsx:748
@@ -1339,11 +1297,12 @@ msgstr ""
 "Оновіться, щоб налаштувати цю функцію. Ваші наявні налаштування CartPops "
 "залишаться без змін."
 
-#: src/Admin/assets/js/components/UpgradePage.jsx:40
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:88
+#: src/Admin/assets/js/components/UpgradePage.jsx:42
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:93
 msgid "Upgrade to CartPops Pro"
 msgstr "Оновитися до CartPops Pro"
 
+#: src/Setup/MigrationWarningSummary.php:159
 #: src/Admin/assets/js/pages/AdvancedSettings.jsx:18
 #: src/Admin/assets/js/pages/AdvancedSettings.jsx:210
 #: src/Admin/assets/js/pages/RecommendationSettings.jsx:44
@@ -1372,6 +1331,7 @@ msgstr ""
 "панелі. Посилання залишається прихованим, доки не збережено дійсний код "
 "партнера."
 
+#: src/Setup/MigrationWarningSummary.php:258
 #: src/Admin/assets/js/pages/AdvancedSettings.jsx:45
 msgid "Partner code"
 msgstr "Код партнера"
@@ -1413,6 +1373,7 @@ msgstr "Помилка імпорту."
 msgid "Invalid JSON file."
 msgstr "Недійсний файл JSON."
 
+#: src/Setup/MigrationWarningSummary.php:249
 #: src/Admin/assets/js/pages/AdvancedSettings.jsx:214
 msgid "Enable CartPops"
 msgstr "Увімкнути CartPops"
@@ -1429,35 +1390,36 @@ msgstr "Відкривати панель за допомогою"
 msgid "Launcher click only"
 msgstr "Лише клік на кнопку відкриття"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:251
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:266
 msgid "WooCommerce Mini Cart"
 msgstr "Міні-кошик WooCommerce"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:255
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:270
 msgid "Integration mode"
 msgstr "Режим інтеграції"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:256
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:271
 msgid "Controls how CartPops interacts with the WooCommerce Mini Cart block."
 msgstr "Керує тим, як CartPops взаємодіє з блоком «Міні-кошик WooCommerce»."
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:267
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:282
 msgid "Replace — CartPops drawer replaces WC Mini Cart"
 msgstr "Заміна — панель CartPops замінює міні-кошик WC"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:274
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:289
 msgid "Standalone — Both operate independently"
 msgstr "Окремо — обидва працюють незалежно"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:289
+#: src/Setup/MigrationWarningSummary.php:219
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:304
 msgid "Custom CSS"
 msgstr "Власний CSS"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:293
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:308
 msgid "Additional CSS"
 msgstr "Додатковий CSS"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:294
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:309
 msgid ""
 "Add custom CSS to style the cart drawer. Uses the .cpops- prefix for all "
 "CartPops elements."
@@ -1465,15 +1427,15 @@ msgstr ""
 "Додайте власний CSS для стилізації панелі кошика. Використовуйте префікс "
 ".cpops- для всіх елементів CartPops."
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:309
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:324
 msgid "Performance"
 msgstr "Продуктивність"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:320
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:335
 msgid "Import / Export"
 msgstr "Імпорт / Експорт"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:324
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:339
 msgid ""
 "Export your CartPops settings to a JSON file for backup, or import settings "
 "from another site."
@@ -1481,40 +1443,40 @@ msgstr ""
 "Експортуйте налаштування CartPops у файл JSON для резервної копії або "
 "імпортуйте налаштування з іншого сайту."
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:336
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:351
 msgid "Export Settings"
 msgstr "Експорт налаштувань"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:343
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:358
 msgid "Import Settings"
 msgstr "Імпорт налаштувань"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:359
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:374
 msgid "Reset"
 msgstr "Скинути"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:371
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:386
 msgid "Reset all settings to defaults"
 msgstr "Скинути всі налаштування до стандартних"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:376
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:391
 msgid "Are you sure? This will reset all CartPops settings to their default values."
 msgstr "Ви впевнені? Це скине всі налаштування CartPops до значень за замовчуванням."
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:396
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:411
 msgid "Yes, reset everything"
 msgstr "Так, скинути все"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:404
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:419
 #: src/Pro/Admin/assets/js/components/AnalyticsResetActions.jsx:68
 msgid "Cancel"
 msgstr "Скасувати"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:414
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:429
 msgid "Settings update in progress…"
 msgstr "Триває оновлення налаштувань…"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:431
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:446
 msgid "Fine-tune CartPops behavior, styling, and integrations."
 msgstr "Тонке налаштування поведінки, стилю та інтеграцій CartPops."
 
@@ -1522,6 +1484,7 @@ msgstr "Тонке налаштування поведінки, стилю та 
 msgid "Cart Drawer"
 msgstr "Висувний кошик"
 
+#: src/Setup/MigrationWarningSummary.php:152
 #: src/Admin/assets/js/pages/Dashboard.jsx:76
 #: src/Admin/assets/js/pages/Dashboard.jsx:170
 msgid "Cart Launcher"
@@ -1605,12 +1568,12 @@ msgid "Get help from our team"
 msgstr "Отримайте допомогу від нашої команди"
 
 #: src/Admin/assets/js/pages/DesignSettings.jsx:11
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:437
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:442
 msgid "Default"
 msgstr "За замовчуванням"
 
 #: src/Admin/assets/js/pages/DesignSettings.jsx:23
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:445
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:450
 msgid "Minimal"
 msgstr "Мінімалістичний"
 
@@ -1622,6 +1585,7 @@ msgstr "Виразний"
 msgid "Ocean"
 msgstr "Океан"
 
+#: src/Setup/MigrationWarningSummary.php:161
 #: src/Admin/assets/js/pages/DesignSettings.jsx:61
 msgid "Primary"
 msgstr "Основний"
@@ -1635,8 +1599,8 @@ msgstr "Основний текст"
 #: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:491
 #: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:489
 #: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:730
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:514
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:652
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:526
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:664
 msgid "Background"
 msgstr "Фон"
 
@@ -1651,8 +1615,8 @@ msgstr "Поверхня"
 #: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:498
 #: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:502
 #: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:742
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:524
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:665
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:536
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:677
 msgid "Text"
 msgstr "Текст"
 
@@ -1762,6 +1726,7 @@ msgstr "Небезпека"
 msgid "Presets"
 msgstr "Пресети"
 
+#: src/Setup/MigrationWarningSummary.php:146
 #: src/Admin/assets/js/pages/DesignSettings.jsx:235
 #: src/Admin/assets/js/pages/IntegrationsSettings.jsx:328
 #: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:470
@@ -1817,7 +1782,7 @@ msgid "Always dark"
 msgstr "Завжди темна"
 
 #: src/Admin/assets/js/pages/DrawerEditor.jsx:17
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:142
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:147
 msgid "Layout"
 msgstr "Макет"
 
@@ -1826,7 +1791,7 @@ msgid "Design"
 msgstr "Дизайн"
 
 #: src/Admin/assets/js/pages/DrawerEditor.jsx:21
-#: src/Admin/assets/js/pages/DrawerEditor.jsx:55
+#: src/Admin/assets/js/pages/DrawerEditor.jsx:56
 msgid "Shipping meter"
 msgstr "Шкала доставки"
 
@@ -1870,148 +1835,149 @@ msgstr ""
 "Додайте кнопку «Продовжити покупки», «Переглянути кошик» або власну дію під "
 "оформленням замовлення за допомогою CartPops Pro."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:102
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:107
 msgid "Explore Pro actions"
 msgstr "Дізнатися більше про дії Pro"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:111
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:116
 msgid "Animation"
 msgstr "Анімація"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:115
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:120
 msgid "Animation Type"
 msgstr "Тип анімації"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:118
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:123
 msgid "Slide"
 msgstr "Зсув"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:119
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:124
 msgid "Fade"
 msgstr "Згасання"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:128
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:133
 msgid "Duration (ms)"
 msgstr "Тривалість (мс)"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:141
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:146
 #: src/Admin/assets/js/pages/IntegrationsSettings.jsx:284
 msgid "Behavior"
 msgstr "Поведінка"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:145
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:150
 msgid "Show undo after item removal"
 msgstr "Показувати скасування після видалення товару"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:153
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:158
 msgid "Show coupon code field"
 msgstr "Показувати поле купона"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:154
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:159
 msgid "Allow customers to apply coupon codes from the cart drawer."
 msgstr "Дозволити покупцям застосовувати купони з висувного кошика."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:165
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:170
 msgid "Product name display"
 msgstr "Відображення назви товару"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:166
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:171
 msgid "Choose how product names wrap inside drawer cart items."
 msgstr "Виберіть спосіб переносу назв товарів у висувному кошику."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:175
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:180
 msgid "Two lines"
 msgstr "Два рядки"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:179
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:184
 msgid "Single line"
 msgstr "Один рядок"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:183
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:188
 msgid "Full name"
 msgstr "Повна назва"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:193
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:198
 msgid "Totals breakdown"
 msgstr "Деталізація підсумків"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:194
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:199
 msgid "Where to show subtotal, discounts, shipping, fees, and tax lines."
 msgstr "Де показувати проміжний підсумок, знижки, доставку, збори та податки."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:201
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:206
 msgid "In footer (sticky)"
 msgstr "У підвалі (закріплено)"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:205
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:210
 msgid "Above checkout (scrollable)"
 msgstr "Над оформленням (з прокручуванням)"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:212
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:217
 msgid "Hidden (total only)"
 msgstr "Приховано (лише загальна сума)"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:222
+#: src/Setup/MigrationWarningSummary.php:248
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:227
 msgid "Show subtotal"
 msgstr "Показувати проміжний підсумок"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:223
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:228
 msgid "Display the subtotal in the selected totals area."
 msgstr "Показувати проміжний підсумок у вибраній області підсумків."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:234
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:239
 msgid "Show discounts"
 msgstr "Показувати знижки"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:235
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:240
 msgid "Display the discount line when a coupon is applied."
 msgstr "Показувати рядок знижки, якщо застосовано купон."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:246
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:251
 msgid "Show shipping"
 msgstr "Показувати доставку"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:247
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:252
 msgid "Display the shipping line when shipping is calculated."
 msgstr "Показувати рядок доставки, коли її розраховано."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:258
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:263
 msgid "Show taxes"
 msgstr "Показувати податки"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:259
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:264
 msgid "Display the applicable tax line or included-tax note."
 msgstr "Показувати рядок відповідного податку або примітку про включений податок."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:270
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:275
 msgid "Show total"
 msgstr "Показувати загальну суму"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:271
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:276
 msgid "Display the grand total above the checkout button."
 msgstr "Показувати загальну суму над кнопкою оформлення замовлення."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:282
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:287
 msgid "Checkout Button Text"
 msgstr "Текст кнопки оформлення замовлення"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:283
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:288
 msgid "Leave empty to use the default \"Proceed to Checkout\"."
 msgstr "Залиште порожнім, щоб використовувати стандартне «Оформити замовлення»."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:297
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:302
 msgid "Customer messages"
 msgstr "Повідомлення для покупців"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:301
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:306
 msgid "Cart title"
 msgstr "Заголовок кошика"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:311
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:316
 msgid "Added-to-cart announcement"
 msgstr "Сповіщення про додавання до кошика"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:312
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:317
 msgid ""
 "Optional generic announcement. Enter complete plain text without a product "
 "placeholder, or leave blank to disable it."
@@ -2019,67 +1985,68 @@ msgstr ""
 "Необов'язкове загальне оголошення. Введіть звичайний текст без заповнювача "
 "товару або залиште порожнім, щоб вимкнути."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:317
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:322
 msgid "Product successfully added to your cart."
 msgstr "Товар успішно додано до вашого кошика."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:327
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:332
 msgid "Coupon heading"
 msgstr "Заголовок купона"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:330
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:335
 msgid "No heading by default"
 msgstr "За замовчуванням без заголовка"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:337
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:342
 msgid "Coupon input placeholder"
 msgstr "Заповнювач поля купона"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:350
+#: src/Setup/MigrationWarningSummary.php:263
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:355
 msgid "Coupon button text"
 msgstr "Текст кнопки купона"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:362
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:367
 msgid "Totals and empty-cart text"
 msgstr "Підсумки та текст порожнього кошика"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:366
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:371
 msgid "Subtotal label"
 msgstr "Підпис проміжного підсумку"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:376
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:381
 msgid "Discount label"
 msgstr "Підпис знижки"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:386
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:391
 msgid "Total label"
 msgstr "Підпис загального підсумку"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:396
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:401
 msgid "Empty-cart title"
 msgstr "Заголовок порожнього кошика"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:406
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:411
 msgid "Empty-cart subtitle"
 msgstr "Підзаголовок порожнього кошика"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:409
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:414
 msgid "No subtitle by default"
 msgstr "За замовчуванням без підзаголовка"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:416
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:421
 msgid "Empty-cart button text"
 msgstr "Текст кнопки порожнього кошика"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:428
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:433
 msgid "Quantity Selector"
 msgstr "Вибір кількості"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:432
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:437
 msgid "Style"
 msgstr "Стиль"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:441
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:446
 msgid "Rounded"
 msgstr "Закруглений"
 
@@ -2195,6 +2162,7 @@ msgstr "Фон вбудованого значка"
 msgid "Inline Badge Text"
 msgstr "Текст вбудованого значка"
 
+#: src/Setup/MigrationWarningSummary.php:156
 #: src/Admin/assets/js/pages/LauncherSettings.jsx:60
 msgid "Floating Cart Launcher"
 msgstr "Плаваюча кнопка кошика"
@@ -2228,6 +2196,7 @@ msgstr "Показувати суму кошика"
 msgid "Hide zero item count"
 msgstr "Приховувати нульову кількість товарів"
 
+#: src/Setup/MigrationWarningSummary.php:235
 #: src/Admin/assets/js/pages/LauncherSettings.jsx:120
 msgid "Hide when cart is empty"
 msgstr "Приховувати, коли кошик порожній"
@@ -2345,12 +2314,12 @@ msgid "How to select which products to recommend."
 msgstr "Як вибирати товари для рекомендацій."
 
 #: src/Admin/assets/js/pages/RecommendationSettings.jsx:64
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:116
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:121
 msgid "Cross-sells"
 msgstr "Перехресні продажі"
 
 #: src/Admin/assets/js/pages/RecommendationSettings.jsx:65
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:115
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:120
 msgid "Upsells"
 msgstr "Супутні товари"
 
@@ -2367,44 +2336,44 @@ msgstr ""
 "Перехресні продажі та супутні товари залишаються доступними у безкоштовній "
 "версії."
 
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:107
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:112
 msgid "Fallback Strategy"
 msgstr "Резервна стратегія"
 
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:108
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:113
 msgid "Used when the primary strategy returns no results."
 msgstr "Використовується, коли основна стратегія не повертає результатів."
 
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:114
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:119
 msgid "Random products"
 msgstr "Випадкові товари"
 
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:125
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:130
 msgid "Number of products"
 msgstr "Кількість товарів"
 
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:138
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:436
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:143
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:448
 msgid "Display"
 msgstr "Відображення"
 
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:146
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:151
 msgid "Horizontal Scroll"
 msgstr "Горизонтальне прокручування"
 
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:149
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:154
 msgid "Grid"
 msgstr "Сітка"
 
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:150
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:155
 msgid "List"
 msgstr "Список"
 
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:158
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:163
 msgid "Heading"
 msgstr "Заголовок"
 
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:174
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:179
 msgid ""
 "Recommendation add buttons use the accessible icon presentation. Text and "
 "text-with-icon buttons are available with CartPops Pro."
@@ -2413,7 +2382,7 @@ msgstr ""
 "вигляді піктограми. Текстові кнопки та кнопки з текстом і піктограмою "
 "доступні в CartPops Pro."
 
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:181
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:191
 msgid "Explore Pro button styles"
 msgstr "Дізнатися більше про стилі кнопок Pro"
 
@@ -2702,12 +2671,12 @@ msgid "Conditional"
 msgstr "За умовою"
 
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:598
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:388
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:400
 msgid "You have qualified for free shipping!"
 msgstr "Ви отримали безкоштовну доставку!"
 
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:601
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:373
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:385
 msgid "Add {{amount}} more for free shipping"
 msgstr "Додайте ще {{amount}}, щоб отримати безкоштовну доставку"
 
@@ -3205,7 +3174,6 @@ msgid "Tier"
 msgstr "Рівень"
 
 #: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:136
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:336
 msgid "Threshold"
 msgstr "Поріг"
 
@@ -3230,7 +3198,7 @@ msgstr ""
 "точний ID варіації."
 
 #: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:200
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:352
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:364
 msgid "Show Celebration"
 msgstr "Показувати святкування"
 
@@ -3239,7 +3207,7 @@ msgid "Display confetti animation when this tier is reached."
 msgstr "Показувати анімацію конфеті при досягненні цього рівня."
 
 #: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:212
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:367
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:379
 msgid "Progress Message"
 msgstr "Повідомлення про прогрес"
 
@@ -3248,7 +3216,7 @@ msgid "Use {{amount}} and {{reward}} as placeholders."
 msgstr "Використовуйте {{amount}} та {{reward}} як заповнювачі."
 
 #: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:224
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:386
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:398
 msgid "Qualified Message"
 msgstr "Повідомлення про досягнення"
 
@@ -3276,39 +3244,27 @@ msgstr "Рівні винагород"
 msgid "Tier 1"
 msgstr "Рівень 1"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:325
-msgid "auto"
-msgstr "авто"
-
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:337
-msgid ""
-"Free shipping threshold. Set to 0 to auto-detect from WooCommerce shipping "
-"zones."
-msgstr ""
-"Поріг безкоштовної доставки. Встановіть 0 для автовизначення із зон "
-"доставки WooCommerce."
-
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:353
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:365
 msgid "Display confetti animation when free shipping is reached."
 msgstr "Показувати анімацію конфеті при досягненні безкоштовної доставки."
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:368
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:380
 msgid "Use {{amount}} as a placeholder for the remaining amount."
 msgstr "Використовуйте {{amount}} як заповнювач для суми, що залишилася."
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:428
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:440
 msgid "+ Add Tier"
 msgstr "+ Додати рівень"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:440
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:452
 msgid "Show in drawer"
 msgstr "Показувати у висувному кошику"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:448
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:460
 msgid "Enable shipping calculator"
 msgstr "Увімкнути калькулятор доставки"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:449
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:461
 msgid ""
 "Let customers calculate shipping and choose an available rate from the cart "
 "drawer."
@@ -3316,19 +3272,19 @@ msgstr ""
 "Дозволити клієнтам розраховувати доставку та вибирати доступний тариф у "
 "висувному кошику."
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:460
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:472
 msgid "Show icon"
 msgstr "Показувати піктограму"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:461
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:473
 msgid "Display truck/checkmark icon before the message."
 msgstr "Відображати піктограму вантажівки/галочки перед повідомленням."
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:473
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:485
 msgid "Show truck indicator"
 msgstr "Показувати індикатор вантажівки"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:474
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:486
 msgid ""
 "Display the moving truck on the progress bar. Hidden when reward tiers are "
 "active."
@@ -3336,44 +3292,44 @@ msgstr ""
 "Відображати рухому вантажівку на шкалі прогресу. Приховано, коли активні "
 "рівні винагород."
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:489
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:501
 msgid "Progress Colors"
 msgstr "Кольори прогресу"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:494
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:626
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:506
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:638
 msgid "Bar Start"
 msgstr "Початок шкали"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:504
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:639
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:516
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:651
 msgid "Bar End"
 msgstr "Кінець шкали"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:534
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:678
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:546
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:690
 msgid "Icon Background"
 msgstr "Фон піктограми"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:559
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:706
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:571
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:718
 msgid "Truck Background"
 msgstr "Фон вантажівки"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:572
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:719
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:584
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:731
 msgid "Truck Icon"
 msgstr "Піктограма вантажівки"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:589
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:601
 msgid "Tier Reached"
 msgstr "Рівень досягнуто"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:602
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:614
 msgid "Tier Icon"
 msgstr "Піктограма рівня"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:621
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:633
 msgid "Qualified Colors"
 msgstr "Кольори досягнення мети"
 
@@ -3478,6 +3434,690 @@ msgstr ""
 "Зовнішній вигляд на сайті, іконки, вантажівка, рівні та анімація "
 "святкування використовують ваші налаштування індикатора доставки CartPops "
 "Pro."
+
+#: src/Blocks/CartDrawer/render.php:316
+#: src/Cart/CartStateBuilder.php:525
+#: src/Admin/assets/js/components/DrawerPreview.jsx:740
+#. translators: %s: price of a single unit, shown under a cart line's total.
+#, php-format,js-format
+msgid "%s each"
+msgstr "%s кожен"
+
+#: src/Blocks/CartDrawer/render.php:711
+msgid "Have a coupon?"
+msgstr "Є купон?"
+
+#: src/Plugin.php:848
+msgid "CartPops is finishing its update. Reload this page in a moment."
+msgstr "CartPops завершує оновлення. Перезавантажте цю сторінку за момент."
+
+#: src/Plugin.php:851
+#. translators: %s: value-free CartPops diagnostic code.
+#, php-format
+msgid ""
+"CartPops is paused, so the cart drawer is not showing on your store. Your "
+"settings are safe. Code: %s."
+msgstr ""
+"CartPops призупинено, тому ящик кошика не відображається у вашому магазині. "
+"Ваші налаштування збережені. Код: %s."
+
+#: src/Setup/MigrationWarningSummary.php:78
+msgid "Colors → Cart launcher: menu launcher colors"
+msgstr "Кольори → Запускач кошика: кольори меню запускача"
+
+#: src/Setup/MigrationWarningSummary.php:145
+msgid "Settings"
+msgstr "Налаштування"
+
+#: src/Setup/MigrationWarningSummary.php:149
+msgid "Texts (older versions)"
+msgstr "Тексти (старіші версії)"
+
+#: src/Setup/MigrationWarningSummary.php:150
+msgid "Primary (older versions)"
+msgstr "Основний (старіші версії)"
+
+#: src/Setup/MigrationWarningSummary.php:151
+msgid "Buttons"
+msgstr "Кнопки"
+
+#: src/Setup/MigrationWarningSummary.php:153
+msgid "Cart launcher"
+msgstr "Запускач кошика"
+
+#: src/Setup/MigrationWarningSummary.php:154
+msgid "Custom code"
+msgstr "Користувацький код"
+
+#: src/Setup/MigrationWarningSummary.php:157
+msgid "Free Shipping Meter"
+msgstr "Лічильник безплатної доставки"
+
+#: src/Setup/MigrationWarningSummary.php:158
+msgid "Free Shipping Meter settings"
+msgstr "Налаштування лічильника безплатної доставки"
+
+#: src/Setup/MigrationWarningSummary.php:160
+msgid "Miscellaneous & Experimental"
+msgstr "Різне та експериментальне"
+
+#: src/Setup/MigrationWarningSummary.php:162
+msgid "Product Recommendation Engine"
+msgstr "Механізм рекомендацій товарів"
+
+#: src/Setup/MigrationWarningSummary.php:175
+msgid "Select an add to cart trigger"
+msgstr "Виберіть тригер додавання в кошик"
+
+#: src/Setup/MigrationWarningSummary.php:176
+msgid "Animation type"
+msgstr "Тип анімації"
+
+#: src/Setup/MigrationWarningSummary.php:177
+msgid "Rounded corners"
+msgstr "Заокруглені кути"
+
+#: src/Setup/MigrationWarningSummary.php:178
+msgid "Checkout button text"
+msgstr "Текст кнопки оформлення замовлення"
+
+#: src/Setup/MigrationWarningSummary.php:179
+msgid "Accent color (older versions)"
+msgstr "Колір акценту (старіші версії)"
+
+#: src/Setup/MigrationWarningSummary.php:180
+msgid "Primary background color"
+msgstr "Основний колір фону"
+
+#: src/Setup/MigrationWarningSummary.php:181
+msgid "Secondary background color"
+msgstr "Вторинний колір фону"
+
+#: src/Setup/MigrationWarningSummary.php:182
+msgid "Accent color"
+msgstr "Колір акценту"
+
+#: src/Setup/MigrationWarningSummary.php:183
+msgid "Primary button background color"
+msgstr "Основний колір фону кнопки"
+
+#: src/Setup/MigrationWarningSummary.php:184
+msgid "Primary button text color"
+msgstr "Основний колір тексту кнопки"
+
+#: src/Setup/MigrationWarningSummary.php:185
+msgid "Quantity selector button background"
+msgstr "Фон кнопки вибору кількості"
+
+#: src/Setup/MigrationWarningSummary.php:186
+msgid "Quantity selector button text color"
+msgstr "Колір тексту кнопки вибору кількості"
+
+#: src/Setup/MigrationWarningSummary.php:187
+msgid "Secondary button background"
+msgstr "Фон вторинної кнопки"
+
+#: src/Setup/MigrationWarningSummary.php:188
+msgid "Secondary button text color"
+msgstr "Колір тексту вторинної кнопки"
+
+#: src/Setup/MigrationWarningSummary.php:189
+msgid "Cart Launcher background color"
+msgstr "Колір фону запускача кошика"
+
+#: src/Setup/MigrationWarningSummary.php:190
+msgid "Cart Launcher bubble background"
+msgstr "Фон бульбашки запускача кошика"
+
+#: src/Setup/MigrationWarningSummary.php:191
+msgid "Cart Launcher bubble text"
+msgstr "Текст бульбашки запускача кошика"
+
+#: src/Setup/MigrationWarningSummary.php:192
+msgid "Cart Launcher text color"
+msgstr "Колір тексту запускача кошика"
+
+#: src/Setup/MigrationWarningSummary.php:193
+msgid "Floating Cart Launcher background color"
+msgstr "Колір фону плаваючого запускача кошика"
+
+#: src/Setup/MigrationWarningSummary.php:194
+msgid "Floating Cart Launcher icon color"
+msgstr "Колір значка плаваючого запускача кошика"
+
+#: src/Setup/MigrationWarningSummary.php:195
+msgid "Floating Cart Launcher indicator background"
+msgstr "Фон індикатора плаваючого запускача кошика"
+
+#: src/Setup/MigrationWarningSummary.php:196
+msgid "Floating Cart Launcher indicator text"
+msgstr "Текст індикатора плаваючого запускача кошика"
+
+#: src/Setup/MigrationWarningSummary.php:197
+msgid "Free Shipping Meter background color"
+msgstr "Колір фону лічильника безплатної доставки"
+
+#: src/Setup/MigrationWarningSummary.php:198
+msgid "Free Shipping Meter active background color"
+msgstr "Активний колір фону лічильника безплатної доставки"
+
+#: src/Setup/MigrationWarningSummary.php:199
+msgid "Input field background color"
+msgstr "Колір фону поля введення"
+
+#: src/Setup/MigrationWarningSummary.php:200
+msgid "Quantity selector input background"
+msgstr "Фон поля введення кількості"
+
+#: src/Setup/MigrationWarningSummary.php:201
+msgid "Quantity selector input border"
+msgstr "Межа поля введення кількості"
+
+#: src/Setup/MigrationWarningSummary.php:202
+msgid "Quantity selector input text color"
+msgstr "Колір тексту поля введення кількості"
+
+#: src/Setup/MigrationWarningSummary.php:203
+msgid "Input field text color"
+msgstr "Колір тексту поля введення"
+
+#: src/Setup/MigrationWarningSummary.php:204
+msgid "Overlay color"
+msgstr "Колір накладення"
+
+#: src/Setup/MigrationWarningSummary.php:205
+msgid "Recommendations button background color"
+msgstr "Колір фону кнопки рекомендацій"
+
+#: src/Setup/MigrationWarningSummary.php:206
+msgid "Recommendations button text color"
+msgstr "Колір тексту кнопки рекомендацій"
+
+#: src/Setup/MigrationWarningSummary.php:207
+msgid "Drawer Recommendations background color"
+msgstr "Фон рекомендацій у ящику"
+
+#: src/Setup/MigrationWarningSummary.php:208
+msgid "Drawer Recommendations border color"
+msgstr "Межа рекомендацій у ящику"
+
+#: src/Setup/MigrationWarningSummary.php:209
+msgid "Drawer Recommendations text color"
+msgstr "Колір тексту рекомендацій у ящику"
+
+#: src/Setup/MigrationWarningSummary.php:210
+msgid "Popup Recommendations background color"
+msgstr "Фон спливаючих рекомендацій"
+
+#: src/Setup/MigrationWarningSummary.php:211
+msgid "Popup Recommendations text color"
+msgstr "Колір тексту спливаючих рекомендацій"
+
+#: src/Setup/MigrationWarningSummary.php:212
+msgid "Danger color"
+msgstr "Колір небезпеки"
+
+#: src/Setup/MigrationWarningSummary.php:213
+msgid "Success color"
+msgstr "Колір успіху"
+
+#: src/Setup/MigrationWarningSummary.php:214
+msgid "Warning color"
+msgstr "Колір попередження"
+
+#: src/Setup/MigrationWarningSummary.php:215
+msgid "Primary text color"
+msgstr "Колір основного тексту"
+
+#: src/Setup/MigrationWarningSummary.php:216
+msgid "Secondary text color"
+msgstr "Колір вторинного тексту"
+
+#: src/Setup/MigrationWarningSummary.php:217
+msgid "Tertiary text color"
+msgstr "Колір третинного тексту"
+
+#: src/Setup/MigrationWarningSummary.php:218
+msgid "Enable coupon form"
+msgstr "Увімкнути форму купона"
+
+#: src/Setup/MigrationWarningSummary.php:220
+msgid "Custom JS"
+msgstr "Користувацький JS"
+
+#: src/Setup/MigrationWarningSummary.php:221
+msgid "Animation speed"
+msgstr "Швидкість анімації"
+
+#: src/Setup/MigrationWarningSummary.php:222
+msgid "Truncate long text"
+msgstr "Обрізати довгий текст"
+
+#: src/Setup/MigrationWarningSummary.php:223
+msgid "Drawer width desktop (In pixels)"
+msgstr "Ширина ящика на комп'ютері (у пікселях)"
+
+#: src/Setup/MigrationWarningSummary.php:224
+msgid "Drawer width mobile (In percentage)"
+msgstr "Ширина ящика на мобільному (у відсотках)"
+
+#: src/Setup/MigrationWarningSummary.php:225
+msgid "Show discount line item"
+msgstr "Показати рядок знижки"
+
+#: src/Setup/MigrationWarningSummary.php:226
+msgid "Show shipping line item"
+msgstr "Показати рядок доставки"
+
+#: src/Setup/MigrationWarningSummary.php:227
+msgid "Show shipping calculator"
+msgstr "Показати калькулятор доставки"
+
+#: src/Setup/MigrationWarningSummary.php:228
+msgid "Show subtotal line item"
+msgstr "Показати рядок проміжної суми"
+
+#: src/Setup/MigrationWarningSummary.php:229
+msgid "Show tax line item"
+msgstr "Показати рядок податку"
+
+#: src/Setup/MigrationWarningSummary.php:230
+msgid "Show total line item"
+msgstr "Показати рядок загальної суми"
+
+#: src/Setup/MigrationWarningSummary.php:231
+msgid "Secondary button"
+msgstr "Вторинна кнопка"
+
+#: src/Setup/MigrationWarningSummary.php:232
+msgid "Secondary button custom text"
+msgstr "Користувацький текст вторинної кнопки"
+
+#: src/Setup/MigrationWarningSummary.php:233
+msgid "Secondary button custom URL"
+msgstr "Користувацька URL вторинної кнопки"
+
+#: src/Setup/MigrationWarningSummary.php:234
+msgid "Enable Floating Cart Launcher"
+msgstr "Увімкнути плаваючий запускач кошика"
+
+#: src/Setup/MigrationWarningSummary.php:236
+msgid "Floating launcher: hide indicator when cart is empty"
+msgstr "Плаваючий запускач: приховати індикатор, коли кошик порожній"
+
+#: src/Setup/MigrationWarningSummary.php:237
+msgid "Hide on certain pages"
+msgstr "Приховати на певних сторінках"
+
+#: src/Setup/MigrationWarningSummary.php:238
+msgid "Select a position"
+msgstr "Виберіть позицію"
+
+#: src/Setup/MigrationWarningSummary.php:239
+msgid "Force refresh on page load?"
+msgstr "Примусово оновити при завантаженні сторінки?"
+
+#: src/Setup/MigrationWarningSummary.php:240
+msgid "Free shipping amount"
+msgstr "Сума безплатної доставки"
+
+#: src/Setup/MigrationWarningSummary.php:241
+msgid "Enable Free Shipping Meter"
+msgstr "Увімкнути лічильник безплатної доставки"
+
+#: src/Setup/MigrationWarningSummary.php:242
+msgid "Free Shipping Meter achieved text"
+msgstr "Текст досягнення Free Shipping Meter"
+
+#: src/Setup/MigrationWarningSummary.php:243
+msgid "Free Shipping Meter Text"
+msgstr "Текст Free Shipping Meter"
+
+#: src/Setup/MigrationWarningSummary.php:244
+msgid "Free Shipping Meter type"
+msgstr "Тип Free Shipping Meter"
+
+#: src/Setup/MigrationWarningSummary.php:245
+msgid "Menu Cart Launcher icon"
+msgstr "Значок Menu Cart Launcher"
+
+#: src/Setup/MigrationWarningSummary.php:246
+msgid "Menu Cart Launcher Indicator"
+msgstr "Індикатор Menu Cart Launcher"
+
+#: src/Setup/MigrationWarningSummary.php:247
+msgid "Menu launcher: hide indicator when cart is empty"
+msgstr "Menu launcher: приховати індикатор, коли кошик порожній"
+
+#: src/Setup/MigrationWarningSummary.php:250
+msgid "Button text"
+msgstr "Текст кнопки"
+
+#: src/Setup/MigrationWarningSummary.php:251
+msgid "Button type"
+msgstr "Тип кнопки"
+
+#: src/Setup/MigrationWarningSummary.php:252
+msgid "Select custom products"
+msgstr "Вибрати користувацькі товари"
+
+#: src/Setup/MigrationWarningSummary.php:253
+msgid "Enable Product Recommendation Engine"
+msgstr "Увімкнути механізм рекомендацій товарів"
+
+#: src/Setup/MigrationWarningSummary.php:254
+msgid "Select a fallback"
+msgstr "Вибрати резервний варіант"
+
+#: src/Setup/MigrationWarningSummary.php:255
+msgid "Recommendations title"
+msgstr "Заголовок рекомендацій"
+
+#: src/Setup/MigrationWarningSummary.php:256
+msgid "Select a Recommendation type"
+msgstr "Вибрати тип рекомендацій"
+
+#: src/Setup/MigrationWarningSummary.php:257
+msgid "Display Powered by CartPops"
+msgstr "Показати \"Powered by CartPops\""
+
+#: src/Setup/MigrationWarningSummary.php:259
+msgid "Drawer cart title"
+msgstr "Заголовок кошика в ящику"
+
+#: src/Setup/MigrationWarningSummary.php:260
+msgid "Generic added to cart message"
+msgstr "Загальне повідомлення про додавання в кошик"
+
+#: src/Setup/MigrationWarningSummary.php:261
+msgid "Coupon title"
+msgstr "Заголовок купона"
+
+#: src/Setup/MigrationWarningSummary.php:262
+msgid "Coupon input field placeholder text"
+msgstr "Текст-заповнювач поля введення купона"
+
+#: src/Setup/MigrationWarningSummary.php:264
+msgid "Line item: Subtotal"
+msgstr "Позиція рядка: Проміжна сума"
+
+#: src/Setup/MigrationWarningSummary.php:265
+msgid "Line item: Discount"
+msgstr "Позиція рядка: Знижка"
+
+#: src/Setup/MigrationWarningSummary.php:266
+msgid "Line item: Total"
+msgstr "Позиція рядка: Всього"
+
+#: src/Setup/MigrationWarningSummary.php:267
+msgid "Empty checkout button"
+msgstr "Кнопка порожнього оформлення замовлення"
+
+#: src/Setup/MigrationWarningSummary.php:268
+msgid "Drawer empty state title"
+msgstr "Заголовок порожнього стану ящика"
+
+#: src/Setup/MigrationWarningSummary.php:269
+msgid "Drawer empty state subtitle"
+msgstr "Підзаголовок порожнього стану ящика"
+
+#: src/Setup/MigrationWarningSummary.php:270
+msgid "Enable chat support"
+msgstr "Увімкнути підтримку чату"
+
+#: src/Setup/MigrationWarningSummary.php:271
+msgid "Close icon color"
+msgstr "Колір значка закриття"
+
+#: src/Setup/MigrationWarningSummary.php:272
+msgid "Remove icon color"
+msgstr "Колір значка видалення"
+
+#: src/Setup/MigrationWarningSummary.php:273
+msgid "Slider bullet color"
+msgstr "Колір маркера повзунка"
+
+#: src/Setup/MigrationWarningSummary.php:274
+msgid "Slider active bullet color"
+msgstr "Колір активного маркера повзунка"
+
+#: src/Setup/Upgrader.php:1750
+msgid ""
+"CartPops could not finish updating your settings from version 1, so it is "
+"paused. Your settings are safe. Reload this page to try again, and contact "
+"CartPops support if this message stays."
+msgstr ""
+"CartPops не зміг завершити оновлення ваших налаштувань з версії 1, тому він "
+"призупинений. Ваші налаштування в безпеці. Перезавантажте цю сторінку, щоб "
+"спробувати ще раз, і зв'яжіться з підтримкою CartPops, якщо це повідомлення "
+"залишиться."
+
+#: src/Setup/Upgrader.php:1760
+msgid ""
+"Your automation rules from CartPops 1 are kept, but CartPops 2 no longer "
+"runs them."
+msgstr ""
+"Ваші правила автоматизації з CartPops 1 збережені, але CartPops 2 більше їх "
+"не запускає."
+
+#: src/Setup/Upgrader.php:1783
+msgid ""
+"CartPops updated your settings from version 1, but some could not be "
+"carried over exactly. Your original settings are kept."
+msgstr ""
+"CartPops оновив ваші налаштування з версії 1, але деякі не вдалося "
+"перенести точно. Ваші оригінальні налаштування збережені."
+
+#: src/Setup/Upgrader.php:1787
+msgid "Hide this notice"
+msgstr "Приховати це повідомлення"
+
+#: src/Setup/Upgrader.php:1797
+msgid "This review requires a site administrator and a submitted review form."
+msgstr "Цей огляд вимагає адміністратора сайту та поданої форми огляду."
+
+#: src/Setup/Upgrader.php:1814
+msgid ""
+"The review was not accepted. Return to this site dashboard and review the "
+"current notice again."
+msgstr ""
+"Огляд не був прийнятий. Повертайтеся на панель керування цього сайту та ще "
+"раз перегляньте поточне повідомлення."
+
+#: src/Setup/Upgrader.php:1819
+msgid ""
+"The saved migration state could not be acknowledged. No review was "
+"accepted; return to this site dashboard and try again."
+msgstr ""
+"Збережений стан міграції не вдалося підтвердити. Жоден огляд не був "
+"прийнятий; повертайтеся на панель керування сайту та спробуйте ще раз."
+
+#: src/Setup/Upgrader.php:1827
+msgid ""
+"JavaScript retirement review accepted. Return to this site dashboard to "
+"retry migration and review any remaining conditions. The original script is "
+"preserved and will not execute in V2."
+msgstr ""
+"Огляд виходу на пенсію JavaScript прийнятий. Повертайтеся на панель "
+"керування сайту, щоб повторити спробу міграції та переглянути будь-які "
+"залишилися умови. Оригінальний скрипт збережений і не буде виконуватися в "
+"V2."
+
+#: src/Setup/Upgrader.php:1871
+msgid "This link has expired. Return to the dashboard and try again."
+msgstr ""
+"Це посилання закінчилося. Повертайтеся на панель керування та спробуйте ще "
+"раз."
+
+#: src/Setup/Upgrader.php:1887
+msgid ""
+"CartPops is paused until you review your old custom JavaScript below. Your "
+"settings are safe."
+msgstr ""
+"CartPops призупинений, поки ви не переглянете свій старий користувацький "
+"JavaScript нижче. Ваші налаштування в безпеці."
+
+#: src/Setup/Upgrader.php:1888
+msgid ""
+"CartPops is paused until a site administrator reviews the old custom "
+"JavaScript. Your settings are safe."
+msgstr ""
+"CartPops призупинений, поки адміністратор сайту не переглянув старий "
+"користувацький JavaScript. Ваші налаштування в безпеці."
+
+#: src/Setup/Upgrader.php:1890
+msgid ""
+"CartPops is paused until its update can finish. Your settings are safe. If "
+"you use CartPops Pro, check that your license is active for this site; "
+"otherwise, contact CartPops support."
+msgstr ""
+"CartPops призупинено до завершення оновлення. Ваші налаштування в безпеці. "
+"Якщо ви використовуєте CartPops Pro, переконайтеся, що ваша ліцензія "
+"активна для цього сайту; інакше зв'яжіться з підтримкою CartPops."
+
+#: src/Setup/Upgrader.php:1900
+msgid "Learn more"
+msgstr "Дізнатися більше"
+
+#: src/Setup/Upgrader.php:1910
+msgid ""
+"These settings had a value CartPops 2 could not read, so they now use their "
+"default. Check them in the CartPops settings:"
+msgstr ""
+"Ці налаштування мали значення, яке CartPops 2 не міг прочитати, тому вони "
+"тепер використовують значення за замовчуванням. Перевірте їх у "
+"налаштуваннях CartPops:"
+
+#: src/Setup/Upgrader.php:1911
+msgid "These settings no longer exist in CartPops 2:"
+msgstr "Ці налаштування більше не існують у CartPops 2:"
+
+#: src/Setup/Upgrader.php:1912
+msgid "These settings now work a little differently:"
+msgstr "Ці налаштування тепер працюють трохи інакше:"
+
+#: src/Setup/Upgrader.php:1926
+msgid "Your custom JavaScript from version 1 is kept but not run."
+msgstr "Ваш користувацький JavaScript з версії 1 збережено, але не запускається."
+
+#: src/Setup/Upgrader.php:1929
+msgid "Some Pro settings from version 1 are kept in your database but not used."
+msgstr ""
+"Деякі налаштування Pro з версії 1 збережено у вашій базі даних, але не "
+"використовуються."
+
+#: src/Setup/Upgrader.php:1935
+#. translators: %d: number of other settings.
+#, php-format
+msgid "%d other setting could not be carried over."
+msgid_plural "%d other settings could not be carried over."
+msgstr[0] "%d інше налаштування не вдалося перенести."
+msgstr[1] "%d інші налаштування не вдалося перенести."
+msgstr[2] "%d інших налаштувань не вдалося перенести."
+
+#: src/Setup/Upgrader.php:1944
+msgid "See which settings"
+msgstr "Див. які налаштування"
+
+#: src/Setup/Upgrader.php:1962
+msgid "Show your saved custom JavaScript"
+msgstr "Показати ваш збережений користувацький JavaScript"
+
+#: src/Setup/Upgrader.php:1963
+msgid ""
+"Copy it somewhere safe if you want to move it into your theme or a snippets "
+"plugin."
+msgstr ""
+"Скопіюйте його в безпечне місце, якщо ви хочете перенести його у вашу тему "
+"або плагін фрагментів."
+
+#: src/Setup/Upgrader.php:1966
+msgid "Only the beginning is shown. The full copy remains saved in your database."
+msgstr ""
+"Показано тільки початок. Повна копія залишається збереженою у вашій базі "
+"даних."
+
+#: src/Setup/Upgrader.php:1984
+msgid "Review your old custom JavaScript"
+msgstr "Перегляньте ваш старий користувацький JavaScript"
+
+#: src/Setup/Upgrader.php:1985
+msgid ""
+"CartPops 2 does not run the custom JavaScript from version 1. It stays "
+"saved in your database. Copy it if you still need it, then confirm below to "
+"finish the update."
+msgstr ""
+"CartPops 2 не запускає користувацький JavaScript з версії 1. Він "
+"залишається збереженим у вашій базі даних. Скопіюйте його, якщо він вам ще "
+"потрібен, а потім підтвердіть нижче, щоб завершити оновлення."
+
+#: src/Setup/Upgrader.php:2001
+msgid "I understand this custom JavaScript will not run in CartPops 2."
+msgstr ""
+"Я розумію, що цей користувацький JavaScript не буде запускатися в CartPops "
+"2."
+
+#: src/Setup/Upgrader.php:2003
+msgid "Confirm and finish the update"
+msgstr "Підтвердити та завершити оновлення"
+
+#: src/Setup/Upgrader.php:2022
+msgid "Open this site dashboard to review its migration"
+msgstr "Відкрити панель керування цього сайту для перегляду його міграції"
+
+#: src/Setup/Upgrader.php:2034
+msgid "Return to this site dashboard"
+msgstr "Повернутися до панелі керування цього сайту"
+
+#: src/Setup/Upgrader.php:2035
+msgid "CartPops migration review"
+msgstr "Перегляд міграції CartPops"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:244
+msgid "Add to cart on product pages without reloading"
+msgstr "Додати в кошик на сторінках товарів без перезавантаження"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:248
+msgid ""
+"Adds the product in the background so shoppers stay on the page. The drawer "
+"then opens if “Open drawer on” is set to Add to cart. Turn this off if your "
+"theme or another plugin already handles product-page add to cart."
+msgstr ""
+"Додає товар у фоновому режимі, щоб покупці залишалися на сторінці. Ящик "
+"потім відкривається, якщо для параметра «Відкрити ящик на» встановлено "
+"значення «Додати в кошик». Вимкніть це, якщо ваша тема або інший плагін уже "
+"обробляє додавання в кошик на сторінці товару."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:325
+msgid "WooCommerce minimum"
+msgstr "Мінімум WooCommerce"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:337
+msgid ""
+"Free shipping comes from WooCommerce, not from this meter. Add a Free "
+"shipping method with a minimum order amount to your shipping zones in "
+"WooCommerce → Settings → Shipping. The meter only shows when the shopper’s "
+"zone has one."
+msgstr ""
+"Безплатна доставка надходить від WooCommerce, а не від цього лічильника. "
+"Додайте метод «Безплатна доставка» з мінімальною сумою замовлення до ваших "
+"зон доставки в WooCommerce → Налаштування → Доставка. Лічильник "
+"відображається тільки коли в зоні покупця є один."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:345
+msgid "Higher free shipping goal (optional)"
+msgstr "Вища мета безплатної доставки (необов'язково)"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:349
+msgid ""
+"Leave at 0 to use the minimum order amount from WooCommerce. A higher "
+"amount only raises the goal shown in the meter. It does not give free "
+"shipping by itself, and amounts below the WooCommerce minimum are ignored."
+msgstr ""
+"Залиште 0, щоб використовувати мінімальну суму замовлення з WooCommerce. "
+"Вища сума тільки підвищує мету, показану в лічильнику. Вона не надає "
+"безплатну доставку сама по собі, і суми нижче мінімуму WooCommerce "
+"ігноруються."
 
 #: src/Blocks/CartDrawer/block.json
 msgctxt "block title"

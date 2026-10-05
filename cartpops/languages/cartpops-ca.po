@@ -1,5 +1,3 @@
-# Copyright (C) 2026 CartPops
-# This file is distributed under the GPL v3 or later.
 msgid ""
 msgstr ""
 "Project-Id-Version: CartPops 2.0.0\n"
@@ -11,15 +9,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2026-10-02T11:55:32+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language: ca\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: cartpops\n"
-"Language: ca\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: cartpops.php
-#: src/Admin/AdminPage.php:36
-#: src/Admin/AdminPage.php:37
-#: src/Blocks/CartDrawer/render.php:856
+#: src/Admin/AdminPage.php:45
+#: src/Admin/AdminPage.php:46
+#: src/Blocks/CartDrawer/render.php:881
+#: src/Setup/Upgrader.php:1871
 #: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:518
 #. Plugin Name of the plugin
 #. Author of the plugin
@@ -141,46 +140,46 @@ msgstr "No teniu permís per restablir les dades analítiques."
 
 #: src/Blocks/CartDrawer/render.php:33
 #: src/Admin/assets/js/components/DrawerPreview.jsx:145
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:304
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:309
 msgid "Your Cart"
 msgstr "La vostra cistella"
 
 #: src/Blocks/CartDrawer/render.php:36
-#: src/Blocks/CartDrawer/render.php:694
+#: src/Blocks/CartDrawer/render.php:719
 #: src/Admin/assets/js/components/DrawerPreview.jsx:150
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:340
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:345
 msgid "Coupon code"
 msgstr "Codi de cupó"
 
 #: src/Blocks/CartDrawer/render.php:37
 #: src/Admin/assets/js/components/DrawerPreview.jsx:154
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:353
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:358
 msgid "Apply"
 msgstr "Aplica"
 
 #: src/Blocks/CartDrawer/render.php:38
 #: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:831
 #: src/Admin/assets/js/components/DrawerPreview.jsx:158
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:369
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:374
 msgid "Subtotal"
 msgstr "Subtotal"
 
 #: src/Blocks/CartDrawer/render.php:39
 #: src/Admin/assets/js/components/DrawerPreview.jsx:341
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:379
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:384
 msgid "Discount"
 msgstr "Descompte"
 
 #: src/Blocks/CartDrawer/render.php:40
 #: src/Admin/assets/js/components/DrawerPreview.jsx:160
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:389
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:394
 msgid "Total"
 msgstr "Total"
 
 #: src/Blocks/CartDrawer/render.php:41
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:304
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:317
 #: src/Admin/assets/js/components/DrawerPreview.jsx:168
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:419
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:424
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:106
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:151
 msgid "Continue shopping"
@@ -188,125 +187,125 @@ msgstr "Continua comprant"
 
 #: src/Blocks/CartDrawer/render.php:42
 #: src/Admin/assets/js/components/DrawerPreview.jsx:163
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:399
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:404
 msgid "Your cart is empty"
 msgstr "La vostra cistella està buida"
 
-#: src/Blocks/CartDrawer/render.php:249
-#: src/Blocks/CartDrawer/render.php:277
+#: src/Blocks/CartDrawer/render.php:251
+#: src/Blocks/CartDrawer/render.php:288
 #: src/Blocks/CartLauncher/render.php:65
 #: src/Blocks/CartLauncher/render.php:190
 #: src/Admin/assets/js/components/LauncherPreview.jsx:357
 msgid "Open cart"
 msgstr "Obre la cistella"
 
-#: src/Blocks/CartDrawer/render.php:252
-#: src/Blocks/CartDrawer/render.php:562
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:160
+#: src/Blocks/CartDrawer/render.php:254
+#: src/Blocks/CartDrawer/render.php:576
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:165
 msgid "You may also like"
 msgstr "També us podria agradar"
 
-#: src/Blocks/CartDrawer/render.php:278
-#: src/Blocks/CartDrawer/render.php:403
+#: src/Blocks/CartDrawer/render.php:289
+#: src/Blocks/CartDrawer/render.php:416
 #: src/Blocks/CartLauncher/render.php:77
 msgid "Close cart"
 msgstr "Tanca la cistella"
 
-#: src/Blocks/CartDrawer/render.php:279
-#: src/Blocks/CartDrawer/render.php:587
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:611
+#: src/Blocks/CartDrawer/render.php:290
+#: src/Blocks/CartDrawer/render.php:601
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:626
 #: src/Recommendations/RecommendationEngine.php:240
 #: src/Admin/assets/js/pages/AdvancedSettings.jsx:230
 msgid "Add to cart"
 msgstr "Afegeix a la cistella"
 
-#: src/Blocks/CartDrawer/render.php:281
+#: src/Blocks/CartDrawer/render.php:292
 #: src/Recommendations/RecommendationEngine.php:220
-#: src/Admin/assets/js/components/DrawerPreview.jsx:924
+#: src/Admin/assets/js/components/DrawerPreview.jsx:950
 #: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:117
 #. translators: %s: product name.
 #, php-format,js-format
 msgid "Add %s to cart"
 msgstr "Afegeix %s a la cistella"
 
-#: src/Blocks/CartDrawer/render.php:282
-#: src/Blocks/CartDrawer/render.php:600
+#: src/Blocks/CartDrawer/render.php:293
+#: src/Blocks/CartDrawer/render.php:614
 #: src/Recommendations/RecommendationEngine.php:239
 msgid "Select options"
 msgstr "Selecciona les opcions"
 
-#: src/Blocks/CartDrawer/render.php:284
+#: src/Blocks/CartDrawer/render.php:295
 #: src/Recommendations/RecommendationEngine.php:217
 #. translators: %s: product name.
 #, php-format
 msgid "Select options for %s"
 msgstr "Selecciona les opcions per a %s"
 
-#: src/Blocks/CartDrawer/render.php:286
+#: src/Blocks/CartDrawer/render.php:297
 #. translators: %s: cart item name.
 #, php-format
 msgid "\"%s\" removed."
 msgstr "S'ha suprimit «%s»."
 
-#: src/Blocks/CartDrawer/render.php:288
+#: src/Blocks/CartDrawer/render.php:299
 #. translators: %s: cart item name.
 #, php-format
 msgid "%s removed from cart."
 msgstr "S'ha suprimit %s de la cistella."
 
-#: src/Blocks/CartDrawer/render.php:289
+#: src/Blocks/CartDrawer/render.php:300
 msgid "Item"
 msgstr "Article"
 
-#: src/Blocks/CartDrawer/render.php:291
+#: src/Blocks/CartDrawer/render.php:302
 #. translators: %s: cart item name.
 #, php-format
 msgid "%s restored to cart."
 msgstr "S'ha restaurat %s a la cistella."
 
-#: src/Blocks/CartDrawer/render.php:293
+#: src/Blocks/CartDrawer/render.php:304
 #. translators: %s: coupon code.
 #, php-format
 msgid "Coupon \"%s\" applied."
 msgstr "S'ha aplicat el cupó «%s»."
 
-#: src/Blocks/CartDrawer/render.php:295
+#: src/Blocks/CartDrawer/render.php:306
 #. translators: %s: coupon code.
 #, php-format
 msgid "Coupon \"%s\" removed."
 msgstr "S'ha suprimit el cupó «%s»."
 
-#: src/Blocks/CartDrawer/render.php:297
+#: src/Blocks/CartDrawer/render.php:308
 #. translators: %s: product name.
 #, php-format
 msgid "%s added to cart."
 msgstr "S'ha afegit %s al carret."
 
-#: src/Blocks/CartDrawer/render.php:298
+#: src/Blocks/CartDrawer/render.php:309
 msgid "Your cart has expired."
 msgstr "El vostre carret ha caducat."
 
-#: src/Blocks/CartDrawer/render.php:299
+#: src/Blocks/CartDrawer/render.php:310
 #: src/Pro/Blocks/ShippingMeter/ShippingMeterBlock.php:954
 msgid "Request failed"
 msgstr "La sol·licitud ha fallat"
 
-#: src/Blocks/CartDrawer/render.php:300
+#: src/Blocks/CartDrawer/render.php:311
 msgid "Your cart is refreshing. Please wait."
 msgstr "El vostre carret s'està actualitzant. Espereu, si us plau."
 
-#: src/Blocks/CartDrawer/render.php:301
+#: src/Blocks/CartDrawer/render.php:312
 msgid "Failed to fetch recommendations"
 msgstr "No s'han pogut obtenir les recomanacions"
 
-#: src/Blocks/CartDrawer/render.php:303
+#: src/Blocks/CartDrawer/render.php:314
 #. translators: 1: tax amount, 2: tax label (e.g. VAT).
 #, php-format
 msgid "Incl. %1$s %2$s"
 msgstr "Inclou %1$s %2$s"
 
-#: src/Blocks/CartDrawer/render.php:333
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:73
+#: src/Blocks/CartDrawer/render.php:346
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:74
 #: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:17
 #: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:24
 #: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:32
@@ -315,61 +314,61 @@ msgstr "Inclou %1$s %2$s"
 msgid "Add"
 msgstr "Afegeix"
 
-#: src/Blocks/CartDrawer/render.php:386
+#: src/Blocks/CartDrawer/render.php:399
 msgid "Shopping cart"
 msgstr "Carret de la compra"
 
-#: src/Blocks/CartDrawer/render.php:472
+#: src/Blocks/CartDrawer/render.php:486
 msgid "Decrease quantity:"
 msgstr "Redueix la quantitat:"
 
-#: src/Blocks/CartDrawer/render.php:485
+#: src/Blocks/CartDrawer/render.php:499
 msgid "Increase quantity:"
 msgstr "Augmenta la quantitat:"
 
-#: src/Blocks/CartDrawer/render.php:501
+#: src/Blocks/CartDrawer/render.php:515
 msgid "Remove item:"
 msgstr "Elimina l'element:"
 
-#: src/Blocks/CartDrawer/render.php:550
+#: src/Blocks/CartDrawer/render.php:564
 msgid "Undo"
 msgstr "Desfés"
 
-#: src/Blocks/CartDrawer/render.php:608
+#: src/Blocks/CartDrawer/render.php:622
 msgid "Previous"
 msgstr "Anterior"
 
-#: src/Blocks/CartDrawer/render.php:615
+#: src/Blocks/CartDrawer/render.php:629
 msgid "Next"
 msgstr "Següent"
 
-#: src/Blocks/CartDrawer/render.php:643
-#: src/Blocks/CartDrawer/render.php:770
+#: src/Blocks/CartDrawer/render.php:657
+#: src/Blocks/CartDrawer/render.php:795
 #: src/Admin/assets/js/components/DrawerPreview.jsx:356
 msgid "Shipping"
 msgstr "Enviament"
 
-#: src/Blocks/CartDrawer/render.php:731
+#: src/Blocks/CartDrawer/render.php:756
 msgid "Remove coupon:"
 msgstr "Elimina el cupó:"
 
-#: src/Blocks/CartDrawer/render.php:811
-#: src/Admin/assets/js/components/DrawerPreview.jsx:1107
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:288
+#: src/Blocks/CartDrawer/render.php:836
+#: src/Admin/assets/js/components/DrawerPreview.jsx:1133
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:293
 msgid "Proceed to Checkout"
 msgstr "Finalitza la compra"
 
-#: src/Blocks/CartDrawer/render.php:848
-#: src/Admin/assets/js/components/DrawerPreview.jsx:1123
+#: src/Blocks/CartDrawer/render.php:873
+#: src/Admin/assets/js/components/DrawerPreview.jsx:1149
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:228
 msgid "View Cart"
 msgstr "Mostra el carret"
 
-#: src/Blocks/CartDrawer/render.php:854
+#: src/Blocks/CartDrawer/render.php:879
 msgid "Powered by"
 msgstr "Desenvolupat per"
 
-#: src/Blocks/CartDrawer/render.php:857
+#: src/Blocks/CartDrawer/render.php:882
 msgid "(opens in a new tab)"
 msgstr "(s'obre en una pestanya nova)"
 
@@ -399,159 +398,148 @@ msgstr ""
 "Aquesta funció de CartPops no està disponible temporalment mentre se'n "
 "preparen les dades."
 
-#: src/Plugin.php:849
-#. translators: %s: value-free CartPops diagnostic code.
-#, php-format
-msgid ""
-"CartPops is paused because its required upgrade or build validation did not "
-"complete. Original data was preserved. Diagnostic: %s."
-msgstr ""
-"CartPops s'ha posat en pausa perquè l'actualització o validació de "
-"compilació necessària no s'ha completat. S'han conservat les dades "
-"originals. Diagnòstic: %s."
-
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:119
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:117
 #. translators: %s: add-on name.
 #, php-format
 msgid "%s added."
 msgstr "S'ha afegit %s."
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:121
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:119
 #. translators: %s: add-on name.
 #, php-format
 msgid "%s removed."
 msgstr "S'ha suprimit %s."
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:122
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:120
 msgid "Toggle failed"
 msgstr "Ha fallat la commutació"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:123
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:121
 msgid "Failed to add spotlight product"
 msgstr "No s'ha pogut afegir el producte destacat"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:124
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:122
 msgid "Adding…"
 msgstr "S'està afegint…"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:125
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:123
 msgid "Added ✓"
 msgstr "Afegit ✓"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:127
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:125
 msgid "bundle discount"
 msgstr "descompte de paquet"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:128
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:126
 msgid "Failed to add bundle items"
 msgstr "No s'han pogut afegir els elements del paquet"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:129
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:668
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:756
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:127
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:683
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:771
 msgid "Calculate shipping"
 msgstr "Calcula l'enviament"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:130
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:128
 msgid "Loading shipping options…"
 msgstr "S'estan carregant les opcions d'enviament…"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:131
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:129
 msgid "Shipping options updated."
 msgstr "S'han actualitzat les opcions d'enviament."
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:132
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:130
 msgid "Shipping method updated."
 msgstr "S'ha actualitzat el mètode d'enviament."
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:133
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:131
 msgid "Shipping options could not be updated. Please try again."
 msgstr "No s'han pogut actualitzar les opcions d'enviament. Torneu-ho a provar."
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:134
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:132
 msgid "No shipping options are available for this address."
 msgstr "No hi ha opcions d'enviament disponibles per a aquesta adreça."
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:135
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:133
 msgid "Enter your destination to calculate shipping."
 msgstr "Introduïu la vostra destinació per calcular l'enviament."
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:136
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:134
 msgid "Shipping options"
 msgstr "Opcions d'enviament"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:315
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:328
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:122
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:155
 msgid "View cart"
 msgstr "Mostra la cistella"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:493
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:508
 msgid "Dismiss"
 msgstr "Descarta"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:516
-#: src/Pro/Blocks/ShippingMeter/ShippingMeterBlock.php:1090
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:531
+#: src/Pro/Blocks/ShippingMeter/ShippingMeterBlock.php:1116
 msgid "Shipping and rewards progress"
 msgstr "Progrés de l'enviament i les recompenses"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:523
-#: src/Pro/Blocks/ShippingMeter/ShippingMeterBlock.php:1099
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:538
+#: src/Pro/Blocks/ShippingMeter/ShippingMeterBlock.php:1125
 msgid "Reward tiers"
 msgstr "Nivells de recompensa"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:584
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:599
 #: src/Pro/BundleBuilder/BundleBuilder.php:56
 #: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:469
 msgid "Frequently bought together"
 msgstr "Comprats junts habitualment"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:590
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:616
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:605
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:631
 msgid "Close"
 msgstr "Tanca"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:601
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:616
 msgid "Product info"
 msgstr "Informació del producte"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:605
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:620
 msgid "Choose…"
 msgstr "Trieu…"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:615
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:630
 msgid "Product information"
 msgstr "Informació del producte"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:619
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:634
 msgid "Got it"
 msgstr "D'acord"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:685
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:700
 msgid "Country / Region"
 msgstr "País / Regió"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:695
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:710
 msgid "Select a country / region…"
 msgstr "Seleccioneu un país / regió…"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:703
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:718
 msgid "State / County"
 msgstr "Província / Comtat"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:720
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:735
 msgid "Select a state / region…"
 msgstr "Seleccioneu una província / regió…"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:746
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:761
 msgid "City"
 msgstr "Població"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:751
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:766
 msgid "Postcode / ZIP"
 msgstr "Codi postal"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:815
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:830
 msgid "Toggle add-on:"
 msgstr "Commuta el complement:"
 
@@ -572,7 +560,7 @@ msgstr "La cistella no està disponible. Si us plau, torneu-ho a provar."
 #: src/Pro/SmartAddons/SmartAddonsController.php:129
 #: src/Recommendations/RecommendationsController.php:148
 #: src/REST/CartStateController.php:330
-#: src/REST/CouponController.php:231
+#: src/REST/CouponController.php:244
 msgid ""
 "The final cart state could not be confirmed. Refresh your cart before "
 "making another change."
@@ -586,7 +574,7 @@ msgstr ""
 #: src/Pro/SmartAddons/SmartAddonsController.php:137
 #: src/Recommendations/RecommendationsController.php:156
 #: src/REST/CartStateController.php:319
-#: src/REST/CouponController.php:220
+#: src/REST/CouponController.php:233
 msgid "Your cart is being updated. Please try again."
 msgstr "S'està actualitzant la cistella. Si us plau, torneu-ho a provar."
 
@@ -637,10 +625,10 @@ msgid "Items Indicator"
 msgstr "Indicador d'articles"
 
 #: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:808
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:120
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:435
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:125
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:440
 #: src/Admin/assets/js/pages/LauncherSettings.jsx:295
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:117
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:122
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:149
 #: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:33
 #: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:38
@@ -711,8 +699,8 @@ msgstr "Color del text"
 #: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:967
 #: src/Admin/assets/js/pages/IntegrationsSettings.jsx:338
 #: src/Admin/assets/js/pages/LauncherSettings.jsx:17
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:547
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:691
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:559
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:703
 msgid "Icon Color"
 msgstr "Color de la icona"
 
@@ -866,30 +854,30 @@ msgstr "Regla"
 msgid "Gift quantity: 1"
 msgstr "Quantitat del regal: 1"
 
-#: src/Pro/ShippingMeter/ShippingMeter.php:408
+#: src/Pro/ShippingMeter/ShippingMeter.php:417
 msgid "reached"
 msgstr "assolit"
 
-#: src/Pro/ShippingMeter/ShippingMeter.php:408
+#: src/Pro/ShippingMeter/ShippingMeter.php:417
 msgid "not reached"
 msgstr "no assolit"
 
-#: src/Pro/ShippingMeter/ShippingMeter.php:555
+#: src/Pro/ShippingMeter/ShippingMeter.php:564
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:544
 #: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:318
 msgid "Free Shipping"
 msgstr "Enviament gratuït"
 
-#: src/Pro/ShippingMeter/ShippingMeter.php:556
-#: src/Pro/ShippingMeter/ShippingMeter.php:557
+#: src/Pro/ShippingMeter/ShippingMeter.php:565
+#: src/Pro/ShippingMeter/ShippingMeter.php:566
 #: src/Admin/assets/js/pages/Dashboard.jsx:213
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:549
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:556
 msgid "Off"
 msgstr "Desactivat"
 
-#: src/Pro/ShippingMeter/ShippingMeter.php:749
-#: src/Pro/ShippingMeter/ShippingMeter.php:753
+#: src/Pro/ShippingMeter/ShippingMeter.php:758
+#: src/Pro/ShippingMeter/ShippingMeter.php:762
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:558
 #: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:47
 msgid "Free Gift"
@@ -910,7 +898,7 @@ msgstr "Aquest complement del carret no està disponible."
 #: src/Pro/SmartAddons/SmartAddonsController.php:153
 #: src/Recommendations/RecommendationsController.php:180
 #: src/REST/CartStateController.php:178
-#: src/REST/CouponController.php:242
+#: src/REST/CouponController.php:255
 msgid "The cart could not be updated. Please try again."
 msgstr "No s'ha pogut actualitzar el carret. Torneu-ho a provar."
 
@@ -927,7 +915,8 @@ msgid "One or more cart items could not be removed."
 msgstr "No s'han pogut suprimir un o més articles del carret."
 
 #: src/REST/CouponController.php:95
-#: src/REST/CouponController.php:160
+#: src/REST/CouponController.php:162
+#: src/REST/CouponController.php:201
 msgid "Cart rewards are managed automatically."
 msgstr "Les recompenses del carret es gestionen automàticament."
 
@@ -935,11 +924,11 @@ msgstr "Les recompenses del carret es gestionen automàticament."
 msgid "Invalid coupon."
 msgstr "Cupó no vàlid."
 
-#: src/REST/CouponController.php:196
+#: src/REST/CouponController.php:209
 msgid "This coupon is managed automatically and could not be removed."
 msgstr "Aquest cupó es gestiona automàticament i no s'ha pogut suprimir."
 
-#: src/REST/CouponController.php:202
+#: src/REST/CouponController.php:215
 msgid "The coupon could not be removed."
 msgstr "No s'ha pogut suprimir el cupó."
 
@@ -1006,7 +995,7 @@ msgstr "Aquest origen no té permís per accedir a l'API de CartPops."
 msgid "The request origin does not match its referrer."
 msgstr "L'origen de la sol·licitud no coincideix amb el seu referent."
 
-#: src/Setup/Upgrader.php:1717
+#: src/Setup/Upgrader.php:1738
 #. translators: %1$d: WordPress multisite blog ID.
 #, php-format
 msgid ""
@@ -1016,43 +1005,6 @@ msgstr ""
 "La migració de xarxa de CartPops s'ha posat en pausa al lloc %1$d i es "
 "tornarà a provar sense ometre els llocs posteriors. S'han conservat els "
 "paràmetres originals."
-
-#: src/Setup/Upgrader.php:1728
-msgid ""
-"CartPops could not complete its legacy settings migration. The original "
-"settings were preserved; review the migration status before retrying."
-msgstr ""
-"CartPops no ha pogut completar la migració de la configuració antiga. S'han "
-"conservat els paràmetres originals; reviseu l'estat de la migració abans de "
-"tornar-ho a provar."
-
-#: src/Setup/Upgrader.php:1736
-msgid ""
-"CartPops preserved legacy automation rule data for recovery, but those "
-"rules are retired and do not run in V2."
-msgstr ""
-"CartPops ha conservat les dades de les regles d'automatització antigues per "
-"a la recuperació, però aquestes regles s'han retirat i no s'executen a la "
-"V2."
-
-#: src/Setup/Upgrader.php:1742
-msgid ""
-"CartPops migration requires compatibility review before it can finish. "
-"Original settings remain available for recovery; resolve the reported "
-"migration warnings, then retry the migration."
-msgstr ""
-"La migració de CartPops requereix una revisió de compatibilitat abans de "
-"poder finalitzar. Els paràmetres originals continuen disponibles per a la "
-"recuperació; resoleu els avisos de migració indicats i torneu a provar la "
-"migració."
-
-#: src/Setup/Upgrader.php:1752
-msgid ""
-"CartPops migrated legacy settings with compatibility warnings. Original "
-"settings remain available for recovery."
-msgstr ""
-"CartPops ha migrat la configuració antiga amb avisos de compatibilitat. Els "
-"paràmetres originals continuen disponibles per a la recuperació."
 
 #: src/StoreAPI/CartExtension.php:178
 msgid "Exact WooCommerce cart item key."
@@ -1110,94 +1062,96 @@ msgstr ""
 msgid "Bounded plain-text WooCommerce backorder notice."
 msgstr "Avís acotat de comanda pendent en text sense format de WooCommerce."
 
-#: src/Admin/assets/js/App.jsx:169
+#: src/Admin/assets/js/App.jsx:170
 msgid "Setup"
 msgstr "Configuració"
 
-#: src/Admin/assets/js/App.jsx:171
+#: src/Admin/assets/js/App.jsx:172
 #: src/Admin/assets/js/pages/Dashboard.jsx:119
 msgid "Dashboard"
 msgstr "Tauler"
 
-#: src/Admin/assets/js/App.jsx:172
+#: src/Setup/MigrationWarningSummary.php:155
+#: src/Admin/assets/js/App.jsx:173
 msgid "Drawer"
 msgstr "Calaix"
 
-#: src/Admin/assets/js/App.jsx:173
+#: src/Admin/assets/js/App.jsx:174
 msgid "Launcher"
 msgstr "Llançador"
 
-#: src/Admin/assets/js/App.jsx:177
+#: src/Admin/assets/js/App.jsx:178
 #: src/Admin/assets/js/pages/Dashboard.jsx:185
 msgid "Features"
 msgstr "Funcionalitats"
 
-#: src/Admin/assets/js/App.jsx:181
+#: src/Setup/MigrationWarningSummary.php:163
+#: src/Admin/assets/js/App.jsx:182
 #: src/Admin/assets/js/pages/Dashboard.jsx:88
 #: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:352
 msgid "Recommendations"
 msgstr "Recomanacions"
 
-#: src/Admin/assets/js/App.jsx:186
+#: src/Admin/assets/js/App.jsx:187
 msgid "Smart add-ons"
 msgstr "Complements intel·ligents"
 
-#: src/Admin/assets/js/App.jsx:191
+#: src/Admin/assets/js/App.jsx:192
 #: src/Admin/assets/js/pages/Dashboard.jsx:104
 #: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:657
 #: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:669
 msgid "Smart Bar"
 msgstr "Barra intel·ligent"
 
-#: src/Admin/assets/js/App.jsx:196
+#: src/Admin/assets/js/App.jsx:197
 #: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:419
 #: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:444
 msgid "Bundle Builder"
 msgstr "Creador de paquets"
 
-#: src/Admin/assets/js/App.jsx:202
+#: src/Admin/assets/js/App.jsx:203
 msgid "Insights"
 msgstr "Informació detallada"
 
-#: src/Admin/assets/js/App.jsx:206
+#: src/Admin/assets/js/App.jsx:207
 #: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:202
 msgid "Analytics"
 msgstr "Analítica"
 
-#: src/Admin/assets/js/App.jsx:212
+#: src/Admin/assets/js/App.jsx:213
 msgid "System"
 msgstr "Sistema"
 
-#: src/Admin/assets/js/App.jsx:213
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:429
+#: src/Admin/assets/js/App.jsx:214
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:444
 msgid "Advanced"
 msgstr "Avançat"
 
-#: src/Admin/assets/js/App.jsx:520
+#: src/Admin/assets/js/App.jsx:539
 msgid "Settings saved!"
 msgstr "S'han desat els paràmetres!"
 
-#: src/Admin/assets/js/App.jsx:526
+#: src/Admin/assets/js/App.jsx:545
 msgid "Failed to save."
 msgstr "No s'ha pogut desar."
 
-#: src/Admin/assets/js/App.jsx:560
+#: src/Admin/assets/js/App.jsx:579
 msgid "Settings reset to defaults."
 msgstr "S'han restablert els paràmetres per defecte."
 
-#: src/Admin/assets/js/App.jsx:571
+#: src/Admin/assets/js/App.jsx:590
 msgid "Settings could not be reset. Please try again."
 msgstr "No s'han pogut restablir els paràmetres. Torneu-ho a provar."
 
-#: src/Admin/assets/js/App.jsx:732
+#: src/Admin/assets/js/App.jsx:730
 msgid "Unsaved changes"
 msgstr "Canvis sense desar"
 
-#: src/Admin/assets/js/App.jsx:741
+#: src/Admin/assets/js/App.jsx:739
 msgid "Saving…"
 msgstr "S'està desant…"
 
-#: src/Admin/assets/js/App.jsx:742
+#: src/Admin/assets/js/App.jsx:740
 msgid "Save Changes"
 msgstr "Deseu els canvis"
 
@@ -1242,7 +1196,7 @@ msgstr "Buit"
 msgid "Toggle dark mode preview"
 msgstr "Commuta la previsualització del mode fosc"
 
-#: src/Admin/assets/js/components/DrawerPreview.jsx:828
+#: src/Admin/assets/js/components/DrawerPreview.jsx:854
 #: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:453
 #: src/Pro/Admin/assets/js/components/ProductSearch.jsx:720
 #: src/Pro/Admin/assets/js/components/ProductSearch.jsx:748
@@ -1357,11 +1311,12 @@ msgstr ""
 "Actualitzeu a la versió superior per configurar aquesta característica. Els "
 "paràmetres actuals de CartPops romandran sense canvis."
 
-#: src/Admin/assets/js/components/UpgradePage.jsx:40
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:88
+#: src/Admin/assets/js/components/UpgradePage.jsx:42
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:93
 msgid "Upgrade to CartPops Pro"
 msgstr "Actualitzeu a CartPops Pro"
 
+#: src/Setup/MigrationWarningSummary.php:159
 #: src/Admin/assets/js/pages/AdvancedSettings.jsx:18
 #: src/Admin/assets/js/pages/AdvancedSettings.jsx:210
 #: src/Admin/assets/js/pages/RecommendationSettings.jsx:44
@@ -1389,6 +1344,7 @@ msgstr ""
 "Activeu-ho per mostrar un enllaç de referència de CartPops al peu del "
 "calaix. L'enllaç romandrà amagat fins que es desi un codi de soci vàlid."
 
+#: src/Setup/MigrationWarningSummary.php:258
 #: src/Admin/assets/js/pages/AdvancedSettings.jsx:45
 msgid "Partner code"
 msgstr "Codi de soci"
@@ -1430,6 +1386,7 @@ msgstr "Ha fallat la importació."
 msgid "Invalid JSON file."
 msgstr "Fitxer JSON no vàlid."
 
+#: src/Setup/MigrationWarningSummary.php:249
 #: src/Admin/assets/js/pages/AdvancedSettings.jsx:214
 msgid "Enable CartPops"
 msgstr "Activa CartPops"
@@ -1448,35 +1405,36 @@ msgstr "Obre el calaix en"
 msgid "Launcher click only"
 msgstr "Només en fer clic a l'iniciador"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:251
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:266
 msgid "WooCommerce Mini Cart"
 msgstr "Minicarret de WooCommerce"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:255
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:270
 msgid "Integration mode"
 msgstr "Mode d'integració"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:256
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:271
 msgid "Controls how CartPops interacts with the WooCommerce Mini Cart block."
 msgstr "Controla com CartPops interactua amb el bloc Minicarret de WooCommerce."
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:267
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:282
 msgid "Replace — CartPops drawer replaces WC Mini Cart"
 msgstr "Substitueix — El calaix de CartPops substitueix el minicarret de WC"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:274
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:289
 msgid "Standalone — Both operate independently"
 msgstr "Autònom — Ambdós funcionen de manera independent"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:289
+#: src/Setup/MigrationWarningSummary.php:219
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:304
 msgid "Custom CSS"
 msgstr "CSS personalitzat"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:293
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:308
 msgid "Additional CSS"
 msgstr "CSS addicional"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:294
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:309
 msgid ""
 "Add custom CSS to style the cart drawer. Uses the .cpops- prefix for all "
 "CartPops elements."
@@ -1484,15 +1442,15 @@ msgstr ""
 "Afegiu CSS personalitzat per donar estil al calaix del carret. Utilitza el "
 "prefix .cpops- per a tots els elements de CartPops."
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:309
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:324
 msgid "Performance"
 msgstr "Rendiment"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:320
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:335
 msgid "Import / Export"
 msgstr "Importa / Exporta"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:324
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:339
 msgid ""
 "Export your CartPops settings to a JSON file for backup, or import settings "
 "from another site."
@@ -1500,42 +1458,42 @@ msgstr ""
 "Exporteu els paràmetres de CartPops a un fitxer JSON per fer una còpia de "
 "seguretat, o bé importeu paràmetres d'un altre lloc."
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:336
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:351
 msgid "Export Settings"
 msgstr "Exporta la configuració"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:343
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:358
 msgid "Import Settings"
 msgstr "Importa la configuració"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:359
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:374
 msgid "Reset"
 msgstr "Restableix"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:371
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:386
 msgid "Reset all settings to defaults"
 msgstr "Restableix tota la configuració als valors per defecte"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:376
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:391
 msgid "Are you sure? This will reset all CartPops settings to their default values."
 msgstr ""
 "N'esteu segur? Això restablirà tota la configuració de CartPops als seus "
 "valors per defecte."
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:396
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:411
 msgid "Yes, reset everything"
 msgstr "Sí, restableix-ho tot"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:404
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:419
 #: src/Pro/Admin/assets/js/components/AnalyticsResetActions.jsx:68
 msgid "Cancel"
 msgstr "Cancel·la"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:414
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:429
 msgid "Settings update in progress…"
 msgstr "Actualització de la configuració en curs…"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:431
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:446
 msgid "Fine-tune CartPops behavior, styling, and integrations."
 msgstr "Ajusteu el comportament, l'estil i les integracions de CartPops."
 
@@ -1543,6 +1501,7 @@ msgstr "Ajusteu el comportament, l'estil i les integracions de CartPops."
 msgid "Cart Drawer"
 msgstr "Calaix del carretó"
 
+#: src/Setup/MigrationWarningSummary.php:152
 #: src/Admin/assets/js/pages/Dashboard.jsx:76
 #: src/Admin/assets/js/pages/Dashboard.jsx:170
 msgid "Cart Launcher"
@@ -1626,12 +1585,12 @@ msgid "Get help from our team"
 msgstr "Obtingueu ajuda del nostre equip"
 
 #: src/Admin/assets/js/pages/DesignSettings.jsx:11
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:437
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:442
 msgid "Default"
 msgstr "Per defecte"
 
 #: src/Admin/assets/js/pages/DesignSettings.jsx:23
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:445
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:450
 msgid "Minimal"
 msgstr "Minimalista"
 
@@ -1643,6 +1602,7 @@ msgstr "Atrevit"
 msgid "Ocean"
 msgstr "Oceà"
 
+#: src/Setup/MigrationWarningSummary.php:161
 #: src/Admin/assets/js/pages/DesignSettings.jsx:61
 msgid "Primary"
 msgstr "Primari"
@@ -1656,8 +1616,8 @@ msgstr "Text primari"
 #: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:491
 #: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:489
 #: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:730
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:514
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:652
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:526
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:664
 msgid "Background"
 msgstr "Fons"
 
@@ -1672,8 +1632,8 @@ msgstr "Superfície"
 #: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:498
 #: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:502
 #: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:742
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:524
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:665
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:536
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:677
 msgid "Text"
 msgstr "Text"
 
@@ -1783,6 +1743,7 @@ msgstr "Perill"
 msgid "Presets"
 msgstr "Predefinits"
 
+#: src/Setup/MigrationWarningSummary.php:146
 #: src/Admin/assets/js/pages/DesignSettings.jsx:235
 #: src/Admin/assets/js/pages/IntegrationsSettings.jsx:328
 #: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:470
@@ -1838,7 +1799,7 @@ msgid "Always dark"
 msgstr "Sempre fosc"
 
 #: src/Admin/assets/js/pages/DrawerEditor.jsx:17
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:142
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:147
 msgid "Layout"
 msgstr "Disposició"
 
@@ -1847,7 +1808,7 @@ msgid "Design"
 msgstr "Disseny"
 
 #: src/Admin/assets/js/pages/DrawerEditor.jsx:21
-#: src/Admin/assets/js/pages/DrawerEditor.jsx:55
+#: src/Admin/assets/js/pages/DrawerEditor.jsx:56
 msgid "Shipping meter"
 msgstr "Indicador d'enviament"
 
@@ -1891,152 +1852,153 @@ msgstr ""
 "Afegeix una acció de «Continua comprant», «Mostra el carret» o una acció "
 "personalitzada sota la finalització de la compra amb CartPops Pro."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:102
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:107
 msgid "Explore Pro actions"
 msgstr "Explora les accions Pro"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:111
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:116
 msgid "Animation"
 msgstr "Animació"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:115
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:120
 msgid "Animation Type"
 msgstr "Tipus d'animació"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:118
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:123
 msgid "Slide"
 msgstr "Lliscar"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:119
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:124
 msgid "Fade"
 msgstr "Esvaïment"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:128
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:133
 msgid "Duration (ms)"
 msgstr "Durada (ms)"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:141
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:146
 #: src/Admin/assets/js/pages/IntegrationsSettings.jsx:284
 msgid "Behavior"
 msgstr "Comportament"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:145
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:150
 msgid "Show undo after item removal"
 msgstr "Mostra «Desfés» després de suprimir un element"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:153
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:158
 msgid "Show coupon code field"
 msgstr "Mostra el camp del codi de cupó"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:154
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:159
 msgid "Allow customers to apply coupon codes from the cart drawer."
 msgstr "Permet als clients aplicar codis de cupó des del calaix del carret."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:165
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:170
 msgid "Product name display"
 msgstr "Visualització del nom del producte"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:166
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:171
 msgid "Choose how product names wrap inside drawer cart items."
 msgstr ""
 "Trieu com s'ajusten els noms dels productes als elements del carret "
 "desplegable."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:175
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:180
 msgid "Two lines"
 msgstr "Dues línies"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:179
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:184
 msgid "Single line"
 msgstr "Una línia"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:183
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:188
 msgid "Full name"
 msgstr "Nom complet"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:193
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:198
 msgid "Totals breakdown"
 msgstr "Desglossament dels totals"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:194
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:199
 msgid "Where to show subtotal, discounts, shipping, fees, and tax lines."
 msgstr ""
 "On mostrar el subtotal, els descomptes, l'enviament, les comissions i les "
 "línies d'impostos."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:201
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:206
 msgid "In footer (sticky)"
 msgstr "Al peu de pàgina (fixat)"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:205
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:210
 msgid "Above checkout (scrollable)"
 msgstr "A sobre de la finalització de compra (desplaçable)"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:212
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:217
 msgid "Hidden (total only)"
 msgstr "Amagat (només el total)"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:222
+#: src/Setup/MigrationWarningSummary.php:248
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:227
 msgid "Show subtotal"
 msgstr "Mostra el subtotal"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:223
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:228
 msgid "Display the subtotal in the selected totals area."
 msgstr "Mostra el subtotal a l'àrea de totals seleccionada."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:234
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:239
 msgid "Show discounts"
 msgstr "Mostra els descomptes"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:235
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:240
 msgid "Display the discount line when a coupon is applied."
 msgstr "Mostra la línia de descompte quan s'aplica un cupó."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:246
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:251
 msgid "Show shipping"
 msgstr "Mostra l'enviament"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:247
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:252
 msgid "Display the shipping line when shipping is calculated."
 msgstr "Mostra la línia d'enviament quan es calcula l'enviament."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:258
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:263
 msgid "Show taxes"
 msgstr "Mostra els impostos"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:259
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:264
 msgid "Display the applicable tax line or included-tax note."
 msgstr "Mostra la línia d'impostos aplicables o la nota d'impostos inclosos."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:270
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:275
 msgid "Show total"
 msgstr "Mostra el total"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:271
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:276
 msgid "Display the grand total above the checkout button."
 msgstr "Mostra el total general a sobre del botó de finalització de compra."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:282
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:287
 msgid "Checkout Button Text"
 msgstr "Text del botó de finalització de compra"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:283
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:288
 msgid "Leave empty to use the default \"Proceed to Checkout\"."
 msgstr "Deixeu-ho buit per utilitzar el valor per defecte «Ves a la caixa»."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:297
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:302
 msgid "Customer messages"
 msgstr "Missatges per als clients"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:301
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:306
 msgid "Cart title"
 msgstr "Títol del carret"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:311
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:316
 msgid "Added-to-cart announcement"
 msgstr "Avís d'afegit al carret"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:312
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:317
 msgid ""
 "Optional generic announcement. Enter complete plain text without a product "
 "placeholder, or leave blank to disable it."
@@ -2044,67 +2006,68 @@ msgstr ""
 "Avís genèric opcional. Introduïu text sense format complet sense cap "
 "marcador de posició de producte, o deixeu-ho en blanc per desactivar-lo."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:317
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:322
 msgid "Product successfully added to your cart."
 msgstr "El producte s'ha afegit correctament a la cistella."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:327
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:332
 msgid "Coupon heading"
 msgstr "Encapçalament del cupó"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:330
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:335
 msgid "No heading by default"
 msgstr "Sense encapçalament per defecte"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:337
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:342
 msgid "Coupon input placeholder"
 msgstr "Marcador de posició del cupó"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:350
+#: src/Setup/MigrationWarningSummary.php:263
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:355
 msgid "Coupon button text"
 msgstr "Text del botó del cupó"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:362
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:367
 msgid "Totals and empty-cart text"
 msgstr "Text dels totals i de la cistella buida"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:366
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:371
 msgid "Subtotal label"
 msgstr "Etiqueta del subtotal"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:376
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:381
 msgid "Discount label"
 msgstr "Etiqueta del descompte"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:386
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:391
 msgid "Total label"
 msgstr "Etiqueta del total"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:396
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:401
 msgid "Empty-cart title"
 msgstr "Títol de cistella buida"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:406
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:411
 msgid "Empty-cart subtitle"
 msgstr "Subtítol de cistella buida"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:409
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:414
 msgid "No subtitle by default"
 msgstr "Sense subtítol per defecte"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:416
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:421
 msgid "Empty-cart button text"
 msgstr "Text del botó de cistella buida"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:428
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:433
 msgid "Quantity Selector"
 msgstr "Selector de quantitat"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:432
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:437
 msgid "Style"
 msgstr "Estil"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:441
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:446
 msgid "Rounded"
 msgstr "Arrodonit"
 
@@ -2224,6 +2187,7 @@ msgstr "Fons de la insígnia en línia"
 msgid "Inline Badge Text"
 msgstr "Text de la insígnia en línia"
 
+#: src/Setup/MigrationWarningSummary.php:156
 #: src/Admin/assets/js/pages/LauncherSettings.jsx:60
 msgid "Floating Cart Launcher"
 msgstr "Llançador flotant del carret"
@@ -2257,6 +2221,7 @@ msgstr "Mostra el total del carret"
 msgid "Hide zero item count"
 msgstr "Amaga el recompte quan hi hagi zero articles"
 
+#: src/Setup/MigrationWarningSummary.php:235
 #: src/Admin/assets/js/pages/LauncherSettings.jsx:120
 msgid "Hide when cart is empty"
 msgstr "Amaga quan el carret estigui buit"
@@ -2375,12 +2340,12 @@ msgid "How to select which products to recommend."
 msgstr "Com seleccionar quins productes recomanar."
 
 #: src/Admin/assets/js/pages/RecommendationSettings.jsx:64
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:116
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:121
 msgid "Cross-sells"
 msgstr "Vendes creuades"
 
 #: src/Admin/assets/js/pages/RecommendationSettings.jsx:65
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:115
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:120
 msgid "Upsells"
 msgstr "Vendes dirigides"
 
@@ -2396,44 +2361,44 @@ msgstr ""
 "Tria productes de recomanació específics amb CartPops Pro. Les vendes "
 "creuades i dirigides continuen estant disponibles a l'edició gratuïta."
 
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:107
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:112
 msgid "Fallback Strategy"
 msgstr "Estratègia alternativa"
 
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:108
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:113
 msgid "Used when the primary strategy returns no results."
 msgstr "S'utilitza quan l'estratègia principal no retorna cap resultat."
 
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:114
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:119
 msgid "Random products"
 msgstr "Productes aleatoris"
 
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:125
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:130
 msgid "Number of products"
 msgstr "Nombre de productes"
 
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:138
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:436
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:143
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:448
 msgid "Display"
 msgstr "Visualització"
 
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:146
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:151
 msgid "Horizontal Scroll"
 msgstr "Desplaçament horitzontal"
 
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:149
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:154
 msgid "Grid"
 msgstr "Graella"
 
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:150
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:155
 msgid "List"
 msgstr "Llista"
 
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:158
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:163
 msgid "Heading"
 msgstr "Encapçalament"
 
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:174
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:179
 msgid ""
 "Recommendation add buttons use the accessible icon presentation. Text and "
 "text-with-icon buttons are available with CartPops Pro."
@@ -2442,7 +2407,7 @@ msgstr ""
 "accessible. Els botons de text i de text amb icona estan disponibles amb "
 "CartPops Pro."
 
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:181
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:191
 msgid "Explore Pro button styles"
 msgstr "Explora els estils de botó Pro"
 
@@ -2734,12 +2699,12 @@ msgid "Conditional"
 msgstr "Condicional"
 
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:598
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:388
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:400
 msgid "You have qualified for free shipping!"
 msgstr "Heu aconseguit l'enviament gratuït!"
 
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:601
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:373
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:385
 msgid "Add {{amount}} more for free shipping"
 msgstr "Afegiu {{amount}} més per aconseguir l'enviament gratuït"
 
@@ -3251,7 +3216,6 @@ msgid "Tier"
 msgstr "Nivell"
 
 #: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:136
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:336
 msgid "Threshold"
 msgstr "Llindar"
 
@@ -3276,7 +3240,7 @@ msgstr ""
 "introduïu el seu ID de variació exacte."
 
 #: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:200
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:352
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:364
 msgid "Show Celebration"
 msgstr "Mostra la celebració"
 
@@ -3285,7 +3249,7 @@ msgid "Display confetti animation when this tier is reached."
 msgstr "Mostra una animació de confeti quan s'arriba a aquest nivell."
 
 #: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:212
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:367
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:379
 msgid "Progress Message"
 msgstr "Missatge de progrés"
 
@@ -3294,7 +3258,7 @@ msgid "Use {{amount}} and {{reward}} as placeholders."
 msgstr "Utilitzeu {{amount}} i {{reward}} com a marcadors de posició."
 
 #: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:224
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:386
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:398
 msgid "Qualified Message"
 msgstr "Missatge d'objectiu assolit"
 
@@ -3322,39 +3286,27 @@ msgstr "Nivells de recompensa"
 msgid "Tier 1"
 msgstr "Nivell 1"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:325
-msgid "auto"
-msgstr "automàtic"
-
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:337
-msgid ""
-"Free shipping threshold. Set to 0 to auto-detect from WooCommerce shipping "
-"zones."
-msgstr ""
-"Llindar d'enviament gratuït. Establiu-lo a 0 per detectar-lo automàticament "
-"a partir de les zones d'enviament de WooCommerce."
-
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:353
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:365
 msgid "Display confetti animation when free shipping is reached."
 msgstr "Mostra una animació de confeti quan s'assoleix l'enviament gratuït."
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:368
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:380
 msgid "Use {{amount}} as a placeholder for the remaining amount."
 msgstr "Utilitzeu {{amount}} com a marcador de posició per a l'import restant."
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:428
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:440
 msgid "+ Add Tier"
 msgstr "+ Afegeix un nivell"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:440
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:452
 msgid "Show in drawer"
 msgstr "Mostra al calaix"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:448
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:460
 msgid "Enable shipping calculator"
 msgstr "Activa la calculadora d'enviament"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:449
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:461
 msgid ""
 "Let customers calculate shipping and choose an available rate from the cart "
 "drawer."
@@ -3362,19 +3314,19 @@ msgstr ""
 "Permet als clients calcular l'enviament i triar una tarifa disponible des "
 "del calaix del carretó."
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:460
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:472
 msgid "Show icon"
 msgstr "Mostra la icona"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:461
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:473
 msgid "Display truck/checkmark icon before the message."
 msgstr "Mostra la icona de camió/marca de verificació abans del missatge."
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:473
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:485
 msgid "Show truck indicator"
 msgstr "Mostra l'indicador de camió"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:474
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:486
 msgid ""
 "Display the moving truck on the progress bar. Hidden when reward tiers are "
 "active."
@@ -3382,44 +3334,44 @@ msgstr ""
 "Mostra el camió en moviment a la barra de progrés. S'amaga quan els nivells "
 "de recompensa estan actius."
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:489
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:501
 msgid "Progress Colors"
 msgstr "Colors de progrés"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:494
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:626
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:506
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:638
 msgid "Bar Start"
 msgstr "Inici de la barra"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:504
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:639
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:516
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:651
 msgid "Bar End"
 msgstr "Final de la barra"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:534
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:678
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:546
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:690
 msgid "Icon Background"
 msgstr "Fons de la icona"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:559
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:706
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:571
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:718
 msgid "Truck Background"
 msgstr "Fons del camió"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:572
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:719
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:584
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:731
 msgid "Truck Icon"
 msgstr "Icona del camió"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:589
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:601
 msgid "Tier Reached"
 msgstr "Nivell assolit"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:602
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:614
 msgid "Tier Icon"
 msgstr "Icona del nivell"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:621
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:633
 msgid "Qualified Colors"
 msgstr "Colors d'assoliment"
 
@@ -3525,6 +3477,691 @@ msgstr ""
 "L'aparença a la part pública, les icones, el camió, els nivells i la "
 "celebració utilitzen la configuració de l'indicador d'enviaments de "
 "CartPops Pro."
+
+#: src/Blocks/CartDrawer/render.php:316
+#: src/Cart/CartStateBuilder.php:525
+#: src/Admin/assets/js/components/DrawerPreview.jsx:740
+#. translators: %s: price of a single unit, shown under a cart line's total.
+#, php-format,js-format
+msgid "%s each"
+msgstr "%s cada un"
+
+#: src/Blocks/CartDrawer/render.php:711
+msgid "Have a coupon?"
+msgstr "Tens un cupó?"
+
+#: src/Plugin.php:848
+msgid "CartPops is finishing its update. Reload this page in a moment."
+msgstr ""
+"CartPops està finalitzant la seva actualització. Recarrega aquesta pàgina "
+"en un moment."
+
+#: src/Plugin.php:851
+#. translators: %s: value-free CartPops diagnostic code.
+#, php-format
+msgid ""
+"CartPops is paused, so the cart drawer is not showing on your store. Your "
+"settings are safe. Code: %s."
+msgstr ""
+"CartPops està en pausa, per la qual cosa el calaix del carretó no es mostra "
+"a la teva botiga. Els teus paràmetres són segurs. Codi: %s."
+
+#: src/Setup/MigrationWarningSummary.php:78
+msgid "Colors → Cart launcher: menu launcher colors"
+msgstr "Colors → Llançador del carretó: colors del menú del llançador"
+
+#: src/Setup/MigrationWarningSummary.php:145
+msgid "Settings"
+msgstr "Paràmetres"
+
+#: src/Setup/MigrationWarningSummary.php:149
+msgid "Texts (older versions)"
+msgstr "Textos (versions anteriors)"
+
+#: src/Setup/MigrationWarningSummary.php:150
+msgid "Primary (older versions)"
+msgstr "Principal (versions anteriors)"
+
+#: src/Setup/MigrationWarningSummary.php:151
+msgid "Buttons"
+msgstr "Botons"
+
+#: src/Setup/MigrationWarningSummary.php:153
+msgid "Cart launcher"
+msgstr "Llançador del carretó"
+
+#: src/Setup/MigrationWarningSummary.php:154
+msgid "Custom code"
+msgstr "Codi personalitzat"
+
+#: src/Setup/MigrationWarningSummary.php:157
+msgid "Free Shipping Meter"
+msgstr "Barra de lliurament gratuït"
+
+#: src/Setup/MigrationWarningSummary.php:158
+msgid "Free Shipping Meter settings"
+msgstr "Paràmetres de la barra de lliurament gratuït"
+
+#: src/Setup/MigrationWarningSummary.php:160
+msgid "Miscellaneous & Experimental"
+msgstr "Miscel·lània i experimental"
+
+#: src/Setup/MigrationWarningSummary.php:162
+msgid "Product Recommendation Engine"
+msgstr "Motor de recomanació de productes"
+
+#: src/Setup/MigrationWarningSummary.php:175
+msgid "Select an add to cart trigger"
+msgstr "Selecciona un disparador d'afegir al carretó"
+
+#: src/Setup/MigrationWarningSummary.php:176
+msgid "Animation type"
+msgstr "Tipus d'animació"
+
+#: src/Setup/MigrationWarningSummary.php:177
+msgid "Rounded corners"
+msgstr "Cantonades arrodonides"
+
+#: src/Setup/MigrationWarningSummary.php:178
+msgid "Checkout button text"
+msgstr "Text del botó de pagament"
+
+#: src/Setup/MigrationWarningSummary.php:179
+msgid "Accent color (older versions)"
+msgstr "Color d'accent (versions anteriors)"
+
+#: src/Setup/MigrationWarningSummary.php:180
+msgid "Primary background color"
+msgstr "Color de fons principal"
+
+#: src/Setup/MigrationWarningSummary.php:181
+msgid "Secondary background color"
+msgstr "Color de fons secundari"
+
+#: src/Setup/MigrationWarningSummary.php:182
+msgid "Accent color"
+msgstr "Color d'accent"
+
+#: src/Setup/MigrationWarningSummary.php:183
+msgid "Primary button background color"
+msgstr "Color de fons del botó principal"
+
+#: src/Setup/MigrationWarningSummary.php:184
+msgid "Primary button text color"
+msgstr "Color de text del botó principal"
+
+#: src/Setup/MigrationWarningSummary.php:185
+msgid "Quantity selector button background"
+msgstr "Fons del botó selector de quantitat"
+
+#: src/Setup/MigrationWarningSummary.php:186
+msgid "Quantity selector button text color"
+msgstr "Color de text del botó selector de quantitat"
+
+#: src/Setup/MigrationWarningSummary.php:187
+msgid "Secondary button background"
+msgstr "Fons del botó secundari"
+
+#: src/Setup/MigrationWarningSummary.php:188
+msgid "Secondary button text color"
+msgstr "Color de text del botó secundari"
+
+#: src/Setup/MigrationWarningSummary.php:189
+msgid "Cart Launcher background color"
+msgstr "Color de fons del llançador del carretó"
+
+#: src/Setup/MigrationWarningSummary.php:190
+msgid "Cart Launcher bubble background"
+msgstr "Fons de la bombolla del llançador del carretó"
+
+#: src/Setup/MigrationWarningSummary.php:191
+msgid "Cart Launcher bubble text"
+msgstr "Text de la bombolla del llançador del carretó"
+
+#: src/Setup/MigrationWarningSummary.php:192
+msgid "Cart Launcher text color"
+msgstr "Color de text del llançador del carretó"
+
+#: src/Setup/MigrationWarningSummary.php:193
+msgid "Floating Cart Launcher background color"
+msgstr "Color de fons del llançador del carretó flotant"
+
+#: src/Setup/MigrationWarningSummary.php:194
+msgid "Floating Cart Launcher icon color"
+msgstr "Color de la icona del llançador del carretó flotant"
+
+#: src/Setup/MigrationWarningSummary.php:195
+msgid "Floating Cart Launcher indicator background"
+msgstr "Fons de l'indicador del llançador del carretó flotant"
+
+#: src/Setup/MigrationWarningSummary.php:196
+msgid "Floating Cart Launcher indicator text"
+msgstr "Text de l'indicador del llançador del carretó flotant"
+
+#: src/Setup/MigrationWarningSummary.php:197
+msgid "Free Shipping Meter background color"
+msgstr "Color de fons de la barra de lliurament gratuït"
+
+#: src/Setup/MigrationWarningSummary.php:198
+msgid "Free Shipping Meter active background color"
+msgstr "Color de fons actiu de la barra de lliurament gratuït"
+
+#: src/Setup/MigrationWarningSummary.php:199
+msgid "Input field background color"
+msgstr "Color de fons del camp d'entrada"
+
+#: src/Setup/MigrationWarningSummary.php:200
+msgid "Quantity selector input background"
+msgstr "Fons del selector de quantitat"
+
+#: src/Setup/MigrationWarningSummary.php:201
+msgid "Quantity selector input border"
+msgstr "Vora del selector de quantitat"
+
+#: src/Setup/MigrationWarningSummary.php:202
+msgid "Quantity selector input text color"
+msgstr "Color del text del selector de quantitat"
+
+#: src/Setup/MigrationWarningSummary.php:203
+msgid "Input field text color"
+msgstr "Color del text del camp d'entrada"
+
+#: src/Setup/MigrationWarningSummary.php:204
+msgid "Overlay color"
+msgstr "Color de la superposició"
+
+#: src/Setup/MigrationWarningSummary.php:205
+msgid "Recommendations button background color"
+msgstr "Color de fons del botó de recomanacions"
+
+#: src/Setup/MigrationWarningSummary.php:206
+msgid "Recommendations button text color"
+msgstr "Color del text del botó de recomanacions"
+
+#: src/Setup/MigrationWarningSummary.php:207
+msgid "Drawer Recommendations background color"
+msgstr "Color de fons de les recomanacions del calaix"
+
+#: src/Setup/MigrationWarningSummary.php:208
+msgid "Drawer Recommendations border color"
+msgstr "Color de la vora de les recomanacions del calaix"
+
+#: src/Setup/MigrationWarningSummary.php:209
+msgid "Drawer Recommendations text color"
+msgstr "Color del text de les recomanacions del calaix"
+
+#: src/Setup/MigrationWarningSummary.php:210
+msgid "Popup Recommendations background color"
+msgstr "Color de fons de les recomanacions emergents"
+
+#: src/Setup/MigrationWarningSummary.php:211
+msgid "Popup Recommendations text color"
+msgstr "Color del text de les recomanacions emergents"
+
+#: src/Setup/MigrationWarningSummary.php:212
+msgid "Danger color"
+msgstr "Color de perill"
+
+#: src/Setup/MigrationWarningSummary.php:213
+msgid "Success color"
+msgstr "Color d'èxit"
+
+#: src/Setup/MigrationWarningSummary.php:214
+msgid "Warning color"
+msgstr "Color d'avís"
+
+#: src/Setup/MigrationWarningSummary.php:215
+msgid "Primary text color"
+msgstr "Color del text principal"
+
+#: src/Setup/MigrationWarningSummary.php:216
+msgid "Secondary text color"
+msgstr "Color del text secundari"
+
+#: src/Setup/MigrationWarningSummary.php:217
+msgid "Tertiary text color"
+msgstr "Color del text terciari"
+
+#: src/Setup/MigrationWarningSummary.php:218
+msgid "Enable coupon form"
+msgstr "Habilitar formulari de cupó"
+
+#: src/Setup/MigrationWarningSummary.php:220
+msgid "Custom JS"
+msgstr "JavaScript personalitzat"
+
+#: src/Setup/MigrationWarningSummary.php:221
+msgid "Animation speed"
+msgstr "Velocitat de l'animació"
+
+#: src/Setup/MigrationWarningSummary.php:222
+msgid "Truncate long text"
+msgstr "Truncar text llarg"
+
+#: src/Setup/MigrationWarningSummary.php:223
+msgid "Drawer width desktop (In pixels)"
+msgstr "Amplada del calaix a l'escriptori (en píxels)"
+
+#: src/Setup/MigrationWarningSummary.php:224
+msgid "Drawer width mobile (In percentage)"
+msgstr "Amplada del calaix a mòbil (en percentatge)"
+
+#: src/Setup/MigrationWarningSummary.php:225
+msgid "Show discount line item"
+msgstr "Mostrar línia d'article de descompte"
+
+#: src/Setup/MigrationWarningSummary.php:226
+msgid "Show shipping line item"
+msgstr "Mostrar línia d'article d'enviament"
+
+#: src/Setup/MigrationWarningSummary.php:227
+msgid "Show shipping calculator"
+msgstr "Mostrar calculadora d'enviament"
+
+#: src/Setup/MigrationWarningSummary.php:228
+msgid "Show subtotal line item"
+msgstr "Mostrar línia d'article de subtotal"
+
+#: src/Setup/MigrationWarningSummary.php:229
+msgid "Show tax line item"
+msgstr "Mostrar línia d'article d'impostos"
+
+#: src/Setup/MigrationWarningSummary.php:230
+msgid "Show total line item"
+msgstr "Mostrar línia d'article de total"
+
+#: src/Setup/MigrationWarningSummary.php:231
+msgid "Secondary button"
+msgstr "Botó secundari"
+
+#: src/Setup/MigrationWarningSummary.php:232
+msgid "Secondary button custom text"
+msgstr "Text personalitzat del botó secundari"
+
+#: src/Setup/MigrationWarningSummary.php:233
+msgid "Secondary button custom URL"
+msgstr "URL personalitzada del botó secundari"
+
+#: src/Setup/MigrationWarningSummary.php:234
+msgid "Enable Floating Cart Launcher"
+msgstr "Habilitar llançador de calaix flotant"
+
+#: src/Setup/MigrationWarningSummary.php:236
+msgid "Floating launcher: hide indicator when cart is empty"
+msgstr "Llançador flotant: amagar indicador quan el calaix està buit"
+
+#: src/Setup/MigrationWarningSummary.php:237
+msgid "Hide on certain pages"
+msgstr "Amagar en certes pàgines"
+
+#: src/Setup/MigrationWarningSummary.php:238
+msgid "Select a position"
+msgstr "Selecciona una posició"
+
+#: src/Setup/MigrationWarningSummary.php:239
+msgid "Force refresh on page load?"
+msgstr "Forçar actualització en carregar la pàgina?"
+
+#: src/Setup/MigrationWarningSummary.php:240
+msgid "Free shipping amount"
+msgstr "Import d'enviament gratuït"
+
+#: src/Setup/MigrationWarningSummary.php:241
+msgid "Enable Free Shipping Meter"
+msgstr "Habilitar comptador d'enviament gratuït"
+
+#: src/Setup/MigrationWarningSummary.php:242
+msgid "Free Shipping Meter achieved text"
+msgstr "Text aconseguit del Comptador d'Enviament Gratuït"
+
+#: src/Setup/MigrationWarningSummary.php:243
+msgid "Free Shipping Meter Text"
+msgstr "Text del Comptador d'Enviament Gratuït"
+
+#: src/Setup/MigrationWarningSummary.php:244
+msgid "Free Shipping Meter type"
+msgstr "Tipus de Comptador d'Enviament Gratuït"
+
+#: src/Setup/MigrationWarningSummary.php:245
+msgid "Menu Cart Launcher icon"
+msgstr "Icona del Llançador de Carretilla del Menú"
+
+#: src/Setup/MigrationWarningSummary.php:246
+msgid "Menu Cart Launcher Indicator"
+msgstr "Indicador del Llançador de Carretilla del Menú"
+
+#: src/Setup/MigrationWarningSummary.php:247
+msgid "Menu launcher: hide indicator when cart is empty"
+msgstr "Llançador de menú: amagar l'indicador quan la carretilla està buida"
+
+#: src/Setup/MigrationWarningSummary.php:250
+msgid "Button text"
+msgstr "Text del botó"
+
+#: src/Setup/MigrationWarningSummary.php:251
+msgid "Button type"
+msgstr "Tipus de botó"
+
+#: src/Setup/MigrationWarningSummary.php:252
+msgid "Select custom products"
+msgstr "Seleccionar productes personalitzats"
+
+#: src/Setup/MigrationWarningSummary.php:253
+msgid "Enable Product Recommendation Engine"
+msgstr "Activar el Motor de Recomanacions de Productes"
+
+#: src/Setup/MigrationWarningSummary.php:254
+msgid "Select a fallback"
+msgstr "Seleccionar una alternativa"
+
+#: src/Setup/MigrationWarningSummary.php:255
+msgid "Recommendations title"
+msgstr "Títol de recomanacions"
+
+#: src/Setup/MigrationWarningSummary.php:256
+msgid "Select a Recommendation type"
+msgstr "Seleccionar un tipus de Recomanació"
+
+#: src/Setup/MigrationWarningSummary.php:257
+msgid "Display Powered by CartPops"
+msgstr "Mostrar Powered by CartPops"
+
+#: src/Setup/MigrationWarningSummary.php:259
+msgid "Drawer cart title"
+msgstr "Títol de la carretilla"
+
+#: src/Setup/MigrationWarningSummary.php:260
+msgid "Generic added to cart message"
+msgstr "Missatge genèric afegit a la carretilla"
+
+#: src/Setup/MigrationWarningSummary.php:261
+msgid "Coupon title"
+msgstr "Títol del cupó"
+
+#: src/Setup/MigrationWarningSummary.php:262
+msgid "Coupon input field placeholder text"
+msgstr "Text de marcador de posició del camp d'entrada del cupó"
+
+#: src/Setup/MigrationWarningSummary.php:264
+msgid "Line item: Subtotal"
+msgstr "Element de línia: Subtotal"
+
+#: src/Setup/MigrationWarningSummary.php:265
+msgid "Line item: Discount"
+msgstr "Element de línia: Descompte"
+
+#: src/Setup/MigrationWarningSummary.php:266
+msgid "Line item: Total"
+msgstr "Element de línia: Total"
+
+#: src/Setup/MigrationWarningSummary.php:267
+msgid "Empty checkout button"
+msgstr "Botó de carretilla buida"
+
+#: src/Setup/MigrationWarningSummary.php:268
+msgid "Drawer empty state title"
+msgstr "Títol de l'estat buit de la carretilla"
+
+#: src/Setup/MigrationWarningSummary.php:269
+msgid "Drawer empty state subtitle"
+msgstr "Subtítol de l'estat buit de la carretilla"
+
+#: src/Setup/MigrationWarningSummary.php:270
+msgid "Enable chat support"
+msgstr "Activar suport de xat"
+
+#: src/Setup/MigrationWarningSummary.php:271
+msgid "Close icon color"
+msgstr "Color de la icona de tancament"
+
+#: src/Setup/MigrationWarningSummary.php:272
+msgid "Remove icon color"
+msgstr "Color de la icona de supressió"
+
+#: src/Setup/MigrationWarningSummary.php:273
+msgid "Slider bullet color"
+msgstr "Color de la bala del control lliscant"
+
+#: src/Setup/MigrationWarningSummary.php:274
+msgid "Slider active bullet color"
+msgstr "Color de la bala activa del control lliscant"
+
+#: src/Setup/Upgrader.php:1750
+msgid ""
+"CartPops could not finish updating your settings from version 1, so it is "
+"paused. Your settings are safe. Reload this page to try again, and contact "
+"CartPops support if this message stays."
+msgstr ""
+"CartPops no ha pogut acabar d'actualitzar la configuració de la versió 1, "
+"per la qual cosa està en pausa. La configuració és segura. Recarrega "
+"aquesta pàgina per intentar-ho de nou i contacta amb l'assistència de "
+"CartPops si aquest missatge es manté."
+
+#: src/Setup/Upgrader.php:1760
+msgid ""
+"Your automation rules from CartPops 1 are kept, but CartPops 2 no longer "
+"runs them."
+msgstr ""
+"Les regles d'automatització de CartPops 1 es mantenen, però CartPops 2 ja "
+"no les executa."
+
+#: src/Setup/Upgrader.php:1783
+msgid ""
+"CartPops updated your settings from version 1, but some could not be "
+"carried over exactly. Your original settings are kept."
+msgstr ""
+"CartPops ha actualitzat la configuració de la versió 1, però alguns no "
+"s'han pogut transferir exactament. La configuració original es manté."
+
+#: src/Setup/Upgrader.php:1787
+msgid "Hide this notice"
+msgstr "Amagar aquest avís"
+
+#: src/Setup/Upgrader.php:1797
+msgid "This review requires a site administrator and a submitted review form."
+msgstr ""
+"Aquesta revisió requereix un administrador del lloc i un formulari de "
+"revisió enviat."
+
+#: src/Setup/Upgrader.php:1814
+msgid ""
+"The review was not accepted. Return to this site dashboard and review the "
+"current notice again."
+msgstr ""
+"La revisió no va ser acceptada. Torna al tauler de control del lloc i "
+"revisa l'avís actual de nou."
+
+#: src/Setup/Upgrader.php:1819
+msgid ""
+"The saved migration state could not be acknowledged. No review was "
+"accepted; return to this site dashboard and try again."
+msgstr ""
+"L'estat de migració guardat no ha pogut ser reconegut. No es va acceptar "
+"cap revisió; torna al tauler de control del lloc i torna a intentar-ho."
+
+#: src/Setup/Upgrader.php:1827
+msgid ""
+"JavaScript retirement review accepted. Return to this site dashboard to "
+"retry migration and review any remaining conditions. The original script is "
+"preserved and will not execute in V2."
+msgstr ""
+"Revisió de jubilació de JavaScript acceptada. Torna al tauler de control "
+"del lloc per reintentar la migració i revisar les condicions restants. "
+"L'script original es conserva i no s'executarà a V2."
+
+#: src/Setup/Upgrader.php:1871
+msgid "This link has expired. Return to the dashboard and try again."
+msgstr "Aquest enllaç ha caducat. Torna al tauler de control i torna a intentar-ho."
+
+#: src/Setup/Upgrader.php:1887
+msgid ""
+"CartPops is paused until you review your old custom JavaScript below. Your "
+"settings are safe."
+msgstr ""
+"CartPops està en pausa fins que revisis el JavaScript personalitzat antic a "
+"continuació. La configuració és segura."
+
+#: src/Setup/Upgrader.php:1888
+msgid ""
+"CartPops is paused until a site administrator reviews the old custom "
+"JavaScript. Your settings are safe."
+msgstr ""
+"CartPops està en pausa fins que un administrador del lloc revisi el "
+"JavaScript personalitzat antic. La configuració és segura."
+
+#: src/Setup/Upgrader.php:1890
+msgid ""
+"CartPops is paused until its update can finish. Your settings are safe. If "
+"you use CartPops Pro, check that your license is active for this site; "
+"otherwise, contact CartPops support."
+msgstr ""
+"CartPops està en pausa fins que la seva actualització es pugui completar. "
+"Els vostres paràmetres estan segurs. Si utilitzeu CartPops Pro, comproveu "
+"que la vostra llicència està activa per a aquest lloc; en cas contrari, "
+"contacteu amb l'assistència de CartPops."
+
+#: src/Setup/Upgrader.php:1900
+msgid "Learn more"
+msgstr "Més informació"
+
+#: src/Setup/Upgrader.php:1910
+msgid ""
+"These settings had a value CartPops 2 could not read, so they now use their "
+"default. Check them in the CartPops settings:"
+msgstr ""
+"Aquests paràmetres tenien un valor que CartPops 2 no podia llegir, així que "
+"ara utilitzen el seu valor per defecte. Comproveu-los a la configuració de "
+"CartPops:"
+
+#: src/Setup/Upgrader.php:1911
+msgid "These settings no longer exist in CartPops 2:"
+msgstr "Aquests paràmetres ja no existeixen a CartPops 2:"
+
+#: src/Setup/Upgrader.php:1912
+msgid "These settings now work a little differently:"
+msgstr "Aquests paràmetres ara funcionen una mica diferent:"
+
+#: src/Setup/Upgrader.php:1926
+msgid "Your custom JavaScript from version 1 is kept but not run."
+msgstr ""
+"El vostre JavaScript personalitzat de la versió 1 es manté però no "
+"s'executa."
+
+#: src/Setup/Upgrader.php:1929
+msgid "Some Pro settings from version 1 are kept in your database but not used."
+msgstr ""
+"Alguns paràmetres Pro de la versió 1 es mantenen a la vostra base de dades "
+"però no s'utilitzen."
+
+#: src/Setup/Upgrader.php:1935
+#. translators: %d: number of other settings.
+#, php-format
+msgid "%d other setting could not be carried over."
+msgid_plural "%d other settings could not be carried over."
+msgstr[0] "%d altre paràmetre no s'ha pogut transferir."
+msgstr[1] "%d altres paràmetres no s'han pogut transferir."
+
+#: src/Setup/Upgrader.php:1944
+msgid "See which settings"
+msgstr "Veure quins paràmetres"
+
+#: src/Setup/Upgrader.php:1962
+msgid "Show your saved custom JavaScript"
+msgstr "Mostrar el vostre JavaScript personalitzat guardat"
+
+#: src/Setup/Upgrader.php:1963
+msgid ""
+"Copy it somewhere safe if you want to move it into your theme or a snippets "
+"plugin."
+msgstr ""
+"Copieu-lo en un lloc segur si voleu moure'l al vostre tema o a un connector "
+"de fragments."
+
+#: src/Setup/Upgrader.php:1966
+msgid "Only the beginning is shown. The full copy remains saved in your database."
+msgstr ""
+"Només es mostra el principi. La còpia completa es manté guardada a la "
+"vostra base de dades."
+
+#: src/Setup/Upgrader.php:1984
+msgid "Review your old custom JavaScript"
+msgstr "Reviseu el vostre JavaScript personalitzat antic"
+
+#: src/Setup/Upgrader.php:1985
+msgid ""
+"CartPops 2 does not run the custom JavaScript from version 1. It stays "
+"saved in your database. Copy it if you still need it, then confirm below to "
+"finish the update."
+msgstr ""
+"CartPops 2 no executa el JavaScript personalitzat de la versió 1. Es manté "
+"guardat a la vostra base de dades. Copieu-lo si encara el necessiteu i "
+"confirmeu a continuació per completar l'actualització."
+
+#: src/Setup/Upgrader.php:2001
+msgid "I understand this custom JavaScript will not run in CartPops 2."
+msgstr "Entenc que aquest JavaScript personalitzat no s'executarà a CartPops 2."
+
+#: src/Setup/Upgrader.php:2003
+msgid "Confirm and finish the update"
+msgstr "Confirmar i completar l'actualització"
+
+#: src/Setup/Upgrader.php:2022
+msgid "Open this site dashboard to review its migration"
+msgstr "Obriu el tauler d'aquest lloc per revisar la seva migració"
+
+#: src/Setup/Upgrader.php:2034
+msgid "Return to this site dashboard"
+msgstr "Tornar al tauler d'aquest lloc"
+
+#: src/Setup/Upgrader.php:2035
+msgid "CartPops migration review"
+msgstr "Revisió de la migració de CartPops"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:244
+msgid "Add to cart on product pages without reloading"
+msgstr "Afegir al carretó a les pàgines de producte sense recarregar"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:248
+msgid ""
+"Adds the product in the background so shoppers stay on the page. The drawer "
+"then opens if “Open drawer on” is set to Add to cart. Turn this off if your "
+"theme or another plugin already handles product-page add to cart."
+msgstr ""
+"Afegeix el producte en segon pla perquè els compradors es mantinguin a la "
+"pàgina. El calaix s'obri si \"Obrir calaix a\" està establert a Afegir al "
+"carretó. Desactiveu-ho si el vostre tema o un altre connector ja gestiona "
+"l'afegiment al carretó de la pàgina de producte."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:325
+msgid "WooCommerce minimum"
+msgstr "Mínim de WooCommerce"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:337
+msgid ""
+"Free shipping comes from WooCommerce, not from this meter. Add a Free "
+"shipping method with a minimum order amount to your shipping zones in "
+"WooCommerce → Settings → Shipping. The meter only shows when the shopper’s "
+"zone has one."
+msgstr ""
+"L'enviament gratuït prové de WooCommerce, no d'aquest comptador. Afegiu un "
+"mètode d'enviament gratuït amb una quantitat mínima de comanda a les "
+"vostres zones d'enviament a WooCommerce → Paràmetres → Enviament. El "
+"comptador només es mostra quan la zona del comprador en té un."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:345
+msgid "Higher free shipping goal (optional)"
+msgstr "Objectiu d'enviament gratuït més alt (opcional)"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:349
+msgid ""
+"Leave at 0 to use the minimum order amount from WooCommerce. A higher "
+"amount only raises the goal shown in the meter. It does not give free "
+"shipping by itself, and amounts below the WooCommerce minimum are ignored."
+msgstr ""
+"Deixeu-ho a 0 per utilitzar la quantitat mínima de comanda de WooCommerce. "
+"Una quantitat més alta només augmenta l'objectiu mostrat al comptador. No "
+"proporciona enviament gratuït per si sol, i les quantitats per sota del "
+"mínim de WooCommerce s'ignoren."
 
 #: src/Blocks/CartDrawer/block.json
 msgctxt "block title"

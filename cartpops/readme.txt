@@ -4,7 +4,7 @@ Tags: side cart, cart drawer, floating cart, woocommerce side cart, add to cart 
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 2.0.2
+Stable tag: 2.0.5
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -109,6 +109,16 @@ Your settings, styling and license carry over. Version 2 is built around the car
 
 == Changelog ==
 
+= 2.0.5 =
+* Improved: When CartPops is paused after an update, the notice now names the step that failed, and Tools → Site Health → Info has a CartPops section with the details support needs, ready to copy.
+
+= 2.0.4 =
+* Improved: The update notices and the "See which settings" list added in 2.0.3 are now translated into all 44 languages.
+
+= 2.0.3 =
+* Improved: After updating from CartPops 1.5, the upgrade notice names any settings that could not be carried over and links to help, and administrators can see and copy their old custom JavaScript before continuing.
+* Fix: Stores updating from CartPops 1.5 no longer stay paused when an old setting can't be carried over. That setting uses its default, and stores that were paused start working again on their own.
+
 = 2.0.2 =
 * Improved: Changing the cart in the drawer makes fewer background requests.
 
@@ -140,6 +150,9 @@ Your settings, styling and license carry over. Version 2 is built around the car
 * Earlier releases: see https://docs.cartpops.com/changelog
 
 == Upgrade Notice ==
+
+= 2.0.3 =
+Fixes stores that stayed paused after updating from CartPops 1.5. Paused stores start working again by themselves; no action needed.
 
 = 2.0.0 =
 CartPops 2.0 needs PHP 8.1+, WordPress 6.5+ and WooCommerce 9.0+. Back up first. Settings and license carry over; version 1 popup and top bar layouts, automation rules and custom JavaScript no longer run.

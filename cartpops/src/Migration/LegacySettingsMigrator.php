@@ -250,7 +250,7 @@ final class LegacySettingsMigrator {
 	/**
 	 * Describe one exact, non-executed customization awaiting administrator review.
 	 *
-	 * @return array{fingerprint: string, blog_id: int, network_id: int, acknowledged: bool}|null
+	 * @return array{fingerprint: string, blog_id: int, network_id: int, acknowledged: bool, code: string}|null
 	 */
 	public function get_custom_js_review_state(): ?array {
 		if ( ! current_user_can( 'manage_options' ) ) {
@@ -279,7 +279,7 @@ final class LegacySettingsMigrator {
 	 * Inspect or acknowledge under the same database/site locks as completion.
 	 *
 	 * @param string|null $expected_fingerprint Null performs a read-only inspection.
-	 * @return array{fingerprint: string, blog_id: int, network_id: int, acknowledged: bool}|null
+	 * @return array{fingerprint: string, blog_id: int, network_id: int, acknowledged: bool, code: string}|null
 	 */
 	private function custom_js_review_operation( ?string $expected_fingerprint ): ?array {
 		try {
@@ -323,6 +323,8 @@ final class LegacySettingsMigrator {
 									'blog_id'      => $this->site_context->blog_id(),
 									'network_id'   => $this->site_context->network_id(),
 									'acknowledged' => $acknowledged,
+									// The exact bytes this fingerprint binds, so the admin reviews what they acknowledge.
+									'code'         => $this->custom_js_display_text( $locked['cartpops_custom_js']['raw_value'] ),
 								);
 								return MigrationOutcome::COMPLETE;
 							},
@@ -339,6 +341,16 @@ final class LegacySettingsMigrator {
 		} catch ( \Throwable ) {
 			return null;
 		}
+	}
+
+	/**
+	 * Decode the preserved option bytes for read-only display, never execution.
+	 *
+	 * @param string $raw Raw `cartpops_custom_js` option bytes.
+	 */
+	private function custom_js_display_text( string $raw ): string {
+		$decoded = ( new SafeSerializedReader() )->decode( $raw, self::MAX_RAW_BYTES, 8, 32 );
+		return $decoded['safe'] && is_string( $decoded['value'] ) ? $decoded['value'] : $raw;
 	}
 
 	/**
@@ -484,9 +496,11 @@ final class LegacySettingsMigrator {
 			$paid_state                                = ( new LegacyPaidStateInspector( $this->site_context ) )->read();
 			$paid_state                                = $this->apply_pre_sdk_historical_edition( $paid_state );
 			$paid_entitlement_plan                     = $this->prepare_paid_entitlement_plan( $paid_state );
-			$effective_diagnostics                     = null === $paid_entitlement_plan
-				? $paid_state['diagnostics']
-				: $this->without_paid_entitlement_adapter( $paid_state['diagnostics'] );
+			$effective_diagnostics                     = $this->blocking_diagnostics(
+				null === $paid_entitlement_plan
+					? $paid_state['diagnostics']
+					: $this->without_paid_entitlement_adapter( $paid_state['diagnostics'] )
+			);
 			$terminal_exists                           = $control['rows'][ self::COMPLETION_OPTION ]['exists'] || $control['rows'][ self::PROVENANCE_OPTION ]['exists'];
 			$preflight_diagnostics                     = $terminal_exists
 				? $effective_diagnostics
@@ -543,6 +557,14 @@ final class LegacySettingsMigrator {
 				return $this->fail_without_journal( 'invalid_durable_migration_record' );
 			}
 
+			if ( $maintenance['exists'] && $this->maintenance_reason_is_released( $maintenance['value'] ) ) {
+				// 2.0.0-2.0.2 paused for these values. They now keep V2 defaults and
+				// are reported as warnings, so drop the marker and finish migrating.
+				if ( ! $this->store->delete_if_raw( self::MAINTENANCE_OPTION, $maintenance['raw_value'] ) ) {
+					return $this->fail_without_journal( 'maintenance_marker_release_failed' );
+				}
+				$maintenance['exists'] = false;
+			}
 			if ( $maintenance['exists'] ) {
 				if (
 					! $this->store->autoload_is( $maintenance['autoload'], false )
@@ -737,11 +759,12 @@ final class LegacySettingsMigrator {
 			return $this->fail_without_journal( 'journal_settings_written_write_failed' );
 		}
 		$this->checkpoint( 'after_settings_write' );
+		// These values stay at their V2 defaults; the originals remain in the snapshot.
 		if ( $this->invalid_inline_launcher_color_requires_review() ) {
-			throw new MigrationMaintenanceException( 'invalid_inline_launcher_color_retained' );
+			$this->warnings[] = 'invalid_inline_launcher_color_retained';
 		}
 		if ( $this->invalid_recommendation_button_requires_review() ) {
-			throw new MigrationMaintenanceException( 'invalid_recommendation_button_presentation_retained' );
+			$this->warnings[] = 'invalid_recommendation_button_presentation_retained';
 		}
 		return $this->terminal_compatibility_outcome( MigrationOutcome::COMPLETE, $snapshot, $paid_entitlement_plan );
 	}
@@ -1181,8 +1204,12 @@ final class LegacySettingsMigrator {
 					$diagnostics = $this->without_paid_entitlement_adapter( $diagnostics );
 					$diagnostics = $this->without_paid_entitlement_drift( $diagnostics );
 				}
-				$diagnostics = array_values( array_unique( $diagnostics ) );
+				$diagnostics = $this->blocking_diagnostics( array_values( array_unique( $diagnostics ) ) );
 				sort( $diagnostics, SORT_STRING );
+				if ( $stored['exists'] && array() === $diagnostics ) {
+					// Every stored blocker was released, so the record may be removed.
+					$stored_compatibility_reconciled = true;
+				}
 
 				// Preserve dormant presentation only after the locked rule and
 				// entitlement checks succeed. A failed decision rolls these writes
@@ -1205,6 +1232,16 @@ final class LegacySettingsMigrator {
 				if ( $js_reviewed && ! $this->custom_js_review_rows_unchanged( $locked ) ) {
 					return MigrationOutcome::FAILED;
 				}
+				// 2.0.0-2.0.2 could pause for a value that no longer blocks; remove
+				// that marker under the same fence so status stops reporting review.
+				$maintenance_row = $controls[ self::MAINTENANCE_OPTION ];
+				if (
+					$maintenance_row['exists']
+					&& $this->maintenance_reason_is_released( $maintenance_row['value'] )
+					&& ! $this->store->delete_if_raw( self::MAINTENANCE_OPTION, $maintenance_row['raw_value'] )
+				) {
+					return MigrationOutcome::FAILED;
+				}
 
 				if ( null === $target ) {
 					if ( $controls[ self::COMPLETION_OPTION ]['exists'] && $controls[ self::PROVENANCE_OPTION ]['exists'] ) {
@@ -1222,8 +1259,13 @@ final class LegacySettingsMigrator {
 						}
 						return MigrationOutcome::NOT_APPLICABLE;
 					}
+					// A 2.0.2 store paused by a released marker before any disposition
+					// was written can still have its custom JS reviewed; nothing then
+					// remains to reconcile, so finish the interrupted migration.
+					$reviewed_without_disposition = $js_reviewed && ! $stored['exists'];
 					if (
 						! $retirement_record_reconciled
+						&& ! $reviewed_without_disposition
 						&& ( ! $stored['exists'] || ( ! $entitlement_admitted && ! $stored_compatibility_reconciled ) )
 					) {
 						return MigrationOutcome::FAILED;
@@ -1295,10 +1337,53 @@ final class LegacySettingsMigrator {
 		$fresh_diagnostics = null === $fresh_plan
 			? $fresh_state['diagnostics']
 			: $this->without_paid_entitlement_adapter( $fresh_state['diagnostics'] );
-		$hard_diagnostics  = array_filter( $fresh_diagnostics, array( LegacyPaidStateInspector::class, 'is_hard_diagnostic' ) );
+		$hard_diagnostics  = $this->blocking_diagnostics(
+			array_values( array_filter( $fresh_diagnostics, array( LegacyPaidStateInspector::class, 'is_hard_diagnostic' ) ) )
+		);
 		return array() === $hard_diagnostics
 			? $this->migrate_while_locked( $fresh_plan )
 			: MigrationOutcome::MAINTENANCE_REQUIRED;
+	}
+
+	/**
+	 * Keep only the diagnostics a store can resolve; report the rest as warnings.
+	 *
+	 * A paused store has no menu, so a diagnostic without an admin action left it
+	 * stuck. Custom JavaScript has its review form, and a Pro build settles paid
+	 * entitlement through its bridge. Every other diagnostic keeps V2 defaults for
+	 * the affected values, while the originals stay in the recovery snapshot.
+	 *
+	 * @param string[] $diagnostics Candidate diagnostics.
+	 * @return string[]
+	 */
+	private function blocking_diagnostics( array $diagnostics ): array {
+		$resolvable = array( 'legacy_custom_js_requires_review' );
+		if ( null !== $this->paid_entitlement_bridge ) {
+			// Completing first would leave a later licensed Freemius row unadmitted.
+			$resolvable[] = 'legacy_paid_entitlement_requires_adapter';
+			$resolvable[] = 'legacy_paid_state_uncertain';
+			$resolvable[] = self::ENTITLEMENT_DRIFT_DIAGNOSTIC;
+		}
+		$blocking = array_values( array_intersect( $diagnostics, $resolvable ) );
+		$released = array_diff( $diagnostics, $blocking );
+		if ( array() !== $released ) {
+			$this->warnings = array_values( array_unique( array_merge( $this->warnings, $released ) ) );
+		}
+		return $blocking;
+	}
+
+	/**
+	 * Whether a stored maintenance marker paused for a value that no longer blocks.
+	 *
+	 * @param mixed $marker Decoded maintenance marker.
+	 */
+	private function maintenance_reason_is_released( mixed $marker ): bool {
+		return $this->maintenance_marker_is_valid( $marker )
+			&& in_array(
+				$marker['reason'],
+				array( 'invalid_inline_launcher_color_retained', 'invalid_recommendation_button_presentation_retained' ),
+				true
+			);
 	}
 
 	/**

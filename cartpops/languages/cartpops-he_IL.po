@@ -1,5 +1,3 @@
-# Copyright (C) 2026 CartPops
-# This file is distributed under the GPL v3 or later.
 msgid ""
 msgstr ""
 "Project-Id-Version: CartPops 2.0.0\n"
@@ -11,15 +9,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2026-10-02T11:55:32+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language: he_IL\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: cartpops\n"
-"Language: he_IL\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: cartpops.php
-#: src/Admin/AdminPage.php:36
-#: src/Admin/AdminPage.php:37
-#: src/Blocks/CartDrawer/render.php:856
+#: src/Admin/AdminPage.php:45
+#: src/Admin/AdminPage.php:46
+#: src/Blocks/CartDrawer/render.php:881
+#: src/Setup/Upgrader.php:1871
 #: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:518
 #. Plugin Name of the plugin
 #. Author of the plugin
@@ -128,46 +127,46 @@ msgstr "אין לך הרשאה לאפס נתוני אנליטיקה."
 
 #: src/Blocks/CartDrawer/render.php:33
 #: src/Admin/assets/js/components/DrawerPreview.jsx:145
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:304
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:309
 msgid "Your Cart"
 msgstr "סל הקניות שלך"
 
 #: src/Blocks/CartDrawer/render.php:36
-#: src/Blocks/CartDrawer/render.php:694
+#: src/Blocks/CartDrawer/render.php:719
 #: src/Admin/assets/js/components/DrawerPreview.jsx:150
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:340
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:345
 msgid "Coupon code"
 msgstr "קוד קופון"
 
 #: src/Blocks/CartDrawer/render.php:37
 #: src/Admin/assets/js/components/DrawerPreview.jsx:154
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:353
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:358
 msgid "Apply"
 msgstr "החלה"
 
 #: src/Blocks/CartDrawer/render.php:38
 #: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:831
 #: src/Admin/assets/js/components/DrawerPreview.jsx:158
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:369
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:374
 msgid "Subtotal"
 msgstr "סכום ביניים"
 
 #: src/Blocks/CartDrawer/render.php:39
 #: src/Admin/assets/js/components/DrawerPreview.jsx:341
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:379
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:384
 msgid "Discount"
 msgstr "הנחה"
 
 #: src/Blocks/CartDrawer/render.php:40
 #: src/Admin/assets/js/components/DrawerPreview.jsx:160
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:389
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:394
 msgid "Total"
 msgstr "סה״כ"
 
 #: src/Blocks/CartDrawer/render.php:41
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:304
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:317
 #: src/Admin/assets/js/components/DrawerPreview.jsx:168
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:419
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:424
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:106
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:151
 msgid "Continue shopping"
@@ -175,125 +174,125 @@ msgstr "המשך בקניות"
 
 #: src/Blocks/CartDrawer/render.php:42
 #: src/Admin/assets/js/components/DrawerPreview.jsx:163
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:399
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:404
 msgid "Your cart is empty"
 msgstr "סל הקניות שלך ריק"
 
-#: src/Blocks/CartDrawer/render.php:249
-#: src/Blocks/CartDrawer/render.php:277
+#: src/Blocks/CartDrawer/render.php:251
+#: src/Blocks/CartDrawer/render.php:288
 #: src/Blocks/CartLauncher/render.php:65
 #: src/Blocks/CartLauncher/render.php:190
 #: src/Admin/assets/js/components/LauncherPreview.jsx:357
 msgid "Open cart"
 msgstr "פתיחת הסל"
 
-#: src/Blocks/CartDrawer/render.php:252
-#: src/Blocks/CartDrawer/render.php:562
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:160
+#: src/Blocks/CartDrawer/render.php:254
+#: src/Blocks/CartDrawer/render.php:576
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:165
 msgid "You may also like"
 msgstr "אולי תאהבו גם"
 
-#: src/Blocks/CartDrawer/render.php:278
-#: src/Blocks/CartDrawer/render.php:403
+#: src/Blocks/CartDrawer/render.php:289
+#: src/Blocks/CartDrawer/render.php:416
 #: src/Blocks/CartLauncher/render.php:77
 msgid "Close cart"
 msgstr "סגירת הסל"
 
-#: src/Blocks/CartDrawer/render.php:279
-#: src/Blocks/CartDrawer/render.php:587
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:611
+#: src/Blocks/CartDrawer/render.php:290
+#: src/Blocks/CartDrawer/render.php:601
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:626
 #: src/Recommendations/RecommendationEngine.php:240
 #: src/Admin/assets/js/pages/AdvancedSettings.jsx:230
 msgid "Add to cart"
 msgstr "הוספה לסל"
 
-#: src/Blocks/CartDrawer/render.php:281
+#: src/Blocks/CartDrawer/render.php:292
 #: src/Recommendations/RecommendationEngine.php:220
-#: src/Admin/assets/js/components/DrawerPreview.jsx:924
+#: src/Admin/assets/js/components/DrawerPreview.jsx:950
 #: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:117
 #. translators: %s: product name.
 #, php-format,js-format
 msgid "Add %s to cart"
 msgstr "הוספת %s לסל"
 
-#: src/Blocks/CartDrawer/render.php:282
-#: src/Blocks/CartDrawer/render.php:600
+#: src/Blocks/CartDrawer/render.php:293
+#: src/Blocks/CartDrawer/render.php:614
 #: src/Recommendations/RecommendationEngine.php:239
 msgid "Select options"
 msgstr "בחירת אפשרויות"
 
-#: src/Blocks/CartDrawer/render.php:284
+#: src/Blocks/CartDrawer/render.php:295
 #: src/Recommendations/RecommendationEngine.php:217
 #. translators: %s: product name.
 #, php-format
 msgid "Select options for %s"
 msgstr "בחירת אפשרויות עבור %s"
 
-#: src/Blocks/CartDrawer/render.php:286
+#: src/Blocks/CartDrawer/render.php:297
 #. translators: %s: cart item name.
 #, php-format
 msgid "\"%s\" removed."
 msgstr "\"%s\" הוסר."
 
-#: src/Blocks/CartDrawer/render.php:288
+#: src/Blocks/CartDrawer/render.php:299
 #. translators: %s: cart item name.
 #, php-format
 msgid "%s removed from cart."
 msgstr "%s הוסר מסל הקניות."
 
-#: src/Blocks/CartDrawer/render.php:289
+#: src/Blocks/CartDrawer/render.php:300
 msgid "Item"
 msgstr "פריט"
 
-#: src/Blocks/CartDrawer/render.php:291
+#: src/Blocks/CartDrawer/render.php:302
 #. translators: %s: cart item name.
 #, php-format
 msgid "%s restored to cart."
 msgstr "%s הוחזר לסל הקניות."
 
-#: src/Blocks/CartDrawer/render.php:293
+#: src/Blocks/CartDrawer/render.php:304
 #. translators: %s: coupon code.
 #, php-format
 msgid "Coupon \"%s\" applied."
 msgstr "קופון \"%s\" הוחל."
 
-#: src/Blocks/CartDrawer/render.php:295
+#: src/Blocks/CartDrawer/render.php:306
 #. translators: %s: coupon code.
 #, php-format
 msgid "Coupon \"%s\" removed."
 msgstr "קופון \"%s\" הוסר."
 
-#: src/Blocks/CartDrawer/render.php:297
+#: src/Blocks/CartDrawer/render.php:308
 #. translators: %s: product name.
 #, php-format
 msgid "%s added to cart."
 msgstr "%s נוסף לסל."
 
-#: src/Blocks/CartDrawer/render.php:298
+#: src/Blocks/CartDrawer/render.php:309
 msgid "Your cart has expired."
 msgstr "תוקף סל הקניות שלך פג."
 
-#: src/Blocks/CartDrawer/render.php:299
+#: src/Blocks/CartDrawer/render.php:310
 #: src/Pro/Blocks/ShippingMeter/ShippingMeterBlock.php:954
 msgid "Request failed"
 msgstr "הבקשה נכשלה"
 
-#: src/Blocks/CartDrawer/render.php:300
+#: src/Blocks/CartDrawer/render.php:311
 msgid "Your cart is refreshing. Please wait."
 msgstr "סל הקניות שלך מתרענן. נא להמתין."
 
-#: src/Blocks/CartDrawer/render.php:301
+#: src/Blocks/CartDrawer/render.php:312
 msgid "Failed to fetch recommendations"
 msgstr "אחזור ההמלצות נכשל"
 
-#: src/Blocks/CartDrawer/render.php:303
+#: src/Blocks/CartDrawer/render.php:314
 #. translators: 1: tax amount, 2: tax label (e.g. VAT).
 #, php-format
 msgid "Incl. %1$s %2$s"
 msgstr "כולל %1$s %2$s"
 
-#: src/Blocks/CartDrawer/render.php:333
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:73
+#: src/Blocks/CartDrawer/render.php:346
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:74
 #: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:17
 #: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:24
 #: src/Pro/Admin/assets/js/components/CustomRecommendationSelection.jsx:32
@@ -302,61 +301,61 @@ msgstr "כולל %1$s %2$s"
 msgid "Add"
 msgstr "הוספה"
 
-#: src/Blocks/CartDrawer/render.php:386
+#: src/Blocks/CartDrawer/render.php:399
 msgid "Shopping cart"
 msgstr "סל קניות"
 
-#: src/Blocks/CartDrawer/render.php:472
+#: src/Blocks/CartDrawer/render.php:486
 msgid "Decrease quantity:"
 msgstr "הפחתת כמות:"
 
-#: src/Blocks/CartDrawer/render.php:485
+#: src/Blocks/CartDrawer/render.php:499
 msgid "Increase quantity:"
 msgstr "הגדלת כמות:"
 
-#: src/Blocks/CartDrawer/render.php:501
+#: src/Blocks/CartDrawer/render.php:515
 msgid "Remove item:"
 msgstr "הסרת פריט:"
 
-#: src/Blocks/CartDrawer/render.php:550
+#: src/Blocks/CartDrawer/render.php:564
 msgid "Undo"
 msgstr "ביטול"
 
-#: src/Blocks/CartDrawer/render.php:608
+#: src/Blocks/CartDrawer/render.php:622
 msgid "Previous"
 msgstr "הקודם"
 
-#: src/Blocks/CartDrawer/render.php:615
+#: src/Blocks/CartDrawer/render.php:629
 msgid "Next"
 msgstr "הבא"
 
-#: src/Blocks/CartDrawer/render.php:643
-#: src/Blocks/CartDrawer/render.php:770
+#: src/Blocks/CartDrawer/render.php:657
+#: src/Blocks/CartDrawer/render.php:795
 #: src/Admin/assets/js/components/DrawerPreview.jsx:356
 msgid "Shipping"
 msgstr "משלוח"
 
-#: src/Blocks/CartDrawer/render.php:731
+#: src/Blocks/CartDrawer/render.php:756
 msgid "Remove coupon:"
 msgstr "הסרת קופון:"
 
-#: src/Blocks/CartDrawer/render.php:811
-#: src/Admin/assets/js/components/DrawerPreview.jsx:1107
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:288
+#: src/Blocks/CartDrawer/render.php:836
+#: src/Admin/assets/js/components/DrawerPreview.jsx:1133
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:293
 msgid "Proceed to Checkout"
 msgstr "מעבר לתשלום"
 
-#: src/Blocks/CartDrawer/render.php:848
-#: src/Admin/assets/js/components/DrawerPreview.jsx:1123
+#: src/Blocks/CartDrawer/render.php:873
+#: src/Admin/assets/js/components/DrawerPreview.jsx:1149
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:228
 msgid "View Cart"
 msgstr "הצגת סל הקניות"
 
-#: src/Blocks/CartDrawer/render.php:854
+#: src/Blocks/CartDrawer/render.php:879
 msgid "Powered by"
 msgstr "מופעל על ידי"
 
-#: src/Blocks/CartDrawer/render.php:857
+#: src/Blocks/CartDrawer/render.php:882
 msgid "(opens in a new tab)"
 msgstr "(נפתח בלשונית חדשה)"
 
@@ -382,158 +381,148 @@ msgstr "תכונה זו של CartPops דורשת רישיון Pro פעיל עב�
 msgid "This CartPops feature is temporarily unavailable while its data is prepared."
 msgstr "תכונה זו של CartPops אינה זמינה זמנית בזמן הכנת הנתונים שלה."
 
-#: src/Plugin.php:849
-#. translators: %s: value-free CartPops diagnostic code.
-#, php-format
-msgid ""
-"CartPops is paused because its required upgrade or build validation did not "
-"complete. Original data was preserved. Diagnostic: %s."
-msgstr ""
-"פעילות CartPops הושהתה מכיוון שהשדרוג או אימות הבנייה הנדרשים לא הושלמו. "
-"הנתונים המקוריים נשמרו. אבחון: %s."
-
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:119
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:117
 #. translators: %s: add-on name.
 #, php-format
 msgid "%s added."
 msgstr "%s נוסף."
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:121
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:119
 #. translators: %s: add-on name.
 #, php-format
 msgid "%s removed."
 msgstr "%s הוסר."
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:122
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:120
 msgid "Toggle failed"
 msgstr "שינוי המצב נכשל"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:123
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:121
 msgid "Failed to add spotlight product"
 msgstr "הוספת המוצר המודגש נכשלה"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:124
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:122
 msgid "Adding…"
 msgstr "מוסיף…"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:125
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:123
 msgid "Added ✓"
 msgstr "נוסף ✓"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:127
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:125
 msgid "bundle discount"
 msgstr "הנחת מארז"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:128
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:126
 msgid "Failed to add bundle items"
 msgstr "הוספת פריטי המארז נכשלה"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:129
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:668
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:756
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:127
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:683
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:771
 msgid "Calculate shipping"
 msgstr "חישוב משלוח"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:130
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:128
 msgid "Loading shipping options…"
 msgstr "טוען אפשרויות משלוח…"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:131
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:129
 msgid "Shipping options updated."
 msgstr "אפשרויות המשלוח עודכנו."
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:132
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:130
 msgid "Shipping method updated."
 msgstr "שיטת המשלוח עודכנה."
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:133
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:131
 msgid "Shipping options could not be updated. Please try again."
 msgstr "לא ניתן היה לעדכן את אפשרויות המשלוח. נא לנסות שוב."
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:134
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:132
 msgid "No shipping options are available for this address."
 msgstr "אין אפשרויות משלוח זמינות עבור כתובת זו."
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:135
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:133
 msgid "Enter your destination to calculate shipping."
 msgstr "יש להזין יעד כדי לחשב את עלות המשלוח."
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:136
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:134
 msgid "Shipping options"
 msgstr "אפשרויות משלוח"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:315
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:328
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:122
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:155
 msgid "View cart"
 msgstr "צפייה בסל"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:493
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:508
 msgid "Dismiss"
 msgstr "התעלמות"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:516
-#: src/Pro/Blocks/ShippingMeter/ShippingMeterBlock.php:1090
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:531
+#: src/Pro/Blocks/ShippingMeter/ShippingMeterBlock.php:1116
 msgid "Shipping and rewards progress"
 msgstr "התקדמות למשלוח והטבות"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:523
-#: src/Pro/Blocks/ShippingMeter/ShippingMeterBlock.php:1099
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:538
+#: src/Pro/Blocks/ShippingMeter/ShippingMeterBlock.php:1125
 msgid "Reward tiers"
 msgstr "דרגות הטבה"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:584
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:599
 #: src/Pro/BundleBuilder/BundleBuilder.php:56
 #: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:469
 msgid "Frequently bought together"
 msgstr "נקנים לעתים קרובות יחד"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:590
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:616
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:605
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:631
 msgid "Close"
 msgstr "סגירה"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:601
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:616
 msgid "Product info"
 msgstr "מידע על המוצר"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:605
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:620
 msgid "Choose…"
 msgstr "בחירה…"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:615
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:630
 msgid "Product information"
 msgstr "מידע על המוצר"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:619
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:634
 msgid "Got it"
 msgstr "הבנתי"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:685
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:700
 msgid "Country / Region"
 msgstr "מדינה / אזור"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:695
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:710
 msgid "Select a country / region…"
 msgstr "בחירת מדינה / אזור…"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:703
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:718
 msgid "State / County"
 msgstr "מחוז / אזור"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:720
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:735
 msgid "Select a state / region…"
 msgstr "בחירת מחוז / אזור…"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:746
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:761
 msgid "City"
 msgstr "עיר"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:751
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:766
 msgid "Postcode / ZIP"
 msgstr "מיקוד"
 
-#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:815
+#: src/Pro/Blocks/CartDrawer/ProDrawerRenderExtension.php:830
 msgid "Toggle add-on:"
 msgstr "הפעלה/כיבוי של תוסף:"
 
@@ -554,7 +543,7 @@ msgstr "סל הקניות אינו זמין. יש לנסות שוב."
 #: src/Pro/SmartAddons/SmartAddonsController.php:129
 #: src/Recommendations/RecommendationsController.php:148
 #: src/REST/CartStateController.php:330
-#: src/REST/CouponController.php:231
+#: src/REST/CouponController.php:244
 msgid ""
 "The final cart state could not be confirmed. Refresh your cart before "
 "making another change."
@@ -568,7 +557,7 @@ msgstr ""
 #: src/Pro/SmartAddons/SmartAddonsController.php:137
 #: src/Recommendations/RecommendationsController.php:156
 #: src/REST/CartStateController.php:319
-#: src/REST/CouponController.php:220
+#: src/REST/CouponController.php:233
 msgid "Your cart is being updated. Please try again."
 msgstr "סל הקניות שלך מתעדכן. יש לנסות שוב."
 
@@ -619,10 +608,10 @@ msgid "Items Indicator"
 msgstr "מחוון פריטים"
 
 #: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:808
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:120
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:435
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:125
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:440
 #: src/Admin/assets/js/pages/LauncherSettings.jsx:295
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:117
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:122
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:149
 #: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:33
 #: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:38
@@ -693,8 +682,8 @@ msgstr "צבע טקסט"
 #: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:967
 #: src/Admin/assets/js/pages/IntegrationsSettings.jsx:338
 #: src/Admin/assets/js/pages/LauncherSettings.jsx:17
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:547
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:691
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:559
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:703
 msgid "Icon Color"
 msgstr "צבע סמל"
 
@@ -848,30 +837,30 @@ msgstr "כלל"
 msgid "Gift quantity: 1"
 msgstr "כמות מתנה: 1"
 
-#: src/Pro/ShippingMeter/ShippingMeter.php:408
+#: src/Pro/ShippingMeter/ShippingMeter.php:417
 msgid "reached"
 msgstr "הושג"
 
-#: src/Pro/ShippingMeter/ShippingMeter.php:408
+#: src/Pro/ShippingMeter/ShippingMeter.php:417
 msgid "not reached"
 msgstr "לא הושג"
 
-#: src/Pro/ShippingMeter/ShippingMeter.php:555
+#: src/Pro/ShippingMeter/ShippingMeter.php:564
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:544
 #: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:318
 msgid "Free Shipping"
 msgstr "משלוח חינם"
 
-#: src/Pro/ShippingMeter/ShippingMeter.php:556
-#: src/Pro/ShippingMeter/ShippingMeter.php:557
+#: src/Pro/ShippingMeter/ShippingMeter.php:565
+#: src/Pro/ShippingMeter/ShippingMeter.php:566
 #: src/Admin/assets/js/pages/Dashboard.jsx:213
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:549
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:556
 msgid "Off"
 msgstr "כבוי"
 
-#: src/Pro/ShippingMeter/ShippingMeter.php:749
-#: src/Pro/ShippingMeter/ShippingMeter.php:753
+#: src/Pro/ShippingMeter/ShippingMeter.php:758
+#: src/Pro/ShippingMeter/ShippingMeter.php:762
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:558
 #: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:47
 msgid "Free Gift"
@@ -892,7 +881,7 @@ msgstr "תוסף זה לסל הקניות אינו זמין."
 #: src/Pro/SmartAddons/SmartAddonsController.php:153
 #: src/Recommendations/RecommendationsController.php:180
 #: src/REST/CartStateController.php:178
-#: src/REST/CouponController.php:242
+#: src/REST/CouponController.php:255
 msgid "The cart could not be updated. Please try again."
 msgstr "לא ניתן היה לעדכן את סל הקניות. יש לנסות שוב."
 
@@ -909,7 +898,8 @@ msgid "One or more cart items could not be removed."
 msgstr "לא ניתן היה להסיר פריט אחד או יותר מסל הקניות."
 
 #: src/REST/CouponController.php:95
-#: src/REST/CouponController.php:160
+#: src/REST/CouponController.php:162
+#: src/REST/CouponController.php:201
 msgid "Cart rewards are managed automatically."
 msgstr "הטבות סל הקניות מנוהלות באופן אוטומטי."
 
@@ -917,11 +907,11 @@ msgstr "הטבות סל הקניות מנוהלות באופן אוטומטי."
 msgid "Invalid coupon."
 msgstr "קופון לא תקין."
 
-#: src/REST/CouponController.php:196
+#: src/REST/CouponController.php:209
 msgid "This coupon is managed automatically and could not be removed."
 msgstr "קופון זה מנוהל באופן אוטומטי ולא ניתן להסירו."
 
-#: src/REST/CouponController.php:202
+#: src/REST/CouponController.php:215
 msgid "The coupon could not be removed."
 msgstr "לא ניתן היה להסיר את הקופון."
 
@@ -980,7 +970,7 @@ msgstr "מקור זה אינו מורשה לגשת אל ה-API של CartPops."
 msgid "The request origin does not match its referrer."
 msgstr "מקור הבקשה אינו תואם למפנה שלה."
 
-#: src/Setup/Upgrader.php:1717
+#: src/Setup/Upgrader.php:1738
 #. translators: %1$d: WordPress multisite blog ID.
 #, php-format
 msgid ""
@@ -989,40 +979,6 @@ msgid ""
 msgstr ""
 "מיגרציית הרשת של CartPops הושהתה באתר %1$d ותתבצע שוב מבלי לדלג על אתרים "
 "מאוחרים יותר. ההגדרות המקוריות נשמרו."
-
-#: src/Setup/Upgrader.php:1728
-msgid ""
-"CartPops could not complete its legacy settings migration. The original "
-"settings were preserved; review the migration status before retrying."
-msgstr ""
-"CartPops לא הצליח להשלים את מיגרציית ההגדרות הישנות. ההגדרות המקוריות "
-"נשמרו; יש לעיין בסטטוס המיגרציה לפני ניסיון חוזר."
-
-#: src/Setup/Upgrader.php:1736
-msgid ""
-"CartPops preserved legacy automation rule data for recovery, but those "
-"rules are retired and do not run in V2."
-msgstr ""
-"CartPops שמר את נתוני כללי האוטומציה הישנים לצורך שחזור, אך כללים אלה בוטלו "
-"ואינם פועלים בגרסה 2."
-
-#: src/Setup/Upgrader.php:1742
-msgid ""
-"CartPops migration requires compatibility review before it can finish. "
-"Original settings remain available for recovery; resolve the reported "
-"migration warnings, then retry the migration."
-msgstr ""
-"המיגרציה של CartPops דורשת בדיקת תאימות לפני שתוכל להסתיים. ההגדרות "
-"המקוריות נשארות זמינות לשחזור; יש לפתור את אזהרות המיגרציה שדווחו ולאחר מכן "
-"לנסות שוב את המיגרציה."
-
-#: src/Setup/Upgrader.php:1752
-msgid ""
-"CartPops migrated legacy settings with compatibility warnings. Original "
-"settings remain available for recovery."
-msgstr ""
-"CartPops העביר את ההגדרות הישנות עם אזהרות תאימות. ההגדרות המקוריות נשארות "
-"זמינות לשחזור."
 
 #: src/StoreAPI/CartExtension.php:178
 msgid "Exact WooCommerce cart item key."
@@ -1074,94 +1030,96 @@ msgstr "מינימום כמות ב-WooCommerce, מקסימום הובלה, מד�
 msgid "Bounded plain-text WooCommerce backorder notice."
 msgstr "הודעת הזמנה מראש מתוחמת בטקסט פשוט של WooCommerce."
 
-#: src/Admin/assets/js/App.jsx:169
+#: src/Admin/assets/js/App.jsx:170
 msgid "Setup"
 msgstr "הגדרה"
 
-#: src/Admin/assets/js/App.jsx:171
+#: src/Admin/assets/js/App.jsx:172
 #: src/Admin/assets/js/pages/Dashboard.jsx:119
 msgid "Dashboard"
 msgstr "לוח בקרה"
 
-#: src/Admin/assets/js/App.jsx:172
+#: src/Setup/MigrationWarningSummary.php:155
+#: src/Admin/assets/js/App.jsx:173
 msgid "Drawer"
 msgstr "מגירה"
 
-#: src/Admin/assets/js/App.jsx:173
+#: src/Admin/assets/js/App.jsx:174
 msgid "Launcher"
 msgstr "משגר"
 
-#: src/Admin/assets/js/App.jsx:177
+#: src/Admin/assets/js/App.jsx:178
 #: src/Admin/assets/js/pages/Dashboard.jsx:185
 msgid "Features"
 msgstr "תכונות"
 
-#: src/Admin/assets/js/App.jsx:181
+#: src/Setup/MigrationWarningSummary.php:163
+#: src/Admin/assets/js/App.jsx:182
 #: src/Admin/assets/js/pages/Dashboard.jsx:88
 #: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:352
 msgid "Recommendations"
 msgstr "המלצות"
 
-#: src/Admin/assets/js/App.jsx:186
+#: src/Admin/assets/js/App.jsx:187
 msgid "Smart add-ons"
 msgstr "תוספות חכמות"
 
-#: src/Admin/assets/js/App.jsx:191
+#: src/Admin/assets/js/App.jsx:192
 #: src/Admin/assets/js/pages/Dashboard.jsx:104
 #: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:657
 #: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:669
 msgid "Smart Bar"
 msgstr "סרגל חכם"
 
-#: src/Admin/assets/js/App.jsx:196
+#: src/Admin/assets/js/App.jsx:197
 #: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:419
 #: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:444
 msgid "Bundle Builder"
 msgstr "בונה חבילות"
 
-#: src/Admin/assets/js/App.jsx:202
+#: src/Admin/assets/js/App.jsx:203
 msgid "Insights"
 msgstr "תובנות"
 
-#: src/Admin/assets/js/App.jsx:206
+#: src/Admin/assets/js/App.jsx:207
 #: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:202
 msgid "Analytics"
 msgstr "אנליטיקה"
 
-#: src/Admin/assets/js/App.jsx:212
+#: src/Admin/assets/js/App.jsx:213
 msgid "System"
 msgstr "מערכת"
 
-#: src/Admin/assets/js/App.jsx:213
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:429
+#: src/Admin/assets/js/App.jsx:214
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:444
 msgid "Advanced"
 msgstr "מתקדם"
 
-#: src/Admin/assets/js/App.jsx:520
+#: src/Admin/assets/js/App.jsx:539
 msgid "Settings saved!"
 msgstr "ההגדרות נשמרו!"
 
-#: src/Admin/assets/js/App.jsx:526
+#: src/Admin/assets/js/App.jsx:545
 msgid "Failed to save."
 msgstr "השמירה נכשלה."
 
-#: src/Admin/assets/js/App.jsx:560
+#: src/Admin/assets/js/App.jsx:579
 msgid "Settings reset to defaults."
 msgstr "ההגדרות אופסו לברירות המחדל."
 
-#: src/Admin/assets/js/App.jsx:571
+#: src/Admin/assets/js/App.jsx:590
 msgid "Settings could not be reset. Please try again."
 msgstr "לא ניתן היה לאפס את ההגדרות. יש לנסות שוב."
 
-#: src/Admin/assets/js/App.jsx:732
+#: src/Admin/assets/js/App.jsx:730
 msgid "Unsaved changes"
 msgstr "שינויים שלא נשמרו"
 
-#: src/Admin/assets/js/App.jsx:741
+#: src/Admin/assets/js/App.jsx:739
 msgid "Saving…"
 msgstr "שומר…"
 
-#: src/Admin/assets/js/App.jsx:742
+#: src/Admin/assets/js/App.jsx:740
 msgid "Save Changes"
 msgstr "שמירת שינויים"
 
@@ -1206,7 +1164,7 @@ msgstr "ריק"
 msgid "Toggle dark mode preview"
 msgstr "החלפת תצוגה מקדימה של מצב כהה"
 
-#: src/Admin/assets/js/components/DrawerPreview.jsx:828
+#: src/Admin/assets/js/components/DrawerPreview.jsx:854
 #: src/Pro/Admin/assets/js/components/ConditionBuilder.jsx:453
 #: src/Pro/Admin/assets/js/components/ProductSearch.jsx:720
 #: src/Pro/Admin/assets/js/components/ProductSearch.jsx:748
@@ -1316,11 +1274,12 @@ msgid ""
 "unchanged."
 msgstr "שדרג כדי להגדיר תכונה זו. הגדרות CartPops הקיימות שלך יישארו ללא שינוי."
 
-#: src/Admin/assets/js/components/UpgradePage.jsx:40
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:88
+#: src/Admin/assets/js/components/UpgradePage.jsx:42
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:93
 msgid "Upgrade to CartPops Pro"
 msgstr "שדרוג ל-CartPops Pro"
 
+#: src/Setup/MigrationWarningSummary.php:159
 #: src/Admin/assets/js/pages/AdvancedSettings.jsx:18
 #: src/Admin/assets/js/pages/AdvancedSettings.jsx:210
 #: src/Admin/assets/js/pages/RecommendationSettings.jsx:44
@@ -1348,6 +1307,7 @@ msgstr ""
 "בחר להציג קישור הפניה של CartPops בתחתית המגירה. הקישור יישאר מוסתר עד "
 "לשמירת קוד שותף תקין."
 
+#: src/Setup/MigrationWarningSummary.php:258
 #: src/Admin/assets/js/pages/AdvancedSettings.jsx:45
 msgid "Partner code"
 msgstr "קוד שותף"
@@ -1386,6 +1346,7 @@ msgstr "הייבוא נכשל."
 msgid "Invalid JSON file."
 msgstr "קובץ JSON לא תקין."
 
+#: src/Setup/MigrationWarningSummary.php:249
 #: src/Admin/assets/js/pages/AdvancedSettings.jsx:214
 msgid "Enable CartPops"
 msgstr "הפעל את CartPops"
@@ -1402,35 +1363,36 @@ msgstr "פתיחת מגירה בעת"
 msgid "Launcher click only"
 msgstr "לחיצה על המשגר בלבד"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:251
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:266
 msgid "WooCommerce Mini Cart"
 msgstr "WooCommerce Mini Cart"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:255
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:270
 msgid "Integration mode"
 msgstr "מצב אינטגרציה"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:256
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:271
 msgid "Controls how CartPops interacts with the WooCommerce Mini Cart block."
 msgstr "קובע כיצד CartPops פועל מול בלוק ה-WooCommerce Mini Cart."
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:267
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:282
 msgid "Replace — CartPops drawer replaces WC Mini Cart"
 msgstr "החלפה — מגירת CartPops מחליפה את ה-WC Mini Cart"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:274
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:289
 msgid "Standalone — Both operate independently"
 msgstr "עצמאי — שניהם פועלים באופן בלתי תלוי"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:289
+#: src/Setup/MigrationWarningSummary.php:219
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:304
 msgid "Custom CSS"
 msgstr "CSS מותאם אישית"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:293
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:308
 msgid "Additional CSS"
 msgstr "CSS נוסף"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:294
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:309
 msgid ""
 "Add custom CSS to style the cart drawer. Uses the .cpops- prefix for all "
 "CartPops elements."
@@ -1438,15 +1400,15 @@ msgstr ""
 "הוסף CSS מותאם אישית לעיצוב מגירת הסל. יש להשתמש בקידומת .cpops- לכל רכיבי "
 "CartPops."
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:309
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:324
 msgid "Performance"
 msgstr "ביצועים"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:320
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:335
 msgid "Import / Export"
 msgstr "ייבוא / ייצוא"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:324
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:339
 msgid ""
 "Export your CartPops settings to a JSON file for backup, or import settings "
 "from another site."
@@ -1454,42 +1416,42 @@ msgstr ""
 "ייצא את הגדרות ה-CartPops שלך לקובץ JSON לצורך גיבוי, או ייבא הגדרות מאתר "
 "אחר."
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:336
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:351
 msgid "Export Settings"
 msgstr "ייצוא הגדרות"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:343
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:358
 msgid "Import Settings"
 msgstr "ייבוא הגדרות"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:359
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:374
 msgid "Reset"
 msgstr "איפוס"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:371
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:386
 msgid "Reset all settings to defaults"
 msgstr "איפוס כל ההגדרות לברירות המחדל"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:376
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:391
 msgid "Are you sure? This will reset all CartPops settings to their default values."
 msgstr ""
 "האם ברצונך להמשיך? פעולה זו תאפס את כל הגדרות CartPops לערכי ברירת המחדל "
 "שלהן."
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:396
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:411
 msgid "Yes, reset everything"
 msgstr "כן, לאפס הכל"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:404
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:419
 #: src/Pro/Admin/assets/js/components/AnalyticsResetActions.jsx:68
 msgid "Cancel"
 msgstr "ביטול"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:414
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:429
 msgid "Settings update in progress…"
 msgstr "עדכון ההגדרות מתבצע…"
 
-#: src/Admin/assets/js/pages/AdvancedSettings.jsx:431
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:446
 msgid "Fine-tune CartPops behavior, styling, and integrations."
 msgstr "כוונון עדין של התנהגות CartPops, העיצוב והאינטגרציות."
 
@@ -1497,6 +1459,7 @@ msgstr "כוונון עדין של התנהגות CartPops, העיצוב והא�
 msgid "Cart Drawer"
 msgstr "מגירת עגלה"
 
+#: src/Setup/MigrationWarningSummary.php:152
 #: src/Admin/assets/js/pages/Dashboard.jsx:76
 #: src/Admin/assets/js/pages/Dashboard.jsx:170
 msgid "Cart Launcher"
@@ -1578,12 +1541,12 @@ msgid "Get help from our team"
 msgstr "קבלת עזרה מהצוות שלנו"
 
 #: src/Admin/assets/js/pages/DesignSettings.jsx:11
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:437
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:442
 msgid "Default"
 msgstr "ברירת מחדל"
 
 #: src/Admin/assets/js/pages/DesignSettings.jsx:23
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:445
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:450
 msgid "Minimal"
 msgstr "מינימלי"
 
@@ -1595,6 +1558,7 @@ msgstr "בולט"
 msgid "Ocean"
 msgstr "אוקיינוס"
 
+#: src/Setup/MigrationWarningSummary.php:161
 #: src/Admin/assets/js/pages/DesignSettings.jsx:61
 msgid "Primary"
 msgstr "ראשי"
@@ -1608,8 +1572,8 @@ msgstr "טקסט ראשי"
 #: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:491
 #: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:489
 #: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:730
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:514
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:652
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:526
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:664
 msgid "Background"
 msgstr "רקע"
 
@@ -1624,8 +1588,8 @@ msgstr "משטח"
 #: src/Pro/Admin/assets/js/pages/BundleBuilderSettings.jsx:498
 #: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:502
 #: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:742
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:524
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:665
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:536
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:677
 msgid "Text"
 msgstr "טקסט"
 
@@ -1735,6 +1699,7 @@ msgstr "סכנה"
 msgid "Presets"
 msgstr "ערכות מוגדרות מראש"
 
+#: src/Setup/MigrationWarningSummary.php:146
 #: src/Admin/assets/js/pages/DesignSettings.jsx:235
 #: src/Admin/assets/js/pages/IntegrationsSettings.jsx:328
 #: src/Pro/Admin/assets/js/pages/NotificationSettings.jsx:470
@@ -1790,7 +1755,7 @@ msgid "Always dark"
 msgstr "תמיד כהה"
 
 #: src/Admin/assets/js/pages/DrawerEditor.jsx:17
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:142
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:147
 msgid "Layout"
 msgstr "פריסה"
 
@@ -1799,7 +1764,7 @@ msgid "Design"
 msgstr "עיצוב"
 
 #: src/Admin/assets/js/pages/DrawerEditor.jsx:21
-#: src/Admin/assets/js/pages/DrawerEditor.jsx:55
+#: src/Admin/assets/js/pages/DrawerEditor.jsx:56
 msgid "Shipping meter"
 msgstr "מד משלוח"
 
@@ -1841,148 +1806,149 @@ msgstr ""
 "הוסף כפתור 'המשך בקניות', 'צפייה בסל' או פעולה מותאמת אישית מתחת למעבר "
 "לתשלום עם CartPops Pro."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:102
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:107
 msgid "Explore Pro actions"
 msgstr "למידע על פעולות Pro"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:111
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:116
 msgid "Animation"
 msgstr "אנימציה"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:115
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:120
 msgid "Animation Type"
 msgstr "סוג אנימציה"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:118
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:123
 msgid "Slide"
 msgstr "החלקה"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:119
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:124
 msgid "Fade"
 msgstr "עמעום"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:128
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:133
 msgid "Duration (ms)"
 msgstr "משך (במילישניות)"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:141
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:146
 #: src/Admin/assets/js/pages/IntegrationsSettings.jsx:284
 msgid "Behavior"
 msgstr "התנהגות"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:145
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:150
 msgid "Show undo after item removal"
 msgstr "הצגת ביטול לאחר הסרת פריט"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:153
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:158
 msgid "Show coupon code field"
 msgstr "הצגת שדה קוד קופון"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:154
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:159
 msgid "Allow customers to apply coupon codes from the cart drawer."
 msgstr "אפשר ללקוחות להחיל קודי קופון מתוך מגירת הסל."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:165
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:170
 msgid "Product name display"
 msgstr "תצוגת שם המוצר"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:166
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:171
 msgid "Choose how product names wrap inside drawer cart items."
 msgstr "בחר כיצד שמות המוצרים יישברו לשורות בפריטי מגירת הסל."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:175
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:180
 msgid "Two lines"
 msgstr "שתי שורות"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:179
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:184
 msgid "Single line"
 msgstr "שורה אחת"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:183
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:188
 msgid "Full name"
 msgstr "שם מלא"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:193
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:198
 msgid "Totals breakdown"
 msgstr "פירוט סכומים"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:194
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:199
 msgid "Where to show subtotal, discounts, shipping, fees, and tax lines."
 msgstr "היכן להציג את שורות סכום הביניים, ההנחות, המשלוח, העמלות והמיסים."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:201
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:206
 msgid "In footer (sticky)"
 msgstr "בחלק התחתון (קבוע)"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:205
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:210
 msgid "Above checkout (scrollable)"
 msgstr "מעל המעבר לתשלום (ניתן לגלילה)"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:212
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:217
 msgid "Hidden (total only)"
 msgstr "מוסתר (סה״כ בלבד)"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:222
+#: src/Setup/MigrationWarningSummary.php:248
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:227
 msgid "Show subtotal"
 msgstr "הצגת סכום ביניים"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:223
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:228
 msgid "Display the subtotal in the selected totals area."
 msgstr "הצג את סכום הביניים באזור הסיכומים שנבחר."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:234
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:239
 msgid "Show discounts"
 msgstr "הצגת הנחות"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:235
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:240
 msgid "Display the discount line when a coupon is applied."
 msgstr "הצג את שורת ההנחה כאשר קופון מוחל."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:246
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:251
 msgid "Show shipping"
 msgstr "הצגת משלוח"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:247
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:252
 msgid "Display the shipping line when shipping is calculated."
 msgstr "הצג את שורת המשלוח כאשר המשלוח מחושב."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:258
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:263
 msgid "Show taxes"
 msgstr "הצגת מיסים"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:259
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:264
 msgid "Display the applicable tax line or included-tax note."
 msgstr "הצג את שורת המס הרלוונטית או הערה לגבי מס כלול."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:270
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:275
 msgid "Show total"
 msgstr "הצגת סה״כ"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:271
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:276
 msgid "Display the grand total above the checkout button."
 msgstr "הצג את הסכום הכולל מעל כפתור המעבר לתשלום."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:282
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:287
 msgid "Checkout Button Text"
 msgstr "טקסט כפתור התשלום"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:283
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:288
 msgid "Leave empty to use the default \"Proceed to Checkout\"."
 msgstr "השאר ריק כדי להשתמש בברירת המחדל \\\"מעבר לתשלום\\\"."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:297
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:302
 msgid "Customer messages"
 msgstr "הודעות ללקוח"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:301
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:306
 msgid "Cart title"
 msgstr "כותרת הסל"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:311
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:316
 msgid "Added-to-cart announcement"
 msgstr "הודעת הוספה לסל"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:312
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:317
 msgid ""
 "Optional generic announcement. Enter complete plain text without a product "
 "placeholder, or leave blank to disable it."
@@ -1990,67 +1956,68 @@ msgstr ""
 "הודעה כללית אופציונלית. יש להזין טקסט רגיל מלא ללא ממלא מקום למוצר, או "
 "להשאיר ריק כדי להשבית."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:317
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:322
 msgid "Product successfully added to your cart."
 msgstr "המוצר נוסף בהצלחה לסל הקניות שלך."
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:327
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:332
 msgid "Coupon heading"
 msgstr "כותרת קופון"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:330
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:335
 msgid "No heading by default"
 msgstr "ללא כותרת כברירת מחדל"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:337
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:342
 msgid "Coupon input placeholder"
 msgstr "מציין מיקום בשדה הקופון"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:350
+#: src/Setup/MigrationWarningSummary.php:263
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:355
 msgid "Coupon button text"
 msgstr "טקסט כפתור קופון"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:362
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:367
 msgid "Totals and empty-cart text"
 msgstr "סיכומים וטקסט סל ריק"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:366
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:371
 msgid "Subtotal label"
 msgstr "תווית סכום ביניים"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:376
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:381
 msgid "Discount label"
 msgstr "תווית הנחה"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:386
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:391
 msgid "Total label"
 msgstr "תווית סך הכל"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:396
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:401
 msgid "Empty-cart title"
 msgstr "כותרת סל ריק"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:406
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:411
 msgid "Empty-cart subtitle"
 msgstr "כותרת משנה לסל ריק"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:409
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:414
 msgid "No subtitle by default"
 msgstr "ללא כותרת משנה כברירת מחדל"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:416
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:421
 msgid "Empty-cart button text"
 msgstr "טקסט כפתור סל ריק"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:428
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:433
 msgid "Quantity Selector"
 msgstr "בורר כמויות"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:432
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:437
 msgid "Style"
 msgstr "סגנון"
 
-#: src/Admin/assets/js/pages/DrawerSettings.jsx:441
+#: src/Admin/assets/js/pages/DrawerSettings.jsx:446
 msgid "Rounded"
 msgstr "מעוגל"
 
@@ -2166,6 +2133,7 @@ msgstr "רקע תגית מוטמעת"
 msgid "Inline Badge Text"
 msgstr "טקסט תגית מוטמעת"
 
+#: src/Setup/MigrationWarningSummary.php:156
 #: src/Admin/assets/js/pages/LauncherSettings.jsx:60
 msgid "Floating Cart Launcher"
 msgstr "כפתור סל צף"
@@ -2199,6 +2167,7 @@ msgstr "הצגת סה״כ בסל"
 msgid "Hide zero item count"
 msgstr "הסתרת מספר פריטים כאשר הוא 0"
 
+#: src/Setup/MigrationWarningSummary.php:235
 #: src/Admin/assets/js/pages/LauncherSettings.jsx:120
 msgid "Hide when cart is empty"
 msgstr "הסתרה כאשר הסל ריק"
@@ -2314,12 +2283,12 @@ msgid "How to select which products to recommend."
 msgstr "כיצד לבחור אילו מוצרים להמליץ."
 
 #: src/Admin/assets/js/pages/RecommendationSettings.jsx:64
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:116
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:121
 msgid "Cross-sells"
 msgstr "מכירות צולבות"
 
 #: src/Admin/assets/js/pages/RecommendationSettings.jsx:65
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:115
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:120
 msgid "Upsells"
 msgstr "שדרוגי מוצרים"
 
@@ -2335,44 +2304,44 @@ msgstr ""
 "בחירת מוצרים ספציפיים להמלצה עם CartPops Pro. מכירות צולבות ושדרוגי מוצרים "
 "נשארים זמינים בגרסה החינמית."
 
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:107
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:112
 msgid "Fallback Strategy"
 msgstr "אסטרטגיה חלופית"
 
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:108
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:113
 msgid "Used when the primary strategy returns no results."
 msgstr "משמש כאשר האסטרטגיה הראשית אינה מחזירה תוצאות."
 
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:114
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:119
 msgid "Random products"
 msgstr "מוצרים אקראיים"
 
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:125
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:130
 msgid "Number of products"
 msgstr "מספר מוצרים"
 
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:138
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:436
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:143
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:448
 msgid "Display"
 msgstr "תצוגה"
 
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:146
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:151
 msgid "Horizontal Scroll"
 msgstr "גלילה אופקית"
 
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:149
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:154
 msgid "Grid"
 msgstr "רשת"
 
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:150
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:155
 msgid "List"
 msgstr "רשימה"
 
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:158
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:163
 msgid "Heading"
 msgstr "כותרת"
 
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:174
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:179
 msgid ""
 "Recommendation add buttons use the accessible icon presentation. Text and "
 "text-with-icon buttons are available with CartPops Pro."
@@ -2380,7 +2349,7 @@ msgstr ""
 "כפתורי ההוספה של ההמלצות משתמשים בתצוגת אייקון נגישה. כפתורי טקסט וכפתורי "
 "טקסט עם אייקון זמינים ב-CartPops Pro."
 
-#: src/Admin/assets/js/pages/RecommendationSettings.jsx:181
+#: src/Admin/assets/js/pages/RecommendationSettings.jsx:191
 msgid "Explore Pro button styles"
 msgstr "הכר את סגנונות הכפתורים ב-Pro"
 
@@ -2664,12 +2633,12 @@ msgid "Conditional"
 msgstr "מותנה"
 
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:598
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:388
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:400
 msgid "You have qualified for free shipping!"
 msgstr "קיבלת משלוח חינם!"
 
 #: src/Pro/Admin/assets/js/components/DrawerPreviewEnhancements.jsx:601
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:373
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:385
 msgid "Add {{amount}} more for free shipping"
 msgstr "הוסיפו עוד {{amount}} לקבלת משלוח חינם"
 
@@ -3162,7 +3131,6 @@ msgid "Tier"
 msgstr "מדרגה"
 
 #: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:136
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:336
 msgid "Threshold"
 msgstr "סף"
 
@@ -3187,7 +3155,7 @@ msgstr ""
 "הווריאציה המדויק שלה."
 
 #: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:200
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:352
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:364
 msgid "Show Celebration"
 msgstr "הצגת חגיגה"
 
@@ -3196,7 +3164,7 @@ msgid "Display confetti animation when this tier is reached."
 msgstr "הצגת אנימציית קונפטי כאשר מגיעים למדרגה זו."
 
 #: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:212
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:367
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:379
 msgid "Progress Message"
 msgstr "הודעת התקדמות"
 
@@ -3205,7 +3173,7 @@ msgid "Use {{amount}} and {{reward}} as placeholders."
 msgstr "ניתן להשתמש ב-{{amount}} וב-{{reward}} כמצייני מיקום."
 
 #: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:224
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:386
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:398
 msgid "Qualified Message"
 msgstr "הודעת זכאות"
 
@@ -3233,98 +3201,88 @@ msgstr "מדרגות הטבה"
 msgid "Tier 1"
 msgstr "מדרגה 1"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:325
-msgid "auto"
-msgstr "אוטומטי"
-
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:337
-msgid ""
-"Free shipping threshold. Set to 0 to auto-detect from WooCommerce shipping "
-"zones."
-msgstr "סף למשלוח חינם. יש להגדיר 0 לזיהוי אוטומטי מאזורי המשלוח של WooCommerce."
-
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:353
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:365
 msgid "Display confetti animation when free shipping is reached."
 msgstr "הצגת אנימציית קונפטי בעת הגעה למשלוח חינם."
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:368
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:380
 msgid "Use {{amount}} as a placeholder for the remaining amount."
 msgstr "יש להשתמש ב-{{amount}} כמציין מיקום עבור הסכום שנותר."
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:428
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:440
 msgid "+ Add Tier"
 msgstr "+ הוספת מדרגה"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:440
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:452
 msgid "Show in drawer"
 msgstr "הצגה במגירה"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:448
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:460
 msgid "Enable shipping calculator"
 msgstr "הפעלת מחשבון משלוח"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:449
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:461
 msgid ""
 "Let customers calculate shipping and choose an available rate from the cart "
 "drawer."
 msgstr "מאפשר ללקוחות לחשב עלות משלוח ולבחור תעריף זמין מתוך מגירת עגלת הקניות."
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:460
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:472
 msgid "Show icon"
 msgstr "הצגת סמל"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:461
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:473
 msgid "Display truck/checkmark icon before the message."
 msgstr "הצגת סמל משאית/סימון וי לפני ההודעה."
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:473
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:485
 msgid "Show truck indicator"
 msgstr "הצגת מחוון משאית"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:474
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:486
 msgid ""
 "Display the moving truck on the progress bar. Hidden when reward tiers are "
 "active."
 msgstr "הצגת המשאית הנעה על סרגל ההתקדמות. מוסתר כאשר מדרגות תגמול פעילות."
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:489
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:501
 msgid "Progress Colors"
 msgstr "צבעי התקדמות"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:494
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:626
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:506
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:638
 msgid "Bar Start"
 msgstr "תחילת הסרגל"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:504
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:639
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:516
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:651
 msgid "Bar End"
 msgstr "סוף הסרגל"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:534
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:678
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:546
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:690
 msgid "Icon Background"
 msgstr "רקע הסמל"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:559
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:706
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:571
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:718
 msgid "Truck Background"
 msgstr "רקע המשאית"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:572
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:719
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:584
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:731
 msgid "Truck Icon"
 msgstr "סמל משאית"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:589
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:601
 msgid "Tier Reached"
 msgstr "הגעה למדרגה"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:602
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:614
 msgid "Tier Icon"
 msgstr "סמל מדרגה"
 
-#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:621
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:633
 msgid "Qualified Colors"
 msgstr "צבעי זכאות"
 
@@ -3425,6 +3383,668 @@ msgid ""
 msgstr ""
 "המראה באתר, הסמלים, המשאית, המדרגות והחגיגה משתמשים בהגדרות מד המשלוח של "
 "CartPops Pro."
+
+#: src/Blocks/CartDrawer/render.php:316
+#: src/Cart/CartStateBuilder.php:525
+#: src/Admin/assets/js/components/DrawerPreview.jsx:740
+#. translators: %s: price of a single unit, shown under a cart line's total.
+#, php-format,js-format
+msgid "%s each"
+msgstr "%s כל אחד"
+
+#: src/Blocks/CartDrawer/render.php:711
+msgid "Have a coupon?"
+msgstr "יש לך קופון?"
+
+#: src/Plugin.php:848
+msgid "CartPops is finishing its update. Reload this page in a moment."
+msgstr "CartPops מסיים את העדכון שלו. טען מחדש את הדף בעוד רגע."
+
+#: src/Plugin.php:851
+#. translators: %s: value-free CartPops diagnostic code.
+#, php-format
+msgid ""
+"CartPops is paused, so the cart drawer is not showing on your store. Your "
+"settings are safe. Code: %s."
+msgstr ""
+"CartPops מושהה, ולכן מגירת העגלה לא מוצגת בחנות שלך. ההגדרות שלך בטוחות. "
+"קוד: %s."
+
+#: src/Setup/MigrationWarningSummary.php:78
+msgid "Colors → Cart launcher: menu launcher colors"
+msgstr "צבעים → משגר העגלה: צבעי משגר התפריט"
+
+#: src/Setup/MigrationWarningSummary.php:145
+msgid "Settings"
+msgstr "הגדרות"
+
+#: src/Setup/MigrationWarningSummary.php:149
+msgid "Texts (older versions)"
+msgstr "טקסטים (גרסאות ישנות יותר)"
+
+#: src/Setup/MigrationWarningSummary.php:150
+msgid "Primary (older versions)"
+msgstr "ראשי (גרסאות ישנות יותר)"
+
+#: src/Setup/MigrationWarningSummary.php:151
+msgid "Buttons"
+msgstr "כפתורים"
+
+#: src/Setup/MigrationWarningSummary.php:153
+msgid "Cart launcher"
+msgstr "משגר העגלה"
+
+#: src/Setup/MigrationWarningSummary.php:154
+msgid "Custom code"
+msgstr "קוד מותאם אישית"
+
+#: src/Setup/MigrationWarningSummary.php:157
+msgid "Free Shipping Meter"
+msgstr "מד משלוח חינם"
+
+#: src/Setup/MigrationWarningSummary.php:158
+msgid "Free Shipping Meter settings"
+msgstr "הגדרות מד משלוח חינם"
+
+#: src/Setup/MigrationWarningSummary.php:160
+msgid "Miscellaneous & Experimental"
+msgstr "שונות וניסיוני"
+
+#: src/Setup/MigrationWarningSummary.php:162
+msgid "Product Recommendation Engine"
+msgstr "מנוע המלצות מוצרים"
+
+#: src/Setup/MigrationWarningSummary.php:175
+msgid "Select an add to cart trigger"
+msgstr "בחר טריגר הוספה לעגלה"
+
+#: src/Setup/MigrationWarningSummary.php:176
+msgid "Animation type"
+msgstr "סוג אנימציה"
+
+#: src/Setup/MigrationWarningSummary.php:177
+msgid "Rounded corners"
+msgstr "פינות מעוגלות"
+
+#: src/Setup/MigrationWarningSummary.php:178
+msgid "Checkout button text"
+msgstr "טקסט כפתור התשלום"
+
+#: src/Setup/MigrationWarningSummary.php:179
+msgid "Accent color (older versions)"
+msgstr "צבע הדגשה (גרסאות ישנות יותר)"
+
+#: src/Setup/MigrationWarningSummary.php:180
+msgid "Primary background color"
+msgstr "צבע רקע ראשי"
+
+#: src/Setup/MigrationWarningSummary.php:181
+msgid "Secondary background color"
+msgstr "צבע רקע משני"
+
+#: src/Setup/MigrationWarningSummary.php:182
+msgid "Accent color"
+msgstr "צבע הדגשה"
+
+#: src/Setup/MigrationWarningSummary.php:183
+msgid "Primary button background color"
+msgstr "צבע רקע כפתור ראשי"
+
+#: src/Setup/MigrationWarningSummary.php:184
+msgid "Primary button text color"
+msgstr "צבע טקסט כפתור ראשי"
+
+#: src/Setup/MigrationWarningSummary.php:185
+msgid "Quantity selector button background"
+msgstr "רקע כפתור בחירת כמות"
+
+#: src/Setup/MigrationWarningSummary.php:186
+msgid "Quantity selector button text color"
+msgstr "צבע טקסט כפתור בחירת כמות"
+
+#: src/Setup/MigrationWarningSummary.php:187
+msgid "Secondary button background"
+msgstr "רקע כפתור משני"
+
+#: src/Setup/MigrationWarningSummary.php:188
+msgid "Secondary button text color"
+msgstr "צבע טקסט כפתור משני"
+
+#: src/Setup/MigrationWarningSummary.php:189
+msgid "Cart Launcher background color"
+msgstr "צבע רקע משגר העגלה"
+
+#: src/Setup/MigrationWarningSummary.php:190
+msgid "Cart Launcher bubble background"
+msgstr "רקע בועה של משגר העגלה"
+
+#: src/Setup/MigrationWarningSummary.php:191
+msgid "Cart Launcher bubble text"
+msgstr "טקסט בועה של משגר העגלה"
+
+#: src/Setup/MigrationWarningSummary.php:192
+msgid "Cart Launcher text color"
+msgstr "צבע טקסט משגר העגלה"
+
+#: src/Setup/MigrationWarningSummary.php:193
+msgid "Floating Cart Launcher background color"
+msgstr "צבע רקע משגר עגלה צף"
+
+#: src/Setup/MigrationWarningSummary.php:194
+msgid "Floating Cart Launcher icon color"
+msgstr "צבע אייקון משגר עגלה צף"
+
+#: src/Setup/MigrationWarningSummary.php:195
+msgid "Floating Cart Launcher indicator background"
+msgstr "רקע אינדיקטור משגר עגלה צף"
+
+#: src/Setup/MigrationWarningSummary.php:196
+msgid "Floating Cart Launcher indicator text"
+msgstr "טקסט אינדיקטור משגר עגלה צף"
+
+#: src/Setup/MigrationWarningSummary.php:197
+msgid "Free Shipping Meter background color"
+msgstr "צבע רקע מד משלוח חינם"
+
+#: src/Setup/MigrationWarningSummary.php:198
+msgid "Free Shipping Meter active background color"
+msgstr "צבע רקע פעיל של מד משלוח חינם"
+
+#: src/Setup/MigrationWarningSummary.php:199
+msgid "Input field background color"
+msgstr "צבע רקע שדה קלט"
+
+#: src/Setup/MigrationWarningSummary.php:200
+msgid "Quantity selector input background"
+msgstr "רקע בחירת כמות"
+
+#: src/Setup/MigrationWarningSummary.php:201
+msgid "Quantity selector input border"
+msgstr "גבול בחירת כמות"
+
+#: src/Setup/MigrationWarningSummary.php:202
+msgid "Quantity selector input text color"
+msgstr "צבע טקסט בחירת כמות"
+
+#: src/Setup/MigrationWarningSummary.php:203
+msgid "Input field text color"
+msgstr "צבע טקסט שדה קלט"
+
+#: src/Setup/MigrationWarningSummary.php:204
+msgid "Overlay color"
+msgstr "צבע שכבת כיסוי"
+
+#: src/Setup/MigrationWarningSummary.php:205
+msgid "Recommendations button background color"
+msgstr "צבע רקע כפתור המלצות"
+
+#: src/Setup/MigrationWarningSummary.php:206
+msgid "Recommendations button text color"
+msgstr "צבע טקסט כפתור המלצות"
+
+#: src/Setup/MigrationWarningSummary.php:207
+msgid "Drawer Recommendations background color"
+msgstr "צבע רקע המלצות במגירה"
+
+#: src/Setup/MigrationWarningSummary.php:208
+msgid "Drawer Recommendations border color"
+msgstr "צבע גבול המלצות במגירה"
+
+#: src/Setup/MigrationWarningSummary.php:209
+msgid "Drawer Recommendations text color"
+msgstr "צבע טקסט המלצות במגירה"
+
+#: src/Setup/MigrationWarningSummary.php:210
+msgid "Popup Recommendations background color"
+msgstr "צבע רקע המלצות בחלון קופץ"
+
+#: src/Setup/MigrationWarningSummary.php:211
+msgid "Popup Recommendations text color"
+msgstr "צבע טקסט המלצות בחלון קופץ"
+
+#: src/Setup/MigrationWarningSummary.php:212
+msgid "Danger color"
+msgstr "צבע סכנה"
+
+#: src/Setup/MigrationWarningSummary.php:213
+msgid "Success color"
+msgstr "צבע הצלחה"
+
+#: src/Setup/MigrationWarningSummary.php:214
+msgid "Warning color"
+msgstr "צבע אזהרה"
+
+#: src/Setup/MigrationWarningSummary.php:215
+msgid "Primary text color"
+msgstr "צבע טקסט ראשי"
+
+#: src/Setup/MigrationWarningSummary.php:216
+msgid "Secondary text color"
+msgstr "צבע טקסט משני"
+
+#: src/Setup/MigrationWarningSummary.php:217
+msgid "Tertiary text color"
+msgstr "צבע טקסט שלישוני"
+
+#: src/Setup/MigrationWarningSummary.php:218
+msgid "Enable coupon form"
+msgstr "הפעל טופס קופון"
+
+#: src/Setup/MigrationWarningSummary.php:220
+msgid "Custom JS"
+msgstr "JavaScript מותאם"
+
+#: src/Setup/MigrationWarningSummary.php:221
+msgid "Animation speed"
+msgstr "מהירות אנימציה"
+
+#: src/Setup/MigrationWarningSummary.php:222
+msgid "Truncate long text"
+msgstr "קצץ טקסט ארוך"
+
+#: src/Setup/MigrationWarningSummary.php:223
+msgid "Drawer width desktop (In pixels)"
+msgstr "רוחב מגירה בשולחן עבודה (בפיקסלים)"
+
+#: src/Setup/MigrationWarningSummary.php:224
+msgid "Drawer width mobile (In percentage)"
+msgstr "רוחב מגירה בנייד (באחוזים)"
+
+#: src/Setup/MigrationWarningSummary.php:225
+msgid "Show discount line item"
+msgstr "הצג פריט הנחה"
+
+#: src/Setup/MigrationWarningSummary.php:226
+msgid "Show shipping line item"
+msgstr "הצג פריט משלוח"
+
+#: src/Setup/MigrationWarningSummary.php:227
+msgid "Show shipping calculator"
+msgstr "הצג מחשבון משלוח"
+
+#: src/Setup/MigrationWarningSummary.php:228
+msgid "Show subtotal line item"
+msgstr "הצג פריט סכום ביניים"
+
+#: src/Setup/MigrationWarningSummary.php:229
+msgid "Show tax line item"
+msgstr "הצג פריט מס"
+
+#: src/Setup/MigrationWarningSummary.php:230
+msgid "Show total line item"
+msgstr "הצג פריט סה\"כ"
+
+#: src/Setup/MigrationWarningSummary.php:231
+msgid "Secondary button"
+msgstr "כפתור משני"
+
+#: src/Setup/MigrationWarningSummary.php:232
+msgid "Secondary button custom text"
+msgstr "טקסט מותאם לכפתור משני"
+
+#: src/Setup/MigrationWarningSummary.php:233
+msgid "Secondary button custom URL"
+msgstr "כתובת URL מותאמת לכפתור משני"
+
+#: src/Setup/MigrationWarningSummary.php:234
+msgid "Enable Floating Cart Launcher"
+msgstr "הפעל משגר עגלה צף"
+
+#: src/Setup/MigrationWarningSummary.php:236
+msgid "Floating launcher: hide indicator when cart is empty"
+msgstr "משגר צף: הסתר אינדיקטור כשהעגלה ריקה"
+
+#: src/Setup/MigrationWarningSummary.php:237
+msgid "Hide on certain pages"
+msgstr "הסתר בעמודים מסוימים"
+
+#: src/Setup/MigrationWarningSummary.php:238
+msgid "Select a position"
+msgstr "בחר מיקום"
+
+#: src/Setup/MigrationWarningSummary.php:239
+msgid "Force refresh on page load?"
+msgstr "רענן בכוח בטעינת עמוד?"
+
+#: src/Setup/MigrationWarningSummary.php:240
+msgid "Free shipping amount"
+msgstr "סכום משלוח חינם"
+
+#: src/Setup/MigrationWarningSummary.php:241
+msgid "Enable Free Shipping Meter"
+msgstr "הפעל מד משלוח חינם"
+
+#: src/Setup/MigrationWarningSummary.php:242
+msgid "Free Shipping Meter achieved text"
+msgstr "טקסט הישג מטר משלוח חינם"
+
+#: src/Setup/MigrationWarningSummary.php:243
+msgid "Free Shipping Meter Text"
+msgstr "טקסט מטר משלוח חינם"
+
+#: src/Setup/MigrationWarningSummary.php:244
+msgid "Free Shipping Meter type"
+msgstr "סוג מטר משלוח חינם"
+
+#: src/Setup/MigrationWarningSummary.php:245
+msgid "Menu Cart Launcher icon"
+msgstr "אייקון משגר עגלה בתפריט"
+
+#: src/Setup/MigrationWarningSummary.php:246
+msgid "Menu Cart Launcher Indicator"
+msgstr "אינדיקטור משגר עגלה בתפריט"
+
+#: src/Setup/MigrationWarningSummary.php:247
+msgid "Menu launcher: hide indicator when cart is empty"
+msgstr "הסתר אינדיקטור כאשר העגלה ריקה"
+
+#: src/Setup/MigrationWarningSummary.php:250
+msgid "Button text"
+msgstr "טקסט כפתור"
+
+#: src/Setup/MigrationWarningSummary.php:251
+msgid "Button type"
+msgstr "סוג כפתור"
+
+#: src/Setup/MigrationWarningSummary.php:252
+msgid "Select custom products"
+msgstr "בחר מוצרים מותאמים אישית"
+
+#: src/Setup/MigrationWarningSummary.php:253
+msgid "Enable Product Recommendation Engine"
+msgstr "הפעל מנוע המלצות מוצרים"
+
+#: src/Setup/MigrationWarningSummary.php:254
+msgid "Select a fallback"
+msgstr "בחר חלופה"
+
+#: src/Setup/MigrationWarningSummary.php:255
+msgid "Recommendations title"
+msgstr "כותרת המלצות"
+
+#: src/Setup/MigrationWarningSummary.php:256
+msgid "Select a Recommendation type"
+msgstr "בחר סוג המלצה"
+
+#: src/Setup/MigrationWarningSummary.php:257
+msgid "Display Powered by CartPops"
+msgstr "הצג Powered by CartPops"
+
+#: src/Setup/MigrationWarningSummary.php:259
+msgid "Drawer cart title"
+msgstr "כותרת עגלת המגירה"
+
+#: src/Setup/MigrationWarningSummary.php:260
+msgid "Generic added to cart message"
+msgstr "הודעת הוספה לעגלה כללית"
+
+#: src/Setup/MigrationWarningSummary.php:261
+msgid "Coupon title"
+msgstr "כותרת קופון"
+
+#: src/Setup/MigrationWarningSummary.php:262
+msgid "Coupon input field placeholder text"
+msgstr "טקסט ממלא מקום בשדה קלט קופון"
+
+#: src/Setup/MigrationWarningSummary.php:264
+msgid "Line item: Subtotal"
+msgstr "פריט שורה: סכום ביניים"
+
+#: src/Setup/MigrationWarningSummary.php:265
+msgid "Line item: Discount"
+msgstr "פריט שורה: הנחה"
+
+#: src/Setup/MigrationWarningSummary.php:266
+msgid "Line item: Total"
+msgstr "פריט שורה: סה\"כ"
+
+#: src/Setup/MigrationWarningSummary.php:267
+msgid "Empty checkout button"
+msgstr "כפתור קופה ריקה"
+
+#: src/Setup/MigrationWarningSummary.php:268
+msgid "Drawer empty state title"
+msgstr "כותרת מצב ריק של מגירה"
+
+#: src/Setup/MigrationWarningSummary.php:269
+msgid "Drawer empty state subtitle"
+msgstr "כותרת משנית של מצב ריק של מגירה"
+
+#: src/Setup/MigrationWarningSummary.php:270
+msgid "Enable chat support"
+msgstr "הפעל תמיכת צ'אט"
+
+#: src/Setup/MigrationWarningSummary.php:271
+msgid "Close icon color"
+msgstr "צבע אייקון סגירה"
+
+#: src/Setup/MigrationWarningSummary.php:272
+msgid "Remove icon color"
+msgstr "צבע אייקון הסרה"
+
+#: src/Setup/MigrationWarningSummary.php:273
+msgid "Slider bullet color"
+msgstr "צבע כדור סליידר"
+
+#: src/Setup/MigrationWarningSummary.php:274
+msgid "Slider active bullet color"
+msgstr "צבע כדור סליידר פעיל"
+
+#: src/Setup/Upgrader.php:1750
+msgid ""
+"CartPops could not finish updating your settings from version 1, so it is "
+"paused. Your settings are safe. Reload this page to try again, and contact "
+"CartPops support if this message stays."
+msgstr ""
+"CartPops לא הצליח לסיים עדכון ההגדרות שלך מגרסה 1, לכן הוא מושהה. ההגדרות "
+"שלך בטוחות. טען מחדש את הדף כדי לנסות שוב, וצור קשר עם תמיכת CartPops אם "
+"ההודעה הזו נשארת."
+
+#: src/Setup/Upgrader.php:1760
+msgid ""
+"Your automation rules from CartPops 1 are kept, but CartPops 2 no longer "
+"runs them."
+msgstr "כללי האוטומציה שלך מ-CartPops 1 נשמרים, אך CartPops 2 כבר לא מריץ אותם."
+
+#: src/Setup/Upgrader.php:1783
+msgid ""
+"CartPops updated your settings from version 1, but some could not be "
+"carried over exactly. Your original settings are kept."
+msgstr ""
+"CartPops עדכן את ההגדרות שלך מגרסה 1, אך חלקן לא יכלו להיות מועברות בדיוק. "
+"ההגדרות המקוריות שלך נשמרות."
+
+#: src/Setup/Upgrader.php:1787
+msgid "Hide this notice"
+msgstr "הסתר הודעה זו"
+
+#: src/Setup/Upgrader.php:1797
+msgid "This review requires a site administrator and a submitted review form."
+msgstr "בדיקה זו דורשת מנהל אתר וטופס בדיקה שהוגש."
+
+#: src/Setup/Upgrader.php:1814
+msgid ""
+"The review was not accepted. Return to this site dashboard and review the "
+"current notice again."
+msgstr "הבדיקה לא התקבלה. חזור לדשבורד האתר הזה וסקור את ההודעה הנוכחית שוב."
+
+#: src/Setup/Upgrader.php:1819
+msgid ""
+"The saved migration state could not be acknowledged. No review was "
+"accepted; return to this site dashboard and try again."
+msgstr ""
+"לא ניתן היה להכיר במצב ההגירה השמור. לא התקבלה בדיקה; חזור לדשבורד האתר הזה "
+"ונסה שוב."
+
+#: src/Setup/Upgrader.php:1827
+msgid ""
+"JavaScript retirement review accepted. Return to this site dashboard to "
+"retry migration and review any remaining conditions. The original script is "
+"preserved and will not execute in V2."
+msgstr ""
+"בדיקת פרישת JavaScript התקבלה. חזור לדשבורד האתר כדי לנסות שוב הגירה וסקור "
+"כל תנאים נותרים. הסקריפט המקורי נשמר ולא יבוצע ב-V2."
+
+#: src/Setup/Upgrader.php:1871
+msgid "This link has expired. Return to the dashboard and try again."
+msgstr "קישור זה פג תוקף. חזור לדשבורד ונסה שוב."
+
+#: src/Setup/Upgrader.php:1887
+msgid ""
+"CartPops is paused until you review your old custom JavaScript below. Your "
+"settings are safe."
+msgstr ""
+"CartPops מושהה עד שתסקור את ה-JavaScript המותאם אישית הישן שלך להלן. "
+"ההגדרות שלך בטוחות."
+
+#: src/Setup/Upgrader.php:1888
+msgid ""
+"CartPops is paused until a site administrator reviews the old custom "
+"JavaScript. Your settings are safe."
+msgstr ""
+"CartPops מושהה עד שמנהל אתר סוקר את ה-JavaScript המותאם אישית הישן. ההגדרות "
+"שלך בטוחות."
+
+#: src/Setup/Upgrader.php:1890
+msgid ""
+"CartPops is paused until its update can finish. Your settings are safe. If "
+"you use CartPops Pro, check that your license is active for this site; "
+"otherwise, contact CartPops support."
+msgstr ""
+"CartPops מושהה עד שהעדכון יסתיים. ההגדרות שלך בטוחות. אם אתה משתמש "
+"ב-CartPops Pro, בדוק שהרישיון שלך פעיל לאתר זה; אחרת, צור קשר עם תמיכת "
+"CartPops."
+
+#: src/Setup/Upgrader.php:1900
+msgid "Learn more"
+msgstr "למידע נוסף"
+
+#: src/Setup/Upgrader.php:1910
+msgid ""
+"These settings had a value CartPops 2 could not read, so they now use their "
+"default. Check them in the CartPops settings:"
+msgstr ""
+"להגדרות אלה הייתה ערך ש-CartPops 2 לא יכול היה לקרוא, כך שהן משתמשות כעת "
+"בברירת המחדל שלהן. בדוק אותן בהגדרות CartPops:"
+
+#: src/Setup/Upgrader.php:1911
+msgid "These settings no longer exist in CartPops 2:"
+msgstr "הגדרות אלה כבר לא קיימות ב-CartPops 2:"
+
+#: src/Setup/Upgrader.php:1912
+msgid "These settings now work a little differently:"
+msgstr "הגדרות אלה עובדות קצת אחרת כעת:"
+
+#: src/Setup/Upgrader.php:1926
+msgid "Your custom JavaScript from version 1 is kept but not run."
+msgstr "ה-JavaScript המותאם אישית שלך מגרסה 1 נשמר אך לא פועל."
+
+#: src/Setup/Upgrader.php:1929
+msgid "Some Pro settings from version 1 are kept in your database but not used."
+msgstr "כמה הגדרות Pro מגרסה 1 נשמרות במסד הנתונים שלך אך לא בשימוש."
+
+#: src/Setup/Upgrader.php:1935
+#. translators: %d: number of other settings.
+#, php-format
+msgid "%d other setting could not be carried over."
+msgid_plural "%d other settings could not be carried over."
+msgstr[0] "%d הגדרה נוספת לא יכלה להיות מועברת."
+msgstr[1] "%d הגדרות נוספות לא יכלו להיות מועברות."
+
+#: src/Setup/Upgrader.php:1944
+msgid "See which settings"
+msgstr "ראה אילו הגדרות"
+
+#: src/Setup/Upgrader.php:1962
+msgid "Show your saved custom JavaScript"
+msgstr "הצג את ה-JavaScript המותאם אישית שלך שנשמר"
+
+#: src/Setup/Upgrader.php:1963
+msgid ""
+"Copy it somewhere safe if you want to move it into your theme or a snippets "
+"plugin."
+msgstr "העתק אותו למקום בטוח אם אתה רוצה להעביר אותו לתיקייה או לתוסף snippets."
+
+#: src/Setup/Upgrader.php:1966
+msgid "Only the beginning is shown. The full copy remains saved in your database."
+msgstr "רק ההתחלה מוצגת. ההעתק המלא נשאר שמור במסד הנתונים שלך."
+
+#: src/Setup/Upgrader.php:1984
+msgid "Review your old custom JavaScript"
+msgstr "בדוק את ה-JavaScript המותאם אישית הישן שלך"
+
+#: src/Setup/Upgrader.php:1985
+msgid ""
+"CartPops 2 does not run the custom JavaScript from version 1. It stays "
+"saved in your database. Copy it if you still need it, then confirm below to "
+"finish the update."
+msgstr ""
+"CartPops 2 לא מפעיל את ה-JavaScript המותאם אישית מגרסה 1. הוא נשאר שמור "
+"במסד הנתונים שלך. העתק אותו אם אתה עדיין זקוק לו, ואז אשר למטה כדי לסיים את "
+"העדכון."
+
+#: src/Setup/Upgrader.php:2001
+msgid "I understand this custom JavaScript will not run in CartPops 2."
+msgstr "אני מבין שה-JavaScript המותאם אישית זה לא יפעל ב-CartPops 2."
+
+#: src/Setup/Upgrader.php:2003
+msgid "Confirm and finish the update"
+msgstr "אשר וסיים את העדכון"
+
+#: src/Setup/Upgrader.php:2022
+msgid "Open this site dashboard to review its migration"
+msgstr "פתח את לוח הבקרה של האתר הזה כדי לבדוק את ההעברה שלו"
+
+#: src/Setup/Upgrader.php:2034
+msgid "Return to this site dashboard"
+msgstr "חזור ללוח הבקרה של האתר הזה"
+
+#: src/Setup/Upgrader.php:2035
+msgid "CartPops migration review"
+msgstr "סקירת העברת CartPops"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:244
+msgid "Add to cart on product pages without reloading"
+msgstr "הוסף לעגלה בדפי מוצר ללא טעינה מחדש"
+
+#: src/Admin/assets/js/pages/AdvancedSettings.jsx:248
+msgid ""
+"Adds the product in the background so shoppers stay on the page. The drawer "
+"then opens if “Open drawer on” is set to Add to cart. Turn this off if your "
+"theme or another plugin already handles product-page add to cart."
+msgstr ""
+"מוסיף את המוצר ברקע כך שקונים נשארים בעמוד. המגירה תיפתח אז אם \"פתח מגירה "
+"ב\" מוגדר להוסף לעגלה. כבה זאת אם התיקייה או תוסף אחר שלך כבר מטפלים בהוספה "
+"לעגלה בדף מוצר."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:325
+msgid "WooCommerce minimum"
+msgstr "מינימום WooCommerce"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:337
+msgid ""
+"Free shipping comes from WooCommerce, not from this meter. Add a Free "
+"shipping method with a minimum order amount to your shipping zones in "
+"WooCommerce → Settings → Shipping. The meter only shows when the shopper’s "
+"zone has one."
+msgstr ""
+"משלוח חינם מגיע מ-WooCommerce, לא מהמד הזה. הוסף שיטת משלוח חינם עם סכום "
+"הזמנה מינימלי לאזורי המשלוח שלך ב-WooCommerce → הגדרות → משלוח. המד מוצג רק "
+"כאשר לאזור של הקונה יש אחד."
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:345
+msgid "Higher free shipping goal (optional)"
+msgstr "מטרת משלוח חינם גבוה יותר (אופציונלי)"
+
+#: src/Pro/Admin/assets/js/pages/ShippingMeterSettings.jsx:349
+msgid ""
+"Leave at 0 to use the minimum order amount from WooCommerce. A higher "
+"amount only raises the goal shown in the meter. It does not give free "
+"shipping by itself, and amounts below the WooCommerce minimum are ignored."
+msgstr ""
+"השאר ב-0 כדי להשתמש בסכום ההזמנה המינימלי מ-WooCommerce. סכום גבוה יותר רק "
+"מעלה את המטרה המוצגת במד. זה לא נותן משלוח חינם בעצמו, וסכומים מתחת "
+"למינימום WooCommerce מתעלמים."
 
 #: src/Blocks/CartDrawer/block.json
 msgctxt "block title"

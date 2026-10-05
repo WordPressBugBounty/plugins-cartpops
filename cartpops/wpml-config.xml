@@ -1,28 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <wpml-config>
-  <admin-texts>
-    <key name="cartpops_settings">
-      <key name="drawer">
-        <key name="checkout_button_text" />
-      </key>
-      <key name="shipping_meter">
-        <key name="message_remaining" />
-        <key name="message_qualified" />
-      </key>
-      <key name="recommendations">
-        <key name="heading" />
-      </key>
-      <key name="smart_addons">
-        <key name="addons">
-          <key name="shipping_protection">
-            <key name="label" />
-            <key name="description" />
-          </key>
-        </key>
-      </key>
-      <key name="bundle_builder">
-        <key name="heading" />
-      </key>
-    </key>
-  </admin-texts>
+    <admin-texts>
+        <!--
+            Free Shipping Meter Text Options
+            These settings allow users to customize the free shipping meter text
+            that appears in the CartPops drawer and popups.
+        -->
+        <key name="cartpops_free_shipping_meter_text_base"/>
+        <key name="cartpops_free_shipping_meter_text_achieved"/>
+    </admin-texts>
 </wpml-config>

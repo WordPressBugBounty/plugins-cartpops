@@ -73,6 +73,7 @@
 						'forum'              => 'Support Forum',
 						'email'              => 'Priority Email Support',
 						'phone'              => 'Phone Support',
+						'skype'              => 'Skype Support',
 						'is_success_manager' => 'Personal Success Manager',
 					);
 

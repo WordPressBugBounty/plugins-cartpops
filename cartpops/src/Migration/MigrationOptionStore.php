@@ -140,14 +140,15 @@ final class MigrationOptionStore {
 		 *
 		 * @var \wpdb $wpdb
 		 */
-		$rows = $this->context->guard(
-			static function () use ( $wpdb, $table, $option, $max_bytes ): mixed {
+		$length = MigrationDatabaseState::received_octet_length_sql( $wpdb, 'option_value' );
+		$rows   = $this->context->guard(
+			static function () use ( $wpdb, $table, $option, $max_bytes, $length ): mixed {
 				$wpdb->last_error = '';
 				// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching -- Exact bounded uncached migration read.
 				return $wpdb->get_results(
 					// phpcs:disable WordPress.DB.PreparedSQL.InterpolatedNotPrepared -- The table is the immutable validated context target; the bound and value are prepared.
 					$wpdb->prepare(
-						"SELECT CASE WHEN OCTET_LENGTH(option_value) <= %d THEN option_value ELSE NULL END AS option_value, OCTET_LENGTH(option_value) AS cartpops_migration_option_bytes, autoload FROM {$table} WHERE option_name = %s LIMIT 2",
+						"SELECT CASE WHEN {$length} <= %d THEN option_value ELSE NULL END AS option_value, {$length} AS cartpops_migration_option_bytes, autoload FROM {$table} WHERE option_name = %s LIMIT 2",
 						$max_bytes,
 						$option
 					),

@@ -4,7 +4,7 @@ Tags: side cart, cart drawer, floating cart, woocommerce side cart, add to cart 
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 2.0.6
+Stable tag: 2.0.7
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -110,6 +110,9 @@ Your settings, styling and license carry over. Version 2 is built around the car
 4. Pro Smart Bar rules and Smart Add-ons such as shipping protection and gift wrapping.
 
 == Changelog ==
+
+= 2.0.7 =
+* Fix: On some older sites, the update from version 1 stopped with "upgrade_failed (normalization_read)" or "(settings_migration_failed)" because of how the site's database handles special characters. The update now finishes by itself.
 
 = 2.0.6 =
 * Improved: When CartPops cannot finish updating because the site's database tables use the older MyISAM format, the notice now says so and explains how to convert them, and Tools → Site Health → Info shows the database format and the exact reason for any failed update.

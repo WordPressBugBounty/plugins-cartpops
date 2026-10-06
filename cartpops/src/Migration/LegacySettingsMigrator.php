@@ -2697,14 +2697,15 @@ final class LegacySettingsMigrator {
 		$like                   = $wpdb->esc_like( 'cartpops_' ) . '%';
 		$analytics_private_like = $wpdb->esc_like( 'cartpops_analytics_' ) . '%';
 		$backfill_private_like  = $wpdb->esc_like( 'cartpops_backfill_' ) . '%';
+		$length                 = MigrationDatabaseState::received_octet_length_sql( $wpdb, 'option_value' );
 		$aggregate              = $this->site_context->guard(
-			static function () use ( $wpdb, $options_table, $like, $analytics_private_like, $backfill_private_like ): mixed {
+			static function () use ( $wpdb, $options_table, $like, $analytics_private_like, $backfill_private_like, $length ): mixed {
 				$wpdb->last_error = '';
 				// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching -- A bounded preflight prevents loading an unbounded recovery snapshot.
 				return $wpdb->get_row(
 					$wpdb->prepare(
 						// phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared -- The table is the immutable validated site-context target.
-						"SELECT COUNT(*) AS row_count, COALESCE(SUM(OCTET_LENGTH(option_value)), 0) AS total_bytes, COALESCE(MAX(OCTET_LENGTH(option_value)), 0) AS max_bytes FROM {$options_table} WHERE option_name LIKE %s AND option_name NOT LIKE %s AND option_name NOT LIKE %s",
+						"SELECT COUNT(*) AS row_count, COALESCE(SUM({$length}), 0) AS total_bytes, COALESCE(MAX({$length}), 0) AS max_bytes FROM {$options_table} WHERE option_name LIKE %s AND option_name NOT LIKE %s AND option_name NOT LIKE %s",
 						$like,
 						$analytics_private_like,
 						$backfill_private_like
@@ -2729,13 +2730,13 @@ final class LegacySettingsMigrator {
 		// A raw, uncached read is required to preserve option bytes and autoload
 		// metadata for rollback; all dynamic input uses a placeholder.
 		$rows = $this->site_context->guard(
-			static function () use ( $wpdb, $options_table, $like, $analytics_private_like, $backfill_private_like ): mixed {
+			static function () use ( $wpdb, $options_table, $like, $analytics_private_like, $backfill_private_like, $length ): mixed {
 				$wpdb->last_error = '';
 				// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching -- Immutable migration snapshot requires raw rows.
 				return $wpdb->get_results(
 					$wpdb->prepare(
 						// phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared -- The table is the immutable validated site-context target.
-						"SELECT option_name, CASE WHEN OCTET_LENGTH(option_value) <= %d THEN option_value ELSE NULL END AS option_value, OCTET_LENGTH(option_value) AS byte_length, autoload FROM {$options_table} WHERE option_name LIKE %s AND option_name NOT LIKE %s AND option_name NOT LIKE %s ORDER BY option_name ASC LIMIT %d",
+						"SELECT option_name, CASE WHEN {$length} <= %d THEN option_value ELSE NULL END AS option_value, {$length} AS byte_length, autoload FROM {$options_table} WHERE option_name LIKE %s AND option_name NOT LIKE %s AND option_name NOT LIKE %s ORDER BY option_name ASC LIMIT %d",
 						self::MAX_RAW_BYTES,
 						$like,
 						$analytics_private_like,

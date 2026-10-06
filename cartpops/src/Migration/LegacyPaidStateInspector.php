@@ -114,7 +114,7 @@ final class LegacyPaidStateInspector {
 		 */
 		$names          = self::option_names();
 		$placeholders   = implode( ', ', array_fill( 0, count( $names ), '%s' ) );
-		$length_query   = 'SELECT option_name, OCTET_LENGTH(option_value) AS byte_length, ' . self::PROBE_VALUE . ' AS ' . self::LENGTH_ALIAS . " FROM {$table} WHERE option_name IN ({$placeholders}) ORDER BY option_name ASC LIMIT " . ( count( $names ) + 1 );
+		$length_query   = 'SELECT option_name, ' . MigrationDatabaseState::received_octet_length_sql( $wpdb, 'option_value' ) . ' AS byte_length, ' . self::PROBE_VALUE . ' AS ' . self::LENGTH_ALIAS . " FROM {$table} WHERE option_name IN ({$placeholders}) ORDER BY option_name ASC LIMIT " . ( count( $names ) + 1 );
 		$length_results = $this->context->guard(
 			static function () use ( $wpdb, $length_query, $names ): mixed {
 				$wpdb->last_error = '';

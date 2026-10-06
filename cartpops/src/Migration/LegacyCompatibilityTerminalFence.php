@@ -393,7 +393,8 @@ final class LegacyCompatibilityTerminalFence {
 		$forced_index = '`' . $index . '`';
 		// Identifiers and the generated placeholder list are closed and bounded above.
 		// phpcs:disable WordPress.DB.PreparedSQL.InterpolatedNotPrepared, WordPress.DB.PreparedSQLPlaceholders.UnfinishedPrepare
-		$length_sql = $wpdb->prepare( "SELECT option_name, OCTET_LENGTH(option_value) AS byte_length, 1 AS cartpops_compatibility_fence_length FROM {$table} FORCE INDEX ({$forced_index}) WHERE option_name IN ({$placeholders}) ORDER BY option_name ASC FOR UPDATE", ...$option_names );
+		$length     = MigrationDatabaseState::received_octet_length_sql( $wpdb, 'option_value' );
+		$length_sql = $wpdb->prepare( "SELECT option_name, {$length} AS byte_length, 1 AS cartpops_compatibility_fence_length FROM {$table} FORCE INDEX ({$forced_index}) WHERE option_name IN ({$placeholders}) ORDER BY option_name ASC FOR UPDATE", ...$option_names );
 		// phpcs:enable WordPress.DB.PreparedSQL.InterpolatedNotPrepared, WordPress.DB.PreparedSQLPlaceholders.UnfinishedPrepare
 		$length_rows = $this->context->guard(
 			static function () use ( $wpdb, $length_sql ): mixed {

@@ -73,4 +73,26 @@ final class MigrationDatabaseState {
 		 */
 		return (string) $database->last_error;
 	}
+
+	/**
+	 * SQL for a column's byte length as this connection receives it.
+	 *
+	 * OCTET_LENGTH measures the bytes stored in the table. When the connection
+	 * uses another character set (an older site with DB_CHARSET latin1 and
+	 * utf8mb4 tables, for example), MySQL converts each value on the way out,
+	 * so the stored length no longer matches the string PHP receives. Measuring
+	 * the converted value keeps exact-length checks working on those sites.
+	 *
+	 * @param mixed  $database WordPress database object.
+	 * @param string $column   Closed, code-defined column name.
+	 */
+	public static function received_octet_length_sql( mixed $database, string $column ): string {
+		$charset = is_object( $database ) && isset( $database->charset ) && is_string( $database->charset )
+			? strtolower( $database->charset )
+			: '';
+		if ( '' === $charset || 'utf8mb4' === $charset || 1 !== preg_match( '/\A[a-z0-9]{1,32}\z/D', $charset ) ) {
+			return "OCTET_LENGTH({$column})";
+		}
+		return "OCTET_LENGTH(CONVERT({$column} USING {$charset}))";
+	}
 }

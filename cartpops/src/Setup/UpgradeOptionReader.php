@@ -89,8 +89,9 @@ final class UpgradeOptionReader {
 		 * @var \wpdb $wpdb
 		 */
 		$bounded = self::NORMALIZATION_PAIR === $names;
+		$length  = MigrationDatabaseState::received_octet_length_sql( $wpdb, 'option_value' );
 		$results = $this->context->guard(
-			static function () use ( $wpdb, $table, $names ): mixed {
+			static function () use ( $wpdb, $table, $names, $length ): mixed {
 				$wpdb->last_error = '';
 				if ( array( self::VERSION_OPTION ) === $names ) {
 					// phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared -- The immutable context table is validated; the value uses a placeholder.
@@ -98,7 +99,7 @@ final class UpgradeOptionReader {
 				} else {
 					// phpcs:disable WordPress.DB.PreparedSQL.InterpolatedNotPrepared -- The immutable context table is validated; the bound and both values use placeholders.
 					$sql = $wpdb->prepare(
-						"SELECT option_name, CASE WHEN OCTET_LENGTH(option_value) <= %d THEN option_value ELSE NULL END AS option_value, OCTET_LENGTH(option_value) AS cartpops_upgrade_option_bytes, autoload, 0 AS cartpops_upgrade_option_probe FROM {$table} WHERE option_name IN (%s, %s) ORDER BY option_name ASC LIMIT 3",
+						"SELECT option_name, CASE WHEN {$length} <= %d THEN option_value ELSE NULL END AS option_value, {$length} AS cartpops_upgrade_option_bytes, autoload, 0 AS cartpops_upgrade_option_probe FROM {$table} WHERE option_name IN (%s, %s) ORDER BY option_name ASC LIMIT 3",
 						self::MAX_NORMALIZATION_BYTES,
 						$names[0],
 						$names[1]

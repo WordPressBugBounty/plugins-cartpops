@@ -18,7 +18,7 @@ msgstr ""
 #: src/Admin/AdminPage.php:45
 #: src/Admin/AdminPage.php:46
 #: src/Blocks/CartDrawer/render.php:881
-#: src/Setup/Upgrader.php:1871
+#: src/Setup/Upgrader.php:1909
 #: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:518
 #. Plugin Name of the plugin
 #. Author of the plugin
@@ -646,10 +646,14 @@ msgid "Hide Empty"
 msgstr "Скриване при празна"
 
 #: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:821
+#: src/Setup/SiteHealthSection.php:71
+#: src/Setup/SiteHealthSection.php:84
 msgid "Yes"
 msgstr "Да"
 
 #: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:822
+#: src/Setup/SiteHealthSection.php:71
+#: src/Setup/SiteHealthSection.php:84
 msgid "No"
 msgstr "Не"
 
@@ -985,7 +989,7 @@ msgstr "Този произход няма право на достъп до Car
 msgid "The request origin does not match its referrer."
 msgstr "Произходът на заявката не съвпада с нейния референт (referrer)."
 
-#: src/Setup/Upgrader.php:1738
+#: src/Setup/Upgrader.php:1772
 #. translators: %1$d: WordPress multisite blog ID.
 #, php-format
 msgid ""
@@ -3459,11 +3463,11 @@ msgstr "%s всеки"
 msgid "Have a coupon?"
 msgstr "Имате ли купон?"
 
-#: src/Plugin.php:848
+#: src/Plugin.php:860
 msgid "CartPops is finishing its update. Reload this page in a moment."
 msgstr "CartPops завършва своето обновление. Презаредете тази страница за момент."
 
-#: src/Plugin.php:851
+#: src/Plugin.php:867
 #. translators: %s: value-free CartPops diagnostic code.
 #, php-format
 msgid ""
@@ -3893,7 +3897,7 @@ msgstr "Цвят на точката на плъзгача"
 msgid "Slider active bullet color"
 msgstr "Цвят на активната точка на плъзгача"
 
-#: src/Setup/Upgrader.php:1750
+#: src/Setup/Upgrader.php:1788
 msgid ""
 "CartPops could not finish updating your settings from version 1, so it is "
 "paused. Your settings are safe. Reload this page to try again, and contact "
@@ -3904,7 +3908,7 @@ msgstr ""
 "тази страница, за да опитате отново, и се свържете с поддръжката на "
 "CartPops, ако това съобщение остане."
 
-#: src/Setup/Upgrader.php:1760
+#: src/Setup/Upgrader.php:1798
 msgid ""
 "Your automation rules from CartPops 1 are kept, but CartPops 2 no longer "
 "runs them."
@@ -3912,7 +3916,7 @@ msgstr ""
 "Вашите правила за автоматизация от CartPops 1 са запазени, но CartPops 2 "
 "вече не ги изпълнява."
 
-#: src/Setup/Upgrader.php:1783
+#: src/Setup/Upgrader.php:1821
 msgid ""
 "CartPops updated your settings from version 1, but some could not be "
 "carried over exactly. Your original settings are kept."
@@ -3920,15 +3924,15 @@ msgstr ""
 "CartPops актуализира вашите настройки от версия 1, но някои не можаха да "
 "бъдат пренесени точно. Вашите оригинални настройки са запазени."
 
-#: src/Setup/Upgrader.php:1787
+#: src/Setup/Upgrader.php:1825
 msgid "Hide this notice"
 msgstr "Скриване на това известие"
 
-#: src/Setup/Upgrader.php:1797
+#: src/Setup/Upgrader.php:1835
 msgid "This review requires a site administrator and a submitted review form."
 msgstr "Този преглед изисква администратор на сайта и подадена форма за преглед."
 
-#: src/Setup/Upgrader.php:1814
+#: src/Setup/Upgrader.php:1852
 msgid ""
 "The review was not accepted. Return to this site dashboard and review the "
 "current notice again."
@@ -3936,7 +3940,7 @@ msgstr ""
 "Преглядът не беше приет. Върнете се към таблото на този сайт и преглеждайте "
 "текущото известие отново."
 
-#: src/Setup/Upgrader.php:1819
+#: src/Setup/Upgrader.php:1857
 msgid ""
 "The saved migration state could not be acknowledged. No review was "
 "accepted; return to this site dashboard and try again."
@@ -3944,7 +3948,7 @@ msgstr ""
 "Запазеното състояние на миграцията не можа да бъде потвърдено. Не беше "
 "приет преглед; върнете се към таблото на този сайт и опитайте отново."
 
-#: src/Setup/Upgrader.php:1827
+#: src/Setup/Upgrader.php:1865
 msgid ""
 "JavaScript retirement review accepted. Return to this site dashboard to "
 "retry migration and review any remaining conditions. The original script is "
@@ -3954,11 +3958,11 @@ msgstr ""
 "сайта, за да повторите миграцията и преглеждате всички останали условия. "
 "Оригиналният скрипт е запазен и няма да се изпълнява в V2."
 
-#: src/Setup/Upgrader.php:1871
+#: src/Setup/Upgrader.php:1909
 msgid "This link has expired. Return to the dashboard and try again."
 msgstr "Този линк е изтекъл. Върнете се към таблото и опитайте отново."
 
-#: src/Setup/Upgrader.php:1887
+#: src/Setup/Upgrader.php:1925
 msgid ""
 "CartPops is paused until you review your old custom JavaScript below. Your "
 "settings are safe."
@@ -3966,7 +3970,7 @@ msgstr ""
 "CartPops е поставен на пауза, докато преглеждате вашия стар персонализиран "
 "JavaScript по-долу. Вашите настройки са безопасни."
 
-#: src/Setup/Upgrader.php:1888
+#: src/Setup/Upgrader.php:1926
 msgid ""
 "CartPops is paused until a site administrator reviews the old custom "
 "JavaScript. Your settings are safe."
@@ -3974,7 +3978,7 @@ msgstr ""
 "CartPops е поставен на пауза, докато администратор на сайта преглежда вашия "
 "стар персонализиран JavaScript. Вашите настройки са безопасни."
 
-#: src/Setup/Upgrader.php:1890
+#: src/Setup/Upgrader.php:1928
 msgid ""
 "CartPops is paused until its update can finish. Your settings are safe. If "
 "you use CartPops Pro, check that your license is active for this site; "
@@ -3985,11 +3989,11 @@ msgstr ""
 "е активна за този сайт; в противен случай се свържете с поддръжката на "
 "CartPops."
 
-#: src/Setup/Upgrader.php:1900
+#: src/Setup/Upgrader.php:1938
 msgid "Learn more"
 msgstr "Научи повече"
 
-#: src/Setup/Upgrader.php:1910
+#: src/Setup/Upgrader.php:1948
 msgid ""
 "These settings had a value CartPops 2 could not read, so they now use their "
 "default. Check them in the CartPops settings:"
@@ -3998,25 +4002,25 @@ msgstr ""
 "сега използват своите стойности по подразбиране. Проверете ги в настройките "
 "на CartPops:"
 
-#: src/Setup/Upgrader.php:1911
+#: src/Setup/Upgrader.php:1949
 msgid "These settings no longer exist in CartPops 2:"
 msgstr "Тези настройки вече не съществуват в CartPops 2:"
 
-#: src/Setup/Upgrader.php:1912
+#: src/Setup/Upgrader.php:1950
 msgid "These settings now work a little differently:"
 msgstr "Тези настройки сега работят малко по-различно:"
 
-#: src/Setup/Upgrader.php:1926
+#: src/Setup/Upgrader.php:1964
 msgid "Your custom JavaScript from version 1 is kept but not run."
 msgstr "Вашият персонализиран JavaScript от версия 1 е запазен, но не се изпълнява."
 
-#: src/Setup/Upgrader.php:1929
+#: src/Setup/Upgrader.php:1967
 msgid "Some Pro settings from version 1 are kept in your database but not used."
 msgstr ""
 "Някои Pro настройки от версия 1 са запазени в базата ви данни, но не се "
 "използват."
 
-#: src/Setup/Upgrader.php:1935
+#: src/Setup/Upgrader.php:1973
 #. translators: %d: number of other settings.
 #, php-format
 msgid "%d other setting could not be carried over."
@@ -4024,15 +4028,15 @@ msgid_plural "%d other settings could not be carried over."
 msgstr[0] "%d друга настройка не можа да бъде пренесена."
 msgstr[1] "%d други настройки не можаха да бъдат пренесени."
 
-#: src/Setup/Upgrader.php:1944
+#: src/Setup/Upgrader.php:1982
 msgid "See which settings"
 msgstr "Вижте кои настройки"
 
-#: src/Setup/Upgrader.php:1962
+#: src/Setup/Upgrader.php:2000
 msgid "Show your saved custom JavaScript"
 msgstr "Покажи твоя запазен персонализиран JavaScript"
 
-#: src/Setup/Upgrader.php:1963
+#: src/Setup/Upgrader.php:2001
 msgid ""
 "Copy it somewhere safe if you want to move it into your theme or a snippets "
 "plugin."
@@ -4040,15 +4044,15 @@ msgstr ""
 "Копирай го някъде в безопасност, ако искаш да го преместиш в твоята тема "
 "или плъгин със фрагменти."
 
-#: src/Setup/Upgrader.php:1966
+#: src/Setup/Upgrader.php:2004
 msgid "Only the beginning is shown. The full copy remains saved in your database."
 msgstr "Показва се само началото. Пълното копие остава запазено в базата ви данни."
 
-#: src/Setup/Upgrader.php:1984
+#: src/Setup/Upgrader.php:2022
 msgid "Review your old custom JavaScript"
 msgstr "Преглед на твоя стар персонализиран JavaScript"
 
-#: src/Setup/Upgrader.php:1985
+#: src/Setup/Upgrader.php:2023
 msgid ""
 "CartPops 2 does not run the custom JavaScript from version 1. It stays "
 "saved in your database. Copy it if you still need it, then confirm below to "
@@ -4058,25 +4062,25 @@ msgstr ""
 "запазен в базата ви данни. Копирай го, ако все още го имаш нужда, след това "
 "потвърди по-долу, за да завършиш обновлението."
 
-#: src/Setup/Upgrader.php:2001
+#: src/Setup/Upgrader.php:2039
 msgid "I understand this custom JavaScript will not run in CartPops 2."
 msgstr ""
 "Разбирам, че този персонализиран JavaScript няма да се изпълнява в CartPops "
 "2."
 
-#: src/Setup/Upgrader.php:2003
+#: src/Setup/Upgrader.php:2041
 msgid "Confirm and finish the update"
 msgstr "Потвърди и завърши обновлението"
 
-#: src/Setup/Upgrader.php:2022
+#: src/Setup/Upgrader.php:2060
 msgid "Open this site dashboard to review its migration"
 msgstr "Отвори табло на този сайт, за да преглеждаш неговата миграция"
 
-#: src/Setup/Upgrader.php:2034
+#: src/Setup/Upgrader.php:2072
 msgid "Return to this site dashboard"
 msgstr "Върни се към табло на този сайт"
 
-#: src/Setup/Upgrader.php:2035
+#: src/Setup/Upgrader.php:2073
 msgid "CartPops migration review"
 msgstr "Преглед на миграцията на CartPops"
 
@@ -4125,6 +4129,125 @@ msgstr ""
 "По-висока сума само повишава целта, показана в измервателя. Не дава "
 "безплатна доставка сама по себе си, и суми под минимума на WooCommerce се "
 "игнорират."
+
+#: src/Plugin.php:880
+msgid "Troubleshooting details are under"
+msgstr "Детайлите за отстраняване на проблеми са под"
+
+#: src/Plugin.php:881
+msgid "Tools → Site Health → Info → CartPops"
+msgstr "Инструменти → Здравословно състояние на сайта → Информация → CartPops"
+
+#: src/Setup/SiteHealthSection.php:55
+msgid "Version"
+msgstr "Версия"
+
+#: src/Setup/SiteHealthSection.php:56
+msgid "Edition"
+msgstr "Издание"
+
+#: src/Setup/SiteHealthSection.php:58
+msgid "Status"
+msgstr "Статус"
+
+#: src/Setup/SiteHealthSection.php:59
+msgid "Running"
+msgstr "Работи"
+
+#: src/Setup/SiteHealthSection.php:59
+msgid "Paused"
+msgstr "Пауза"
+
+#: src/Setup/SiteHealthSection.php:61
+msgid "Notice code"
+msgstr "Код на известие"
+
+#: src/Setup/SiteHealthSection.php:62
+msgid "Failed update step"
+msgstr "Неудачна стъпка на актуализация"
+
+#: src/Setup/SiteHealthSection.php:63
+msgid "Recorded plugin version"
+msgstr "Записана версия на плъгина"
+
+#: src/Setup/SiteHealthSection.php:64
+msgid "Settings format"
+msgstr "Формат на настройките"
+
+#: src/Setup/SiteHealthSection.php:66
+msgid "Update from version 1"
+msgstr "Актуализация от версия 1"
+
+#: src/Setup/SiteHealthSection.php:70
+msgid "Update from version 1 completed"
+msgstr "Актуализация от версия 1 завършена"
+
+#: src/Setup/SiteHealthSection.php:74
+msgid "Version 1 settings found / carried over / kept aside"
+msgstr "Намерени настройки от версия 1 / пренесени / запазени отделно"
+
+#: src/Setup/SiteHealthSection.php:77
+msgid "Update warnings"
+msgstr "Предупреждения при актуализация"
+
+#: src/Setup/SiteHealthSection.php:78
+msgid "Settings not carried over"
+msgstr "Настройките не бяха пренесени"
+
+#: src/Setup/SiteHealthSection.php:79
+msgid "Update paused for"
+msgstr "Актуализация пауза за"
+
+#: src/Setup/SiteHealthSection.php:83
+msgid "Persistent object cache"
+msgstr "Постоянен кеш на обекти"
+
+#: src/Setup/SiteHealthSection.php:89
+msgid "Network update"
+msgstr "Актуализация на мрежата"
+
+#: src/Setup/SiteHealthSection.php:96
+msgid ""
+"Status of CartPops and its update from version 1. Contains codes and counts "
+"only, no settings or customer data."
+msgstr ""
+"Статус на CartPops и неговата актуализация от версия 1. Съдържа само кодове "
+"и брой, без настройки или данни на клиентите."
+
+#: src/Plugin.php:874
+msgid ""
+"Your database tables use an older storage format (MyISAM) that cannot "
+"finish this update. Back up your database, convert all its tables to "
+"InnoDB, then reload this page. CartPops finishes the update by itself."
+msgstr ""
+"Таблиците на вашата база данни използват по-стар формат за съхранение "
+"(MyISAM), който не може да завърши това обновление. Направете резервно "
+"копие на вашата база данни, преобразувайте всички нейни таблици в InnoDB, "
+"след което презаредете тази страница. CartPops завършва обновлението "
+"автоматично."
+
+#: src/Plugin.php:892
+msgid ""
+"CartPops cannot load the cart on your store, so shoppers see “Request "
+"failed” in the cart drawer. Some of your database tables use an older "
+"storage format (MyISAM). Back up your database, then convert all its tables "
+"to InnoDB."
+msgstr ""
+"CartPops не може да зареди количката на вашия магазин, поради което "
+"купувачите виждат \"Заявката не успя\" в чекмеджето на количката. Някои от "
+"таблиците на вашата база данни използват по-стар формат за съхранение "
+"(MyISAM). Направете резервно копие на вашата база данни, след което "
+"преобразувайте всички нейни таблици в InnoDB."
+
+#: src/Setup/SiteHealthSection.php:80
+msgid "Update records present"
+msgstr "Налични са записи за обновление"
+
+#: src/Setup/SiteHealthSection.php:81
+msgid "Database engine (options / posts / cart sessions / user meta)"
+msgstr ""
+"Механизъм на база данни (опции / публикации / сесии на количка / "
+"потребителски мета)"
 
 #: src/Blocks/CartDrawer/block.json
 msgctxt "block title"

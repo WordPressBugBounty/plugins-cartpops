@@ -18,7 +18,7 @@ msgstr ""
 #: src/Admin/AdminPage.php:45
 #: src/Admin/AdminPage.php:46
 #: src/Blocks/CartDrawer/render.php:881
-#: src/Setup/Upgrader.php:1871
+#: src/Setup/Upgrader.php:1909
 #: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:518
 #. Plugin Name of the plugin
 #. Author of the plugin
@@ -646,10 +646,14 @@ msgid "Hide Empty"
 msgstr "ซ่อนเมื่อว่าง"
 
 #: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:821
+#: src/Setup/SiteHealthSection.php:71
+#: src/Setup/SiteHealthSection.php:84
 msgid "Yes"
 msgstr "ใช่"
 
 #: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:822
+#: src/Setup/SiteHealthSection.php:71
+#: src/Setup/SiteHealthSection.php:84
 msgid "No"
 msgstr "ไม่"
 
@@ -983,7 +987,7 @@ msgstr "Origin นี้ไม่ได้รับอนุญาตให้�
 msgid "The request origin does not match its referrer."
 msgstr "Origin ของคำขอไม่ตรงกับ Referrer"
 
-#: src/Setup/Upgrader.php:1738
+#: src/Setup/Upgrader.php:1772
 #. translators: %1$d: WordPress multisite blog ID.
 #, php-format
 msgid ""
@@ -3421,11 +3425,11 @@ msgstr "%s ต่อชิ้น"
 msgid "Have a coupon?"
 msgstr "มีคูปองหรือไม่?"
 
-#: src/Plugin.php:848
+#: src/Plugin.php:860
 msgid "CartPops is finishing its update. Reload this page in a moment."
 msgstr "CartPops กำลังอัปเดต โปรดรีโหลดหน้านี้ในอีกสักครู่"
 
-#: src/Plugin.php:851
+#: src/Plugin.php:867
 #. translators: %s: value-free CartPops diagnostic code.
 #, php-format
 msgid ""
@@ -3855,7 +3859,7 @@ msgstr "สีจุดแถบเลื่อน"
 msgid "Slider active bullet color"
 msgstr "สีจุดแถบเลื่อนที่ใช้งาน"
 
-#: src/Setup/Upgrader.php:1750
+#: src/Setup/Upgrader.php:1788
 msgid ""
 "CartPops could not finish updating your settings from version 1, so it is "
 "paused. Your settings are safe. Reload this page to try again, and contact "
@@ -3866,7 +3870,7 @@ msgstr ""
 "โหลดหน้านี้ใหม่เพื่อลองอีกครั้ง และติดต่อการสนับสนุน CartPops "
 "หากข้อความนี้ยังคงอยู่"
 
-#: src/Setup/Upgrader.php:1760
+#: src/Setup/Upgrader.php:1798
 msgid ""
 "Your automation rules from CartPops 1 are kept, but CartPops 2 no longer "
 "runs them."
@@ -3874,7 +3878,7 @@ msgstr ""
 "กฎการทำให้เป็นอัตโนมัติของคุณจาก CartPops 1 ถูกเก็บไว้ แต่ CartPops 2 "
 "ไม่ได้เรียกใช้อีกต่อไป"
 
-#: src/Setup/Upgrader.php:1783
+#: src/Setup/Upgrader.php:1821
 msgid ""
 "CartPops updated your settings from version 1, but some could not be "
 "carried over exactly. Your original settings are kept."
@@ -3882,15 +3886,15 @@ msgstr ""
 "CartPops อัปเดตการตั้งค่าของคุณจากเวอร์ชัน 1 "
 "แต่บางส่วนไม่สามารถนำไปใช้ได้อย่างแน่นอน การตั้งค่าเดิมของคุณถูกเก็บไว้"
 
-#: src/Setup/Upgrader.php:1787
+#: src/Setup/Upgrader.php:1825
 msgid "Hide this notice"
 msgstr "ซ่อนประกาศนี้"
 
-#: src/Setup/Upgrader.php:1797
+#: src/Setup/Upgrader.php:1835
 msgid "This review requires a site administrator and a submitted review form."
 msgstr "การตรวจสอบนี้ต้องใช้ผู้ดูแลระบบไซต์และแบบฟอร์มการตรวจสอบที่ส่งมา"
 
-#: src/Setup/Upgrader.php:1814
+#: src/Setup/Upgrader.php:1852
 msgid ""
 "The review was not accepted. Return to this site dashboard and review the "
 "current notice again."
@@ -3898,7 +3902,7 @@ msgstr ""
 "การตรวจสอบไม่ได้รับการยอมรับ "
 "กลับไปที่แดชบอร์ดไซต์นี้และตรวจสอบประกาศปัจจุบันอีกครั้ง"
 
-#: src/Setup/Upgrader.php:1819
+#: src/Setup/Upgrader.php:1857
 msgid ""
 "The saved migration state could not be acknowledged. No review was "
 "accepted; return to this site dashboard and try again."
@@ -3906,7 +3910,7 @@ msgstr ""
 "ไม่สามารถยอมรับสถานะการย้ายข้อมูลที่บันทึกไว้ได้ "
 "ไม่มีการตรวจสอบที่ได้รับการยอมรับ กลับไปที่แดชบอร์ดไซต์นี้และลองอีกครั้ง"
 
-#: src/Setup/Upgrader.php:1827
+#: src/Setup/Upgrader.php:1865
 msgid ""
 "JavaScript retirement review accepted. Return to this site dashboard to "
 "retry migration and review any remaining conditions. The original script is "
@@ -3916,11 +3920,11 @@ msgstr ""
 "กลับไปที่แดชบอร์ดไซต์เพื่อลองย้ายข้อมูลใหม่และตรวจสอบเงื่อนไขที่เหลือ "
 "สคริปต์ดั้งเดิมจะถูกเก็บไว้และจะไม่ทำงานใน V2"
 
-#: src/Setup/Upgrader.php:1871
+#: src/Setup/Upgrader.php:1909
 msgid "This link has expired. Return to the dashboard and try again."
 msgstr "ลิงก์นี้หมดอายุแล้ว กลับไปที่แดชบอร์ดและลองอีกครั้ง"
 
-#: src/Setup/Upgrader.php:1887
+#: src/Setup/Upgrader.php:1925
 msgid ""
 "CartPops is paused until you review your old custom JavaScript below. Your "
 "settings are safe."
@@ -3928,7 +3932,7 @@ msgstr ""
 "CartPops หยุดชั่วคราวจนกว่าคุณจะตรวจสอบ JavaScript "
 "ที่กำหนดเองแบบเก่าด้านล่าง การตั้งค่าของคุณปลอดภัย"
 
-#: src/Setup/Upgrader.php:1888
+#: src/Setup/Upgrader.php:1926
 msgid ""
 "CartPops is paused until a site administrator reviews the old custom "
 "JavaScript. Your settings are safe."
@@ -3936,7 +3940,7 @@ msgstr ""
 "CartPops หยุดชั่วคราวจนกว่าผู้ดูแลระบบไซต์จะตรวจสอบ JavaScript "
 "ที่กำหนดเองแบบเก่า การตั้งค่าของคุณปลอดภัย"
 
-#: src/Setup/Upgrader.php:1890
+#: src/Setup/Upgrader.php:1928
 msgid ""
 "CartPops is paused until its update can finish. Your settings are safe. If "
 "you use CartPops Pro, check that your license is active for this site; "
@@ -3946,11 +3950,11 @@ msgstr ""
 "หากคุณใช้ CartPops Pro ให้ตรวจสอบว่าใบอนุญาตของคุณใช้งานได้สำหรับไซต์นี้ "
 "มิฉะนั้น ติดต่อฝ่ายสนับสนุน CartPops"
 
-#: src/Setup/Upgrader.php:1900
+#: src/Setup/Upgrader.php:1938
 msgid "Learn more"
 msgstr "เรียนรู้เพิ่มเติม"
 
-#: src/Setup/Upgrader.php:1910
+#: src/Setup/Upgrader.php:1948
 msgid ""
 "These settings had a value CartPops 2 could not read, so they now use their "
 "default. Check them in the CartPops settings:"
@@ -3958,40 +3962,40 @@ msgstr ""
 "การตั้งค่าเหล่านี้มีค่าที่ CartPops 2 ไม่สามารถอ่านได้ "
 "ดังนั้นจึงใช้ค่าเริ่มต้นแล้ว ตรวจสอบในการตั้งค่า CartPops:"
 
-#: src/Setup/Upgrader.php:1911
+#: src/Setup/Upgrader.php:1949
 msgid "These settings no longer exist in CartPops 2:"
 msgstr "การตั้งค่าเหล่านี้ไม่มีอยู่ใน CartPops 2 อีกต่อไป:"
 
-#: src/Setup/Upgrader.php:1912
+#: src/Setup/Upgrader.php:1950
 msgid "These settings now work a little differently:"
 msgstr "การตั้งค่าเหล่านี้ทำงานแตกต่างกันเล็กน้อยในขณะนี้:"
 
-#: src/Setup/Upgrader.php:1926
+#: src/Setup/Upgrader.php:1964
 msgid "Your custom JavaScript from version 1 is kept but not run."
 msgstr "JavaScript ที่กำหนดเองของคุณจากเวอร์ชัน 1 ถูกเก็บไว้แต่ไม่ได้รัน"
 
-#: src/Setup/Upgrader.php:1929
+#: src/Setup/Upgrader.php:1967
 msgid "Some Pro settings from version 1 are kept in your database but not used."
 msgstr ""
 "การตั้งค่า Pro บางรายการจากเวอร์ชัน 1 "
 "ถูกเก็บไว้ในฐานข้อมูลของคุณแต่ไม่ได้ใช้"
 
-#: src/Setup/Upgrader.php:1935
+#: src/Setup/Upgrader.php:1973
 #. translators: %d: number of other settings.
 #, php-format
 msgid "%d other setting could not be carried over."
 msgid_plural "%d other settings could not be carried over."
 msgstr[0] "%d การตั้งค่าอื่นไม่สามารถนำมาใช้ได้"
 
-#: src/Setup/Upgrader.php:1944
+#: src/Setup/Upgrader.php:1982
 msgid "See which settings"
 msgstr "ดูการตั้งค่าใด"
 
-#: src/Setup/Upgrader.php:1962
+#: src/Setup/Upgrader.php:2000
 msgid "Show your saved custom JavaScript"
 msgstr "แสดง JavaScript ที่กำหนดเองของคุณที่บันทึกไว้"
 
-#: src/Setup/Upgrader.php:1963
+#: src/Setup/Upgrader.php:2001
 msgid ""
 "Copy it somewhere safe if you want to move it into your theme or a snippets "
 "plugin."
@@ -3999,15 +4003,15 @@ msgstr ""
 "คัดลอกไปที่ใดที่หนึ่งที่ปลอดภัยหากคุณต้องการย้ายไปยังธีมหรือปลั๊กอิน "
 "snippets ของคุณ"
 
-#: src/Setup/Upgrader.php:1966
+#: src/Setup/Upgrader.php:2004
 msgid "Only the beginning is shown. The full copy remains saved in your database."
 msgstr "แสดงเฉพาะจุดเริ่มต้นเท่านั้น สำเนาแบบเต็มยังคงบันทึกไว้ในฐานข้อมูลของคุณ"
 
-#: src/Setup/Upgrader.php:1984
+#: src/Setup/Upgrader.php:2022
 msgid "Review your old custom JavaScript"
 msgstr "ตรวจสอบ JavaScript ที่กำหนดเองแบบเก่าของคุณ"
 
-#: src/Setup/Upgrader.php:1985
+#: src/Setup/Upgrader.php:2023
 msgid ""
 "CartPops 2 does not run the custom JavaScript from version 1. It stays "
 "saved in your database. Copy it if you still need it, then confirm below to "
@@ -4017,23 +4021,23 @@ msgstr ""
 "ยังคงบันทึกไว้ในฐานข้อมูลของคุณ คัดลอกหากคุณยังต้องการ "
 "จากนั้นยืนยันด้านล่างเพื่อเสร็จสิ้นการอัปเดต"
 
-#: src/Setup/Upgrader.php:2001
+#: src/Setup/Upgrader.php:2039
 msgid "I understand this custom JavaScript will not run in CartPops 2."
 msgstr "ฉันเข้าใจว่า JavaScript ที่กำหนดเองนี้จะไม่ทำงานใน CartPops 2"
 
-#: src/Setup/Upgrader.php:2003
+#: src/Setup/Upgrader.php:2041
 msgid "Confirm and finish the update"
 msgstr "ยืนยันและเสร็จสิ้นการอัปเดต"
 
-#: src/Setup/Upgrader.php:2022
+#: src/Setup/Upgrader.php:2060
 msgid "Open this site dashboard to review its migration"
 msgstr "เปิดแดชบอร์ดไซต์นี้เพื่อตรวจสอบการย้ายข้อมูล"
 
-#: src/Setup/Upgrader.php:2034
+#: src/Setup/Upgrader.php:2072
 msgid "Return to this site dashboard"
 msgstr "กลับไปที่แดชบอร์ดไซต์นี้"
 
-#: src/Setup/Upgrader.php:2035
+#: src/Setup/Upgrader.php:2073
 msgid "CartPops migration review"
 msgstr "การตรวจสอบการย้ายข้อมูล CartPops"
 
@@ -4082,6 +4086,121 @@ msgstr ""
 "จำนวนที่สูงขึ้นจะเพิ่มเป้าหมายที่แสดงในมิเตอร์เท่านั้น "
 "ไม่ให้การจัดส่งฟรีด้วยตัวมันเอง และจำนวนที่ต่ำกว่าขั้นต่ำของ WooCommerce "
 "จะถูกละเว้น"
+
+#: src/Plugin.php:880
+msgid "Troubleshooting details are under"
+msgstr "รายละเอียดการแก้ไขปัญหาอยู่ใน"
+
+#: src/Plugin.php:881
+msgid "Tools → Site Health → Info → CartPops"
+msgstr "เครื่องมือ → สุขภาพไซต์ → ข้อมูล → CartPops"
+
+#: src/Setup/SiteHealthSection.php:55
+msgid "Version"
+msgstr "เวอร์ชัน"
+
+#: src/Setup/SiteHealthSection.php:56
+msgid "Edition"
+msgstr "รุ่น"
+
+#: src/Setup/SiteHealthSection.php:58
+msgid "Status"
+msgstr "สถานะ"
+
+#: src/Setup/SiteHealthSection.php:59
+msgid "Running"
+msgstr "กำลังทำงาน"
+
+#: src/Setup/SiteHealthSection.php:59
+msgid "Paused"
+msgstr "หยุดชั่วคราว"
+
+#: src/Setup/SiteHealthSection.php:61
+msgid "Notice code"
+msgstr "รหัสประกาศ"
+
+#: src/Setup/SiteHealthSection.php:62
+msgid "Failed update step"
+msgstr "ขั้นตอนการอัปเดตที่ล้มเหลว"
+
+#: src/Setup/SiteHealthSection.php:63
+msgid "Recorded plugin version"
+msgstr "เวอร์ชันปลั๊กอินที่บันทึก"
+
+#: src/Setup/SiteHealthSection.php:64
+msgid "Settings format"
+msgstr "รูปแบบการตั้งค่า"
+
+#: src/Setup/SiteHealthSection.php:66
+msgid "Update from version 1"
+msgstr "อัปเดตจากเวอร์ชัน 1"
+
+#: src/Setup/SiteHealthSection.php:70
+msgid "Update from version 1 completed"
+msgstr "อัปเดตจากเวอร์ชัน 1 เสร็จสิ้น"
+
+#: src/Setup/SiteHealthSection.php:74
+msgid "Version 1 settings found / carried over / kept aside"
+msgstr "พบการตั้งค่าเวอร์ชัน 1 / นำไปใช้ / เก็บไว้"
+
+#: src/Setup/SiteHealthSection.php:77
+msgid "Update warnings"
+msgstr "คำเตือนการอัปเดต"
+
+#: src/Setup/SiteHealthSection.php:78
+msgid "Settings not carried over"
+msgstr "ไม่ได้นำการตั้งค่ามาใช้"
+
+#: src/Setup/SiteHealthSection.php:79
+msgid "Update paused for"
+msgstr "อัปเดตหยุดชั่วคราวสำหรับ"
+
+#: src/Setup/SiteHealthSection.php:83
+msgid "Persistent object cache"
+msgstr "แคช Persistent Object"
+
+#: src/Setup/SiteHealthSection.php:89
+msgid "Network update"
+msgstr "อัปเดตเครือข่าย"
+
+#: src/Setup/SiteHealthSection.php:96
+msgid ""
+"Status of CartPops and its update from version 1. Contains codes and counts "
+"only, no settings or customer data."
+msgstr ""
+"สถานะของ CartPops และการอัปเดตจากเวอร์ชัน 1 ประกอบด้วยรหัสและจำนวนเท่านั้น "
+"ไม่มีการตั้งค่าหรือข้อมูลลูกค้า"
+
+#: src/Plugin.php:874
+msgid ""
+"Your database tables use an older storage format (MyISAM) that cannot "
+"finish this update. Back up your database, convert all its tables to "
+"InnoDB, then reload this page. CartPops finishes the update by itself."
+msgstr ""
+"ตารางฐานข้อมูลของคุณใช้รูปแบบการจัดเก็บข้อมูลที่เก่ากว่า (MyISAM) "
+"ซึ่งไม่สามารถทำการอัปเดตนี้ให้เสร็จสิ้นได้ สำรองข้อมูลฐานข้อมูลของคุณ "
+"แปลงตารางทั้งหมดเป็น InnoDB แล้วโหลดหน้านี้ใหม่ CartPops "
+"จะทำการอัปเดตให้เสร็จสิ้นโดยอัตโนมัติ"
+
+#: src/Plugin.php:892
+msgid ""
+"CartPops cannot load the cart on your store, so shoppers see “Request "
+"failed” in the cart drawer. Some of your database tables use an older "
+"storage format (MyISAM). Back up your database, then convert all its tables "
+"to InnoDB."
+msgstr ""
+"CartPops ไม่สามารถโหลดรถเข็นในร้านค้าของคุณได้ ดังนั้นผู้ซื้อจึงเห็น "
+"\"Request failed\" ในลิ้นชักรถเข็น "
+"ตารางฐานข้อมูลบางตารางใช้รูปแบบการจัดเก็บข้อมูลที่เก่ากว่า (MyISAM) "
+"สำรองข้อมูลฐานข้อมูลของคุณ แล้วแปลงตารางทั้งหมดเป็น InnoDB"
+
+#: src/Setup/SiteHealthSection.php:80
+msgid "Update records present"
+msgstr "มีบันทึกการอัปเดต"
+
+#: src/Setup/SiteHealthSection.php:81
+msgid "Database engine (options / posts / cart sessions / user meta)"
+msgstr "เอนจิ่นฐานข้อมูล (ตัวเลือก / โพสต์ / เซสชันรถเข็น / ข้อมูลผู้ใช้)"
 
 #: src/Blocks/CartDrawer/block.json
 msgctxt "block title"

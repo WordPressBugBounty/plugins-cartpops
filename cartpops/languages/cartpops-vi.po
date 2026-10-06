@@ -18,7 +18,7 @@ msgstr ""
 #: src/Admin/AdminPage.php:45
 #: src/Admin/AdminPage.php:46
 #: src/Blocks/CartDrawer/render.php:881
-#: src/Setup/Upgrader.php:1871
+#: src/Setup/Upgrader.php:1909
 #: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:518
 #. Plugin Name of the plugin
 #. Author of the plugin
@@ -643,10 +643,14 @@ msgid "Hide Empty"
 msgstr "Ẩn khi trống"
 
 #: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:821
+#: src/Setup/SiteHealthSection.php:71
+#: src/Setup/SiteHealthSection.php:84
 msgid "Yes"
 msgstr "Có"
 
 #: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:822
+#: src/Setup/SiteHealthSection.php:71
+#: src/Setup/SiteHealthSection.php:84
 msgid "No"
 msgstr "Không"
 
@@ -984,7 +988,7 @@ msgstr "Nguồn gốc này không được phép truy cập CartPops API."
 msgid "The request origin does not match its referrer."
 msgstr "Nguồn gốc yêu cầu không khớp với referrer."
 
-#: src/Setup/Upgrader.php:1738
+#: src/Setup/Upgrader.php:1772
 #. translators: %1$d: WordPress multisite blog ID.
 #, php-format
 msgid ""
@@ -3449,11 +3453,11 @@ msgstr "%s mỗi cái"
 msgid "Have a coupon?"
 msgstr "Bạn có mã giảm giá?"
 
-#: src/Plugin.php:848
+#: src/Plugin.php:860
 msgid "CartPops is finishing its update. Reload this page in a moment."
 msgstr "CartPops đang hoàn tất cập nhật. Vui lòng tải lại trang này trong giây lát."
 
-#: src/Plugin.php:851
+#: src/Plugin.php:867
 #. translators: %s: value-free CartPops diagnostic code.
 #, php-format
 msgid ""
@@ -3883,7 +3887,7 @@ msgstr "Màu dấu chấm thanh trượt"
 msgid "Slider active bullet color"
 msgstr "Màu dấu chấm thanh trượt hoạt động"
 
-#: src/Setup/Upgrader.php:1750
+#: src/Setup/Upgrader.php:1788
 msgid ""
 "CartPops could not finish updating your settings from version 1, so it is "
 "paused. Your settings are safe. Reload this page to try again, and contact "
@@ -3893,7 +3897,7 @@ msgstr ""
 "vậy nó bị tạm dừng. Cài đặt của bạn an toàn. Tải lại trang này để thử lại "
 "và liên hệ hỗ trợ CartPops nếu thông báo này vẫn tiếp tục."
 
-#: src/Setup/Upgrader.php:1760
+#: src/Setup/Upgrader.php:1798
 msgid ""
 "Your automation rules from CartPops 1 are kept, but CartPops 2 no longer "
 "runs them."
@@ -3901,7 +3905,7 @@ msgstr ""
 "Các quy tắc tự động hóa của bạn từ CartPops 1 được giữ lại, nhưng CartPops "
 "2 không còn chạy chúng nữa."
 
-#: src/Setup/Upgrader.php:1783
+#: src/Setup/Upgrader.php:1821
 msgid ""
 "CartPops updated your settings from version 1, but some could not be "
 "carried over exactly. Your original settings are kept."
@@ -3909,17 +3913,17 @@ msgstr ""
 "CartPops đã cập nhật cài đặt của bạn từ phiên bản 1, nhưng một số không thể "
 "được chuyển đổi chính xác. Cài đặt gốc của bạn được giữ lại."
 
-#: src/Setup/Upgrader.php:1787
+#: src/Setup/Upgrader.php:1825
 msgid "Hide this notice"
 msgstr "Ẩn thông báo này"
 
-#: src/Setup/Upgrader.php:1797
+#: src/Setup/Upgrader.php:1835
 msgid "This review requires a site administrator and a submitted review form."
 msgstr ""
 "Bài đánh giá này yêu cầu quản trị viên trang web và biểu mẫu đánh giá đã "
 "gửi."
 
-#: src/Setup/Upgrader.php:1814
+#: src/Setup/Upgrader.php:1852
 msgid ""
 "The review was not accepted. Return to this site dashboard and review the "
 "current notice again."
@@ -3927,7 +3931,7 @@ msgstr ""
 "Bài đánh giá không được chấp nhận. Quay lại bảng điều khiển trang web này "
 "và xem lại thông báo hiện tại."
 
-#: src/Setup/Upgrader.php:1819
+#: src/Setup/Upgrader.php:1857
 msgid ""
 "The saved migration state could not be acknowledged. No review was "
 "accepted; return to this site dashboard and try again."
@@ -3935,7 +3939,7 @@ msgstr ""
 "Không thể xác nhận trạng thái di chuyển đã lưu. Không có bài đánh giá nào "
 "được chấp nhận; quay lại bảng điều khiển trang web này và thử lại."
 
-#: src/Setup/Upgrader.php:1827
+#: src/Setup/Upgrader.php:1865
 msgid ""
 "JavaScript retirement review accepted. Return to this site dashboard to "
 "retry migration and review any remaining conditions. The original script is "
@@ -3945,11 +3949,11 @@ msgstr ""
 "trang web để thử lại di chuyển và xem lại bất kỳ điều kiện còn lại nào. Tập "
 "lệnh gốc được bảo tồn và sẽ không thực thi trong V2."
 
-#: src/Setup/Upgrader.php:1871
+#: src/Setup/Upgrader.php:1909
 msgid "This link has expired. Return to the dashboard and try again."
 msgstr "Liên kết này đã hết hạn. Quay lại bảng điều khiển và thử lại."
 
-#: src/Setup/Upgrader.php:1887
+#: src/Setup/Upgrader.php:1925
 msgid ""
 "CartPops is paused until you review your old custom JavaScript below. Your "
 "settings are safe."
@@ -3957,7 +3961,7 @@ msgstr ""
 "CartPops bị tạm dừng cho đến khi bạn xem lại JavaScript tùy chỉnh cũ của "
 "mình bên dưới. Cài đặt của bạn an toàn."
 
-#: src/Setup/Upgrader.php:1888
+#: src/Setup/Upgrader.php:1926
 msgid ""
 "CartPops is paused until a site administrator reviews the old custom "
 "JavaScript. Your settings are safe."
@@ -3965,7 +3969,7 @@ msgstr ""
 "CartPops bị tạm dừng cho đến khi quản trị viên trang web xem lại JavaScript "
 "tùy chỉnh cũ. Cài đặt của bạn an toàn."
 
-#: src/Setup/Upgrader.php:1890
+#: src/Setup/Upgrader.php:1928
 msgid ""
 "CartPops is paused until its update can finish. Your settings are safe. If "
 "you use CartPops Pro, check that your license is active for this site; "
@@ -3975,11 +3979,11 @@ msgstr ""
 "Nếu bạn sử dụng CartPops Pro, hãy kiểm tra rằng giấy phép của bạn hoạt động "
 "trên trang web này; nếu không, hãy liên hệ hỗ trợ CartPops."
 
-#: src/Setup/Upgrader.php:1900
+#: src/Setup/Upgrader.php:1938
 msgid "Learn more"
 msgstr "Tìm hiểu thêm"
 
-#: src/Setup/Upgrader.php:1910
+#: src/Setup/Upgrader.php:1948
 msgid ""
 "These settings had a value CartPops 2 could not read, so they now use their "
 "default. Check them in the CartPops settings:"
@@ -3987,40 +3991,40 @@ msgstr ""
 "Những cài đặt này có giá trị mà CartPops 2 không thể đọc được, vì vậy bây "
 "giờ chúng sử dụng giá trị mặc định. Kiểm tra chúng trong cài đặt CartPops:"
 
-#: src/Setup/Upgrader.php:1911
+#: src/Setup/Upgrader.php:1949
 msgid "These settings no longer exist in CartPops 2:"
 msgstr "Những cài đặt này không còn tồn tại trong CartPops 2:"
 
-#: src/Setup/Upgrader.php:1912
+#: src/Setup/Upgrader.php:1950
 msgid "These settings now work a little differently:"
 msgstr "Những cài đặt này hiện hoạt động hơi khác:"
 
-#: src/Setup/Upgrader.php:1926
+#: src/Setup/Upgrader.php:1964
 msgid "Your custom JavaScript from version 1 is kept but not run."
 msgstr "JavaScript tùy chỉnh của bạn từ phiên bản 1 được giữ lại nhưng không chạy."
 
-#: src/Setup/Upgrader.php:1929
+#: src/Setup/Upgrader.php:1967
 msgid "Some Pro settings from version 1 are kept in your database but not used."
 msgstr ""
 "Một số cài đặt Pro từ phiên bản 1 được giữ lại trong cơ sở dữ liệu của bạn "
 "nhưng không được sử dụng."
 
-#: src/Setup/Upgrader.php:1935
+#: src/Setup/Upgrader.php:1973
 #. translators: %d: number of other settings.
 #, php-format
 msgid "%d other setting could not be carried over."
 msgid_plural "%d other settings could not be carried over."
 msgstr[0] "%d cài đặt khác không thể được chuyển qua."
 
-#: src/Setup/Upgrader.php:1944
+#: src/Setup/Upgrader.php:1982
 msgid "See which settings"
 msgstr "Xem cài đặt nào"
 
-#: src/Setup/Upgrader.php:1962
+#: src/Setup/Upgrader.php:2000
 msgid "Show your saved custom JavaScript"
 msgstr "Hiển thị JavaScript tùy chỉnh đã lưu của bạn"
 
-#: src/Setup/Upgrader.php:1963
+#: src/Setup/Upgrader.php:2001
 msgid ""
 "Copy it somewhere safe if you want to move it into your theme or a snippets "
 "plugin."
@@ -4028,17 +4032,17 @@ msgstr ""
 "Sao chép nó ở nơi an toàn nếu bạn muốn chuyển nó vào chủ đề hoặc plugin "
 "snippets của bạn."
 
-#: src/Setup/Upgrader.php:1966
+#: src/Setup/Upgrader.php:2004
 msgid "Only the beginning is shown. The full copy remains saved in your database."
 msgstr ""
 "Chỉ phần đầu được hiển thị. Bản sao đầy đủ vẫn được lưu trong cơ sở dữ liệu "
 "của bạn."
 
-#: src/Setup/Upgrader.php:1984
+#: src/Setup/Upgrader.php:2022
 msgid "Review your old custom JavaScript"
 msgstr "Xem lại JavaScript tùy chỉnh cũ của bạn"
 
-#: src/Setup/Upgrader.php:1985
+#: src/Setup/Upgrader.php:2023
 msgid ""
 "CartPops 2 does not run the custom JavaScript from version 1. It stays "
 "saved in your database. Copy it if you still need it, then confirm below to "
@@ -4048,23 +4052,23 @@ msgstr ""
 "trong cơ sở dữ liệu của bạn. Sao chép nó nếu bạn vẫn cần, sau đó xác nhận "
 "bên dưới để hoàn tất cập nhật."
 
-#: src/Setup/Upgrader.php:2001
+#: src/Setup/Upgrader.php:2039
 msgid "I understand this custom JavaScript will not run in CartPops 2."
 msgstr "Tôi hiểu rằng JavaScript tùy chỉnh này sẽ không chạy trong CartPops 2."
 
-#: src/Setup/Upgrader.php:2003
+#: src/Setup/Upgrader.php:2041
 msgid "Confirm and finish the update"
 msgstr "Xác nhận và hoàn tất cập nhật"
 
-#: src/Setup/Upgrader.php:2022
+#: src/Setup/Upgrader.php:2060
 msgid "Open this site dashboard to review its migration"
 msgstr "Mở bảng điều khiển trang web này để xem lại quá trình di chuyển của nó"
 
-#: src/Setup/Upgrader.php:2034
+#: src/Setup/Upgrader.php:2072
 msgid "Return to this site dashboard"
 msgstr "Quay lại bảng điều khiển trang web này"
 
-#: src/Setup/Upgrader.php:2035
+#: src/Setup/Upgrader.php:2073
 msgid "CartPops migration review"
 msgstr "Xem lại quá trình di chuyển CartPops"
 
@@ -4113,6 +4117,123 @@ msgstr ""
 "cao hơn chỉ nâng cao mục tiêu được hiển thị trong bộ đo. Nó không cung cấp "
 "vận chuyển miễn phí tự động, và số tiền dưới mức tối thiểu WooCommerce sẽ "
 "bị bỏ qua."
+
+#: src/Plugin.php:880
+msgid "Troubleshooting details are under"
+msgstr "Chi tiết khắc phục sự cố nằm dưới"
+
+#: src/Plugin.php:881
+msgid "Tools → Site Health → Info → CartPops"
+msgstr "Tools → Site Health → Info → CartPops"
+
+#: src/Setup/SiteHealthSection.php:55
+msgid "Version"
+msgstr "Phiên bản"
+
+#: src/Setup/SiteHealthSection.php:56
+msgid "Edition"
+msgstr "Phiên bản"
+
+#: src/Setup/SiteHealthSection.php:58
+msgid "Status"
+msgstr "Trạng thái"
+
+#: src/Setup/SiteHealthSection.php:59
+msgid "Running"
+msgstr "Đang chạy"
+
+#: src/Setup/SiteHealthSection.php:59
+msgid "Paused"
+msgstr "Tạm dừng"
+
+#: src/Setup/SiteHealthSection.php:61
+msgid "Notice code"
+msgstr "Mã thông báo"
+
+#: src/Setup/SiteHealthSection.php:62
+msgid "Failed update step"
+msgstr "Bước cập nhật không thành công"
+
+#: src/Setup/SiteHealthSection.php:63
+msgid "Recorded plugin version"
+msgstr "Phiên bản plugin được ghi lại"
+
+#: src/Setup/SiteHealthSection.php:64
+msgid "Settings format"
+msgstr "Định dạng cài đặt"
+
+#: src/Setup/SiteHealthSection.php:66
+msgid "Update from version 1"
+msgstr "Cập nhật từ phiên bản 1"
+
+#: src/Setup/SiteHealthSection.php:70
+msgid "Update from version 1 completed"
+msgstr "Cập nhật từ phiên bản 1 hoàn tất"
+
+#: src/Setup/SiteHealthSection.php:74
+msgid "Version 1 settings found / carried over / kept aside"
+msgstr "Tìm thấy cài đặt phiên bản 1 / được chuyển giao / được giữ lại"
+
+#: src/Setup/SiteHealthSection.php:77
+msgid "Update warnings"
+msgstr "Cảnh báo cập nhật"
+
+#: src/Setup/SiteHealthSection.php:78
+msgid "Settings not carried over"
+msgstr "Cài đặt không được chuyển giao"
+
+#: src/Setup/SiteHealthSection.php:79
+msgid "Update paused for"
+msgstr "Cập nhật tạm dừng cho"
+
+#: src/Setup/SiteHealthSection.php:83
+msgid "Persistent object cache"
+msgstr "Bộ nhớ cache đối tượng liên tục"
+
+#: src/Setup/SiteHealthSection.php:89
+msgid "Network update"
+msgstr "Cập nhật mạng"
+
+#: src/Setup/SiteHealthSection.php:96
+msgid ""
+"Status of CartPops and its update from version 1. Contains codes and counts "
+"only, no settings or customer data."
+msgstr ""
+"Trạng thái của CartPops và cập nhật từ phiên bản 1. Chỉ chứa mã và số "
+"lượng, không có cài đặt hoặc dữ liệu khách hàng."
+
+#: src/Plugin.php:874
+msgid ""
+"Your database tables use an older storage format (MyISAM) that cannot "
+"finish this update. Back up your database, convert all its tables to "
+"InnoDB, then reload this page. CartPops finishes the update by itself."
+msgstr ""
+"Các bảng cơ sở dữ liệu của bạn sử dụng định dạng lưu trữ cũ (MyISAM) không "
+"thể hoàn thành bản cập nhật này. Sao lưu cơ sở dữ liệu của bạn, chuyển đổi "
+"tất cả các bảng của nó sang InnoDB, rồi tải lại trang này. CartPops sẽ hoàn "
+"thành bản cập nhật tự động."
+
+#: src/Plugin.php:892
+msgid ""
+"CartPops cannot load the cart on your store, so shoppers see “Request "
+"failed” in the cart drawer. Some of your database tables use an older "
+"storage format (MyISAM). Back up your database, then convert all its tables "
+"to InnoDB."
+msgstr ""
+"CartPops không thể tải giỏ hàng trên cửa hàng của bạn, vì vậy khách hàng sẽ "
+"thấy \"Yêu cầu không thành công\" trong ngăn giỏ hàng. Một số bảng cơ sở dữ "
+"liệu của bạn sử dụng định dạng lưu trữ cũ (MyISAM). Sao lưu cơ sở dữ liệu "
+"của bạn, rồi chuyển đổi tất cả các bảng sang InnoDB."
+
+#: src/Setup/SiteHealthSection.php:80
+msgid "Update records present"
+msgstr "Có bản ghi cập nhật"
+
+#: src/Setup/SiteHealthSection.php:81
+msgid "Database engine (options / posts / cart sessions / user meta)"
+msgstr ""
+"Công cụ cơ sở dữ liệu (tùy chọn / bài viết / phiên giỏ hàng / siêu dữ liệu "
+"người dùng)"
 
 #: src/Blocks/CartDrawer/block.json
 msgctxt "block title"

@@ -42,6 +42,28 @@ final class LegacyCompatibilityTerminalFence {
 	private ?OwnedTransaction $transaction = null;
 
 	/**
+	 * Code-defined reason the last run() failed before its operation decided.
+	 *
+	 * @var string
+	 */
+	private static string $last_failure_reason = '';
+
+	/** Why the last run() failed on its own, or '' when it did not. */
+	public static function last_failure_reason(): string {
+		return self::$last_failure_reason;
+	}
+
+	/**
+	 * Record why the fence itself failed.
+	 *
+	 * @param string $reason Code-defined reason.
+	 */
+	private function fail( string $reason ): MigrationOutcome {
+		self::$last_failure_reason = $reason;
+		return MigrationOutcome::FAILED;
+	}
+
+	/**
 	 * Bind the terminal transaction to one captured current site.
 	 *
 	 * @param SiteUpgradeContext $context Exact whole-convergence binding.
@@ -57,7 +79,8 @@ final class LegacyCompatibilityTerminalFence {
 	 * the same proof while holding the membership row lock.
 	 */
 	public function membership_lock_is_transactional(): bool {
-		$blogs_table = $this->context->blogs_table();
+		self::$last_failure_reason = '';
+		$blogs_table               = $this->context->blogs_table();
 		if ( '' === $blogs_table ) {
 			return true;
 		}
@@ -94,12 +117,13 @@ final class LegacyCompatibilityTerminalFence {
 	 * @phpstan-param \Closure(bool, array<string, array{raw_value: string, autoload: string}>, bool): MigrationOutcome $operation
 	 */
 	public function run( array $option_names, \Closure $operation, MigrationOptionStore $store ): MigrationOutcome {
-		$wpdb              = $this->context->database();
-		$this->transaction = null;
-		$owns_transaction  = false;
+		$wpdb                      = $this->context->database();
+		$this->transaction         = null;
+		$owns_transaction          = false;
+		self::$last_failure_reason = '';
 
 		if ( ! method_exists( $wpdb, 'query' ) || ! method_exists( $wpdb, 'get_results' ) || ! method_exists( $wpdb, 'get_var' ) ) {
-			return MigrationOutcome::FAILED;
+			return $this->fail( 'fence_database_adapter' );
 		}
 		/**
 		 * WordPress database adapter.
@@ -112,12 +136,12 @@ final class LegacyCompatibilityTerminalFence {
 			? null
 			: $this->table_identifier( $this->context->blogs_table() );
 		if ( null === $options_table || null === $posts_table || ( '' !== $this->context->blogs_table() && null === $blogs_table ) ) {
-			return MigrationOutcome::FAILED;
+			return $this->fail( 'fence_table_names' );
 		}
 		$transaction = MigrationDatabaseState::transaction();
 		if ( null === $transaction ) {
 			if ( ! $this->begin_transaction() ) {
-				return MigrationOutcome::FAILED;
+				return $this->fail( 'fence_transaction_begin' );
 			}
 			$transaction      = $this->owned_transaction();
 			$owns_transaction = true;
@@ -128,7 +152,7 @@ final class LegacyCompatibilityTerminalFence {
 			try {
 				$transaction->assert_active();
 			} catch ( \Throwable ) {
-				return MigrationOutcome::FAILED;
+				return $this->fail( 'fence_transaction_inactive' );
 			}
 		}
 		$result = MigrationOutcome::FAILED;
@@ -138,13 +162,14 @@ final class LegacyCompatibilityTerminalFence {
 				if ( $owns_transaction ) {
 					$this->rollback( $store );
 				}
-				$result = MigrationOutcome::FAILED;
+				$result = $this->fail( 'fence_metadata_lock' );
 			} else {
 				$indexes = $this->database_proof( $options_table, $posts_table, $blogs_table );
 				if ( null === $indexes ) {
 					if ( $owns_transaction ) {
 						$this->rollback( $store );
 					}
+					// database_proof() recorded whether tables or indexes were the cause.
 					$result = MigrationOutcome::FAILED;
 				} else {
 					$locked    = $this->lock_options( $options_table, $indexes['options'], $option_names );
@@ -165,10 +190,10 @@ final class LegacyCompatibilityTerminalFence {
 						} catch ( DatabaseCommitOutcomeUnknownException ) {
 							$store->commit_cache_invalidation();
 							MigrationDatabaseState::release( $transaction );
-							$result = MigrationOutcome::FAILED;
+							$result = $this->fail( 'fence_commit_outcome_unknown' );
 						} catch ( \Throwable ) {
 							$this->rollback( $store );
-							$result = MigrationOutcome::FAILED;
+							$result = $this->fail( 'fence_commit_failed' );
 						}
 					}
 				}
@@ -177,7 +202,7 @@ final class LegacyCompatibilityTerminalFence {
 			if ( $owns_transaction ) {
 				$this->rollback( $store );
 			}
-			$result = MigrationOutcome::FAILED;
+			$result = $this->fail( 'fence_exception' );
 		} finally {
 			if ( $owns_transaction ) {
 				MigrationDatabaseState::release( $transaction );
@@ -243,10 +268,14 @@ final class LegacyCompatibilityTerminalFence {
 			$table_names[] = $blogs_table;
 		}
 		if ( ! $this->transactional_tables_are_proven( $table_names ) ) {
+			// That check recorded whether an engine is non-transactional or unverified.
 			return null;
 		}
 		$options_index = $this->find_index( $options_table, 'option_name', true );
 		$posts_index   = $this->find_index( $posts_table, 'post_type', false );
+		if ( null === $options_index || null === $posts_index ) {
+			self::$last_failure_reason = 'database_index_missing';
+		}
 		return null === $options_index || null === $posts_index
 			? null
 			: array(
@@ -276,12 +305,18 @@ final class LegacyCompatibilityTerminalFence {
 				);
 			}
 		);
+		// Unless a table really reports another engine, the cause is unverified, not MyISAM.
+		self::$last_failure_reason = 'database_engine_unverified';
 		if ( '' !== MigrationDatabaseState::last_error( $wpdb ) || ! is_array( $engines ) || count( $table_names ) !== count( $engines ) ) {
 			return false;
 		}
 		$seen = array();
 		foreach ( $engines as $row ) {
-			if ( ! is_array( $row ) || array( 'ENGINE', 'TABLE_NAME' ) !== $this->sorted_keys( $row ) || ! is_string( $row['TABLE_NAME'] ?? null ) || 'INNODB' !== strtoupper( (string) ( $row['ENGINE'] ?? '' ) ) || isset( $seen[ $row['TABLE_NAME'] ] ) ) {
+			if ( ! is_array( $row ) || array( 'ENGINE', 'TABLE_NAME' ) !== $this->sorted_keys( $row ) || ! is_string( $row['TABLE_NAME'] ?? null ) || isset( $seen[ $row['TABLE_NAME'] ] ) ) {
+				return false;
+			}
+			if ( 'INNODB' !== strtoupper( (string) ( $row['ENGINE'] ?? '' ) ) ) {
+				self::$last_failure_reason = 'database_not_transactional';
 				return false;
 			}
 			$seen[ $row['TABLE_NAME'] ] = true;
@@ -291,6 +326,7 @@ final class LegacyCompatibilityTerminalFence {
 				return false;
 			}
 		}
+		self::$last_failure_reason = '';
 		return true;
 	}
 

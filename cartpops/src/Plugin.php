@@ -643,6 +643,7 @@ final class Plugin {
 		if ( is_admin() ) {
 			$admin_page = $this->container->get( AdminPage::class );
 			add_action( 'admin_menu', array( $admin_page, 'register_menu' ) );
+			add_action( 'admin_notices', array( $this, 'render_cart_storage_notice' ) );
 		}
 
 		// REST API.
@@ -869,12 +870,28 @@ final class Plugin {
 		echo '<div class="notice notice-error"><p>' . esc_html( $message )
 			. Upgrader::docs_link_html( Upgrader::DOCS_STOPPED_AFTER_UPGRADING ) // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- The helper escapes every part.
 			. '</p>';
+		if ( 'database_not_transactional' === $step ) {
+			echo '<p>' . esc_html__( 'Your database tables use an older storage format (MyISAM) that cannot finish this update. Back up your database, convert all its tables to InnoDB, then reload this page. CartPops finishes the update by itself.', 'cartpops' )
+				. Upgrader::docs_link_html( Upgrader::DOCS_STOPPED_AFTER_UPGRADING . '#your-database-tables-use-myisam' ) // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- The helper escapes every part.
+				. '</p>';
+		}
 		// Site Health is only open to users who may install plugins.
 		if ( current_user_can( 'view_site_health_checks' ) ) {
 			echo '<p>' . esc_html__( 'Troubleshooting details are under', 'cartpops' )
 				. ' <a href="' . esc_url( admin_url( 'site-health.php?tab=debug' ) ) . '">' . esc_html__( 'Tools → Site Health → Info → CartPops', 'cartpops' ) . '</a>.</p>';
 		}
 		echo '</div>';
+	}
+
+	/** Tell store managers why the cart cannot load when its tables use MyISAM. */
+	public function render_cart_storage_notice(): void {
+		if ( ! current_user_can( 'manage_woocommerce' ) || ! Setup\DatabaseEngines::cart_tables_not_transactional() ) {
+			return;
+		}
+		echo '<div class="notice notice-error"><p>'
+			. esc_html__( 'CartPops cannot load the cart on your store, so shoppers see “Request failed” in the cart drawer. Some of your database tables use an older storage format (MyISAM). Back up your database, then convert all its tables to InnoDB.', 'cartpops' )
+			. Upgrader::docs_link_html( Upgrader::DOCS_STOPPED_AFTER_UPGRADING . '#your-database-tables-use-myisam' ) // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- The helper escapes every part.
+			. '</p></div>';
 	}
 
 	/** The failed upgrade step, only while the current code is an upgrade failure. */

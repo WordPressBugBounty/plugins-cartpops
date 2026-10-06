@@ -19,7 +19,7 @@ msgstr ""
 #: src/Admin/AdminPage.php:45
 #: src/Admin/AdminPage.php:46
 #: src/Blocks/CartDrawer/render.php:881
-#: src/Setup/Upgrader.php:1871
+#: src/Setup/Upgrader.php:1909
 #: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:518
 #. Plugin Name of the plugin
 #. Author of the plugin
@@ -648,10 +648,14 @@ msgid "Hide Empty"
 msgstr "Skrij prazno"
 
 #: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:821
+#: src/Setup/SiteHealthSection.php:71
+#: src/Setup/SiteHealthSection.php:84
 msgid "Yes"
 msgstr "Da"
 
 #: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:822
+#: src/Setup/SiteHealthSection.php:71
+#: src/Setup/SiteHealthSection.php:84
 msgid "No"
 msgstr "Ne"
 
@@ -987,7 +991,7 @@ msgstr "Ta izvor nima dovoljenja za dostop do vmesnika API CartPops."
 msgid "The request origin does not match its referrer."
 msgstr "Izvor zahteve se ne ujema z napotiteljem."
 
-#: src/Setup/Upgrader.php:1738
+#: src/Setup/Upgrader.php:1772
 #. translators: %1$d: WordPress multisite blog ID.
 #, php-format
 msgid ""
@@ -3461,11 +3465,11 @@ msgstr "%s vsak"
 msgid "Have a coupon?"
 msgstr "Imate kupon?"
 
-#: src/Plugin.php:848
+#: src/Plugin.php:860
 msgid "CartPops is finishing its update. Reload this page in a moment."
 msgstr "CartPops zaključuje posodobitev. Osvežite to stran čez trenutek."
 
-#: src/Plugin.php:851
+#: src/Plugin.php:867
 #. translators: %s: value-free CartPops diagnostic code.
 #, php-format
 msgid ""
@@ -3895,7 +3899,7 @@ msgstr "Barva točke drsnika"
 msgid "Slider active bullet color"
 msgstr "Barva aktivne točke drsnika"
 
-#: src/Setup/Upgrader.php:1750
+#: src/Setup/Upgrader.php:1788
 msgid ""
 "CartPops could not finish updating your settings from version 1, so it is "
 "paused. Your settings are safe. Reload this page to try again, and contact "
@@ -3905,7 +3909,7 @@ msgstr ""
 "zato je zaustavljen. Vaše nastavitve so varne. Ponovno naložite to stran in "
 "se obrnite na podporo CartPops, če se to sporočilo ne bo spremenilo."
 
-#: src/Setup/Upgrader.php:1760
+#: src/Setup/Upgrader.php:1798
 msgid ""
 "Your automation rules from CartPops 1 are kept, but CartPops 2 no longer "
 "runs them."
@@ -3913,7 +3917,7 @@ msgstr ""
 "Vaša pravila avtomatizacije iz CartPops 1 so ohranjena, vendar CartPops 2 "
 "jih ne izvaja več."
 
-#: src/Setup/Upgrader.php:1783
+#: src/Setup/Upgrader.php:1821
 msgid ""
 "CartPops updated your settings from version 1, but some could not be "
 "carried over exactly. Your original settings are kept."
@@ -3921,17 +3925,17 @@ msgstr ""
 "CartPops je posodobil vaše nastavitve iz različice 1, vendar nekaterih ni "
 "bilo mogoče prenesti natančno. Vaše prvotne nastavitve so ohranjena."
 
-#: src/Setup/Upgrader.php:1787
+#: src/Setup/Upgrader.php:1825
 msgid "Hide this notice"
 msgstr "Skrij to obvestilo"
 
-#: src/Setup/Upgrader.php:1797
+#: src/Setup/Upgrader.php:1835
 msgid "This review requires a site administrator and a submitted review form."
 msgstr ""
 "Ta recenzija zahteva administratorja spletnega mesta in poslano obrazec za "
 "recenzijo."
 
-#: src/Setup/Upgrader.php:1814
+#: src/Setup/Upgrader.php:1852
 msgid ""
 "The review was not accepted. Return to this site dashboard and review the "
 "current notice again."
@@ -3939,7 +3943,7 @@ msgstr ""
 "Recenzija ni bila sprejeta. Vrnite se na nadzorno ploščo tega spletnega "
 "mesta in ponovno preglejte trenutno obvestilo."
 
-#: src/Setup/Upgrader.php:1819
+#: src/Setup/Upgrader.php:1857
 msgid ""
 "The saved migration state could not be acknowledged. No review was "
 "accepted; return to this site dashboard and try again."
@@ -3948,7 +3952,7 @@ msgstr ""
 "bila sprejeta; vrnite se na nadzorno ploščo tega spletnega mesta in "
 "poskusite znova."
 
-#: src/Setup/Upgrader.php:1827
+#: src/Setup/Upgrader.php:1865
 msgid ""
 "JavaScript retirement review accepted. Return to this site dashboard to "
 "retry migration and review any remaining conditions. The original script is "
@@ -3958,11 +3962,11 @@ msgstr ""
 "ploščo, da poskusite znova migrirati in pregledati morebitne preostale "
 "pogoje. Izvirni skript je ohranjen in se v V2 ne bo izvršil."
 
-#: src/Setup/Upgrader.php:1871
+#: src/Setup/Upgrader.php:1909
 msgid "This link has expired. Return to the dashboard and try again."
 msgstr "Ta povezava je potekla. Vrnite se na nadzorno ploščo in poskusite znova."
 
-#: src/Setup/Upgrader.php:1887
+#: src/Setup/Upgrader.php:1925
 msgid ""
 "CartPops is paused until you review your old custom JavaScript below. Your "
 "settings are safe."
@@ -3970,7 +3974,7 @@ msgstr ""
 "CartPops je zaustavljen, dokler ne pregledate starega prilagojenega "
 "JavaScripta spodaj. Vaše nastavitve so varne."
 
-#: src/Setup/Upgrader.php:1888
+#: src/Setup/Upgrader.php:1926
 msgid ""
 "CartPops is paused until a site administrator reviews the old custom "
 "JavaScript. Your settings are safe."
@@ -3978,7 +3982,7 @@ msgstr ""
 "CartPops je zaustavljen, dokler administrator spletnega mesta ne pregleda "
 "starega prilagojenega JavaScripta. Vaše nastavitve so varne."
 
-#: src/Setup/Upgrader.php:1890
+#: src/Setup/Upgrader.php:1928
 msgid ""
 "CartPops is paused until its update can finish. Your settings are safe. If "
 "you use CartPops Pro, check that your license is active for this site; "
@@ -3988,11 +3992,11 @@ msgstr ""
 "nastavitve so varne. Če uporabljate CartPops Pro, preverite, ali je vaša "
 "licenca aktivna za to spletno mesto; sicer se obrnite na podporo CartPops."
 
-#: src/Setup/Upgrader.php:1900
+#: src/Setup/Upgrader.php:1938
 msgid "Learn more"
 msgstr "Več informacij"
 
-#: src/Setup/Upgrader.php:1910
+#: src/Setup/Upgrader.php:1948
 msgid ""
 "These settings had a value CartPops 2 could not read, so they now use their "
 "default. Check them in the CartPops settings:"
@@ -4000,25 +4004,25 @@ msgstr ""
 "Te nastavitve so imele vrednost, ki je CartPops 2 ni mogel prebrati, zato "
 "zdaj uporabljajo privzete vrednosti. Preverite jih v nastavitvah CartPops:"
 
-#: src/Setup/Upgrader.php:1911
+#: src/Setup/Upgrader.php:1949
 msgid "These settings no longer exist in CartPops 2:"
 msgstr "Te nastavitve v CartPops 2 več ne obstajajo:"
 
-#: src/Setup/Upgrader.php:1912
+#: src/Setup/Upgrader.php:1950
 msgid "These settings now work a little differently:"
 msgstr "Te nastavitve zdaj delujejo nekoliko drugače:"
 
-#: src/Setup/Upgrader.php:1926
+#: src/Setup/Upgrader.php:1964
 msgid "Your custom JavaScript from version 1 is kept but not run."
 msgstr "Vaš prilagojeni JavaScript iz različice 1 je ohranjen, vendar se ne izvaja."
 
-#: src/Setup/Upgrader.php:1929
+#: src/Setup/Upgrader.php:1967
 msgid "Some Pro settings from version 1 are kept in your database but not used."
 msgstr ""
 "Nekatere nastavitve Pro iz različice 1 so shranjene v vaši bazi podatkov, "
 "vendar se ne uporabljajo."
 
-#: src/Setup/Upgrader.php:1935
+#: src/Setup/Upgrader.php:1973
 #. translators: %d: number of other settings.
 #, php-format
 msgid "%d other setting could not be carried over."
@@ -4028,15 +4032,15 @@ msgstr[1] "%d drugi nastavitvi nista bili preneseni."
 msgstr[2] "%d druge nastavitve niso bile prenesene."
 msgstr[3] "%d drugih nastavitev ni bilo prenesenih."
 
-#: src/Setup/Upgrader.php:1944
+#: src/Setup/Upgrader.php:1982
 msgid "See which settings"
 msgstr "Oglejte si, katere nastavitve"
 
-#: src/Setup/Upgrader.php:1962
+#: src/Setup/Upgrader.php:2000
 msgid "Show your saved custom JavaScript"
 msgstr "Prikažite svoj shranjen prilagojeni JavaScript"
 
-#: src/Setup/Upgrader.php:1963
+#: src/Setup/Upgrader.php:2001
 msgid ""
 "Copy it somewhere safe if you want to move it into your theme or a snippets "
 "plugin."
@@ -4044,17 +4048,17 @@ msgstr ""
 "Kopirajte ga na varno mesto, če ga želite premestiti v svojo temo ali "
 "vtičnik za delčke."
 
-#: src/Setup/Upgrader.php:1966
+#: src/Setup/Upgrader.php:2004
 msgid "Only the beginning is shown. The full copy remains saved in your database."
 msgstr ""
 "Prikazana je samo začetek. Polna kopija ostane shranjena v vaši bazi "
 "podatkov."
 
-#: src/Setup/Upgrader.php:1984
+#: src/Setup/Upgrader.php:2022
 msgid "Review your old custom JavaScript"
 msgstr "Preglejte svoj stari prilagojeni JavaScript"
 
-#: src/Setup/Upgrader.php:1985
+#: src/Setup/Upgrader.php:2023
 msgid ""
 "CartPops 2 does not run the custom JavaScript from version 1. It stays "
 "saved in your database. Copy it if you still need it, then confirm below to "
@@ -4064,23 +4068,23 @@ msgstr ""
 "shranjen v vaši bazi podatkov. Kopirajte ga, če ga še potrebujete, nato "
 "potrdite spodaj, da zaključite posodobitev."
 
-#: src/Setup/Upgrader.php:2001
+#: src/Setup/Upgrader.php:2039
 msgid "I understand this custom JavaScript will not run in CartPops 2."
 msgstr "Razumem, da se ta prilagojeni JavaScript ne bo izvajal v CartPops 2."
 
-#: src/Setup/Upgrader.php:2003
+#: src/Setup/Upgrader.php:2041
 msgid "Confirm and finish the update"
 msgstr "Potrdite in zaključite posodobitev"
 
-#: src/Setup/Upgrader.php:2022
+#: src/Setup/Upgrader.php:2060
 msgid "Open this site dashboard to review its migration"
 msgstr "Odprite nadzorno ploščo tega spletnega mesta, da pregledate njeno selitev"
 
-#: src/Setup/Upgrader.php:2034
+#: src/Setup/Upgrader.php:2072
 msgid "Return to this site dashboard"
 msgstr "Vrnite se na nadzorno ploščo tega spletnega mesta"
 
-#: src/Setup/Upgrader.php:2035
+#: src/Setup/Upgrader.php:2073
 msgid "CartPops migration review"
 msgstr "Pregled selitve CartPops"
 
@@ -4128,6 +4132,123 @@ msgstr ""
 "Pustite na 0, da uporabite najmanjši znesek naročila iz WooCommerce. Višji "
 "znesek samo dvigne cilj, prikazan v merilniku. Ne daje brezplačne dostave "
 "sam po sebi, in zneski pod najmanjšo zahtevo WooCommerce se prezrejo."
+
+#: src/Plugin.php:880
+msgid "Troubleshooting details are under"
+msgstr "Podrobnosti za odpravljanje napak so na voljo v"
+
+#: src/Plugin.php:881
+msgid "Tools → Site Health → Info → CartPops"
+msgstr "Orodja → Zdravje spletnega mesta → Informacije → CartPops"
+
+#: src/Setup/SiteHealthSection.php:55
+msgid "Version"
+msgstr "Različica"
+
+#: src/Setup/SiteHealthSection.php:56
+msgid "Edition"
+msgstr "Izdaja"
+
+#: src/Setup/SiteHealthSection.php:58
+msgid "Status"
+msgstr "Stanje"
+
+#: src/Setup/SiteHealthSection.php:59
+msgid "Running"
+msgstr "Teče"
+
+#: src/Setup/SiteHealthSection.php:59
+msgid "Paused"
+msgstr "Premor"
+
+#: src/Setup/SiteHealthSection.php:61
+msgid "Notice code"
+msgstr "Koda obvestila"
+
+#: src/Setup/SiteHealthSection.php:62
+msgid "Failed update step"
+msgstr "Neuspešen korak posodobitve"
+
+#: src/Setup/SiteHealthSection.php:63
+msgid "Recorded plugin version"
+msgstr "Zabeležena različica vtičnika"
+
+#: src/Setup/SiteHealthSection.php:64
+msgid "Settings format"
+msgstr "Oblika nastavitev"
+
+#: src/Setup/SiteHealthSection.php:66
+msgid "Update from version 1"
+msgstr "Posodobitev iz različice 1"
+
+#: src/Setup/SiteHealthSection.php:70
+msgid "Update from version 1 completed"
+msgstr "Posodobitev iz različice 1 je bila dokončana"
+
+#: src/Setup/SiteHealthSection.php:74
+msgid "Version 1 settings found / carried over / kept aside"
+msgstr "Najdene nastavitve različice 1 / prenesene / odložene"
+
+#: src/Setup/SiteHealthSection.php:77
+msgid "Update warnings"
+msgstr "Opozorila pri posodobitvi"
+
+#: src/Setup/SiteHealthSection.php:78
+msgid "Settings not carried over"
+msgstr "Nastavitve niso bile prenesene"
+
+#: src/Setup/SiteHealthSection.php:79
+msgid "Update paused for"
+msgstr "Posodobitev je bila zaustavljena za"
+
+#: src/Setup/SiteHealthSection.php:83
+msgid "Persistent object cache"
+msgstr "Trajni predpomnilnik objektov"
+
+#: src/Setup/SiteHealthSection.php:89
+msgid "Network update"
+msgstr "Omrežna posodobitev"
+
+#: src/Setup/SiteHealthSection.php:96
+msgid ""
+"Status of CartPops and its update from version 1. Contains codes and counts "
+"only, no settings or customer data."
+msgstr ""
+"Stanje CartPops in njegove posodobitve iz različice 1. Vsebuje samo kode in "
+"števce, brez nastavitev ali podatkov strank."
+
+#: src/Plugin.php:874
+msgid ""
+"Your database tables use an older storage format (MyISAM) that cannot "
+"finish this update. Back up your database, convert all its tables to "
+"InnoDB, then reload this page. CartPops finishes the update by itself."
+msgstr ""
+"Vaše tabele podatkovne baze uporabljajo starejšo obliko shranjevanja "
+"(MyISAM), ki ne more dokončati te posodobitve. Naredite varnostno kopijo "
+"podatkovne baze, pretvorite vse njene tabele v InnoDB, nato ponovno "
+"naložite to stran. CartPops sam dokončuje posodobitev."
+
+#: src/Plugin.php:892
+msgid ""
+"CartPops cannot load the cart on your store, so shoppers see “Request "
+"failed” in the cart drawer. Some of your database tables use an older "
+"storage format (MyISAM). Back up your database, then convert all its tables "
+"to InnoDB."
+msgstr ""
+"CartPops ne more naložiti košarice v vašo trgovino, zato kupci vidijo "
+"»Zahtevek ni uspel« v predalu košarice. Nekatere vaše tabele podatkovne "
+"baze uporabljajo starejšo obliko shranjevanja (MyISAM). Naredite varnostno "
+"kopijo podatkovne baze, nato pretvorite vse njene tabele v InnoDB."
+
+#: src/Setup/SiteHealthSection.php:80
+msgid "Update records present"
+msgstr "Posodobitve so prisotne"
+
+#: src/Setup/SiteHealthSection.php:81
+msgid "Database engine (options / posts / cart sessions / user meta)"
+msgstr ""
+"Pogon podatkovne baze (možnosti / prispevki / seje košarice / uporabniški "
+"metapodatki)"
 
 #: src/Blocks/CartDrawer/block.json
 msgctxt "block title"

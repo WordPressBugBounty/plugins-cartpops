@@ -18,7 +18,7 @@ msgstr ""
 #: src/Admin/AdminPage.php:45
 #: src/Admin/AdminPage.php:46
 #: src/Blocks/CartDrawer/render.php:881
-#: src/Setup/Upgrader.php:1871
+#: src/Setup/Upgrader.php:1909
 #: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:518
 #. Plugin Name of the plugin
 #. Author of the plugin
@@ -623,10 +623,14 @@ msgid "Hide Empty"
 msgstr "为空时隐藏"
 
 #: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:821
+#: src/Setup/SiteHealthSection.php:71
+#: src/Setup/SiteHealthSection.php:84
 msgid "Yes"
 msgstr "是"
 
 #: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:822
+#: src/Setup/SiteHealthSection.php:71
+#: src/Setup/SiteHealthSection.php:84
 msgid "No"
 msgstr "否"
 
@@ -960,7 +964,7 @@ msgstr "不允许此来源访问 CartPops API。"
 msgid "The request origin does not match its referrer."
 msgstr "请求来源与其 Referrer 不匹配。"
 
-#: src/Setup/Upgrader.php:1738
+#: src/Setup/Upgrader.php:1772
 #. translators: %1$d: WordPress multisite blog ID.
 #, php-format
 msgid ""
@@ -3331,7 +3335,7 @@ msgstr "前端外观、图标、小卡车、阶梯和庆祝效果将使用您的
 #: src/Cart/CartStateBuilder.php:525
 #: src/Admin/assets/js/components/DrawerPreview.jsx:740
 #. translators: %s: price of a single unit, shown under a cart line's total.
-#, php-format, js-format
+#, php-format,js-format
 msgid "%s each"
 msgstr "%s 件"
 
@@ -3339,11 +3343,11 @@ msgstr "%s 件"
 msgid "Have a coupon?"
 msgstr "有优惠券吗？"
 
-#: src/Plugin.php:848
+#: src/Plugin.php:860
 msgid "CartPops is finishing its update. Reload this page in a moment."
 msgstr "CartPops 正在完成更新。请稍后重新加载此页面。"
 
-#: src/Plugin.php:851
+#: src/Plugin.php:867
 #. translators: %s: value-free CartPops diagnostic code.
 #, php-format
 msgid ""
@@ -3771,7 +3775,7 @@ msgstr "滑块项目符号颜色"
 msgid "Slider active bullet color"
 msgstr "滑块活跃项目符号颜色"
 
-#: src/Setup/Upgrader.php:1750
+#: src/Setup/Upgrader.php:1788
 msgid ""
 "CartPops could not finish updating your settings from version 1, so it is "
 "paused. Your settings are safe. Reload this page to try again, and contact "
@@ -3780,62 +3784,62 @@ msgstr ""
 "CartPops 无法完成从版本 1 更新您的设置，因此已暂停。您的设置是安全的。重新加载此页面重试，如果此消息仍然显示，请联系 CartPops "
 "支持。"
 
-#: src/Setup/Upgrader.php:1760
+#: src/Setup/Upgrader.php:1798
 msgid ""
 "Your automation rules from CartPops 1 are kept, but CartPops 2 no longer "
 "runs them."
 msgstr "您来自 CartPops 1 的自动化规则已保留，但 CartPops 2 不再运行它们。"
 
-#: src/Setup/Upgrader.php:1783
+#: src/Setup/Upgrader.php:1821
 msgid ""
 "CartPops updated your settings from version 1, but some could not be "
 "carried over exactly. Your original settings are kept."
 msgstr "CartPops 已更新您来自版本 1 的设置，但某些设置无法完全转移。您的原始设置已保留。"
 
-#: src/Setup/Upgrader.php:1787
+#: src/Setup/Upgrader.php:1825
 msgid "Hide this notice"
 msgstr "隐藏此通知"
 
-#: src/Setup/Upgrader.php:1797
+#: src/Setup/Upgrader.php:1835
 msgid "This review requires a site administrator and a submitted review form."
 msgstr "此审查需要网站管理员和已提交的审查表单。"
 
-#: src/Setup/Upgrader.php:1814
+#: src/Setup/Upgrader.php:1852
 msgid ""
 "The review was not accepted. Return to this site dashboard and review the "
 "current notice again."
 msgstr "审查未被接受。返回此网站仪表板并再次查看当前通知。"
 
-#: src/Setup/Upgrader.php:1819
+#: src/Setup/Upgrader.php:1857
 msgid ""
 "The saved migration state could not be acknowledged. No review was "
 "accepted; return to this site dashboard and try again."
 msgstr "保存的迁移状态无法确认。未接受任何审查；返回此网站仪表板并重试。"
 
-#: src/Setup/Upgrader.php:1827
+#: src/Setup/Upgrader.php:1865
 msgid ""
 "JavaScript retirement review accepted. Return to this site dashboard to "
 "retry migration and review any remaining conditions. The original script is "
 "preserved and will not execute in V2."
 msgstr "JavaScript 停用审查已接受。返回此网站仪表板以重试迁移并查看任何剩余条件。原始脚本已保留，不会在 V2 中执行。"
 
-#: src/Setup/Upgrader.php:1871
+#: src/Setup/Upgrader.php:1909
 msgid "This link has expired. Return to the dashboard and try again."
 msgstr "此链接已过期。返回仪表板并重试。"
 
-#: src/Setup/Upgrader.php:1887
+#: src/Setup/Upgrader.php:1925
 msgid ""
 "CartPops is paused until you review your old custom JavaScript below. Your "
 "settings are safe."
 msgstr "CartPops 已暂停，直到您查看下面的旧自定义 JavaScript。您的设置是安全的。"
 
-#: src/Setup/Upgrader.php:1888
+#: src/Setup/Upgrader.php:1926
 msgid ""
 "CartPops is paused until a site administrator reviews the old custom "
 "JavaScript. Your settings are safe."
 msgstr "CartPops 已暂停，直到网站管理员查看旧自定义 JavaScript。您的设置是安全的。"
 
-#: src/Setup/Upgrader.php:1890
+#: src/Setup/Upgrader.php:1928
 msgid ""
 "CartPops is paused until its update can finish. Your settings are safe. If "
 "you use CartPops Pro, check that your license is active for this site; "
@@ -3844,85 +3848,85 @@ msgstr ""
 "CartPops 已暂停，等待更新完成。您的设置已保存。如果您使用 CartPops Pro，请检查该网站的许可证是否有效；否则，请联系 "
 "CartPops 支持。"
 
-#: src/Setup/Upgrader.php:1900
+#: src/Setup/Upgrader.php:1938
 msgid "Learn more"
 msgstr "了解更多"
 
-#: src/Setup/Upgrader.php:1910
+#: src/Setup/Upgrader.php:1948
 msgid ""
 "These settings had a value CartPops 2 could not read, so they now use their "
 "default. Check them in the CartPops settings:"
 msgstr "这些设置的值 CartPops 2 无法读取，因此现在使用默认值。请在 CartPops 设置中检查："
 
-#: src/Setup/Upgrader.php:1911
+#: src/Setup/Upgrader.php:1949
 msgid "These settings no longer exist in CartPops 2:"
 msgstr "这些设置在 CartPops 2 中已不存在："
 
-#: src/Setup/Upgrader.php:1912
+#: src/Setup/Upgrader.php:1950
 msgid "These settings now work a little differently:"
 msgstr "这些设置现在的工作方式略有不同："
 
-#: src/Setup/Upgrader.php:1926
+#: src/Setup/Upgrader.php:1964
 msgid "Your custom JavaScript from version 1 is kept but not run."
 msgstr "您版本 1 中的自定义 JavaScript 已保留但不会运行。"
 
-#: src/Setup/Upgrader.php:1929
+#: src/Setup/Upgrader.php:1967
 msgid "Some Pro settings from version 1 are kept in your database but not used."
 msgstr "版本 1 中的某些 Pro 设置已保留在您的数据库中但未使用。"
 
-#: src/Setup/Upgrader.php:1935
+#: src/Setup/Upgrader.php:1973
 #. translators: %d: number of other settings.
 #, php-format
 msgid "%d other setting could not be carried over."
 msgid_plural "%d other settings could not be carried over."
 msgstr[0] "%d 个其他设置无法迁移。"
 
-#: src/Setup/Upgrader.php:1944
+#: src/Setup/Upgrader.php:1982
 msgid "See which settings"
 msgstr "查看哪些设置"
 
-#: src/Setup/Upgrader.php:1962
+#: src/Setup/Upgrader.php:2000
 msgid "Show your saved custom JavaScript"
 msgstr "显示您保存的自定义 JavaScript"
 
-#: src/Setup/Upgrader.php:1963
+#: src/Setup/Upgrader.php:2001
 msgid ""
 "Copy it somewhere safe if you want to move it into your theme or a snippets "
 "plugin."
 msgstr "如果您想将其移到主题或代码片段插件中，请将其复制到安全的地方。"
 
-#: src/Setup/Upgrader.php:1966
+#: src/Setup/Upgrader.php:2004
 msgid "Only the beginning is shown. The full copy remains saved in your database."
 msgstr "仅显示开头。完整副本仍保存在您的数据库中。"
 
-#: src/Setup/Upgrader.php:1984
+#: src/Setup/Upgrader.php:2022
 msgid "Review your old custom JavaScript"
 msgstr "查看您的旧自定义 JavaScript"
 
-#: src/Setup/Upgrader.php:1985
+#: src/Setup/Upgrader.php:2023
 msgid ""
 "CartPops 2 does not run the custom JavaScript from version 1. It stays "
 "saved in your database. Copy it if you still need it, then confirm below to "
 "finish the update."
 msgstr "CartPops 2 不会运行版本 1 中的自定义 JavaScript。它保留在您的数据库中。如果您仍需要它，请复制它，然后在下方确认以完成更新。"
 
-#: src/Setup/Upgrader.php:2001
+#: src/Setup/Upgrader.php:2039
 msgid "I understand this custom JavaScript will not run in CartPops 2."
 msgstr "我理解此自定义 JavaScript 在 CartPops 2 中不会运行。"
 
-#: src/Setup/Upgrader.php:2003
+#: src/Setup/Upgrader.php:2041
 msgid "Confirm and finish the update"
 msgstr "确认并完成更新"
 
-#: src/Setup/Upgrader.php:2022
+#: src/Setup/Upgrader.php:2060
 msgid "Open this site dashboard to review its migration"
 msgstr "打开此网站仪表板以查看其迁移"
 
-#: src/Setup/Upgrader.php:2034
+#: src/Setup/Upgrader.php:2072
 msgid "Return to this site dashboard"
 msgstr "返回此网站仪表板"
 
-#: src/Setup/Upgrader.php:2035
+#: src/Setup/Upgrader.php:2073
 msgid "CartPops migration review"
 msgstr "CartPops 迁移审查"
 
@@ -3965,6 +3969,115 @@ msgid ""
 msgstr ""
 "保留为 0 以使用 WooCommerce 中的最低订单金额。更高的金额仅会提高进度条中显示的目标。它本身不提供免运费，低于 WooCommerce "
 "最低要求的金额将被忽略。"
+
+#: src/Plugin.php:880
+msgid "Troubleshooting details are under"
+msgstr "故障排除详情位于"
+
+#: src/Plugin.php:881
+msgid "Tools → Site Health → Info → CartPops"
+msgstr "工具 → 网站健康 → 信息 → CartPops"
+
+#: src/Setup/SiteHealthSection.php:55
+msgid "Version"
+msgstr "版本"
+
+#: src/Setup/SiteHealthSection.php:56
+msgid "Edition"
+msgstr "版本类型"
+
+#: src/Setup/SiteHealthSection.php:58
+msgid "Status"
+msgstr "状态"
+
+#: src/Setup/SiteHealthSection.php:59
+msgid "Running"
+msgstr "运行中"
+
+#: src/Setup/SiteHealthSection.php:59
+msgid "Paused"
+msgstr "已暂停"
+
+#: src/Setup/SiteHealthSection.php:61
+msgid "Notice code"
+msgstr "通知代码"
+
+#: src/Setup/SiteHealthSection.php:62
+msgid "Failed update step"
+msgstr "更新步骤失败"
+
+#: src/Setup/SiteHealthSection.php:63
+msgid "Recorded plugin version"
+msgstr "记录的插件版本"
+
+#: src/Setup/SiteHealthSection.php:64
+msgid "Settings format"
+msgstr "设置格式"
+
+#: src/Setup/SiteHealthSection.php:66
+msgid "Update from version 1"
+msgstr "从版本 1 更新"
+
+#: src/Setup/SiteHealthSection.php:70
+msgid "Update from version 1 completed"
+msgstr "从版本 1 更新已完成"
+
+#: src/Setup/SiteHealthSection.php:74
+msgid "Version 1 settings found / carried over / kept aside"
+msgstr "找到/转移/保留了版本 1 的设置"
+
+#: src/Setup/SiteHealthSection.php:77
+msgid "Update warnings"
+msgstr "更新警告"
+
+#: src/Setup/SiteHealthSection.php:78
+msgid "Settings not carried over"
+msgstr "设置未转移"
+
+#: src/Setup/SiteHealthSection.php:79
+msgid "Update paused for"
+msgstr "更新暂停于"
+
+#: src/Setup/SiteHealthSection.php:83
+msgid "Persistent object cache"
+msgstr "持久对象缓存"
+
+#: src/Setup/SiteHealthSection.php:89
+msgid "Network update"
+msgstr "网络更新"
+
+#: src/Setup/SiteHealthSection.php:96
+msgid ""
+"Status of CartPops and its update from version 1. Contains codes and counts "
+"only, no settings or customer data."
+msgstr "CartPops 及其从版本 1 更新的状态。仅包含代码和计数，不包含设置或客户数据。"
+
+#: src/Plugin.php:874
+msgid ""
+"Your database tables use an older storage format (MyISAM) that cannot "
+"finish this update. Back up your database, convert all its tables to "
+"InnoDB, then reload this page. CartPops finishes the update by itself."
+msgstr ""
+"您的数据库表使用较旧的存储格式 (MyISAM)，无法完成此更新。请备份您的数据库，将其所有表转换为 "
+"InnoDB，然后重新加载此页面。CartPops 将自动完成更新。"
+
+#: src/Plugin.php:892
+msgid ""
+"CartPops cannot load the cart on your store, so shoppers see “Request "
+"failed” in the cart drawer. Some of your database tables use an older "
+"storage format (MyISAM). Back up your database, then convert all its tables "
+"to InnoDB."
+msgstr ""
+"CartPops 无法在您的商店中加载购物车，购物者在购物车抽屉中看到\"请求失败\"。您的某些数据库表使用较旧的存储格式 "
+"(MyISAM)。请备份您的数据库，然后将所有表转换为 InnoDB。"
+
+#: src/Setup/SiteHealthSection.php:80
+msgid "Update records present"
+msgstr "存在更新记录"
+
+#: src/Setup/SiteHealthSection.php:81
+msgid "Database engine (options / posts / cart sessions / user meta)"
+msgstr "数据库引擎（选项/文章/购物车会话/用户元数据）"
 
 #: src/Blocks/CartDrawer/block.json
 msgctxt "block title"

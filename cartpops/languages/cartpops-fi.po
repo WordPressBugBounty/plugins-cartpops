@@ -18,7 +18,7 @@ msgstr ""
 #: src/Admin/AdminPage.php:45
 #: src/Admin/AdminPage.php:46
 #: src/Blocks/CartDrawer/render.php:881
-#: src/Setup/Upgrader.php:1871
+#: src/Setup/Upgrader.php:1909
 #: src/Pro/Admin/assets/js/pages/AnalyticsSettings.jsx:518
 #. Plugin Name of the plugin
 #. Author of the plugin
@@ -646,10 +646,14 @@ msgid "Hide Empty"
 msgstr "Piilota tyhjänä"
 
 #: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:821
+#: src/Setup/SiteHealthSection.php:71
+#: src/Setup/SiteHealthSection.php:84
 msgid "Yes"
 msgstr "Kyllä"
 
 #: src/Pro/Compatibility/Elementor/ElementorWidgetRegistrar.php:822
+#: src/Setup/SiteHealthSection.php:71
+#: src/Setup/SiteHealthSection.php:84
 msgid "No"
 msgstr "Ei"
 
@@ -983,7 +987,7 @@ msgstr "Tällä alkuperällä ei ole lupaa käyttää CartPops APIa."
 msgid "The request origin does not match its referrer."
 msgstr "Pyynnön alkuperä ei vastaa sen viittaajaa (referrer)."
 
-#: src/Setup/Upgrader.php:1738
+#: src/Setup/Upgrader.php:1772
 #. translators: %1$d: WordPress multisite blog ID.
 #, php-format
 msgid ""
@@ -3443,11 +3447,11 @@ msgstr "%s kpl"
 msgid "Have a coupon?"
 msgstr "Onko sinulla kuponkia?"
 
-#: src/Plugin.php:848
+#: src/Plugin.php:860
 msgid "CartPops is finishing its update. Reload this page in a moment."
 msgstr "CartPops päivittyy. Lataa tämä sivu hetken kuluttua."
 
-#: src/Plugin.php:851
+#: src/Plugin.php:867
 #. translators: %s: value-free CartPops diagnostic code.
 #, php-format
 msgid ""
@@ -3877,7 +3881,7 @@ msgstr "Liukusäätimen luodin väri"
 msgid "Slider active bullet color"
 msgstr "Liukusäätimen aktiivisen luodin väri"
 
-#: src/Setup/Upgrader.php:1750
+#: src/Setup/Upgrader.php:1788
 msgid ""
 "CartPops could not finish updating your settings from version 1, so it is "
 "paused. Your settings are safe. Reload this page to try again, and contact "
@@ -3888,7 +3892,7 @@ msgstr ""
 "yrittääksesi uudelleen, ja ota yhteyttä CartPops-tukeen, jos tämä viesti "
 "jää näkyviin."
 
-#: src/Setup/Upgrader.php:1760
+#: src/Setup/Upgrader.php:1798
 msgid ""
 "Your automation rules from CartPops 1 are kept, but CartPops 2 no longer "
 "runs them."
@@ -3896,7 +3900,7 @@ msgstr ""
 "Automaatiosäännöt CartPops 1:stä säilytetään, mutta CartPops 2 ei enää "
 "suorita niitä."
 
-#: src/Setup/Upgrader.php:1783
+#: src/Setup/Upgrader.php:1821
 msgid ""
 "CartPops updated your settings from version 1, but some could not be "
 "carried over exactly. Your original settings are kept."
@@ -3904,17 +3908,17 @@ msgstr ""
 "CartPops päivitti asetuksesi versiosta 1, mutta joitakin ei voitu siirtää "
 "täsmälleen. Alkuperäiset asetuksesi säilytetään."
 
-#: src/Setup/Upgrader.php:1787
+#: src/Setup/Upgrader.php:1825
 msgid "Hide this notice"
 msgstr "Piilota tämä ilmoitus"
 
-#: src/Setup/Upgrader.php:1797
+#: src/Setup/Upgrader.php:1835
 msgid "This review requires a site administrator and a submitted review form."
 msgstr ""
 "Tämä arvostelu vaatii sivuston järjestelmänvalvojan ja lähetetyn "
 "arvostelukaavakkeen."
 
-#: src/Setup/Upgrader.php:1814
+#: src/Setup/Upgrader.php:1852
 msgid ""
 "The review was not accepted. Return to this site dashboard and review the "
 "current notice again."
@@ -3922,7 +3926,7 @@ msgstr ""
 "Arvostelussa ei hyväksytty. Palaa tälle sivustolle koontinäyttöön ja "
 "tarkista nykyinen ilmoitus uudelleen."
 
-#: src/Setup/Upgrader.php:1819
+#: src/Setup/Upgrader.php:1857
 msgid ""
 "The saved migration state could not be acknowledged. No review was "
 "accepted; return to this site dashboard and try again."
@@ -3930,7 +3934,7 @@ msgstr ""
 "Tallennettua siirtotilaa ei voitu vahvistaa. Arvostelussa ei hyväksytty; "
 "palaa sivustosi koontinäyttöön ja yritä uudelleen."
 
-#: src/Setup/Upgrader.php:1827
+#: src/Setup/Upgrader.php:1865
 msgid ""
 "JavaScript retirement review accepted. Return to this site dashboard to "
 "retry migration and review any remaining conditions. The original script is "
@@ -3941,11 +3945,11 @@ msgstr ""
 "jäljellä olevat ehdot. Alkuperäinen komentosarja säilytetään eikä sitä "
 "suoriteta V2:ssa."
 
-#: src/Setup/Upgrader.php:1871
+#: src/Setup/Upgrader.php:1909
 msgid "This link has expired. Return to the dashboard and try again."
 msgstr "Tämä linkki on vanhentunut. Palaa koontinäyttöön ja yritä uudelleen."
 
-#: src/Setup/Upgrader.php:1887
+#: src/Setup/Upgrader.php:1925
 msgid ""
 "CartPops is paused until you review your old custom JavaScript below. Your "
 "settings are safe."
@@ -3953,7 +3957,7 @@ msgstr ""
 "CartPops on pausilla, kunnes tarkistat alla olevan vanhan mukautetun "
 "JavaScriptin. Asetuksesi ovat turvassa."
 
-#: src/Setup/Upgrader.php:1888
+#: src/Setup/Upgrader.php:1926
 msgid ""
 "CartPops is paused until a site administrator reviews the old custom "
 "JavaScript. Your settings are safe."
@@ -3961,7 +3965,7 @@ msgstr ""
 "CartPops on pausilla, kunnes sivuston järjestelmänvalvoja tarkistaa vanhan "
 "mukautetun JavaScriptin. Asetuksesi ovat turvassa."
 
-#: src/Setup/Upgrader.php:1890
+#: src/Setup/Upgrader.php:1928
 msgid ""
 "CartPops is paused until its update can finish. Your settings are safe. If "
 "you use CartPops Pro, check that your license is active for this site; "
@@ -3972,11 +3976,11 @@ msgstr ""
 "on aktiivinen tälle sivustolle; muussa tapauksessa ota yhteyttä "
 "CartPops-tukeen."
 
-#: src/Setup/Upgrader.php:1900
+#: src/Setup/Upgrader.php:1938
 msgid "Learn more"
 msgstr "Lue lisää"
 
-#: src/Setup/Upgrader.php:1910
+#: src/Setup/Upgrader.php:1948
 msgid ""
 "These settings had a value CartPops 2 could not read, so they now use their "
 "default. Check them in the CartPops settings:"
@@ -3984,25 +3988,25 @@ msgstr ""
 "Näillä asetuksilla oli arvo, jota CartPops 2 ei pystynyt lukemaan, joten ne "
 "käyttävät nyt oletusarvoja. Tarkista ne CartPops-asetuksista:"
 
-#: src/Setup/Upgrader.php:1911
+#: src/Setup/Upgrader.php:1949
 msgid "These settings no longer exist in CartPops 2:"
 msgstr "Nämä asetukset eivät enää ole olemassa CartPops 2:ssa:"
 
-#: src/Setup/Upgrader.php:1912
+#: src/Setup/Upgrader.php:1950
 msgid "These settings now work a little differently:"
 msgstr "Nämä asetukset toimivat nyt hieman eri tavalla:"
 
-#: src/Setup/Upgrader.php:1926
+#: src/Setup/Upgrader.php:1964
 msgid "Your custom JavaScript from version 1 is kept but not run."
 msgstr "Mukautettu JavaScript versiosta 1 säilytetään, mutta sitä ei suoriteta."
 
-#: src/Setup/Upgrader.php:1929
+#: src/Setup/Upgrader.php:1967
 msgid "Some Pro settings from version 1 are kept in your database but not used."
 msgstr ""
 "Joitakin Pro-asetuksia versiosta 1 säilytetään tietokannassasi, mutta niitä "
 "ei käytetä."
 
-#: src/Setup/Upgrader.php:1935
+#: src/Setup/Upgrader.php:1973
 #. translators: %d: number of other settings.
 #, php-format
 msgid "%d other setting could not be carried over."
@@ -4010,15 +4014,15 @@ msgid_plural "%d other settings could not be carried over."
 msgstr[0] "%d muu asetus ei voitu siirtää."
 msgstr[1] "%d muuta asetusta ei voitu siirtää."
 
-#: src/Setup/Upgrader.php:1944
+#: src/Setup/Upgrader.php:1982
 msgid "See which settings"
 msgstr "Katso mitkä asetukset"
 
-#: src/Setup/Upgrader.php:1962
+#: src/Setup/Upgrader.php:2000
 msgid "Show your saved custom JavaScript"
 msgstr "Näytä tallennettu mukautettu JavaScript"
 
-#: src/Setup/Upgrader.php:1963
+#: src/Setup/Upgrader.php:2001
 msgid ""
 "Copy it somewhere safe if you want to move it into your theme or a snippets "
 "plugin."
@@ -4026,15 +4030,15 @@ msgstr ""
 "Kopioi se turvalliseen paikkaan, jos haluat siirtää sen teemaasi tai "
 "snippets-laajennukseen."
 
-#: src/Setup/Upgrader.php:1966
+#: src/Setup/Upgrader.php:2004
 msgid "Only the beginning is shown. The full copy remains saved in your database."
 msgstr "Vain alku näytetään. Täysi kopio säilyy tietokannassasi."
 
-#: src/Setup/Upgrader.php:1984
+#: src/Setup/Upgrader.php:2022
 msgid "Review your old custom JavaScript"
 msgstr "Tarkista vanha mukautettu JavaScript"
 
-#: src/Setup/Upgrader.php:1985
+#: src/Setup/Upgrader.php:2023
 msgid ""
 "CartPops 2 does not run the custom JavaScript from version 1. It stays "
 "saved in your database. Copy it if you still need it, then confirm below to "
@@ -4044,23 +4048,23 @@ msgstr ""
 "Se säilyy tietokannassasi. Kopioi se, jos tarvitset sitä edelleen, ja "
 "vahvista alla olevan valinnan avulla päivityksen loppuun saattamiseksi."
 
-#: src/Setup/Upgrader.php:2001
+#: src/Setup/Upgrader.php:2039
 msgid "I understand this custom JavaScript will not run in CartPops 2."
 msgstr "Ymmärrän, että tämä mukautettu JavaScript ei suoristu CartPops 2:ssa."
 
-#: src/Setup/Upgrader.php:2003
+#: src/Setup/Upgrader.php:2041
 msgid "Confirm and finish the update"
 msgstr "Vahvista ja viimeistele päivitys"
 
-#: src/Setup/Upgrader.php:2022
+#: src/Setup/Upgrader.php:2060
 msgid "Open this site dashboard to review its migration"
 msgstr "Avaa tämän sivuston koontinäyttö tarkistaaksesi sen siirtymisen"
 
-#: src/Setup/Upgrader.php:2034
+#: src/Setup/Upgrader.php:2072
 msgid "Return to this site dashboard"
 msgstr "Palaa tämän sivuston koontinäyttöön"
 
-#: src/Setup/Upgrader.php:2035
+#: src/Setup/Upgrader.php:2073
 msgid "CartPops migration review"
 msgstr "CartPops-siirtymisen tarkistus"
 
@@ -4109,6 +4113,123 @@ msgstr ""
 "vain nostaa mittarissa näytettävää tavoitetta. Se ei anna ilmaista "
 "toimitusta itsestään, ja WooCommercen vähimmäisarvoa pienemmät summat "
 "jätetään huomiotta."
+
+#: src/Plugin.php:880
+msgid "Troubleshooting details are under"
+msgstr "Vianmääritystiedot löytyvät kohdasta"
+
+#: src/Plugin.php:881
+msgid "Tools → Site Health → Info → CartPops"
+msgstr "Työkalut → Sivuston terveydentila → Tiedot → CartPops"
+
+#: src/Setup/SiteHealthSection.php:55
+msgid "Version"
+msgstr "Versio"
+
+#: src/Setup/SiteHealthSection.php:56
+msgid "Edition"
+msgstr "Painos"
+
+#: src/Setup/SiteHealthSection.php:58
+msgid "Status"
+msgstr "Tila"
+
+#: src/Setup/SiteHealthSection.php:59
+msgid "Running"
+msgstr "Käynnissä"
+
+#: src/Setup/SiteHealthSection.php:59
+msgid "Paused"
+msgstr "Keskeytetty"
+
+#: src/Setup/SiteHealthSection.php:61
+msgid "Notice code"
+msgstr "Ilmoituskoodi"
+
+#: src/Setup/SiteHealthSection.php:62
+msgid "Failed update step"
+msgstr "Epäonnistunut päivitysvaihe"
+
+#: src/Setup/SiteHealthSection.php:63
+msgid "Recorded plugin version"
+msgstr "Tallennettu laajennoksen versio"
+
+#: src/Setup/SiteHealthSection.php:64
+msgid "Settings format"
+msgstr "Asetusten muoto"
+
+#: src/Setup/SiteHealthSection.php:66
+msgid "Update from version 1"
+msgstr "Päivitys versiosta 1"
+
+#: src/Setup/SiteHealthSection.php:70
+msgid "Update from version 1 completed"
+msgstr "Päivitys versiosta 1 valmis"
+
+#: src/Setup/SiteHealthSection.php:74
+msgid "Version 1 settings found / carried over / kept aside"
+msgstr "Version 1 asetukset löydetty / siirretty / säilytetty"
+
+#: src/Setup/SiteHealthSection.php:77
+msgid "Update warnings"
+msgstr "Päivitysvaroitukset"
+
+#: src/Setup/SiteHealthSection.php:78
+msgid "Settings not carried over"
+msgstr "Asetuksia ei siirretty"
+
+#: src/Setup/SiteHealthSection.php:79
+msgid "Update paused for"
+msgstr "Päivitys keskeytetty kohteelle"
+
+#: src/Setup/SiteHealthSection.php:83
+msgid "Persistent object cache"
+msgstr "Pysyvä objektivälimuisti"
+
+#: src/Setup/SiteHealthSection.php:89
+msgid "Network update"
+msgstr "Verkon päivitys"
+
+#: src/Setup/SiteHealthSection.php:96
+msgid ""
+"Status of CartPops and its update from version 1. Contains codes and counts "
+"only, no settings or customer data."
+msgstr ""
+"CartPopsin ja sen päivityksen tila versiosta 1. Sisältää vain koodeja ja "
+"laskureita, ei asetuksia tai asiakastietoja."
+
+#: src/Plugin.php:874
+msgid ""
+"Your database tables use an older storage format (MyISAM) that cannot "
+"finish this update. Back up your database, convert all its tables to "
+"InnoDB, then reload this page. CartPops finishes the update by itself."
+msgstr ""
+"Tietokantasi taulukot käyttävät vanhempaa tallennusmuotoa (MyISAM), jota ei "
+"voi päivittää. Varmuuskopioi tietokantasi, muunna kaikki sen taulukot "
+"InnoDB-muotoon ja lataa sitten tämä sivu uudelleen. CartPops suorittaa "
+"päivityksen itse."
+
+#: src/Plugin.php:892
+msgid ""
+"CartPops cannot load the cart on your store, so shoppers see “Request "
+"failed” in the cart drawer. Some of your database tables use an older "
+"storage format (MyISAM). Back up your database, then convert all its tables "
+"to InnoDB."
+msgstr ""
+"CartPops ei voi ladata ostoskoriin kaupastasi, joten asiakkaat näkevät "
+"\"Pyyntö epäonnistui\" -viestin ostoskorin vetäytyvässä laatikossa. Jotkut "
+"tietokantasi taulukot käyttävät vanhempaa tallennusmuotoa (MyISAM). "
+"Varmuuskopioi tietokantasi ja muunna kaikki sen taulukot InnoDB-muotoon."
+
+#: src/Setup/SiteHealthSection.php:80
+msgid "Update records present"
+msgstr "Päivitystietueet olemassa"
+
+#: src/Setup/SiteHealthSection.php:81
+msgid "Database engine (options / posts / cart sessions / user meta)"
+msgstr ""
+"Tietokannan moottori (asetukset / artikkelit / ostoskorin istunnot / "
+"käyttäjän metatiedot)"
 
 #: src/Blocks/CartDrawer/block.json
 msgctxt "block title"

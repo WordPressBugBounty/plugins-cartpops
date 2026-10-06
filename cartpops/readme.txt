@@ -4,16 +4,15 @@ Tags: side cart, cart drawer, floating cart, woocommerce side cart, add to cart 
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 2.0.5
+Stable tag: 2.0.6
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 A fast WooCommerce side cart and cart drawer with coupons and upsells. Pro adds a free shipping bar, rewards, bundles and analytics.
 
-Source code: Authored JavaScript, JSX and SCSS are bundled edition-by-edition in this plugin package.
-Build instructions: See BUILDING.md in the plugin root for the exact locked build commands.
-
 == Description ==
+
+**[Try the live demo](https://cartpops.com/demo/)** and add a product to see the cart drawer in action.
 
 CartPops adds a slide-out side cart to your WooCommerce store, so shoppers no longer have to visit the cart page. Shoppers add a product, see their cart slide in, change quantities, apply a coupon and head straight to checkout, all without a page reload.
 
@@ -52,6 +51,9 @@ CartPops is tested with the WooCommerce Cart and Checkout blocks and supports Hi
 = For developers =
 
 CartPops has PHP hooks and filters for its drawer markup, a `cartpops:open` JavaScript event, and a REST API for its settings. See the [developer docs](https://docs.cartpops.com) for the full list.
+
+Source code: Authored JavaScript, JSX and SCSS are bundled edition-by-edition in this plugin package.
+Build instructions: See BUILDING.md in the plugin root for the exact locked build commands.
 
 == Installation ==
 
@@ -108,6 +110,11 @@ Your settings, styling and license carry over. Version 2 is built around the car
 4. Pro Smart Bar rules and Smart Add-ons such as shipping protection and gift wrapping.
 
 == Changelog ==
+
+= 2.0.6 =
+* Improved: When CartPops cannot finish updating because the site's database tables use the older MyISAM format, the notice now says so and explains how to convert them, and Tools → Site Health → Info shows the database format and the exact reason for any failed update.
+* Improved: The CartPops details in Tools → Site Health → Info, the paused-notice help line and the new database notices are now translated into all 44 languages.
+* Fix: When the cart drawer only shows "Request failed" because the site's database tables use the older MyISAM format, WordPress admin now shows a notice explaining how to fix it. The update notice now says to convert all tables, not just two.
 
 = 2.0.5 =
 * Improved: When CartPops is paused after an update, the notice now names the step that failed, and Tools → Site Health → Info has a CartPops section with the details support needs, ready to copy.

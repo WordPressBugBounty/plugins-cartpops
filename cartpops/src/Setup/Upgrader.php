@@ -346,7 +346,11 @@ final class Upgrader {
 			return UpgradeOutcome::MAINTENANCE_REQUIRED;
 		}
 		if ( ! in_array( $migration, array( MigrationOutcome::COMPLETE, MigrationOutcome::NOT_APPLICABLE ), true ) ) {
-			return $this->failed( 'settings_migration_failed' );
+			return $this->failed(
+				in_array( 'database_not_transactional', $this->legacy_settings_migrator->runtime_warnings(), true )
+					? 'database_not_transactional'
+					: 'settings_migration_failed'
+			);
 		}
 		$terminal = MigrationOutcome::NOT_APPLICABLE === $migration
 			? UpgradeOutcome::NOT_APPLICABLE
@@ -1775,6 +1779,10 @@ final class Upgrader {
 		}
 
 		$status = $this->get_migration_status();
+		if ( 'failed' === $status['state'] && in_array( 'database_not_transactional', $status['warnings'], true ) ) {
+			// The paused notice explains this cause and how to fix it.
+			return;
+		}
 		if ( 'failed' === $status['state'] ) {
 			echo '<div class="notice notice-error"><p>'
 				. esc_html__( 'CartPops could not finish updating your settings from version 1, so it is paused. Your settings are safe. Reload this page to try again, and contact CartPops support if this message stays.', 'cartpops' )

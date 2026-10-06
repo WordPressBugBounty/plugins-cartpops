@@ -330,7 +330,7 @@ final class LegacySettingsMigrator {
 							},
 							$this->store
 						);
-						return MigrationOutcome::COMPLETE === $result ? $state : null;
+						return MigrationOutcome::COMPLETE === $this->with_fence_reason( $result ) ? $state : null;
 					} finally {
 						if ( null !== $expected_fingerprint ) {
 							$this->release_lock();
@@ -435,6 +435,8 @@ final class LegacySettingsMigrator {
 	 * @param MigrationOptionStore|null $store Exact caller-owned transaction cache boundary.
 	 */
 	public function migrate( ?SiteUpgradeContext $context = null, ?MigrationOptionStore $store = null ): MigrationOutcome {
+		// A failure before migrate_bound() must not inherit codes from an earlier call.
+		$this->runtime_warnings = array();
 		try {
 			$context = $context ?? SiteUpgradeContext::capture();
 			return $context->run(
@@ -444,7 +446,7 @@ final class LegacySettingsMigrator {
 				}
 			);
 		} catch ( SiteUpgradeContextDrift ) {
-			return MigrationOutcome::FAILED;
+			return $this->fail_without_journal( 'migrate_1' );
 		}
 	}
 
@@ -466,10 +468,11 @@ final class LegacySettingsMigrator {
 			}
 			if ( $this->pre_sdk_marker_requires_direct_proof( $control['rows'][ self::PRE_SDK_EVIDENCE_OPTION ] ) ) {
 				$this->runtime_warnings[] = 'pre_sdk_legacy_identity_network_unavailable';
-				return MigrationOutcome::FAILED;
+				return $this->fail_without_journal( 'migrate_bound_1' );
 			}
 			if ( ! ( new LegacyCompatibilityTerminalFence( $this->site_context ) )->membership_lock_is_transactional() ) {
-				return MigrationOutcome::FAILED;
+				$reason = LegacyCompatibilityTerminalFence::last_failure_reason();
+				return $this->fail_without_journal( '' === $reason ? 'migrate_bound_2' : $reason );
 			}
 			$this->bind_durable_pre_sdk_identity( $control['rows'] );
 			$reopened = $this->preserve_pre_sdk_identity_and_reopen_false_v2_born( $control['rows'] );
@@ -488,7 +491,7 @@ final class LegacySettingsMigrator {
 				}
 				if ( $this->pre_sdk_marker_requires_direct_proof( $control['rows'][ self::PRE_SDK_EVIDENCE_OPTION ] ) ) {
 					$this->runtime_warnings[] = 'pre_sdk_legacy_identity_network_unavailable';
-					return MigrationOutcome::FAILED;
+					return $this->fail_without_journal( 'migrate_bound_3' );
 				}
 				$this->bind_durable_pre_sdk_identity( $control['rows'] );
 			}
@@ -1058,7 +1061,7 @@ final class LegacySettingsMigrator {
 	 */
 	private function terminal_compatibility_outcome( ?MigrationOutcome $target, ?array $snapshot, ?LegacyPaidEntitlementPlan $paid_entitlement_plan ): MigrationOutcome {
 		if ( ! in_array( $target, array( null, MigrationOutcome::COMPLETE, MigrationOutcome::NOT_APPLICABLE ), true ) ) {
-			return MigrationOutcome::FAILED;
+			return $this->fail_without_journal( 'terminal_compatibility_outcome_1' );
 		}
 		if ( ! $this->fence_is_current() ) {
 			return MigrationOutcome::BUSY;
@@ -1085,7 +1088,7 @@ final class LegacySettingsMigrator {
 				}
 				if ( $this->pre_sdk_marker_requires_direct_proof( $controls[ self::PRE_SDK_EVIDENCE_OPTION ] ) ) {
 					$this->runtime_warnings[] = 'pre_sdk_legacy_identity_network_unavailable';
-					return MigrationOutcome::FAILED;
+					return $this->fail_without_journal( 'terminal_compatibility_outcome_2' );
 				}
 				$stored                       = $controls[ self::COMPATIBILITY_OPTION ];
 				$stored_rules_reconciled      = $stored['exists']
@@ -1098,7 +1101,7 @@ final class LegacySettingsMigrator {
 				$retirement_record_invalid    = $retirement_row['exists'] && ! $this->rules_retirement_record_is_valid( $retirement_row['value'] );
 				$retirement_record_reconciled = $retirement_record_invalid && ( $has_rules || $stored_rules_reconciled );
 				if ( $retirement_record_invalid && ! $retirement_record_reconciled ) {
-					return MigrationOutcome::FAILED;
+					return $this->fail_without_journal( 'terminal_compatibility_outcome_3' );
 				}
 				foreach ( $controls as $option => $row ) {
 					if (
@@ -1107,7 +1110,7 @@ final class LegacySettingsMigrator {
 						&& ! $this->store->autoload_is( $row['autoload'], false )
 						&& ! $this->persist_locked_option( $option, $row, $row['value'], false )
 					) {
-						return MigrationOutcome::FAILED;
+						return $this->fail_without_journal( 'terminal_compatibility_outcome_4' );
 					}
 				}
 
@@ -1180,7 +1183,7 @@ final class LegacySettingsMigrator {
 					( $has_rules || $stored_rules_reconciled || $retirement_autoload_needs_repair )
 					&& ! $this->ensure_rules_retirement_locked( $retirement_row )
 				) {
-					return MigrationOutcome::FAILED;
+					return $this->fail_without_journal( 'terminal_compatibility_outcome_5' );
 				}
 				$stored_compatibility_reconciled = $js_reviewed || $stored_paid_features_reconciled
 					|| $stored_custom_recommendations_reconciled
@@ -1220,17 +1223,17 @@ final class LegacySettingsMigrator {
 
 				if ( array() !== $diagnostics ) {
 					if ( ! $this->invalidate_terminal_controls_locked( $controls, $diagnostics ) ) {
-						return MigrationOutcome::FAILED;
+						return $this->fail_without_journal( 'terminal_compatibility_outcome_6' );
 					}
 					$record = $this->compatibility_disposition_record( $diagnostics );
 					if ( ! $this->persist_locked_option( self::COMPATIBILITY_OPTION, $controls[ self::COMPATIBILITY_OPTION ], $record, false ) ) {
-						return MigrationOutcome::FAILED;
+						return $this->fail_without_journal( 'terminal_compatibility_outcome_7' );
 					}
 					$this->runtime_warnings = array_values( array_unique( array_merge( $this->runtime_warnings, $diagnostics ) ) );
 					return MigrationOutcome::MAINTENANCE_REQUIRED;
 				}
 				if ( $js_reviewed && ! $this->custom_js_review_rows_unchanged( $locked ) ) {
-					return MigrationOutcome::FAILED;
+					return $this->fail_without_journal( 'terminal_compatibility_outcome_8' );
 				}
 				// 2.0.0-2.0.2 could pause for a value that no longer blocks; remove
 				// that marker under the same fence so status stops reporting review.
@@ -1240,22 +1243,22 @@ final class LegacySettingsMigrator {
 					&& $this->maintenance_reason_is_released( $maintenance_row['value'] )
 					&& ! $this->store->delete_if_raw( self::MAINTENANCE_OPTION, $maintenance_row['raw_value'] )
 				) {
-					return MigrationOutcome::FAILED;
+					return $this->fail_without_journal( 'terminal_compatibility_outcome_9' );
 				}
 
 				if ( null === $target ) {
 					if ( $controls[ self::COMPLETION_OPTION ]['exists'] && $controls[ self::PROVENANCE_OPTION ]['exists'] ) {
-						return MigrationOutcome::FAILED;
+						return $this->fail_without_journal( 'terminal_compatibility_outcome_10' );
 					}
 					if ( $controls[ self::COMPLETION_OPTION ]['exists'] ) {
 						if ( $stored['exists'] && ! $this->store->delete_if_raw( self::COMPATIBILITY_OPTION, $stored['raw_value'] ) ) {
-							return MigrationOutcome::FAILED;
+							return $this->fail_without_journal( 'terminal_compatibility_outcome_11' );
 						}
-						return ! $js_reviewed || $this->custom_js_review_rows_unchanged( $locked ) ? MigrationOutcome::COMPLETE : MigrationOutcome::FAILED;
+						return ! $js_reviewed || $this->custom_js_review_rows_unchanged( $locked ) ? MigrationOutcome::COMPLETE : $this->fail_without_journal( 'terminal_compatibility_outcome_12' );
 					}
 					if ( $controls[ self::PROVENANCE_OPTION ]['exists'] ) {
 						if ( $stored['exists'] && ! $this->store->delete_if_raw( self::COMPATIBILITY_OPTION, $stored['raw_value'] ) ) {
-							return MigrationOutcome::FAILED;
+							return $this->fail_without_journal( 'terminal_compatibility_outcome_13' );
 						}
 						return MigrationOutcome::NOT_APPLICABLE;
 					}
@@ -1268,7 +1271,7 @@ final class LegacySettingsMigrator {
 						&& ! $reviewed_without_disposition
 						&& ( ! $stored['exists'] || ( ! $entitlement_admitted && ! $stored_compatibility_reconciled ) )
 					) {
-						return MigrationOutcome::FAILED;
+						return $this->fail_without_journal( 'terminal_compatibility_outcome_14' );
 					}
 					$resume_migration = true;
 					return MigrationOutcome::COMPLETE;
@@ -1278,11 +1281,11 @@ final class LegacySettingsMigrator {
 						( ! $entitlement_admitted && ! $stored_compatibility_reconciled )
 						|| ! $this->store->delete_if_raw( self::COMPATIBILITY_OPTION, $stored['raw_value'] )
 					) {
-						return MigrationOutcome::FAILED;
+						return $this->fail_without_journal( 'terminal_compatibility_outcome_15' );
 					}
 				}
 				if ( $controls[ self::PROVENANCE_OPTION ]['exists'] || $controls[ self::COMPLETION_OPTION ]['exists'] ) {
-					return MigrationOutcome::FAILED;
+					return $this->fail_without_journal( 'terminal_compatibility_outcome_16' );
 				}
 				if ( MigrationOutcome::NOT_APPLICABLE === $target && $has_rules ) {
 					$resume_migration = true;
@@ -1290,25 +1293,25 @@ final class LegacySettingsMigrator {
 				}
 				if ( MigrationOutcome::COMPLETE === $target ) {
 					if ( null === $snapshot ) {
-						return MigrationOutcome::FAILED;
+						return $this->fail_without_journal( 'terminal_compatibility_outcome_17' );
 					}
 					$journal = $this->build_journal_record( 'complete', $snapshot );
 					if ( null === $journal || ! $this->persist_locked_option( self::JOURNAL_OPTION, $controls[ self::JOURNAL_OPTION ], $journal, false ) ) {
-						return MigrationOutcome::FAILED;
+						return $this->fail_without_journal( 'terminal_compatibility_outcome_18' );
 					}
 					if ( ! $this->persist_locked_option( self::COMPLETION_OPTION, $controls[ self::COMPLETION_OPTION ], self::SCHEMA_VERSION, false ) ) {
-						return MigrationOutcome::FAILED;
+						return $this->fail_without_journal( 'terminal_compatibility_outcome_19' );
 					}
 					$preserved = $controls[ self::PRE_SDK_EVIDENCE_OPTION ];
 					if ( $preserved['exists'] && ! $this->store->delete_if_raw( self::PRE_SDK_EVIDENCE_OPTION, $preserved['raw_value'] ) ) {
-						return MigrationOutcome::FAILED;
+						return $this->fail_without_journal( 'terminal_compatibility_outcome_20' );
 					}
-					return ! $js_reviewed || $this->custom_js_review_rows_unchanged( $locked ) ? MigrationOutcome::COMPLETE : MigrationOutcome::FAILED;
+					return ! $js_reviewed || $this->custom_js_review_rows_unchanged( $locked ) ? MigrationOutcome::COMPLETE : $this->fail_without_journal( 'terminal_compatibility_outcome_21' );
 				}
 				if ( MigrationOutcome::NOT_APPLICABLE === $target && $controls[ self::PRE_SDK_EVIDENCE_OPTION ]['exists'] ) {
 					$basename = $this->pre_sdk_evidence_basename( $controls[ self::PRE_SDK_EVIDENCE_OPTION ] );
 					if ( null === $basename ) {
-						return MigrationOutcome::FAILED;
+						return $this->fail_without_journal( 'terminal_compatibility_outcome_22' );
 					}
 					$this->durable_pre_sdk_basename = $basename;
 					$resume_migration               = true;
@@ -1322,10 +1325,11 @@ final class LegacySettingsMigrator {
 				);
 				return $this->persist_locked_option( self::PROVENANCE_OPTION, $controls[ self::PROVENANCE_OPTION ], $provenance, false )
 					? MigrationOutcome::NOT_APPLICABLE
-					: MigrationOutcome::FAILED;
+					: $this->fail_without_journal( 'terminal_compatibility_outcome_23' );
 			},
 			$this->store
 		);
+		$result           = $this->with_fence_reason( $result );
 
 		if ( ! $resume_migration || MigrationOutcome::COMPLETE !== $result ) {
 			return $result;
@@ -1562,7 +1566,7 @@ final class LegacySettingsMigrator {
 		$unscoped  = $authority['legacy_exact'];
 		if ( null !== $captured && null !== $preserved && $captured !== $preserved ) {
 			$this->runtime_warnings[] = 'pre_sdk_legacy_identity_conflict';
-			return MigrationOutcome::FAILED;
+			return $this->fail_without_journal( 'historical_completion_outcome_1' );
 		}
 		if ( null === $captured && null === $preserved && ! $unscoped ) {
 			return null;
@@ -1572,13 +1576,15 @@ final class LegacySettingsMigrator {
 		// hold exact customization evidence through its existing completion writes.
 		if ( $rows[ self::JS_REVIEW_OPTION ]['exists'] || $rows[ self::QUARANTINE_OPTION ]['exists'] ) {
 			if ( null === $locked ) {
-				return ( new LegacyCompatibilityTerminalFence( $this->site_context ) )->run(
-					$this->compatibility_terminal_option_names(),
-					function ( bool $has_rules, array $fresh, bool $overbound ): MigrationOutcome {
-						$controls = $this->locked_control_rows( $fresh );
-						return $overbound ? MigrationOutcome::FAILED : ( $this->classify_site_control_state( $controls ) ?? $this->historical_completion_outcome( $controls, $fresh ) ?? MigrationOutcome::FAILED );
-					},
-					$this->store
+				return $this->with_fence_reason(
+					( new LegacyCompatibilityTerminalFence( $this->site_context ) )->run(
+						$this->compatibility_terminal_option_names(),
+						function ( bool $has_rules, array $fresh, bool $overbound ): MigrationOutcome {
+							$controls = $this->locked_control_rows( $fresh );
+							return $overbound ? $this->fail_without_journal( 'historical_completion_outcome_2' ) : ( $this->classify_site_control_state( $controls ) ?? $this->historical_completion_outcome( $controls, $fresh ) ?? $this->fail_without_journal( 'historical_completion_outcome_3' ) );
+						},
+						$this->store
+					)
 				);
 			}
 			$quarantined     = $rows[ self::QUARANTINE_OPTION ]['value']['raw_value'] ?? '';
@@ -1597,16 +1603,16 @@ final class LegacySettingsMigrator {
 
 		$outcome = $this->current_completion_outcome( $completion );
 		if ( MigrationOutcome::COMPLETE !== $outcome ) {
-			return $outcome ?? MigrationOutcome::FAILED;
+			return $outcome ?? $this->fail_without_journal( 'historical_completion_outcome_4' );
 		}
 		if (
 			$rows[ self::PRE_SDK_EVIDENCE_OPTION ]['exists']
 			&& ! $this->store->delete_if_raw( self::PRE_SDK_EVIDENCE_OPTION, $rows[ self::PRE_SDK_EVIDENCE_OPTION ]['raw_value'] )
 		) {
-			return MigrationOutcome::FAILED;
+			return $this->fail_without_journal( 'historical_completion_outcome_5' );
 		}
 		if ( null !== $locked && $rows[ self::JS_REVIEW_OPTION ]['exists'] && ! $this->custom_js_review_rows_unchanged( $locked ) ) {
-			return MigrationOutcome::FAILED;
+			return $this->fail_without_journal( 'historical_completion_outcome_6' );
 		}
 
 		return MigrationOutcome::COMPLETE;
@@ -1627,7 +1633,7 @@ final class LegacySettingsMigrator {
 		$preserved = $this->pre_sdk_evidence_basename( $rows[ self::PRE_SDK_EVIDENCE_OPTION ] );
 		if ( null !== $captured && null !== $preserved && $captured !== $preserved ) {
 			$this->runtime_warnings[] = 'pre_sdk_legacy_identity_conflict';
-			return MigrationOutcome::FAILED;
+			return $this->fail_without_journal( 'preserve_pre_sdk_identity_and_reopen_false_v2_born_1' );
 		}
 
 		$needs_preservation = null !== $captured && null === $preserved;
@@ -1652,23 +1658,23 @@ final class LegacySettingsMigrator {
 			}
 			if ( $this->pre_sdk_marker_requires_direct_proof( $current['rows'][ self::PRE_SDK_EVIDENCE_OPTION ] ) ) {
 				$this->runtime_warnings[] = 'pre_sdk_legacy_identity_network_unavailable';
-				return MigrationOutcome::FAILED;
+				return $this->fail_without_journal( 'preserve_pre_sdk_identity_and_reopen_false_v2_born_2' );
 			}
 
 			$preserved = $this->pre_sdk_evidence_basename( $current['rows'][ self::PRE_SDK_EVIDENCE_OPTION ] );
 			if ( null !== $captured && null !== $preserved && $captured !== $preserved ) {
 				$this->runtime_warnings[] = 'pre_sdk_legacy_identity_conflict';
-				return MigrationOutcome::FAILED;
+				return $this->fail_without_journal( 'preserve_pre_sdk_identity_and_reopen_false_v2_born_3' );
 			}
 			$historical_basename = $preserved ?? $captured;
 			if ( null === $historical_basename ) {
 				$this->runtime_warnings[] = 'pre_sdk_legacy_identity_unavailable';
-				return MigrationOutcome::FAILED;
+				return $this->fail_without_journal( 'preserve_pre_sdk_identity_and_reopen_false_v2_born_4' );
 			}
 
 			if ( null === $preserved ) {
 				if ( ! $this->persist_pre_sdk_evidence( $current['rows'][ self::PRE_SDK_EVIDENCE_OPTION ], $historical_basename ) ) {
-					return MigrationOutcome::FAILED;
+					return $this->fail_without_journal( 'preserve_pre_sdk_identity_and_reopen_false_v2_born_5' );
 				}
 				$this->durable_pre_sdk_basename = $historical_basename;
 				$this->checkpoint( 'after_pre_sdk_identity_preserved' );
@@ -1680,7 +1686,7 @@ final class LegacySettingsMigrator {
 				&& ! $this->store->delete_if_raw( self::PROVENANCE_OPTION, $provenance['raw_value'] )
 			) {
 				$this->runtime_warnings[] = 'false_v2_born_reopen_failed';
-				return MigrationOutcome::FAILED;
+				return $this->fail_without_journal( 'preserve_pre_sdk_identity_and_reopen_false_v2_born_6' );
 			}
 			if ( $provenance['exists'] ) {
 				$this->checkpoint( 'after_false_v2_born_reopened' );
@@ -1983,12 +1989,12 @@ final class LegacySettingsMigrator {
 			}
 			if ( self::SCHEMA_VERSION !== $schema || ! $this->lock_record_is_valid( $current ) ) {
 				$this->runtime_warnings[] = 'invalid_migration_lock';
-				return MigrationOutcome::FAILED;
+				return $this->fail_without_journal( 'acquire_lock_1' );
 			}
 			$expiry = CanonicalInteger::parse( $current['expires_at'], 0 );
 			if ( null === $expiry ) {
 				$this->runtime_warnings[] = 'invalid_migration_lock';
-				return MigrationOutcome::FAILED;
+				return $this->fail_without_journal( 'acquire_lock_2' );
 			}
 			if ( $expiry > ( $this->clock )() ) {
 				$this->runtime_warnings[] = 'migration_lock_busy';
@@ -2255,7 +2261,7 @@ final class LegacySettingsMigrator {
 			}
 			if ( ! in_array( strtolower( $row['autoload'] ), array( 'yes', 'no', 'on', 'off', 'auto', 'auto-on', 'auto-off' ), true ) ) {
 				$this->runtime_warnings[] = 'invalid_durable_migration_record';
-				return MigrationOutcome::FAILED;
+				return $this->fail_without_journal( 'classify_site_control_state_1' );
 			}
 			if ( self::PRE_SDK_EVIDENCE_OPTION === $option ) {
 				$authority = $this->classify_pre_sdk_evidence_row( $row );
@@ -2274,7 +2280,7 @@ final class LegacySettingsMigrator {
 					)
 				) {
 					$this->runtime_warnings[] = 'invalid_durable_migration_record';
-					return MigrationOutcome::FAILED;
+					return $this->fail_without_journal( 'classify_site_control_state_2' );
 				}
 				continue;
 			}
@@ -2283,7 +2289,7 @@ final class LegacySettingsMigrator {
 					continue;
 				}
 				$this->runtime_warnings[] = 'invalid_durable_migration_record';
-				return MigrationOutcome::FAILED;
+				return $this->fail_without_journal( 'classify_site_control_state_3' );
 			}
 		}
 
@@ -2487,6 +2493,19 @@ final class LegacySettingsMigrator {
 	}
 
 	/**
+	 * Report why the terminal fence failed on its own, before its operation ran.
+	 *
+	 * @param MigrationOutcome $outcome Fence result.
+	 */
+	private function with_fence_reason( MigrationOutcome $outcome ): MigrationOutcome {
+		$reason = LegacyCompatibilityTerminalFence::last_failure_reason();
+		if ( MigrationOutcome::FAILED === $outcome && '' !== $reason ) {
+			$this->runtime_warnings[] = $reason;
+		}
+		return $outcome;
+	}
+
+	/**
 	 * Invoke the explicitly injected phase observer when present.
 	 *
 	 * @param string $phase Completed phase name.
@@ -2495,6 +2514,15 @@ final class LegacySettingsMigrator {
 		if ( null !== $this->checkpoint_observer ) {
 			( $this->checkpoint_observer )( $phase );
 		}
+	}
+
+	/**
+	 * Value-free codes recorded while the last migrate() call ran.
+	 *
+	 * @return string[]
+	 */
+	public function runtime_warnings(): array {
+		return array_values( array_unique( $this->runtime_warnings ) );
 	}
 
 	/**

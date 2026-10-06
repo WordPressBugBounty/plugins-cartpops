@@ -23,6 +23,24 @@ final class SiteHealthSection {
 	private const OPTION_MIGRATION_COMPLETED = 'cartpops_v1_migration_version';
 	private const OPTION_MAINTENANCE         = 'cartpops_v1_migration_maintenance_v1';
 
+	/** Update records whose presence, never contents, explains which path ran. */
+	private const UPDATE_RECORDS = array(
+		'cartpops_v1_migration_version'           => 'completion',
+		'cartpops_v2_install_provenance_v1'       => 'provenance',
+		'cartpops_v1_pre_sdk_evidence_v1'         => 'pre_sdk_evidence',
+		'cartpops_v1_migration_snapshot_v1'       => 'snapshot',
+		'cartpops_v1_migration_journal'           => 'journal',
+		'cartpops_v1_migration_maintenance_v1'    => 'maintenance',
+		'cartpops_v1_migration_lock_v1'           => 'lock',
+		'cartpops_v2_migration_recovery_v1'       => 'recovery',
+		'cartpops_v1_custom_js_quarantine_v1'     => 'custom_js_quarantine',
+		'cartpops_v1_custom_js_review_v1'         => 'custom_js_review',
+		'cartpops_v1_paid_rules_disposition_v1'   => 'compatibility',
+		'cartpops_v1_rules_retirement_v1'         => 'rules_retirement',
+		'cartpops_settings_normalization_version' => 'settings_format',
+		'cartpops_settings_pre_normalization_v1'  => 'settings_format_recovery',
+	);
+
 	/**
 	 * Build the section.
 	 *
@@ -59,6 +77,8 @@ final class SiteHealthSection {
 			'v1_warnings'  => self::field( __( 'Update warnings', 'cartpops' ), self::codes( $migration['warnings'] ?? array() ) ),
 			'v1_unmapped'  => self::field( __( 'Settings not carried over', 'cartpops' ), self::codes( $migration['unmapped_keys'] ?? array() ) ),
 			'maintenance'  => self::field( __( 'Update paused for', 'cartpops' ), self::maintenance_reason() ),
+			'records'      => self::field( __( 'Update records present', 'cartpops' ), self::update_records() ),
+			'db_engines'   => self::field( __( 'Database engine (options / posts / cart sessions / user meta)', 'cartpops' ), self::table_engines() ),
 			'object_cache' => self::field(
 				__( 'Persistent object cache', 'cartpops' ),
 				wp_using_ext_object_cache() ? __( 'Yes', 'cartpops' ) : __( 'No', 'cartpops' )
@@ -153,6 +173,23 @@ final class SiteHealthSection {
 		return is_array( $marker ) && is_int( $marker['schema_version'] ?? null )
 			? (string) $marker['schema_version']
 			: 'unrecognised';
+	}
+
+	/** Storage engines of the tables the update and the cart lock; MyISAM cannot do either. */
+	private static function table_engines(): string {
+		$engines = array_map( array( self::class, 'code' ), DatabaseEngines::read() );
+		return array() === array_filter( $engines ) ? '' : implode( ' / ', $engines );
+	}
+
+	/** Which update records exist, by fixed name only. */
+	private static function update_records(): string {
+		$present = array();
+		foreach ( self::UPDATE_RECORDS as $option => $name ) {
+			if ( false !== get_option( $option, false ) ) {
+				$present[] = $name;
+			}
+		}
+		return implode( ', ', $present );
 	}
 
 	/** Why the update from version 1 is waiting, if a marker exists. */

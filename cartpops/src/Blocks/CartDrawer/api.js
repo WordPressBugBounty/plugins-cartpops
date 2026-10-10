@@ -830,10 +830,16 @@ function commitStoreResponseAuthority( response, attemptedAuthority, lease ) {
  * @return {Promise<{cartToken: string, storeNonce: string}>} Valid probe result.
  */
 async function probeStoreAuthority( storeApiBase ) {
-	const response = await fetch( buildRestUrl( storeApiBase, 'cart' ), {
-		cache: 'no-store',
-		credentials: 'same-origin',
-	} );
+	// `cache: 'no-store'` only skips the browser cache. The unique query also
+	// misses server page caches, which would otherwise serve another shopper's
+	// Cart-Token and bind the drawer to their cart.
+	const response = await fetch(
+		buildRestUrl( storeApiBase, 'cart', { _: Date.now() } ),
+		{
+			cache: 'no-store',
+			credentials: 'same-origin',
+		}
+	);
 	const result = readStoreAuthorityHeaders( response );
 	if ( ! response.ok || ! result.cartToken ) {
 		throw new Error( i18n( 'requestFailed' ) );
@@ -1764,7 +1770,12 @@ export async function storeApiFetch( endpoint, options = {} ) {
 	const operationLease = captureAuthorityLease();
 	const initialState = operationLease.owner;
 	const storeApiBase = initialState.storeApiBase;
-	const url = buildRestUrl( storeApiBase, endpoint );
+	// Reads get a unique query so server page caches cannot answer them.
+	const url = buildRestUrl(
+		storeApiBase,
+		endpoint,
+		mutating ? {} : { _: Date.now() }
+	);
 	const isBatch = String( endpoint ).replace( /^\/+|\/+$/g, '' ) === 'batch';
 	const capturedBatchRequests =
 		isBatch && typeof request.options.body === 'string'

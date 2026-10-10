@@ -20,6 +20,7 @@ use CartPops\Compatibility\ClassicThemeCompat;
 use CartPops\I18n\Translator;
 use CartPops\Compatibility\BlocksyIntegration;
 use CartPops\Compatibility\MiniCartIntegration;
+use CartPops\Compatibility\PageCacheExclusion;
 use CartPops\Licensing\EditionAuthority;
 use CartPops\Licensing\PaidRuntimeGuard;
 use CartPops\Edition\PhysicalEditionAuthority;
@@ -648,6 +649,7 @@ final class Plugin {
 
 		// REST API.
 		REST\RestCors::register();
+		PageCacheExclusion::register();
 		$this->container->get( REST\NamespaceRateLimitMiddleware::class )->register();
 		add_action( 'wp_scheduled_delete', array( REST\RateLimiter::class, 'cleanup_expired' ) );
 

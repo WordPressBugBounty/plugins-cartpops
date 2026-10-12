@@ -21,6 +21,7 @@ final class FreemiusRuntime {
 	private const METHOD_USER                = 'get_user';
 	private const METHOD_REGISTERED          = 'is_registered';
 	private const METHOD_SITE_URL            = 'get_unfiltered_site_url';
+	private const METHOD_NETWORK_ACTIVE      = 'is_network_active';
 
 	private const REQUIRED_METHODS = array(
 		self::METHOD_PRODUCT_ID,
@@ -48,6 +49,7 @@ final class FreemiusRuntime {
 		self::METHOD_USER                => 0,
 		self::METHOD_REGISTERED          => 0,
 		self::METHOD_SITE_URL            => 0,
+		self::METHOD_NETWORK_ACTIVE      => 0,
 	);
 
 	private const ARGUMENT_BOTH_BOOLEANS   = 'both_booleans';
@@ -249,7 +251,9 @@ final class FreemiusRuntime {
 	/**
 	 * Bind the SDK's null-blog single-site representation without inventing a blog ID.
 	 *
-	 * Freemius keeps a null blog_id on single-site installs. Its public persisted
+	 * Freemius keeps a null blog_id on single-site installs, and on a multisite
+	 * where the plugin is activated per site, not network-wide: the SDK then
+	 * stores the install in that blog's own options. Its public persisted
 	 * install lookup returns a clone, so compare canonical identity, not objects.
 	 * Registration and ownership do not grant entitlement: the adapter still
 	 * requires the canonical premium-code predicate after this check.
@@ -258,7 +262,7 @@ final class FreemiusRuntime {
 	 * @param int                  $expected Expected WordPress blog identity.
 	 */
 	private function single_site_matches( array $site, int $expected ): bool {
-		if ( ! self::single_site_context_matches( $expected ) ) {
+		if ( ! self::single_site_context_matches( $expected, $this->per_site_activation() ) ) {
 			return false;
 		}
 		foreach ( array( self::METHOD_INSTALL, self::METHOD_USER, self::METHOD_REGISTERED, self::METHOD_SITE_URL ) as $method ) {
@@ -297,19 +301,34 @@ final class FreemiusRuntime {
 		return null !== $url
 			&& self::single_site_url( $site['url'] ?? null ) === $url
 			&& self::single_site_url( $stored['url'] ?? null ) === $url
-			&& self::single_site_context_matches( $expected );
+			&& self::single_site_context_matches( $expected, $this->per_site_activation() );
 	}
 
 	/**
-	 * Require one unchanged, unswitched single-site WordPress context.
+	 * Whether the SDK reports a per-site (not network-wide) activation.
 	 *
-	 * @param int $expected Expected WordPress blog identity.
+	 * Only consulted on multisite; anything but an exact false fails closed.
+	 */
+	private function per_site_activation(): bool {
+		if ( ! function_exists( 'is_multisite' ) || false === is_multisite() ) {
+			return false;
+		}
+		return null !== $this->method_callable( self::METHOD_NETWORK_ACTIVE )
+			&& false === $this->invoke( self::METHOD_NETWORK_ACTIVE );
+	}
+
+	/**
+	 * Require one unchanged, unswitched blog context: a single site, or one
+	 * blog of a multisite where the plugin is activated per site.
+	 *
+	 * @param int  $expected        Expected WordPress blog identity.
+	 * @param bool $per_site_active Whether the SDK reports a per-site multisite activation.
 	 * @phpstan-impure External SDK calls can switch the WordPress context between reads.
 	 */
-	private static function single_site_context_matches( int $expected ): bool {
+	private static function single_site_context_matches( int $expected, bool $per_site_active ): bool {
 		return function_exists( 'is_multisite' )
 			&& function_exists( 'get_current_blog_id' )
-			&& false === is_multisite()
+			&& ( false === is_multisite() || $per_site_active )
 			&& get_current_blog_id() === $expected
 			&& self::canonical_integer_matches( $GLOBALS['blog_id'] ?? null, $expected )
 			&& false === ( $GLOBALS['switched'] ?? false )

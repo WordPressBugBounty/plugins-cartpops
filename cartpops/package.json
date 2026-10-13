@@ -1,6 +1,6 @@
 {
 	"name": "@cartpops/plugin",
-	"version": "2.0.10",
+	"version": "2.0.11",
 	"private": true,
 	"description": "The #1 WooCommerce cart drawer plugin.",
 	"packageManager": "npm@11.19.0",

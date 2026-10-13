@@ -105,6 +105,22 @@
 
 }
 
+// Themes colour every button on hover and focus (Hello Elementor uses
+// [type=button]:focus, Elementor kits prefix it with a class). :not(#_) adds
+// 1-0-0 without matching any real element, like the drawer's element resets,
+// so the launcher keeps its configured colours until focus moves elsewhere.
+.cpops-launcher--floating:not(#_):hover,
+.cpops-launcher--floating:not(#_):focus {
+	background-color: var(--color-cpops-floating-cart-launcher-background);
+	color: var(--color-cpops-floating-cart-launcher-color);
+}
+
+.cpops-launcher--inline:not(#_):hover,
+.cpops-launcher--inline:not(#_):focus {
+	background-color: var(--color-cpops-cart-launcher-background);
+	color: var(--color-cpops-cart-launcher-text);
+}
+
 .cpops-launcher__icon {
 	width: 24px;
 	height: 24px;

@@ -2460,12 +2460,52 @@ final class LegacySettingsMigrator {
 			return false;
 		}
 
+		$settings = $this->storable_settings( $settings );
 		if ( $prepared['exists'] ) {
 			return $this->store->compare_and_swap( self::SETTINGS_OPTION, $prepared['raw_value'], $settings, true );
 		}
 
 		$added = $this->store->add_immutable( self::SETTINGS_OPTION, $settings, true );
 		return $added['success'] && $added['won'];
+	}
+
+	/**
+	 * Drop emoji when the options column cannot store them.
+	 *
+	 * V1's default shipping meter messages contain emoji, and they are the only
+	 * text the migration adds that the V1 rows did not already store. On a site
+	 * whose options table still uses utf8mb3 or latin1, wpdb refuses (utf8mb3)
+	 * or the database mangles (latin1) the whole settings write, so the update
+	 * could never finish. A utf8mb4 column keeps every byte unchanged.
+	 *
+	 * @param array<string, mixed> $settings Merged settings document.
+	 * @return array<string, mixed>
+	 */
+	private function storable_settings( array $settings ): array {
+		$wpdb  = $this->site_context->database();
+		$table = $this->site_context->options_table();
+		if ( ! method_exists( $wpdb, 'get_col_charset' ) ) {
+			return $settings;
+		}
+		$charset = $this->site_context->guard( static fn(): mixed => $wpdb->get_col_charset( $table, 'option_value' ) );
+		if ( ! is_string( $charset ) || in_array( strtolower( $charset ), array( 'utf8mb4', 'binary' ), true ) ) {
+			return $settings;
+		}
+
+		array_walk_recursive(
+			$settings,
+			static function ( mixed &$value ): void {
+				if ( ! is_string( $value ) ) {
+					return;
+				}
+				$stored = preg_replace( '/[\x{10000}-\x{10FFFF}]/u', '', $value );
+				if ( is_string( $stored ) && $stored !== $value ) {
+					// "Congrats 🎉! You…" becomes "Congrats! You…", not "Congrats ! You…".
+					$value = trim( (string) preg_replace( array( '/ {2,}/', '/ ([!?.,:;])/' ), array( ' ', '$1' ), $stored ) );
+				}
+			}
+		);
+		return $settings;
 	}
 
 	/**

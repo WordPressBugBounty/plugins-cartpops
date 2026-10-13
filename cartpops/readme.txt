@@ -4,7 +4,7 @@ Tags: side cart, cart drawer, floating cart, woocommerce side cart, add to cart 
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 2.0.10
+Stable tag: 2.0.11
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -110,6 +110,10 @@ Your settings, styling and license carry over. Version 2 is built around the car
 4. Pro Smart Bar rules and Smart Add-ons such as shipping protection and gift wrapping.
 
 == Changelog ==
+
+= 2.0.11 =
+* Fix: The cart launcher keeps the colours set in CartPops when it is hovered or tapped, instead of switching to the theme's button colour (for example the pink-red of Hello Elementor).
+* Fix: Updating from CartPops 1 could stay paused on some older databases. The update now finishes, and the default free shipping messages are carried over without their emoji on those sites.
 
 = 2.0.10 =
 * Improved: Updated Freemius SDK to the latest version.

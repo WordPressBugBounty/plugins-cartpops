@@ -1,8 +1,8 @@
 <?php return array(
     'root' => array(
         'name' => 'cartpops/cartpops',
-        'pretty_version' => '2.0.10',
-        'version' => '2.0.10.0',
+        'pretty_version' => '2.0.11',
+        'version' => '2.0.11.0',
         'reference' => null,
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
@@ -11,8 +11,8 @@
     ),
     'versions' => array(
         'cartpops/cartpops' => array(
-            'pretty_version' => '2.0.10',
-            'version' => '2.0.10.0',
+            'pretty_version' => '2.0.11',
+            'version' => '2.0.11.0',
             'reference' => null,
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',

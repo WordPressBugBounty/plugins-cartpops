@@ -3,8 +3,36 @@
   "description": "The #1 WooCommerce cart drawer plugin. Boost conversions with a beautiful slide-out cart, product recommendations, and free shipping meter.",
   "type": "wordpress-plugin",
   "license": "GPL-3.0-or-later",
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "freemius/wordpress-sdk",
+        "version": "2.13.5",
+        "type": "library",
+        "description": "Freemius WordPress SDK",
+        "keywords": ["freemius", "wordpress", "plugin", "wordpress-plugin", "theme", "wordpress-theme", "sdk"],
+        "homepage": "https://freemius.com",
+        "license": "GPL-3.0-only",
+        "require": {
+          "php": ">=5.6"
+        },
+        "autoload": {
+          "files": [
+            "start.php"
+          ]
+        },
+        "dist": {
+          "type": "zip",
+          "url": "bin/composer-packages/freemius-wordpress-sdk-2.13.5.zip",
+          "reference": "75327e531559a52f80835a95c3c1684464b55398",
+          "shasum": "75327e531559a52f80835a95c3c1684464b55398"
+        }
+      }
+    }
+  ],
   "require": {
-    "freemius/wordpress-sdk": ">=2.13.4 <=2.13.4",
+    "freemius/wordpress-sdk": ">=2.13.5 <=2.13.5",
     "php": ">=8.1"
   },
   "require-dev": {

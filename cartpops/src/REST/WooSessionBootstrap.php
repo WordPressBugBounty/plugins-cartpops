@@ -68,6 +68,13 @@ final class WooSessionBootstrap {
 	private WooSessionDispatchAdapter $dispatch;
 
 	/**
+	 * Customer a signature-verified Cart-Token was issued for.
+	 *
+	 * @var \Closure(string): ?string
+	 */
+	private \Closure $token_customer_resolver;
+
+	/**
 	 * Request that owns the active lease.
 	 *
 	 * @var \WP_REST_Request|null
@@ -150,19 +157,24 @@ final class WooSessionBootstrap {
 	 * @param (callable(): mixed)|null                                           $woocommerce_resolver   WooCommerce singleton resolver.
 	 * @param (callable(object, string): (WooSessionBootstrapOutcome|bool))|null $store_session_preparer Official token authority adapter.
 	 * @param WooSessionDispatchAdapter|null                                     $dispatch               Request-lifecycle adapter.
+	 * @param (callable(string): ?string)|null                                   $token_customer_resolver Customer a signature-verified Cart-Token names.
 	 */
 	public function __construct(
 		?callable $woocommerce_resolver = null,
 		?callable $store_session_preparer = null,
-		?WooSessionDispatchAdapter $dispatch = null
+		?WooSessionDispatchAdapter $dispatch = null,
+		?callable $token_customer_resolver = null
 	) {
-		$this->woocommerce_resolver   = \Closure::fromCallable(
+		$this->woocommerce_resolver    = \Closure::fromCallable(
 			$woocommerce_resolver ?? static fn() => function_exists( 'WC' ) ? WC() : null
 		);
-		$this->store_session_preparer = \Closure::fromCallable(
+		$this->store_session_preparer  = \Closure::fromCallable(
 			$store_session_preparer ?? array( self::class, 'authorize_store_api_session' )
 		);
-		$this->dispatch               = $dispatch ?? new WordPressWooSessionDispatchAdapter();
+		$this->dispatch                = $dispatch ?? new WordPressWooSessionDispatchAdapter();
+		$this->token_customer_resolver = \Closure::fromCallable(
+			$token_customer_resolver ?? array( self::class, 'token_customer_id' )
+		);
 	}
 
 	/**
@@ -205,6 +217,9 @@ final class WooSessionBootstrap {
 			}
 			if ( WooSessionBootstrapOutcome::READY !== $authority ) {
 				return $authority;
+			}
+			if ( ! $this->discard_early_classic_session( $woocommerce, $cart_token ) ) {
+				return WooSessionBootstrapOutcome::UNAVAILABLE;
 			}
 			if ( ! $this->has_compatible_existing_store_session( $woocommerce ) ) {
 				return WooSessionBootstrapOutcome::UNAVAILABLE;
@@ -479,6 +494,63 @@ final class WooSessionBootstrap {
 	private function has_usable_session( object $woocommerce ): bool {
 		$session = $woocommerce->session ?? null;
 		return is_object( $session ) && is_callable( array( $session, 'get_customer_id' ) );
+	}
+
+	/**
+	 * Drop a classic session another plugin initialized before this permission callback.
+	 *
+	 * Plugins that call wc_load_cart() on rest_api_init initialize Woo's classic handler on
+	 * every REST request. A Cart-Token request may replace it only when it provably holds
+	 * nothing of its own: no lease is active, it is Woo's exact classic handler, it has no
+	 * unsaved changes, and it either carries no cookie or login identity or already names the
+	 * customer the verified token was issued for. Anything else is left for the caller's
+	 * refusal. Returns false only when a session that should go could not be cleanly dropped.
+	 *
+	 * @param object $woocommerce WooCommerce singleton.
+	 * @param string $cart_token  Signature-verified Cart-Token header.
+	 */
+	private function discard_early_classic_session( object $woocommerce, string $cart_token ): bool {
+		$session = $woocommerce->session ?? null;
+		if (
+			null !== self::$active_owner
+			|| ! is_object( $session )
+			|| get_class( $session ) !== $this->dispatch->classic_handler_class()
+			|| ! is_callable( array( $session, 'get_customer_id' ) )
+			|| ! is_callable( array( $session, 'has_session' ) )
+			|| ! $this->dispatch->is_unmodified_classic_session( $session )
+		) {
+			return true;
+		}
+
+		if ( $session->has_session() ) {
+			$token_customer   = ( $this->token_customer_resolver )( $cart_token );
+			$session_customer = $session->get_customer_id();
+			if (
+				! is_string( $token_customer ) || '' === $token_customer
+				|| ! is_string( $session_customer ) || '' === $session_customer
+				|| ! hash_equals( $token_customer, $session_customer )
+			) {
+				return true;
+			}
+		}
+
+		return $this->dispatch->discard_classic_session( $woocommerce );
+	}
+
+	/**
+	 * Read the customer ID out of a Cart-Token whose signature is already verified.
+	 *
+	 * @param string $cart_token Signature-verified Cart-Token header.
+	 */
+	private static function token_customer_id( string $cart_token ): ?string {
+		$parts = explode( '.', $cart_token );
+		if ( 3 !== count( $parts ) ) {
+			return null;
+		}
+		$json    = base64_decode( strtr( $parts[1], '-_', '+/' ), true ); // phpcs:ignore WordPress.PHP.DiscouragedPHPFunctions.obfuscation_base64_decode -- Decodes the payload segment of a Cart-Token whose signature was just verified.
+		$payload = is_string( $json ) ? json_decode( $json, true ) : null;
+		$user_id = is_array( $payload ) ? ( $payload['user_id'] ?? null ) : null;
+		return is_string( $user_id ) && '' !== $user_id ? $user_id : null;
 	}
 
 	/**

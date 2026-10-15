@@ -14,6 +14,29 @@ interface WooSessionDispatchAdapter {
 	/** Return the exact handler class selected for a validated Cart-Token. */
 	public function handler_class(): string;
 
+	/** Return the exact class of WooCommerce's classic cookie session handler. */
+	public function classic_handler_class(): string;
+
+	/**
+	 * Whether an already-initialized classic session holds nothing unsaved.
+	 *
+	 * Implementations answer false whenever that cannot be proven.
+	 *
+	 * @param object $session Classic session initialized earlier in this request.
+	 */
+	public function is_unmodified_classic_session( object $session ): bool;
+
+	/**
+	 * Drop an early classic session together with the cart and customer built on it.
+	 *
+	 * Every shutdown, cookie and cart-persistence callback those objects registered is
+	 * detached, so none of them can write over the Store session that replaces them.
+	 * Returns false when any part could not be proven removed.
+	 *
+	 * @param object $woocommerce WooCommerce singleton.
+	 */
+	public function discard_classic_session( object $woocommerce ): bool;
+
 	/**
 	 * Install one request-lifecycle hook.
 	 *

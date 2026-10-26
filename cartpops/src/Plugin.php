@@ -42,6 +42,9 @@ final class Plugin {
 	private const DRAWER_STYLE_HANDLE     = 'cartpops-cart-drawer-style';
 	private const CUSTOM_CSS_STYLE_HANDLE = 'cartpops-drawer-custom-css';
 
+	private const UPGRADE_RETRY_INIT_PRIORITY    = 0;
+	private const UPGRADE_BUSY_POLL_MICROSECONDS = 100000;
+
 	/**
 	 * The singleton instance.
 	 *
@@ -76,6 +79,13 @@ final class Plugin {
 	 * @var bool
 	 */
 	private bool $upgrade_retry_scheduled = false;
+
+	/**
+	 * How long the single BUSY retry may wait for the request that holds the upgrade lock.
+	 *
+	 * @var int Microseconds.
+	 */
+	private int $upgrade_busy_wait_microseconds = 2000000;
 
 	/**
 	 * Value-free diagnostic code for a fail-closed boot or missing build.
@@ -596,7 +606,15 @@ final class Plugin {
 		if ( $this->services_booted ) {
 			return;
 		}
-		$this->handle_upgrade_outcome( $this->upgrader->maybe_upgrade(), false );
+		$outcome = $this->upgrader->maybe_upgrade();
+		$waited  = 0;
+		while ( UpgradeOutcome::BUSY === $outcome && $waited < $this->upgrade_busy_wait_microseconds ) {
+			// The request holding the upgrade lock normally finishes within milliseconds.
+			usleep( self::UPGRADE_BUSY_POLL_MICROSECONDS );
+			$waited += self::UPGRADE_BUSY_POLL_MICROSECONDS;
+			$outcome = $this->upgrader->maybe_upgrade();
+		}
+		$this->handle_upgrade_outcome( $outcome, false );
 	}
 
 	/**
@@ -617,7 +635,10 @@ final class Plugin {
 		if ( UpgradeOutcome::BUSY === $outcome && $allow_retry && ! $this->upgrade_retry_scheduled ) {
 			$this->upgrade_retry_scheduled = true;
 			$this->boot_diagnostic         = 'upgrade_busy';
-			add_action( 'init', array( $this, 'retry_upgrade_and_boot' ), 20 );
+			// Before the default-priority init hooks that booting registers: WordPress never
+			// runs a hook added at a priority init has already passed, which would leave the
+			// launcher shortcode and blocks unregistered on a retry that boots late.
+			add_action( 'init', array( $this, 'retry_upgrade_and_boot' ), self::UPGRADE_RETRY_INIT_PRIORITY );
 		} else {
 			$this->boot_diagnostic   = 'upgrade_' . $outcome->value;
 			$this->boot_failure_step = UpgradeOutcome::FAILED === $outcome ? $this->upgrader->failure_step() : '';

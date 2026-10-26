@@ -565,6 +565,12 @@ function initialSynchronizationRegistry() {
  * `woocommerce_items_in_cart=1` presence hint for an item count. A populated
  * cart is identified only by its exact bounded cart hash.
  *
+ * WooCommerce removes both cart cookies when a cart is emptied and never sets
+ * them for a visitor who has not had one, so their joint absence reports an
+ * empty cart. A WooCommerce session cookie withdraws that claim: the cart
+ * cookies are session cookies, while the session and its cart survive a
+ * browser restart.
+ *
  * @param {string} cookieHeader `document.cookie` value.
  * @return {{status: 'populated'|'empty'|'unknown', cartHash: string|null}} Parsed cookie identity.
  */
@@ -582,6 +588,14 @@ export function readWooCartCookie( cookieHeader ) {
 			.map( ( part ) => part.slice( part.indexOf( '=' ) + 1 ) );
 	const itemHints = valuesFor( 'woocommerce_items_in_cart' );
 	const cartHashes = valuesFor( 'woocommerce_cart_hash' );
+
+	if (
+		itemHints.length === 0 &&
+		cartHashes.length === 0 &&
+		! parts.some( ( part ) => part.startsWith( 'wp_woocommerce_session_' ) )
+	) {
+		return { status: 'empty', cartHash: null };
+	}
 
 	if ( itemHints.length !== 1 || cartHashes.length > 1 ) {
 		return { status: 'unknown', cartHash: null };

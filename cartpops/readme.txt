@@ -4,7 +4,7 @@ Tags: side cart, cart drawer, floating cart, woocommerce side cart, add to cart 
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 2.0.12
+Stable tag: 2.0.13
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -110,6 +110,10 @@ Your settings, styling and license carry over. Version 2 is built around the car
 4. Pro Smart Bar rules and Smart Add-ons such as shipping protection and gift wrapping.
 
 == Changelog ==
+
+= 2.0.13 =
+* Fix: when several visitors loaded the site at the same moment right after an update, some pages could show the cart launcher as plain text like `[cartpops_cart_launcher]` and miss the cart drawer.
+* Fix: on sites with page caching, the cart drawer no longer sends two extra requests on every page view for visitors with an empty cart, and no longer loads recommendations while they are switched off. This reduces the load on busy stores.
 
 = 2.0.12 =
 * Fix: The cart drawer no longer shows "Request failed" with an empty item list when another plugin loads the cart early, such as delivery-slot plugins.

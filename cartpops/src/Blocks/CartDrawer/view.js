@@ -2280,6 +2280,11 @@ async function runSupplementaryFetches( reason = 'cart-refresh' ) {
 		Array.isArray( data ) ||
 		! Object.prototype.hasOwnProperty.call( data, 'recommendations' )
 	) {
+		// The drawer renders no recommendations when they are switched off, so
+		// the Free request would only cost the store an uncached page load.
+		if ( state.recsConfig?.enabled === false ) {
+			return false;
+		}
 		try {
 			const response = await cartpopsFetch(
 				'cartpops/v1/drawer-data',

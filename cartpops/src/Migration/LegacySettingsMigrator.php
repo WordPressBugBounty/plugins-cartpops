@@ -61,6 +61,7 @@ final class LegacySettingsMigrator {
 		self::NORMALIZATION_RECOVERY_OPTION,
 	);
 	private const MAX_RAW_BYTES                 = 1048576;
+	private const MAX_DUPLICATE_NETWORK_ROWS    = 8;
 	private const MAX_VALUE_DEPTH               = 64;
 	private const MAX_VALUE_NODES               = 10000;
 	private const MAX_SOURCE_RECORDS            = 500;
@@ -502,7 +503,8 @@ final class LegacySettingsMigrator {
 			$effective_diagnostics                     = $this->blocking_diagnostics(
 				null === $paid_entitlement_plan
 					? $paid_state['diagnostics']
-					: $this->without_paid_entitlement_adapter( $paid_state['diagnostics'] )
+					: $this->without_paid_entitlement_adapter( $paid_state['diagnostics'] ),
+				$this->freemius_row_is_uncertain( $paid_state['raw_rows'] )
 			);
 			$terminal_exists                           = $control['rows'][ self::COMPLETION_OPTION ]['exists'] || $control['rows'][ self::PROVENANCE_OPTION ]['exists'];
 			$preflight_diagnostics                     = $terminal_exists
@@ -1207,7 +1209,10 @@ final class LegacySettingsMigrator {
 					$diagnostics = $this->without_paid_entitlement_adapter( $diagnostics );
 					$diagnostics = $this->without_paid_entitlement_drift( $diagnostics );
 				}
-				$diagnostics = $this->blocking_diagnostics( array_values( array_unique( $diagnostics ) ) );
+				$diagnostics = $this->blocking_diagnostics(
+					array_values( array_unique( $diagnostics ) ),
+					$this->freemius_row_is_uncertain( $paid_rows )
+				);
 				sort( $diagnostics, SORT_STRING );
 				if ( $stored['exists'] && array() === $diagnostics ) {
 					// Every stored blocker was released, so the record may be removed.
@@ -1342,7 +1347,8 @@ final class LegacySettingsMigrator {
 			? $fresh_state['diagnostics']
 			: $this->without_paid_entitlement_adapter( $fresh_state['diagnostics'] );
 		$hard_diagnostics  = $this->blocking_diagnostics(
-			array_values( array_filter( $fresh_diagnostics, array( LegacyPaidStateInspector::class, 'is_hard_diagnostic' ) ) )
+			array_values( array_filter( $fresh_diagnostics, array( LegacyPaidStateInspector::class, 'is_hard_diagnostic' ) ) ),
+			$this->freemius_row_is_uncertain( $fresh_state['raw_rows'] )
 		);
 		return array() === $hard_diagnostics
 			? $this->migrate_while_locked( $fresh_plan )
@@ -1357,16 +1363,24 @@ final class LegacySettingsMigrator {
 	 * entitlement through its bridge. Every other diagnostic keeps V2 defaults for
 	 * the affected values, while the originals stay in the recovery snapshot.
 	 *
-	 * @param string[] $diagnostics Candidate diagnostics.
+	 * `legacy_paid_state_uncertain` also covers paid option values this version
+	 * cannot map, which no licence can ever settle. A Pro build therefore waits on it
+	 * only while the Freemius row itself is the uncertain part; the licence wait for
+	 * a V1 paid row is enforced separately by the entitlement-adapter diagnostic.
+	 *
+	 * @param string[] $diagnostics         Candidate diagnostics.
+	 * @param bool     $freemius_row_uncertain Whether the Freemius row itself is the uncertain part.
 	 * @return string[]
 	 */
-	private function blocking_diagnostics( array $diagnostics ): array {
+	private function blocking_diagnostics( array $diagnostics, bool $freemius_row_uncertain = false ): array {
 		$resolvable = array( 'legacy_custom_js_requires_review' );
 		if ( null !== $this->paid_entitlement_bridge ) {
 			// Completing first would leave a later licensed Freemius row unadmitted.
 			$resolvable[] = 'legacy_paid_entitlement_requires_adapter';
-			$resolvable[] = 'legacy_paid_state_uncertain';
 			$resolvable[] = self::ENTITLEMENT_DRIFT_DIAGNOSTIC;
+			if ( $freemius_row_uncertain ) {
+				$resolvable[] = 'legacy_paid_state_uncertain';
+			}
 		}
 		$blocking = array_values( array_intersect( $diagnostics, $resolvable ) );
 		$released = array_diff( $diagnostics, $blocking );
@@ -1374,6 +1388,27 @@ final class LegacySettingsMigrator {
 			$this->warnings = array_values( array_unique( array_merge( $this->warnings, $released ) ) );
 		}
 		return $blocking;
+	}
+
+	/**
+	 * Whether the Freemius row, not a paid option value, is the uncertain part of the paid state.
+	 *
+	 * Only a later licence or a readable row can settle that, so a Pro build keeps
+	 * waiting on it. A V1 Pro identity whose row is missing counts as uncertain too.
+	 *
+	 * @param array<string, string> $raw_rows Exact paid-state option bytes keyed by option name.
+	 */
+	private function freemius_row_is_uncertain( array $raw_rows ): bool {
+		$accounts = $raw_rows['fs_accounts'] ?? '';
+		if ( '' === $accounts ) {
+			return 'cartpops-pro/cartpops.php' === $this->historical_pre_sdk_basename();
+		}
+		try {
+			$own = ( new LegacyPaidStateInspector( $this->site_context ) )->inspect_raw_rows( array( 'fs_accounts' => $accounts ) );
+		} catch ( MigrationMaintenanceException | MigrationReadException ) {
+			return true;
+		}
+		return in_array( 'legacy_paid_state_uncertain', $own, true );
 	}
 
 	/**
@@ -3487,14 +3522,24 @@ final class LegacySettingsMigrator {
 		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching -- Cohort proof must distinguish a missing network row from database failure.
 		$rows = $wpdb->get_results(
 			$wpdb->prepare(
-				"SELECT meta_value FROM {$wpdb->sitemeta} WHERE site_id = %d AND meta_key = %s LIMIT 2",
+				"SELECT meta_value FROM {$wpdb->sitemeta} WHERE site_id = %d AND meta_key = %s LIMIT %d",
 				get_current_network_id(),
-				$option
+				$option,
+				self::MAX_DUPLICATE_NETWORK_ROWS + 1
 			),
 			ARRAY_A
 		);
-		if ( '' !== MigrationDatabaseState::last_error( $wpdb ) || ! is_array( $rows ) || count( $rows ) > 1 ) {
+		if ( '' !== MigrationDatabaseState::last_error( $wpdb ) || ! is_array( $rows ) || count( $rows ) > self::MAX_DUPLICATE_NETWORK_ROWS ) {
 			throw new MigrationReadException( 'database_read_failed_network_option' );
+		}
+		// wp_sitemeta has no unique (site_id, meta_key) key, so concurrent add_site_option() calls
+		// can leave several copies. Byte-identical copies carry the evidence of one row; any
+		// difference means there is no single winner and the read fails closed.
+		$first = reset( $rows );
+		foreach ( $rows as $duplicate ) {
+			if ( $duplicate !== $first ) {
+				throw new MigrationReadException( 'database_read_failed_network_option' );
+			}
 		}
 		if ( array() === $rows ) {
 			return array(

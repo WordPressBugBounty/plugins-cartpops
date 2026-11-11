@@ -28,20 +28,21 @@ final class PreSdkLegacyInstallEvidence {
 	public const SITE_MARKER_FUTURE             = 'future';
 	public const SITE_MARKER_INVALID            = 'invalid';
 
-	private const SCHEMA_VERSION           = 1;
-	private const SITE_MARKER_SCHEMA       = 2;
-	private const COMPLETION_OPTION        = 'cartpops_v1_migration_version';
-	private const MAX_RAW_BYTES            = 1048576;
-	private const BOUNDED_VALUE_BYTES      = self::MAX_RAW_BYTES + 1;
-	private const MAX_CONTROL_BYTES        = 4096;
-	private const BOUNDED_CONTROL_BYTES    = self::MAX_CONTROL_BYTES + 1;
-	private const BOUNDED_VALUE_ALIAS      = 'cartpops_pre_sdk_bounded_value';
-	private const BOUNDED_LENGTH_ALIAS     = 'cartpops_pre_sdk_byte_length';
-	private const BOUNDED_PROBE_ALIAS      = 'cartpops_pre_sdk_probe';
-	private const BOUNDED_AUTOLOAD_ALIAS   = 'cartpops_pre_sdk_autoload';
-	private const MAX_VALUE_DEPTH          = 64;
-	private const MAX_VALUE_NODES          = 10000;
-	private const LEGACY_NETWORK_BASENAMES = array(
+	private const SCHEMA_VERSION             = 1;
+	private const SITE_MARKER_SCHEMA         = 2;
+	private const COMPLETION_OPTION          = 'cartpops_v1_migration_version';
+	private const MAX_RAW_BYTES              = 1048576;
+	private const MAX_DUPLICATE_NETWORK_ROWS = 8;
+	private const BOUNDED_VALUE_BYTES        = self::MAX_RAW_BYTES + 1;
+	private const MAX_CONTROL_BYTES          = 4096;
+	private const BOUNDED_CONTROL_BYTES      = self::MAX_CONTROL_BYTES + 1;
+	private const BOUNDED_VALUE_ALIAS        = 'cartpops_pre_sdk_bounded_value';
+	private const BOUNDED_LENGTH_ALIAS       = 'cartpops_pre_sdk_byte_length';
+	private const BOUNDED_PROBE_ALIAS        = 'cartpops_pre_sdk_probe';
+	private const BOUNDED_AUTOLOAD_ALIAS     = 'cartpops_pre_sdk_autoload';
+	private const MAX_VALUE_DEPTH            = 64;
+	private const MAX_VALUE_NODES            = 10000;
+	private const LEGACY_NETWORK_BASENAMES   = array(
 		'cartpops/cartpops.php',
 		'cartpops-pro/cartpops.php',
 	);
@@ -834,6 +835,12 @@ final class PreSdkLegacyInstallEvidence {
 	/**
 	 * Read one external network row with duplicate and unsafe-value detection.
 	 *
+	 * The sitemeta table has no unique key on (site_id, meta_key), so concurrent add_site_option()
+	 * calls can leave several copies. WordPress and Freemius read the same value from any
+	 * copy only when every copy is byte-identical, so a bounded number of byte-identical
+	 * copies is read as one row. Differing, oversized, or unboundedly many copies still
+	 * fail closed rather than selecting an unordered winner.
+	 *
 	 * @param string $option     Exact external option name.
 	 * @param int    $network_id Exact current network ID.
 	 * @return array{exists: bool, overbound: bool, raw_value: string, autoload: string}
@@ -854,12 +861,13 @@ final class PreSdkLegacyInstallEvidence {
 		$database = $wpdb;
 		$query    = $database->prepare(
 			// phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared -- WordPress owns the table identifier; values use placeholders.
-			'SELECT OCTET_LENGTH(meta_value) AS ' . self::BOUNDED_LENGTH_ALIAS . ', LEFT(BINARY meta_value, %d) AS ' . self::BOUNDED_VALUE_ALIAS . ', 1 AS ' . self::BOUNDED_PROBE_ALIAS . " FROM {$database->sitemeta} WHERE site_id = %d AND meta_key = %s LIMIT 2",
+			'SELECT OCTET_LENGTH(meta_value) AS ' . self::BOUNDED_LENGTH_ALIAS . ', LEFT(BINARY meta_value, %d) AS ' . self::BOUNDED_VALUE_ALIAS . ', 1 AS ' . self::BOUNDED_PROBE_ALIAS . " FROM {$database->sitemeta} WHERE site_id = %d AND meta_key = %s LIMIT %d",
 			self::BOUNDED_VALUE_BYTES,
 			$network_id,
-			$option
+			$option,
+			self::MAX_DUPLICATE_NETWORK_ROWS + 1
 		);
-		$row = self::read_bounded_rows( $query, 'database_read_failed_network_option' );
+		$row = self::read_bounded_rows( $query, 'database_read_failed_network_option', self::MAX_RAW_BYTES, false, self::MAX_DUPLICATE_NETWORK_ROWS );
 		if (
 			$wpdb !== $database
 			|| get_current_network_id() !== $network_id
@@ -881,10 +889,11 @@ final class PreSdkLegacyInstallEvidence {
 	 * @param string $failure         Value-free failure diagnostic.
 	 * @param int    $maximum_bytes   Maximum accepted exact row size.
 	 * @param bool   $include_autoload Whether the query includes the closed autoload alias.
+	 * @param int    $maximum_rows     Most byte-identical copies accepted as one row; 1 rejects any duplicate.
 	 * @return array{exists: bool, overbound: bool, raw_value: string, autoload: string}
 	 * @throws MigrationReadException When the row is duplicate, malformed, or uncertain.
 	 */
-	private static function read_bounded_rows( string $query, string $failure, int $maximum_bytes = self::MAX_RAW_BYTES, bool $include_autoload = false ): array {
+	private static function read_bounded_rows( string $query, string $failure, int $maximum_bytes = self::MAX_RAW_BYTES, bool $include_autoload = false, int $maximum_rows = 1 ): array {
 		global $wpdb;
 
 		$database             = $wpdb;
@@ -895,7 +904,7 @@ final class PreSdkLegacyInstallEvidence {
 			'' !== MigrationDatabaseState::last_error( $database )
 			|| $wpdb !== $database
 			|| ! is_array( $rows )
-			|| count( $rows ) > 1
+			|| count( $rows ) > $maximum_rows
 		) {
 			// phpcs:ignore WordPress.Security.EscapeOutput.ExceptionNotEscaped -- Closed value-free internal diagnostic, never rendered directly.
 			throw new MigrationReadException( $failure );
@@ -929,6 +938,16 @@ final class PreSdkLegacyInstallEvidence {
 		) {
 			// phpcs:ignore WordPress.Security.EscapeOutput.ExceptionNotEscaped -- Closed value-free internal diagnostic, never rendered directly.
 			throw new MigrationReadException( $failure );
+		}
+		if ( count( $rows ) > 1 ) {
+			// Equal alias arrays mean equal exact length and bytes only when the whole
+			// value was returned; a truncated prefix cannot prove the unseen tail matches.
+			foreach ( $rows as $duplicate ) {
+				if ( $length > $maximum_bytes || $duplicate !== $row ) {
+					// phpcs:ignore WordPress.Security.EscapeOutput.ExceptionNotEscaped -- Closed value-free internal diagnostic, never rendered directly.
+					throw new MigrationReadException( $failure );
+				}
+			}
 		}
 		if ( $length > $maximum_bytes ) {
 			if ( strlen( $value ) !== $maximum_bytes + 1 ) {

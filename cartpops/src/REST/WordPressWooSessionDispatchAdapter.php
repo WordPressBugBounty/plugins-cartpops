@@ -70,6 +70,29 @@ final class WordPressWooSessionDispatchAdapter implements WooSessionDispatchAdap
 	}
 
 	/**
+	 * Rebuild the cart and customer on the new Store session and read the cart from it.
+	 *
+	 * @param object $woocommerce WooCommerce singleton.
+	 */
+	public function reload_cart_from_session( object $woocommerce ): bool {
+		try {
+			if ( ! is_callable( array( $woocommerce, 'initialize_cart' ) ) ) {
+				return false;
+			}
+			$woocommerce->initialize_cart();
+
+			$cart_session = $this->cart_session_component( $woocommerce->cart ?? null );
+			if ( null === $cart_session || ! is_callable( array( $cart_session, 'get_cart_from_session' ) ) ) {
+				return false;
+			}
+			$cart_session->get_cart_from_session();
+			return true;
+		} catch ( \Throwable ) {
+			return false;
+		}
+	}
+
+	/**
 	 * Install a native WordPress lifecycle hook.
 	 *
 	 * @param string   $hook          Hook name.

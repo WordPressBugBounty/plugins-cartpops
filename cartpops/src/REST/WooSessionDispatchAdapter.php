@@ -38,6 +38,18 @@ interface WooSessionDispatchAdapter {
 	public function discard_classic_session( object $woocommerce ): bool;
 
 	/**
+	 * Rebuild the cart from the Store session that replaced a discarded classic one.
+	 *
+	 * WooCommerce reads a cart from its session only until woocommerce_load_cart_from_session
+	 * has fired once, and the discarded classic cart already fired it. Without an explicit
+	 * reload the rebuilt cart stays empty while the session holds the shopper's items.
+	 * Returns false when the cart could not be proven reloaded.
+	 *
+	 * @param object $woocommerce WooCommerce singleton.
+	 */
+	public function reload_cart_from_session( object $woocommerce ): bool;
+
+	/**
 	 * Install one request-lifecycle hook.
 	 *
 	 * @param string   $hook          Hook name.

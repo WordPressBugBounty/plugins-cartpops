@@ -218,9 +218,11 @@ final class WooSessionBootstrap {
 			if ( WooSessionBootstrapOutcome::READY !== $authority ) {
 				return $authority;
 			}
+			$early_session = $woocommerce->session ?? null;
 			if ( ! $this->discard_early_classic_session( $woocommerce, $cart_token ) ) {
 				return WooSessionBootstrapOutcome::UNAVAILABLE;
 			}
+			$replaced_early_session = is_object( $early_session ) && ( $woocommerce->session ?? null ) !== $early_session;
 			if ( ! $this->has_compatible_existing_store_session( $woocommerce ) ) {
 				return WooSessionBootstrapOutcome::UNAVAILABLE;
 			}
@@ -239,6 +241,14 @@ final class WooSessionBootstrap {
 				return WooSessionBootstrapOutcome::UNAVAILABLE;
 			}
 
+			// The discarded classic cart already consumed Woo's one-time cart load, so the cart
+			// rebuilt on this session would stay empty. Reload it, or refuse rather than answer
+			// 200 with an empty cart while the session holds the shopper's items.
+			if ( $replaced_early_session && ! $this->dispatch->reload_cart_from_session( $woocommerce ) ) {
+				$this->abort_dispatch();
+				return WooSessionBootstrapOutcome::UNAVAILABLE;
+			}
+
 			// rest_send_allow_header() re-runs permission callbacks after the
 			// controller. It needs the bound Store session for validation, but no
 			// selector may survive the current rest_post_dispatch filter.
@@ -247,7 +257,8 @@ final class WooSessionBootstrap {
 			}
 
 			return WooSessionBootstrapOutcome::READY;
-		} catch ( \Throwable ) {
+		} catch ( \Throwable $error ) {
+			error_log( 'CartPops session bootstrap: ' . get_class( $error ) ); // phpcs:ignore WordPress.PHP.DevelopmentFunctions.error_log_error_log -- Value-free operational diagnostic for a fail-closed security boundary.
 			$this->abort_dispatch();
 			return WooSessionBootstrapOutcome::UNAVAILABLE;
 		}

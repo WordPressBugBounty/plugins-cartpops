@@ -4,7 +4,7 @@
  * Plugin Name: CartPops
  * Plugin URI:  https://cartpops.com
  * Description: The #1 WooCommerce cart drawer plugin. Boost conversions with a beautiful slide-out cart, product recommendations, and free shipping meter.
- * Version:     2.0.13
+ * Version:     2.0.14
  * Requires at least: 6.5
  * Requires PHP: 8.1
  * Requires Plugins: woocommerce
@@ -67,7 +67,7 @@ if ( defined( 'CARTPOPS_VERSION' ) || defined( 'CARTPOPS_FILE' ) || defined( 'CA
     cartpops_register_edition_collision_notice();
     return;
 }
-define( 'CARTPOPS_VERSION', '2.0.13' );
+define( 'CARTPOPS_VERSION', '2.0.14' );
 define( 'CARTPOPS_FILE', __FILE__ );
 define( 'CARTPOPS_PATH', plugin_dir_path( __FILE__ ) );
 define( 'CARTPOPS_URL', plugin_dir_url( __FILE__ ) );
@@ -92,8 +92,12 @@ $cartpops_pre_sdk_legacy_install_evidence_ready = false;
 try {
     $cartpops_pre_sdk_legacy_install_evidence = \CartPops\Migration\PreSdkLegacyInstallEvidence::capture();
     $cartpops_pre_sdk_legacy_install_evidence_ready = $cartpops_pre_sdk_legacy_install_evidence->capture_was_available();
-} catch ( \Throwable ) {
+} catch ( \Throwable $cartpops_pre_sdk_failure ) {
     $GLOBALS['cartpops_freemius_bootstrap_error'] = 'pre_sdk_legacy_evidence_unavailable';
+    // Only MigrationReadException messages are a closed, value-free vocabulary. Any other
+    // Throwable may carry paths or database values, so it keeps the generic code.
+    $GLOBALS['cartpops_pre_sdk_failure_reason'] = ( $cartpops_pre_sdk_failure instanceof \CartPops\Migration\MigrationReadException && 1 === preg_match( '/\\A[a-z0-9_]{1,64}\\z/D', $cartpops_pre_sdk_failure->getMessage() ) ? $cartpops_pre_sdk_failure->getMessage() : 'pre_sdk_legacy_evidence_unavailable' );
+    unset($cartpops_pre_sdk_failure);
     if ( class_exists( \CartPops\Migration\PreSdkLegacyInstallEvidence::class, false ) ) {
         try {
             $cartpops_pre_sdk_legacy_install_evidence = \CartPops\Migration\PreSdkLegacyInstallEvidence::unavailable();
@@ -110,10 +114,19 @@ if ( !$cartpops_pre_sdk_legacy_install_evidence_ready ) {
     if ( !function_exists( 'cartpops_pre_sdk_legacy_evidence_notice' ) ) {
         /** Render a value-free pre-SDK failure notice to capable operators. */
         function cartpops_pre_sdk_legacy_evidence_notice() : void {
-            if ( !function_exists( 'current_user_can' ) || !function_exists( 'esc_html__' ) || !current_user_can( 'manage_woocommerce' ) && !current_user_can( 'manage_network_plugins' ) ) {
+            if ( !function_exists( 'current_user_can' ) || !function_exists( 'esc_html__' ) || !function_exists( 'esc_html' ) || !current_user_can( 'manage_woocommerce' ) && !current_user_can( 'manage_network_plugins' ) ) {
                 return;
             }
-            echo '<div class="notice notice-error"><p>' . esc_html__( 'CartPops could not safely verify upgrade state. CartPops was paused before licensing initialization; reload this page or contact support.', 'cartpops' ) . '</p></div>';
+            $reason = $GLOBALS['cartpops_pre_sdk_failure_reason'] ?? 'pre_sdk_legacy_evidence_unavailable';
+            $reason = ( is_string( $reason ) && 1 === preg_match( '/\\A[a-z0-9_]{1,64}\\z/D', $reason ) ? $reason : 'pre_sdk_legacy_evidence_unavailable' );
+            // Admin-only on purpose: a paused site must not write a log line per visitor request.
+            error_log( 'CartPops paused before licensing initialization: ' . $reason );
+            // phpcs:ignore WordPress.PHP.DevelopmentFunctions.error_log_error_log -- Value-free closed reason code for a fail-closed boundary.
+            echo '<div class="notice notice-error"><p>' . esc_html__( 'CartPops could not safely verify upgrade state. CartPops was paused before licensing initialization; reload this page or contact support.', 'cartpops' ) . '</p><p>' . sprintf( 
+                /* translators: %s: short diagnostic code to quote to support. */
+                esc_html__( 'Reason code: %s', 'cartpops' ),
+                esc_html( $reason )
+             ) . '</p></div>';
         }
 
     }

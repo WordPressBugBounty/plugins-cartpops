@@ -114,8 +114,10 @@ final class SiteUpgradeContext {
 			throw new SiteUpgradeContextDrift( 'The current database connection identity cannot be proven.' );
 		}
 
+		// An empty prefix is valid: wp-config.php may set `$table_prefix = ''`. The table names
+		// built from it below are still required to be non-empty identifiers.
 		$prefix = $database->get_blog_prefix( $blog_id );
-		if ( ! is_string( $prefix ) || 1 !== preg_match( '/^[A-Za-z0-9_]+$/D', $prefix ) ) {
+		if ( ! is_string( $prefix ) || 1 !== preg_match( '/^[A-Za-z0-9_]*$/D', $prefix ) ) {
 			throw new SiteUpgradeContextDrift( 'The current site table prefix is invalid.' );
 		}
 		$multisite = is_multisite();

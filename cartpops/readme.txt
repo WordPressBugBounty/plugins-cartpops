@@ -4,7 +4,7 @@ Tags: side cart, cart drawer, floating cart, woocommerce side cart, add to cart 
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 2.0.13
+Stable tag: 2.0.14
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -110,6 +110,13 @@ Your settings, styling and license carry over. Version 2 is built around the car
 4. Pro Smart Bar rules and Smart Add-ons such as shipping protection and gift wrapping.
 
 == Changelog ==
+
+= 2.0.14 =
+* Fix: On multisite networks, CartPops no longer pauses every site when WordPress has saved duplicate copies of the same network setting. When CartPops does pause, the admin notice now shows a reason code to send to support.
+* Fix: The cart drawer no longer shows an empty cart when another plugin or custom code loads the cart very early on the page. It now shows the items in the cart, or an error message if the cart cannot be read.
+* Fix: CartPops no longer stays paused after updating on stores whose database tables have no prefix, so the cart drawer shows again.
+* Fix: CartPops Pro no longer stays paused after you update from version 1 when a CartPops Pro setting from version 1 could not be carried over exactly. Once your Pro license is active, the update finishes by itself and your original settings are kept.
+* Fix: the cart and checkout no longer show a critical error in CartPops Pro when another plugin changes how product quantities are displayed.
 
 = 2.0.13 =
 * Fix: when several visitors loaded the site at the same moment right after an update, some pages could show the cart launcher as plain text like `[cartpops_cart_launcher]` and miss the cart drawer.

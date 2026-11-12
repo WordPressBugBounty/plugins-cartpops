@@ -401,6 +401,91 @@ final class LegacySettingsMigrator {
 		return true;
 	}
 
+	/** Whether this request could not read the current blog's licence at all, as opposed to a definite "not licensed". */
+	private function paid_licence_is_unreadable(): bool {
+		return null !== $this->paid_entitlement_bridge
+			&& $this->paid_entitlement_bridge->licence_is_unreadable( $this->site_context->blog_id() );
+	}
+
+	/**
+	 * Whether the Freemius account row still has the exact bytes the licence was confirmed against.
+	 *
+	 * @param array{diagnostics: string[], raw_rows: array<string, string>} $paid_state Exact inspector result.
+	 */
+	private function paid_entitlement_row_is_unchanged( array $paid_state ): bool {
+		if ( ! isset( $paid_state['raw_rows']['fs_accounts'] ) ) {
+			return false;
+		}
+		try {
+			$fresh = ( new LegacyPaidStateInspector( $this->site_context ) )->read();
+		} catch ( MigrationReadException ) {
+			return false;
+		}
+		return isset( $fresh['raw_rows']['fs_accounts'] )
+			&& $paid_state['raw_rows']['fs_accounts'] === $fresh['raw_rows']['fs_accounts'];
+	}
+
+	/**
+	 * Whether a finished site's controls prove completion with no write to make.
+	 *
+	 * A custom-JS review record, when present, must still match the current script.
+	 *
+	 * The locked decision for such a site only re-reads the same rows. Reading them
+	 * without the migration lock or the row-locking fence keeps concurrent requests
+	 * from returning BUSY or failing on a lock wait. Anything else that needs a
+	 * write or a fresh decision returns false and takes the locked path.
+	 *
+	 * @param array<string, array{exists: bool, value: mixed, raw_value: string, autoload: string}> $rows Exact control rows.
+	 */
+	private function converged_completion_needs_no_lock( array $rows ): bool {
+		$completion = $rows[ self::COMPLETION_OPTION ];
+		$review     = $rows[ self::JS_REVIEW_OPTION ];
+		if (
+			! $this->completion_is_current( $completion )
+			|| ! $this->store->autoload_is( $completion['autoload'], false )
+			|| $rows[ self::PROVENANCE_OPTION ]['exists']
+			|| $rows[ self::COMPATIBILITY_OPTION ]['exists']
+			|| $rows[ self::MAINTENANCE_OPTION ]['exists']
+			|| $rows[ self::PRE_SDK_EVIDENCE_OPTION ]['exists']
+		) {
+			return false;
+		}
+		if ( ! $review['exists'] ) {
+			return true;
+		}
+		if (
+			! $this->store->autoload_is( $review['autoload'], false )
+			|| ! $this->custom_js_review_record_is_valid( $review['value'] )
+		) {
+			return false;
+		}
+
+		$source = $this->store->read( 'cartpops_custom_js' );
+		if ( ! $source['success'] || ! $source['exists'] ) {
+			return false;
+		}
+		$unlocked = array(
+			'cartpops_custom_js' => array(
+				'raw_value' => $source['raw_value'],
+				'autoload'  => $source['autoload'],
+			),
+		);
+		foreach ( array( self::SNAPSHOT_OPTION, self::QUARANTINE_OPTION, self::JS_REVIEW_OPTION ) as $option ) {
+			if ( ! $rows[ $option ]['exists'] ) {
+				return false;
+			}
+			$unlocked[ $option ] = array(
+				'raw_value' => $rows[ $option ]['raw_value'],
+				'autoload'  => $rows[ $option ]['autoload'],
+			);
+		}
+
+		$fingerprint = $this->custom_js_review_fingerprint( $unlocked, $rows );
+		return null !== $fingerprint
+			&& $this->custom_js_review_record( $fingerprint ) === $review['value']
+			&& $this->custom_js_review_rows_unchanged( $unlocked );
+	}
+
 	/**
 	 * Build the closed, site-bound retirement acknowledgment.
 	 *
@@ -522,6 +607,36 @@ final class LegacySettingsMigrator {
 			$terminal_retirement_needs_autoload_repair = $terminal_exists
 				&& $rules_retirement_valid
 				&& ! $this->store->autoload_is( $rules_retirement['autoload'], false );
+			// A request that could not read the licence at all (licensing not loaded, no
+			// usable answer) is not a store whose licence is gone. It keeps the earned
+			// completion untouched; paid code still stays off because only a confirmed
+			// licence lets it boot. A definite "not licensed" answer takes the locked path.
+			$licence_unreadable = null === $paid_entitlement_plan
+				&& in_array( 'legacy_paid_entitlement_requires_adapter', $effective_diagnostics, true )
+				&& $this->paid_licence_is_unreadable();
+			$reviewed           = $control['rows'][ self::JS_REVIEW_OPTION ]['exists'];
+			$settled            = array_merge(
+				$reviewed ? array( 'legacy_custom_js_requires_review' ) : array(),
+				$licence_unreadable ? array( 'legacy_paid_entitlement_requires_adapter' ) : array()
+			);
+			if (
+				$terminal_exists
+				&& ( $reviewed || $licence_unreadable )
+				&& ( null === $paid_entitlement_plan || $this->paid_entitlement_row_is_unchanged( $paid_state ) )
+				&& array() === array_diff( $effective_diagnostics, $settled )
+				&& (
+					( ! $control['has_legacy_rules'] && ! $rules_retirement['exists'] )
+					|| ( $rules_retirement['exists'] && $this->rules_retirement_record() === $rules_retirement['value'] && $this->store->autoload_is( $rules_retirement['autoload'], false ) )
+				)
+				&& $this->converged_completion_needs_no_lock( $control['rows'] )
+			) {
+				// Every later request on a finished, reviewed site lands here. Taking the
+				// lock for a decision that writes nothing made concurrent requests BUSY.
+				// A prepared plan already confirmed the licence on this request; the
+				// locked path only proves the account row it was confirmed against is
+				// unchanged, which the fresh read above does without a lock.
+				return MigrationOutcome::COMPLETE;
+			}
 			if ( $control['rows'][ self::JS_REVIEW_OPTION ]['exists'] || $rules_retirement_needs_locked_decision || $terminal_rules_need_record || $terminal_retirement_needs_autoload_repair || array() !== $preflight_diagnostics || $legacy_disposition || $compatibility_disposition['exists'] ) {
 				$lock = $this->acquire_lock();
 				if ( MigrationOutcome::COMPLETE !== $lock ) {
@@ -1610,6 +1725,16 @@ final class LegacySettingsMigrator {
 		// Retain earned completion's independence from later paid authority, but
 		// hold exact customization evidence through its existing completion writes.
 		if ( $rows[ self::JS_REVIEW_OPTION ]['exists'] || $rows[ self::QUARANTINE_OPTION ]['exists'] ) {
+			// The fenced decision below writes nothing for a finished site whose review
+			// record still matches, or whose unchanged quarantined script never needed a
+			// review. Proving that without the fence keeps it off every ordinary request.
+			if (
+				null === $locked
+				&& ( $rows[ self::JS_REVIEW_OPTION ]['exists'] || $this->unreviewable_quarantine_is_unchanged( $rows ) )
+				&& $this->converged_completion_needs_no_lock( $rows )
+			) {
+				return MigrationOutcome::COMPLETE;
+			}
 			if ( null === $locked ) {
 				return $this->with_fence_reason(
 					( new LegacyCompatibilityTerminalFence( $this->site_context ) )->run(
@@ -1622,13 +1747,7 @@ final class LegacySettingsMigrator {
 					)
 				);
 			}
-			$quarantined     = $rows[ self::QUARANTINE_OPTION ]['value']['raw_value'] ?? '';
-			$requires_review = $rows[ self::JS_REVIEW_OPTION ]['exists'] || in_array(
-				'legacy_custom_js_requires_review',
-				( new LegacyPaidStateInspector( $this->site_context ) )->inspect_raw_rows( array( 'cartpops_custom_js' => $quarantined ) ),
-				true
-			);
-			if ( $requires_review ) {
+			if ( $rows[ self::JS_REVIEW_OPTION ]['exists'] || $this->quarantined_custom_js_requires_review( $rows ) ) {
 				$fingerprint = $this->custom_js_review_fingerprint( $locked, $rows );
 				if ( null === $fingerprint || ! $rows[ self::JS_REVIEW_OPTION ]['exists'] || $this->custom_js_review_record( $fingerprint ) !== $rows[ self::JS_REVIEW_OPTION ]['value'] ) {
 					return MigrationOutcome::MAINTENANCE_REQUIRED;
@@ -1651,6 +1770,34 @@ final class LegacySettingsMigrator {
 		}
 
 		return MigrationOutcome::COMPLETE;
+	}
+
+	/**
+	 * Whether a quarantine that never needed a review still holds the live V1 script.
+	 *
+	 * @param array<string, array{exists: bool, value: mixed, raw_value: string, autoload: string}> $rows Exact control rows.
+	 */
+	private function unreviewable_quarantine_is_unchanged( array $rows ): bool {
+		if ( $rows[ self::JS_REVIEW_OPTION ]['exists'] || ! $rows[ self::QUARANTINE_OPTION ]['exists'] || $this->quarantined_custom_js_requires_review( $rows ) ) {
+			return false;
+		}
+		$source = $this->store->read( 'cartpops_custom_js' );
+		return $source['success'] && $source['exists']
+			&& ( $rows[ self::QUARANTINE_OPTION ]['value']['raw_value'] ?? null ) === $source['raw_value'];
+	}
+
+	/**
+	 * Whether the quarantined V1 script is one that needs a store owner's review.
+	 *
+	 * @param array<string, array{exists: bool, value: mixed, raw_value: string, autoload: string}> $rows Exact control rows.
+	 */
+	private function quarantined_custom_js_requires_review( array $rows ): bool {
+		$quarantined = $rows[ self::QUARANTINE_OPTION ]['value']['raw_value'] ?? '';
+		return in_array(
+			'legacy_custom_js_requires_review',
+			( new LegacyPaidStateInspector( $this->site_context ) )->inspect_raw_rows( array( 'cartpops_custom_js' => $quarantined ) ),
+			true
+		);
 	}
 
 	/**
@@ -2840,6 +2987,7 @@ final class LegacySettingsMigrator {
 				self::PRE_SDK_EVIDENCE_OPTION,
 				self::COMPATIBILITY_OPTION,
 				self::RULES_RETIREMENT_OPTION,
+				FreemiusIdentityPathMemo::OPTION,
 			)
 		);
 

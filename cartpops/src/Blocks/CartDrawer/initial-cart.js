@@ -449,9 +449,30 @@ export function markCartHydrationPending( state ) {
  * @param {Object} state CartPops Interactivity API state proxy.
  */
 export function markCartHydrationTrusted( state ) {
+	const wasPending = state._cartHydrationPending === true;
 	state._cartHydrationTrusted = true;
 	state._cartHydrationPending = false;
 	state.isLoading = false;
+	if ( wasPending ) {
+		releaseUnconfirmedCartHint();
+	}
+}
+
+/**
+ * Document class set before paint when WooCommerce's cookie says the cart has
+ * items, so a launcher rendered empty by a full page cache stays neutral.
+ */
+export const UNCONFIRMED_CART_CLASS = 'cpops-cart-unconfirmed';
+
+/**
+ * End the cached-page neutral launcher state once the cart count is known.
+ *
+ * @param {Document} [documentScope] Document carrying the class.
+ */
+export function releaseUnconfirmedCartHint(
+	documentScope = globalThis.document
+) {
+	documentScope?.documentElement?.classList?.remove( UNCONFIRMED_CART_CLASS );
 }
 
 /**
@@ -650,6 +671,7 @@ export function synchronizeInitialCart( {
 				cookie.cartHash === state.cartHash.toLowerCase() ) );
 
 	if ( cookieMatches && forceRefresh !== true ) {
+		releaseUnconfirmedCartHint();
 		markFresh();
 		initialSynchronization.set( state, 'current' );
 		return 'current';

@@ -2957,6 +2957,21 @@ const { state } = store( 'cartpops', {
 			);
 		},
 
+		/**
+		 * Whether the launcher should treat the cart as empty.
+		 *
+		 * Unlike `isEmpty`, this keeps the server-rendered count while an
+		 * untrusted (for example full-page-cached) cart is being read, so a
+		 * launcher set to hide when empty stays hidden instead of showing 0.
+		 *
+		 * @return {boolean} Whether the launcher has no items to show.
+		 */
+		get launcherEmpty() {
+			return isCartHydrationTrusted( state )
+				? trustedCartItems().length === 0
+				: ! ( state.cartCount > 0 );
+		},
+
 		get renderCartItems() {
 			const items = isCartHydrationTrusted( state )
 				? trustedCartItems()

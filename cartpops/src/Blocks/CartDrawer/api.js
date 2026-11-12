@@ -224,6 +224,38 @@ export function buildRestUrl( restUrl, path, queryParams = {} ) {
 }
 
 /**
+ * Build a Store API URL only from a base that names the Store API route.
+ *
+ * A missing, foreign or REST-root base would otherwise send cart reads and
+ * writes to the wrong REST route, so it fails before any request is sent.
+ *
+ * @param {*}      storeApiBase Store API root from `get_rest_url()`.
+ * @param {string} path         Route relative to the Store API root.
+ * @param {Object} queryParams  Query values to encode.
+ * @return {string} Complete Store API URL.
+ */
+function buildStoreApiUrl( storeApiBase, path, queryParams = {} ) {
+	let route = null;
+	if ( typeof storeApiBase === 'string' && storeApiBase.trim() !== '' ) {
+		try {
+			const { url } = parseUrl( storeApiBase );
+			route = url.searchParams.has( 'rest_route' )
+				? url.searchParams.get( 'rest_route' )
+				: url.pathname;
+		} catch {
+			route = null;
+		}
+	}
+	if (
+		typeof route !== 'string' ||
+		! /\/wc\/store\/v1$/.test( route.replace( /\/+$/, '' ) )
+	) {
+		throw new Error( i18n( 'requestFailed' ) );
+	}
+	return buildRestUrl( storeApiBase, path, queryParams );
+}
+
+/**
  * Whether a response header is a bounded JWT-like Cart-Token value.
  * Signature verification remains a server responsibility.
  *
@@ -834,7 +866,7 @@ async function probeStoreAuthority( storeApiBase ) {
 	// misses server page caches, which would otherwise serve another shopper's
 	// Cart-Token and bind the drawer to their cart.
 	const response = await fetch(
-		buildRestUrl( storeApiBase, 'cart', { _: Date.now() } ),
+		buildStoreApiUrl( storeApiBase, 'cart', { _: Date.now() } ),
 		{
 			cache: 'no-store',
 			credentials: 'same-origin',
@@ -1771,7 +1803,7 @@ export async function storeApiFetch( endpoint, options = {} ) {
 	const initialState = operationLease.owner;
 	const storeApiBase = initialState.storeApiBase;
 	// Reads get a unique query so server page caches cannot answer them.
-	const url = buildRestUrl(
+	const url = buildStoreApiUrl(
 		storeApiBase,
 		endpoint,
 		mutating ? {} : { _: Date.now() }

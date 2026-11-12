@@ -45,6 +45,12 @@ final class Plugin {
 	private const UPGRADE_RETRY_INIT_PRIORITY    = 0;
 	private const UPGRADE_BUSY_POLL_MICROSECONDS = 100000;
 
+	/** First request on this site whose licence was confirmed too late for Pro to boot. */
+	private const PAID_ACTIVATION_MISS_OPTION = 'cartpops_paid_activation_miss_v1';
+
+	/** How long late confirmations must persist before the store owner is told. */
+	private const PAID_ACTIVATION_MISS_NOTICE_AFTER_SECONDS = 600;
+
 	/**
 	 * The singleton instance.
 	 *
@@ -438,8 +444,7 @@ final class Plugin {
 			return false;
 		}
 		if ( $this->paid_activation_lifecycle_was_missed() ) {
-			$this->boot_diagnostic = 'paid_activation_lifecycle_missed';
-			$this->register_boot_notice();
+			$this->report_paid_activation_miss();
 			return false;
 		}
 
@@ -695,11 +700,15 @@ final class Plugin {
 		// WooCommerce Store API extension.
 		add_action( 'woocommerce_blocks_loaded', array( $this, 'register_store_api' ) );
 
-		// Classic theme support.
+		// Classic theme support. Render before core prints the Interactivity
+		// state at wp_footer priority 10: a boot retried on init registers after
+		// core, and a same-priority render would leave the drawer without state.
 		$classic_compat = $this->container->get( ClassicThemeCompat::class );
-		add_action( 'wp_footer', array( $classic_compat, 'render_drawer' ), 10 );
-		add_action( 'wp_footer', array( $classic_compat, 'render_launcher' ), 10 );
+		add_action( 'wp_footer', array( $classic_compat, 'render_drawer' ), 9 );
+		add_action( 'wp_footer', array( $classic_compat, 'render_launcher' ), 9 );
 		add_action( 'wp_enqueue_scripts', array( $classic_compat, 'enqueue_assets' ), 20 );
+		add_action( 'template_redirect', array( $classic_compat, 'order_import_map' ) );
+		add_action( 'wp_head', array( $classic_compat, 'print_cart_presence_hint' ), 1 );
 		add_action( 'init', array( $classic_compat, 'register_shortcode' ) );
 
 		// User-defined custom CSS (advanced settings). Hooked after
@@ -733,8 +742,7 @@ final class Plugin {
 			return false;
 		}
 		if ( $this->paid_activation_lifecycle_was_missed() ) {
-			$this->boot_diagnostic = 'paid_activation_lifecycle_missed';
-			$this->register_boot_notice();
+			$this->report_paid_activation_miss();
 			return false;
 		}
 
@@ -765,7 +773,54 @@ final class Plugin {
 			$this->register_boot_notice();
 			return false;
 		}
+		$this->clear_paid_activation_miss();
 		return true;
+	}
+
+	/**
+	 * Keep Pro off for this request, and tell the owner only once misses persist.
+	 *
+	 * Paid code never boots after init, so this request stays without Pro either
+	 * way. A licence confirmed late on one busy request is not a store whose Pro
+	 * stopped: the notice waits until misses have lasted ten minutes with no
+	 * request booting Pro in between. Later misses never move the first time.
+	 */
+	private function report_paid_activation_miss(): void {
+		$this->boot_diagnostic = 'paid_activation_lifecycle_missed';
+		if ( function_exists( 'ms_is_switched' ) && ms_is_switched() ) {
+			// Another site's context inside this request: keep the immediate notice.
+			$this->register_boot_notice();
+			return;
+		}
+		$now   = time();
+		$since = get_option( self::PAID_ACTIVATION_MISS_OPTION, null );
+		if ( ! is_int( $since ) && ! ( is_string( $since ) && 1 === preg_match( '/^[1-9][0-9]{0,18}$/D', $since ) ) ) {
+			$since = null;
+		}
+		$since = null === $since ? null : (int) $since;
+		if ( null === $since || $since > $now ) {
+			// A missing, unreadable or future time restarts at this miss, never later.
+			delete_option( self::PAID_ACTIVATION_MISS_OPTION );
+			add_option( self::PAID_ACTIVATION_MISS_OPTION, $now, '', true );
+			$since = $now;
+		}
+		if ( $now - $since >= self::PAID_ACTIVATION_MISS_NOTICE_AFTER_SECONDS ) {
+			$this->register_boot_notice();
+		}
+	}
+
+	/** A request that booted Pro ends any run of late licence confirmations. */
+	private function clear_paid_activation_miss(): void {
+		if ( function_exists( 'ms_is_switched' ) && ms_is_switched() ) {
+			return;
+		}
+		// The record is always autoloaded, so its absence costs no query here.
+		if ( function_exists( 'wp_load_alloptions' ) && ! array_key_exists( self::PAID_ACTIVATION_MISS_OPTION, wp_load_alloptions() ) ) {
+			return;
+		}
+		if ( false !== get_option( self::PAID_ACTIVATION_MISS_OPTION, false ) ) {
+			delete_option( self::PAID_ACTIVATION_MISS_OPTION );
+		}
 	}
 
 	/** Reverify idempotent schema/cron prerequisites when entitlement becomes usable. */

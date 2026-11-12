@@ -603,29 +603,36 @@ final class PreSdkLegacyInstallEvidence {
 			'sites.cartpops.plugin_id',
 			'sites.cartpops.is_uninstalled',
 		);
-		if ( in_array( $trimmed[0], array( '{', '[' ), true ) ) {
-			$decoded = ( new SafeJsonReader() )->decode(
-				$trimmed,
-				self::MAX_RAW_BYTES,
-				self::MAX_VALUE_DEPTH,
-				self::MAX_VALUE_NODES
-			);
-			if ( ! $decoded['success'] || ! is_array( $decoded['value'] ) ) {
-				return null;
+		// Every Freemius product on the site shares this row; parse it only when its bytes change.
+		$values = FreemiusIdentityPathMemo::extract(
+			'pre_sdk_identity',
+			$raw,
+			$paths,
+			static function () use ( $raw, $trimmed, $paths ): ?array {
+				if ( in_array( $trimmed[0], array( '{', '[' ), true ) ) {
+					$decoded = ( new SafeJsonReader() )->decode(
+						$trimmed,
+						self::MAX_RAW_BYTES,
+						self::MAX_VALUE_DEPTH,
+						self::MAX_VALUE_NODES
+					);
+					if ( ! $decoded['success'] || ! is_array( $decoded['value'] ) ) {
+						return null;
+					}
+					return self::extract_array_paths( $decoded['value'], $paths );
+				}
+				$extracted = ( new SafeSerializedReader() )->extract_paths(
+					$raw,
+					$paths,
+					self::MAX_RAW_BYTES,
+					self::MAX_VALUE_DEPTH,
+					self::MAX_VALUE_NODES
+				);
+				return $extracted['success'] ? $extracted['values'] : null;
 			}
-			$values = self::extract_array_paths( $decoded['value'], $paths );
-		} else {
-			$extracted = ( new SafeSerializedReader() )->extract_paths(
-				$raw,
-				$paths,
-				self::MAX_RAW_BYTES,
-				self::MAX_VALUE_DEPTH,
-				self::MAX_VALUE_NODES
-			);
-			if ( ! $extracted['success'] ) {
-				return null;
-			}
-			$values = $extracted['values'];
+		);
+		if ( null === $values ) {
+			return null;
 		}
 
 		$slug    = $values['id_slug_type_path_map.7061.slug'] ?? null;

@@ -67,6 +67,12 @@ $launcher_state['launcherLabel'] = $open_cart_label;
 if ( ! array_key_exists( 'cartCount', $interactivity_state ) ) {
 	$launcher_state['cartCount'] = $count;
 }
+// The launcher's empty bindings are evaluated on the server too, where a value
+// missing from state counts as false and would strip the hidden classes below.
+// The client getter of the same name takes over once the scripts run.
+if ( ! array_key_exists( 'launcherEmpty', $interactivity_state ) ) {
+	$launcher_state['launcherEmpty'] = 0 === $count;
+}
 if ( ! array_key_exists( 'cartSubtotal', $interactivity_state ) ) {
 	$launcher_state['cartSubtotal'] = $subtotal;
 }
@@ -172,6 +178,9 @@ $badge_classes = array(
 	'cpops-launcher__badge--' . $indicator,
 	'cartpops-cart__container-counter',
 );
+if ( $hide_indicator_empty && 0 === $count ) {
+	$badge_classes[] = 'cpops-launcher__badge--hidden';
+}
 if ( 'floating' === $presentation ) {
 	$badge_classes[] = 'cpops-floating-cart__count';
 }
@@ -186,6 +195,9 @@ if ( 'floating' === $presentation ) {
 		type="button"
 		class="<?php echo esc_attr( implode( ' ', $button_classes ) ); ?>"
 		data-cartpops-launcher
+		<?php if ( 0 === $count ) : ?>
+			data-cartpops-rendered-empty
+		<?php endif; ?>
 		data-wp-on--click="actions.toggleDrawer"
 		aria-label="<?php esc_attr_e( 'Open cart', 'cartpops' ); ?>"
 		data-wp-bind--aria-label="state.launcherLabel"
@@ -193,10 +205,10 @@ if ( 'floating' === $presentation ) {
 		data-wp-bind--aria-expanded="state.isOpen"
 		aria-controls="<?php echo esc_attr( $drawer_id ); ?>"
 		<?php if ( $hide_indicator_empty ) : ?>
-			data-wp-class--cartpops-cart--empty-indicator-hide="state.isEmpty"
+			data-wp-class--cartpops-cart--empty-indicator-hide="state.launcherEmpty"
 		<?php endif; ?>
 		<?php if ( $hide_empty ) : ?>
-			data-wp-class--cpops-launcher--hidden="state.isEmpty"
+			data-wp-class--cpops-launcher--hidden="state.launcherEmpty"
 		<?php endif; ?>
 	>
 		<?php echo $icon_svg; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Static SVG. ?>
@@ -206,7 +218,7 @@ if ( 'floating' === $presentation ) {
 				class="<?php echo esc_attr( implode( ' ', $badge_classes ) ); ?>"
 				data-wp-text="state.cartCount"
 				<?php if ( $hide_indicator_empty ) : ?>
-					data-wp-class--cpops-launcher__badge--hidden="state.isEmpty"
+					data-wp-class--cpops-launcher__badge--hidden="state.launcherEmpty"
 				<?php endif; ?>
 			><?php echo esc_html( (string) $count ); ?></span>
 		<?php endif; ?>

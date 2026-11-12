@@ -611,6 +611,23 @@ final class LegacyPaidStateInspector {
 	 * @return array<string, mixed>|null
 	 */
 	private function extract_freemius_paths( string $raw, array $paths ): ?array {
+		// Every Freemius product on the site shares this row; parse it only when its bytes change.
+		return FreemiusIdentityPathMemo::extract(
+			'legacy_paid_state',
+			$raw,
+			$paths,
+			fn(): ?array => $this->parse_freemius_paths( $raw, $paths )
+		);
+	}
+
+	/**
+	 * Parse the bounded identity paths from JSON or serialized Freemius state.
+	 *
+	 * @param string   $raw   Exact Freemius option bytes.
+	 * @param string[] $paths Closed identity path allowlist.
+	 * @return array<string, mixed>|null
+	 */
+	private function parse_freemius_paths( string $raw, array $paths ): ?array {
 		$trimmed = ltrim( $raw );
 		if ( '' !== $trimmed && in_array( $trimmed[0], array( '{', '[' ), true ) ) {
 			$decoded = ( new SafeJsonReader() )->decode( $trimmed, self::MAX_RAW_BYTES, self::MAX_DEPTH, self::MAX_NODES );

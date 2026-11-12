@@ -33,6 +33,13 @@ final class ClassicThemeCompat {
 	private bool $drawer_rendered = false;
 
 	/**
+	 * Whether the cached-page cart presence hint has printed in this request.
+	 *
+	 * @var bool
+	 */
+	private bool $cart_presence_hint_printed = false;
+
+	/**
 	 * Constructor.
 	 *
 	 * @param DrawerRenderer        $drawer_renderer Drawer renderer.
@@ -137,6 +144,26 @@ final class ClassicThemeCompat {
 	}
 
 	/**
+	 * Mark the document before paint when WooCommerce's cart cookie says the
+	 * cart has items.
+	 *
+	 * A full page cache can serve a page rendered for an empty cart to such a
+	 * shopper. The class lets launcher styles show a neutral launcher (no count)
+	 * instead of a wrong "0" until the drawer script has read the cart. It only
+	 * reads the existing cookie; without the cookie or JavaScript nothing changes.
+	 */
+	public function print_cart_presence_hint(): void {
+		if ( $this->cart_presence_hint_printed || ! $this->frontend_policy->is_enabled() ) {
+			return;
+		}
+
+		$this->cart_presence_hint_printed = true;
+		wp_print_inline_script_tag(
+			'/(?:^|;\\s*)woocommerce_items_in_cart=1(?:;|$)/.test(document.cookie)&&document.documentElement.classList.add("cpops-cart-unconfirmed");'
+		);
+	}
+
+	/**
 	 * Enqueue block styles and mark footer block modules early on the frontend.
 	 */
 	public function enqueue_assets(): void {
@@ -147,6 +174,51 @@ final class ClassicThemeCompat {
 		$this->enqueue_view_script_modules();
 		wp_enqueue_style( 'cartpops-cart-drawer-style' );
 		wp_enqueue_style( 'cartpops-cart-launcher-style' );
+	}
+
+	/**
+	 * Keep WordPress' footer import map ahead of earlier module loads.
+	 *
+	 * Classic themes print the import map in the footer, after the page body.
+	 * A module script in that body (such as a captcha embedded in a footer
+	 * form) makes Firefox ignore the map, so the drawer's
+	 * `@wordpress/interactivity` import fails. See ImportMapOrder.
+	 */
+	public function order_import_map(): void {
+		if (
+			! $this->frontend_policy->is_enabled() ||
+			! function_exists( 'wp_is_block_theme' ) ||
+			wp_is_block_theme()
+		) {
+			return;
+		}
+
+		if ( function_exists( 'wp_start_template_enhancement_output_buffer' ) ) {
+			add_filter( 'wp_template_enhancement_output_buffer', array( ImportMapOrder::class, 'filter_buffer' ) );
+			return;
+		}
+
+		add_filter( 'template_include', array( $this, 'buffer_template_for_import_map' ), PHP_INT_MAX );
+	}
+
+	/**
+	 * Buffer the template on WordPress versions before 6.9.
+	 *
+	 * @param mixed $template Template path.
+	 * @return mixed The unchanged template path.
+	 */
+	public function buffer_template_for_import_map( mixed $template ): mixed {
+		ob_start(
+			static function ( string $buffer, int $phase ): string {
+				// A cleaned buffer is discarded; only output that is sent is reordered.
+				if ( 0 !== ( $phase & PHP_OUTPUT_HANDLER_CLEAN ) ) {
+					return $buffer;
+				}
+				return ImportMapOrder::reorder( $buffer );
+			}
+		);
+
+		return $template;
 	}
 
 	/**

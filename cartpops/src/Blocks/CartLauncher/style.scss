@@ -155,6 +155,26 @@
 	}
 }
 
+// A full page cache served a page rendered for an empty cart while
+// WooCommerce's cookie says the cart has items (class set before paint in
+// wp_head). Show the launcher without a count until the cart has been read;
+// visibility keeps the count's space so nothing moves when it arrives.
+.cpops-cart-unconfirmed .cpops-launcher[data-cartpops-rendered-empty] {
+
+	&.cpops-launcher--hidden {
+		display: flex;
+	}
+
+	.cpops-launcher__badge,
+	.cpops-launcher__total {
+		visibility: hidden;
+	}
+
+	.cpops-launcher__badge--hidden {
+		display: flex;
+	}
+}
+
 .cpops-launcher--floating .cpops-launcher__badge {
 	color: var(--cpops-launcher-badge-text, var(--cpops-v1-floating-launcher-indicator-text, var(--cpops-button-primary-text, #fff)));
 	background: var(--cpops-launcher-badge-bg, var(--cpops-v1-floating-launcher-indicator-background, var(--cpops-danger, #ef4444)));

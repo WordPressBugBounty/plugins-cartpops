@@ -93,6 +93,35 @@ abstract class LegacyPaidEntitlementBridge {
 	abstract protected function allows_current_blog( int $blog_id ): bool;
 
 	/**
+	 * Whether the licence for this exact current blog could not be read right now.
+	 *
+	 * True only when licensing gave no usable answer; a definite "not licensed" and
+	 * any failure to decide return false, so callers keep their fail-closed path.
+	 *
+	 * @param int $blog_id Exact captured WordPress blog.
+	 */
+	final public function licence_is_unreadable( int $blog_id ): bool {
+		if ( $blog_id <= 0 || get_current_blog_id() !== $blog_id ) {
+			return false;
+		}
+		try {
+			return true === $this->current_blog_licence_is_unreadable( $blog_id ) && get_current_blog_id() === $blog_id;
+		} catch ( \Throwable ) {
+			return false;
+		}
+	}
+
+	/**
+	 * Edition-specific answer for licence_is_unreadable(); never unreadable by default.
+	 *
+	 * @param int $blog_id Exact captured WordPress blog.
+	 */
+	protected function current_blog_licence_is_unreadable( int $blog_id ): bool {
+		unset( $blog_id );
+		return false;
+	}
+
+	/**
 	 * Live capability issuers may never be persisted.
 	 *
 	 * @throws \LogicException Always.

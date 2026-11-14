@@ -4,7 +4,7 @@ Tags: side cart, cart drawer, floating cart, woocommerce side cart, add to cart 
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 2.0.16
+Stable tag: 2.0.17
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -110,6 +110,10 @@ Your settings, styling and license carry over. Version 2 is built around the car
 4. Pro Smart Bar rules and Smart Add-ons such as shipping protection and gift wrapping.
 
 == Changelog ==
+
+= 2.0.17 =
+* Fix: CartPops Pro no longer stays paused with "upgrade_failed (pro_upgrade_incomplete)" after an update on stores with an older MySQL database.
+* Fix: Stores updated from CartPops 1 no longer slow down every page view by re-checking their saved CartPops 1 settings.
 
 = 2.0.16 =
 * Fix: on some stores updated from version 1, CartPops re-checked the finished update on every page that was not served from cache, slowing those pages down.

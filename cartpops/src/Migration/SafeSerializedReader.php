@@ -46,6 +46,13 @@ final class SafeSerializedReader {
 	private int $nodes = 0;
 
 	/**
+	 * Nodes consumed by every parse in this process, for parse-cost diagnostics.
+	 *
+	 * @var int
+	 */
+	private static int $parsed_nodes = 0;
+
+	/**
 	 * Maximum permitted nesting depth.
 	 *
 	 * @var int
@@ -65,6 +72,11 @@ final class SafeSerializedReader {
 	 * @var string
 	 */
 	private string $unsafe_kind = '';
+
+	/** Total nodes parsed by every reader in this process; a value-free cost diagnostic. */
+	public static function parsed_nodes(): int {
+		return self::$parsed_nodes;
+	}
 
 	/**
 	 * Decode a serialized scalar/array, rejecting objects and references.
@@ -221,6 +233,7 @@ final class SafeSerializedReader {
 	 */
 	private function parse_value( bool $build, array $path, ?\Closure $collector, int $depth ): mixed {
 		++$this->nodes;
+		++self::$parsed_nodes;
 		if ( $this->nodes > $this->max_nodes ) {
 			throw new SafeSerializedReaderException( 'serialized_graph_too_large' );
 		}
